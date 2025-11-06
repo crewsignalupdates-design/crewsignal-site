@@ -3,27 +3,90 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Crew Signal</title>
-  <meta name="description" content="Merger Watch Bulletins, mediation updates, and governance documents.">
+  <title>Crew Signal | Industry & Governance Updates</title>
+  <meta name="description" content="Crew Signal provides merger and integration updates, mediation developments, NMB docket summaries, and CWA governance information." />
   <style>
-    body { font-family: system-ui, Arial, sans-serif; margin: 2rem; line-height: 1.5; }
-    nav a { margin-right: 1rem; }
-    .container { max-width: 880px; }
+    body {
+      font-family: system-ui, Arial, sans-serif;
+      margin: 2rem;
+      background-color: #f8f9fa;
+      color: #222;
+      line-height: 1.5;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background: #fff;
+      border-radius: 0.75rem;
+      padding: 1.5rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+    .card a {
+      text-decoration: none;
+      color: #0044aa;
+      font-weight: 600;
+      display: block;
+      margin-top: 0.5rem;
+    }
+    footer {
+      text-align: center;
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      color: #666;
+    }
   </style>
 </head>
+
 <body>
-  <div class="container">
-    <h1>Welcome to Crew Signal</h1>
-    <p>This is the live site for Merger Watch Bulletins, mediation updates, and governance information.</p>
-    <nav>
-      <a href="/merger-watch/2025-10-24.html">Merger Watch 10/24</a>
-      <a href="/merger-watch/2025-10-31.html">Merger Watch 10/31</a>
-      <a href="/mediation-updates/">Mediation Updates</a>
-      <a href="/governance/">Governance</a>
-    </nav>
-    <hr />
-    <p>Your site will deploy automatically to Netlify within a minute of saving this change.</p>
+  <h1>Welcome to Crew Signal</h1>
+
+  <div class="grid">
+    <div class="card">
+      <h2>Merger / Integration</h2>
+      <p>Track merger and integration milestones across carriers.</p>
+      <a href="/merger-integration/">View Reports →</a>
+    </div>
+
+    <div class="card">
+      <h2>Mediation</h2>
+      <p>Follow ongoing mediation updates and settlement progress.</p>
+      <a href="/mediation-updates/">View Updates →</a>
+    </div>
+
+    <div class="card">
+      <h2>NMB Docket</h2>
+      <p>Monitor National Mediation Board docket filings and actions.</p>
+      <a href="/nmb-docket/">View Dockets →</a>
+    </div>
+
+    <div class="card">
+      <h2>CWA Governance</h2>
+      <p>Explore governance documents and leadership structure.</p>
+      <a href="/governance/">View Governance →</a>
+    </div>
   </div>
+
+  <footer>
+    <p>© <span id="year"></span> Crew Signal · Informational resource for aviation professionals</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
 
+    
