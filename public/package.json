@@ -1,8 +1,11 @@
-{
+ {
   "name": "crewsignal-site",
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "mkdir -p dist && cp -R public/* dist/"
+    "build": "rm -rf dist && mkdir -p dist && cp -R public/. dist/",
+    "start": "npx serve dist"
   }
 }
+ 
+
