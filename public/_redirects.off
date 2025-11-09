@@ -1,0 +1,34 @@
+# =========================================
+#  CrewSignal.org Redirect & Security Rules
+#  Safe base version – no redirect loops
+# =========================================
+
+# --- Canonical Host Enforcement ---
+# Force HTTPS and route all "www" or "http" to https://crewsignal.org
+http://crewsignal.org/*        https://crewsignal.org/:splat   301!
+http://www.crewsignal.org/*    https://crewsignal.org/:splat   301!
+https://www.crewsignal.org/*   https://crewsignal.org/:splat   301!
+
+# --- SPA / Static File Fallback ---
+# If using a Single Page App (React, Vue, Svelte, etc.), uncomment next line:
+# /*  /index.html  200
+
+# =========================================
+#  Optional: Security Headers (can live in netlify.toml instead)
+#  These do not affect redirects or loops.
+# =========================================
+#  NOTE: Header rules only work in netlify.toml, not in this _redirects file.
+#  Keep them in netlify.toml’s [[headers]] section, for example:
+#
+# [[headers]]
+#   for = "/*"
+#   [headers.values]
+#     Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
+#     Content-Security-Policy = "default-src 'self'; upgrade-insecure-requests"
+#     X-Frame-Options = "SAMEORIGIN"
+#     Referrer-Policy = "no-referrer-when-downgrade"
+#     Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+#
+# =========================================
+# End of File
+# =========================================
