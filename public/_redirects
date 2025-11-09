@@ -1,0 +1,3 @@
+﻿http://crewsignal.org/*        https://crewsignal.org/:splat 301!
+http://www.crewsignal.org/*    https://crewsignal.org/:splat 301!
+https://www.crewsignal.org/*   https://crewsignal.org/:splat 301!
