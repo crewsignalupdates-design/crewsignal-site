@@ -1,6 +1,12 @@
-[build]
-  command = "npm run build"
-  publish = "dist"
+﻿[[redirects]]
+  from = "/*"
+  to = "https://crewsignal.org/:splat"
+  status = 301
+  force = true
+  conditions = { Protocol = "http" }
 
-[functions]
-  directory = "netlify/functions"
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
+    Content-Security-Policy = "upgrade-insecure-requests"
