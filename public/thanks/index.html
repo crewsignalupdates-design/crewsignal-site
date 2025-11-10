@@ -1,17 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8">
   <title>Thanks | Crew Signal</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
-    body { font-family: system-ui, Arial, sans-serif; margin: 2rem; line-height: 1.6; text-align:center; }
-    a { text-decoration: underline; }
+    body {
+      font-family: system-ui, Arial, sans-serif;
+      margin: 2rem;
+      text-align: center;
+      line-height: 1.6;
+      background-color: #f8f9fa;
+      color: #222;
+    }
+    a {
+      text-decoration: underline;
+      color: #0044aa;
+      font-weight: 600;
+    }
+    .small {
+      font-size: 0.9rem;
+      color: #666;
+    }
   </style>
 </head>
 <body>
   <h1>Thanks for signing up!</h1>
-  <p>Your submission was received successfully. You’ll get Crew Signal updates soon.</p>
+  <p>Success — your submission has been received. You’ll get Crew Signal updates soon.</p>
   <p><a href="/">Return to homepage</a></p>
+  <p class="small">(You’ll be redirected automatically in a few seconds.)</p>
+
+  <script>
+    // Wait 4 seconds, then go back home
+    setTimeout(() => { window.location.href = '/'; }, 4000);
+  </script>
 </body>
 </html>
