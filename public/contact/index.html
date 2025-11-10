@@ -1,0 +1,58 @@
+<form
+  name="crew-signal-signup"
+  method="POST"
+  action="/thanks/"
+  data-netlify="true"
+  netlify-honeypot="bot-field"
+>
+  <!-- Required for Netlify Forms -->
+  <input type="hidden" name="form-name" value="crew-signal-signup" />
+
+  <!-- Honeypot (hidden from humans) -->
+  <p class="sr-only">
+    <label>Don’t fill this out if you’re human:
+      <input name="bot-field" />
+    </label>
+  </p>
+
+  <!-- Actual fields -->
+  <div class="field">
+    <label for="name">Name</label>
+    <input id="name" name="Name" type="text" autocomplete="name" />
+  </div>
+
+  <div class="field">
+    <label for="email">Email <span aria-hidden="true">*</span></label>
+    <input id="email" name="Email" type="email" required autocomplete="email" />
+  </div>
+
+  <div class="field">
+    <label for="airline">Airline / Base (optional)</label>
+    <input id="airline" name="AirlineBase" type="text" />
+  </div>
+
+  <div class="field">
+    <label for="notes">Notes (optional)</label>
+    <textarea id="notes" name="Notes" rows="4"></textarea>
+  </div>
+
+  <!-- Netlify reCAPTCHA v2 widget -->
+  <div data-netlify-recaptcha="true"></div>
+
+  <button type="submit">Sign up</button>
+</form>
+
+<!-- Minimal accessibility helpers (optional) -->
+<style>
+  .sr-only {
+    position:absolute !important;
+    width:1px; height:1px;
+    padding:0; margin:-1px;
+    overflow:hidden; clip:rect(0,0,0,0);
+    border:0;
+  }
+  .field { margin: 0 0 1rem 0; }
+  label { display:block; margin-bottom: .35rem; font-weight: 600; }
+  input, textarea { width:100%; max-width:32rem; padding:.6rem; }
+  button { padding:.6rem 1rem; font-weight:600; cursor:pointer; }
+</style>

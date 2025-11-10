@@ -51,7 +51,8 @@
 </head>
 
 <body>
-  <h1>Welcome to Crew Signal</h1>
+ <h1>Welcome to Crew Signal — v2</h1>
+
 
 <div class="grid">
   <div class="card">
@@ -76,16 +77,63 @@
 </div>
 
 
-<!-- ✉️ Netlify signup form -->
-<form name="signup" method="POST" data-netlify="true">
-  <input type="hidden" name="form-name" value="signup">
-  <label for="email">Get Crew Signal updates by email:</label><br>
-  <input id="email" name="email" type="email" required placeholder="you@example.com">
-  <button type="submit">Subscribe</button>
+<!-- ✉️ Crew Signal Secure Signup Form -->
+<form
+  name="crew-signal-signup"
+  method="POST"
+  action="/thanks/"
+  data-netlify="true"
+  netlify-honeypot="bot-field"
+>
+  <!-- Required hidden fields -->
+  <input type="hidden" name="form-name" value="crew-signal-signup" />
+
+  <!-- Honeypot (spam trap, hidden from users) -->
+  <p class="sr-only">
+    <label>Don’t fill this out if you’re human:
+      <input name="bot-field" />
+    </label>
+  </p>
+
+  <!-- Visible fields -->
+  <div style="text-align:center; margin-top:2rem;">
+    <label for="email" style="font-weight:600;">Get Crew Signal updates by email:</label><br>
+    <input
+      id="email"
+      name="Email"
+      type="email"
+      required
+      placeholder="you@example.com"
+      style="padding:.6rem; width:260px; max-width:80%; margin-top:.4rem;"
+    >
+    <br><br>
+
+    <!-- Netlify reCAPTCHA widget -->
+    <div data-netlify-recaptcha="true" style="display:inline-block; margin-bottom:1rem;"></div><br>
+
+    <button
+      type="submit"
+      style="padding:.6rem 1.2rem; border:1px solid #222; border-radius:.5rem; font-weight:600; cursor:pointer;"
+    >
+      Subscribe
+    </button>
+  </div>
 </form>
+
 <p style="text-align:center; font-size:0.9rem; color:#666; margin-top:0.5rem;">
   We respect your privacy. Your email will only be used for Crew Signal updates and will never be shared or sold.
 </p>
+
+<style>
+  /* Hide honeypot field from humans */
+  .sr-only {
+    position:absolute !important;
+    width:1px; height:1px;
+    padding:0; margin:-1px;
+    overflow:hidden; clip:rect(0,0,0,0);
+    border:0;
+  }
+</style>
 
   <footer>
     <p>© <span id="year"></span> Crew Signal · Informational resource for aviation professionals</p>
