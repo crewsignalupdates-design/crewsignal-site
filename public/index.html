@@ -141,7 +141,36 @@
   </footer>
 
   <script>
+    // Auto-update the year in footer
     document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Show "Submitting…" when the form is sent
+    (function () {
+      const form = document.forms['crew-signal-signup'];
+      if (!form) return;
+
+      const submitBtn = form.querySelector('button[type="submit"]');
+
+      form.addEventListener('submit', function () {
+        // prevent double-clicks and give instant feedback
+        if (submitBtn) {
+          submitBtn.dataset.originalText = submitBtn.textContent;
+          submitBtn.textContent = 'Submitting…';
+          submitBtn.disabled = true;
+        }
+
+        // visually soften the form while submitting
+        form.style.opacity = '0.7';
+
+        // disable inputs except hidden and reCAPTCHA
+        const fields = form.querySelectorAll('input, textarea, select, button');
+        fields.forEach(el => {
+          const isHidden = el.type === 'hidden';
+          const isRecaptcha = el.name === 'g-recaptcha-response';
+          if (!isHidden && !isRecaptcha && el !== submitBtn) el.disabled = true;
+        });
+      });
+    })();
   </script>
 </body>
 </html>
