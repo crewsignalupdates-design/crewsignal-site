@@ -1,1 +1,8 @@
-public/robots.txt
+User-agent: *
+Disallow: /thanks/
+Disallow: /privacy/
+Allow: /
+
+# Optional: add when you have one
+# Sitemap: https://crewsignal.org/sitemap.xml
+
