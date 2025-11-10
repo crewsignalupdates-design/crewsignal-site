@@ -1,12 +1,9 @@
-[[redirects]]
-  from = "/*"
-  to = "htt# Force HTTP → HTTPS for any host
-ps://crewsignal.org/:splat"
-  status = 301
-  force = true
-  conditions = { Protocol = "http" }
 
-# Security headers for every route
+[build]
+  publish = "public"
+  command = "npm run build"
+
+
 [[headers]]
   for = "/*"
   [headers.values]
