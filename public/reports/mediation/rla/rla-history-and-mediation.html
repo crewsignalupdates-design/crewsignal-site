@@ -3,86 +3,48 @@
 <head>
   <meta charset="utf-8" />
   <title>Mediation Reports — Crew Signal</title>
-  <style>
-    body {
-      font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      line-height: 1.6;
-      margin: 0;
-      padding: 0;
-      color: #0f172a;
-      background: #ffffff;
+   <style>
+    body{
+      font-family:system-ui,Arial,sans-serif;
+      line-height:1.6;
+      background:#f8f9fa;
+      color:#222;
+      margin:2rem;
     }
 
-    a {
-      color: #0ea5e9;
-      text-decoration: none;
+    /* Match Integration page max-width and centering */
+    .wrap{
+      max-width:900px;
+      margin:0 auto;
     }
 
-    a:hover {
-      text-decoration: underline;
+    /* Card-like blocks, parallel to <li> on Integration page */
+    section.card{
+      background:#fff;
+      border-radius:.75rem;
+      padding:1rem;
+      margin:.75rem 0;
+      box-shadow:0 2px 6px rgba(0,0,0,.08);
     }
 
-    .wrap {
-      max-width: 860px;
-      margin: 0 auto;
-      padding: 24px;
+    a{
+      color:#0044aa;
+      text-decoration:none;
+      font-weight:600;
     }
 
-    header.article {
-      padding: 48px 0 8px;
-      border-bottom: 1px solid #e2e8f0;
-      margin-bottom: 16px;
+    a:hover{
+      text-decoration:underline;
     }
 
-    .eyebrow {
-      letter-spacing: 0.08em;
-      color: #64748b;
-      text-transform: uppercase;
-      font-size: 0.85rem;
-    }
-
-    h1 {
-      font-size: clamp(1.8rem, 1.4rem + 2vw, 2.4rem);
-      line-height: 1.15;
-      margin: 0.2rem 0 0.4rem;
-    }
-
-    .meta {
-      color: #64748b;
-      font-size: 0.9rem;
-      margin-top: 6px;
-    }
-
-    section {
-      margin: 28px 0;
-    }
-
-    h2 {
-      font-size: 1.4rem;
-      margin: 0 0 6px;
-    }
-
-    /* Card layout to match your report hubs */
-    section.card {
-      border: 1px solid #e2e8f0;
-      border-radius: 12px;
-      padding: 16px 20px;
-      margin: 20px 0;
-      background: #f8fafc;
-    }
-
-    section.card a {
-      display: block;
-    }
-
-    section.card h2 {
-      margin-bottom: 4px;
-    }
-
-    section.card p {
-      margin: 4px 0;
+    footer{
+      font-size:.9rem;
+      color:#666;
+      text-align:center;
+      margin-top:1.5rem;
     }
   </style>
+ 
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="A concise, link-rich history and walkthrough of the Railway Labor Act (RLA), with a focus on current AFA–United Airlines mediation under the National Mediation Board." />
