@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Crew Signal | Merger / Integration Reports</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #0b1020;
+      color: #f5f5f5;
+    }
+    .page {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 2.5rem 1rem 3.5rem;
+    }
+    header {
+      margin-bottom: 2rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      padding-bottom: 1.5rem;
+    }
+    header h1 {
+      margin: 0 0 0.5rem;
+      font-size: 2.1rem;
+      font-weight: 650;
+    }
+    header p {
+      margin: 0;
+      max-width: 52rem;
+      color: #ced4e0;
+      line-height: 1.5;
+      font-size: 0.98rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+    .card {
+      background: radial-gradient(circle at top left, #182038, #0c111c);
+      border-radius: 16px;
+      padding: 1.5rem 1.3rem 1.4rem;
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      box-shadow: 0 14px 40px rgba(0, 0, 0, 0.45);
+    }
+    .card h2 {
+      margin: 0 0 0.4rem;
+      font-size: 1.25rem;
+      font-weight: 600;
+    }
+    .card .tag {
+      display: inline-block;
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      padding: 0.1rem 0.55rem;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      color: #cbd5ff;
+      margin-bottom: 0.5rem;
+    }
+    .card p {
+      margin: 0.3rem 0 1rem;
+      font-size: 0.9rem;
+      color: #d0d4e2;
+      line-height: 1.6;
+    }
+    .meta {
+      font-size: 0.8rem;
+      color: #9ea5c0;
+      margin-bottom: 0.9rem;
+    }
+    .btn-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.45rem 0.9rem;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      font-size: 0.85rem;
+      text-decoration: none;
+      color: #f8fafc;
+      background: linear-gradient(135deg, rgba(56, 189, 248, 0.14), rgba(129, 140, 248, 0.15));
+      backdrop-filter: blur(12px);
+    }
+    .btn.secondary {
+      background: transparent;
+      border-color: rgba(148, 163, 184, 0.8);
+      color: #e2e8f0;
+    }
+    .btn span {
+      margin-left: 0.35rem;
+      font-size: 0.9em;
+      opacity: 0.85;
+    }
+    .footnote {
+      margin-top: 2rem;
+      font-size: 0.78rem;
+      color: #8b94b4;
+      max-width: 50rem;
+      line-height: 1.5;
+    }
+    a {
+      color: #7dd3fc;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <h1>Merger / Integration Report Hub</h1>
+      <p>
+        This page collects Crew Signal coverage of merger versus integration structures,
+        with a focus on how different transaction designs shape outcomes for line crews:
+        seniority, pay, bases, scope, and long-term job security.
+      </p>
+    </header>
+
+    <section class="grid">
+      <!-- Original explainer article -->
+      <article class="card">
+        <div class="tag">Foundational explainer</div>
+        <h2>Merger vs. Integration: Structures, Tradeoffs &amp; Crew Impacts</h2>
+        <p>
+          The original explainer on how classic mergers differ from integration-without-merger models,
+          how regulators and the NMB treat each, and why capital markets and crews may
+          see the same transaction very differently.
+        </p>
+        <div class="meta">
+          First published: <strong>2025</strong> • Living reference guide
+        </div>
+        <div class="btn-row">
+          <!-- uses your existing file -->
+          <a class="btn" href="/resources/integration-vs-merger.html">
+            Read explainer<span>↗</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- 2025 YTD update -->
+      <article class="card">
+        <div class="tag">YTD update</div>
+        <h2>Merger / Integration Update – Year to Date</h2>
+        <p>
+          A report-style update through <strong>November&nbsp;7,&nbsp;2025</strong>,
+          tracking actual developments, filings, and signaling behavior against the
+          framework laid out in the original Merger/Integration explainer.
+        </p>
+        <div class="meta">
+          Coverage through: <strong>2025-11-07</strong>
+        </div>
+        <div class="btn-row">
+          <!-- your existing HTML YTD page -->
+          <a class="btn" href="/reports/merger-integration/2025.11.07/">
+            View HTML update<span>↗</span>
+          </a>
+          <!-- your existing PDF -->
+          <a class="btn secondary" href="/reports/merger-integration/2025-11-07.pdf">
+            Download PDF<span>⬇</span>
+          </a>
+        </div>
+      </article>
+    </section>
+
+    <p class="footnote">
+      Note: These reports are written from a crew-centric perspective and do not
+      constitute investment advice, legal advice, or bargaining guidance. They are
+      intended to help line crews frame the right questions as deals evolve.
+    </p>
+  </div>
+</body>
+</html>
