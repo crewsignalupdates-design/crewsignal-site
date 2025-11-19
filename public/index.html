@@ -1,171 +1,58 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="msvalidate.01" content="26BE8E4A63A0D477C6DE9A0DD49F9A42" />
+11 results - 7 files
 
-  <title>Crew Signal | Industry & Governance Updates</title>
-  <meta name="description" content="Crew Signal provides merger and integration updates, mediation developments, NMB docket summaries, and CWA governance information." />
-  <style>
-    body {
-      font-family: system-ui, Arial, sans-serif;
-      margin: 2rem;
-      background-color: #f8f9fa;
-      color: #222;
-      line-height: 1.5;
-    }
-    h1 {
-      text-align: center;
-      margin-bottom: 2rem;
-    }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 1.5rem;
-    }
-    .card {
-      background: #fff;
-      border-radius: 0.75rem;
-      padding: 1.5rem;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      text-align: center;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-    .card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-    }
-    .card a {
-      text-decoration: none;
-      color: #0044aa;
-      font-weight: 600;
-      display: block;
-      margin-top: 0.5rem;
-    }
-    footer {
-      text-align: center;
-      margin-top: 3rem;
-      font-size: 0.9rem;
-      color: #666;
-    }
-  </style>
-</head>
+_live_homepage.html:
+  68      <h2>NMB Docket</h2>
+  69:     <a href="/nmb-docket/" target="_blank" rel="noopener">View Dockets →</a>
+  70    </div>
 
-<body>
- <h1>Welcome to Crew Signal</h1>
+file-tree.txt:
+  15  |   |   
+  16: |   +---nmb-docket
+  17  |   |       index.html
 
+  34      |   index.html
+  35:     |   NMB-Docket-2025.10.24.pdf
+  36      |   robots.txt
 
+  45      |       
+  46:     +---nmb-docket
+  47      |       index.html
 
-<div class="grid">
-  <div class="card">
-    <h2>Merger / Integration</h2>
-    <a href="/reports/merger-integration/">View Reports →</a>
-  </div>
+  78      |   \---nmb
+  79:     |           NMB-Docket-2025.11.01.pdf
+  80      |           
 
-  <div class="card">
-    <h2>Mediation</h2>
-    <a href="/reports/mediation/" class="cs-card__button">View Updates →</a>
+dist\index.html:
+  71        <p>Monitor National Mediation Board docket filings and actions.</p>
+  <a class="cs-report-card" href="/reports/nmb/">
+  <div class="cs-report-card__eyebrow">NMB</div>
+  <h2 class="cs-report-card__title">NMB Docket Tracker</h2>
+  <p class="cs-report-card__summary">
+    Monitor National Mediation Board docket filings and actions.
+  </p>
+</a>
 
-  </div>
+  73      </div>
 
-  <div class="card">
-    <h2>NMB Docket</h2>
-    <a href="/nmb-docket/" target="_blank" rel="noopener">View Dockets →</a>
-  </div>
+dist\nmb-docket\index.html:
+  16    <ul>
+  17:     <li><a href="/reports/nmb/NMB-Docket-2025.11.01.pdf" target="_blank" rel="noopener">NMB Docket  2025.11.01</a></li>
+  18      <!-- Add future reports here as new <li> lines -->
+  19      <!-- Example:
+  20:     <li><a href="/reports/nmb/NMB-Docket-2025.12.08.pdf" target="_blank" rel="noopener">NMB Docket  2025.12.08</a></li>
+  21      -->
 
-  <div class="card">
-    <h2>CWA Governance</h2>
-    <a href="/reports/cwa/CWA_Structure_Districts_and_Sectors.pdf" target="_blank" rel="noopener">View Governance →</a>
-  </div>
-</div>
+public\index.html:
+  10  <body>
+  11:   <article class="cs-report" id="nmb-docket">
+  12      <header class="cs-report__header">
 
+public\sitemap.xml:
+  26    <url>
+  27:     <loc>https://crewsignal.org/nmb-docket/</loc>
+  28      <changefreq>monthly</changefreq>
 
-<!-- ✉️ Crew Signal Secure Signup Form -->
-
-
-<p style="text-align:center; font-size:0.9rem; color:#666; margin-top:0.5rem;">
-  We respect your privacy. Your email will only be used for Crew Signal updates and will never be shared or sold.
-</p>
-<p style="text-align:center; font-size:0.85rem; color:#666; margin-top:0.25rem;">
-  To unsubscribe or delete your information, email
-  <a href="mailto:info@crewsignal.org">info@crewsignal.org</a>.
-</p>
-
-
-<style>
-  /* Hide honeypot field from humans */
-  .sr-only {
-    position:absolute !important;
-    width:1px; height:1px;
-    padding:0; margin:-1px;
-    overflow:hidden; clip:rect(0,0,0,0);
-    border:0;
-  }
-</style>
-
-<!-- Simple Subscribe Button -->
-<div style="text-align:center; padding:2rem 0;">
-  <a href="https://aol.us19.list-manage.com/subscribe?u=b1ba2124e69ba9e678f487d1e&id=4751393351"
-     class="btn-subscribe">Subscribe to Crew Signal</a>
-</div>
-
-<style>
-  .btn-subscribe {
-    display:inline-block;
-    background:#003366;
-    color:#fff;
-    padding:0.75rem 1.25rem;
-    border-radius:8px;
-    text-decoration:none;
-    font-weight:600;
-    transition:background 0.2s;
-  }
-  .btn-subscribe:hover {
-    background:#0052a3;
-  }
-</style>
-
- <footer>
-   <p><a href="/privacy/">Privacy Policy</a></p> 
-    <p>© <span id="year"></span> Crew Signal · Informational resource for aviation professionals</p>
-  </footer>
- 
-  <script>
-    // Auto-update the year in footer
-    document.getElementById("year").textContent = new Date().getFullYear();
-
-    // Show "Submitting…" when the form is sent
-    (function () {
-      const form = document.forms['crew-signal-signup'];
-      if (!form) return;
-
-      const submitBtn = form.querySelector('button[type="submit"]');
-
-      form.addEventListener('submit', function () {
-        // prevent double-clicks and give instant feedback
-        if (submitBtn) {
-          submitBtn.dataset.originalText = submitBtn.textContent;
-          submitBtn.textContent = 'Submitting…';
-          submitBtn.disabled = true;
-        }
-
-        // visually soften the form while submitting
-        form.style.opacity = '0.7';
-
-        // disable inputs except hidden and reCAPTCHA
-        const fields = form.querySelectorAll('input, textarea, select, button');
-        fields.forEach(el => {
-          const isHidden = el.type === 'hidden';
-          const isRecaptcha = el.name === 'g-recaptcha-response';
-          if (!isHidden && !isRecaptcha && el !== submitBtn) el.disabled = true;
-        });
-      });
-    })();
-  </script>
-</body>
-</html>
-
-
-
-
+public\reports\nmb\index.html:
+  10  <body>
+  11:   <article class="cs-report" id="nmb-docket">
+  12      <header class="cs-report__header">
