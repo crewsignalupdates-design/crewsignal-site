@@ -24,10 +24,10 @@
   </url>
 
   <url>
-    <loc>https://crewsignal.org/nmb-docket/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
+  <loc>https://crewsignal.org/reports/nmb/</loc>
+  <changefreq>monthly</changefreq>
+</url>
+
 
   <url>
     <loc>https://crewsignal.org/reports/cwa/CWA_Structure_Districts_and_Sectors.pdf</loc>
