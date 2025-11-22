@@ -13,15 +13,18 @@
       color: #222;
       line-height: 1.5;
     }
+
     h1 {
       text-align: center;
       margin-bottom: 2rem;
     }
+
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 1.5rem;
     }
+
     .card {
       background: #fff;
       border-radius: 0.75rem;
@@ -30,10 +33,12 @@
       text-align: center;
       transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
+
     .card:hover {
       transform: translateY(-4px);
       box-shadow: 0 4px 10px rgba(0,0,0,0.15);
     }
+
     .card a {
       text-decoration: none;
       color: #0044aa;
@@ -41,11 +46,72 @@
       display: block;
       margin-top: 0.5rem;
     }
+
+    /* Subscribe CTA section */
+
+    .subscribe-section {
+      max-width: 640px;
+      margin: 3rem auto 0;
+      padding: 2rem;
+      background: #ffffff;
+      border-radius: 1rem;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+      text-align: center;
+    }
+
+    .subscribe-section h2 {
+      margin-top: 0;
+      margin-bottom: 0.75rem;
+      font-size: 1.4rem;
+    }
+
+    .subscribe-section p.lead {
+      margin-top: 0;
+      margin-bottom: 1.5rem;
+      color: #555;
+    }
+
+    .subscribe-button {
+      display: inline-block;
+      padding: 0.75rem 2.25rem;
+      border-radius: 999px;
+      border: none;
+      font-size: 1rem;
+      font-weight: 600;
+      background: #0069d9;
+      color: #fff;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background 0.15s ease, transform 0.1s ease, box-shadow 0.1s ease;
+    }
+
+    .subscribe-button:hover {
+      background: #0053ad;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+      transform: translateY(-1px);
+    }
+
+    .privacy-note {
+      font-size: 0.85rem;
+      color: #666;
+      margin-top: 1rem;
+    }
+
     footer {
       text-align: center;
       margin-top: 3rem;
       font-size: 0.9rem;
       color: #666;
+    }
+
+    @media (max-width: 480px) {
+      body {
+        margin: 1.25rem;
+      }
+
+      .subscribe-section {
+        padding: 1.5rem;
+      }
     }
   </style>
 </head>
@@ -53,39 +119,46 @@
 <body>
   <h1>Welcome to Crew Signal</h1>
 
-<div class="grid">
-  <div class="card">
-    <h2>Merger / Integration</h2>
-    <a href="/reports/merger-integration/">View Reports →</a>
+  <div class="grid">
+    <div class="card">
+      <h2>Merger / Integration</h2>
+      <a href="/reports/merger-integration/">View Reports →</a>
+    </div>
+
+    <div class="card">
+      <h2>Mediation</h2>
+      <a href="/mediation-updates/">View Updates →</a>
+    </div>
+
+    <div class="card">
+      <h2>NMB Docket Tracker</h2>
+      <a href="/reports/nmb/">View Dockets →</a>
+    </div>
+
+    <div class="card">
+      <h2>CWA Governance</h2>
+      <a href="/reports/cwa/CWA_Structure_Districts_and_Sectors.pdf" target="_blank" rel="noopener">
+        View Governance →
+      </a>
+    </div>
   </div>
 
-  <div class="card">
-    <h2>Mediation</h2>
-    <a href="/mediation-updates/">View Updates →</a>
-  </div>
+  <!-- Centered blue subscribe button that goes to the Mailchimp page -->
+  <section class="subscribe-section">
+    <h2>Stay in the loop with Crew Signal</h2>
+    <p class="lead">
+      Get email updates when we publish new reports or major developments.
+    </p>
 
-  <div class="card">
-  <h2>NMB Docket Tracker</h2>
-  <a href="/reports/nmb/">View Dockets →</a>
-</div>
+    <a href="/subscribe/" class="subscribe-button">
+      Subscribe for email updates
+    </a>
 
-  <div class="card">
-    <h2>CWA Governance</h2>
-    <a href="/reports/cwa/CWA_Structure_Districts_and_Sectors.pdf" target="_blank" rel="noopener">View Governance →</a>
-  </div>
-</div>
-
-
-<!-- ✉️ Netlify signup form -->
-<form method='POST' name='signup'>
-  <input type="hidden" name="form-name" value="signup">
-  <label for="email">Get Crew Signal updates by email:</label><br>
-  <input id="email" name="email" type="email" required placeholder="you@example.com">
-  <button type="submit">Subscribe</button>
-</form>
-<p style="text-align:center; font-size:0.9rem; color:#666; margin-top:0.5rem;">
-  We respect your privacy. Your email will only be used for Crew Signal updates and will never be shared or sold.
-</p>
+    <p class="privacy-note">
+      You’ll be taken to our detailed signup page where you can choose how you’d like to hear from us
+      and review our privacy and consent information.
+    </p>
+  </section>
 
   <footer>
     <p>© <span id="year"></span> Crew Signal · Informational resource for aviation professionals</p>
