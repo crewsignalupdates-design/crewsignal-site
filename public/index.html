@@ -1,58 +1,98 @@
-11 results - 7 files
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crew Signal | Industry & Governance Updates</title>
+  <meta name="description" content="Crew Signal provides merger and integration updates, mediation developments, NMB docket summaries, and CWA governance information." />
+  <style>
+    body {
+      font-family: system-ui, Arial, sans-serif;
+      margin: 2rem;
+      background-color: #f8f9fa;
+      color: #222;
+      line-height: 1.5;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background: #fff;
+      border-radius: 0.75rem;
+      padding: 1.5rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+    .card a {
+      text-decoration: none;
+      color: #0044aa;
+      font-weight: 600;
+      display: block;
+      margin-top: 0.5rem;
+    }
+    footer {
+      text-align: center;
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      color: #666;
+    }
+  </style>
+</head>
 
-_live_homepage.html:
-  68      <h2>NMB Docket</h2>
-  69:     <a href="/nmb-docket/" target="_blank" rel="noopener">View Dockets →</a>
-  70    </div>
+<body>
+  <h1>Welcome to Crew Signal</h1>
 
-file-tree.txt:
-  15  |   |   
-  16: |   +---nmb-docket
-  17  |   |       index.html
+<div class="grid">
+  <div class="card">
+    <h2>Merger / Integration</h2>
+    <a href="/reports/merger-integration/">View Reports →</a>
+  </div>
 
-  34      |   index.html
-  35:     |   NMB-Docket-2025.10.24.pdf
-  36      |   robots.txt
+  <div class="card">
+    <h2>Mediation</h2>
+    <a href="/mediation-updates/">View Updates →</a>
+  </div>
 
-  45      |       
-  46:     +---nmb-docket
-  47      |       index.html
+  <div class="card">
+  <h2>NMB Docket Tracker</h2>
+  <a href="/reports/nmb/">View Dockets →</a>
+</div>
 
-  78      |   \---nmb
-  79:     |           NMB-Docket-2025.11.01.pdf
-  80      |           
+  <div class="card">
+    <h2>CWA Governance</h2>
+    <a href="/reports/cwa/CWA_Structure_Districts_and_Sectors.pdf" target="_blank" rel="noopener">View Governance →</a>
+  </div>
+</div>
 
-dist\index.html:
-  71        <p>Monitor National Mediation Board docket filings and actions.</p>
-  <a class="cs-report-card" href="/reports/nmb/">
-  <div class="cs-report-card__eyebrow">NMB</div>
-  <h2 class="cs-report-card__title">NMB Docket Tracker</h2>
-  <p class="cs-report-card__summary">
-    Monitor National Mediation Board docket filings and actions.
-  </p>
-</a>
 
-  73      </div>
+<!-- ✉️ Netlify signup form -->
+<form method='POST' name='signup'>
+  <input type="hidden" name="form-name" value="signup">
+  <label for="email">Get Crew Signal updates by email:</label><br>
+  <input id="email" name="email" type="email" required placeholder="you@example.com">
+  <button type="submit">Subscribe</button>
+</form>
+<p style="text-align:center; font-size:0.9rem; color:#666; margin-top:0.5rem;">
+  We respect your privacy. Your email will only be used for Crew Signal updates and will never be shared or sold.
+</p>
 
-dist\nmb-docket\index.html:
-  16    <ul>
-  17:     <li><a href="/reports/nmb/NMB-Docket-2025.11.01.pdf" target="_blank" rel="noopener">NMB Docket  2025.11.01</a></li>
-  18      <!-- Add future reports here as new <li> lines -->
-  19      <!-- Example:
-  20:     <li><a href="/reports/nmb/NMB-Docket-2025.12.08.pdf" target="_blank" rel="noopener">NMB Docket  2025.12.08</a></li>
-  21      -->
+  <footer>
+    <p>© <span id="year"></span> Crew Signal · Informational resource for aviation professionals</p>
+  </footer>
 
-public\index.html:
-  10  <body>
-  11:   <article class="cs-report" id="nmb-docket">
-  12      <header class="cs-report__header">
-
-public\sitemap.xml:
-  26    <url>
-  27:     <loc>https://crewsignal.org/nmb-docket/</loc>
-  28      <changefreq>monthly</changefreq>
-
-public\reports\nmb\index.html:
-  10  <body>
-  11:   <article class="cs-report" id="nmb-docket">
-  12      <header class="cs-report__header">
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
