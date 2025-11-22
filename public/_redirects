@@ -1,11 +1,11 @@
 ﻿# Force https and non-www
-http://crewsignal.org/*        https://crewsignal.org/:splat 301!
-http://www.crewsignal.org/*    https://crewsignal.org/:splat 301!
-https://www.crewsignal.org/*   https://crewsignal.org/:splat 301!
+http://crewsignal.org/* https://crewsignal.org/:splat 301!
+http://www.crewsignal.org/* https://crewsignal.org/:splat 301!
+https://www.crewsignal.org/* https://crewsignal.org/:splat 301!
 
 # Mediation: old RLA path -> new mediation index
-/reports/mediation/rla/        /mediation-updates/      301
+/reports/mediation/rla/ /mediation-updates/ 301
 
 # NMB: old path -> new tracker
-/nmb-docket                    /reports/nmb/            301
-/nmb-docket/*                  /reports/nmb/            301
+/nmb-docket /reports/nmb/ 301
+/nmb-docket/* /reports/nmb/ 301
