@@ -55,51 +55,40 @@
     }
 
     /* Centered homepage subscribe block */
-    .home-subscribe {
-      margin-top: 3rem;
-      text-align: center;
-    }
+   .home-subscribe {
+  margin-top: 3rem;
+  text-align: center;
+}
 
-    .home-subscribe form {
-      margin-top: 1rem;
-    }
+.subscribe-button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.6rem 1.4rem;
+  border-radius: 6px;
+  background-color: #0044aa;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1rem;
+}
 
-    .home-subscribe input {
-      padding: 0.6rem;
-      width: 250px;
-      max-width: 90%;
-      border-radius: 6px;
-      border: 1px solid #888;
-      margin-bottom: 0.5rem;
-      font-size: 1rem;
-    }
+.subscribe-button:hover {
+  background-color: #00337f;
+}
 
-    .home-subscribe button {
-      padding: 0.6rem 1.2rem;
-      border: none;
-      border-radius: 6px;
-      background-color: #0044aa;
-      color: white;
-      cursor: pointer;
-      font-size: 1rem;
-    }
+.subscribe-heading {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
 
-    .home-subscribe button:hover {
-      background-color: #00337f;
-    }
-
-    .subscribe-heading {
-      font-size: 1.1rem;
-      font-weight: 600;
-      margin-bottom: 0.5rem;
-    }
-
-    .subscribe-privacy {
-      text-align: center;
-      font-size: 0.9rem;
-      color: #555;
-      margin-top: 0.6rem;
-    }
+.subscribe-privacy {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 0.6rem;
+}
+ 
   </style>
 </head>
 
@@ -132,18 +121,17 @@
 
   <!-- ✉️ Netlify signup form -->
   <div class="home-subscribe">
-    <p class="subscribe-heading">Stay Informed with Crew Signal</p>
+  <p class="subscribe-heading">Stay Informed with Crew Signal</p>
 
-    <form method="POST" name="signup">
-      <input type="hidden" name="form-name" value="signup">
-      <input id="email" name="email" type="email" required placeholder="you@example.com">
-      <button type="submit">Subscribe</button>
-    </form>
+  <a class="subscribe-button" href="/subscribe/">
+    Go to full signup form →
+  </a>
 
-    <p class="subscribe-privacy">
-      We respect your privacy. Your email will only be used for Crew Signal updates and will never be shared or sold.
-    </p>
-  </div>
+  <p class="subscribe-privacy">
+    We respect your privacy. Your email will only be used for Crew Signal updates and will never be shared or sold.
+  </p>
+</div>
+
 
   <footer>
     <p>© <span id="year"></span> Crew Signal · Informational resource for aviation professionals</p>
