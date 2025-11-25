@@ -275,6 +275,25 @@ body {
   }
 }
 /* ============================
+   Crew Signal – Back Link
+   ============================ */
+
+.cs-back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-bottom: 0.75rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--cs-accent);
+  text-decoration: none;
+}
+
+.cs-back-link:hover {
+  text-decoration: underline;
+}
+
+/* ============================
    Crew Signal – Signup form fixes
    ============================ */
 
@@ -308,7 +327,4 @@ form input[type="submit"]:hover,
 form button[type="submit"]:hover,
 form button:hover {
   background-color: #e6e6e6;
-}
-body {
-  outline: 4px solid magenta !important;
 }
