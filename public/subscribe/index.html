@@ -82,6 +82,46 @@
     font-weight: 500;
   }
 </style>
+<style>
+  /* Crew Signal–themed Subscribe button */
+  #mc-embedded-subscribe.button {
+    background: rgba(15, 23, 42, 0.85) !important;         /* dark navy surface */
+    color: #38bdf8 !important;                             /* CS accent blue text */
+    padding: 0.75rem 1.6rem !important;
+    border-radius: 999px !important;                       /* pill */
+    border: 1px solid rgba(56, 189, 248, 0.8) !important;  /* accent border */
+    font-size: 0.9rem !important;
+    font-weight: 700 !important;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s ease,
+                box-shadow 0.2s ease,
+                border-color 0.2s ease,
+                transform 0.2s ease;
+  }
+
+  /* Hover effect: subtle lift + glow */
+  #mc-embedded-subscribe.button:hover {
+    background: rgba(56, 189, 248, 0.08) !important;
+    border-color: #38bdf8 !important;
+    box-shadow: 0 8px 20px rgba(56, 189, 248, 0.35) !important;
+    transform: translateY(-1px);
+    cursor: pointer;
+  }
+
+  /* Improve visibility of GDPR checkboxes */
+  #mergeRow-gdpr input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    appearance: auto;
+    cursor: pointer;
+    background-color: #ffffff !important;
+    border: 1px solid #666 !important;
+  }
+</style>
   
  
 </head>
