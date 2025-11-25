@@ -309,3 +309,6 @@ form button[type="submit"]:hover,
 form button:hover {
   background-color: #e6e6e6;
 }
+body {
+  outline: 4px solid magenta !important;
+}
