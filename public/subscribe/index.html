@@ -145,7 +145,7 @@
       text-decoration: underline;
     }
 
-    /* Center the button row container */
+    /* Center the button row container (Mailchimp clear class) */
     #mc-embedded-subscribe-form .clear {
       text-align: center;
       margin-top: 1.25rem;
@@ -183,4 +183,80 @@
 
     /* Centered Crew Signal-style Submit button */
     .subscribe-submit-wrap {
-      text-alig
+      text-align: center;
+      margin-top: 1.5rem;
+    }
+
+    .subscribe-submit-button {
+      display: inline-block;
+      padding: 0.6rem 1.4rem;
+      border-radius: 6px;
+      background-color: #0044aa;   /* Crew Signal homepage blue */
+      color: #ffffff;
+      font-weight: 600;
+      font-size: 1rem;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+    }
+
+    .subscribe-submit-button:hover {
+      background-color: #00337f;   /* darker hover to match homepage */
+    }
+
+    /* Small-screen tweaks */
+    @media (max-width: 640px) {
+      .cs-subscribe-page {
+        padding: 2rem 1.1rem 2.5rem;
+      }
+
+      #mc_embed_signup {
+        padding: 1.5rem 1.25rem 1.9rem !important;
+      }
+    }
+  </style>
+
+  <!-- Preserve Mailchimp's checkbox layout tweaks -->
+  <style type="text/css">
+    #mc-embedded-subscribe-form input[type=checkbox]{display: inline; width: auto; margin-right: 10px;}
+    #mergeRow-gdpr fieldset label {font-weight: normal;}
+    #mc-embedded-subscribe-form .mc_fieldset{border:none;min-height: 0px;padding-bottom:0px;}
+  </style>
+</head>
+<body>
+  <div class="cs-subscribe-page cs-report">
+    <header class="cs-report__header cs-subscribe-header">
+      <a href="/" class="cs-subscribe-back">← Back to Crew Signal</a>
+      <p class="cs-report__eyebrow">Stay Connected</p>
+      <h1 class="cs-report__title">Crew Signal Updates</h1>
+      <p class="cs-report__subtitle">
+        Subscribe to receive merger and integration updates, mediation developments, NMB docket snapshots,
+        and CWA–AFA governance coverage in your inbox.
+      </p>
+      <div class="cs-report__meta">
+        <span class="cs-report__meta-item">Curated, industry-focused briefings</span>
+        <span class="cs-report__meta-item">Unsubscribe any time</span>
+      </div>
+    </header>
+
+    <section class="cs-report__section">
+      <div id="mc_embed_signup">
+        <form action="https://crewsignal.us19.list-manage.com/subscribe/post?u=b1ba2124e69ba9e678f487d1e&amp;id=4751393351&amp;v_id=4931&amp;f_id=00d2bde7f0"
+              method="post"
+              id="mc-embedded-subscribe-form"
+              name="mc-embedded-subscribe-form"
+              class="validate">
+          <div id="mc_embed_signup_scroll">
+            <h2>Subscribe to Crew Signal</h2>
+            <div class="indicates-required">
+              <span class="asterisk">*</span> indicates required
+            </div>
+
+            <div class="mc-field-group">
+              <label for="mce-EMAIL">Email Address <span class="asterisk">*</span></label>
+              <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required>
+            </div>
+
+            <div class="mc-field-group">
+              <label for="mce-FNAME">First Name <span class="asterisk">*</span></label>
+              <input ty
