@@ -145,7 +145,7 @@
       text-decoration: underline;
     }
 
-    /* Center the button row container (Mailchimp clear class) */
+    /* Center the button row container */
     #mc-embedded-subscribe-form .clear {
       text-align: center;
       margin-top: 1.25rem;
@@ -259,4 +259,85 @@
 
             <div class="mc-field-group">
               <label for="mce-FNAME">First Name <span class="asterisk">*</span></label>
-              <input ty
+              <input type="text" name="FNAME" class="required text" id="mce-FNAME" required>
+            </div>
+
+            <div class="mc-field-group">
+              <label for="mce-LNAME">Last Name <span class="asterisk">*</span></label>
+              <input type="text" name="LNAME" class="required text" id="mce-LNAME" required>
+            </div>
+
+            <div class="mc-field-group">
+              <label for="mce-MMERGE5">Airline <span class="asterisk">*</span></label>
+              <input type="text" name="MMERGE5" class="required text" id="mce-MMERGE5" required>
+            </div>
+
+            <div class="mc-field-group">
+              <label for="mce-MMERGE7">Base <span class="asterisk">*</span></label>
+              <input type="text" name="MMERGE7" class="required text" id="mce-MMERGE7" required>
+            </div>
+
+            <div id="mergeRow-gdpr" class="mergeRow gdpr-mergeRow content__gdprBlock mc-field-group">
+              <div class="content__gdpr">
+                <label>Crew Signal Updates &amp; Communications</label>
+                <p>Please select all the ways you would like to hear from us:</p>
+                <fieldset class="mc_fieldset gdprRequired mc-field-group" name="interestgroup_field">
+                  <label class="checkbox subfield" for="gdpr_124101">
+                    <input type="checkbox" id="gdpr_124101" name="gdpr[124101]" class="gdpr" value="Y">
+                    <span>Email – I agree to receive Crew Signal updates, reports, and bulletins by email. I understand I can unsubscribe at any time.</span>
+                  </label>
+                  <label class="checkbox subfield" for="gdpr_124102">
+                    <input type="checkbox" id="gdpr_124102" name="gdpr[124102]" class="gdpr" value="Y">
+                    <span>Direct updates or special notices – I consent to occasional follow-up messages about important industry or governance developments.</span>
+                  </label>
+                </fieldset>
+                <p>
+                  You can unsubscribe at any time by clicking the link in the footer of our emails.
+                  For information about our privacy practices, please visit our website.
+                </p>
+              </div>
+              <div class="content__gdprLegal">
+                <p>
+                  We use Mailchimp as our marketing platform. By clicking below to subscribe, you acknowledge that your information will be transferred to Mailchimp for processing.
+                  <a href="https://mailchimp.com/legal/terms">Learn more</a> about Mailchimp's privacy practices.
+                </p>
+              </div>
+            </div>
+
+            <div id="mce-responses" class="clear">
+              <div class="response" id="mce-error-response" style="display:none"></div>
+              <div class="response" id="mce-success-response" style="display:none"></div>
+            </div>
+
+            <div aria-hidden="true" style="position:absolute; left:-5000px;">
+              <input type="text" name="b_b1ba2124e69ba9e678f487d1e_4751393351" tabindex="-1" value="">
+            </div>
+
+            <div class="subscribe-submit-wrap">
+              <button type="submit" id="mc-embedded-subscribe" class="subscribe-submit-button">
+                Submit
+              </button>
+            </div>
+
+          </div>
+        </form>
+        <!-- END Mailchimp embedded form -->
+      </div>
+    </section>
+  </div>
+
+  <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+  <script type="text/javascript">
+    (function($) {
+      window.fnames = new Array();
+      window.ftypes = new Array();
+      fnames[0]='EMAIL';ftypes[0]='email';
+      fnames[1]='FNAME';ftypes[1]='text';
+      fnames[2]='LNAME';ftypes[2]='text';
+      fnames[5]='MMERGE5';ftypes[5]='text';
+      fnames[7]='MMERGE7';ftypes[7]='text';
+    }(jQuery));
+    var $mcj = jQuery.noConflict(true);
+  </script>
+</body>
+</html>
