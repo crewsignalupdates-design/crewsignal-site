@@ -9,9 +9,20 @@
     body {
       font-family: system-ui, Arial, sans-serif;
       margin: 2rem;
-      background-color: #f8f9fa;
-      color: #222;
+      background-color: #020617; /* dark background */
+      color: #e5e7eb;            /* light text */
       line-height: 1.5;
+    }
+
+    /* Global link styles for dark background */
+    a {
+      color: #bfdbfe;            /* light blue for contrast */
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #facc15;            /* warm bright hover */
+      text-decoration: underline;
     }
 
     h1 {
@@ -26,22 +37,22 @@
     }
 
     .card {
-      background: #fff;
+      background: #0b1120;       /* slightly lighter than body */
       border-radius: 0.75rem;
       padding: 1.5rem;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.6);
       text-align: center;
       transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
 
     .card:hover {
       transform: translateY(-4px);
-      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      box-shadow: 0 16px 40px rgba(0,0,0,0.8);
     }
 
     .card a {
       text-decoration: none;
-      color: #0044aa;
+      color: #bfdbfe;            /* ensure card links stay light */
       font-weight: 600;
       display: block;
       margin-top: 0.5rem;
@@ -51,44 +62,43 @@
       text-align: center;
       margin-top: 3rem;
       font-size: 0.9rem;
-      color: #666;
+      color: #9ca3af;            /* muted light gray */
     }
 
     /* Centered homepage subscribe block */
-   .home-subscribe {
-  margin-top: 3rem;
-  text-align: center;
-}
+    .home-subscribe {
+      margin-top: 3rem;
+      text-align: center;
+    }
 
-.subscribe-button {
-  display: inline-block;
-  margin-top: 1rem;
-  padding: 0.6rem 1.4rem;
-  border-radius: 6px;
-  background-color: #0044aa;
-  color: #fff;
-  font-weight: 600;
-  text-decoration: none;
-  font-size: 1rem;
-}
+    .subscribe-button {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.6rem 1.4rem;
+      border-radius: 6px;
+      background-color: #0044aa; /* blue rectangle */
+      color: #fff;
+      font-weight: 600;
+      text-decoration: none;
+      font-size: 1rem;
+    }
 
-.subscribe-button:hover {
-  background-color: #00337f;
-}
+    .subscribe-button:hover {
+      background-color: #00337f;
+    }
 
-.subscribe-heading {
-  font-size: 1.1rem;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-}
+    .subscribe-heading {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
 
-.subscribe-privacy {
-  text-align: center;
-  font-size: 0.9rem;
-  color: #555;
-  margin-top: 0.6rem;
-}
- 
+    .subscribe-privacy {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #9ca3af;            /* lighter for dark bg */
+      margin-top: 0.6rem;
+    }
   </style>
 </head>
 
@@ -101,17 +111,15 @@
       <a href="/reports/merger-integration/">View Reports →</a>
     </div>
 
-   <div class="card">
-  <h2>Mediation</h2>
-  <a href="/reports/mediation/">View Updates →</a>
-</div>
- 
+    <div class="card">
+      <h2>Mediation</h2>
+      <a href="/mediation-updates/">View Updates →</a>
+    </div>
 
-   <div class="card">
-  <h2>NMB Docket</h2>
-  <a href="/nmb-docket/">View Dockets →</a>
-</div>
- 
+    <div class="card">
+      <h2>NMB Docket</h2>
+      <a href="/nmb-docket/">View Dockets →</a>
+    </div>
 
     <div class="card">
       <h2>CWA-AFA</h2>
@@ -123,17 +131,16 @@
 
   <!-- ✉️ Netlify signup form -->
   <div class="home-subscribe">
-  <p class="subscribe-heading">Stay Informed with Crew Signal</p>
+    <p class="subscribe-heading">Stay Informed with Crew Signal</p>
 
-  <a class="subscribe-button" href="/subscribe/">
-    Go to full signup form →
-  </a>
+    <a class="subscribe-button" href="/subscribe/">
+      Subscribe
+    </a>
 
-  <p class="subscribe-privacy">
-    We respect your privacy. Your email will only be used for Crew Signal updates and will never be shared or sold.
-  </p>
-</div>
-
+    <p class="subscribe-privacy">
+      We respect your privacy. Your email will only be used for Crew Signal updates and will never be shared or sold.
+    </p>
+  </div>
 
   <footer>
     <p>© <span id="year"></span> Crew Signal · Informational resource for aviation professionals</p>
