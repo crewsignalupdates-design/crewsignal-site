@@ -328,3 +328,21 @@ form button[type="submit"]:hover,
 form button:hover {
   background-color: #e6e6e6;
 }
+/* Improved link visibility on dark backgrounds */
+a {
+  color: #aee6ff; /* lighter blue, more contrast */
+  text-decoration: none;
+}
+
+a:hover {
+  color: #facc15; /* bright gold hover, matches CS accent */
+  text-decoration: underline;
+}
+
+.cs-report__list a {
+  color: #aee6ff;
+}
+
+.cs-report__list a:hover {
+  color: #facc15;
+}
