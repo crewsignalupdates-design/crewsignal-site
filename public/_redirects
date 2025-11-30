@@ -7,6 +7,10 @@ https://www.crewsignal.org/* https://crewsignal.org/:splat 301!
 /mediation-updates   /reports/mediation/   301
 /mediation-updates/* /reports/mediation/   301
 
+# Mediation: old nested path -> mediation hub
+/reports/mediation/mediation-updates    /reports/mediation/   301
+/reports/mediation/mediation-updates/*  /reports/mediation/   301
+
 # Mediation: old RLA path -> new mediation index
 /reports/mediation/rla/ /reports/mediation/ 301
 
