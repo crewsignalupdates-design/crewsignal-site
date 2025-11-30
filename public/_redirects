@@ -3,10 +3,13 @@ http://crewsignal.org/* https://crewsignal.org/:splat 301!
 http://www.crewsignal.org/* https://crewsignal.org/:splat 301!
 https://www.crewsignal.org/* https://crewsignal.org/:splat 301!
 
+# Mediation: old shortcut -> new mediation hub
+/mediation-updates   /reports/mediation/   301
+/mediation-updates/* /reports/mediation/   301
+
 # Mediation: old RLA path -> new mediation index
 /reports/mediation/rla/ /reports/mediation/ 301
 
-
 # NMB: old path -> new tracker
-/nmb-docket /reports/nmb/ 301
+/nmb-docket   /reports/nmb/ 301
 /nmb-docket/* /reports/nmb/ 301
