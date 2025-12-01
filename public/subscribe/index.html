@@ -145,31 +145,32 @@
       margin-top: 1.5rem;
     }
 
-  /* Crew Signal blue Submit button (matches homepage CTA style) */
-#mc-embedded-subscribe,
-.subscribe-submit-button {
-  display: inline-flex;
+/* Crew Signal blue Submit button (override Mailchimp .button styles) */
+#mc_embed_signup #mc-embedded-subscribe.button,
+#mc_embed_signup .subscribe-submit-button {
+  display: inline-flex !important;
   align-items: center;
   justify-content: center;
-  padding: 0.7rem 1.8rem;
-  border-radius: 999px;                 /* pill shape */
-  background-color: var(--cs-accent, #38bdf8);
-  color: #0b1020;
+  padding: 0.7rem 1.8rem !important;
+  border-radius: 999px !important;  /* pill shape */
+  background-color: var(--cs-accent, #38bdf8) !important;
+  color: #0b1020 !important;
   font-weight: 600;
   font-size: 0.95rem;
   text-decoration: none;
-  border: 1px solid rgba(56, 189, 248, 0.9);
+  border: 1px solid rgba(56, 189, 248, 0.9) !important;
   box-shadow: 0 10px 25px rgba(15, 23, 42, 0.65);
   cursor: pointer;
   transition: transform 0.08s ease-out, box-shadow 0.08s ease-out, background-color 0.15s ease-out;
 }
 
-#mc-embedded-subscribe:hover,
-.subscribe-submit-button:hover {
-  background-color: #0ea5e9;
+#mc_embed_signup #mc-embedded-subscribe.button:hover,
+#mc_embed_signup .subscribe-submit-button:hover {
+  background-color: #0ea5e9 !important;
   transform: translateY(-1px);
   box-shadow: 0 14px 30px rgba(15, 23, 42, 0.8);
 }
+
  
 
     /* GDPR block styling */
@@ -343,7 +344,7 @@
                 name="subscribe"
                 id="mc-embedded-subscribe"
                 class="button subscribe-submit-button"
-                value="Subscribe"
+                value="Submit"
               >
             </div>
           </div>
