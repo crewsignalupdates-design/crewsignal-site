@@ -145,28 +145,40 @@
       margin-top: 1.5rem;
     }
 
-/* Crew Signal blue Submit button (override Mailchimp .button styles) */
+/* Crew Signal blue Submit button (match homepage CTA and kill browser/Mailchimp defaults) */
 #mc_embed_signup #mc-embedded-subscribe.button,
 #mc_embed_signup .subscribe-submit-button {
+  /* reset native button quirks */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: none !important;
+  border: none !important;
+
   display: inline-flex !important;
   align-items: center;
   justify-content: center;
 
-  /* 🔹 key fixes to make it look like the homepage CTA */
   width: auto !important;          /* stop Mailchimp from forcing full-width */
-  min-width: 8rem;                 /* optional: keeps it from getting too tiny */
+  min-width: 8rem;                 /* keeps it from getting too tiny */
 
   padding: 0.7rem 1.8rem !important;
   border-radius: 999px !important;  /* pill shape */
+
   background-color: var(--cs-accent, #38bdf8) !important;
   color: #0b1020 !important;
+
+  font-family: inherit;
   font-weight: 600;
   font-size: 0.95rem;
   text-decoration: none;
-  border: 1px solid rgba(56, 189, 248, 0.9) !important;
+
   box-shadow: 0 10px 25px rgba(15, 23, 42, 0.65);
   cursor: pointer;
-  transition: transform 0.08s ease-out, box-shadow 0.08s ease-out, background-color 0.15s ease-out;
+  transition:
+    transform 0.08s ease-out,
+    box-shadow 0.08s ease-out,
+    background-color 0.15s ease-out;
 }
 
 #mc_embed_signup #mc-embedded-subscribe.button:hover,
@@ -177,13 +189,13 @@
 }
 
 
+
 #mc_embed_signup #mc-embedded-subscribe.button:hover,
 #mc_embed_signup .subscribe-submit-button:hover {
   background-color: #0ea5e9 !important;
   transform: translateY(-1px);
   box-shadow: 0 14px 30px rgba(15, 23, 42, 0.8);
 }
-
  
 
     /* GDPR block styling */
