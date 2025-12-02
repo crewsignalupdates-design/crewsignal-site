@@ -346,3 +346,36 @@ a:hover {
 .cs-report__list a:hover {
   color: #facc15;
 }
+
+.cs-report-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.cs-report-table th,
+.cs-report-table td {
+  padding: 0.75rem 0.9rem;
+  vertical-align: top;
+}
+
+.cs-report-table thead th {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+  text-align: left;
+  font-size: 0.9rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.cs-report-table tbody tr:nth-child(even):not(.cs-subheader) {
+  background-color: rgba(255, 255, 255, 0.02);
+}
+
+.cs-report-table tbody tr.cs-subheader td {
+  padding-top: 1.2rem;
+  padding-bottom: 0.4rem;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  opacity: 0.85;
+}
