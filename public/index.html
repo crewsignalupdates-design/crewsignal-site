@@ -99,6 +99,26 @@
       color: #9ca3af;            /* lighter for dark bg */
       margin-top: 0.6rem;
     }
+    /* QR Code Block */
+.cs-home-qr {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.cs-home-qr-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #e5e7eb; /* matches your existing light text */
+}
+
+.cs-qr-image {
+  width: 180px;
+  height: auto;
+  display: inline-block;
+  filter: drop-shadow(0 0 6px rgba(0,0,0,0.6));
+}
+
   </style>
 </head>
 
@@ -142,7 +162,12 @@
       We respect your privacy. Your email will only be used for Crew Signal updates and will never be shared or sold.
     </p>
   </div>
-
+ <div class="cs-home-qr">
+    <h2 class="cs-home-qr-title">Scan to Visit Crew Signal</h2>
+    <img src="/assets/img/qr-home.svg"
+         alt="QR code linking to the Crew Signal homepage"
+         class="cs-qr-image">
+  </div>
   <footer>
     <p>© <span id="year"></span> Crew Signal · Informational resource for aviation professionals</p>
   </footer>
