@@ -4,44 +4,46 @@
   <meta charset="UTF-8" />
   <title>NMB Docket – Projected Activity for December 2025 | Crew Signal</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Projected NMB activity for December 2025 focused on United Airlines and JetBlue Airways, with emphasis on United–AFA mediation and related NMB activity." />
   <link rel="stylesheet" href="/assets/css/main.css" />
 </head>
 
-<body>
-  <main class="cs-report">
-    <a href="/reports/nmb/" class="cs-back-link">
-      ← Back to NMB Docket Tracker
-    </a>
+<body class="cs-report">
+  <header class="cs-report__header">
+    <a href="/reports/nmb/" class="cs-report__back">← Back to NMB Docket Tracker</a>
+    <p class="cs-report__eyebrow">National Mediation Board · Docket</p>
+    <h1 class="cs-report__title">Projected NMB Activity – December 2025</h1>
+    <p class="cs-report__subtitle">
+      Forward-looking outlook for United Airlines and JetBlue Airways as of
+      <strong>2025.12.01</strong>, with emphasis on United–AFA mediation and related
+      National Mediation Board (NMB) activity.
+    </p>
 
-    <header class="cs-report__header">
-      <p class="cs-report__eyebrow">NMB Docket Tracker</p>
-      <h1 class="cs-report__title">Projected NMB Activity – December 2025</h1>
-      <p class="cs-report__subtitle">
-        Forward-looking outlook for United Airlines and JetBlue Airways as of
-        <strong>2025.12.01</strong>, with emphasis on United–AFA mediation and related
-        National Mediation Board (NMB) activity.
-      </p>
-      <div class="cs-report__meta">
-        <span class="cs-report__meta-item">
-          Focus: United Airlines &amp; JetBlue Airways
-        </span>
-        <span class="cs-report__meta-item">
-          Board: National Mediation Board (NMB)
-        </span>
-        <span class="cs-report__meta-item">
-          Timeframe: December 1–31, 2025
-        </span>
+    <dl class="cs-report__meta">
+      <div class="cs-report__meta-item">
+        <dt>Focus</dt>
+        <dd>United Airlines &amp; JetBlue Airways</dd>
       </div>
-    </header>
+      <div class="cs-report__meta-item">
+        <dt>Board</dt>
+        <dd>National Mediation Board (NMB)</dd>
+      </div>
+      <div class="cs-report__meta-item">
+        <dt>Timeframe</dt>
+        <dd>December 1–31, 2025</dd>
+      </div>
+    </dl>
+  </header>
 
-    <section class="cs-report__section">
-      <h2 class="cs-report__section-title">Overview – December 2025 Outlook</h2>
+  <section class="cs-report__section">
+    <h2 class="cs-report__section-title">Overview – December 2025 Outlook</h2>
+    <div class="cs-report__prose">
       <p>
         This report does <em>not</em> reproduce an official “monthly docket schedule” from the
         NMB; the Board does not publish a forward-looking calendar of expected actions.
         Instead, Crew Signal provides a projected outlook for December 2025 based on:
       </p>
-      <ul>
+      <ul class="cs-report__list">
         <li>United–AFA and other union bargaining calendars;</li>
         <li>published NMB contingency plans during the current appropriations lapse;</li>
         <li>recent NMB determinations and case history in 2025; and</li>
@@ -52,22 +54,23 @@
         docket entries and formal mediation sessions may remain delayed or suspended even
         where underlying activity is continuing behind the scenes.
       </p>
-    </section>
+    </div>
+  </section>
 
-    <section class="cs-report__section">
-      <h2 class="cs-report__section-title">Projected NMB Activity – December 2025</h2>
+  <section class="cs-report__section">
+    <h2 class="cs-report__section-title">Projected NMB Activity – December 2025</h2>
 
-      <table class="cs-report-table">
+    <div class="cs-report__prose">
+      <table class="cs-report__table">
         <thead>
           <tr>
-            <th style="width: 24%">Category</th>
-            <th style="width: 76%">December 2025 Outlook</th>
+            <th>Category</th>
+            <th>December 2025 Outlook</th>
           </tr>
         </thead>
 
         <tbody>
-          <!-- Overall NMB Operations -->
-          <tr class="cs-subheader">
+          <tr>
             <td colspan="2"><strong>Overall NMB Operations</strong></td>
           </tr>
           <tr>
@@ -91,8 +94,7 @@
             </td>
           </tr>
 
-          <!-- United – AFA (Flight Attendants) -->
-          <tr class="cs-subheader">
+          <tr>
             <td colspan="2"><strong>United – AFA (Flight Attendants)</strong></td>
           </tr>
           <tr>
@@ -135,20 +137,14 @@
               No specific United–AFA docket actions (such as proffer of arbitration or release
               from mediation) have been publicly signaled for December. The most realistic
               December outcomes are:
-              <ul>
-                <li>
-                  continuation of direct bargaining between United and AFA; and
-                </li>
-                <li>
-                  preparatory work by the mediator and parties, timed to resume formal
-                  mediation once appropriations are in place.
-                </li>
+              <ul class="cs-report__list">
+                <li>continuation of direct bargaining between United and AFA; and</li>
+                <li>preparatory work by the mediator and parties, timed to resume formal mediation once appropriations are in place.</li>
               </ul>
             </td>
           </tr>
 
-          <!-- United – IBT (Mechanics & Related) -->
-          <tr class="cs-subheader">
+          <tr>
             <td colspan="2"><strong>United – IBT (Mechanics &amp; Related)</strong></td>
           </tr>
           <tr>
@@ -173,8 +169,7 @@
             </td>
           </tr>
 
-          <!-- JetBlue – Representation Cases -->
-          <tr class="cs-subheader">
+          <tr>
             <td colspan="2"><strong>JetBlue – Representation &amp; Determinations</strong></td>
           </tr>
           <tr>
@@ -197,8 +192,7 @@
             </td>
           </tr>
 
-          <!-- Industry Benchmarks / Other Carriers -->
-          <tr class="cs-subheader">
+          <tr>
             <td colspan="2"><strong>Industry Benchmarks &amp; Related Cases</strong></td>
           </tr>
           <tr>
@@ -224,30 +218,18 @@
             </td>
           </tr>
 
-          <!-- Monitoring & Caveats -->
-          <tr class="cs-subheader">
+          <tr>
             <td colspan="2"><strong>Monitoring Plan &amp; Caveats</strong></td>
           </tr>
           <tr>
             <td>December Monitoring</td>
             <td>
               Throughout December 2025, Crew Signal will monitor:
-              <ul>
-                <li>
-                  any resumption of NMB Weekly Activity Reports and press releases once
-                  funding is restored;
-                </li>
-                <li>
-                  updates to the NMB determinations list affecting airline crafts and classes;
-                </li>
-                <li>
-                  AFA, IBT, and JetBlue-related union channels for changes in bargaining
-                  posture; and
-                </li>
-                <li>
-                  public statements by United, JetBlue, and peer carriers that might signal
-                  new filings or requests for NMB involvement.
-                </li>
+              <ul class="cs-report__list">
+                <li>any resumption of NMB Weekly Activity Reports and press releases once funding is restored;</li>
+                <li>updates to the NMB determinations list affecting airline crafts and classes;</li>
+                <li>AFA, IBT, and JetBlue-related union channels for changes in bargaining posture; and</li>
+                <li>public statements by United, JetBlue, and peer carriers that might signal new filings or requests for NMB involvement.</li>
               </ul>
             </td>
           </tr>
@@ -263,7 +245,11 @@
           </tr>
         </tbody>
       </table>
-    </section>
-  </main>
+    </div>
+  </section>
+
+  <footer class="cs-report__footer">
+    <p class="cs-report__fineprint">© Crew Signal · Informational resource for aviation professionals</p>
+  </footer>
 </body>
 </html>
