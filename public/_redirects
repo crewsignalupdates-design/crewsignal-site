@@ -17,5 +17,11 @@ https://www.crewsignal.org/* https://crewsignal.org/:splat 301!
 # NMB: old path -> new tracker
 /nmb-docket   /reports/nmb/ 301
 /nmb-docket/* /reports/nmb/ 301
-/reports/nmb /reports/contract-architecture/ 301
-/reports/nmb/ /reports/contract-architecture/ 301
+
+# NMB: old path -> new tracker
+/nmb-docket   /reports/nmb/ 301
+/nmb-docket/* /reports/nmb/ 301
+
+# NMB: retire tracker -> Contract Architecture hub
+/reports/nmb   /reports/contract-architecture/ 301
+/reports/nmb/* /reports/contract-architecture/ 301
