@@ -21,3 +21,6 @@ https://www.crewsignal.org/* https://crewsignal.org/:splat 301!
 # NMB: retire tracker -> Contract Architecture hub (force override)
 /reports/nmb/  /reports/contract-architecture/ 301!
 /reports/nmb/* /reports/contract-architecture/ 301!
+
+/reports/cwa/  /reports/union-governance/ 301!
+/reports/cwa/* /reports/union-governance/ 301!
