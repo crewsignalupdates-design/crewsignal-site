@@ -1,2 +1,6 @@
 
 public/index.backup.html
+
+# build output
+dist/
+
