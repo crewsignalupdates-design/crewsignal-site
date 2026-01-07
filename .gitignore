@@ -4,3 +4,7 @@ public/index.backup.html
 # build output
 dist/
 
+
+# Backup files
+*.bak
+
