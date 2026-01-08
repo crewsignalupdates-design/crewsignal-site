@@ -1,17 +1,18 @@
 ﻿{
-    "generatedAt":  "2026-01-07T19:12:54-08:00",
+    "generatedAt":  "2026-01-07T20:26:32-08:00",
     "root":  "/reports/contract-architecture/",
     "contracts":  [
                       {
                           "union":  "APFA",
                           "carrier":  "American",
                           "carrierPage":  "/reports/contract-architecture/APFA/American/",
+                          "status":  "active",
                           "pdfCount":  1,
                           "pdfs":  [
                                        {
                                            "fileName":  "American_APFA_CBA_2024-2029.pdf",
                                            "href":  "/reports/contract-architecture/APFA/American/contract/American_APFA_CBA_2024-2029.pdf",
-                                           "docType":  "Unknown",
+                                           "docType":  "CBA",
                                            "years":  {
                                                          "start":  2024,
                                                          "end":  2029
@@ -23,6 +24,7 @@
                           "union":  "CWA-AFA",
                           "carrier":  "Air Transport International",
                           "carrierPage":  "/reports/contract-architecture/CWA-AFA/Air Transport International/",
+                          "status":  "active",
                           "pdfCount":  1,
                           "pdfs":  [
                                        {
@@ -40,6 +42,7 @@
                           "union":  "CWA-AFA",
                           "carrier":  "Air Wisconsin",
                           "carrierPage":  "/reports/contract-architecture/CWA-AFA/Air Wisconsin/",
+                          "status":  "active",
                           "pdfCount":  1,
                           "pdfs":  [
                                        {
@@ -57,12 +60,13 @@
                           "union":  "CWA-AFA",
                           "carrier":  "Alaska",
                           "carrierPage":  "/reports/contract-architecture/CWA-AFA/Alaska/",
+                          "status":  "active",
                           "pdfCount":  1,
                           "pdfs":  [
                                        {
                                            "fileName":  "Alaska_CWA-AFA_CBA_2025-2028.pdf",
                                            "href":  "/reports/contract-architecture/CWA-AFA/Alaska/contract/Alaska_CWA-AFA_CBA_2025-2028.pdf",
-                                           "docType":  "Unknown",
+                                           "docType":  "CBA",
                                            "years":  {
                                                          "start":  2025,
                                                          "end":  2028
@@ -74,6 +78,7 @@
                           "union":  "CWA-AFA",
                           "carrier":  "Avelo Airlines",
                           "carrierPage":  "/reports/contract-architecture/CWA-AFA/Avelo Airlines/",
+                          "status":  "no_pdf",
                           "pdfCount":  0,
                           "pdfs":  [
 
@@ -83,6 +88,7 @@
                           "union":  "CWA-AFA",
                           "carrier":  "Breeze Airways",
                           "carrierPage":  "/reports/contract-architecture/CWA-AFA/Breeze Airways/",
+                          "status":  "no_pdf",
                           "pdfCount":  0,
                           "pdfs":  [
 
@@ -92,6 +98,7 @@
                           "union":  "CWA-AFA",
                           "carrier":  "Eastern",
                           "carrierPage":  "/reports/contract-architecture/CWA-AFA/Eastern/",
+                          "status":  "active",
                           "pdfCount":  1,
                           "pdfs":  [
                                        {
@@ -109,6 +116,7 @@
                           "union":  "CWA-AFA",
                           "carrier":  "Endeavor Air",
                           "carrierPage":  "/reports/contract-architecture/CWA-AFA/Endeavor Air/",
+                          "status":  "active",
                           "pdfCount":  1,
                           "pdfs":  [
                                        {
@@ -126,6 +134,7 @@
                           "union":  "CWA-AFA",
                           "carrier":  "Envoy Air",
                           "carrierPage":  "/reports/contract-architecture/CWA-AFA/Envoy Air/",
+                          "status":  "active",
                           "pdfCount":  1,
                           "pdfs":  [
                                        {
@@ -143,12 +152,13 @@
                           "union":  "CWA-AFA",
                           "carrier":  "Frontier",
                           "carrierPage":  "/reports/contract-architecture/CWA-AFA/Frontier/",
+                          "status":  "active",
                           "pdfCount":  1,
                           "pdfs":  [
                                        {
                                            "fileName":  "Frontier_CWA-AFA_CBA_2019-2024.pdf",
                                            "href":  "/reports/contract-architecture/CWA-AFA/Frontier/contract/Frontier_CWA-AFA_CBA_2019-2024.pdf",
-                                           "docType":  "Unknown",
+                                           "docType":  "CBA",
                                            "years":  {
                                                          "start":  2019,
                                                          "end":  2024
@@ -160,6 +170,7 @@
                           "union":  "CWA-AFA",
                           "carrier":  "GoJet",
                           "carrierPage":  "/reports/contract-architecture/CWA-AFA/GoJet/",
+                          "status":  "active",
                           "pdfCount":  1,
                           "pdfs":  [
                                        {
@@ -177,12 +188,13 @@
                           "union":  "CWA-AFA",
                           "carrier":  "Hawaiian",
                           "carrierPage":  "/reports/contract-architecture/CWA-AFA/Hawaiian/",
+                          "status":  "active",
                           "pdfCount":  1,
                           "pdfs":  [
                                        {
                                            "fileName":  "Hawaiian-CWA-AFA_CBA_2020-2025.pdf",
                                            "href":  "/reports/contract-architecture/CWA-AFA/Hawaiian/contract/Hawaiian-CWA-AFA_CBA_2020-2025.pdf",
-                                           "docType":  "Unknown",
+                                           "docType":  "CBA",
                                            "years":  {
                                                          "start":  2020,
                                                          "end":  2025
@@ -194,6 +206,7 @@
                           "union":  "CWA-AFA",
                           "carrier":  "Horizon Air",
                           "carrierPage":  "/reports/contract-architecture/CWA-AFA/Horizon Air/",
+                          "status":  "active",
                           "pdfCount":  1,
                           "pdfs":  [
                                        {
@@ -211,6 +224,7 @@
                           "union":  "CWA-AFA",
                           "carrier":  "Mesa Airlines",
                           "carrierPage":  "/reports/contract-architecture/CWA-AFA/Mesa Airlines/",
+                          "status":  "active",
                           "pdfCount":  1,
                           "pdfs":  [
                                        {
@@ -228,6 +242,7 @@
                           "union":  "CWA-AFA",
                           "carrier":  "Norse Atlantic Airways",
                           "carrierPage":  "/reports/contract-architecture/CWA-AFA/Norse Atlantic Airways/",
+                          "status":  "active",
                           "pdfCount":  1,
                           "pdfs":  [
                                        {
@@ -242,6 +257,7 @@
                           "union":  "CWA-AFA",
                           "carrier":  "Omni Air International",
                           "carrierPage":  "/reports/contract-architecture/CWA-AFA/Omni Air International/",
+                          "status":  "active",
                           "pdfCount":  1,
                           "pdfs":  [
                                        {
@@ -259,6 +275,7 @@
                           "union":  "CWA-AFA",
                           "carrier":  "Piedmont Airlines",
                           "carrierPage":  "/reports/contract-architecture/CWA-AFA/Piedmont Airlines/",
+                          "status":  "active",
                           "pdfCount":  1,
                           "pdfs":  [
                                        {
@@ -276,6 +293,7 @@
                           "union":  "CWA-AFA",
                           "carrier":  "PSA Airlines",
                           "carrierPage":  "/reports/contract-architecture/CWA-AFA/PSA Airlines/",
+                          "status":  "active",
                           "pdfCount":  1,
                           "pdfs":  [
                                        {
@@ -293,12 +311,13 @@
                           "union":  "CWA-AFA",
                           "carrier":  "Spirit",
                           "carrierPage":  "/reports/contract-architecture/CWA-AFA/Spirit/",
+                          "status":  "active",
                           "pdfCount":  1,
                           "pdfs":  [
                                        {
                                            "fileName":  "Spirit_CWA-AFA_CBA_2023-2026.pdf",
                                            "href":  "/reports/contract-architecture/CWA-AFA/Spirit/contract/Spirit_CWA-AFA_CBA_2023-2026.pdf",
-                                           "docType":  "Unknown",
+                                           "docType":  "CBA",
                                            "years":  {
                                                          "start":  2023,
                                                          "end":  2026
@@ -310,12 +329,13 @@
                           "union":  "CWA-AFA",
                           "carrier":  "United",
                           "carrierPage":  "/reports/contract-architecture/CWA-AFA/United/",
+                          "status":  "active",
                           "pdfCount":  2,
                           "pdfs":  [
                                        {
                                            "fileName":  "United_CWA-AFA_CBA_2016-2021.pdf",
                                            "href":  "/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_CBA_2016-2021.pdf",
-                                           "docType":  "Unknown",
+                                           "docType":  "CBA",
                                            "years":  {
                                                          "start":  2016,
                                                          "end":  2021
@@ -324,7 +344,7 @@
                                        {
                                            "fileName":  "United_CWA-AFA_TA_2025-2030.pdf",
                                            "href":  "/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2025-2030.pdf",
-                                           "docType":  "Unknown",
+                                           "docType":  "TA",
                                            "years":  {
                                                          "start":  2025,
                                                          "end":  2030
@@ -336,6 +356,7 @@
                           "union":  "IAM",
                           "carrier":  "National Airlines",
                           "carrierPage":  "/reports/contract-architecture/IAM/National Airlines/",
+                          "status":  "active",
                           "pdfCount":  1,
                           "pdfs":  [
                                        {
@@ -350,6 +371,7 @@
                           "union":  "IBT",
                           "carrier":  "NetJets",
                           "carrierPage":  "/reports/contract-architecture/IBT/NetJets/",
+                          "status":  "active",
                           "pdfCount":  1,
                           "pdfs":  [
                                        {
@@ -364,6 +386,7 @@
                           "union":  "IBT",
                           "carrier":  "Republic Airways",
                           "carrierPage":  "/reports/contract-architecture/IBT/Republic Airways/",
+                          "status":  "active",
                           "pdfCount":  1,
                           "pdfs":  [
                                        {
@@ -378,6 +401,7 @@
                           "union":  "TWU",
                           "carrier":  "Allegiant Air",
                           "carrierPage":  "/reports/contract-architecture/TWU/Allegiant Air/",
+                          "status":  "active",
                           "pdfCount":  1,
                           "pdfs":  [
                                        {
@@ -395,6 +419,7 @@
                           "union":  "TWU",
                           "carrier":  "Flight Services International",
                           "carrierPage":  "/reports/contract-architecture/TWU/Flight Services International/",
+                          "status":  "active",
                           "pdfCount":  1,
                           "pdfs":  [
                                        {
@@ -412,12 +437,13 @@
                           "union":  "TWU",
                           "carrier":  "JetBlue",
                           "carrierPage":  "/reports/contract-architecture/TWU/JetBlue/",
+                          "status":  "active",
                           "pdfCount":  1,
                           "pdfs":  [
                                        {
                                            "fileName":  "JetBlue_TWU_CBA_2018-2023.pdf",
                                            "href":  "/reports/contract-architecture/TWU/JetBlue/contract/JetBlue_TWU_CBA_2018-2023.pdf",
-                                           "docType":  "Unknown",
+                                           "docType":  "CBA",
                                            "years":  {
                                                          "start":  2018,
                                                          "end":  2023
@@ -429,12 +455,13 @@
                           "union":  "TWU",
                           "carrier":  "Southwest",
                           "carrierPage":  "/reports/contract-architecture/TWU/Southwest/",
+                          "status":  "active",
                           "pdfCount":  1,
                           "pdfs":  [
                                        {
                                            "fileName":  "Southwest_TWU_CBA_2024-2028.pdf",
                                            "href":  "/reports/contract-architecture/TWU/Southwest/contract/Southwest_TWU_CBA_2024-2028.pdf",
-                                           "docType":  "Unknown",
+                                           "docType":  "CBA",
                                            "years":  {
                                                          "start":  2024,
                                                          "end":  2028
