@@ -34,12 +34,26 @@ ForEach-Object {
     if (Test-Path $contractDir) {
       Get-ChildItem $contractDir -Filter *.pdf -ErrorAction SilentlyContinue |
       ForEach-Object {
-        $pdfs += [pscustomobject]@{
-          fileName = $_.Name
-          href     = "/reports/contract-architecture/$union/$carrier/contract/$($_.Name)"
-          docType  = Get-DocType $_.Name
-          years    = Get-YearRange $_.Name
-        }
+$years = Get-YearRange $_.Name
+$docType = Get-DocType $_.Name
+
+# Fallback: if it has a year range and isn't explicitly TA, treat as CBA
+if ($docType -eq "Unknown" -and $years -ne $null) {
+  $docType = "CBA"
+}
+
+# 2) If it's still Unknown (no year range, no CBA/TA keywords) => treat as Contract
+if ($docType -eq "Unknown") {
+  $docType = "Contract"
+}
+
+$pdfs += [pscustomobject]@{
+  fileName = $_.Name
+  href     = "/reports/contract-architecture/$union/$carrier/contract/$($_.Name)"
+  docType  = $docType
+  years    = $years
+}
+        
       }
     }
 

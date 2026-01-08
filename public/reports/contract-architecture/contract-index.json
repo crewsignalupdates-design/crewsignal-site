@@ -1,5 +1,5 @@
 ﻿{
-    "generatedAt":  "2026-01-07T20:26:32-08:00",
+    "generatedAt":  "2026-01-07T20:52:11-08:00",
     "root":  "/reports/contract-architecture/",
     "contracts":  [
                       {
@@ -30,7 +30,7 @@
                                        {
                                            "fileName":  "Air Transport International 2025-2029.pdf",
                                            "href":  "/reports/contract-architecture/CWA-AFA/Air Transport International/contract/Air Transport International 2025-2029.pdf",
-                                           "docType":  "Unknown",
+                                           "docType":  "CBA",
                                            "years":  {
                                                          "start":  2025,
                                                          "end":  2029
@@ -48,7 +48,7 @@
                                        {
                                            "fileName":  "Air Wisconsin Airlines 2020-2022.pdf",
                                            "href":  "/reports/contract-architecture/CWA-AFA/Air Wisconsin/contract/Air Wisconsin Airlines 2020-2022.pdf",
-                                           "docType":  "Unknown",
+                                           "docType":  "CBA",
                                            "years":  {
                                                          "start":  2020,
                                                          "end":  2022
@@ -104,7 +104,7 @@
                                        {
                                            "fileName":  "Eastern 2025-2030.pdf",
                                            "href":  "/reports/contract-architecture/CWA-AFA/Eastern/contract/Eastern 2025-2030.pdf",
-                                           "docType":  "Unknown",
+                                           "docType":  "CBA",
                                            "years":  {
                                                          "start":  2025,
                                                          "end":  2030
@@ -122,7 +122,7 @@
                                        {
                                            "fileName":  "Endeavor Air 2020-2025.pdf",
                                            "href":  "/reports/contract-architecture/CWA-AFA/Endeavor Air/contract/Endeavor Air 2020-2025.pdf",
-                                           "docType":  "Unknown",
+                                           "docType":  "CBA",
                                            "years":  {
                                                          "start":  2020,
                                                          "end":  2025
@@ -140,7 +140,7 @@
                                        {
                                            "fileName":  "Envoy Air 2021-2026.pdf",
                                            "href":  "/reports/contract-architecture/CWA-AFA/Envoy Air/contract/Envoy Air 2021-2026.pdf",
-                                           "docType":  "Unknown",
+                                           "docType":  "CBA",
                                            "years":  {
                                                          "start":  2021,
                                                          "end":  2026
@@ -176,7 +176,7 @@
                                        {
                                            "fileName":  "GoJet 2020-2025.pdf",
                                            "href":  "/reports/contract-architecture/CWA-AFA/GoJet/contract/GoJet 2020-2025.pdf",
-                                           "docType":  "Unknown",
+                                           "docType":  "CBA",
                                            "years":  {
                                                          "start":  2020,
                                                          "end":  2025
@@ -212,7 +212,7 @@
                                        {
                                            "fileName":  "Horizon Air 2020-2024.pdf",
                                            "href":  "/reports/contract-architecture/CWA-AFA/Horizon Air/contract/Horizon Air 2020-2024.pdf",
-                                           "docType":  "Unknown",
+                                           "docType":  "CBA",
                                            "years":  {
                                                          "start":  2020,
                                                          "end":  2024
@@ -230,7 +230,7 @@
                                        {
                                            "fileName":  "Mesa Airlines 2025-2027.pdf",
                                            "href":  "/reports/contract-architecture/CWA-AFA/Mesa Airlines/contract/Mesa Airlines 2025-2027.pdf",
-                                           "docType":  "Unknown",
+                                           "docType":  "CBA",
                                            "years":  {
                                                          "start":  2025,
                                                          "end":  2027
@@ -248,7 +248,7 @@
                                        {
                                            "fileName":  "Norse Atlantic_Airways.pdf",
                                            "href":  "/reports/contract-architecture/CWA-AFA/Norse Atlantic Airways/contract/Norse Atlantic_Airways.pdf",
-                                           "docType":  "Unknown",
+                                           "docType":  "Contract",
                                            "years":  null
                                        }
                                    ]
@@ -263,7 +263,7 @@
                                        {
                                            "fileName":  "Omni Air International 2017-2022.pdf",
                                            "href":  "/reports/contract-architecture/CWA-AFA/Omni Air International/contract/Omni Air International 2017-2022.pdf",
-                                           "docType":  "Unknown",
+                                           "docType":  "CBA",
                                            "years":  {
                                                          "start":  2017,
                                                          "end":  2022
@@ -281,7 +281,7 @@
                                        {
                                            "fileName":  "Piedmont Airlines 2022-2026.pdf",
                                            "href":  "/reports/contract-architecture/CWA-AFA/Piedmont Airlines/contract/Piedmont Airlines 2022-2026.pdf",
-                                           "docType":  "Unknown",
+                                           "docType":  "CBA",
                                            "years":  {
                                                          "start":  2022,
                                                          "end":  2026
@@ -299,7 +299,7 @@
                                        {
                                            "fileName":  "PSA Airlines 2019-2023.pdf",
                                            "href":  "/reports/contract-architecture/CWA-AFA/PSA Airlines/contract/PSA Airlines 2019-2023.pdf",
-                                           "docType":  "Unknown",
+                                           "docType":  "CBA",
                                            "years":  {
                                                          "start":  2019,
                                                          "end":  2023
@@ -407,7 +407,7 @@
                                        {
                                            "fileName":  "Allegiant Air 2024-2029_TWU_CBA.pdf",
                                            "href":  "/reports/contract-architecture/TWU/Allegiant Air/contract/Allegiant Air 2024-2029_TWU_CBA.pdf",
-                                           "docType":  "Unknown",
+                                           "docType":  "CBA",
                                            "years":  {
                                                          "start":  2024,
                                                          "end":  2029
@@ -425,7 +425,7 @@
                                        {
                                            "fileName":  "Flight Services International 2021-2026_TWU_CBA.pdf",
                                            "href":  "/reports/contract-architecture/TWU/Flight Services International/contract/Flight Services International 2021-2026_TWU_CBA.pdf",
-                                           "docType":  "Unknown",
+                                           "docType":  "CBA",
                                            "years":  {
                                                          "start":  2021,
                                                          "end":  2026
