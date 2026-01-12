@@ -404,4 +404,8 @@ a:hover {
   transform: translateY(-1px);
 }
 
+/* Add breathing room between weekly lists and following year headers */
+.cs-report__list + .cs-report__section-title {
+  margin-top: 2.5rem;
+}
 
