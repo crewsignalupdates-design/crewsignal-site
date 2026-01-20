@@ -409,3 +409,8 @@ a:hover {
   margin-top: 2.5rem;
 }
 
+/* Contract Architecture scorecard helpers */
+.cs-table__score {
+  text-align: center;
+  white-space: nowrap;
+}
