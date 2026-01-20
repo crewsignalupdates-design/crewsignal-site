@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>CWA-AFA · Hawaiian Airlines · Contract Architecture Analysis · CrewSignal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/assets/css/main.css" />
+</head>
+
+<body>
+  <article class="cs-report" id="contract-architecture-cwa-afa-hawaiian">
+
+    <!-- Header / Nav -->
+    <header class="cs-report__header">
+      <div class="cs-report__nav">
+        <a class="cs-link cs-link--back" href="/reports/contract-architecture/">← Back to Contract Architecture</a>
+      </div>
+
+      <h1 class="cs-report__title">CWA-AFA · Hawaiian Airlines</h1>
+      <p class="cs-report__dek">
+        Contract Architecture Analysis<br />
+        <span class="cs-report__dates">
+          Effective Period: April 3, 2020 – April 2, 2025<br />
+          <em>Extended by 2025 Contract Extension (see addendum)</em>
+        </span>
+      </p>
+    </header>
+
+    <!-- 1. Agreement Metadata -->
+    <section class="cs-report__section" id="agreement-metadata">
+      <h2>Agreement Metadata</h2>
+
+      <p>
+        Hawaiian’s 2020 Flight Attendant Agreement is a large, enterprise-scale contract (hundreds of pages) built to
+        govern multiple operating environments, including extensive international flying and Hawaii-specific operational
+        realities. The agreement is organized as a comprehensive “systems contract,” with many protections expressed
+        through defined terms, procedural tracks, and detailed pay/credit mechanics.
+      </p>
+    </section>
+
+    <!-- 2. Contract Architecture Overview -->
+    <section class="cs-report__section" id="contract-architecture-overview">
+      <h2>Contract Architecture Overview</h2>
+
+      <p>
+        Structurally, the contract is highly sectional and definition-driven, with broad coverage across scheduling, reserves,
+        PBS bidding mechanics, pay/credit, and operational contingencies. The agreement uses a layered approach: baseline
+        rules, enumerated exceptions, and multiple “special case” provisions for disruptions, international operations, and
+        unique flying patterns.
+      </p>
+
+      <p>
+        This design supports operational completeness, but increases interpretive load. Outcomes frequently depend on correct
+        categorization (type of flying, duty status, disruption cause) and on procedural compliance (bids, self-assignment
+        mechanics, notification rules).
+      </p>
+
+      <p class="cs-note">
+        <strong>Implication:</strong> This is a high-coverage, high-complexity agreement where protections are often real but not always self-executing.
+      </p>
+    </section>
+
+    <!-- 3. Scheduling & Assignment Framework -->
+    <section class="cs-report__section" id="scheduling-and-assignment">
+      <h2>Scheduling &amp; Assignment Framework</h2>
+
+      <p>
+        Scheduling architecture is deeply integrated with PBS, reserve constructs, and a broad set of definitions and procedural
+        pathways. The contract is designed to handle both “normal operations” and disruption states through detailed policy logic,
+        rather than relying on informal practice. This tends to increase predictability at scale but can be difficult to navigate
+        in real-time during irregular operations.
+      </p>
+
+      <p>
+        Reserve and self-assignment mechanisms are a critical structural axis of the agreement. The contract’s approach places
+        significant emphasis on classification (reserve status, rest state, days off constructs) to determine what is permissible
+        and what remedies apply.
+      </p>
+
+      <p class="cs-note">
+        <strong>Analytical lens:</strong> Strongly systematized scheduling rules with meaningful protections, but high procedural dependency.
+      </p>
+    </section>
+
+    <!-- 4. Economic Structure -->
+    <section class="cs-report__section" id="economic-structure">
+      <h2>Economic Structure</h2>
+
+      <p>
+        Hawaiian’s pay and credit architecture is sophisticated and multi-layered, including numerous premium triggers and multiple
+        ways to value time (segment/duty/trip rigs and related mechanisms). Economic outcomes can be strong, particularly for
+        flight attendants who understand the interaction between scheduling states and pay construction.
+      </p>
+
+      <p>
+        The tradeoff is complexity: crediting and premium provisions can be difficult to audit without detailed familiarity.
+        This increases the risk that “paper protections” degrade into “enforcement by persistence,” especially where pay disputes
+        depend on reconstructing procedural pathways after the fact.
+      </p>
+
+      <p class="cs-note">
+        <strong>Key insight:</strong> High upside economic design, paired with high verification burden.
+      </p>
+    </section>
+
+    <!-- 5. Enforcement & Dispute Resolution -->
+    <section class="cs-report__section" id="enforcement-and-dispute-resolution">
+      <h2>Enforcement &amp; Dispute Resolution Architecture</h2>
+
+      <p>
+        The agreement’s enforcement strength is defined by formal procedure and the ability to route disputes into established
+        adjustment mechanisms. However, many high-impact disputes in practice are “procedural disputes” (classification,
+        notice, and sequencing) rather than simple rule violations, and the contract’s complexity can advantage whichever party
+        controls records, classifications, and operational coding.
+      </p>
+
+      <p class="cs-note">
+        <strong>Structural takeaway:</strong> Enforcement is viable, but complexity increases friction and delay risk.
+      </p>
+    </section>
+
+    <!-- 6. Strengths / Weaknesses / Comparative Flags -->
+    <section class="cs-report__section" id="strengths-weaknesses-flags">
+      <h2>Structural Strengths, Weaknesses &amp; Comparative Flags</h2>
+
+      <p>
+        Hawaiian’s 2020 agreement is a high-coverage systems contract. Its strengths include broad subject-matter coverage,
+        detailed scheduling/procedural tracks, and sophisticated economic rules. Its weaknesses are primarily architectural:
+        complexity, heavy reliance on categorization, and high interpretive load for line-level users.
+      </p>
+
+      <p>
+        In cross-carrier comparisons, Hawaiian will often score well on “what exists in the text,” but may lose points on clarity
+        and the self-executing nature of protections.
+      </p>
+    </section>
+
+    <!-- 7. Standardized Contract Scorecard -->
+    <section class="cs-report__section" id="standardized-scorecard">
+      <h2>Standardized Contract Scorecard</h2>
+
+      <div class="cs-table-wrap">
+        <table class="cs-table">
+          <thead>
+            <tr>
+              <th scope="col">Domain</th>
+              <th scope="col" class="cs-table__score">Score</th>
+              <th scope="col">Rationale</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Scheduling Protections</td>
+              <td class="cs-table__score"><strong>4.2</strong></td>
+              <td>Comprehensive scheduling framework; protections frequently depend on procedural track and classification</td>
+            </tr>
+            <tr>
+              <td>Pay &amp; Credit Quality</td>
+              <td class="cs-table__score"><strong>4.3</strong></td>
+              <td>Sophisticated pay/credit and premiums; high verification burden due to complexity</td>
+            </tr>
+            <tr>
+              <td>Work Rules &amp; Quality-of-Life</td>
+              <td class="cs-table__score"><strong>4.1</strong></td>
+              <td>Broad coverage consistent with long-haul operations; some protections rely on process rather than automatic triggers</td>
+            </tr>
+            <tr>
+              <td>Company Discretion Constraint</td>
+              <td class="cs-table__score"><strong>3.6</strong></td>
+              <td>Meaningful constraints exist, but exceptions and categorization pathways preserve discretion in edge cases</td>
+            </tr>
+            <tr>
+              <td>Enforcement Power</td>
+              <td class="cs-table__score"><strong>3.5</strong></td>
+              <td>Formal dispute mechanisms exist; complexity can increase delay and ambiguity risk</td>
+            </tr>
+            <tr>
+              <td>Clarity &amp; Modularity</td>
+              <td class="cs-table__score"><strong>2.8</strong></td>
+              <td>High definition/cross-reference load; not a “quick audit” contract for line-level users</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td><strong>Total</strong></td>
+              <td class="cs-table__score"><strong>22.5</strong></td>
+              <td><strong>out of 30</strong></td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </section>
+
+    <!-- 8. Context Notes -->
+    <section class="cs-report__section" id="context-notes">
+      <h2>Context Notes</h2>
+
+      <p>
+        This analysis is based on Hawaiian’s 2020 Flight Attendant Agreement (April 3, 2020 – April 2, 2025), later modified
+        by a 2025 Contract Extension ratified April 17, 2025. :contentReference[oaicite:2]{index=2}
+      </p>
+    </section>
+
+    <footer class="cs-report__footer">
+      <p class="cs-fineprint">
+        CrewSignal · Contract Architecture &amp; Comparative Analysis
+      </p>
+    </footer>
+
+  </article>
+</body>
+</html>
