@@ -414,3 +414,21 @@ a:hover {
   text-align: center;
   white-space: nowrap;
 }
+
+/* Contract Architecture scorecard helpers */
+.cs-table__score {
+  text-align: center;
+  white-space: nowrap;
+  width: 6rem;
+}
+
+/* Contract Architecture scorecard table spacing */
+.cs-table th,
+.cs-table td {
+  padding: 0.75rem 1rem;
+}
+
+.cs-table td:last-child,
+.cs-table th:last-child {
+  padding-right: 1.5rem;
+}
