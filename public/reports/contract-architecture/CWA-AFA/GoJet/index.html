@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>CWA-AFA · GoJet Airlines · Contract Architecture Analysis · CrewSignal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/assets/css/main.css" />
+</head>
+
+<body>
+  <article class="cs-report" id="contract-architecture-cwa-afa-gojet">
+
+    <!-- Header / Nav -->
+    <header class="cs-report__header">
+      <div class="cs-report__nav">
+        <a class="cs-link cs-link--back" href="/reports/contract-architecture/">
+          ← Back to Contract Architecture
+        </a>
+      </div>
+
+      <h1 class="cs-report__title">CWA-AFA · GoJet Airlines</h1>
+      <p class="cs-report__dek">
+        Contract Analysis<br />
+        <span class="cs-report__dates">
+          Tentative Agreement (2025–2029) · Pending Ratification
+        </span>
+      </p>
+    </header>
+
+    <!-- 1. Agreement Metadata -->
+    <section class="cs-report__section" id="agreement-metadata">
+      <h2>Agreement Metadata</h2>
+
+      <p>
+        This page analyzes the Tentative Agreement reached between GoJet Airlines and
+        Flight Attendants represented by CWA-AFA. The agreement reflects a renegotiated
+        successor contract to the prior 2020–2025 agreement and incorporates revised
+        economic terms, updated scheduling language, and new Letters of Agreement.
+      </p>
+
+      <div class="cs-note">
+        <strong>Status</strong>
+        <ul class="cs-list">
+          <li><strong>Agreement type:</strong> Tentative Agreement</li>
+          <li><strong>Term:</strong> August 16, 2025 – August 16, 2029</li>
+          <li><strong>Effective date:</strong> Upon ratification</li>
+          <li><strong>Amendable:</strong> Notice no later than 180 days prior to August 16, 2029</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 2. Contract Architecture Overview -->
+    <section class="cs-report__section" id="contract-architecture-overview">
+      <h2>Contract Architecture Overview</h2>
+
+      <p>
+        The GoJet Tentative Agreement is a classic regional-carrier systems contract:
+        highly procedural, definition-driven, and organized around formal scheduling
+        logic (PBS), reserve structures, and explicit management rights with negotiated
+        carve-outs.
+      </p>
+
+      <p>
+        Compared to many legacy agreements, the contract is internally consistent and
+        readable, but enforcement depends heavily on correct classification (reserve vs
+        lineholder, extension vs junior assignment, reassignment vs cancellation) and
+        on documentation retained through Company systems.
+      </p>
+    </section>
+
+    <!-- 3. Scheduling & Assignment Framework -->
+    <section class="cs-report__section" id="scheduling-and-assignment">
+      <h2>Scheduling &amp; Assignment Framework</h2>
+
+      <p>
+        Scheduling is built around PBS with defined bid timelines, minimum days off,
+        reserve availability periods (RAPs), and a structured order of assignment.
+        The agreement codifies junior assignment, extensions, premium pay trips,
+        and Golden Days as distinct mechanisms rather than informal practices.
+      </p>
+
+      <p>
+        A notable structural feature is transparency: Union access to Crew Management
+        systems and recorded scheduling calls materially strengthens auditability,
+        particularly for disputes involving rescheduling, reserve utilization, and
+        reassignment pay.
+      </p>
+    </section>
+
+    <!-- 4. Economic Structure -->
+    <section class="cs-report__section" id="economic-structure">
+      <h2>Economic Structure</h2>
+
+      <p>
+        The TA introduces revised hourly pay rates effective August 16, 2025 with
+        scheduled increases through 2029, alongside a seventy-five (75) hour monthly
+        guarantee, minimum day pay, CDO credit, boarding pay (with conditional
+        implementation), and multiple premium pay triggers.
+      </p>
+
+      <p>
+        Pay architecture is moderately complex but coherent: most premiums are paid
+        above guarantee, and reschedule/reassignment pay is calculated on a trip-by-trip
+        basis, reducing fragmentation in pay disputes.
+      </p>
+    </section>
+
+    <!-- 5. Enforcement & Dispute Resolution -->
+    <section class="cs-report__section" id="enforcement-and-dispute-resolution">
+      <h2>Enforcement &amp; Dispute Resolution Architecture</h2>
+
+      <p>
+        Enforcement provisions are comprehensive for a regional agreement, including
+        just-cause discipline standards, defined grievance timelines, and a System Board
+        of Adjustment with a standing arbitrator panel.
+      </p>
+
+      <p>
+        As with many CWA-AFA regional contracts, remedies remain largely retrospective,
+        but the availability of recorded evidence and structured escalation pathways
+        improves practical enforceability relative to thinner agreements.
+      </p>
+    </section>
+
+    <!-- 6. Structural Strengths, Weaknesses & Comparative Flags -->
+    <section class="cs-report__section" id="strengths-weaknesses-flags">
+      <h2>Structural Strengths, Weaknesses &amp; Comparative Flags</h2>
+
+      <p>
+        The GoJet TA’s primary strengths are clarity, internal consistency, and a
+        relatively complete enforcement framework. It establishes predictable
+        scheduling rails and economic outcomes while avoiding extreme fragmentation.
+      </p>
+
+      <p>
+        The principal weaknesses are familiar: broad management rights language,
+        process-dependent protections, and limited forward-looking remedies during
+        irregular operations.
+      </p>
+    </section>
+
+    <!-- 7. Standardized Contract Scorecard -->
+    <section class="cs-report__section" id="standardized-scorecard">
+      <h2>Standardized Contract Scorecard</h2>
+
+      <p class="cs-note">
+        This agreement is a Tentative Agreement pending ratification. Comparative
+        scoring will be published following ratification and confirmation of the
+        final, effective collective bargaining agreement.
+      </p>
+    </section>
+
+    <!-- 8. Context Notes -->
+    <section class="cs-report__section" id="context-notes">
+      <h2>Context Notes</h2>
+
+      <p>
+        GoJet serves as a useful comparator for other regional CWA-AFA agreements,
+        particularly in assessing first-order improvements achieved through
+        successor bargaining versus legacy stagnation at larger carriers.
+      </p>
+    </section>
+
+    <footer class="cs-report__footer">
+      <p class="cs-fineprint">
+        CrewSignal · Contract Architecture &amp; Comparative Analysis
+      </p>
+    </footer>
+
+  </article>
+</body>
+</html>
