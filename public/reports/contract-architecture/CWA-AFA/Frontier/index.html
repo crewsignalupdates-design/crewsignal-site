@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>CWA-AFA · Frontier Airlines · Contract Architecture Analysis · CrewSignal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/assets/css/main.css" />
+</head>
+
+<body>
+  <article class="cs-report" id="contract-architecture-cwa-afa-frontier">
+
+    <!-- Header / Nav -->
+    <header class="cs-report__header">
+      <div class="cs-report__nav">
+        <a class="cs-link cs-link--back" href="/reports/contract-architecture/">
+          ← Back to Contract Architecture
+        </a>
+      </div>
+
+      <h1 class="cs-report__title">CWA-AFA · Frontier Airlines</h1>
+      <p class="cs-report__dek">
+        Contract Analysis<br />
+        <span class="cs-report__dates">
+          Effective Period: May 15, 2019 – May 15, 2024<br />
+          <em>Amendable since May 15, 2024</em>
+        </span>
+      </p>
+    </header>
+
+    <!-- 1. Agreement Metadata -->
+    <section class="cs-report__section" id="agreement-metadata">
+      <h2>Agreement Metadata</h2>
+
+      <p>
+        Frontier’s 2019–2024 agreement is a modern “systems contract” built around defined scheduling logic,
+        PBS, reserve transparency, and explicit duty/rest construction. Compared to many low-cost carrier CBAs,
+        it is unusually explicit about auditability (Union access to crew scheduling systems and recorded phone lines),
+        and it uses pay-based deterrence (premium add folder, junior assignment pay) as an operational control lever.
+      </p>
+
+      <p class="cs-note">
+        Agreement term appears on the cover page; duration language appears in Article 28. 
+      </p>
+    </section>
+
+    <!-- 2. Contract Architecture Overview -->
+    <section class="cs-report__section" id="contract-architecture-overview">
+      <h2>Contract Architecture Overview</h2>
+
+      <p>
+        Structurally, this agreement is highly modular: it separates Compensation, Hours of Service (crew legality),
+        Scheduling, Reserve, and a dedicated enforcement stack (Grievance + System Board). The contract also contains
+        an Addendum/LOA ecosystem that functions as a “maintenance layer,” including implementation timing and
+        corrected/clarified language.
+      </p>
+
+      <p>
+        The agreement is definition-driven and process-dependent. Many rights are enforceable because the contract
+        provides (a) explicit timelines, (b) defined notification standards, and (c) audit trails (system access, recorded calls).
+        Where it weakens is in edge-state flexibility: Declared Irregular Operations (DIO) and Management Rights allow
+        broader operational discretion when the system is stressed.
+      </p>
+
+      <p class="cs-note">
+        <strong>Implication:</strong> High enforceability potential due to transparency mechanisms, but outcomes depend on correct procedural framing.
+      </p>
+    </section>
+
+    <!-- 3. Scheduling & Assignment Framework -->
+    <section class="cs-report__section" id="scheduling-and-assignment">
+      <h2>Scheduling &amp; Assignment Framework</h2>
+
+      <p>
+        Scheduling design is one of Frontier’s strongest features. The agreement formalizes PBS bidding, bid-period
+        timelines, line construction parameters, open time and trade processes, and defined reschedule/reroute limits.
+        It also includes a formal “Schedule Integrity” concept outside DIO conditions, and defines AVA (Available to Assign)
+        as a structured mechanism rather than an informal practice.
+      </p>
+
+      <p>
+        The contract adds several enforceability upgrades that matter in practice: real-time union access to crew scheduling
+        systems for compliance monitoring, recorded Crew Scheduling phone lines with retention and access rules, and explicit
+        reserve assignment transparency through remote access to reserve availability data.
+      </p>
+
+      <p class="cs-note">
+        <strong>Analytical lens:</strong> Strong scheduling protections + strong auditability. The main structural vulnerability is DIO relief and the process-dependence of AVA/reschedule/reroute pathways.
+      </p>
+    </section>
+
+    <!-- 4. Economic Structure -->
+    <section class="cs-report__section" id="economic-structure">
+      <h2>Economic Structure</h2>
+
+      <p>
+        Frontier’s economic model combines hourly pay with a substantial rig framework and premium-based deterrence.
+        The contract includes an average minimum duty-period credit (4:30), a trip rig (1 hour per 4.2 hours TAFB),
+        a defined “greater of” comparison for trip valuation, and specific credits for CDO and Ready Reserve.
+      </p>
+
+      <p>
+        This is not purely a “rate table” agreement: the pay architecture is designed to stabilize earnings in normal operations
+        and to deter staffing shortfalls through premium add folder (double time) and junior assignment pay (200%).
+        A notable tradeoff is lineholder guarantee structure: reserves have a defined monthly guarantee, while lineholders
+        rely more heavily on credit mechanics and bid outcomes.
+      </p>
+
+      <p class="cs-note">
+        <strong>Key insight:</strong> Strong credit mechanics and deterrence premiums, with moderate complexity and some asymmetry between lineholder and reserve pay certainty.
+      </p>
+    </section>
+
+    <!-- 5. Enforcement & Dispute Resolution -->
+    <section class="cs-report__section" id="enforcement-and-dispute-resolution">
+      <h2>Enforcement &amp; Dispute Resolution Architecture</h2>
+
+      <p>
+        Enforcement architecture is formally complete: a defined grievance procedure with investigations/discipline standards,
+        timelines, and escalation to a System Board of Adjustment. The agreement also includes expedited arbitration for certain
+        recognition/scope disputes and a defined arbitrator panel process.
+      </p>
+
+      <p>
+        What strengthens enforcement in practice is the contract’s “evidence stack”: recorded scheduling calls, union system access,
+        and explicit documentation timelines. These features reduce information asymmetry and lower the burden of proof for
+        structural violations (e.g., reschedule/reroute parameters, reserve assignment order, JA log compliance).
+      </p>
+
+      <p class="cs-note">
+        <strong>Structural takeaway:</strong> Strong formal enforcement plus strong auditability. Remedies remain largely retrospective, but the record-building tools are unusually robust.
+      </p>
+    </section>
+
+    <!-- 6. Strengths / Weaknesses / Comparative Flags -->
+    <section class="cs-report__section" id="strengths-weaknesses-flags">
+      <h2>Structural Strengths, Weaknesses &amp; Comparative Flags</h2>
+
+      <p>
+        Frontier’s agreement is a strong example of “enforceability by visibility”: union access to scheduling systems,
+        recorded calls, a defined JA log, and reserve transparency all increase the practical value of negotiated rules.
+        The scheduling and pay architecture also uses deterrence premiums (PAF, JA pay, long duty pay) to steer behavior.
+      </p>
+
+      <p>
+        The primary weakness is that operational edge states (especially DIO) provide broader flexibility and can soften
+        baseline protections. The agreement is also moderately complex: protections often require correct classification
+        (AVA vs reserve, reschedule vs reroute, DIO vs non-DIO), and failures in process can shift outcomes.
+      </p>
+
+      <p class="cs-note">
+        <strong>Comparative flag:</strong> Frontier is likely to score unusually high on “Company discretion constraint” relative to peers because deterrence + auditability reduce discretionary drift—except during DIO conditions.
+      </p>
+    </section>
+
+    <!-- 7. Standardized Contract Scorecard -->
+    <section class="cs-report__section" id="standardized-scorecard">
+      <h2>Standardized Contract Scorecard</h2>
+
+      <div class="cs-table-wrap">
+        <table class="cs-table">
+          <thead>
+            <tr>
+              <th scope="col">Domain</th>
+              <th scope="col" class="cs-table__score">Score</th>
+              <th scope="col">Rationale</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Scheduling Protections</td>
+              <td class="cs-table__score"><strong>4.3</strong></td>
+              <td>PBS + defined reschedule/reroute/AVA rails; strong transparency and recorded-call evidence stack</td>
+            </tr>
+            <tr>
+              <td>Pay &amp; Credit Quality</td>
+              <td class="cs-table__score"><strong>4.1</strong></td>
+              <td>Strong rigs (avg min duty, trip rig) and deterrence premiums (PAF double time, JA 200%)</td>
+            </tr>
+            <tr>
+              <td>Work Rules &amp; Quality-of-Life</td>
+              <td class="cs-table__score"><strong>3.9</strong></td>
+              <td>Solid hotel/commuter/rest constructs; fatigue language and process-dependence reduce net strength</td>
+            </tr>
+            <tr>
+              <td>Company Discretion Constraint</td>
+              <td class="cs-table__score"><strong>3.6</strong></td>
+              <td>Auditability + defined order-of-assignment constrain drift; DIO relief preserves flexibility in edge states</td>
+            </tr>
+            <tr>
+              <td>Enforcement Power</td>
+              <td class="cs-table__score"><strong>4.0</strong></td>
+              <td>Complete grievance/system board structure plus expedited scope arbitration and strong evidence mechanisms</td>
+            </tr>
+            <tr>
+              <td>Clarity &amp; Modularity</td>
+              <td class="cs-table__score"><strong>3.1</strong></td>
+              <td>Well-structured, but definition load and procedural branching increase cognitive burden</td>
+            </tr>
+          </tbody>
+
+          <tfoot>
+            <tr>
+              <td><strong>Total</strong></td>
+              <td class="cs-table__score"><strong>23.0</strong></td>
+              <td><strong>out of 30</strong></td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+
+      <p class="cs-note">
+        Built from the Frontier 2019–2024 agreement text and architecture. 
+      </p>
+    </section>
+
+    <!-- 8. Context Notes -->
+    <section class="cs-report__section" id="context-notes">
+      <h2>Context Notes</h2>
+
+      <p>
+        Frontier’s low-cost operational model magnifies the value of enforceable scheduling rails and auditability.
+        This agreement’s most distinctive comparative contribution is its transparency stack (system access + recorded calls)
+        paired with deterrence premiums, which together reduce “practice drift” in normal operations.
+      </p>
+    </section>
+
+    <footer class="cs-report__footer">
+      <p class="cs-fineprint">
+        CrewSignal · Contract Architecture &amp; Comparative Analysis
+      </p>
+    </footer>
+
+  </article>
+</body>
+</html>
