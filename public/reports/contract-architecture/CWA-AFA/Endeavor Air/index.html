@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>CWA-AFA · Endeavor Air · Contract Architecture Analysis · CrewSignal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/assets/css/main.css" />
+</head>
+
+<body>
+  <article class="cs-report" id="contract-architecture-cwa-afa-endeavor">
+
+    <!-- Header / Nav -->
+    <header class="cs-report__header">
+      <div class="cs-report__nav">
+        <a class="cs-link cs-link--back" href="/reports/contract-architecture/">
+          ← Back to Contract Architecture
+        </a>
+      </div>
+
+      <h1 class="cs-report__title">CWA-AFA · Endeavor Air</h1>
+      <p class="cs-report__dek">
+        Contract Analysis<br />
+        <span class="cs-report__dates">
+          Effective Period: March 31, 2020 – March 30, 2025<br />
+          <em>Amendable since March 31, 2025</em>
+        </span>
+      </p>
+    </header>
+
+    <!-- 1. Agreement Metadata -->
+    <section class="cs-report__section" id="agreement-metadata">
+      <h2>Agreement Metadata</h2>
+
+      <p>
+        Endeavor’s 2020–2025 Flight Attendant Agreement is a large, systems-oriented regional-carrier contract
+        negotiated under the Railway Labor Act. The agreement is structured around formal scheduling logic
+        (including PBS), detailed reserve architecture, and a comparatively mature enforcement system that
+        integrates investigations, grievances, the System Board, and mediation into a single framework.
+      </p>
+
+      <p class="cs-note">
+        Contract term and duration provisions are stated on the cover and in Section 20 (Duration). :contentReference[oaicite:2]{index=2}
+      </p>
+    </section>
+
+    <!-- 2. Contract Architecture Overview -->
+    <section class="cs-report__section" id="contract-architecture-overview">
+      <h2>Contract Architecture Overview</h2>
+
+      <p>
+        Endeavor’s contract is built as a modular “systems contract” with high specificity and extensive procedural tracks.
+        It places core enforcement (investigations/grievances/system board/mediation) early in the document and then
+        builds scheduling and pay architecture through defined terms, enumerated triggers, and explicit timelines.
+      </p>
+
+      <p>
+        The agreement contains both strong “rights language” and strong “process language.” Where the contract performs
+        best is in areas where rights are supported by visibility, audit trails, and clear decision points. Where it performs
+        less well is in complexity: interpretive load is high, and many protections require correct categorization of events
+        and procedural compliance.
+      </p>
+
+      <p class="cs-note">
+        <strong>Implication:</strong> High coverage and high reliability when used correctly, but not a “low-friction” contract for line-level users.
+      </p>
+    </section>
+
+    <!-- 3. Scheduling & Assignment Framework -->
+    <section class="cs-report__section" id="scheduling-and-assignment">
+      <h2>Scheduling &amp; Assignment Framework</h2>
+
+      <p>
+        Scheduling architecture is one of the agreement’s strongest areas. The contract formalizes PBS bidding,
+        minimum days off by bid month length, credit-time maximums, open time handling, time-available obligations,
+        and rescheduling limits. It also contains explicit constraints on junior assignments and extensions, including
+        annual decline entitlements and pay consequences.
+      </p>
+
+      <p>
+        A standout structural feature is transparency: the Scheduling Committee is provided electronic access to scheduling
+        transactions and audit trails, and reserve utilization transparency is reinforced through remote access to reserve
+        information and reporting. These features materially strengthen enforceability by reducing information asymmetry.
+      </p>
+
+      <p class="cs-note">
+        <strong>Analytical lens:</strong> Strong procedural constraints + strong visibility → higher enforceability than many peer regionals.
+      </p>
+    </section>
+
+    <!-- 4. Economic Structure -->
+    <section class="cs-report__section" id="economic-structure">
+      <h2>Economic Structure</h2>
+
+      <p>
+        Endeavor’s economic architecture is robust for a regional carrier. Full-time monthly guarantee is seventy-five (75) hours,
+        with substantial “above guarantee” pathways (open time pickup, will-fly, junior assignment, extensions, and certain credits).
+        The agreement includes a trip guarantee framework, minimum day pay provisions, cancellation and reassignment pay,
+        and defined escalation for very long duty periods.
+      </p>
+
+      <p>
+        The contract’s pay system is not merely rate-based; it is structurally driven through defined credit construction
+        (leg values/SATs, minimum day pay, duty-period boundaries, deadhead credit rules). This makes the agreement
+        more predictable than “thin” wage-table contracts, but increases auditing complexity.
+      </p>
+
+      <p class="cs-note">
+        <strong>Key insight:</strong> Strong economic mechanics and guarantees, with higher verification burden due to size and procedural branching.
+      </p>
+    </section>
+
+    <!-- 5. Enforcement & Dispute Resolution -->
+    <section class="cs-report__section" id="enforcement-and-dispute-resolution">
+      <h2>Enforcement &amp; Dispute Resolution Architecture</h2>
+
+      <p>
+        Enforcement is comparatively mature and front-loaded. The agreement establishes due process standards for investigations,
+        explicit notice requirements, representation rights, and defined delivery methods for discipline. Grievance architecture
+        includes structured timelines, System Board access, and explicit mediation procedures.
+      </p>
+
+      <p>
+        The contract also includes expedited handling pathways for urgent disputes (including certain scope-related grievances),
+        and it provides procedural safeguards that reduce “delay as a weapon.” While most remedies remain retrospective, the
+        combination of visibility, timelines, and escalation pathways improves practical enforceability.
+      </p>
+
+      <p class="cs-note">
+        <strong>Structural takeaway:</strong> Strong process architecture that supports enforceability—especially compared to “paper rights” contracts without auditability.
+      </p>
+    </section>
+
+    <!-- 6. Strengths / Weaknesses / Comparative Flags -->
+    <section class="cs-report__section" id="strengths-weaknesses-flags">
+      <h2>Structural Strengths, Weaknesses &amp; Comparative Flags</h2>
+
+      <p>
+        Endeavor’s contract is a strong example of a modern regional “systems contract”: high specificity, defined constraints,
+        and unusually strong transparency for scheduling and reserve utilization. Economically, it is structured around guarantees,
+        minimum pay constructs, and predictable crediting logic rather than purely rate-based gains.
+      </p>
+
+      <p>
+        The primary structural weakness is complexity. The agreement’s protections often depend on correct procedural classification,
+        timelines, and recordkeeping. This increases cognitive load for individual Flight Attendants and can shift enforcement into a
+        “documentation contest” during irregular operations.
+      </p>
+
+      <p class="cs-note">
+        <strong>Comparative flag:</strong> Strong enforcement architecture for a regional carrier, with clarity/modularity constraints driven mainly by agreement length and procedural branching.
+      </p>
+    </section>
+
+    <!-- 7. Standardized Contract Scorecard -->
+    <section class="cs-report__section" id="standardized-scorecard">
+      <h2>Standardized Contract Scorecard</h2>
+
+      <div class="cs-table-wrap">
+        <table class="cs-table">
+          <thead>
+            <tr>
+              <th scope="col">Domain</th>
+              <th scope="col" class="cs-table__score">Score</th>
+              <th scope="col">Rationale</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Scheduling Protections</td>
+              <td class="cs-table__score"><strong>4.3</strong></td>
+              <td>PBS-based structure, defined limits, junior/extension constraints, and strong scheduling transparency</td>
+            </tr>
+            <tr>
+              <td>Pay &amp; Credit Quality</td>
+              <td class="cs-table__score"><strong>4.1</strong></td>
+              <td>75-hour guarantee plus minimum day/trip guarantee/cancellation mechanisms; mechanically strong</td>
+            </tr>
+            <tr>
+              <td>Work Rules &amp; Quality-of-Life</td>
+              <td class="cs-table__score"><strong>3.9</strong></td>
+              <td>Broad coverage and defined rest/duty/leave constructs; QOL varies by process-dependence</td>
+            </tr>
+            <tr>
+              <td>Company Discretion Constraint</td>
+              <td class="cs-table__score"><strong>3.4</strong></td>
+              <td>Meaningful constraints exist, but management rights plus IROP suspensions preserve discretion in edge states</td>
+            </tr>
+            <tr>
+              <td>Enforcement Power</td>
+              <td class="cs-table__score"><strong>4.0</strong></td>
+              <td>Strong investigations/grievance/system board structure with mediation; expedited pathways improve reliability</td>
+            </tr>
+            <tr>
+              <td>Clarity &amp; Modularity</td>
+              <td class="cs-table__score"><strong>3.0</strong></td>
+              <td>Well-organized but long and procedural; high interpretive load for line-level users</td>
+            </tr>
+          </tbody>
+
+          <tfoot>
+            <tr>
+              <td><strong>Total</strong></td>
+              <td class="cs-table__score"><strong>22.7</strong></td>
+              <td><strong>out of 30</strong></td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+
+      <p class="cs-note">
+        Scores reflect structural strength and enforceability signals in the 2020–2025 agreement text. :contentReference[oaicite:3]{index=3}
+      </p>
+    </section>
+
+    <!-- 8. Context Notes -->
+    <section class="cs-report__section" id="context-notes">
+      <h2>Context Notes</h2>
+
+      <p>
+        Endeavor operates as a large Delta Connection regional carrier, which drives substantial schedule complexity and
+        operational disruption frequency. This agreement’s strongest comparative contribution is its transparency and auditability
+        in scheduling and reserve utilization, which materially strengthens enforceability relative to many peer regionals.
+      </p>
+    </section>
+
+    <footer class="cs-report__footer">
+      <p class="cs-fineprint">
+        CrewSignal · Contract Architecture &amp; Comparative Analysis
+      </p>
+    </footer>
+
+  </article>
+</body>
+</html>

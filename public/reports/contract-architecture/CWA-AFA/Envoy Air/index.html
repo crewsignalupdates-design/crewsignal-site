@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>CWA-AFA · Envoy Air · Contract Architecture Analysis · CrewSignal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/assets/css/main.css" />
+</head>
+
+<body>
+  <article class="cs-report" id="contract-architecture-cwa-afa-envoy">
+
+    <!-- Header / Nav -->
+    <header class="cs-report__header">
+      <div class="cs-report__nav">
+        <a class="cs-link cs-link--back" href="/reports/contract-architecture/">
+          ← Back to Contract Architecture
+        </a>
+      </div>
+
+      <h1 class="cs-report__title">CWA-AFA · Envoy Air</h1>
+      <p class="cs-report__dek">
+        Contract Analysis<br />
+        <span class="cs-report__dates">
+          Effective Period: April 1, 2021 – March 31, 2026<br />
+          <em>Amendable as of April 1, 2026</em>
+        </span>
+      </p>
+    </header>
+
+    <!-- 1. Agreement Metadata -->
+    <section class="cs-report__section" id="agreement-metadata">
+      <h2>Agreement Metadata</h2>
+
+      <p>
+        Envoy’s 2021–2026 Flight Attendant Agreement is a large, systems-oriented agreement with extensive
+        sideletter architecture and deep procedural specification across scheduling, reserve, and enforcement.
+        The document explicitly frames itself as an amended, continuously updated agreement incorporating
+        grievance settlements and side letters, which materially increases both coverage and interpretive load.
+      </p>
+
+      <p class="cs-note">
+        Contract term and reader guidance appear at the beginning of the agreement. :contentReference[oaicite:2]{index=2}
+      </p>
+    </section>
+
+    <!-- 2. Contract Architecture Overview -->
+    <section class="cs-report__section" id="contract-architecture-overview">
+      <h2>Contract Architecture Overview</h2>
+
+      <p>
+        Envoy is a “systems contract”: it uses defined terms, multi-step procedural tracks, and an extensive
+        sideletter ecosystem to operationalize rules at scale. The table of contents shows 36 primary sections,
+        followed by a long series of letters/sideletters and appendices, reflecting a contract that has evolved
+        through negotiated amendments and dispute-resolution outcomes over time.
+      </p>
+
+      <p>
+        Architecturally, the agreement relies on: (1) formal bidding/scheduling logic (PBS + defined timelines),
+        (2) detailed exception handling for disruptions and operational edge states, and (3) enforcement mechanisms
+        that include grievance processing, System Board arbitration, and grievance mediation procedures.
+      </p>
+
+      <p class="cs-note">
+        <strong>Implication:</strong> High coverage and strong “written remedies,” but a higher cognitive and documentation burden for line-level enforcement.
+      </p>
+    </section>
+
+    <!-- 3. Scheduling & Assignment Framework -->
+    <section class="cs-report__section" id="scheduling-and-assignment">
+      <h2>Scheduling &amp; Assignment Framework</h2>
+
+      <p>
+        Scheduling is built around a Preferential Bidding System (PBS), including pre-bid options, protest windows,
+        lockout periods, and explicit line construction parameters. The agreement includes minimum days off
+        provisions (including reserve “Golden Days”), duty/rest construction rules, and defined communication rules
+        around rest-period contact and schedule changes.
+      </p>
+
+      <p>
+        A key structural feature is the breadth of the assignment “ecosystem”: open time, automated and manual
+        processing, trades/exchanges, drops, and defined “order of assignment” buckets. This architecture provides
+        predictable rails for day-to-day operations but requires accurate classification and timely procedural action
+        to preserve protections.
+      </p>
+
+      <p class="cs-note">
+        <strong>Analytical lens:</strong> Strong scheduling protections exist, but they are highly procedural and therefore most effective when paired with auditability and enforceable timelines.
+      </p>
+
+      <p class="cs-note">
+        PBS and scheduling architecture are detailed in Sections 8 and 9; duty/rest constructs are in Section 7. :contentReference[oaicite:3]{index=3}
+      </p>
+    </section>
+
+    <!-- 4. Economic Structure -->
+    <section class="cs-report__section" id="economic-structure">
+      <h2>Economic Structure</h2>
+
+      <p>
+        The economic architecture is mechanically sophisticated for a regional carrier: the agreement provides
+        a minimum monthly pay guarantee of seventy-five (75) hours for Flight Attendants available for duty for
+        a full month, plus an “adjusted guarantee” framework tied to scheduled credit for lineholders, with
+        additional pay mechanics for open time, deadheading, and certain disruption outcomes.
+      </p>
+
+      <p>
+        Premium pay and incentives are built into operational scenarios (e.g., junior manning/extension pay at
+        enhanced rates, and “Critical Coverage” premiums for designated shortage days). These mechanisms
+        matter in comparative analysis because they demonstrate where the contract shifts from “rules” to
+        “economic deterrence” as a means of constraining management behavior.
+      </p>
+
+      <p class="cs-note">
+        Minimum monthly guarantee and adjusted guarantee concepts appear in Section 4; premium structures are described in Scheduling/Reserve provisions. :contentReference[oaicite:4]{index=4}
+      </p>
+    </section>
+
+    <!-- 5. Enforcement & Dispute Resolution -->
+    <section class="cs-report__section" id="enforcement-and-dispute-resolution">
+      <h2>Enforcement &amp; Dispute Resolution Architecture</h2>
+
+      <p>
+        Enforcement architecture is unusually mature for a regional agreement. The contract provides structured
+        investigations (including representation rights and written outcomes), a defined grievance process with
+        timelines, a System Board of Adjustment framework, and a formal grievance mediation program once a
+        dispute reaches the System Board level (by mutual agreement).
+      </p>
+
+      <p>
+        A notable structural advantage is that the enforcement system is explicitly designed to manage volume
+        (quarterly case review meetings, scheduled mediation sessions, and document exchange requirements
+        before hearings). This reduces delay risk relative to contracts that rely primarily on informal practice.
+      </p>
+
+      <p class="cs-note">
+        Grievance, System Board, and mediation structures are described in Sections 21 and 22. :contentReference[oaicite:5]{index=5}
+      </p>
+    </section>
+
+    <!-- 6. Strengths / Weaknesses / Comparative Flags -->
+    <section class="cs-report__section" id="strengths-weaknesses-flags">
+      <h2>Structural Strengths, Weaknesses &amp; Comparative Flags</h2>
+
+      <p>
+        Envoy’s agreement exhibits a high level of institutional maturity: PBS-based scheduling, robust reserve
+        constructs, defined “order of assignment” logic, explicit premium pay deterrence for staffing shortages,
+        and an enforcement framework built to process disputes at scale.
+      </p>
+
+      <p>
+        The primary weakness is complexity. The agreement’s protections often depend on correct procedural
+        classification and timely action (bid protests, notice windows, required calls, documentation thresholds).
+        This raises the line-level burden and increases the risk that protections become “paper rights” when
+        record access or process knowledge is uneven.
+      </p>
+
+      <p class="cs-note">
+        <strong>Comparative flag:</strong> Strong systems design and enforceability scaffolding, paired with a high interpretive load driven by length, sideletters, and procedural branching.
+      </p>
+    </section>
+
+    <!-- 7. Standardized Contract Scorecard -->
+    <section class="cs-report__section" id="standardized-scorecard">
+      <h2>Standardized Contract Scorecard</h2>
+
+      <div class="cs-table-wrap">
+        <table class="cs-table">
+          <thead>
+            <tr>
+              <th scope="col">Domain</th>
+              <th scope="col" class="cs-table__score">Score</th>
+              <th scope="col">Rationale</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Scheduling Protections</td>
+              <td class="cs-table__score"><strong>4.2</strong></td>
+              <td>PBS-based scheduling with detailed procedural tracks and defined assignment order; protections are process-dependent</td>
+            </tr>
+            <tr>
+              <td>Pay &amp; Credit Quality</td>
+              <td class="cs-table__score"><strong>4.0</strong></td>
+              <td>75-hour guarantee plus adjusted guarantee and multiple premium/deterrence mechanisms</td>
+            </tr>
+            <tr>
+              <td>Work Rules &amp; Quality-of-Life</td>
+              <td class="cs-table__score"><strong>3.9</strong></td>
+              <td>Broad coverage (rest/contact rules, days off constructs, commuting policy, hotel standards) but complex to navigate</td>
+            </tr>
+            <tr>
+              <td>Company Discretion Constraint</td>
+              <td class="cs-table__score"><strong>3.4</strong></td>
+              <td>Meaningful constraints exist, but management rights and operational edge cases preserve discretion</td>
+            </tr>
+            <tr>
+              <td>Enforcement Power</td>
+              <td class="cs-table__score"><strong>4.1</strong></td>
+              <td>Defined investigations/grievance/system board with optional mediation; structured to handle dispute volume</td>
+            </tr>
+            <tr>
+              <td>Clarity &amp; Modularity</td>
+              <td class="cs-table__score"><strong>2.9</strong></td>
+              <td>Well-organized but very long with extensive sideletters; high cognitive load</td>
+            </tr>
+          </tbody>
+
+          <tfoot>
+            <tr>
+              <td><strong>Total</strong></td>
+              <td class="cs-table__score"><strong>22.5</strong></td>
+              <td><strong>out of 30</strong></td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+
+      <p class="cs-note">
+        Agreement term and duration provisions are stated in the document (cover page and Section 36). :contentReference[oaicite:6]{index=6}
+      </p>
+    </section>
+
+    <!-- 8. Context Notes -->
+    <section class="cs-report__section" id="context-notes">
+      <h2>Context Notes</h2>
+
+      <p>
+        Envoy operates as a large AAG regional carrier with high schedule complexity, multiple domiciles/co-domiciles,
+        and heavy reliance on reserves and open time processes. This contract’s most meaningful comparative signal
+        is its combined “systems design” + “enforcement scaffolding” profile, even as complexity reduces line-level
+        accessibility.
+      </p>
+    </section>
+
+    <footer class="cs-report__footer">
+      <p class="cs-fineprint">
+        CrewSignal · Contract Architecture &amp; Comparative Analysis
+      </p>
+    </footer>
+
+  </article>
+</body>
+</html>
