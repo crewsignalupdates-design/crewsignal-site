@@ -1,6 +1,3 @@
-$page = "public/reports/contract-architecture/CWA-AFA/horizon-air/index.html"
-
-@'
 <!doctype html>
 <html lang="en">
 <head>
@@ -11,123 +8,116 @@ $page = "public/reports/contract-architecture/CWA-AFA/horizon-air/index.html"
 </head>
 
 <body>
-  <main class="cs-page">
-    <a class="cs-back" href="/reports/contract-architecture/">← Back to Contract Architecture</a>
+  <article class="cs-report" id="horizon-air-contract-architecture">
+    <header class="cs-report__header">
+      <div class="cs-report__nav">
+        <a class="cs-back" href="/reports/contract-architecture/">← Back to Contract Architecture</a>
+      </div>
 
-    <h1>CWA-AFA · Horizon Air</h1>
-<p class="cs-muted">BUILD-MARKER: d77cc9 Horizon test</p>
+      <h1 class="cs-report__title">CWA-AFA · Horizon Air</h1>
+      <p class="cs-muted">BUILD-MARKER: d77cc9 Horizon test</p>
 
-    <p>Contract Architecture Analysis</p>
-    <p>Effective Period: May 1, 2020 – April 30, 2024<br />
-Amendable since: May 1, 2024</p>
-    <h2>Agreement Metadata</h2>
-    <p>
-      Horizon Air’s agreement reflects a regional-carrier bargaining environment with a conventional article-based
-      structure and a comparatively systems-forward organization: core pay/credit and expenses appear early, followed
-      by scheduling systems (lineholder and reserve), then benefits, seniority, and enforcement.
-    </p>
-    <p>
-      Primary document:
-      <a class="cs-contract__cba-link"
-         href="/reports/contract-architecture/CWA-AFA/horizon-air/contract/horizon-air-2020-2024.pdf">Open the CBA PDF</a>.
-    </p>
+      <p class="cs-report__deck">Contract Architecture Analysis</p>
 
-    <h2>Contract Architecture Overview</h2>
-    <p>
-      The agreement is modular: it separates economic rules (credit/premiums), legality limits (hours of service/rest),
-      and assignment systems (lineholder vs reserve) into distinct clusters. This reduces interpretive load relative to
-      highly cross-referenced agreements and supports time-sensitive operational use.
-    </p>
+      <p class="cs-report__deck">
+        Effective Period: May 1, 2020 – April 30, 2024<br />
+        Amendable since May 1, 2024
+      </p>
+    </header>
 
-    <h2>Scheduling &amp; Assignment Framework</h2>
-    <p>
-      Scheduling controls are concentrated in the lineholder scheduling article and a dedicated reserve article.
-      Reserve operates as a full subsystem (categories/standby/assignment ordering), improving clarity but increasing
-      the importance of procedural compliance.
-    </p>
+    <section class="cs-report__section" id="agreement-metadata">
+      <h2>Agreement Metadata</h2>
+      <p>
+        Horizon Air’s agreement reflects a regional-carrier bargaining environment with a conventional article-based
+        structure and a comparatively systems-forward organization: core pay/credit and expenses appear early, followed
+        by scheduling systems (lineholder and reserve), then benefits, seniority, and enforcement.
+      </p>
+      <p>
+        Primary document:
+        <a class="cs-contract__cba-link"
+           href="/reports/contract-architecture/CWA-AFA/horizon-air/contract/horizon-air-2020-2024.pdf">Open the CBA PDF</a>.
+      </p>
+    </section>
 
-    <h2>Economic Structure</h2>
-    <p>
-      The pay/credit framework relies on defined credit drivers and premium constructs rather than broad discretionary
-      policy language. This supports auditability, but edge cases can turn on “greater of” calculations and non-duplication
-      logic.
-    </p>
+    <section class="cs-report__section" id="contract-architecture-overview">
+      <h2>Contract Architecture Overview</h2>
+      <p>
+        The agreement is modular: it separates economic rules (credit/premiums), legality limits (hours of service/rest),
+        and assignment systems (lineholder vs reserve) into distinct clusters. This reduces interpretive load relative to
+        highly cross-referenced agreements and supports time-sensitive operational use.
+      </p>
+    </section>
 
-    <h2>Enforcement &amp; Dispute Resolution Architecture</h2>
-    <p>
-      Enforcement follows the standard airline pattern: grievance steps culminating in arbitration/System Board mechanisms.
-      Structural strength depends on whether remedies are timely and deterrent versus primarily corrective after delay.
-    </p>
+    <section class="cs-report__section" id="scheduling-and-assignment-framework">
+      <h2>Scheduling &amp; Assignment Framework</h2>
+      <p>
+        Scheduling controls are concentrated in the lineholder scheduling article and a dedicated reserve article.
+        Reserve operates as a full subsystem (categories/standby/assignment ordering), improving clarity but increasing
+        the importance of procedural compliance.
+      </p>
+    </section>
 
-    <h2>Structural Strengths, Weaknesses &amp; Comparative Flags</h2>
-    <p>
-      Strength: clear subsystem separation (pay, legality, lineholder scheduling, reserve) improves navigability and operational usability.
-      Comparative flag: as with many regionals, practical force may depend on post-violation correction rather than self-executing constraints,
-      especially during irregular operations.
-    </p>
+    <section class="cs-report__section" id="economic-structure">
+      <h2>Economic Structure</h2>
+      <p>
+        The pay/credit framework relies on defined credit drivers and premium constructs rather than broad discretionary
+        policy language. This supports auditability, but edge cases can turn on “greater of” calculations and non-duplication
+        logic.
+      </p>
+    </section>
 
-    <h2>Standardized Contract Scorecard</h2>
-    <table class="cs-table">
-      <thead>
-        <tr>
-          <th>Domain</th>
-          <th>Score</th>
-          <th>Rationale</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Scheduling Protections</td>
-          <td>—</td>
-          <td>Placeholder — apply canonical rubric.</td>
-        </tr>
-        <tr>
-          <td>Pay &amp; Credit Quality</td>
-          <td>—</td>
-          <td>Placeholder — evaluate credit drivers and premiums.</td>
-        </tr>
-        <tr>
-          <td>Work Rules &amp; Quality-of-Life</td>
-          <td>—</td>
-          <td>Placeholder — assess days off, legality buffers, schedule control.</td>
-        </tr>
-        <tr>
-          <td>Company Discretion Constraint</td>
-          <td>—</td>
-          <td>Placeholder — assess substantive vs procedural constraints.</td>
-        </tr>
-        <tr>
-          <td>Enforcement Power</td>
-          <td>—</td>
-          <td>Placeholder — assess timelines and deterrence.</td>
-        </tr>
-        <tr>
-          <td>Clarity &amp; Modularity</td>
-          <td>—</td>
-          <td>Placeholder — cross-references and exception density.</td>
-        </tr>
-        <tr>
-          <td><strong>Total</strong></td>
-          <td><strong>—</strong></td>
-          <td><strong>—</strong></td>
-        </tr>
-      </tbody>
-    </table>
+    <section class="cs-report__section" id="enforcement-and-dispute-resolution-architecture">
+      <h2>Enforcement &amp; Dispute Resolution Architecture</h2>
+      <p>
+        Enforcement follows the standard airline pattern: grievance steps culminating in arbitration/System Board mechanisms.
+        Structural strength depends on whether remedies are timely and deterrent versus primarily corrective after delay.
+      </p>
+    </section>
 
-    <h2>Context Notes</h2>
-    <p>
-      This analysis reflects contract architecture and enforceability characteristics within a regional-carrier environment.
-      It does not measure bargaining intent or effort; it evaluates structural strength and reliability as written.
-    </p>
+    <section class="cs-report__section" id="strengths-weaknesses-flags">
+      <h2>Structural Strengths, Weaknesses &amp; Comparative Flags</h2>
+      <p>
+        Strength: clear subsystem separation (pay, legality, lineholder scheduling, reserve) improves navigability and operational usability.
+        Comparative flag: as with many regionals, practical force may depend on post-violation correction rather than self-executing constraints,
+        especially during irregular operations.
+      </p>
+    </section>
 
-    <p class="cs-muted">CrewSignal · Contract Architecture &amp; Comparative Analysis</p>
-  </main>
+    <section class="cs-report__section" id="standardized-contract-scorecard">
+      <h2>Standardized Contract Scorecard</h2>
+      <table class="cs-table">
+        <thead>
+          <tr>
+            <th>Domain</th>
+            <th>Score</th>
+            <th>Rationale</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Scheduling Protections</td><td>—</td><td>Placeholder — apply canonical rubric.</td></tr>
+          <tr><td>Pay &amp; Credit Quality</td><td>—</td><td>Placeholder — evaluate credit drivers and premiums.</td></tr>
+          <tr><td>Work Rules &amp; Quality-of-Life</td><td>—</td><td>Placeholder — assess days off, legality buffers, schedule control.</td></tr>
+          <tr><td>Company Discretion Constraint</td><td>—</td><td>Placeholder — assess substantive vs procedural constraints.</td></tr>
+          <tr><td>Enforcement Power</td><td>—</td><td>Placeholder — assess timelines and deterrence.</td></tr>
+          <tr><td>Clarity &amp; Modularity</td><td>—</td><td>Placeholder — cross-references and exception density.</td></tr>
+          <tr><td><strong>Total</strong></td><td><strong>—</strong></td><td><strong>—</strong></td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="cs-report__section" id="context-notes">
+      <h2>Context Notes</h2>
+      <p>
+        This analysis reflects contract architecture and enforceability characteristics within a regional-carrier environment.
+        It does not measure bargaining intent or effort; it evaluates structural strength and reliability as written.
+      </p>
+    </section>
+
+    <footer class="cs-report__footer">
+      <p class="cs-muted">
+        CrewSignal · Contract Architecture &amp; Comparative Analysis
+      </p>
+    </footer>
+  </article>
 </body>
 </html>
-
-<footer class="cs-report__footer">
-  <p class="cs-muted">
-    CrewSignal · Contract Architecture &amp; Comparative Analysis
-  </p>
-</footer>
-
