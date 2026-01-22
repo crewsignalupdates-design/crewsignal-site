@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Horizon Air · Contract Architecture · Crew Signal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/assets/css/main.css" />
+</head>
+
+<body>
+  <article class="cs-report" id="horizon-air-contract-architecture">
+    <header class="cs-report__header">
+      <div class="cs-report__nav">
+        <a class="cs-back" href="/reports/contract-architecture/">← Back to Contract Architecture</a>
+      </div>
+
+      <h1 class="cs-report__title">Horizon Air — Contract Architecture</h1>
+      <p class="cs-report__deck">
+        Structural map of the Horizon Air Flight Attendant agreement (AFA-CWA),
+        organized around scheduling, duty/rest, pay credits, reserve, and enforcement.
+      </p>
+    </header>
+
+    <section class="cs-report__section" id="contract-document">
+      <h2>Contract Document</h2>
+
+      <p class="cs-contract__meta">
+        <strong>Union:</strong> <span class="cs-tag">CWA-AFA</span><br />
+        <strong>Document:</strong> Horizon Air Flight Attendant Contract (May 1, 2020 – April 30, 2024)
+      </p>
+
+      <p>
+        <a class="cs-contract__cba-link"
+           href="/reports/contract-architecture/CWA-AFA/horizon-air/contract/horizon-air-2020-2024.pdf">
+          Open the CBA PDF
+        </a>
+      </p>
+    </section>
+
+    <section class="cs-report__section" id="status">
+      <h2>Status</h2>
+      <ul class="cs-list">
+        <li><strong>Effective term:</strong> May 1, 2020 – April 30, 2024</li>
+        <li><strong>Amendable:</strong> April 30, 2024 (evergreen May 1 thereafter unless Section 6 notice served)</li>
+        <li><strong>Notes:</strong> Includes multiple sideletters, including an implementation schedule and hotel standards.</li>
+      </ul>
+    </section>
+
+    <section class="cs-report__section" id="architecture-map">
+      <h2>Architecture Map</h2>
+      <ul class="cs-list">
+        <li><strong>Recognition / Scope / Successorship:</strong> Article 1 (includes merger protection, wet lease, subcontracting)</li>
+        <li><strong>Definitions:</strong> Article 2</li>
+        <li><strong>Pay & Credit System:</strong> Article 3 (credit-hour drivers; premium pay; guarantees; incentives)</li>
+        <li><strong>Duty-Time Expenses:</strong> Article 4 (lodging, transportation, parking options, per diem)</li>
+        <li><strong>Hours of Service:</strong> Article 5 (rest, duty limits, legs/block limits, days off, reschedule limits)</li>
+        <li><strong>Lineholder Scheduling / PBS / SAP / Open Time:</strong> Article 6</li>
+        <li><strong>Reserve System:</strong> Article 7 (classifications, callout, assignment order, APSB/airport standby)</li>
+        <li><strong>Training:</strong> Article 8</li>
+        <li><strong>Sick Leave / Attendance / PDO:</strong> Article 9</li>
+        <li><strong>Medical Exams / Fit for Duty Disputes:</strong> Article 10</li>
+        <li><strong>Vacation:</strong> Article 11</li>
+        <li><strong>Uniforms:</strong> Article 12</li>
+        <li><strong>Seniority / Transfers / Furlough & Recall:</strong> Articles 13–16</li>
+        <li><strong>Moving / Hostage / Benefits:</strong> Articles 17–19</li>
+        <li><strong>Governance & Enforcement:</strong> Articles 20–24 (management rights; dues; grievance/SBA; no strike)</li>
+        <li><strong>Safety / Health / Security:</strong> Article 26</li>
+        <li><strong>Duration:</strong> Article 27</li>
+      </ul>
+    </section>
+
+    <section class="cs-report__section" id="comparative-notes">
+      <h2>Comparative Notes</h2>
+      <ul class="cs-list">
+        <li><strong>Scope & successorship are front-loaded:</strong> Article 1 is unusually expansive (merger protection + wet lease/subcontracting guardrails).</li>
+        <li><strong>Credit drivers are explicit:</strong> pay credit is computed trip-by-trip using block vs duty % vs TAFB % vs minimum daily averages, selecting the “greater of” method.</li>
+        <li><strong>Reserve is a full subsystem:</strong> reserve classifications (AM/PM/ER) + airport standby (APSB) mechanics and premium triggers are detailed and rule-dense.</li>
+        <li><strong>Operational flex is structured:</strong> AV days, footprint-based rescheduling, SAP, and open time rules form a coherent “control system” for disruptions and coverage.</li>
+      </ul>
+    </section>
+
+  <footer class="cs-report__footer">
+  <p class="cs-muted">
+    CrewSignal · Contract Architecture &amp; Comparative Analysis
+  </p>
+</footer>
+  </article>
+</body>
+</html>
