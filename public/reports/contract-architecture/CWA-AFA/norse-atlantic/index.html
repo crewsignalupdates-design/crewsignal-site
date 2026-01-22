@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>CWA-AFA · Norse Atlantic Airways · Contract Architecture Analysis · CrewSignal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/assets/css/main.css" />
+</head>
+<body>
+  <article class="cs-report" id="cwa-afa-norse-atlantic-contract-architecture">
+    <header class="cs-report__header">
+      <div class="cs-report__nav">
+        <a class="cs-report__back" href="/reports/contract-architecture/">← Back to Contract Architecture</a>
+      </div>
+
+      <h1 class="cs-report__title">CWA-AFA · Norse Atlantic Airways</h1>
+
+      <div class="cs-report__subtitle">Contract Analysis</div>
+      <div class="cs-report__meta">
+        <div><strong>Effective Period:</strong> November 22, 2022 – November 22, 2024</div>
+        <div><strong>Amendable since</strong> November 22, 2024</div>
+      </div>
+    </header>
+
+    <section class="cs-report__section" id="agreement-metadata">
+      <h2>Agreement Metadata</h2>
+
+      <ul>
+        <li><strong>Carrier:</strong> Norse Atlantic Airways ASA / Norse Atlantic Airways AS</li>
+        <li><strong>Workgroup:</strong> U.S.-based Cabin Crew Members (CCMs) assigned to bases located in the United States, its territories, and possessions (RLA jurisdiction)</li>
+        <li><strong>Union:</strong> CWA-AFA</li>
+        <li><strong>Certification:</strong> National Mediation Board (as referenced in the Agreement)</li>
+        <li><strong>Regulatory operating frame:</strong> EASA-based definitions and legality constructs (by Agreement design)</li>
+        <li><strong>Architecture flag:</strong> Cross-border labor + regulatory layering (U.S. RLA enforcement stack operating alongside EASA legality/duty/rest definitions)</li>
+      </ul>
+
+      <p class="cs-report__para">
+        This agreement is structurally unusual among U.S.-based flight attendant CBAs because it is designed for a U.S.-based workforce operating under a Norwegian AOC with EASA-based legality constructs, while remaining subject to U.S. labor law (RLA) for representation and enforcement. The resulting architecture is best read as a labor overlay built to remain coherent across multiple governing systems.
+      </p>
+    </section>
+
+    <section class="cs-report__section" id="contract-architecture-overview">
+      <h2>Contract Architecture Overview</h2>
+
+      <p class="cs-report__para">
+        Norse Atlantic’s agreement reflects a bespoke arrangement that is not merely stylistic—it is the product of jurisdictional and operational constraints present at the time the U.S. operation was established. The contract is anchored in a three-layer governance environment: (1) U.S. labor law (RLA) governing representation, bargaining, and dispute resolution; (2) European aviation regulation (EASA) governing duty, rest, standby, and legality; and (3) company rostering and scheduling systems coordinating long-haul rotations, mixed active/passive duty, and cross-border positioning.
+      </p>
+
+      <p class="cs-report__para">
+        Instead of recreating a conventional FAA-centric domestic work-rule structure, the agreement incorporates “Regulations” definitions directly (duty, standby, reserve, pairing/rotation, positioning/passive, day/day off, layover/rest period) and then layers contract protections and pay/credit rules on top of those externally defined constraints. This is a deliberate architecture choice: it treats regulatory legality as the immovable baseline, and uses the contract to allocate responsibilities, compensation, and enforceability around that baseline.
+      </p>
+
+      <p class="cs-report__para">
+        The arrangement also reflects early-stage structural bargaining. The agreement’s recognition language identifies CWA-AFA as the representative under an NMB certification file, and the agreement became effective November 22, 2022. This places organization and first-contract design at the formative stage of U.S. operations—before informal scheduling practices or managerial discretion norms could harden into de facto “policy.” As a result, the agreement contains unusually explicit structural protections for a new entrant, including direct-employment commitments, scope framing for U.S.-based CCM flying, successorship binding language, and merger-protection mechanisms.
+      </p>
+
+      <p class="cs-report__para">
+        A key consequence of this design is that several protections commonly engineered inside U.S. CBAs (hard contract ceilings and domestic-specific triggers) are instead enforced through externally binding regulatory minima. This does not eliminate the need for contract enforcement; it shifts where protections live and how they are operationalized. In Norse’s case, the contract’s value is concentrated in (a) explicit responsibility allocation (e.g., notification duty and check-in protection logic), (b) pay/credit stability (monthly guarantee, defined add-ons, pay protection when legality prevents flying), and (c) a formal RLA enforcement stack for disputes and structural violations.
+      </p>
+
+      <p class="cs-report__para">
+        <strong>Implication:</strong> This agreement is best interpreted as a jurisdictionally coherent labor overlay on an EASA-defined operational model. Its structural strength comes from coherence, defensibility, and early-stage scope framing; its vulnerabilities tend to arise where protections are procedure-driven or where remedies remain retrospective and time-delayed.
+      </p>
+    </section>
+
+    <section class="cs-report__section" id="scheduling-and-assignment-framework">
+      <h2>Scheduling &amp; Assignment Framework</h2>
+
+      <p class="cs-report__para">
+        Scheduling architecture is regulation-anchored: the Company must comply with applicable aviation authority regulations, and the agreement intervenes where it adds stricter terms, allocates responsibility, or supplies compensation. The contract explicitly assigns responsibility for schedule-change notifications to the Company and builds check-in protection logic around notice timing and positive contact standards.
+      </p>
+
+      <p class="cs-report__para">
+        Day-off protections are structurally clear: a minimum day-off floor is specified, and once a schedule is published the Company may not move or remove days off absent agreement—subject to defined irregular-operations encroachment logic and compensation. This creates a “protected baseline with an edge-state valve”: the baseline is strong, but operational disruption can still route outcomes through exception pathways (with compensation and bounded requirements).
+      </p>
+
+      <p class="cs-report__para">
+        The agreement also contains meaningful location constraints: absent prior written approval, CCMs are not required to check in or check out anywhere other than base. Positioning is handled as a defined subsystem, including confirmed tickets, seat/meal/luggage provisioning, no jumpseat requirement for passive travel, and a waiver mechanism (with operational responsibilities and logistics consequences specified).
+      </p>
+
+      <p class="cs-report__para">
+        <strong>Analytical lens:</strong> Protections are clear, but many are procedure-dependent and exception-sensitive. Practical strength depends on correct classification (active vs. passive, standby vs. pairing, irregular-operations encroachment vs. baseline schedule protection) and on the enforceability of notification and documentation standards.
+      </p>
+    </section>
+
+    <section class="cs-report__section" id="economic-structure">
+      <h2>Economic Structure</h2>
+
+      <p class="cs-report__para">
+        Norse’s economic architecture prioritizes predictability and auditability over premium-driven complexity. The core pay engine is block-hour compensation applied to both active and passive segments. A monthly guarantee supplies baseline income stability, with defined reductions for unpaid status. Add-on compensation is modular and narrowly defined (e.g., standby credit, training/meeting credit, holiday pay, bought day off, day-off encroachment pay, per diem).
+      </p>
+
+      <p class="cs-report__para">
+        Pay protection is structurally explicit in at least one critical legality edge case: if a CCM cannot perform duty due to flight time limitations, the monthly guarantee continues. This is consistent with an architecture designed to treat legality constraints as non-negotiable and to prevent legality-driven income collapse.
+      </p>
+
+      <p class="cs-report__para">
+        <strong>Key insight:</strong> The agreement reads as a stability-first economic system optimized for long-haul rotation integrity. Where some agreements use multipliers and premium triggers as behavioral deterrence, Norse leans toward defined credits, clear valuation rules, and a predictable guarantee spine.
+      </p>
+    </section>
+
+    <section class="cs-report__section" id="enforcement-and-dispute-resolution">
+      <h2>Enforcement &amp; Dispute Resolution Architecture</h2>
+
+      <p class="cs-report__para">
+        Enforcement is built on a conventional RLA stack: a defined grievance procedure with timelines, representation standards, investigation rules, and escalation to a System Board of Adjustment. This provides formal completeness and procedural legibility, but remedies are generally retrospective and time-delayed, as is typical in grievance/arbitration systems.
+      </p>
+
+      <p class="cs-report__para">
+        Structurally important is the agreement’s handling of scope and related protections, including expedited arbitration language for certain Article 1 disputes. This signals an architectural priority: protecting the integrity of the bargaining unit and operational scope is treated as a first-order system constraint rather than a routine work-rule disagreement.
+      </p>
+
+      <p class="cs-report__para">
+        <strong>Structural takeaway:</strong> The enforcement pathway is formally complete and coherent with the agreement’s jurisdictional posture. Practical leverage is strongest where disputes can be framed as structural violations (scope, successorship, job protection logic) rather than as fact-intensive operational disputes.
+      </p>
+    </section>
+
+    <section class="cs-report__section" id="structural-strengths-weaknesses-flags">
+      <h2>Structural Strengths, Weaknesses &amp; Comparative Flags</h2>
+
+      <p class="cs-report__para">
+        <strong>Structural strengths:</strong> Jurisdictional coherence across labor law and operational regulation; a direct-employment and scope posture uncommon among new entrants; day-off protection framed as a protected baseline; modular pay/credit design with a guarantee spine; and a formally complete RLA dispute-resolution stack.
+      </p>
+
+      <p class="cs-report__para">
+        <strong>Structural weaknesses:</strong> Several protections are procedure-driven and exception-sensitive; enforcement remains largely retrospective; and “discretion constraint” tends to be shaped by process and regulatory compliance rather than by hard contract-internal veto points.
+      </p>
+
+      <p class="cs-report__para">
+        <strong>Comparative flags (non-ranking):</strong> This agreement’s score profile is shaped by where protections are located (externally binding regulation vs. contract-internal ceilings), not solely by the presence or absence of protections. Readers should interpret domain scores as architectural signals—how protections are constructed and enforced—rather than as a direct proxy for intent or negotiating posture.
+      </p>
+    </section>
+
+    <section class="cs-report__section" id="standardized-contract-scorecard">
+      <h2>Standardized Contract Scorecard</h2>
+
+      <div class="cs-table cs-table--compact">
+        <table>
+          <thead>
+            <tr>
+              <th>Domain</th>
+              <th>Score</th>
+              <th>Rationale</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Scheduling Protections</td>
+              <td>3.4</td>
+              <td>Clear lineholder/reserve subsystems, but protections are procedure-driven and exception-sensitive</td>
+            </tr>
+            <tr>
+              <td>Pay &amp; Credit Quality</td>
+              <td>3.3</td>
+              <td>Defined credit drivers improve auditability; edge cases rely on “greater-of” logic and non-duplication</td>
+            </tr>
+            <tr>
+              <td>Work Rules &amp; Quality-of-Life</td>
+              <td>3.2</td>
+              <td>Conventional long-haul protections with variable strength in irregular operations and reassignment scenarios</td>
+            </tr>
+            <tr>
+              <td>Company Discretion Constraint</td>
+              <td>2.8</td>
+              <td>Constraints tend to be procedural rather than substantive, leaving meaningful operational flexibility</td>
+            </tr>
+            <tr>
+              <td>Enforcement Power</td>
+              <td>2.9</td>
+              <td>Standard grievance/System Board pathway; remedies are corrective and time-delayed</td>
+            </tr>
+            <tr>
+              <td>Clarity &amp; Modularity</td>
+              <td>3.6</td>
+              <td>Subsystem modularity reduces cognitive load and improves navigability relative to dense cross-referencing</td>
+            </tr>
+            <tr>
+              <td><strong>Total</strong></td>
+              <td><strong>19.2</strong></td>
+              <td><strong>out of 30</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="cs-report__para">
+        Built from the Norse Atlantic Airways 2022–2024 agreement text and architecture.
+      </p>
+    </section>
+
+    <section class="cs-report__section" id="context-notes">
+      <h2>Context Notes</h2>
+
+      <p class="cs-report__para">
+        This agreement is a high-signal example of cross-border contract architecture: it uses externally binding aviation regulation as the legality spine, and deploys the contract to allocate responsibilities, compensation, and enforceability under U.S. labor law. In that sense, its “shape” is intentionally different from domestic-only architectures.
+      </p>
+    </section>
+
+    <footer class="cs-report__footer">
+      <div class="cs-report__footer-text">CrewSignal · Contract Architecture &amp; Comparative Analysis</div>
+    </footer>
+  </article>
+</body>
+</html>
