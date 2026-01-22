@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <title>Horizon Air · Contract Architecture · Crew Signal</title>
+  <title>CWA-AFA · Horizon Air · Contract Architecture Analysis · CrewSignal</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="/assets/css/main.css" />
 </head>
@@ -14,21 +14,94 @@
         <a class="cs-back" href="/reports/contract-architecture/">← Back to Contract Architecture</a>
       </div>
 
-      <h1 class="cs-report__title">Horizon Air — Contract Architecture</h1>
+      <h1 class="cs-report__title">CWA-AFA · Horizon Air</h1>
+
+      <p class="cs-report__deck">Contract Architecture Analysis</p>
+
       <p class="cs-report__deck">
-        Structural map of the Horizon Air Flight Attendant agreement (AFA-CWA),
-        organized around scheduling, duty/rest, pay credits, reserve, and enforcement.
+        Effective Period: May 1, 2020 – April 30, 2024<br />
+        Amendable since May 1, 2024
       </p>
     </header>
 
+    <section class="cs-report__section" id="agreement-metadata">
+      <h2>Agreement Metadata</h2>
+      <p>
+        The Horizon Air Flight Attendant agreement is a regional-carrier contract organized in a conventional
+        article-based structure. It places core work rules and economic mechanics early, followed by scheduling
+        systems (lineholder and reserve), then benefits, seniority, and enforcement. Compared to many smaller
+        agreements, it is relatively comprehensive, with defined subsystems for reserve and scheduling that are
+        designed to be operationally applied rather than treated as aspirational policy.
+      </p>
+      <p>
+        Source note: This analysis is based on the Horizon Air Flight Attendant Contract covering May 1, 2020
+        through April 30, 2024.
+      </p>
+    </section>
+
+    <section class="cs-report__section" id="contract-architecture-overview">
+      <h2>Contract Architecture Overview</h2>
+      <p>
+        The agreement’s architecture is “system-forward”: it defines pay/credit rules, expenses, hours of service,
+        then locates the lineholder scheduling and reserve frameworks as discrete control layers. This improves
+        navigability during time-sensitive events (awards, reassignments, legality questions) because users can
+        identify the governing subsystem before drilling into exceptions.
+      </p>
+      <p>
+        Implication: The contract is structured to support operational decision-making, but outcomes can still depend
+        on careful classification (lineholder vs reserve) and proper trigger identification.
+      </p>
+    </section>
+
+    <section class="cs-report__section" id="scheduling-and-assignment-framework">
+      <h2>Scheduling &amp; Assignment Framework</h2>
+      <p>
+        Scheduling controls are concentrated in the lineholder article and a dedicated reserve article. The reserve
+        subsystem is comparatively rule-dense (reserve categories, callout/standby, assignment ordering) and is
+        designed to manage coverage variability. The lineholder scheduling architecture relies on award logic and
+        open time processes, with protections expressed as defined limits and procedural steps.
+      </p>
+      <p>
+        Analytical lens: Strong subsystem separation improves usability; enforcement reliability depends on clear triggers
+        and consistent application by scheduling and payroll.
+      </p>
+    </section>
+
+    <section class="cs-report__section" id="economic-structure">
+      <h2>Economic Structure</h2>
+      <p>
+        The pay/credit framework is designed around defined credit drivers and premium constructs rather than heavily
+        discretionary “policy” language. This supports auditability, but also means edge cases require careful attention
+        to the “greater of” calculations and non-duplication rules where applicable.
+      </p>
+      <p>
+        Key insight: The agreement’s economic model is structurally capable of producing predictable credit outcomes,
+        but only if the credit rules are applied consistently to actual operations (including irregular operations).
+      </p>
+    </section>
+
+    <section class="cs-report__section" id="enforcement-and-dispute-resolution-architecture">
+      <h2>Enforcement &amp; Dispute Resolution Architecture</h2>
+      <p>
+        Enforcement follows the standard airline labor pattern: defined grievance steps culminating in System Board
+        mechanisms. Structural strength is determined less by the existence of process and more by (a) clarity of
+        violations and (b) whether remedies are self-executing or require sustained procedural follow-through.
+      </p>
+      <p>
+        Structural takeaway: The enforcement pathway is present and recognizable; practical strength depends on how
+        quickly disputes can be advanced and whether delay is structurally rewarded.
+      </p>
+    </section>
+
+    <section class="cs-report__section" id="standardized-contract-scorecard">
+      <h2>Standardized Contract Scorecard</h2>
+      <p class="cs-muted">
+        (Scorecard placeholder) — fill once you’ve applied your canonical scoring rubric for this carrier.
+      </p>
+    </section>
+
     <section class="cs-report__section" id="contract-document">
       <h2>Contract Document</h2>
-
-      <p class="cs-contract__meta">
-        <strong>Union:</strong> <span class="cs-tag">CWA-AFA</span><br />
-        <strong>Document:</strong> Horizon Air Flight Attendant Contract (May 1, 2020 – April 30, 2024)
-      </p>
-
       <p>
         <a class="cs-contract__cba-link"
            href="/reports/contract-architecture/CWA-AFA/horizon-air/contract/horizon-air-2020-2024.pdf">
@@ -37,53 +110,11 @@
       </p>
     </section>
 
-    <section class="cs-report__section" id="status">
-      <h2>Status</h2>
-      <ul class="cs-list">
-        <li><strong>Effective term:</strong> May 1, 2020 – April 30, 2024</li>
-        <li><strong>Amendable:</strong> April 30, 2024 (evergreen May 1 thereafter unless Section 6 notice served)</li>
-        <li><strong>Notes:</strong> Includes multiple sideletters, including an implementation schedule and hotel standards.</li>
-      </ul>
-    </section>
-
-    <section class="cs-report__section" id="architecture-map">
-      <h2>Architecture Map</h2>
-      <ul class="cs-list">
-        <li><strong>Recognition / Scope / Successorship:</strong> Article 1 (includes merger protection, wet lease, subcontracting)</li>
-        <li><strong>Definitions:</strong> Article 2</li>
-        <li><strong>Pay & Credit System:</strong> Article 3 (credit-hour drivers; premium pay; guarantees; incentives)</li>
-        <li><strong>Duty-Time Expenses:</strong> Article 4 (lodging, transportation, parking options, per diem)</li>
-        <li><strong>Hours of Service:</strong> Article 5 (rest, duty limits, legs/block limits, days off, reschedule limits)</li>
-        <li><strong>Lineholder Scheduling / PBS / SAP / Open Time:</strong> Article 6</li>
-        <li><strong>Reserve System:</strong> Article 7 (classifications, callout, assignment order, APSB/airport standby)</li>
-        <li><strong>Training:</strong> Article 8</li>
-        <li><strong>Sick Leave / Attendance / PDO:</strong> Article 9</li>
-        <li><strong>Medical Exams / Fit for Duty Disputes:</strong> Article 10</li>
-        <li><strong>Vacation:</strong> Article 11</li>
-        <li><strong>Uniforms:</strong> Article 12</li>
-        <li><strong>Seniority / Transfers / Furlough & Recall:</strong> Articles 13–16</li>
-        <li><strong>Moving / Hostage / Benefits:</strong> Articles 17–19</li>
-        <li><strong>Governance & Enforcement:</strong> Articles 20–24 (management rights; dues; grievance/SBA; no strike)</li>
-        <li><strong>Safety / Health / Security:</strong> Article 26</li>
-        <li><strong>Duration:</strong> Article 27</li>
-      </ul>
-    </section>
-
-    <section class="cs-report__section" id="comparative-notes">
-      <h2>Comparative Notes</h2>
-      <ul class="cs-list">
-        <li><strong>Scope & successorship are front-loaded:</strong> Article 1 is unusually expansive (merger protection + wet lease/subcontracting guardrails).</li>
-        <li><strong>Credit drivers are explicit:</strong> pay credit is computed trip-by-trip using block vs duty % vs TAFB % vs minimum daily averages, selecting the “greater of” method.</li>
-        <li><strong>Reserve is a full subsystem:</strong> reserve classifications (AM/PM/ER) + airport standby (APSB) mechanics and premium triggers are detailed and rule-dense.</li>
-        <li><strong>Operational flex is structured:</strong> AV days, footprint-based rescheduling, SAP, and open time rules form a coherent “control system” for disruptions and coverage.</li>
-      </ul>
-    </section>
-
-  <footer class="cs-report__footer">
-  <p class="cs-muted">
-    CrewSignal · Contract Architecture &amp; Comparative Analysis
-  </p>
-</footer>
+    <footer class="cs-report__footer">
+      <p class="cs-muted">
+        CrewSignal · Contract Architecture &amp; Comparative Analysis
+      </p>
+    </footer>
   </article>
 </body>
 </html>
