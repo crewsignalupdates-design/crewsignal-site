@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>IBT · Republic Airways · Contract Architecture Analysis · CrewSignal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/assets/css/main.css" />
+</head>
+
+<body>
+  <article class="cs-report" id="contract-architecture-ibt-republic-airways">
+
+    <!-- Header / Nav -->
+    <header class="cs-report__header">
+      <div class="cs-report__nav">
+        <a class="cs-link cs-link--back" href="/reports/contract-architecture/">← Back to Contract Architecture</a>
+      </div>
+
+      <h1 class="cs-report__title">IBT · Republic Airways</h1>
+      <p class="cs-report__dek">
+  Contract Architecture Analysis<br />
+  <span class="cs-report__dates">Effective Period: October 12, 2022 – October 12, 2027</span>
+</p>
+    </header>
+
+    <!-- 1. Agreement Metadata -->
+    <section class="cs-report__section" id="agreement-metadata">
+      <h2>Agreement Metadata</h2>
+
+      <p>
+        Republic’s Flight Attendant agreement is a mature, system-administered regional-carrier CBA with detailed scope,
+        scheduling, and pay subsystems designed to be applied through bid/assignment software and governed through explicit
+        procedural rules. The agreement contains comparatively developed scope and successorship protections for a regional,
+        including anti–alter ego concepts and structured handling of successor transactions.
+      </p>
+    </section>
+
+    <!-- 2. Contract Architecture Overview -->
+    <section class="cs-report__section" id="contract-architecture-overview">
+      <h2>Contract Architecture Overview</h2>
+
+      <p>
+        Architecturally, the agreement is “system-forward”: it uses definitions, software-driven processes, and bounded
+        procedural pathways to manage a complex operational environment at scale. Rather than relying on broad standards,
+        it builds multiple rule families (scheduling, reserve, crediting, premiums) into administrable modules, with
+        outcomes frequently determined by eligibility, timing, and procedural thresholds.
+      </p>
+
+      <p>
+        The agreement’s architecture supports predictability and auditability when administered consistently, but can
+        become discretion-sensitive in edge cases where “operational necessity,” buffer logic, reserve availability, or
+        manual approvals shape outcomes.
+      </p>
+
+      <p class="cs-note">
+        <strong>Implication:</strong> The contract is structurally reliable when the software + procedural rails are honored, but protections can weaken where discretionary approvals substitute for self-executing limits.
+      </p>
+    </section>
+
+    <!-- 3. Scheduling & Assignment Framework -->
+    <section class="cs-report__section" id="scheduling-and-assignment-framework">
+      <h2>Scheduling &amp; Assignment Framework</h2>
+
+      <p>
+        Scheduling is governed through an integrated bid and transaction ecosystem (line construction, reserve assignment,
+        and open time processing), designed to route most schedule changes through standardized logic rather than ad hoc
+        management action. The architecture emphasizes bounded transaction windows, legality buffers, and eligibility
+        gating to control schedule modifications and reduce downstream conflicts.
+      </p>
+
+      <p>
+        The agreement’s structure implies a high reliance on transparency mechanisms (posted open time, denial reasons,
+        defined processing order) to make outcomes contestable. As with most system-driven contracts, the practical strength
+        of this framework depends on whether “exceptions” are narrow and consistently recorded.
+      </p>
+
+      <p class="cs-note">
+        <strong>Analytical lens:</strong> Scheduling protections are strongest where automation governs award order and denials are explainable, and weakest where manual discretion becomes the de facto control layer.
+      </p>
+    </section>
+
+    <!-- 4. Economic Structure -->
+    <section class="cs-report__section" id="economic-structure">
+      <h2>Economic Structure</h2>
+
+      <p>
+        The pay architecture is layered and audit-oriented: compensation is driven by “greater of” constructs across
+        scheduled versus actual values, with multiple credit drivers that can compete in a given month (e.g., leg-based
+        block credit, trip/min-day style constructs, and premium overlays). Premium and override structures exist to price
+        coverage problems and incentivize voluntary flying, but are frequently bounded by non-stacking logic.
+      </p>
+
+      <p>
+        This design can generate strong economic outcomes in targeted scenarios (premium open time, overtime thresholds),
+        but the interaction of credit drivers and non-pyramiding/non-stacking rules can reduce transparency and increase
+        cognitive load for line-level verification.
+      </p>
+
+      <p class="cs-note">
+        <strong>Key insight:</strong> The pay system is capable and auditable, but credit layering and premium carve-outs can make “why I was paid X” harder to reconstruct in heavily modified months.
+      </p>
+    </section>
+
+    <!-- 5. Enforcement & Dispute Resolution Architecture -->
+    <section class="cs-report__section" id="enforcement-and-dispute-resolution-architecture">
+      <h2>Enforcement &amp; Dispute Resolution Architecture</h2>
+
+      <p>
+        Enforcement follows the standard RLA pathway: staged grievance handling culminating in System Board adjudication.
+        Structurally, the agreement’s enforcement power is shaped by whether time limits and step advancement meaningfully
+        constrain delay, and whether remedies are framed as deterrent versus corrective.
+      </p>
+
+      <p>
+        Where the agreement creates accelerated handling (notably in higher-stakes scope/successorship disputes), structural
+        leverage increases. For routine scheduling and pay disputes, the architecture typically remains retrospective, with
+        practical strength depending on persistence and documentation quality.
+      </p>
+
+      <p class="cs-note">
+        <strong>Structural takeaway:</strong> Enforcement is procedurally complete, but deterrence is uneven—strongest in expedited categories and weaker where remedies arrive only after delay.
+      </p>
+    </section>
+
+    <!-- 6. Structural Strengths, Weaknesses & Comparative Flags -->
+    <section class="cs-report__section" id="structural-strengths-weaknesses-and-comparative-flags">
+      <h2>Structural Strengths, Weaknesses &amp; Comparative Flags</h2>
+
+      <p>
+        Republic’s principal structural strength is modularity: it separates scheduling, reserve, pay/credit, and enforcement
+        into distinct subsystems that can be administered through software and audited through procedural artifacts (postings,
+        award logic, denial reasons). A comparative strength for a regional is the presence of developed scope and successorship
+        architecture that can materially constrain circumvention if enforced.
+      </p>
+
+      <p>
+        The primary weakness is discretion sensitivity: buffer logic, operational necessity, and manual approvals can shift outcomes
+        from substantive limits to procedural contests. Without consistent documentation and enforcement follow-through, the architecture’s
+        complexity can dilute predictability rather than enhance it.
+      </p>
+    </section>
+
+    <!-- 7. Standardized Contract Scorecard -->
+    <section class="cs-report__section" id="standardized-contract-scorecard">
+      <h2>Standardized Contract Scorecard</h2>
+
+      <table class="cs-table">
+        <thead>
+          <tr>
+            <th>Domain</th>
+            <th>Score</th>
+            <th>Rationale</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Scheduling Protections</td>
+            <td>3.6</td>
+            <td>System-driven architecture and defined transaction rails; edge cases can become discretion-sensitive</td>
+          </tr>
+          <tr>
+            <td>Pay &amp; Credit Quality</td>
+            <td>3.5</td>
+            <td>Auditable credit drivers and premiums; layering and non-stacking reduce transparency in complex months</td>
+          </tr>
+          <tr>
+            <td>Work Rules &amp; Quality-of-Life</td>
+            <td>3.4</td>
+            <td>Comprehensive coverage and defined legality controls; effectiveness varies under operational exceptions</td>
+          </tr>
+          <tr>
+            <td>Company Discretion Constraint</td>
+            <td>3.0</td>
+            <td>Meaningful scope/successorship framing, but residual discretion persists via buffers and operational necessity</td>
+          </tr>
+          <tr>
+            <td>Enforcement Power</td>
+            <td>3.3</td>
+            <td>Procedurally complete grievance/SBA model; deterrence strongest where handling is accelerated</td>
+          </tr>
+          <tr>
+            <td>Clarity &amp; Modularity</td>
+            <td>3.4</td>
+            <td>Subsystem separation supports usability; rule density increases cognitive load for verification</td>
+          </tr>
+          <tr>
+            <td><strong>Total</strong></td>
+            <td><strong>20.2</strong></td>
+            <td><strong>out of 30</strong></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- 8. Context Notes -->
+    <section class="cs-report__section" id="context-notes">
+      <h2>Context Notes</h2>
+
+      <p>
+        This score reflects contract architecture and enforceability characteristics within a regional-carrier operating environment.
+        It does not measure bargaining intent or effort; it evaluates structural reliability, clarity, and the practical leverage of enforcement pathways.
+      </p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="cs-report__footer">
+      <p class="cs-muted">
+        CrewSignal · Contract Architecture &amp; Comparative Analysis
+      </p>
+    </footer>
+
+  </article>
+</body>
+</html>
