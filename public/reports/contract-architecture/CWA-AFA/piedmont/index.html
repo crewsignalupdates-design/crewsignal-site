@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>CWA-AFA · Piedmont Airlines · Contract Architecture Analysis · CrewSignal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/assets/css/main.css" />
+</head>
+<body>
+  <article class="cs-report" id="cwa-afa-piedmont-contract-architecture">
+    <header class="cs-report__header">
+      <div class="cs-report__nav">
+        <a class="cs-report__back" href="/reports/contract-architecture/">← Back to Contract Architecture</a>
+      </div>
+
+      <h1 class="cs-report__title">CWA-AFA · Piedmont Airlines</h1>
+      <div class="cs-report__subtitle">Contract Analysis</div>
+
+      <div class="cs-report__subtitle">Contract Analysis</div>
+
+<p class="cs-report__dek">
+  <span class="cs-report__dates">
+    Effective Period: March 2, 2022 – March 2, 2026<br />
+    <em>Amendable since September 2, 2025</em>
+  </span>
+</p>
+  </header>
+
+    <section class="cs-report__section">
+      <h2>Agreement Metadata</h2>
+      <ul>
+        <li><strong>Carrier:</strong> :contentReference[oaicite:1]{index=1}</li>
+        <li><strong>Union:</strong> Association of Flight Attendants-CWA (CWA-AFA)</li>
+        <li><strong>Governing Law:</strong> Railway Labor Act (RLA)</li>
+        <li><strong>Contract Term:</strong> March 2, 2022 – March 2, 2026</li>
+        <li><strong>Operational Model:</strong> Regional network carrier (American Eagle)</li>
+      </ul>
+    </section>
+
+    <section class="cs-report__section">
+      <h2>Contract Architecture Overview</h2>
+
+      <p>
+        The Piedmont Airlines Flight Attendant Agreement reflects a <strong>modern, rule-dense regional carrier architecture</strong>,
+        negotiated in the post-pandemic environment and shaped by both operational recovery pressures and
+        long-standing AFA regional bargaining priorities.
+      </p>
+
+      <p>
+        Structurally, the agreement prioritizes <em>predictability, procedural constraint, and auditable enforcement</em>.
+        Rather than relying on broad management discretion with after-the-fact remedies, the contract embeds
+        detailed rules governing line construction, reserve utilization, reassignment, premium flying, and junior assignment.
+      </p>
+
+      <p>
+        The agreement also exhibits a high degree of <strong>modularity</strong>: scheduling, reserve, open time,
+        premium trips, and hours-of-service constraints are treated as distinct but interoperable subsystems,
+        reducing ambiguity at operational stress points.
+      </p>
+
+      <p>
+        <strong>Implication summary:</strong> Piedmont’s agreement is designed to operate under continuous operational pressure.
+        Its strength lies not in isolated benefits, but in a tightly integrated rule system that limits discretion,
+        preserves days off, and converts disruptions into defined pay and credit outcomes.
+      </p>
+    </section>
+
+    <section class="cs-report__section">
+      <h2>Scheduling &amp; Assignment Framework</h2>
+
+      <p>
+        Scheduling protections are among the strongest structural features of this agreement.
+        Lines are built within defined credit bands, with hard minimum days-off guarantees and
+        explicit limits on duty periods, block hours, and trip construction.
+      </p>
+
+      <p>
+        Open flying, 48-hour adjustment windows, reserve assignment ordering, and premium trip designation
+        are all governed by explicit formulas rather than ad hoc discretion.
+        The contract further requires documentation, logging, and recorded communications for scheduling actions.
+      </p>
+
+      <p>
+        Junior assignment (drafting) is tightly constrained:
+        capped annually and monthly, subject to ordering rules, and paired with premium pay and notice requirements.
+      </p>
+
+      <p>
+        <strong>Analytical lens:</strong> This is a constraint-forward scheduling system.
+        Flexibility exists, but it is bounded, sequenced, and compensated.
+      </p>
+    </section>
+
+    <section class="cs-report__section">
+      <h2>Economic Structure</h2>
+
+      <p>
+        Piedmont’s economic architecture centers on a <strong>75-hour monthly guarantee</strong>,
+        augmented by detailed minimum-day rules, deadhead credit, holiday pay,
+        premium trip compensation, and targeted stipends.
+      </p>
+
+      <p>
+        Premium trips are not discretionary bonuses; they are triggered by defined staffing thresholds
+        and paid above guarantee using a transparent formula tied to days worked beyond the bid award.
+      </p>
+
+      <p>
+        <strong>Key insight:</strong> The pay system reinforces the scheduling architecture.
+        When the Company needs flexibility, the cost is explicit and predictable.
+      </p>
+    </section>
+
+    <section class="cs-report__section">
+      <h2>Enforcement &amp; Dispute Resolution Architecture</h2>
+
+      <p>
+        The grievance and System Board framework is comprehensive and procedurally disciplined.
+        Electronic filings, read-receipt confirmation, mediation prior to arbitration,
+        and defined timelines reduce procedural drift.
+      </p>
+
+      <p>
+        Scope and seniority disputes receive expedited handling,
+        signaling their structural importance within the agreement.
+      </p>
+
+      <p>
+        <strong>Structural takeaway:</strong> Enforcement power is primarily procedural rather than immediate,
+        but the depth of rule clarity significantly improves grievance viability.
+      </p>
+    </section>
+
+    <section class="cs-report__section">
+      <h2>Structural Strengths, Weaknesses &amp; Comparative Flags</h2>
+
+      <p><strong>Strengths:</strong> Dense rule construction, strong days-off integrity,
+      explicit premium trip mechanics, junior assignment caps, and high modular clarity.</p>
+
+      <p><strong>Weaknesses:</strong> Complexity may increase cognitive load;
+      enforcement remains retrospective rather than self-executing.</p>
+
+      <p><strong>Comparative flags:</strong> This agreement reflects a mature AFA regional pattern
+      emphasizing control and predictability over broad discretion.</p>
+    </section>
+
+    <section class="cs-report__section">
+      <h2>Standardized Contract Scorecard</h2>
+
+      <div class="cs-table cs-table--compact">
+        <table>
+          <thead>
+            <tr>
+              <th>Domain</th>
+              <th>Score</th>
+              <th>Rationale</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Scheduling Protections</td>
+              <td>3.7</td>
+              <td>Highly structured line construction, reserve ordering, and junior assignment limits</td>
+            </tr>
+            <tr>
+              <td>Pay &amp; Credit Quality</td>
+              <td>3.5</td>
+              <td>Clear guarantee spine with defined premium and minimum-day mechanics</td>
+            </tr>
+            <tr>
+              <td>Work Rules &amp; Quality-of-Life</td>
+              <td>3.6</td>
+              <td>Strong days-off protection and documented scheduling communications</td>
+            </tr>
+            <tr>
+              <td>Company Discretion Constraint</td>
+              <td>3.3</td>
+              <td>Discretion exists but is bounded by explicit sequencing and caps</td>
+            </tr>
+            <tr>
+              <td>Enforcement Power</td>
+              <td>3.2</td>
+              <td>Robust grievance architecture with mediation and documentation requirements</td>
+            </tr>
+            <tr>
+              <td>Clarity &amp; Modularity</td>
+              <td>3.8</td>
+              <td>Highly modular rule system with strong internal consistency</td>
+            </tr>
+            <tr>
+              <td><strong>Total</strong></td>
+              <td><strong>21.1</strong></td>
+              <td><strong>out of 30</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <footer class="cs-report__footer">
+      <div class="cs-report__footer-text">CrewSignal · Contract Architecture &amp; Comparative Analysis</div>
+    </footer>
+  </article>
+</body>
+</html>

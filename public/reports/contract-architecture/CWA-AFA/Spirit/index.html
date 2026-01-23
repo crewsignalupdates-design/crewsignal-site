@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>CWA-AFA · Spirit Airlines · Contract Architecture Analysis · CrewSignal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/assets/css/main.css" />
+</head>
+<body>
+  <article class="cs-report" id="cwa-afa-spirit-contract-architecture">
+    <header class="cs-report__header">
+      <div class="cs-report__nav">
+        <a class="cs-report__back" href="/reports/contract-architecture/">← Back to Contract Architecture</a>
+      </div>
+
+      <h1 class="cs-report__title">CWA-AFA · Spirit Airlines</h1>
+      <div class="cs-report__subtitle">Contract Analysis</div>
+
+      <p class="cs-report__dek">
+        <span class="cs-report__dates">
+          Effective Period: April 14, 2023 – January 1, 2026<br />
+          <em>Amendable since January 1, 2026</em>
+        </span>
+      </p>
+    </header>
+
+    <section class="cs-report__section" id="agreement-metadata">
+      <h2>Agreement Metadata</h2>
+      <ul>
+        <li><strong>Carrier:</strong> Spirit Airlines, Inc.</li>
+        <li><strong>Union:</strong> Association of Flight Attendants-CWA (CWA-AFA)</li>
+        <li><strong>Governing Law:</strong> Railway Labor Act (RLA)</li>
+        <li><strong>Recognition:</strong> NMB certification R-6767 (Nov. 6, 2000)</li>
+        <li><strong>Scope posture:</strong> Broad “operational control” coverage including wet leases; limited time-bounded contracting-out window (90 days per occurrence) with no-furlough constraint</li>
+      </ul>
+    </section>
+
+    <section class="cs-report__section" id="contract-architecture-overview">
+      <h2>Contract Architecture Overview</h2>
+
+      <p class="cs-report__para">
+        Spirit’s agreement reflects a <strong>modern, systemized operational contract architecture</strong> built around
+        explicit scheduling subsystems (Transition, Credit Restoration, Seniority Open Time, Daily Open Time, and near–real time trading),
+        paired with a credit and pay structure that converts disruption into defined outcomes rather than informal discretion.
+      </p>
+
+      <p class="cs-report__para">
+        Several structural signals recur throughout the agreement:
+        (1) a high reliance on <strong>documented processes</strong> (recorded scheduling lines, retained transaction logs, audit access for union representatives);
+        (2) explicit conversion of disruptions into <strong>pay/credit restoration</strong> paths (e.g., Day Off Restoration, Time Recoverable Status);
+        and (3) a built-in <strong>“exception taxonomy”</strong> for irregular operations (including the agreement’s “ADP3” definition for severe network disruption).
+      </p>
+
+      <p class="cs-report__para">
+        The architecture also preserves management rights broadly, but constrains their operational exercise through process:
+        formal order-of-assignment sequencing, positive-contact requirements, caps on junior assignment and reroute frequency,
+        and explicit compensation triggers (150% and 200% constructs for defined scenarios).
+      </p>
+
+      <p class="cs-report__para">
+        <strong>Implication summary:</strong> This agreement is best read as a scheduling-and-credit machine:
+        it reduces ambiguity by (a) forcing operational actions into named pathways with timing, notice, and audit rules,
+        and (b) compensating flexibility through defined premium and restoration mechanisms.
+        Its practical strength depends on process integrity (logging, recordings, and correct classification),
+        but where those mechanisms function, the contract is structurally defensible under operational stress.
+      </p>
+    </section>
+
+    <section class="cs-report__section" id="scheduling-and-assignment-framework">
+      <h2>Scheduling &amp; Assignment Framework</h2>
+
+      <p class="cs-report__para">
+        Scheduling is organized into discrete, time-bounded stages with clear sequencing:
+        Monthly Bid → Initial Award → Transition (trip drops for conflicts) → Credit Restoration → Relief Line award → Final Award →
+        Seniority Open Time rounds → Daily Open Time and near–real time trading.
+        This reduces “hidden discretion” by making schedule change pathways visible and timestamped.
+      </p>
+
+      <p class="cs-report__para">
+        The agreement uses several unusually explicit structural controls:
+      </p>
+
+      <ul>
+        <li>
+          <strong>Schedule integrity as a defined concept.</strong> The agreement defines “Schedule Integrity” as the right to fly awarded trips and retain minimum days off, subject to legality and defined exceptions.
+        </li>
+        <li>
+          <strong>Positive contact as an enforceable control surface.</strong> Assignment/reschedule/reroute actions are routed through “Positive Contact,” including phone or electronic means, and the Flight Attendant must confirm notification.
+        </li>
+        <li>
+          <strong>Order of assignment is codified.</strong> Open flying is assigned through an explicit ordering (Time Recoverable → Reserves → Premium Pick-Up Folder → Reserves on movable days off → Reroute (out of base) → Junior Assignment).
+        </li>
+        <li>
+          <strong>Time Recoverable Status.</strong> A named rescheduling state that limits what may be assigned (no reserve assignment), constrains assignment timing, and introduces automatic day-by-day release if a replacement is not assigned by defined deadlines.
+        </li>
+        <li>
+          <strong>Day Off Restoration (DOR).</strong> A structured restoration mechanism with redemption restrictions (e.g., not on Critical Days or Holiday Weekends) and an alternate “cash-out” option (4:00 credit above guarantee).
+        </li>
+      </ul>
+
+      <p class="cs-report__para">
+        Reserve protections are particularly explicit: reserves have immoveable “Guaranteed Days Off” (GDOs) designated partly by the Flight Attendant and partly by the Company,
+        moveable days off with restoration rights, five shift-based notification windows (A–E), minimum notice to report, bucket assignment ordering, real-time transparency requirements,
+        and partial exemptions from Ready Reserve assignment by base size and seniority preference.
+      </p>
+
+      <p class="cs-report__para">
+        <strong>Analytical lens:</strong> Spirit’s scheduling framework is constraint-forward but not rigid.
+        It permits flexibility, but the flexibility is forced through named channels with recordkeeping, defined timing windows, and pay/restoration consequences.
+      </p>
+    </section>
+
+    <section class="cs-report__section" id="economic-structure">
+      <h2>Economic Structure</h2>
+
+      <p class="cs-report__para">
+        Spirit’s pay/credit architecture is built on a <strong>72-hour bid period guarantee</strong> with layered pairing guarantees that reward time away and duty construction:
+        duty-period minimums (4:30 multi-day; 4:00 single duty period), an additional duty-period credit for extended layovers beyond 22 hours,
+        and a time-away-from-base credit mechanic (1:00 per 4.20 hours TAFB).
+      </p>
+
+      <p class="cs-report__para">
+        Premium and penalty economics are not incidental; they are used as structural constraints:
+        reroute/reschedule pay protection uses “greater-of” logic with <strong>150% pay for additional pairing credit</strong> above the original trip,
+        junior assignment pays <strong>1.5x above guarantee</strong>,
+        company-designated premium flying pays <strong>200% trip credit above guarantee</strong>,
+        and holiday pay is <strong>200%</strong> subject to completion conditions.
+        Deadhead pay is credited at <strong>100%</strong> (flight deadhead), which is a notable valuation choice in a domestic ULCC context.
+      </p>
+
+      <p class="cs-report__para">
+        <strong>Key insight:</strong> The economic system is constructed to make schedule integrity and disruption pathways auditable and compensable.
+        Rather than relying on informal practices to “make people whole,” the agreement embeds explicit restoration and premium triggers that activate when defined states occur.
+      </p>
+    </section>
+
+    <section class="cs-report__section" id="enforcement-and-dispute-resolution">
+      <h2>Enforcement &amp; Dispute Resolution Architecture</h2>
+
+      <p class="cs-report__para">
+        Enforcement is a standard RLA grievance and System Board model, with an additional front-end non-disciplinary intake step:
+        a <strong>Complaint Resolution Form (CRF)</strong> is required prior to filing a non-disciplinary grievance, with defined deadlines and escalation rights.
+        Monthly grievance meetings function as a structured resolution stage before System Board appeal.
+      </p>
+
+      <p class="cs-report__para">
+        A notable enforcement feature is the agreement’s multi-layer mediation design:
+        quarterly mediation for System Board-submitted grievances, and optional mediation with an NMB mediator that can produce an <strong>advisory decision</strong>
+        (adoptable by mutual agreement). This increases throughput in a fact-intensive system without collapsing entirely into arbitration.
+      </p>
+
+      <p class="cs-report__para">
+        The contract also hardens evidentiary leverage in scheduling disputes:
+        Crew Scheduling/SOD calls are recorded and retained, the union has access rights,
+        and <strong>if a recording is not available, the issue is resolved in favor of the Flight Attendant in the absence of additional evidence</strong>.
+        That is a rare, structurally meaningful enforceability clause.
+      </p>
+
+      <p class="cs-report__para">
+        <strong>Structural takeaway:</strong> Enforcement remains retrospective, but the agreement’s audit architecture (transactions + recordings) materially improves enforceability.
+        The mediation layers provide additional mechanisms for resolution without waiting for full System Board arbitration.
+      </p>
+    </section>
+
+    <section class="cs-report__section" id="strengths-weaknesses-flags">
+      <h2>Structural Strengths, Weaknesses &amp; Comparative Flags</h2>
+
+      <p class="cs-report__para">
+        <strong>Structural strengths:</strong> Highly modular scheduling ecosystem (Transition/Credit Restoration/SOT/DOT); explicit order-of-assignment controls;
+        strong reserve design (GDO immoveables + shifts + bucket ordering + real-time transparency); robust pay/credit “greater-of” logic with defined premiums;
+        and strong evidentiary enforcement tools (recordings + presumption when missing).
+      </p>
+
+      <p class="cs-report__para">
+        <strong>Structural weaknesses:</strong> High cognitive load due to subsystem density; reliance on correct classification and process execution;
+        and continued management rights breadth (though bounded procedurally) that can shift outcomes through designated exceptions (e.g., Critical Days / Holiday Weekends).
+      </p>
+
+      <p class="cs-report__para">
+        <strong>Comparative flags:</strong> This agreement is a “process-and-audit” contract: it assumes a high volume of scheduling transactions and builds enforceability
+        through logs, recorded lines, and named states (Time Recoverable, DOR, premium folders) rather than simple prohibition.
+      </p>
+    </section>
+
+    <section class="cs-report__section" id="scorecard">
+      <h2>Standardized Contract Scorecard</h2>
+
+      <div class="cs-table cs-table--compact">
+        <table>
+          <thead>
+            <tr>
+              <th>Domain</th>
+              <th>Score</th>
+              <th>Rationale</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Scheduling Protections</td>
+              <td>3.8</td>
+              <td>Highly structured assignment sequencing, restoration mechanics, and reserve architecture with explicit timing and auditability</td>
+            </tr>
+            <tr>
+              <td>Pay &amp; Credit Quality</td>
+              <td>3.7</td>
+              <td>Layered guarantees (duty/TAFB) and defined premiums (150%/200%) improve predictability and compensation clarity</td>
+            </tr>
+            <tr>
+              <td>Work Rules &amp; Quality-of-Life</td>
+              <td>3.6</td>
+              <td>Strong days-off minima, behind-the-door rest mechanisms via hotel standards, and defined disruption/restoration options</td>
+            </tr>
+            <tr>
+              <td>Company Discretion Constraint</td>
+              <td>3.4</td>
+              <td>Management rights are broad but operational discretion is routed through named pathways with caps, ordering, and compensation triggers</td>
+            </tr>
+            <tr>
+              <td>Enforcement Power</td>
+              <td>3.4</td>
+              <td>CRF+grievance+System Board with layered mediation; recorded-line evidentiary leverage improves practical enforcement</td>
+            </tr>
+            <tr>
+              <td>Clarity &amp; Modularity</td>
+              <td>3.8</td>
+              <td>Subsystem clarity is high (Transition/Credit Restoration/SOT/DOT; reserve shifts/buckets/GDO); definitions support operational precision</td>
+            </tr>
+            <tr>
+              <td><strong>Total</strong></td>
+              <td><strong>21.7</strong></td>
+              <td><strong>out of 30</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="cs-report__section" id="context-notes">
+      <h2>Context Notes</h2>
+      <p class="cs-report__para">
+        This agreement explicitly defines severe irregular operations states (e.g., “ADP3”) and embeds operational exceptions (Critical Days / Holiday Weekends)
+        into drop/trade and restoration logic. Readers should interpret these as structural “pressure valves” that preserve system integrity under stress, while compensating or restoring
+        through defined pathways when those valves are used.
+      </p>
+    </section>
+
+    <footer class="cs-report__footer">
+      <div class="cs-report__footer-text">CrewSignal · Contract Architecture &amp; Comparative Analysis</div>
+    </footer>
+  </article>
+</body>
+</html>
