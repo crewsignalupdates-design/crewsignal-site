@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>IBT · NetJets Aviation · Contract Architecture Analysis · CrewSignal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/assets/css/main.css" />
+</head>
+<body>
+  <article class="cs-report" id="ibt-netjets-contract-architecture">
+    <header class="cs-report__header">
+      <div class="cs-report__nav">
+        <a class="cs-report__back" href="/reports/contract-architecture/">← Back to Contract Architecture</a>
+      </div>
+
+      <h1 class="cs-report__title">IBT · NetJets Aviation</h1>
+      <div class="cs-report__subtitle">Contract Analysis</div>
+
+      <p class="cs-report__dek">
+        <span class="cs-report__dates">
+          Effective Period: December 20, 2023 – December 21, 2026<br />
+          <em>Amendable since December 21, 2026</em>
+        </span>
+      </p>
+    </header>
+
+    <section class="cs-report__section" id="agreement-metadata">
+      <h2>Agreement Metadata</h2>
+
+      <p class="cs-report__para">
+        This analysis examines the collective bargaining agreement covering Flight Attendants employed by NetJets Aviation, Inc.
+        and represented by the International Brotherhood of Teamsters (IBT), Airline Division. The agreement governs a fractional
+        ownership operation that differs fundamentally from scheduled Part 121 airline service in its duty patterns, tour structure,
+        and relationship between work time, rest, and time away from home. :contentReference[oaicite:10]{index=10}
+      </p>
+
+      <p class="cs-report__para">
+        Unlike traditional airlines, NetJets operates under a tour-based model in which Flight Attendants are assigned multi-day
+        rotations consisting of extended duty blocks followed by scheduled periods of time off. There is no conventional distinction
+        between lineholders and reserves, no monthly bid package of individual pairings, and no daily reassignment paradigm comparable
+        to hub-and-spoke carriers. As a result, scheduling concepts common to airline CBAs do not map directly onto this agreement.
+        :contentReference[oaicite:11]{index=11}
+      </p>
+
+      <p class="cs-report__para">
+        The agreement operates under the Railway Labor Act and includes a comprehensive grievance and System Board of Adjustment framework.
+        Because Flight Attendants live and work away from a fixed base for extended periods, the contract places heavy emphasis on tour integrity,
+        rest sequencing, duty limits, hotel and travel standards, and recovery time rather than flight-by-flight assignment authority. :contentReference[oaicite:12]{index=12}
+      </p>
+    </section>
+
+    <section class="cs-report__section" id="contract-architecture-overview">
+      <h2>Contract Architecture Overview</h2>
+
+      <p class="cs-report__para">
+        NetJets’ Flight Attendant agreement represents a structurally distinct labor architecture within the CrewSignal framework.
+        While negotiated under the same Railway Labor Act regime as airline CBAs, its internal logic is shaped by fractional flying:
+        variable destinations, long duty days, non-linear trip construction, and extended periods away from home. :contentReference[oaicite:13]{index=13}
+      </p>
+
+      <p class="cs-report__para">
+        The contract is built around tour-based predictability, fatigue management through mandatory rest structure, and compensation aligned
+        to duty exposure rather than block-hour productivity. Operational flexibility exists, but it is exercised within tour parameters rather than
+        through airline-style daily reassignment. :contentReference[oaicite:14]{index=14}
+      </p>
+
+      <p class="cs-report__para">
+        <strong>Implication Summary:</strong> This agreement is best understood as a macro-level scheduling contract. Its strength lies in structuring
+        work and recovery across extended tours, providing predictability and fatigue protection in an environment where daily scheduling discretion
+        would be unworkable. Its limitations stem from the same design choice: flexibility is constrained by tour architecture, and remedies are
+        largely corrective once work has already been performed.
+      </p>
+    </section>
+
+    <section class="cs-report__section" id="scheduling-assignment-framework">
+      <h2>Scheduling &amp; Assignment Framework</h2>
+
+      <p class="cs-report__para">
+        NetJets’ scheduling and assignment framework is tour-based rather than pairing-based. The agreement governs work through predefined tours of duty,
+        with protections designed to manage fatigue, predictability, and recovery over extended periods. There is no conventional airline reserve system;
+        availability is embedded in the tour structure itself. :contentReference[oaicite:15]{index=15}
+      </p>
+
+      <p class="cs-report__para">
+        The tour is the primary control surface. Scheduling protections emphasize tour integrity, maximum duty and rest sequencing, and recovery between tours.
+        Within tours, duty day composition may vary substantially, but tour-level limits and rest definitions provide the principal constraint mechanism. :contentReference[oaicite:16]{index=16}
+      </p>
+
+      <p class="cs-report__para">
+        <strong>Analytical Lens:</strong> This framework is constraint-forward at the tour level and flexibility-tolerant within tours.
+        Protections are strongest in how work and rest are packaged and sequenced across days, not in flight-by-flight reassignment veto points.
+      </p>
+    </section>
+
+    <section class="cs-report__section" id="economic-structure">
+      <h2>Economic Structure</h2>
+
+      <p class="cs-report__para">
+        NetJets’ economic structure is aligned with its tour-based scheduling architecture rather than airline block-hour productivity.
+        Compensation is designed to value time exposure and duty intensity, using overtime, extended day pay constructs, and additional pay programs that
+        recognize long duty days and night duty realities common to fractional operations. :contentReference[oaicite:17]{index=17}
+      </p>
+
+      <p class="cs-report__para">
+        <strong>Key Insight:</strong> This is a time-and-duty valuation system, not a flight-time productivity system. Pay logic reinforces scheduling logic
+        by making extended duty and recovery consequences economically visible and auditable.
+      </p>
+    </section>
+
+    <section class="cs-report__section" id="enforcement-dispute-resolution">
+      <h2>Enforcement &amp; Dispute Resolution Architecture</h2>
+
+      <p class="cs-report__para">
+        Enforcement follows a complete Railway Labor Act model: a multi-step grievance process with defined timelines and information exchange, with escalation
+        to a System Board of Adjustment including a neutral arbitrator. The agreement also includes mediation availability and designated expedited arbitration
+        mechanisms to improve throughput in fact-intensive disputes. :contentReference[oaicite:18]{index=18}
+      </p>
+
+      <p class="cs-report__para">
+        Remedies remain corrective rather than punitive. In a tour-based system, many issues cannot be cured until after a tour is completed, so enforcement often
+        focuses on post-tour correction rather than real-time intervention. :contentReference[oaicite:19]{index=19}
+      </p>
+
+      <p class="cs-report__para">
+        <strong>Structural Takeaway:</strong> Enforcement is procedurally complete but temporally delayed. The agreement’s practical strength depends on documentation and
+        disciplined use of the grievance/SBA pipeline to preserve tour integrity and rest protections.
+      </p>
+    </section>
+
+    <section class="cs-report__section" id="strengths-weaknesses-flags">
+      <h2>Structural Strengths, Weaknesses &amp; Comparative Flags</h2>
+
+      <p class="cs-report__para">
+        <strong>Structural strengths:</strong> Tour-based predictability; explicit rest architecture; compensation aligned to duty exposure; robust scope and successorship protections
+        with fencing/interest arbitration concepts; and a complete grievance/SBA system with throughput-aware features. :contentReference[oaicite:20]{index=20}
+      </p>
+
+      <p class="cs-report__para">
+        <strong>Structural weaknesses:</strong> High interpretive density and cognitive load; broad management rights constrained primarily through process; and corrective-only remedies
+        without punitive deterrence for repeat non-compliance. :contentReference[oaicite:21]{index=21}
+      </p>
+
+      <p class="cs-report__para">
+        <strong>Comparative flags:</strong> This is a macro-architecture contract. Readers should evaluate it by tour integrity and rest sequencing rather than airline reserve paradigms.
+      </p>
+    </section>
+
+    <section class="cs-report__section" id="scorecard">
+      <h2>Standardized Contract Scorecard</h2>
+
+      <div class="cs-table cs-table--compact">
+        <table>
+          <thead>
+            <tr>
+              <th>Domain</th>
+              <th>Score</th>
+              <th>Rationale</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Scheduling Protections</td>
+              <td>3.4</td>
+              <td>Strong tour-based structure with defined duty/rest frameworks; fewer airline-style granular controls, but the architecture fits the operating model</td>
+            </tr>
+            <tr>
+              <td>Pay &amp; Credit Quality</td>
+              <td>3.5</td>
+              <td>Compensation is aligned to duty intensity and tour realities; auditability is strong but complex</td>
+            </tr>
+            <tr>
+              <td>Work Rules &amp; Quality-of-Life</td>
+              <td>3.7</td>
+              <td>Rest definition and tour recovery logic are central and explicit; travel/expense frameworks are built for extended time away from home</td>
+            </tr>
+            <tr>
+              <td>Company Discretion Constraint</td>
+              <td>3.0</td>
+              <td>Broad management rights, but operational action is constrained through defined limits and compensation triggers</td>
+            </tr>
+            <tr>
+              <td>Enforcement Power</td>
+              <td>3.2</td>
+              <td>Complete grievance + System Board model with mediation and expedited arbitration features; remedies are corrective and time-delayed</td>
+            </tr>
+            <tr>
+              <td>Clarity &amp; Modularity</td>
+              <td>3.5</td>
+              <td>Strong definitions and subsystem organization; length and side letters increase cognitive load</td>
+            </tr>
+            <tr>
+              <td><strong>Total</strong></td>
+              <td><strong>20.3</strong></td>
+              <td><strong>out of 30</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="cs-report__section" id="context-notes">
+      <h2>Context Notes</h2>
+
+      <p class="cs-report__para">
+        The agreement’s Duration section sets effectiveness on the Ratification Date and a base term through December 21, 2026, with a unilateral Company option
+        to extend the amendable date through December 21, 2029 if exercised by the specified notice deadline. This page uses the base term in the header and treats
+        the option period as a contingent extension rather than a guaranteed term. :contentReference[oaicite:22]{index=22}
+      </p>
+    </section>
+
+    <footer class="cs-report__footer">
+      <div class="cs-report__footer-text">CrewSignal · Contract Architecture &amp; Comparative Analysis</div>
+    </footer>
+  </article>
+</body>
+</html>
