@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>IAM · National Airlines · Contract Architecture Analysis · CrewSignal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/assets/css/main.css" />
+</head>
+<body>
+  <article class="cs-report" id="iam-national-airlines-contract-architecture">
+    <header class="cs-report__header">
+      <div class="cs-report__nav">
+        <a class="cs-report__back" href="/reports/contract-architecture/">← Back to Contract Architecture</a>
+      </div>
+
+      <h1 class="cs-report__title">IAM · National Airlines</h1>
+      <div class="cs-report__subtitle">Contract Analysis</div>
+
+      <p class="cs-report__dek">
+        <span class="cs-report__dates">
+          Effective Period: November 6, 2023 – November 6, 2028<br />
+          <em>Amendable since November 6, 2028</em>
+        </span>
+      </p>
+    </header>
+
+    <section class="cs-report__section" id="agreement-metadata">
+      <h2>Agreement Metadata</h2>
+
+      <p class="cs-report__para">
+        This report examines the collective bargaining agreement covering Flight Attendants employed by
+        National Air Cargo Group, Inc. d/b/a National Airlines (“National Airlines”), represented by the
+        International Association of Machinists and Aerospace Workers (IAM). The agreement applies to
+        Flight Attendants assigned to domiciles located in the United States, its territories, and possessions,
+        within Railway Labor Act jurisdiction. The agreement references NMB Certification Number R-7565
+        (January 21, 2022) recognizing the IAM as bargaining representative for the covered craft or class. :contentReference[oaicite:3]{index=3}
+      </p>
+
+      <p class="cs-report__para">
+        Architecturally, this agreement is compact and operationally oriented. Several articles are explicitly “Reserved,”
+        and core work-rule concepts (guarantees, days off, call-out structures, deadhead valuation, and premium logic
+        for day-off work) are concentrated in the Scheduling and Wage/Compensation articles. The contract also contains
+        strong structural clauses typical of first-generation airline agreements: scope framing for Flight Attendant work,
+        an alter-ego restriction, and successorship protections. :contentReference[oaicite:4]{index=4}
+      </p>
+    </section>
+
+    <section class="cs-report__section" id="contract-architecture-overview">
+      <h2>Contract Architecture Overview</h2>
+
+      <p class="cs-report__para">
+        National Airlines’ IAM agreement reflects a “minimal-but-functional” architecture designed for a small Flight Attendant group
+        operating under a high-variance, non-mainline environment. The contract prioritizes baseline predictability (minimum days off,
+        a bi-weekly guarantee) and codifies basic assignment mechanics (report/release definitions, short/long call notice windows),
+        while leaving substantial operational discretion with the Company through an expansive management rights clause. :contentReference[oaicite:5]{index=5}
+      </p>
+
+      <p class="cs-report__para">
+        The agreement’s structure indicates a deliberate trade: it provides a clear floor for pay and scheduling while relying on
+        the grievance/system board process for enforcement rather than embedding self-executing constraints. The presence of “Reserved”
+        articles further signals that the agreement is intended to function as an initial framework with room for future expansion
+        and modular strengthening. :contentReference[oaicite:6]{index=6}
+      </p>
+
+      <p class="cs-report__para">
+        <strong>Implication summary:</strong> This agreement is best read as an early-stage architecture that establishes enforceable baselines
+        (guarantees, days off, day-off premium rules, deadhead valuation) while preserving broad management discretion. Its practical strength
+        depends on whether process enforcement (grievance handling and System Board access) is utilized consistently.
+      </p>
+    </section>
+
+    <section class="cs-report__section" id="scheduling-assignment-framework">
+      <h2>Scheduling &amp; Assignment Framework</h2>
+
+      <p class="cs-report__para">
+        Scheduling rules are centralized in Article 3. The agreement provides a bi-weekly minimum guarantee (30.0 hours) for Flight Attendants
+        who are available for duty, with proration for days unavailable and an option to apply PTO to cover absences. A monthly minimum of
+        twelve (12) days off is guaranteed. :contentReference[oaicite:7]{index=7}
+      </p>
+
+      <p class="cs-report__para">
+        Duty Time is defined as Report Time to Release Time. Normal report time for a revenue flight is 1:30 prior to scheduled departure.
+        Normal release time is 0:30 after block-in, or at hotel arrival if the hotel is more than one hour from the airport. The Company may alter
+        report times as operationally necessary. Duty time limits are stated to comply with FARs. :contentReference[oaicite:8]{index=8}
+      </p>
+
+      <p class="cs-report__para">
+        Reserve-like availability is expressed through “Short Call” and “Long Call” constructs: 4-hour and 12-hour notice requirements beginning upon
+        positive contact, with a 15-minute callback window and repeated contact attempts. These mechanisms are clear, but they function primarily as
+        availability rules rather than as constraint systems on assignment authority. :contentReference[oaicite:9]{index=9}
+      </p>
+
+      <p class="cs-report__para">
+        The agreement also defines day-off utilization rules with both voluntary and involuntary pathways. Voluntary work on a guaranteed day off is awarded
+        through a volunteer system, with pay constructed as the greater of (hours worked + 2) or a 5-hour minimum, and paid above the bi-weekly guarantee.
+        Involuntary day-off work uses the same floor but adds a stated premium (at least 150% for involuntary hours on guaranteed days off). :contentReference[oaicite:10]{index=10}
+      </p>
+
+      <p class="cs-report__para">
+        <strong>Analytical lens:</strong> Scheduling protections are present but are baseline-focused. The contract defines key timing and pay mechanics for day-off work
+        and call-out, but it does not build a dense constraint structure (ordering rules, hard reassignment ceilings, or self-executing release triggers).
+      </p>
+    </section>
+
+    <section class="cs-report__section" id="economic-structure">
+      <h2>Economic Structure</h2>
+
+      <p class="cs-report__para">
+        Wage and compensation rules are consolidated in Article 24 and rely on an hourly pay model by longevity, with a published rate table and annual progression.
+        The agreement explicitly applies pay rates to related compensated activity (e.g., training and deadheads), subject to agreement-defined valuation rules
+        (including 50% pay for training and deadheads where specified). :contentReference[oaicite:11]{index=11}
+      </p>
+
+      <p class="cs-report__para">
+        Deadhead pay is explicitly valued at 50% for assigned deadhead flights and surface transportation deadhead (based on normal travel times). Per diem is specified
+        separately for domestic and international operations. :contentReference[oaicite:12]{index=12}
+      </p>
+
+      <p class="cs-report__para">
+        Premium architecture is narrow but direct: the agreement provides a $7.50/hour Purser premium for time spent working in that position, and defines minimum-pay
+        logic for day-off work (greater of hours+2 or 5 hours, with a 150% premium on involuntary day-off hours). The contract also allows the Company to increase Flight
+        Attendant pay up to 25% at its discretion with advance notice and a meet-and-confer opportunity. :contentReference[oaicite:13]{index=13}
+      </p>
+
+      <p class="cs-report__para">
+        <strong>Key insight:</strong> The economic structure is designed to provide a clear floor (bi-weekly guarantee + minimum day-off pay logic) and simple valuation rules.
+        However, the presence of unilateral wage-increase discretion (with notice) is an atypical feature that increases variability and reduces predictability in how total compensation
+        evolves across the agreement term.
+      </p>
+    </section>
+
+    <section class="cs-report__section" id="enforcement-dispute-resolution">
+      <h2>Enforcement &amp; Dispute Resolution Architecture</h2>
+
+      <p class="cs-report__para">
+        The agreement establishes a multi-step grievance system that includes local handling, a Grievance Review Board process, and escalation pathways culminating in a System Board of Adjustment.
+        Time limits are defined, and failure to meet time limits generally causes decisions to become final, while certain Company failures can advance a grievance automatically.
+        The System Board includes a neutral referee selected by agreement, with a panel/strike process if the parties cannot agree on a neutral for a specific case. :contentReference[oaicite:14]{index=14}
+      </p>
+
+      <p class="cs-report__para">
+        Discipline protections include “just cause” framing and defined timelines for issuance and hearings, but probationary Flight Attendants are excluded from the disciplinary grievance pathway.
+        The agreement also provides discipline sunset rules (letters removed after a defined period absent similar infractions), which improves long-term member protection but does not create
+        punitive remedies against the Company. :contentReference[oaicite:15]{index=15}
+      </p>
+
+      <p class="cs-report__para">
+        <strong>Structural takeaway:</strong> Enforcement is procedurally complete for a compact agreement and includes multiple resolution stages. Remedies remain corrective rather than punitive;
+        the agreement relies on the throughput and discipline of the grievance pipeline to make baseline protections meaningful.
+      </p>
+    </section>
+
+    <section class="cs-report__section" id="strengths-weaknesses-flags">
+      <h2>Structural Strengths, Weaknesses &amp; Comparative Flags</h2>
+
+      <p class="cs-report__para">
+        <strong>Structural strengths:</strong> Clear scope and successorship framing; an alter-ego restriction; simple and understandable baseline scheduling floors (12 days off; 30-hour bi-weekly guarantee);
+        explicit short/long call notice constructs; defined minimum pay logic for day-off work (including a stated involuntary premium); and a fully formed grievance/System Board framework with a neutral.
+        :contentReference[oaicite:16]{index=16}
+      </p>
+
+      <p class="cs-report__para">
+        <strong>Structural weaknesses:</strong> Broad management rights; limited self-executing constraints on scheduling authority; extensive “Reserved” articles that reduce modular completeness;
+        reliance on procedural enforcement for most protections; and limited economic sophistication beyond defined floors and narrow premiums. :contentReference[oaicite:17]{index=17}
+      </p>
+
+      <p class="cs-report__para">
+        <strong>Comparative flags:</strong> This contract functions as a first-generation baseline for a small Flight Attendant group. Readers should expect future bargaining rounds to expand
+        modularity (reserve architecture, reassignment limits, pay/credit definitions, and QoL protections) if the parties elect to mature the framework.
+      </p>
+    </section>
+
+    <section class="cs-report__section" id="scorecard">
+      <h2>Standardized Contract Scorecard</h2>
+
+      <div class="cs-table cs-table--compact">
+        <table>
+          <thead>
+            <tr>
+              <th>Domain</th>
+              <th>Score</th>
+              <th>Rationale</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Scheduling Protections</td>
+              <td>2.8</td>
+              <td>Baseline floors (12 days off; bi-weekly guarantee) and clear call-out windows, but limited constraint mechanisms and broad operational flexibility</td>
+            </tr>
+            <tr>
+              <td>Pay &amp; Credit Quality</td>
+              <td>2.9</td>
+              <td>Clear hourly model with defined deadhead valuation and day-off minimum pay logic; limited rig/credit architecture</td>
+            </tr>
+            <tr>
+              <td>Work Rules &amp; Quality-of-Life</td>
+              <td>2.7</td>
+              <td>Hotel, meals, and training provisions exist, but QoL protections are baseline and not deeply operationalized</td>
+            </tr>
+            <tr>
+              <td>Company Discretion Constraint</td>
+              <td>2.4</td>
+              <td>Management rights are expansive; constraints are primarily procedural rather than substantive</td>
+            </tr>
+            <tr>
+              <td>Enforcement Power</td>
+              <td>2.8</td>
+              <td>Complete grievance + System Board pathway with a neutral and defined timelines; remedies are corrective and time-delayed</td>
+            </tr>
+            <tr>
+              <td>Clarity &amp; Modularity</td>
+              <td>3.1</td>
+              <td>Compact and readable, but several “Reserved” articles reduce subsystem completeness</td>
+            </tr>
+            <tr>
+              <td><strong>Total</strong></td>
+              <td><strong>16.7</strong></td>
+              <td><strong>out of 30</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="cs-report__section" id="context-notes">
+      <h2>Context Notes</h2>
+
+      <p class="cs-report__para">
+        The agreement’s signature block indicates signing on November 6, 2023, while the cover page is dated September 20, 2024. This report uses the signing date as the effective anchor because
+        the Effective Date &amp; Duration article ties effectiveness to signing. :contentReference[oaicite:18]{index=18}
+      </p>
+
+      <p class="cs-report__para">
+        Several articles are marked “Reserved,” signaling an initial framework that may be expanded in future bargaining rounds.
+      </p>
+    </section>
+
+    <footer class="cs-report__footer">
+      <div class="cs-report__footer-text">CrewSignal · Contract Architecture &amp; Comparative Analysis</div>
+    </footer>
+  </article>
+</body>
+</html>
