@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>TWU · Flight Services International · Contract Architecture Analysis · CrewSignal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/assets/css/main.css" />
+</head>
+<body>
+  <article class="cs-report" id="twu-flight-services-international-contract-architecture">
+    <header class="cs-report__header">
+      <div class="cs-report__nav">
+        <a class="cs-report__back" href="/reports/contract-architecture/">← Back to Contract Architecture</a>
+      </div>
+
+      <h1 class="cs-report__title">TWU · Flight Services International</h1>
+      <div class="cs-report__subtitle">Contract Analysis</div>
+
+      <p class="cs-report__dek">
+        <span class="cs-report__dates">
+          Effective Period: March 1, 2021 – February 28, 2026<br />
+          <em>Amendable since February 28, 2026</em>
+        </span>
+      </p>
+    </header>
+
+    <section class="cs-report__section" id="agreement-metadata">
+      <h2>Agreement Metadata</h2>
+
+      <p class="cs-report__para">
+        This analysis examines the collective bargaining agreement between Flight Services International, LLC (FSI)
+        and the Transport Workers Union of America, AFL-CIO (TWU) covering Flight Attendants in the craft or class
+        certified by the National Mediation Board in Case No. R-7445 (January 12, 2016). The agreement is effective
+        from March 1, 2021 through February 28, 2026 under the Railway Labor Act.
+      </p>
+
+      <p class="cs-report__para">
+        Architecturally, this agreement is unusual among flight attendant contracts because FSI operates as a
+        <strong>service provider to multiple Company Airline Clients</strong>. As a result, many substantive work rules
+        governing scheduling, compensation, benefits, and travel are incorporated by reference to client-specific
+        policies rather than being fully defined within the agreement itself.
+      </p>
+
+      <p class="cs-report__para">
+        The agreement includes multiple Letters of Agreement, including an Atlas-specific LOA, an implementation
+        agreement, and a grandfathered seniority rights LOA. These documents underscore that the agreement is
+        designed to support multiple operational contexts rather than a single carrier model.
+      </p>
+    </section>
+
+    <section class="cs-report__section" id="contract-architecture-overview">
+      <h2>Contract Architecture Overview</h2>
+
+      <p class="cs-report__para">
+        FSI’s agreement functions as a <strong>framework contract</strong> rather than a comprehensive internal work-rule
+        code. It establishes recognition, scope, seniority, and enforcement rights while explicitly deferring many
+        substantive terms to Company Airline Client guidelines.
+      </p>
+
+      <p class="cs-report__para">
+        This design choice produces a structurally “thin” contract: protections are concentrated in process,
+        scope, and enforceability rather than in dense scheduling or pay mechanics. Day-to-day operational outcomes
+        depend heavily on the stability, transparency, and consistent application of client policies.
+      </p>
+
+      <p class="cs-report__para">
+        <strong>Implication Summary:</strong>
+        The agreement’s strength lies in its enforceable scaffolding—scope, seniority, and access to grievance
+        remedies—while its limitations arise from externalizing substantive work rules to documents that are not
+        themselves collectively bargained.
+      </p>
+    </section>
+
+    <section class="cs-report__section" id="scheduling-assignment-framework">
+      <h2>Scheduling &amp; Assignment Framework</h2>
+
+      <p class="cs-report__para">
+        Scheduling and assignment are governed primarily by Company Airline Client guidelines. Published schedules
+        are designated “for planning purposes only,” subject to operational change, while scheduled days off remain
+        anchored to the Flight Attendant’s assigned base.
+      </p>
+
+      <p class="cs-report__para">
+        The agreement defines categories of assignment authority—reassignment, extension, junior assignment—but
+        the substantive rules governing those actions are largely client-driven. One notable contract-level
+        constraint is a cap on involuntary work on scheduled days off: no more than four (4) days in a bid month,
+        absent force majeure.
+      </p>
+
+      <p class="cs-report__para">
+        Reserve is treated as a flexible availability construct rather than a tightly constrained subsystem.
+        The agreement allows multiple reserve types (residence, hotel, hot standby) and permits reserve location
+        changes within a day. Contactability rules are explicit, but assignment content and valuation depend on
+        client policy.
+      </p>
+
+      <p class="cs-report__para">
+        <strong>Analytical Lens:</strong>
+        Scheduling protections here are procedural rather than substantive. The agreement establishes boundaries
+        for contact, days off, and reserve status, but leaves most scheduling outcomes to external client rules.
+      </p>
+    </section>
+
+    <section class="cs-report__section" id="economic-structure">
+      <h2>Economic Structure</h2>
+
+      <p class="cs-report__para">
+        Compensation under this agreement is not internally standardized. Outside of Atlas-specific provisions,
+        pay rates, per diem, and certain benefits are governed by Company Airline Client policies rather than by
+        a unified contract pay table.
+      </p>
+
+      <p class="cs-report__para">
+        Where the agreement does establish economic rules, it does so through baseline constructs such as the
+        Bid Month Guarantee (BMG), loss-of-guarantee rules for unpaid statuses, and expense/travel frameworks.
+        Deadhead, training, and duty valuation are likewise dependent on client policy.
+      </p>
+
+      <p class="cs-report__para">
+        <strong>Key Insight:</strong>
+        Economic outcomes are structurally variable by design. The agreement prioritizes staffing flexibility
+        across multiple clients at the expense of uniform, contract-internal compensation architecture.
+      </p>
+    </section>
+
+    <section class="cs-report__section" id="enforcement-dispute-resolution">
+      <h2>Enforcement &amp; Dispute Resolution Architecture</h2>
+
+      <p class="cs-report__para">
+        The agreement provides a conventional grievance and System Board of Adjustment process with defined
+        timelines and escalation steps. Violations of published client guidelines are grievable when those
+        guidelines are applied inconsistently or conflict with the agreement’s scope or seniority provisions.
+      </p>
+
+      <p class="cs-report__para">
+        Recorded scheduling communications may be requested for administrative review, but recordings are not
+        intended to function as automatic evidentiary presumptions in discipline cases.
+      </p>
+
+      <p class="cs-report__para">
+        <strong>Structural Takeaway:</strong>
+        Enforcement leverage is strongest where disputes implicate scope, seniority, or process. It is weaker
+        where disputes turn on the substance of client policies that sit outside the negotiated agreement.
+      </p>
+    </section>
+
+    <section class="cs-report__section" id="strengths-weaknesses-flags">
+      <h2>Structural Strengths, Weaknesses &amp; Comparative Flags</h2>
+
+      <p class="cs-report__para">
+        <strong>Structural strengths:</strong>
+        Clear recognition and scope framing; enforceable seniority concepts; a functioning grievance/SBA
+        framework; and adaptability to multiple operational contexts.
+      </p>
+
+      <p class="cs-report__para">
+        <strong>Structural weaknesses:</strong>
+        Substantive work rules are externalized to client policies; reserve and scheduling constraints are light;
+        and compensation lacks internal standardization.
+      </p>
+
+      <p class="cs-report__para">
+        <strong>Comparative flags:</strong>
+        This is a framework contract, not a carrier-specific rule set. Readers should evaluate strength here as
+        enforceable scaffolding rather than as comprehensive work-rule protection.
+      </p>
+    </section>
+
+    <section class="cs-report__section" id="scorecard">
+      <h2>Standardized Contract Scorecard</h2>
+
+      <div class="cs-table cs-table--compact">
+        <table>
+          <thead>
+            <tr>
+              <th>Domain</th>
+              <th>Score</th>
+              <th>Rationale</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Scheduling Protections</td>
+              <td>2.6</td>
+              <td>Baseline definitions exist, but scheduling mechanics largely defer to client guidelines.</td>
+            </tr>
+            <tr>
+              <td>Pay &amp; Credit Quality</td>
+              <td>2.4</td>
+              <td>Compensation is client-driven outside limited baseline constructs.</td>
+            </tr>
+            <tr>
+              <td>Work Rules &amp; Quality-of-Life</td>
+              <td>2.6</td>
+              <td>QoL protections depend heavily on client policy rather than contract text.</td>
+            </tr>
+            <tr>
+              <td>Company Discretion Constraint</td>
+              <td>2.3</td>
+              <td>Broad discretion preserved through externalization of work rules.</td>
+            </tr>
+            <tr>
+              <td>Enforcement Power</td>
+              <td>2.8</td>
+              <td>Procedurally complete grievance/SBA model; effectiveness varies by issue type.</td>
+            </tr>
+            <tr>
+              <td>Clarity &amp; Modularity</td>
+              <td>3.1</td>
+              <td>Readable framework, but external references reduce self-contained clarity.</td>
+            </tr>
+            <tr>
+              <td><strong>Total</strong></td>
+              <td><strong>15.8</strong></td>
+              <td><strong>out of 30</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <footer class="cs-report__footer">
+      <div class="cs-report__footer-text">CrewSignal · Contract Architecture &amp; Comparative Analysis</div>
+    </footer>
+  </article>
+</body>
+</html>
