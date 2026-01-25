@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>TWU · JetBlue Airways · Contract Architecture Analysis · CrewSignal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/assets/css/main.css" />
+</head>
+<body>
+  <article class="cs-report" id="twu-jetblue-contract-architecture">
+    <header class="cs-report__header">
+      <div class="cs-report__nav">
+        <a class="cs-report__back" href="/reports/contract-architecture/">← Back to Contract Architecture</a>
+      </div>
+
+      <h1 class="cs-report__title">TWU · JetBlue Airways</h1>
+      <div class="cs-report__subtitle">Contract Analysis</div>
+
+      <p class="cs-report__dek">
+        <span class="cs-report__dates">
+          Effective Period: Ratified agreement (duration clause provides renewal absent Section 6 notice)<br />
+        </span>
+      </p>
+    </header>
+
+    <section class="cs-report__section" id="agreement-metadata">
+      <h2>Agreement Metadata</h2>
+
+      <p class="cs-report__para">
+        This analysis examines the collective bargaining agreement between JetBlue Airways Corporation (the “Company”)
+        and the Transport Workers Union of America, AFL-CIO (the “Union” / “TWU”) covering Inflight Crewmembers (“IFCs”).
+        The agreement is governed under the Railway Labor Act and references the NMB certification for the craft or class
+        in Case No. R-7505 (April 18, 2018). The document set includes the CBA and associated Letters of Agreement (LOAs).
+      </p>
+
+      <p class="cs-report__para">
+        Architecturally, JetBlue’s agreement is notable for its <em>stacked</em> design: scheduling authority is not contained
+        in a single “scheduling” article. Instead, operational control and protections are distributed across four interlocking
+        subsystems—Scheduling (Article 7), Reschedule/Reassignment (Article 8), Reserve (Article 12), and Compensation / Pay
+        Protection (Article 23). The result is a rule system in which classification decisions (e.g., disrupted vs non-disrupted,
+        inside vs outside the OSP footprint, concurrency and concurrence thresholds) materially change both the Company’s
+        authority and the IFC’s remedies.
+      </p>
+
+      <p class="cs-report__para">
+        JetBlue also embeds “Qualified Roles” (Mint/Onboard Lead/Transatlantic) as a first-class subsystem in the contract itself,
+        with minimum pairing requirements, reserve-block constructs, reassignment rules, and pay-protected overrides. This is a
+        structural departure from agreements that treat premium-service flying primarily as a policy or side-letter domain.
+      </p>
+    </section>
+
+    <section class="cs-report__section" id="contract-architecture-overview">
+      <h2>Contract Architecture Overview</h2>
+
+      <p class="cs-report__para">
+        JetBlue’s agreement reflects a <strong>constraint-with-classification</strong> architecture. The Company retains wide operational
+        flexibility, but that flexibility is disciplined through (a) defined status categories, (b) footprint logic anchored to the
+        Originally Scheduled Pairing (OSP), and (c) a layered pay-protection and premium framework that prices departures from the
+        original schedule.
+      </p>
+
+      <p class="cs-report__para">
+        The agreement’s core structural signal is that <strong>authority is conditional</strong>. Many actions are permitted only if an event
+        is classified properly (e.g., “Disrupted IFC” vs “Non-disrupted IFC”), if sequencing steps are satisfied (e.g., utilization of
+        Airport Standby before certain non-disrupted reassignments at Base), and if the action remains within defined boundaries
+        (e.g., OSP footprint constraints, vacation-day protections without concurrence).
+      </p>
+
+      <p class="cs-report__para">
+        A second structural signal is that JetBlue’s enforcement load is shared between procedure and economics. The agreement
+        relies on traditional RLA grievance / System Board architecture, but it also uses self-executing pay constructs (OSP pay
+        protection, “beyond footprint” reschedule premiums, extended duty premiums, and multiple independent RIGs) to convert
+        schedule disruption into predictable economic outcomes rather than leaving remedy entirely to after-the-fact dispute resolution.
+      </p>
+
+      <p class="cs-report__para">
+        <strong>Implication Summary:</strong>
+        JetBlue’s contract does not attempt to eliminate discretion. It attempts to discipline discretion by making the scheduling
+        system legible (defined categories, defined ordering rules) and by pricing deviations (pay protection, premiums, RIGs) in a way
+        that is intended to influence behavior in real time—while still leaving room for operation-first decisions during irregular operations.
+      </p>
+    </section>
+
+    <section class="cs-report__section" id="scheduling-assignment-framework">
+      <h2>Scheduling &amp; Assignment Framework</h2>
+
+      <p class="cs-report__para">
+        JetBlue’s scheduling framework is built around explicit duty and rest limitations, pairing construction constraints, and a defined
+        rescheduling system that treats the OSP as the baseline reference object. The Company constructs the pairing set, but the
+        contract embeds numerous hard limits (e.g., duty-hour caps and segment limits) and soft limits mediated by concurrence.
+      </p>
+
+      <h3 class="cs-report__subhead">Duty Limits and the “Opt-to-Remove” Structure</h3>
+      <p class="cs-report__para">
+        Duty is defined from Report to Release and includes defined debrief time. The agreement sets planned construction and post-award
+        modification limits, and introduces a projected-duty “opt to be removed” mechanism at graduated thresholds (14/16/18 hours depending
+        on originally scheduled duty length). Once an IFC elects to remain beyond these limits, additional pay applies only to segments beyond
+        the threshold and the IFC cannot subsequently opt out under the same trigger.
+      </p>
+
+      <h3 class="cs-report__subhead">Rest as a Boundary System With Concurrence Valves</h3>
+      <p class="cs-report__para">
+        Rest is structured as a multi-layer boundary system: minimum layover rest (10 hours) with planned construction at 11 hours; base-rest
+        rules with distinct treatment for lineholders and reserves; and explicit “not contactable” protections during rest. Importantly, JetBlue
+        uses concurrence valves—limited unilateral report-time reductions are permitted, but broader reductions require the IFC’s concurrence.
+        This creates a recurring architecture in which the Company can request flexibility, but must obtain consent once it crosses defined thresholds.
+      </p>
+
+      <h3 class="cs-report__subhead">Pairing Construction Constraints as Operational Governance</h3>
+      <p class="cs-report__para">
+        Pairing construction is not merely descriptive. It is a governance layer that shapes downstream rescheduling: report-time tables by fleet/segment type,
+        redeye restrictions (including limits on duty periods touching redeye windows), segment caps (no more than four segments in a duty period),
+        maximum pairing length limits, and connect-time ceilings. These constraints operate as upstream discipline on how “fragile” the pairing set can be
+        before day-of-ops disruption begins.
+      </p>
+
+      <h3 class="cs-report__subhead">The “Stacked System” Reality</h3>
+      <p class="cs-report__para">
+        In JetBlue’s architecture, “Scheduling” cannot be understood without Reserve and Reschedule. The contract’s practical scheduling behavior emerges from
+        the interaction of Articles 7, 8, 12, and 23: the Company’s ability to modify work is bounded by classification and footprint rules (Article 8), powered by
+        assignment engines (Article 12), and priced through pay protection and RIGs (Article 23).
+      </p>
+    </section>
+
+    <section class="cs-report__section" id="economic-structure">
+      <h2>Economic Structure</h2>
+
+      <p class="cs-report__para">
+        JetBlue’s compensation system is deeply interlocked with scheduling. Pay is not merely an hourly table; it functions as the contract’s main enforcement
+        substrate, converting disruption, extended duty, and out-of-footprint flying into predictable outcomes. This is most visible in the OSP baseline logic,
+        reschedule premiums, and the “multiple RIG” framework that determines the highest payable credit for a pairing.
+      </p>
+
+      <h3 class="cs-report__subhead">Pay Protection Anchored to the OSP</h3>
+      <p class="cs-report__para">
+        The agreement defines pay protection around the “Originally Scheduled Pairing” (OSP): involuntary losses of flight/credit time are pay protected based on
+        the OSP versus the actual flown outcome, and (for lineholders) eligibility is tied to availability for reassignment unless released. This makes the OSP a
+        structural anchor: it is both the baseline for protection and the boundary object used to measure deviations.
+      </p>
+
+      <h3 class="cs-report__subhead">Rescheduled Pairing Pay as a Footprint Premium</h3>
+      <p class="cs-report__para">
+        When an IFC is rescheduled to fly beyond the footprint of the OSP, a premium pay rate applies to credit outside the OSP. If the reschedule involves a layover
+        that carries into a scheduled day off, the premium logic includes a floor (4:12 or actual credit outside OSP, whichever is greater). This is a boundary-pricing tool:
+        it does not prohibit beyond-footprint utilization, but it makes it systematically more expensive.
+      </p>
+
+      <h3 class="cs-report__subhead">RIG Framework: Three Independent “Greatest-Of” Engines</h3>
+      <p class="cs-report__para">
+        JetBlue deploys multiple independent RIGs: TAFB (time-away-from-base ratio), Duty RIG (time-on-duty ratio), and MDPC (average minimum duty period credit).
+        The highest resulting value governs pay for the pairing. This creates a meaningful “floor system” that can protect value in thin pairings and irregular days,
+        while still allowing the Company to construct pairings with varying productivity assumptions.
+      </p>
+
+      <p class="cs-report__para">
+        <strong>Key Insight:</strong>
+        JetBlue’s economic architecture is not “premium dense” in the Allegiant sense (multipliers everywhere). Instead, it is <em>baseline anchored</em>:
+        it uses the OSP as the reference object and then layers targeted premiums for extended duty, out-of-footprint utilization, and duty/time ratio protections that
+        together price operational deviation while preserving day-of-ops flexibility.
+      </p>
+    </section>
+
+    <section class="cs-report__section" id="enforcement-dispute-resolution">
+      <h2>Enforcement &amp; Dispute Resolution Architecture</h2>
+
+      <p class="cs-report__para">
+        JetBlue uses a conventional Railway Labor Act grievance and System Board of Adjustment model (disciplinary and non-disciplinary paths, defined timelines,
+        and a neutral-member Board structure). The agreement also contains a notable operational-evidence feature: Crew Scheduling telephone recordings are required
+        to be maintained for a minimum period, with access procedures tied to a potential or actual grievance notice.
+      </p>
+
+      <p class="cs-report__para">
+        Practically, enforcement is strengthened by how much of the contract is “operationalized” into system rules: schedule-change acknowledgement expectations,
+        defined positive-contact channels for junior assignment, and explicit ordering rules for reserve assignment engines. The result is a contract that tends to
+        create enforceable disputes around classification (what the event was) and sequencing (what had to be exhausted first), rather than purely subjective questions
+        about reasonableness after the fact.
+      </p>
+
+      <p class="cs-report__para">
+        <strong>Structural takeaway:</strong>
+        Formal enforcement remains corrective, but the agreement’s architecture moves a meaningful portion of enforcement into the scheduling system itself—through
+        defined categories, ordering rules, and pay-protection triggers that are intended to be auditable from operational records.
+      </p>
+    </section>
+
+    <section class="cs-report__section" id="strengths-weaknesses-flags">
+      <h2>Structural Strengths, Weaknesses &amp; Comparative Flags</h2>
+
+      <p class="cs-report__para">
+        <strong>Structural strengths:</strong>
+        A coherent “stacked” scheduling system (Scheduling + Reschedule + Reserve + Pay Protection);
+        OSP footprint logic that constrains and prices deviation rather than leaving everything to discretion;
+        explicit reserve assignment engines (next-day vs day-of; FIFO/FOFO); and a robust “greatest-of” RIG framework
+        that creates real floors for credit valuation in low-productivity or disrupted operations.
+      </p>
+
+      <p class="cs-report__para">
+        <strong>Structural weaknesses:</strong>
+        High classification complexity (disrupted vs non-disrupted; inside vs outside footprint; concurrence thresholds);
+        significant reliance on correct coding and system execution to realize protections;
+        and a contract experience that can feel “procedurally fragile” if the operation fails to apply definitions consistently.
+      </p>
+
+      <p class="cs-report__para">
+        <strong>Comparative flags:</strong>
+        JetBlue is less “pricing-first” than Allegiant and more “baseline-first”: it anchors protections to the OSP and then prices
+        deviations through targeted premiums and RIGs. It is also an outlier in how fully premium-service flying (Qualified Roles)
+        is embedded into the main agreement rather than treated as a peripheral policy domain.
+      </p>
+    </section>
+
+    <section class="cs-report__section" id="scorecard">
+      <h2>Standardized Contract Scorecard</h2>
+
+      <div class="cs-table cs-table--compact">
+        <table>
+          <thead>
+            <tr>
+              <th>Domain</th>
+              <th>Score</th>
+              <th>Rationale</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Scheduling Protections</td>
+              <td>3.4</td>
+              <td>Explicit duty/rest ceilings and pairing construction constraints; strong protections, but complexity and concurrence valves shift friction into execution.</td>
+            </tr>
+            <tr>
+              <td>Pay &amp; Credit Quality</td>
+              <td>3.6</td>
+              <td>OSP-anchored pay protection, beyond-footprint premium pay, and a strong “greatest-of” RIG framework provide real floor protection.</td>
+            </tr>
+            <tr>
+              <td>Work Rules &amp; Quality-of-Life</td>
+              <td>3.3</td>
+              <td>Contactability protections during rest and structured reserve rules help, but day-of-ops classification and acknowledgement expectations increase load.</td>
+            </tr>
+            <tr>
+              <td>Company Discretion Constraint</td>
+              <td>3.2</td>
+              <td>Discretion is bounded by OSP footprint logic and disrupted/non-disrupted classification, but significant flexibility remains, especially during IROP tiers.</td>
+            </tr>
+            <tr>
+              <td>Enforcement Power</td>
+              <td>3.2</td>
+              <td>Traditional RLA grievance/SBA plus auditable system rules; practical enforcement depends on correct classification/coding and record access.</td>
+            </tr>
+            <tr>
+              <td>Clarity &amp; Modularity</td>
+              <td>3.1</td>
+              <td>Highly modular (stacked subsystems), but dense cross-references create cognitive load and increase the chance of misapplication.</td>
+            </tr>
+            <tr>
+              <td><strong>Total</strong></td>
+              <td><strong>19.8</strong></td>
+              <td><strong>out of 30</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <footer class="cs-report__footer">
+      <div class="cs-report__footer-text">CrewSignal · Contract Architecture &amp; Comparative Analysis</div>
+    </footer>
+  </article>
+</body>
+</html>
