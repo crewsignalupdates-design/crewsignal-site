@@ -23,35 +23,45 @@
 </p>
     </header>
 
-    <section class="cs-report__section" id="agreement-metadata">
+   <section class="cs-report__section" id="agreement-metadata">
   <h2>Agreement Metadata</h2>
-  <p class="cs-report__para">…</p>
+
+  <p class="cs-report__para">
+    <strong>Contract Analysis:</strong>
+    <a href="/reports/contract-architecture/TWU/JetBlue/">TWU · JetBlue Airways</a><br />
+    <strong>CBA PDF:</strong>
+    <a href="/contracts/twu/jetblue/jetblue-ifc-cba-2021-2026.pdf">CBA 2021–2026</a>
+  </p>
+
+  <p class="cs-report__para">
+    This analysis examines the collective bargaining agreement between JetBlue Airways Corporation (the “Company”)
+    and the Transport Workers Union of America, AFL-CIO (the “Union” / “TWU”) covering Inflight Crewmembers (“IFCs”).
+    The agreement is governed under the Railway Labor Act and references the NMB certification for the craft or class
+    in Case No. R-7505 (April 18, 2018). The document set includes the CBA and associated Letters of Agreement (LOAs).
+  </p>
+
+  <p class="cs-report__para">
+    Architecturally, JetBlue’s agreement is notable for its <em>stacked</em> design: scheduling authority is not contained
+    in a single “scheduling” article. Instead, operational control and protections are distributed across four interlocking
+    subsystems—Scheduling (Article 7), Reschedule/Reassignment (Article 8), Reserve (Article 12), and Compensation / Pay
+    Protection (Article 23). The result is a rule system in which classification decisions (e.g., disrupted vs non-disrupted,
+    inside vs outside the OSP footprint, concurrency and concurrence thresholds) materially change both the Company’s
+    authority and the IFC’s remedies.
+  </p>
+
+  <p class="cs-report__para">
+    JetBlue also embeds “Qualified Roles” (Mint/Onboard Lead/Transatlantic) as a first-class subsystem in the contract itself,
+    with minimum pairing requirements, reserve-block constructs, reassignment rules, and pay-protected overrides. This is a
+    structural departure from agreements that treat premium-service flying primarily as a policy or side-letter domain.
+  </p>
 </section>
-
-
-      <p class="cs-report__para">
-        This analysis examines the collective bargaining agreement between JetBlue Airways Corporation (the “Company”)
-        and the Transport Workers Union of America, AFL-CIO (the “Union” / “TWU”) covering Inflight Crewmembers (“IFCs”).
-        The agreement is governed under the Railway Labor Act and references the NMB certification for the craft or class
-        in Case No. R-7505 (April 18, 2018). The document set includes the CBA and associated Letters of Agreement (LOAs).
-      </p>
-
-      <p class="cs-report__para">
-        Architecturally, JetBlue’s agreement is notable for its <em>stacked</em> design: scheduling authority is not contained
-        in a single “scheduling” article. Instead, operational control and protections are distributed across four interlocking
-        subsystems—Scheduling (Article 7), Reschedule/Reassignment (Article 8), Reserve (Article 12), and Compensation / Pay
-        Protection (Article 23). The result is a rule system in which classification decisions (e.g., disrupted vs non-disrupted,
-        inside vs outside the OSP footprint, concurrency and concurrence thresholds) materially change both the Company’s
-        authority and the IFC’s remedies.
-      </p>
 
       <p class="cs-report__para">
         JetBlue also embeds “Qualified Roles” (Mint/Onboard Lead/Transatlantic) as a first-class subsystem in the contract itself,
         with minimum pairing requirements, reserve-block constructs, reassignment rules, and pay-protected overrides. This is a
         structural departure from agreements that treat premium-service flying primarily as a policy or side-letter domain.
       </p>
-    </section>
-
+    
     <section class="cs-report__section" id="contract-architecture-overview">
       <h2>Contract Architecture Overview</h2>
 
