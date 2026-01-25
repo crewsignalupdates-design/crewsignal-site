@@ -441,12 +441,19 @@
                           "pdfCount":  1,
                           "pdfs":  [
                                        {
-                                           "fileName":  "JetBlue_TWU_CBA_2018-2023.pdf",
-                                           "href":  "/reports/contract-architecture/TWU/JetBlue/contract/JetBlue_TWU_CBA_2018-2023.pdf",
+                                           "fileName": "jetblue-ifc-cba-2021-2026.pdf",
+
+"fileName": "jetblue-ifc-cba-2021-2026.pdf",
+
+"href": "/contracts/twu/jetblue/jetblue-ifc-cba-2021-2026.pdf"
+
+
+                                          "href": "/contracts/twu/jetblue/jetblue-ifc-cba-2021-2026.pdf"
+
                                            "docType":  "CBA",
                                            "years":  {
-                                                         "start":  2018,
-                                                         "end":  2023
+                                                         "start":  2021,
+                                                         "end":  2026
                                                      }
                                        }
                                    ]
