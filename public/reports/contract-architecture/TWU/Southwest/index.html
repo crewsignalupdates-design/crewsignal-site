@@ -1,59 +1,263 @@
-@'
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Southwest · TWU 556 · Contract Architecture · CrewSignal</title>
+  <title>TWU · Southwest Airlines · Contract Architecture Analysis · CrewSignal</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="/assets/css/main.css" />
 </head>
 <body>
-  <article class="cs-report" id="southwest-twu556-contract-architecture">
+  <article class="cs-report" id="twu-southwest-contract-architecture">
     <header class="cs-report__header">
-      <nav class="cs-report__nav">
-        <a href="/reports/contract-architecture/">← Back to Contract Architecture</a>
-      </nav>
-      <h1 class="cs-report__title">Southwest Airlines · TWU Local 556</h1>
-      <p class="cs-report__subtitle">Contract Architecture · Baseline vs. 2024 Modification</p>
+      <div class="cs-report__nav">
+        <a class="cs-report__back" href="/reports/contract-architecture/">← Back to Contract Architecture</a>
+      </div>
+
+      <h1 class="cs-report__title">TWU · Southwest Airlines</h1>
+      <div class="cs-report__subtitle">Contract Analysis</div>
+
+      <p class="cs-report__dek">
+        <span class="cs-report__dates">
+          Effective Period: November 1, 2018 – April 30, 2028<br />
+          2024–2028 Modifications: Member-facing “Contract 2024” annotated package (as-would-read)
+        </span>
+      </p>
     </header>
 
-    <section class="cs-report__section">
-      <p class="cs-report__body">
-        This page anchors CrewSignal’s contract architecture analysis for Southwest Airlines flight attendants
-        represented by TWU Local 556. It links to the authoritative contract texts used for baseline comparison
-        and amendment analysis.
+    <section class="cs-report__section" id="agreement-metadata">
+      <h2>Agreement Metadata</h2>
+
+      <p class="cs-report__para">
+        <strong>Primary Documents:</strong><br />
+        <a href="/reports/contract-architecture/TWU/Southwest/contract/Southwest_TWU_CBA_2018-2028.pdf">Baseline Agreement (2018–2028)</a><br />
+        <a href="/reports/contract-architecture/TWU/Southwest/contract/Southwest_TWU_CBA_2024-2028.pdf">Contract 2024 (Annotated “as-would-read” package)</a>
+      </p>
+
+      <p class="cs-report__para">
+        This analysis examines the collective bargaining agreement between Southwest Airlines Co. (the “Company”) and
+        Transport Workers Union of America, AFL-CIO, Local 556 (the “Union”) covering Flight Attendants in the service of
+        Southwest Airlines. The baseline agreement is a long-horizon instrument (2018–2028) with a mature operational rule
+        stack: scheduling, additional flying, reserve assignment, legality (hours-of-service), and premium compensation are
+        architected as interlocking subsystems rather than stand-alone topics.
+      </p>
+
+      <p class="cs-report__para">
+        The 2024–2028 materials in the document set are presented in a member-facing format (“Contract 2024” annotated),
+        intended to show how language would read if modifications are adopted, alongside separate redline materials.
+        For contract-architecture purposes, these documents function as a <em>modification layer</em> over a stable baseline:
+        the baseline defines the core scheduling market and enforcement logic; the modification layer tends to refine pricing,
+        mechanics, and edge-case behavior where practical outcomes diverged from intent.
       </p>
     </section>
 
-    <section class="cs-report__section">
-      <h2 class="cs-report__section-title">Authoritative Contract Texts</h2>
-      <ul class="cs-report__list">
-        <li>
-          <a href="/contracts/twu/southwest/2018-2028/">
-            Southwest · TWU 556 CBA (2018–2028) → Baseline Agreement
-          </a>
-        </li>
-        <li>
-          <a href="/contracts/twu/southwest/2024-modification/">
-            Southwest · TWU 556 CBA (Modified 2024) → Post-modification Text
-          </a>
-        </li>
-      </ul>
-    </section>
+    <section class="cs-report__section" id="contract-architecture-overview">
+      <h2>Contract Architecture Overview</h2>
 
-    <section class="cs-report__section">
-      <h2 class="cs-report__section-title">Working Notes</h2>
-      <p class="cs-report__body">
-        Analytical notes and comparison scaffolding are maintained in the accompanying
-        <code>/notes/</code> directory and will be expanded into structured change maps.
+      <p class="cs-report__para">
+        Southwest’s TWU agreement reflects a <strong>procedural constraint + priced flexibility</strong> architecture.
+        Operational discretion is preserved, but it is disciplined through (a) defined sequencing rules, (b) time-gated windows,
+        (c) explicit legality boundaries, and (d) self-executing premium outcomes. Rather than treating “schedule changes” as a
+        monolith, the agreement creates multiple controlled pathways (voluntary coverage mechanisms, reserve assignment engines,
+        and involuntary assignment tiers) that determine both authority and remedy.
+      </p>
+
+      <p class="cs-report__para">
+        A core structural signal is that Southwest treats coverage as a <strong>market with rules</strong>, not merely a management assignment.
+        Open flying is channeled through defined posting and award systems, reserves are assigned through specific ordering logic and
+        availability definitions, and involuntary assignment (including junior assignment) is framed as a priced and bounded exception
+        with defined notice/contact requirements.
+      </p>
+
+      <p class="cs-report__para">
+        <strong>Implication Summary:</strong>
+        This contract does not eliminate operational discretion. It disciplines discretion through (a) sequencing (what must be exhausted first),
+        (b) boundaries (legality, duty/rest, days-off protections), and (c) predictable economics (premiums, floors, and pay protections).
+        As a result, high-friction disputes are more likely to center on <em>classification</em> (what category applied), <em>ordering</em> (what step had priority),
+        and <em>auditability</em> (what the record shows), rather than purely subjective “reasonableness” arguments after the fact.
       </p>
     </section>
-  <footer class="cs-report__footer">
-  <p class="cs-muted">
-    CrewSignal · Contract Architecture &amp; Comparative Analysis
-  </p>
-</footer>
-</article>
+
+    <section class="cs-report__section" id="scheduling-assignment-framework">
+      <h2>Scheduling &amp; Assignment Framework</h2>
+
+      <p class="cs-report__para">
+        Southwest’s scheduling architecture is anchored by three interacting subsystems: (1) a legality framework that defines hard outer limits on duty/rest
+        and on-the-day operational continuity, (2) an “Additional Flying” system that functions as a controlled market for open trips and coverage,
+        and (3) a reserve subsystem with defined availability, ordering, and assignment authority. The throughline is consistent: flexibility is permitted,
+        but it is bounded by <em>clock</em>, <em>ordering</em>, and <em>price</em>.
+      </p>
+
+      <h3 class="cs-report__subhead">Legality as a Hard Boundary System</h3>
+      <p class="cs-report__para">
+        The Hours-of-Service and legality provisions function as the agreement’s “physics engine.” They constrain planned construction, reschedule authority,
+        and the permissible shape of disruptions. This is architecturally significant because it turns many operational decisions into binary outcomes:
+        legality is either satisfied or it is not, and that status controls the set of allowable next actions.
+      </p>
+
+      <h3 class="cs-report__subhead">Additional Flying as a Governed Market</h3>
+      <p class="cs-report__para">
+        Open trips and uncovered flying are not treated as ad hoc assignments. They move through structured posting and award mechanics
+        (including defined timing windows and eligibility logic). This reduces informal “shadow reserve” practices and forces transparency in how coverage
+        is offered, awarded, or ultimately assigned.
+      </p>
+
+      <h3 class="cs-report__subhead">Reserve as an Assignment Engine, Not a Catch-All</h3>
+      <p class="cs-report__para">
+        Reserve is architected as a system with specific ordering logic, contactability expectations, and assignment sequencing. This matters because it
+        determines how quickly the operation can respond to disruptions and how predictable the reserve experience is for crewmembers.
+        In heavily structured contracts, many disputes turn on whether the Company followed the proper reserve sequence before escalating to involuntary steps.
+      </p>
+
+      <h3 class="cs-report__subhead">VJA / JA as Coverage Pressure Valves</h3>
+      <p class="cs-report__para">
+        Voluntary Junior Assignment (VJA) and Junior Assignment (JA) function as explicit “coverage valves.” VJA provides a priced voluntary mechanism during
+        coverage stress; JA is the bounded involuntary backstop, typically governed by notice/contact rules, eligibility constraints, and compensation floors.
+        Architecturally, this is a <strong>price-first, compel-last</strong> design: the agreement aims to clear coverage through voluntary economic incentives
+        before authorizing compelled work.
+      </p>
+
+      <p class="cs-report__para">
+        <strong>Analytical lens:</strong>
+        Southwest’s scheduling framework is best understood as “sequence + window + premium.” The contract repeatedly asks:
+        (1) what category applies, (2) what step must occur before the next step, (3) what time window governs the action, and (4) what premium or protection
+        applies if the schedule departs from the baseline.
+      </p>
+    </section>
+
+    <section class="cs-report__section" id="economic-structure">
+      <h2>Economic Structure</h2>
+
+      <p class="cs-report__para">
+        Southwest’s economic architecture is tightly interlocked with scheduling. Compensation is not merely a pay table; it is the agreement’s primary enforcement substrate.
+        Premium outcomes, floors, and pay protections convert disruption, extension, and non-standard coverage into predictable economic consequences.
+      </p>
+
+      <h3 class="cs-report__subhead">Pricing Deviation Rather Than Prohibiting It</h3>
+      <p class="cs-report__para">
+        When operations require non-standard outcomes—extended duty, reassignment, coverage events, or schedule disruption—the agreement generally allows the
+        Company to act but makes the action <em>legible</em> and <em>priced</em>. This approach reduces reliance on delayed dispute resolution by baking a remedy into the event.
+      </p>
+
+      <h3 class="cs-report__subhead">RIG / Credit Floors as Value Protection</h3>
+      <p class="cs-report__para">
+        Like many mature airline CBAs, Southwest uses credit-floor logic to protect value in thin flying and irregular operations. Where productivity assumptions vary,
+        “greatest-of” style computations function as a stabilizer. A recurring architecture question (and frequent modification target in many contracts) is whether
+        premium value can be “absorbed” by floor computations; the 2024 annotated package suggests attention to aligning premium intent with payable outcomes.
+      </p>
+
+      <h3 class="cs-report__subhead">Premium Systems as Operational Governance</h3>
+      <p class="cs-report__para">
+        Premium pay and special coverage constructs do more than compensate crews; they steer behavior. Voluntary coverage premiums can reduce forced assignments,
+        and involuntary premiums deter casual overuse. This makes economics a governance layer: the contract uses cost to shape operational decisions in real time.
+      </p>
+
+      <p class="cs-report__para">
+        <strong>Key Insight:</strong>
+        Southwest’s agreement leans “baseline-first”: it anchors predictability to scheduled structures, then layers targeted premiums and protections for deviation.
+        In practice, this creates a contract where compensation is the primary mechanism for translating operational disruption into standardized outcomes.
+      </p>
+    </section>
+
+    <section class="cs-report__section" id="enforcement-dispute-resolution">
+      <h2>Enforcement &amp; Dispute Resolution Architecture</h2>
+
+      <p class="cs-report__para">
+        The agreement provides conventional Railway Labor Act grievance and arbitration architecture. Remedies are primarily corrective, and the system is designed
+        to resolve disputes about contract interpretation, application, and pay/credit outcomes.
+      </p>
+
+      <p class="cs-report__para">
+        What distinguishes practical enforcement in this agreement is that many outcomes are <strong>self-executing</strong>. Because the contract embeds sequencing rules,
+        time windows, and premium triggers, numerous disputes can be evaluated from records: what was posted, who was eligible, what was assigned, what notice was given,
+        what category applied, and what pay construct should have triggered.
+      </p>
+
+      <p class="cs-report__para">
+        <strong>Structural takeaway:</strong>
+        Formal enforcement is traditional; practical enforcement is front-loaded into system rules and premium triggers. The effectiveness of the contract in daily life
+        therefore depends heavily on correct coding, correct classification, and correct sequencing in the operation.
+      </p>
+    </section>
+
+    <section class="cs-report__section" id="strengths-weaknesses-flags">
+      <h2>Structural Strengths, Weaknesses &amp; Comparative Flags</h2>
+
+      <p class="cs-report__para">
+        <strong>Structural strengths:</strong>
+        A mature sequencing model for coverage (voluntary mechanisms first, bounded involuntary backstops);
+        explicit legality boundaries that constrain downstream discretion;
+        and economic self-execution (premiums/floors/protections) that reduce reliance on after-the-fact dispute resolution.
+      </p>
+
+      <p class="cs-report__para">
+        <strong>Structural weaknesses:</strong>
+        High rule density and cognitive load; reliance on correct system execution (posting/eligibility/notice/classification) to realize protections;
+        and “procedural fragility” risk—when the operation misapplies categories or ordering, disputes become technical and labor-intensive to unwind.
+      </p>
+
+      <p class="cs-report__para">
+        <strong>Comparative flags:</strong>
+        Southwest’s TWU agreement is less “premium dense” than some ULCC pricing-first contracts, but it is highly structured.
+        Its enforcement posture is driven by auditable sequencing and defined mechanisms rather than broad discretion with vague make-whole remedies.
+      </p>
+    </section>
+
+    <section class="cs-report__section" id="scorecard">
+      <h2>Standardized Contract Scorecard</h2>
+
+      <div class="cs-table cs-table--compact">
+        <table>
+          <thead>
+            <tr>
+              <th>Domain</th>
+              <th>Score</th>
+              <th>Rationale</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Scheduling Protections</td>
+              <td>3.5</td>
+              <td>Structured coverage pathways and legality boundaries create meaningful front-end constraints.</td>
+            </tr>
+            <tr>
+              <td>Pay &amp; Credit Quality</td>
+              <td>3.4</td>
+              <td>Premium/floor logic appears designed to standardize disruption outcomes; alignment of premium intent with payable outcomes is a key focus area.</td>
+            </tr>
+            <tr>
+              <td>Work Rules &amp; Quality-of-Life</td>
+              <td>3.3</td>
+              <td>Predictability is protected through sequence, windows, and legality; execution complexity is the main tradeoff.</td>
+            </tr>
+            <tr>
+              <td>Company Discretion Constraint</td>
+              <td>3.4</td>
+              <td>Discretion is preserved but bounded by ordering rules and priced deviation rather than unlimited ad hoc change authority.</td>
+            </tr>
+            <tr>
+              <td>Enforcement Power</td>
+              <td>3.2</td>
+              <td>Formal RLA enforcement plus strong auditability; practical outcomes depend on correct classification and records.</td>
+            </tr>
+            <tr>
+              <td>Clarity &amp; Modularity</td>
+              <td>3.1</td>
+              <td>Modular subsystems exist, but high density and cross-dependencies increase cognitive load.</td>
+            </tr>
+            <tr>
+              <td><strong>Total</strong></td>
+              <td><strong>19.9</strong></td>
+              <td><strong>out of 30</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <footer class="cs-report__footer">
+      <div class="cs-report__footer-text">CrewSignal · Contract Architecture &amp; Comparative Analysis</div>
+    </footer>
+  </article>
 </body>
 </html>
-'@ | Set-Content -Encoding UTF8 "public/reports/contract-architecture/TWU/Southwest/index.html"
