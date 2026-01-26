@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>TWU · Southwest Airlines · CBA Modification Analysis (2024–2028) · CrewSignal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/assets/css/main.css" />
+</head>
+<body>
+  <article class="cs-report" id="twu-southwest-modification-2024-2028">
+    <header class="cs-report__header">
+      <div class="cs-report__nav">
+        <a class="cs-report__back" href="/reports/contract-architecture/TWU/Southwest/">← Back to Southwest (TWU) Contract Architecture</a>
+      </div>
+
+      <h1 class="cs-report__title">TWU · Southwest Airlines</h1>
+      <p class="cs-report__dek">
+        CBA Modification Analysis (2024–2028)<br />
+        <span class="cs-report__dates">Effective Period: May 1, 2024 – April 30, 2028</span>
+      </p>
+    </header>
+
+    <section class="cs-report__section" id="agreement-metadata">
+      <h2>Agreement Metadata</h2>
+
+      <p class="cs-report__para">
+        <strong>Primary Document:</strong>
+        <a href="/reports/contract-architecture/TWU/Southwest/contract/Southwest_TWU_CBA_2024-2028.pdf">Contract 2024 (Annotated “as-would-read” package)</a>
+      </p>
+
+      <p class="cs-report__para">
+        This report analyzes the 2024–2028 modification layer for the Southwest Airlines Flight Attendant agreement
+        under TWU Local 556. The “Contract 2024” PDF is explicitly presented as an annotated version of the tentative
+        agreement, designed to be read as the contract would read if ratified; annotations appear in blue text boxes
+        above changed language, with additional “housekeeping” edits not always called out. :contentReference[oaicite:2]{index=2}
+      </p>
+
+      <p class="cs-report__para">
+        The agreement’s duration provision states that the agreement becomes effective May 1, 2024 and remains in
+        full force and effect until April 30, 2028, renewing annually thereafter absent timely Section 6 notice. :contentReference[oaicite:3]{index=3}
+      </p>
+
+      <p class="cs-report__para">
+        <strong>Relationship to baseline:</strong>
+        This modification layer should be read as a targeted rewrite/upgrade over the long-horizon Southwest baseline agreement (2018–2028),
+        with the 2024–2028 package focusing on legality accounting, reserve design, assignment sequencing, and (critically) premium-pay
+        “non-absorption” above RIG floors in key disruption scenarios.
+      </p>
+    </section>
+
+    <section class="cs-report__section" id="contract-architecture-overview">
+      <h2>Contract Architecture Overview</h2>
+
+      <p class="cs-report__para">
+        The 2024–2028 modification package strengthens Southwest’s contract architecture in three recurring ways:
+        (1) it tightens “clock and boundary” definitions (duty period/debrief/rest accounting), (2) it formalizes system-driven sequencing
+        in additional-flying and reserve assignment (including self-notify and timed gates), and (3) it recalibrates economics so certain
+        premiums pay <em>above</em> floor mechanisms rather than being absorbed by RIGs.
+      </p>
+
+      <p class="cs-report__para">
+        The net effect is a more self-executing enforcement model: more outcomes are computable from records (time stamps, notifications,
+        sequence windows, legality flags), and more pay remedies are structurally protected from dilution by “greatest-of” floors.
+      </p>
+
+      <p class="cs-report__para">
+        <strong>Key architectural signal:</strong>
+        Several provisions explicitly call out long-standing failure modes where premium pay was being “absorbed” by duty-based RIGs.
+        The 2024 package addresses this by specifying that certain premiums (e.g., extended duty pay after 12 hours) are paid on top of all RIGs. :contentReference[oaicite:4]{index=4}
+      </p>
+    </section>
+
+    <section class="cs-report__section" id="scheduling-assignment-framework">
+      <h2>Scheduling &amp; Assignment Framework</h2>
+
+      <p class="cs-report__para">
+        The modification package deepens the agreement’s sequencing and system-governance design. It modernizes notice channels, expands
+        electronic acknowledgements, and clarifies ordering mechanics across Additional Flying, Reschedule/Stranded handling, and Reserve.
+      </p>
+
+      <h3 class="cs-report__subhead">Hours of Service: Debrief/Duty Definitions and Premium Triggers</h3>
+      <p class="cs-report__para">
+        Definitions are adjusted so that debrief is structurally counted in duty period accounting for rest and pay purposes, aligning the
+        operational record with what Flight Attendants actually experience on duty. :contentReference[oaicite:5]{index=5}
+      </p>
+
+      <p class="cs-report__para">
+        Extended duty provisions are explicitly priced: when duty exceeds twelve (12) hours, trips flown after that point are paid at double time
+        until legal crew rest is achieved, and (importantly) the text indicates this premium is intended to be paid above RIG calculations rather
+        than being absorbed by duty-ratio floors. :contentReference[oaicite:6]{index=6}
+      </p>
+
+      <h3 class="cs-report__subhead">Additional Flying: Time-Gated Reserve Self-Assignment Windows</h3>
+      <p class="cs-report__para">
+        Open flying is required to reside in Open Time before assignment, and reserve self-assignment is governed by explicit time windows
+        (e.g., Senior AM Reserve self-assignments beginning at 1800 local, junior windows thereafter, and Crew Scheduling assignment gates). :contentReference[oaicite:7]{index=7}
+      </p>
+
+      <p class="cs-report__para">
+        This is a strong “controlled market” architecture: rather than informal assignment, the contract uses time-gated access to shape who can
+        capture open flying, when, and under what sequencing rules.
+      </p>
+
+      <h3 class="cs-report__subhead">Reserve: New Shift Types, Contact Windows, and System Release</h3>
+      <p class="cs-report__para">
+        The 2024 package defines multiple Reserve classifications (e.g., SAR/SPR/JAR/JPR/JLR) with explicit contact windows and limits on how far
+        after contact a check-in may be scheduled. It also introduces system-based self-notify/release logic (e.g., assignment/release/status pending)
+        rather than forcing phone-based holds at the end of flying. :contentReference[oaicite:8]{index=8}
+      </p>
+
+      <p class="cs-report__para">
+        Architecturally, this reduces friction and increases auditability: reserve obligations become time-bounded and system-visible, decreasing the
+        “black box” effect of discretionary phone interactions.
+      </p>
+
+      <h3 class="cs-report__subhead">Reschedule / Stranded: Premiums for Late Return and Added Duty</h3>
+      <p class="cs-report__para">
+        The reschedule/stranded subsystem adds structured premium outcomes for specific disruption patterns (e.g., later last-day block-in outcomes),
+        with language stating that certain premiums pay above RIGs (and above VJA/JA in applicable cases), reinforcing the “price deviation” model. :contentReference[oaicite:9]{index=9}
+      </p>
+    </section>
+
+    <section class="cs-report__section" id="economic-structure">
+      <h2>Economic Structure</h2>
+
+      <p class="cs-report__para">
+        The 2024–2028 modification package is unusually explicit about the relationship between premium pay and RIG floors. It preserves
+        a robust minimum-pay rule system (ADG/DPM/DHR/THR) while explicitly stating that certain premiums (extended duty, late return,
+        last-day-late, extended ground time, etc.) are paid on top of all RIG calculations. :contentReference[oaicite:10]{index=10}
+      </p>
+
+      <h3 class="cs-report__subhead">Premium Non-Absorption as Enforcement</h3>
+      <p class="cs-report__para">
+        This is an enforcement upgrade: when premium pay can be absorbed, the deterrent effect is reduced. When premiums are paid above floors,
+        the operation faces predictable incremental cost for deviations, making the contract’s “pricing discipline” real-time rather than theoretical. :contentReference[oaicite:11]{index=11}
+      </p>
+
+      <h3 class="cs-report__subhead">Pay Tables and “New Contract Date” Framing</h3>
+      <p class="cs-report__para">
+        Compensation provisions explicitly reference a “New Contract Date” (May 1, 2024) and include rate progressions with defined effective dates
+        for subsequent increases, reinforcing that this package is a forward-facing economic reset for the 2024–2028 period. :contentReference[oaicite:12]{index=12}
+      </p>
+
+      <h3 class="cs-report__subhead">RIG Computation Clarifications</h3>
+      <p class="cs-report__para">
+        RIG calculations are described as multi-layer comparisons (daily duty period sources vs pairing-level floors), and the text explicitly lists which
+        premiums sit “on top of” the RIG stack, reducing ambiguity and disputes over whether a premium is truly additive. :contentReference[oaicite:13]{index=13}
+      </p>
+    </section>
+
+    <section class="cs-report__section" id="enforcement-dispute-resolution">
+      <h2>Enforcement &amp; Dispute Resolution Architecture</h2>
+
+      <p class="cs-report__para">
+        The grievance and board/arbitration framework remains conventional RLA structure, but modernization appears in process details:
+        tightened/standardized timelines, electronic notice expectations, and additional clarity on board/arbitration logistics and governance. :contentReference[oaicite:14]{index=14}
+      </p>
+
+      <p class="cs-report__para">
+        Practically, the enforcement burden shifts further toward record-based verification: with system acknowledgements, time-gated windows,
+        defined contact methods, and “premium-above-RIG” triggers, more disputes become auditable from operational data rather than dependent on
+        recollection or discretionary practice.
+      </p>
+    </section>
+
+    <section class="cs-report__section" id="strengths-weaknesses-flags">
+      <h2>Structural Strengths, Weaknesses &amp; Comparative Flags</h2>
+
+      <p class="cs-report__para">
+        <strong>Structural strengths:</strong>
+        Clear duration and effective-date framing for the 2024–2028 window; expanded system-governance mechanisms (self-notify, electronic acknowledgements);
+        reserve re-architecture with bounded contact windows; and explicit “premium above RIG” enforcement that strengthens deterrence. :contentReference[oaicite:15]{index=15}
+      </p>
+
+      <p class="cs-report__para">
+        <strong>Structural weaknesses:</strong>
+        High rule density remains; success depends on correct system implementation and accurate coding (the contract assumes that “the system” will reliably
+        expose and enforce the defined sequences). Where technology lags, the contract can become procedurally fragile.
+      </p>
+
+      <p class="cs-report__para">
+        <strong>Comparative flags:</strong>
+        The package reads like a modernization retrofit: it is not merely wage-driven. It rewrites how duty time is measured, how reserves are contacted,
+        and how premium pay survives floor computations—suggesting a negotiating focus on practical, recurring friction points.
+      </p>
+    </section>
+
+    <section class="cs-report__section" id="scorecard">
+      <h2>Standardized Contract Scorecard</h2>
+
+      <div class="cs-table cs-table--compact">
+        <table>
+          <thead>
+            <tr>
+              <th>Domain</th>
+              <th>Score</th>
+              <th>Rationale</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Scheduling Protections</td>
+              <td>3.7</td>
+              <td>Time-gated Additional Flying + reserve contact window architecture strengthens sequencing and predictability.</td>
+            </tr>
+            <tr>
+              <td>Pay &amp; Credit Quality</td>
+              <td>3.9</td>
+              <td>Explicit premium “non-absorption” above RIGs materially strengthens enforceability of pricing mechanisms.</td>
+            </tr>
+            <tr>
+              <td>Work Rules &amp; Quality-of-Life</td>
+              <td>3.6</td>
+              <td>Debrief/duty alignment, rest/contact limits, and system release logic reduce operational friction (assuming tech executes).</td>
+            </tr>
+            <tr>
+              <td>Company Discretion Constraint</td>
+              <td>3.5</td>
+              <td>Discretion persists, but more of it is time-bounded, sequence-gated, and priced with additive premiums.</td>
+            </tr>
+            <tr>
+              <td>Enforcement Power</td>
+              <td>3.4</td>
+              <td>Traditional RLA remedies, but improved auditability and premium clarity reduce dispute ambiguity.</td>
+            </tr>
+            <tr>
+              <td>Clarity &amp; Modularity</td>
+              <td>3.3</td>
+              <td>Modular subsystems are clearer; overall density remains high and depends on “system” implementation.</td>
+            </tr>
+            <tr>
+              <td><strong>Total</strong></td>
+              <td><strong>21.4</strong></td>
+              <td><strong>out of 30</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <footer class="cs-report__footer">
+      <div class="cs-report__footer-text">CrewSignal · Contract Architecture &amp; Comparative Analysis</div>
+    </footer>
+  </article>
+</body>
+</html>
