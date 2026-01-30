@@ -1,232 +1,89 @@
+@'
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Subscribe to Crew Signal</title>
+  <title>Crew Signal | Subscribe</title>
+  <meta name="description" content="Subscribe to Crew Signal updates." />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <!-- Core Crew Signal styles -->
   <link rel="stylesheet" href="/assets/css/main.css" />
-
-  <!-- Page-specific layout + Mailchimp form theming (NO button styling here) -->
-  <style>
-    /* Keep page layout consistent with CS report pages */
-    .cs-subscribe-page {
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 2.5rem 1.5rem 3rem;
-    }
-
-    .cs-subscribe-header {
-      margin-bottom: 2rem;
-    }
-
-    .cs-subscribe-back {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.35rem;
-      margin-bottom: 1rem;
-      font-size: 0.9rem;
-      text-decoration: none;
-      color: var(--cs-accent, #38bdf8);
-    }
-
-    .cs-subscribe-back:hover {
-      text-decoration: underline;
-    }
-
-    /* Match the Mailchimp container to CS surface */
-    #mc_embed_signup {
-      background: var(--cs-surface, #0b1020);
-      color: var(--cs-text-main, #e5e7eb);
-      width: 100%;
-      max-width: 640px;
-      margin: 0 auto;
-      padding: 1.75rem 1.6rem 2.1rem;
-      border-radius: 1.25rem;
-      border: 1px solid var(--cs-border-subtle, rgba(148, 163, 184, 0.25));
-      box-shadow: 0 16px 35px rgba(15, 23, 42, 0.9);
-    }
-
-    #mc_embed_signup h2 {
-      margin-top: 0;
-      margin-bottom: 0.75rem;
-      text-align: center;
-      font-size: 1.25rem;
-      color: var(--cs-heading, #f9fafb);
-    }
-
-    .indicates-required {
-      text-align: center;
-      font-size: 0.8rem;
-      color: var(--cs-text-muted, #9ca3af);
-      margin-bottom: 1rem;
-    }
-
-    /* Fields */
-    #mc_embed_signup .mc-field-group {
-      margin-bottom: 1rem;
-    }
-
-    #mc_embed_signup label {
-      display: block;
-      margin-bottom: 0.35rem;
-      font-size: 0.9rem;
-      font-weight: 500;
-      color: var(--cs-text-main, #e5e7eb);
-    }
-
-    #mc_embed_signup input[type="text"],
-    #mc_embed_signup input[type="email"] {
-      width: 100%;
-      padding: 0.55rem 0.7rem;
-      border-radius: 0.6rem;
-      border: 1px solid rgba(148, 163, 184, 0.6);
-      background: #020617;
-      color: var(--cs-text-main, #e5e7eb);
-      font-size: 0.92rem;
-      box-sizing: border-box;
-    }
-
-    #mc_embed_signup input[type="text"]::placeholder,
-    #mc_embed_signup input[type="email"]::placeholder {
-      color: #6b7280;
-    }
-
-    /* Center the submit row (button styling comes from main.css via .subscribe-submit-button) */
-    #mc-embedded-subscribe-form .clear {
-      text-align: center;
-      margin-top: 1.5rem;
-    }
-
-    /* Response messages */
-    #mc_embed_signup #mce-error-response,
-    #mc_embed_signup #mce-success-response {
-      display: none;
-      margin-top: 1rem;
-      border-radius: 0.75rem;
-      padding: 0.75rem 0.9rem;
-      font-size: 0.85rem;
-      width: 100%;
-      box-sizing: border-box;
-    }
-
-    #mc_embed_signup #mce-error-response {
-      background: rgba(248, 113, 113, 0.1);
-      border: 1px solid rgba(248, 113, 113, 0.6);
-      color: #fecaca;
-    }
-
-    #mc_embed_signup #mce-success-response {
-      background: rgba(34, 197, 94, 0.1);
-      border: 1px solid rgba(74, 222, 128, 0.7);
-      color: #bbf7d0;
-    }
-
-    /* GDPR block */
-    #mergeRow-gdpr {
-      margin-top: 1.25rem;
-      padding: 0.9rem 0.95rem;
-      border-radius: 0.75rem;
-      background: rgba(15, 23, 42, 0.85);
-      border: 1px solid rgba(148, 163, 184, 0.5);
-    }
-
-    #mergeRow-gdpr p {
-      margin: 0 0 0.5rem;
-      font-size: 0.85rem;
-      color: var(--cs-text-main, #e5e7eb);
-    }
-
-    #mergeRow-gdpr .mc_fieldset label {
-      display: block;
-      margin-bottom: 0.35rem;
-      font-size: 0.85rem;
-      font-weight: 400;
-    }
-
-    /* Keep Mailchimp checkboxes sane */
-    #mc-embedded-subscribe-form input[type="checkbox"] {
-      display: inline;
-      width: auto;
-      margin-right: 10px;
-      accent-color: var(--cs-accent, #38bdf8);
-    }
-
-    @media (max-width: 640px) {
-      .cs-subscribe-page {
-        padding: 2rem 1.1rem 2.5rem;
-      }
-
-      #mc_embed_signup {
-        padding: 1.5rem 1.25rem 1.9rem;
-      }
-    }
-  </style>
 </head>
 
-<body>
-  <div class="cs-subscribe-page cs-report">
-    <header class="cs-report__header cs-subscribe-header">
-      <a href="/" class="cs-subscribe-back">← Back to Crew Signal</a>
-      <p class="cs-report__eyebrow">Stay Connected</p>
-      <h1 class="cs-report__title">Crew Signal Updates</h1>
-      <p class="cs-report__subtitle">
-        Subscribe to receive merger and integration updates, mediation developments,
-        NMB docket snapshots, and CWA–AFA governance coverage.
+<body class="cs-report">
+  <header class="cs-report__header">
+    <a href="/" class="cs-report__back">← Back to Crew Signal</a>
+    <p class="cs-report__eyebrow">Subscribe</p>
+    <h1 class="cs-report__title">Get Crew Signal Updates</h1>
+  </header>
+
+  <main class="cs-report__content">
+    <section class="cs-card">
+      <h2>Subscription intake (temporarily via web form)</h2>
+      <p>
+        Subscriptions are temporarily paused while we finalize our mailing address.
+        Leave your email here and we’ll notify you as soon as subscriptions reopen.
       </p>
-      <div class="cs-report__meta">
-        <span class="cs-report__meta-item">Curated industry briefings</span>
-        <span class="cs-report__meta-item">Unsubscribe any time</span>
-      </div>
-    </header>
 
-    <section class="cs-report__section">
-      <div id="mc_embed_signup">
- <form
-  name="crew-signal-signup"
-  method="POST"
-  action="/thanks/"
-  data-netlify="true"
-  netlify-honeypot="bot-field"
->
-  <input type="hidden" name="form-name" value="crew-signal-signup" />
+      <form
+        name="crew-signal-signup"
+        method="POST"
+        action="/thanks/"
+        data-netlify="true"
+        netlify-honeypot="bot-field"
+      >
+        <input type="hidden" name="form-name" value="crew-signal-signup" />
 
-  <p class="cs-form-note">
-    Subscriptions are temporarily paused while we finalize our mailing address.
-    Leave your email here and we’ll notify you as soon as subscriptions reopen.
-  </p>
+        <p class="sr-only">
+          <label>Don’t fill this out if you’re human:
+            <input name="bot-field" />
+          </label>
+        </p>
 
-  <p class="sr-only">
-    <label>Don’t fill this out if you’re human:
-      <input name="bot-field" />
-    </label>
-  </p>
+        <input type="hidden" name="Source" value="Interim signup (Netlify)" />
 
-  <input type="hidden" name="Source" value="Interim signup (Netlify)" />
+        <div class="field">
+          <label for="name">Name</label>
+          <input id="name" name="Name" type="text" autocomplete="name" />
+        </div>
 
-  <div class="field">
-    <label for="name">Name</label>
-    <input id="name" name="Name" type="text" autocomplete="name" />
-  </div>
+        <div class="field">
+          <label for="email">Email <span aria-hidden="true">*</span></label>
+          <input id="email" name="Email" type="email" required autocomplete="email" />
+        </div>
 
-  <div class="field">
-    <label for="email">Email <span aria-hidden="true">*</span></label>
-    <input id="email" name="Email" type="email" required autocomplete="email" />
-  </div>
+        <div class="field">
+          <label for="airline">Airline / Base (optional)</label>
+          <input id="airline" name="AirlineBase" type="text" />
+        </div>
 
-  <div class="field">
-    <label for="airline">Airline / Base (optional)</label>
-    <input id="airline" name="AirlineBase" type="text" />
-  </div>
+        <div class="field">
+          <label for="notes">Notes (optional)</label>
+          <textarea id="notes" name="Notes" rows="4"></textarea>
+        </div>
 
-  <div class="field">
-    <label for="notes">Notes (optional)</label>
-    <textarea id="notes" name="Notes" rows="4"></textarea>
-  </div>
+        <div data-netlify-recaptcha="true"></div>
 
-  <div data-netlify-recaptcha="true"></div>
+        <button type="submit" class="cs-button">Sign up</button>
+      </form>
+    </section>
+  </main>
 
-  <button type="submit">Sign up</button>
-</form>
-      
+  <footer class="cs-report__footer">
+    <p class="cs-report__fineprint">© Crew Signal · Informational resource for aviation professionals</p>
+  </footer>
+
+  <style>
+    .sr-only {
+      position:absolute !important;
+      width:1px; height:1px;
+      padding:0; margin:-1px;
+      overflow:hidden; clip:rect(0,0,0,0);
+      border:0;
+    }
+    .field { margin: 0 0 1rem 0; }
+    label { display:block; margin-bottom: .35rem; font-weight: 600; }
+    input, textarea { width:100%; max-width:32rem; padding:.6rem; }
+  </style>
+</body>
+</html>
+'@ | Set-Content -Encoding UTF8 .\public\subscribe\index.html
