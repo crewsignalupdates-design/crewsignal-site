@@ -1,60 +1,56 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>Crew Signal | Horizon (CWA-AFA) — NMB Mediation Tracker</title>
-  <meta name="description" content="Horizon Air flight attendants (CWA-AFA): NMB docket A-14102 mediation tracker and weekly updates." />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="/assets/css/main.css" />
-</head>
+$hPath = "public/reports/mediation/trackers/horizon/weekly/2026.01.30/index.html"
 
-<body class="cs-report">
-  <header class="cs-report__header">
-    <a href="/reports/mediation/" class="cs-report__back">← Back to Negotiations &amp; Mediation Hub</a>
-    <p class="cs-report__eyebrow">Carrier Mediation Tracker</p>
-    <h1 class="cs-report__title">Horizon Air (CWA-AFA)</h1>
-    <p class="cs-report__subtitle">
-      National Mediation Board case <strong>A-14102</strong>
-      (Mediator: <strong>Michael Kelliher</strong>) · amendable 2024
-    </p>
-  </header>
+$hLines = @(
+'<!DOCTYPE html>',
+'<html lang="en">',
+'<head>',
+'  <meta charset="UTF-8" />',
+'  <title>Crew Signal | Horizon — Weekly Mediation Update · 2026.01.30</title>',
+'  <meta name="viewport" content="width=device-width, initial-scale=1.0" />',
+'  <link rel="stylesheet" href="/assets/css/main.css" />',
+'</head>',
+'',
+'<body class="cs-report">',
+'  <header class="cs-report__header">',
+'    <a href="/reports/mediation/trackers/horizon/" class="cs-report__back">← Back to Horizon 2025 Overview</a>',
+'    <p class="cs-report__eyebrow">Weekly Mediation Update</p>',
+'    <h1 class="cs-report__title">Horizon Air (CWA-AFA)</h1>',
+'    <p class="cs-report__subtitle">',
+'      NMB Case <strong>A-14102</strong> · Mediator: <strong>Michael Kelliher</strong> · Week ending <strong>2026.01.30</strong>',
+'    </p>',
+'  </header>',
+'',
+'  <main class="cs-report__main">',
+'    <section class="cs-report__section">',
+'      <h2 class="cs-report__section-title">Status This Week</h2>',
+'      <p class="cs-report__body">',
+'        No publicly reported change in mediation posture this week. Horizon Air flight attendants remain in formal Railway Labor Act mediation under National Mediation Board oversight.',
+'      </p>',
+'    </section>',
+'',
+'    <section class="cs-report__section">',
+'      <h2 class="cs-report__section-title">Process Signals</h2>',
+'      <ul class="cs-report__list">',
+'        <li class="cs-report__list-item">No announced change in mediation session cadence.</li>',
+'        <li class="cs-report__list-item">No public indication of narrowed or expanded bargaining scope.</li>',
+'        <li class="cs-report__list-item">No observable NMB posture shift toward release.</li>',
+'      </ul>',
+'    </section>',
+'',
+'    <section class="cs-report__section">',
+'      <h2 class="cs-report__section-title">CrewSignal Assessment</h2>',
+'      <p class="cs-report__body">',
+'        This week reflects continued mediation without externally visible progress indicators.',
+'      </p>',
+'    </section>',
+'  </main>',
+'',
+'  <footer class="cs-report__footer">',
+'    <p class="cs-report__fineprint">© Crew Signal · Informational resource for aviation professionals</p>',
+'  </footer>',
+'</body>',
+'</html>'
+)
 
-  <main class="cs-report__main">
-    <section class="cs-report__section">
-      <h2 class="cs-report__section-title">Status Summary</h2>
-
-      <p class="cs-report__body">
-        Horizon Air flight attendants, represented by the CWA-AFA, entered formal Railway Labor Act (RLA) mediation under
-        National Mediation Board (NMB) oversight. This tracker summarizes publicly observable process milestones and
-        bargaining signals and provides a weekly archive to document progress, delays, and outcomes over time.
-      </p>
-
-      <p class="cs-report__body"><strong>CrewSignal continues to monitor for:</strong></p>
-      <ul class="cs-report__list">
-        <li class="cs-report__list-item">Mediation session cadence and whether sessions expand, contract, or pause;</li>
-        <li class="cs-report__list-item">Whether open items narrow (scope reduction) versus broaden (scope expansion);</li>
-        <li class="cs-report__list-item">Any NMB posture signals indicating movement toward release or intensified pressure;</li>
-        <li class="cs-report__list-item">
-          Ratification-risk drivers tied to pay structure, scheduling, reserve rules, work rules, and enforcement language.
-        </li>
-      </ul>
-    </section>
-
-    <section class="cs-report__section">
-      <h2 class="cs-report__section-title">Weekly Updates</h2>
-      <ul class="cs-report__list">
-        <li class="cs-report__list-item">
-          <strong>Latest Update:</strong>
-          <a href="/reports/mediation/trackers/horizon/weekly/2026.01.30/">
-            Weekly Mediation Update · 2026.01.30
-          </a>
-        </li>
-      </ul>
-    </section>
-  </main>
-
-  <footer class="cs-report__footer">
-    <p class="cs-report__fineprint">© Crew Signal · Informational resource for aviation professionals</p>
-  </footer>
-</body>
-</html>
+Set-Content -Encoding UTF8 -Path $hPath -Value $hLines
+Write-Host "Wrote:" $hPath
