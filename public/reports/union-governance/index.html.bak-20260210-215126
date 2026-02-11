@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Union Governance &amp; Representation | Crew Signal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A reference hub for union governance structures, financial frameworks, constitutions/bylaws, conventions, and representation models affecting flight attendants." />
+  <link rel="stylesheet" href="/assets/css/main.css" />
+</head>
+
+<body class="cs-report">
+
+  <header class="cs-report__header">
+    <a href="/" class="cs-report__back">← Back to Crew Signal</a>
+    <p class="cs-report__eyebrow">Union Governance</p>
+    <h1 class="cs-report__title">Union Governance &amp; Representation</h1>
+    <p class="cs-report__subtitle">
+  <p>
+  How unions structure representation,
+  authority, accountability, and decision-making.
+</p> 
+  </header> 
+
+<!-- Editor’s Note -->
+<section class="cs-report__section">
+  <p class="cs-editor-note">
+ <strong>Editor’s Note:</strong>
+  This section is for informational purposes only and summarizes publicly
+  available governance documents at a structural level. It does not provide
+  legal advice, member guidance, or individualized recommendations.   
+    </p>
+  </section>  
+
+  <main class="cs-report">
+
+    <!-- ===================== -->
+    <!-- Table of Contents -->
+    <!-- ===================== -->
+
+    <section class="cs-report__section">
+      <h2 class="cs-report__section-title">Table of Contents</h2>
+
+      <h3>I. How to Read This Series</h3>
+      <ul class="cs-report__list">
+        <li>Scope, sources, and neutrality</li>
+        <li>Governance design vs. operational practice</li>
+        <li>Document versioning and citation standards</li>
+      </ul>
+
+      <h3>II. Analytical Frameworks</h3>
+<ul class="cs-report__list">
+
+        <li>Governance Topology (where authority formally resides)</li>
+        <li>Authority &amp; Accountability (who can do what — and who checks it)</li>
+        <li>Representation Models (geographic, craft, carrier, hybrid)</li>
+        <li>Financial Governance &amp; Oversight</li>
+        <li>Amendment and Change Mechanics</li>
+      </ul>
+
+     <h3>III. Union Case Studies</h3>
+
+     <ul>
+  <li><a href="/reports/union-governance/apfa/">Association of Professional Flight Attendants (APFA)</a></li>
+
+  <li>
+    <a href="/reports/union-governance/cwa/">Communications Workers of America (CWA)</a>
+    <ul>
+      <li>
+        <a href="/reports/union-governance/cwa-afa/">Association of Flight Attendants (AFA) — sector within CWA</a>
+      </li>
+    </ul>
+  </li>
+
+  <li><a href="/reports/union-governance/iam/">International Association of Machinists and Aerospace Workers (IAM)</a></li>
+  <li><a href="/reports/union-governance/ibt/">International Brotherhood of Teamsters (IBT)</a></li>
+  <li><a href="/reports/union-governance/twu/">Transport Workers Union of America (TWU)</a></li>
+</ul>
+
+      <h3>IV. Cross-Union Comparative Views</h3>
+      
+      <ul class="cs-report__list">
+        <li>Allocation of Amendment Authority</li>
+        <li>Election Administration Models</li>
+        <li>Financial Control and Dues Authority</li>
+        <li>Discipline, Trial, and Appeals Systems</li>
+        <li>Local Autonomy and Trusteeship Powers</li>
+      </ul>
+
+      <h3>V. Sources, Scope, and Limitations</h3>
+      <ul class="cs-report__list">
+        <li>Public documents only</li>
+        <li>Structural analysis, not legal or organizing guidance</li>
+        <li>Formal design ≠ operational practice unless explicitly documented</li>
+      </ul>
+    </section>
+
+  </main>
+
+</body>
+</html>
