@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>CrewSignal | United / JetBlue — Weekly Update (2026.02.13)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="United / JetBlue (Blue Sky) flight attendant integration tracker — weekly update for 2026.02.13."
+  />
+  <link rel="stylesheet" href="/assets/css/main.css" />
+</head>
+
+<body class="cs-report">
+  <header class="cs-report__header">
+    <a
+      href="/reports/merger-integration/trackers/united-jetblue/"
+      class="cs-back-link cs-report__back"
+    >
+      ← Back to United / JetBlue Tracker
+    </a>
+
+    <p class="cs-report__eyebrow">Weekly Update · Flight Attendants</p>
+
+    <h1 class="cs-report__title">United / JetBlue (Blue Sky)</h1>
+
+    <p class="cs-report__subtitle">
+      <time datetime="2026-02-13">2026.02.13</time>
+    </p>
+
+    <div class="cs-report__meta" aria-label="Tracker scope">
+      <span class="cs-report__meta-item">United FAs: CWA‑AFA</span>
+      <span class="cs-report__meta-item">JetBlue FAs: TWU</span>
+      <span class="cs-report__meta-item">Structure: Commercial collaboration (not a merger)</span>
+    </div>
+  </header>
+
+  <section class="cs-report__section" id="status-summary">
+    <h2 class="cs-report__section-title">Status Summary</h2>
+    <p>
+      Blue Sky recorded a significant customer-facing milestone this week: JetBlue and United publicly announced
+      that customers can now purchase eligible itineraries operated by either airline directly through JetBlue or United
+      channels, using cash or loyalty currency (TrueBlue points or MileagePlus miles, depending on channel).
+    </p>
+    <p>
+      For flight attendants, this remains a <strong>commercial integration step</strong> — not a corporate merger move.
+      No merger filings, no single-carrier determinations, and no representation-level actions affecting flight attendants
+      were observed in connection with this milestone.
+    </p>
+  </section>
+
+  <section class="cs-report__section" id="integration-dashboard">
+    <h2 class="cs-report__section-title">Integration Dashboard</h2>
+
+    <table class="cs-report-table" aria-label="Blue Sky weekly integration dashboard">
+      <thead>
+        <tr>
+          <th scope="col">Workstream</th>
+          <th scope="col" class="cs-table__score">Signal</th>
+          <th scope="col">CrewSignal notes (FA-oriented)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Corporate structure</strong></td>
+          <td class="cs-table__score">GREEN</td>
+          <td>Still a collaboration; no merger transaction announced.</td>
+        </tr>
+        <tr>
+          <td><strong>Operating certificate / “single carrier”</strong></td>
+          <td class="cs-table__score">GREEN</td>
+          <td>No SOC pathway disclosed; separate operating certificates and crew operations remain.</td>
+        </tr>
+        <tr>
+          <td><strong>Flight attendant representation</strong></td>
+          <td class="cs-table__score">GREEN</td>
+          <td>Separate unions/CBAs remain intact (United: CWA‑AFA; JetBlue: TWU).</td>
+        </tr>
+        <tr>
+          <td><strong>JCBA (flight attendants)</strong></td>
+          <td class="cs-table__score">GREEN</td>
+          <td>No JCBA talks triggered by a partnership; no public JCBA signals observed.</td>
+        </tr>
+        <tr>
+          <td><strong>Customer-facing integration</strong></td>
+          <td class="cs-table__score">GREEN</td>
+          <td>Cross-channel sales now live for eligible itineraries; mixed-carrier single itineraries still future-state.</td>
+        </tr>
+        <tr>
+          <td><strong>Policy/perks interaction</strong></td>
+          <td class="cs-table__score">YELLOW</td>
+          <td>Reciprocal perks (priority boarding, preferred/extra-legroom seating, same-day standby/changes) described as “later this spring.”</td>
+        </tr>
+        <tr>
+          <td><strong>Crew-facing operational changes</strong></td>
+          <td class="cs-table__score">GREEN</td>
+          <td>No joint bidding/staffing/training alignment announced alongside this milestone.</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="cs-report__section" id="key-signals">
+    <h2 class="cs-report__section-title">Key Signals Observed</h2>
+    <ul class="cs-report__list">
+      <li>
+        <strong>Cross-channel sales went live:</strong> customers can purchase eligible JetBlue or United itineraries on either airline’s website/app using cash, points, or miles.
+      </li>
+      <li>
+        <strong>Mixed-carrier single itineraries remain future-state:</strong> communications continue to describe this as a later enhancement rather than a current feature.
+      </li>
+      <li>
+        <strong>Vacation platform expansion:</strong> United flights are now available through JetBlue Vacations Flight + Hotel packages.
+      </li>
+      <li>
+        <strong>Upcoming perks called out:</strong> reciprocal elite-like travel perks (priority boarding, preferred/extra-legroom seating, same-day changes/standby) described as arriving later this spring.
+      </li>
+      <li>
+        <strong>No labor/representation triggers observed:</strong> no public single-carrier or JCBA actions associated with this phase.
+      </li>
+    </ul>
+  </section>
+
+  <section class="cs-report__section" id="fa-lens">
+    <h2 class="cs-report__section-title">Flight Attendant Lens</h2>
+    <p>
+      The new booking capability can change <em>who</em> is on a flight (and how customers perceive the journey) without changing
+      <em>who works</em> the flight. Near-term FA impacts are most likely to appear as:
+    </p>
+    <ul class="cs-report__list">
+      <li>
+        <strong>Customer expectation drift:</strong> more customers shopping across both networks can increase “why doesn’t this work like the other airline?” friction onboard.
+      </li>
+      <li>
+        <strong>Perks implementation risk:</strong> once reciprocal perks roll out (boarding/seat access/same-day changes),
+        policy clarity and frontline comms matter to prevent gate/onboard disputes.
+      </li>
+      <li>
+        <strong>IRROPS servicing pressure:</strong> as the relationship becomes more visible to customers, irregular operations can create additional questions about rebooking/eligibility and “what Blue Sky includes.”
+      </li>
+    </ul>
+    <p>
+      CrewSignal continues to treat Blue Sky as <strong>commercial integration</strong> unless/until structural “single carrier”
+      or representation signals emerge.
+    </p>
+  </section>
+
+  <section class="cs-report__section" id="behind-the-scenes">
+    <h2 class="cs-report__section-title">Behind the Scenes (Structural / Operational Signals)</h2>
+    <ul class="cs-report__list">
+      <li><strong>Single operating certificate:</strong> Not part of Blue Sky; no SOC pathway disclosed.</li>
+      <li><strong>Fleet integration:</strong> None indicated (separate fleets, manuals, and training programs).</li>
+      <li>
+        <strong>Scheduling alignment:</strong> watch JFK/EWR for bank design and passenger-flow changes that can
+        indirectly influence staffing and reserve usage.
+      </li>
+      <li>
+        <strong>Interline mechanics:</strong> current milestone improves cross-shopping and purchasing, but a truly unified
+        “single ticket with both airlines” is still described as future-state.
+      </li>
+    </ul>
+  </section>
+
+  <section class="cs-report__section" id="watching">
+    <h2 class="cs-report__section-title">What CrewSignal Is Watching</h2>
+    <ul class="cs-report__list">
+      <li>
+        Detailed rollout language for “later this spring” reciprocal perks — especially boarding order, seat access rules, and servicing boundaries.
+      </li>
+      <li>
+        Any union communications (CWA‑AFA / TWU) that reference Blue Sky in bargaining narratives, staffing frameworks, or scope discussions.
+      </li>
+      <li>
+        Any shift from “partnership / interline” language toward structural integration terms that could implicate single-carrier questions.
+      </li>
+    </ul>
+  </section>
+
+  <section class="cs-report__section cs-report__section--outlook" id="sources">
+    <h2 class="cs-report__section-title">Sources &amp; Links</h2>
+    <ul class="cs-report__list">
+      <li>
+        Official Blue Sky milestone announcement (cross-channel sales live):
+        <a href="https://news.jetblue.com/latest-news/press-release-details/2026/Blue-Sky-Reaches-New-Altitude-JetBlue-and-United-Begin-Offering-Sales-Across-Both-Airlines/default.aspx" rel="noopener" target="_blank">
+          JetBlue Newsroom — 02/10/2026
+        </a>
+      </li>
+      <li>
+        Background Blue Sky framework announcement:
+        <a href="https://www.ir.jetblue.com/news/news-details/2025/JetBlue-and-United-Announce-Blue-Sky-Unique-Consumer-Collaboration-That-Links-Loyalty-Programs/default.aspx" rel="noopener" target="_blank">
+          JetBlue Investor Relations — 05/29/2025
+        </a>
+      </li>
+    </ul>
+  </section>
+
+  <section class="cs-report__section cs-report__section--outlook" id="related">
+    <h2 class="cs-report__section-title">Related Contract Architecture</h2>
+    <p>
+      Contract terms, amendability status, and representation context are maintained in
+      CrewSignal’s Contract Architecture library.
+    </p>
+    <p><a href="/reports/contract-architecture/">View Contract Architecture →</a></p>
+  </section>
+
+  <footer class="cs-report__footer">
+    <p class="cs-report__fineprint">
+      © CrewSignal · Informational resource for aviation professionals · Public-source synthesis as of <time datetime="2026-02-13">2026-02-13</time>
+    </p>
+  </footer>
+</body>
+</html>
