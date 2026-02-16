@@ -152,6 +152,20 @@ body {
   margin: 0.25rem 0;
 }
 
+.cs-report__footer {
+  margin-top: 2rem;
+  padding: 1.25rem 1.5rem;
+  border-radius: 1.1rem;
+  border: 1px solid var(--cs-border-subtle);
+  background: rgba(15, 23, 42, 0.55);
+}
+
+.cs-report__fineprint {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--cs-text-muted);
+}
+
 /* Cards on the Mediation index */
 .cs-card {
   position: relative;
@@ -278,7 +292,8 @@ body {
    Crew Signal – Back Link
    ============================ */
 
-.cs-back-link {
+.cs-back-link,
+.cs-report__back {
   display: inline-flex;
   align-items: center;
   gap: 0.35rem;
@@ -289,9 +304,21 @@ body {
   text-decoration: none;
 }
 
-.cs-back-link:hover {
+.cs-back-link:hover,
+.cs-report__back:hover {
   text-decoration: underline;
+  color: var(--cs-accent); /* prevents global a:hover from turning it gold */
 }
+
+/* Hub subsection spacing (replaces inline styles on h3) */
+.cs-report__section-title.cs-report__subhead {
+  margin-top: 1.25rem;
+}
+
+.cs-report__section-title.cs-report__subhead--first {
+  margin-top: 1rem;
+}
+
 
 /* ============================
    Crew Signal – Signup form fixes
