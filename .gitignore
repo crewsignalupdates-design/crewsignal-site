@@ -8,3 +8,7 @@ dist/
 # Backup files
 *.bak
 
+# Windows Explorer / OS metadata
+Thumbs.db
+desktop.ini
+ehthumbs.db
