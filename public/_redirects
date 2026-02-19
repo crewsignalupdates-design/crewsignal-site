@@ -14,6 +14,11 @@ https://www.crewsignal.org/* https://crewsignal.org/:splat 301!
 # Mediation: old RLA path -> new mediation index
 /reports/mediation/rla/ /reports/mediation/ 301
 
+# Mediation: retire duplicate YTD hub page -> canonical mediation hub
+/reports/mediation/ytd-2025.11.14     /reports/mediation/ 301!
+/reports/mediation/ytd-2025.11.14/    /reports/mediation/ 301!
+/reports/mediation/ytd-2025.11.14/*   /reports/mediation/ 301!
+
 # NMB (retired): route all legacy NMB URLs to Contract Architecture
 /nmb-docket    /reports/contract-architecture/ 301!
 /nmb-docket/*  /reports/contract-architecture/ 301!
@@ -34,4 +39,4 @@ https://www.crewsignal.org/* https://crewsignal.org/:splat 301!
 
 /reports/contract-architecture/TWU/Southwest/contract/Southwest_TWU_CBA_2018-2028.pdf  /contracts/twu/southwest/2018-2028/southwest-twu556-cba-2018-2028.pdf  301
 /reports/contract-architecture/TWU/Southwest/contract/Southwest_TWU_CBA_2024-2028.pdf  /contracts/twu/southwest/2024-modification/southwest-twu556-cba-modified-2024.pdf  301
-/reports/mediation/2026.01.09/  /reports/mediation/weekly-2026.01.09/  301
+/reports/mediation/2026.01.09/  /reports/mediation/ 301!
