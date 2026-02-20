@@ -32,6 +32,12 @@ https://www.crewsignal.org/* https://crewsignal.org/:splat 301!
 /reports/mediation/negotiations/horizon-air      /reports/mediation/trackers/horizon/ 301!
 /reports/mediation/negotiations/horizon-air/     /reports/mediation/trackers/horizon/ 301!
 /reports/mediation/negotiations/horizon-air/*    /reports/mediation/trackers/horizon/ 301!
+
+/reports/mediation/negotiations/horizon-air/   /reports/mediation/trackers/horizon/   301!
+/reports/mediation/negotiations/horizon-air/*  /reports/mediation/trackers/horizon/   301!
+
+/reports/mediation/negotiations/psa/           /reports/mediation/trackers/psa/       301!
+/reports/mediation/negotiations/psa/*          /reports/mediation/trackers/psa/       301!
 # NMB (retired): route all legacy NMB URLs to Contract Architecture
 /nmb-docket    /reports/contract-architecture/ 301!
 /nmb-docket/*  /reports/contract-architecture/ 301!
