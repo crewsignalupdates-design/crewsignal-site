@@ -19,6 +19,15 @@ https://www.crewsignal.org/* https://crewsignal.org/:splat 301!
 /reports/mediation/ytd-2025.11.14/    /reports/mediation/ 301!
 /reports/mediation/ytd-2025.11.14/*   /reports/mediation/ 301!
 
+# Mediation: retire legacy United negotiation URLs -> canonical United tracker
+/reports/mediation/negotiations/united-airlines     /reports/mediation/trackers/united/ 301!
+/reports/mediation/negotiations/united-airlines/    /reports/mediation/trackers/united/ 301!
+/reports/mediation/negotiations/united-airlines/*   /reports/mediation/trackers/united/ 301!
+
+/reports/mediation/negotiations/united              /reports/mediation/trackers/united/ 301!
+/reports/mediation/negotiations/united/             /reports/mediation/trackers/united/ 301!
+/reports/mediation/negotiations/united/*            /reports/mediation/trackers/united/ 301!
+
 # NMB (retired): route all legacy NMB URLs to Contract Architecture
 /nmb-docket    /reports/contract-architecture/ 301!
 /nmb-docket/*  /reports/contract-architecture/ 301!
