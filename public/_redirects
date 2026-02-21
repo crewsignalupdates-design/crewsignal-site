@@ -60,6 +60,7 @@ https://www.crewsignal.org/* https://crewsignal.org/:splat 301!
 /reports/nmb   /reports/contract-architecture/ 301!
 /reports/nmb/  /reports/contract-architecture/ 301!
 /reports/nmb/* /reports/contract-architecture/ 301!
+/reports/contract-architecture/CWA-AFA/GoJet/contract/GoJet_TA_2025-2029.pdf  /reports/contract-architecture/CWA-AFA/GoJet/contract/GoJet-CWA-AFA_CBA_2025-2029.pdf  301!
 
 # Merger & Integration: legacy aliases -> canonical locations
 /reports/merger-integration/trackers/united-jetblue/year-end     /reports/merger-integration/trackers/united-jetblue/2025-year-end/ 301!
