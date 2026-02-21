@@ -38,6 +38,22 @@ https://www.crewsignal.org/* https://crewsignal.org/:splat 301!
 
 /reports/mediation/negotiations/psa/           /reports/mediation/trackers/psa/       301!
 /reports/mediation/negotiations/psa/*          /reports/mediation/trackers/psa/       301!
+
+# Retired: negotiations updates hub (carrier pages are canonical now)
+/reports/mediation/negotiations/updates        /reports/mediation/   301!
+/reports/mediation/negotiations/updates/       /reports/mediation/   301!
+/reports/mediation/negotiations/updates/*      /reports/mediation/   301!
+
+# Retired: spirit was incorrectly placed under trackers; canonical is negotiations page
+/reports/mediation/trackers/spirit             /reports/mediation/negotiations/spirit/   301!
+/reports/mediation/trackers/spirit/            /reports/mediation/negotiations/spirit/   301!
+/reports/mediation/trackers/spirit/*           /reports/mediation/negotiations/spirit/   301!
+
+# Removed from public: mediation template content (moved out of /public)
+/reports/mediation/_template                   /reports/mediation/   301!
+/reports/mediation/_template/                  /reports/mediation/   301!
+/reports/mediation/_template/*                 /reports/mediation/   301!
+
 # NMB (retired): route all legacy NMB URLs to Contract Architecture
 /nmb-docket    /reports/contract-architecture/ 301!
 /nmb-docket/*  /reports/contract-architecture/ 301!
