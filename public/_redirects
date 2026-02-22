@@ -7,6 +7,9 @@ https://www.crewsignal.org/* https://crewsignal.org/:splat 301!
 /contracts/     /reports/contract-architecture/contracts/       301!
 /contracts/*    /reports/contract-architecture/contracts/:splat 301!
 
+# Legacy contract path (retired)
+ /contracts/*  /reports/contract-architecture/  301!
+
 # Mediation: old shortcut -> new mediation hub
 /mediation-updates   /reports/mediation/   301
 /mediation-updates/* /reports/mediation/   301
