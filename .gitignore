@@ -12,3 +12,5 @@ dist/
 Thumbs.db
 desktop.ini
 ehthumbs.db
+.migrations/
+

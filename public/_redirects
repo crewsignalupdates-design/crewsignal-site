@@ -1,4 +1,4 @@
-# Force https and non-www
+﻿# Force https and non-www
 http://crewsignal.org/* https://crewsignal.org/:splat 301!
 http://www.crewsignal.org/* https://crewsignal.org/:splat 301!
 https://www.crewsignal.org/* https://crewsignal.org/:splat 301!
@@ -92,3 +92,6 @@ https://www.crewsignal.org/* https://crewsignal.org/:splat 301!
  /contracts                    /reports/contract-architecture/                      301!
  /contracts/                   /reports/contract-architecture/                      301!
  /contracts/*                  /reports/contract-architecture/contracts/:splat      301!
+/reports/union-governance/cwa-afa/*  /reports/union-governance/cwa/cwa-afa/:splat  301!
+/reports/union-governance/cwa-afa  /reports/union-governance/cwa/cwa-afa/  301!
+
