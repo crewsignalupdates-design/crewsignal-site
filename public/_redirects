@@ -3,6 +3,8 @@ http://crewsignal.org/* https://crewsignal.org/:splat 301!
 http://www.crewsignal.org/* https://crewsignal.org/:splat 301!
 https://www.crewsignal.org/* https://crewsignal.org/:splat 301!
 
+/contracts/twu/southwest/2018-2028/southwest-twu556-cba-2018-2028.pdf  /reports/contract-architecture/TWU/Southwest/contract/Southwest_TWU_CBA_2018-2028.pdf  301!
+/contracts/twu/southwest/2024-modification/southwest-twu556-cba-modified-2024.pdf  /reports/contract-architecture/TWU/Southwest/contract/Southwest_TWU_CBA_2024-2028.pdf  301!
 /contracts      /reports/contract-architecture/contracts/       301!
 /contracts/     /reports/contract-architecture/contracts/       301!
 /contracts/*    /reports/contract-architecture/contracts/:splat 301!
@@ -85,8 +87,6 @@ https://www.crewsignal.org/* https://crewsignal.org/:splat 301!
 /reports/integration-vs-merger.html   /reports/merger-integration/baseline/ 301!
 /reports/integration-vs-merger/       /reports/merger-integration/baseline/ 301!
 
-/reports/contract-architecture/TWU/Southwest/contract/Southwest_TWU_CBA_2018-2028.pdf  /contracts/twu/southwest/2018-2028/southwest-twu556-cba-2018-2028.pdf  301
-/reports/contract-architecture/TWU/Southwest/contract/Southwest_TWU_CBA_2024-2028.pdf  /contracts/twu/southwest/2024-modification/southwest-twu556-cba-modified-2024.pdf  301
 /reports/mediation/2026.01.09/  /reports/mediation/ 301!
 # Contract Architecture consolidation (legacy /contracts -> canonical /reports/contract-architecture)
  /contracts                    /reports/contract-architecture/                      301!
