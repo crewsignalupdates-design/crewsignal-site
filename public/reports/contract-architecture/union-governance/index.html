@@ -2,137 +2,212 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Union Governance &amp; Representation | Crew Signal</title>
+  <title>Union Governance | Contract Architecture | CrewSignal</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta
     name="description"
-    content="A reference hub for union governance structures, constitutions/bylaws, conventions, elections, committees, representation models, and LM-2 financial transparency."
+    content="How union governance structures and decision points can shape contract language architecture, enforcement reliability, and bargaining and ratification cadence."
   />
   <link rel="stylesheet" href="/assets/css/main.css" />
 </head>
 
-<body class="cs-report">
-
-<header class="cs-report__header">
-  <a href="/reports/contract-architecture/" class="cs-report__back">â† Back to Contract Architecture Hub</a>
-  <p class="cs-report__eyebrow">Contract Architecture</p>
-  <h1 class="cs-report__title">Union Governance</h1>
-  <p class="cs-report__subtitle">
-    Structural overview of how union governance structures and decision points can shape contract language architecture,
-    enforcement reliability, and bargaining and ratification cadence.
-  </p>
-
-  <p class="cs-report__meta">
-    <a href="/reports/contract-architecture/criteria/">Contract Analysis Criteria</a>
-    &middot;
-    <a href="/reports/union-governance/">Union Governance Hub</a>
-  </p>
-</header>
-  <main class="cs-report__main">
-
-    <!-- Editorâ€™s Note -->
-    <section class="cs-report__section">
-      <p class="cs-editor-note">
-        <strong>Editorâ€™s Note:</strong>
-        This section is for informational purposes only and summarizes publicly available governance
-        documents at a structural level. It does not provide legal advice, member guidance, or individualized
-        recommendations.
-      </p>
-    </section>
-
-    <!-- ===================== -->
-    <!-- Table of Contents -->
-    <!-- ===================== -->
-    <nav class="cs-toc" aria-label="Union Governance Table of Contents">
-      <h2 class="cs-toc__title">Table of Contents</h2>
-
-      <p class="cs-report__note">
-        Each topic below links to a dedicated report page. Primary-source links (constitution, bylaws, and related
-        governing documents) are published on each unionâ€™s <em>Governance Model Overview</em> page.
+<body>
+  <article class="cs-report">
+    <header class="cs-report__header">
+      <a href="/reports/contract-architecture/" class="cs-report__back">&larr; Back to Contract Architecture Hub</a>
+      <p class="cs-report__eyebrow">Contract Architecture</p>
+      <h1 class="cs-report__title">Union Governance</h1>
+      <p class="cs-report__subtitle">
+        Structural overview of how governance structures and decision points can shape contract language architecture,
+        enforcement reliability, and bargaining and ratification cadence.
       </p>
 
-      <h3 class="cs-toc__group-title">CWA-AFA</h3>
-      <ol class="cs-toc__list">
-        <li><a href="/reports/union-governance/cwa-afa/1-governance-model/">I. Governance Model Overview (Primary Sources)</a></li>
-        <li><a href="/reports/union-governance/cwa-afa/2-democratic-processes/">II. Democratic Processes (Elections, Voting, Conventions)</a></li>
-        <li><a href="/reports/union-governance/cwa-afa/3-contract-administration/">III. Committees &amp; Contract Administration</a></li>
-        <li><a href="/reports/union-governance/cwa-afa/4-funding-and-dues/lm-2/">IV. Funding &amp; Financial Transparency (LM-2)</a></li>
-        <li><a href="/reports/union-governance/cwa-afa/5-strategic-signals/">V. Strategic Signals</a></li>
-      </ol>
-
-      <h3 class="cs-toc__group-title">IBT</h3>
-      <ol class="cs-toc__list">
-        <li><a href="/reports/union-governance/ibt/1-governance-model/">I. Governance Model Overview (Primary Sources)</a></li>
-        <li><a href="/reports/union-governance/ibt/2-democratic-processes/">II. Democratic Processes (Elections, Voting, Conventions)</a></li>
-        <li><a href="/reports/union-governance/ibt/3-contract-administration/">III. Committees &amp; Contract Administration</a></li>
-        <li><a href="/reports/union-governance/ibt/4-funding-and-dues/lm-2/">IV. Funding &amp; Financial Transparency (LM-2)</a></li>
-        <li><a href="/reports/union-governance/ibt/5-strategic-signals/">V. Strategic Signals</a></li>
-      </ol>
-
-      <h3 class="cs-toc__group-title">IAM</h3>
-      <ol class="cs-toc__list">
-        <li><a href="/reports/union-governance/iam/1-governance-model/">I. Governance Model Overview (Primary Sources)</a></li>
-        <li><a href="/reports/union-governance/iam/2-democratic-processes/">II. Democratic Processes (Elections, Voting, Conventions)</a></li>
-        <li><a href="/reports/union-governance/iam/3-contract-administration/">III. Committees &amp; Contract Administration</a></li>
-        <li><a href="/reports/union-governance/iam/4-funding-and-dues/lm-2/">IV. Funding &amp; Financial Transparency (LM-2)</a></li>
-        <li><a href="/reports/union-governance/iam/5-strategic-signals/">V. Strategic Signals</a></li>
-      </ol>
-
-      <h3 class="cs-toc__group-title">APFA</h3>
-      <ol class="cs-toc__list">
-        <li><a href="/reports/union-governance/apfa/1-governance-model/">I. Governance Model Overview (Primary Sources)</a></li>
-        <li><a href="/reports/union-governance/apfa/2-democratic-processes/">II. Democratic Processes (Elections, Voting, Conventions)</a></li>
-        <li><a href="/reports/union-governance/apfa/3-contract-administration/">III. Committees &amp; Contract Administration</a></li>
-        <li><a href="/reports/union-governance/apfa/4-funding-and-dues/lm-2/">IV. Funding &amp; Financial Transparency (LM-2)</a></li>
-        <li><a href="/reports/union-governance/apfa/5-strategic-signals/">V. Strategic Signals</a></li>
-      </ol>
-    </nav>
-
-    <!-- ===================== -->
-    <!-- Framework Summary -->
-    <!-- ===================== -->
-    <section class="cs-report__section">
-      <h2 class="cs-report__section-title">How to Use This Hub</h2>
-      <ul class="cs-report__list">
-        <li>
-          <strong>Start with â€œGovernance Model Overviewâ€</strong> to see each unionâ€™s structure and controlling documents
-          (constitution, bylaws, convention rules, and related primary sources).
-        </li>
-        <li>
-          <strong>Use â€œDemocratic Processesâ€</strong> for election mechanics, voting rights, convention structure, and
-          representation/authority pathways.
-        </li>
-        <li>
-          <strong>Use â€œCommittees &amp; Contract Administrationâ€</strong> for enforcement architecture: committees, grievance
-          pipelines, and decision-routing.
-        </li>
-        <li>
-          <strong>Use â€œFunding &amp; Financial Transparency (LM-2)â€</strong> for revenue flows, disbursements, organizing spend,
-          political activity, and parent/subordinate financial signals.
-        </li>
-        <li>
-          <strong>Use â€œStrategic Signalsâ€</strong> for institutional behavior revealed through governance posture, bargaining
-          arrangements, alliances, and merger/coordination activity.
-        </li>
-      </ul>
-    </section>
-
-    <!-- Optional: keep this section if you want a quick â€œprimary sourcesâ€ jump list -->
-    <section class="cs-report__section">
-      <h2 class="cs-report__section-title">Primary Sources</h2>
-      <p class="cs-report__note">
-        Constitutions and bylaws are linked on each unionâ€™s Governance Model Overview page:
+      <p class="cs-report__meta">
+        <a href="/reports/contract-architecture/criteria/">Contract Analysis Criteria</a>
+        &middot;
+        <a href="/reports/union-governance/">Union Governance Hub</a>
       </p>
-      <ul class="cs-report__list">
-        <li><a href="/reports/union-governance/cwa-afa/1-governance-model/">CWA-AFA â€” Governing Documents</a></li>
-        <li><a href="/reports/union-governance/ibt/1-governance-model/">IBT â€” Governing Documents</a></li>
-        <li><a href="/reports/union-governance/iam/1-governance-model/">IAM â€” Governing Documents</a></li>
-        <li><a href="/reports/union-governance/apfa/1-governance-model/">APFA â€” Governing Documents</a></li>
-      </ul>
-    </section>
+    </header>
 
-  </main>
+    <main class="cs-report__main">
+      <section class="cs-report__section">
+        <h2 class="cs-report__section-title">Why Governance Matters to Contract Architecture</h2>
+        <p>
+          Governance determines who can set bargaining priorities, who can approve tentative language, and how disputes
+          move from frontline intake to a final resolution forum. Those choices influence drafting priorities (what gets
+          defined tightly versus left to interpretation), enforcement pathways (what is expected to resolve locally versus
+          what must be escalated), and cadence (how quickly bargaining, communications, and ratification can move given
+          internal approvals and voting rules). CrewSignal treats governance as part of contract architecture because the
+          same contract language can behave differently depending on authority boundaries, documentation standards, and
+          escalation routing.
+        </p>
+      </section>
 
+      <section class="cs-report__section">
+        <h2 class="cs-report__section-title">Governance Map: Who Decides What</h2>
+        <p>
+          Exact names and authority boundaries vary by union constitution/bylaws and the bargaining context. The map
+          below describes common bodies and typical decision scopes to help readers understand how drafting and enforcement
+          responsibilities are distributed.
+        </p>
+
+        <ul class="cs-report__list">
+          <li class="cs-report__list-item">
+            <strong>Members:</strong> Provide priorities, participate in defined votes (including ratification where applicable),
+            and supply the facts and documentation that make enforcement actionable.
+          </li>
+          <li class="cs-report__list-item">
+            <strong>Local councils, locals, or base units:</strong> Often handle representation intake, early-step issue processing,
+            member communications, and local documentation quality control.
+          </li>
+          <li class="cs-report__list-item">
+            <strong>System councils or MEC-style bodies:</strong> Often coordinate airline-wide priorities, standardize enforcement
+            posture across locations, and allocate resources for system-wide issues.
+          </li>
+          <li class="cs-report__list-item">
+            <strong>National or international leadership:</strong> Often provides staff infrastructure (communications, research,
+            training, policy administration) and holds defined constitutional authority for specific approvals and coordination.
+          </li>
+          <li class="cs-report__list-item">
+            <strong>Negotiating committees:</strong> Develop proposals, conduct bargaining, draft tentative language, and commonly
+            provide a recommendation on whether a tentative agreement should proceed to the next internal gate.
+          </li>
+          <li class="cs-report__list-item">
+            <strong>Contract enforcement and grievance committees:</strong> Support case development (records, timelines, precedent),
+            advise on settlements versus escalation, and help maintain consistency across similar disputes.
+          </li>
+          <li class="cs-report__list-item">
+            <strong>System-level dispute forums:</strong> Many agreements rely on structured steps culminating in a system board,
+            arbitration, or other final forum. Resourcing and case-selection practices can affect backlog and time-to-resolution.
+          </li>
+          <li class="cs-report__list-item">
+            <strong>Parent/subordinate structures where applicable:</strong> Some governance models include subordinate organizations
+            within a parent union. In those cases, defined authority boundaries can matter for bargaining mandates, finance, and
+            enforcement escalation (for example, CWA-AFA as a subordinate within CWA).
+          </li>
+        </ul>
+      </section>
+
+      <section class="cs-report__section">
+        <h2 class="cs-report__section-title">Control Points That Shape Outcomes</h2>
+        <ul class="cs-report__list">
+          <li class="cs-report__list-item">
+            <strong>Opening proposals authorization:</strong> how proposals are approved, scoped, and packaged before bargaining begins.
+          </li>
+          <li class="cs-report__list-item">
+            <strong>Mandate updates during bargaining:</strong> what internal approvals are required to change priorities or tradeoffs midstream.
+          </li>
+          <li class="cs-report__list-item">
+            <strong>Tentative agreement approval gate:</strong> whether a negotiating committee recommendation is advisory only or must be approved
+            by another governing body before member voting.
+          </li>
+          <li class="cs-report__list-item">
+            <strong>Ratification rules:</strong> eligibility, balloting administration, voting window length, thresholds, and certification timing.
+          </li>
+          <li class="cs-report__list-item">
+            <strong>Strike authorization votes:</strong> timing, thresholds, and internal governance around job-action planning (distinct from any
+            external statutory/regulatory requirements).
+          </li>
+          <li class="cs-report__list-item">
+            <strong>Grievance screening and escalation:</strong> who can advance a case, what documentation is required, and what triggers system-level handling.
+          </li>
+          <li class="cs-report__list-item">
+            <strong>System board or final-forum posture:</strong> case selection, settlement authority, scheduling posture, and resourcing choices that affect backlog.
+          </li>
+          <li class="cs-report__list-item">
+            <strong>Side-letter and memorandum control:</strong> who can sign, renew, terminate, and publish side agreements; and whether side letters are tracked in a controlled library.
+          </li>
+          <li class="cs-report__list-item">
+            <strong>Merger and successorship policy:</strong> internal policy choices that shape transition language, representation continuity planning, and timing commitments.
+          </li>
+        </ul>
+      </section>
+
+      <section class="cs-report__section">
+        <h2 class="cs-report__section-title">How Governance Shows Up in Contract Text</h2>
+        <p>
+          Governance does not determine contract language by itself. However, certain contract-architecture features are commonly observed alongside
+          different internal decision structures and enforcement workflows. These examples are descriptive and do not claim causation.
+        </p>
+
+        <ul class="cs-report__list">
+          <li class="cs-report__list-item">
+            <strong>Definitions and cross-references:</strong> tighter definitions and clear internal references can support consistent interpretation
+            when enforcement responsibilities are distributed across multiple representative layers.
+          </li>
+          <li class="cs-report__list-item">
+            <strong>Self-executing remedies:</strong> automatic pay/credit triggers based on objective conditions can reduce reliance on discretionary
+            approval steps to obtain correction.
+          </li>
+          <li class="cs-report__list-item">
+            <strong>Timelines and documentation standards:</strong> filing windows, response deadlines, and required record formats often align with how
+            committees intake, evaluate, and escalate cases.
+          </li>
+          <li class="cs-report__list-item">
+            <strong>Escalation mechanics:</strong> explicit step ladders, completeness requirements, and handoff criteria can reflect how governance structures route
+            disputes from local handling to system-level handling.
+          </li>
+          <li class="cs-report__list-item">
+            <strong>Settlement authority and precedent handling:</strong> language that clarifies who can settle, how settlements are documented, and whether
+            they set precedent can matter for enforcement consistency across locations.
+          </li>
+          <li class="cs-report__list-item">
+            <strong>Side-letter control and revision discipline:</strong> numbering, publication expectations, sunset terms, and incorporation practices affect how
+            reliably frontline users can identify the controlling rule at a given time.
+          </li>
+          <li class="cs-report__list-item">
+            <strong>Data access and verification clauses:</strong> where included, audit/data access and reporting obligations can support enforcement when disputes depend
+            on scheduling, payroll, or assignment records.
+          </li>
+        </ul>
+
+        <p>
+          Related reference: <a href="/reports/contract-architecture/criteria/">Contract Analysis Criteria</a>.
+        </p>
+      </section>
+
+      <section class="cs-report__section">
+        <h2 class="cs-report__section-title">What CrewSignal Tracks</h2>
+        <ul class="cs-report__list">
+          <li class="cs-report__list-item">
+            <strong>Publication cadence:</strong> frequency and persistence of bargaining updates, governance notices, and implementation guidance.
+          </li>
+          <li class="cs-report__list-item">
+            <strong>Transparency:</strong> whether roles, committees, decision gates, and voting timelines are described clearly and kept current.
+          </li>
+          <li class="cs-report__list-item">
+            <strong>Contract availability:</strong> whether the current agreement is easy to locate and includes amendments/side letters needed to identify operative rules.
+          </li>
+          <li class="cs-report__list-item">
+            <strong>Dispute-resolution completeness:</strong> whether steps, timelines, documentation requirements, and final-forum descriptions are publicly understandable.
+          </li>
+          <li class="cs-report__list-item">
+            <strong>Revision control:</strong> whether versions are dated, consolidated, and supported by clear change identification or archival practices.
+          </li>
+          <li class="cs-report__list-item">
+            <strong>Ratification timelines:</strong> observable timing from tentative agreement publication to voting windows, results publication, and implementation milestones.
+          </li>
+          <li class="cs-report__list-item">
+            <strong>Enforcement disclosures:</strong> published process guidance or aggregate reporting about dispute categories and resolution steps when provided.
+          </li>
+        </ul>
+      </section>
+
+      <section class="cs-report__section">
+        <h2 class="cs-report__section-title">Reader Notes</h2>
+        <p>
+          This page is structural analysis only. It is not legal advice, not bargaining guidance, and not a prediction of outcomes.
+          Contract meaning and enforceability depend on the controlling language, the applicable procedures, and the facts of a specific situation.
+        </p>
+        <p>
+          For union-specific governance profiles and source-linked reports, see the <a href="/reports/union-governance/">Union Governance Hub</a>.
+        </p>
+      </section>
+    </main>
+
+    <footer class="cs-report__footer">
+      <p class="cs-report__fineprint">© CrewSignal · Informational resource for aviation professionals</p>
+    </footer>
+  </article>
 </body>
 </html>
-
