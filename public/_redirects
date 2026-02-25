@@ -17,6 +17,12 @@ https://www.crewsignal.org/* https://crewsignal.org/:splat 301!
 
 /contracts/twu/jetblue/jetblue-ifc-cba-2021-2026.pdf  /reports/contract-architecture/TWU/JetBlue/contract/jetblue-ifc-cba-2021-2026.pdf  301!
 
+/reports/contract-architecture/apfa/*     /reports/contract-architecture/APFA/:splat     301!
+/reports/contract-architecture/cwa-afa/*  /reports/contract-architecture/CWA-AFA/:splat  301!
+/reports/contract-architecture/iam/*      /reports/contract-architecture/IAM/:splat      301!
+/reports/contract-architecture/ibt/*      /reports/contract-architecture/IBT/:splat      301!
+/reports/contract-architecture/twu/*      /reports/contract-architecture/TWU/:splat      301!
+
 /reports/contract-architecture/contracts/*  /reports/contract-architecture/  301!
 # Mediation: old shortcut -> new mediation hub
 /mediation-updates   /reports/mediation/   301
