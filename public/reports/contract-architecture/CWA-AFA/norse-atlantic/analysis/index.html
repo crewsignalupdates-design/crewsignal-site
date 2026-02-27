@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>CWA-AFA · Norse Atlantic Airways · 2025–2028 Contract Update (Comparison) · CrewSignal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="CrewSignal Contract Architecture comparison: Norse Atlantic Airways 2025–2028 agreement vs. 2022–2024 baseline, with pay/legalities/QoL changes and updated qualitative score."
+  />
+  <link rel="stylesheet" href="/assets/css/main.css" />
+</head>
+
+<body class="cs-report">
+  <header class="cs-report__header">
+    <a class="cs-report__back" href="/reports/contract-architecture/">← Back to Contract Architecture</a>
+    <p class="cs-report__eyebrow">Contract Architecture · CWA-AFA</p>
+    <h1 class="cs-report__title">Norse Atlantic Airways</h1>
+    <p class="cs-report__subtitle">Contract Update &amp; Comparison — 2025–2028 Agreement vs. 2022–2024 Baseline</p>
+
+    <div class="cs-report__meta" aria-label="Report metadata">
+      <span class="cs-report__pill">Agreement: May 14, 2025 – May 14, 2028</span>
+      <span class="cs-report__pill">Baseline: Nov 22, 2022 – Nov 22, 2024</span>
+      <span class="cs-report__pill">Updated: <time datetime="2026-02-22">February 22, 2026</time></span>
+      <span class="cs-report__pill">Score (2025–2028): <strong>20.6 / 30</strong></span>
+    </div>
+  </header>
+
+  <main class="cs-report__main">
+
+    <section class="cs-report__section" id="agreement-snapshot">
+      <h2 class="cs-report__section-title">Agreement Snapshot</h2>
+
+      <ul class="cs-report__list">
+        <li class="cs-report__list-item"><strong>Carrier:</strong> Norse Atlantic Airways AS (U.S.-based cabin crew under RLA jurisdiction)</li>
+        <li class="cs-report__list-item"><strong>Union:</strong> CWA-AFA</li>
+        <li class="cs-report__list-item"><strong>Operating frame:</strong> EASA-anchored legality/duty/rest constructs with an RLA enforcement stack</li>
+        <li class="cs-report__list-item"><strong>Architecture signal:</strong> Cross-border regulatory layering + long-haul rotation integrity</li>
+      </ul>
+
+      <p>
+        This update focuses on what changed in the 2025–2028 agreement compared to the 2022–2024 first agreement:
+        where protections improved, where the structure stayed the same, and where drafting or tradeoffs create new risk.
+      </p>
+    </section>
+
+    <section class="cs-report__section" id="executive-summary">
+      <h2 class="cs-report__section-title">Executive Summary</h2>
+
+      <p>
+        The 2025–2028 agreement is not a full architectural rewrite. The core “regulation-anchored” model remains intact
+        (EASA definitions supply the legality spine; the contract supplies pay/credit rules, responsibility allocation, and an RLA dispute path).
+        The biggest gains appear in compensation architecture (rates, per diem window, non-flying credit, and allowances),
+        and in operational quality-of-life standards (hotel requirements, inflight rest facility expectations, base closure protections).
+      </p>
+
+      <h3 class="cs-report__subsection-title">Top improvements</h3>
+      <ul class="cs-report__list">
+        <li class="cs-report__list-item"><strong>Per diem improved:</strong> higher hourly rate and paid from check-in to check-out (not just departure to arrival).</li>
+        <li class="cs-report__list-item"><strong>Non-flying credit improved:</strong> baseline three (3) block hours for most non-flying events, with additional credit for long standby/trainings/meetings.</li>
+        <li class="cs-report__list-item"><strong>QoL and stability:</strong> explicit hotel-room standards, upgraded inflight rest facility expectations, and base-closure protections with notice and benefit maintenance options.</li>
+      </ul>
+
+      <h3 class="cs-report__subsection-title">Key continuity</h3>
+      <ul class="cs-report__list">
+        <li class="cs-report__list-item"><strong>Regulatory anchoring remains:</strong> EASA/Authority definitions still drive duty/rest/legality.</li>
+        <li class="cs-report__list-item"><strong>Scheduling spine remains stable:</strong> 12-day-off floor and published schedule protection framework remains central.</li>
+        <li class="cs-report__list-item"><strong>Enforcement remains conventional:</strong> grievance + System Board pathway still largely retrospective/time-delayed.</li>
+      </ul>
+
+      <h3 class="cs-report__subsection-title">Primary risk / unfinished subsystem</h3>
+      <ul class="cs-report__list">
+        <li class="cs-report__list-item">
+          <strong>Reserve protections remain incomplete:</strong> the agreement still defers bidding and reserve provisions to future “meet and negotiate,”
+          and the pay article explicitly excludes reserve (as an example of non-duty) from pay/credit treatment.
+        </li>
+      </ul>
+    </section>
+
+    <section class="cs-report__section" id="key-changes-table">
+      <h2 class="cs-report__section-title">Key Changes at a Glance</h2>
+
+      <div class="cs-table cs-table--compact">
+        <table>
+          <thead>
+            <tr>
+              <th>Topic</th>
+              <th>2022–2024 Baseline</th>
+              <th>2025–2028 Update</th>
+              <th>Signal</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Per diem</td>
+              <td>$3.25/hr from departure → arrival</td>
+              <td>$4.25/hr (then $4.50/hr at DOR+2) from check-in → check-out</td>
+              <td>Major improvement (rate + time window)</td>
+            </tr>
+            <tr>
+              <td>Non-flying credit</td>
+              <td>Personal/vac/sick valued at 2 hours/day; separate training/meeting/standby credits</td>
+              <td>3 hours for most non-flying events + add-ons for long standby/trainings/meetings</td>
+              <td>Improved and more modular</td>
+            </tr>
+            <tr>
+              <td>Sick days</td>
+              <td>7 days/year</td>
+              <td>10 days/year + donation + partial conversion to vacation credit (with new note requirements)</td>
+              <td>Net improvement with added burden triggers</td>
+            </tr>
+            <tr>
+              <td>Day-off encroachment cap</td>
+              <td>Up to 4 hours above guarantee</td>
+              <td>Up to 6 hours above guarantee</td>
+              <td>Improvement</td>
+            </tr>
+            <tr>
+              <td>Bought day off</td>
+              <td>$135/day (plus other comp)</td>
+              <td>4 block hours above guarantee (plus other comp)</td>
+              <td>Improvement (pay engine aligned to hourly rate)</td>
+            </tr>
+            <tr>
+              <td>Hotel standards</td>
+              <td>General cleanliness/safety language</td>
+              <td>Specific room standards (Wi‑Fi, quiet placement, above ground floor, etc.)</td>
+              <td>Improvement (enforceable specificity)</td>
+            </tr>
+            <tr>
+              <td>Moving expense cap</td>
+              <td>Up to $3000 for involuntary transfer</td>
+              <td>Up to $5000 for involuntary transfer</td>
+              <td>Improvement</td>
+            </tr>
+            <tr>
+              <td>Base closure</td>
+              <td>No explicit base closure system</td>
+              <td>60-day notice + no furlough if no system headcount reduction + benefit maintenance on certain voluntary leaves</td>
+              <td>Major stability improvement</td>
+            </tr>
+            <tr>
+              <td>Retirement match</td>
+              <td>100% match on first 3%</td>
+              <td>100% match on first 4%</td>
+              <td>Improvement</td>
+            </tr>
+            <tr>
+              <td>Reserve protections</td>
+              <td>Deferred to future bargaining; not fully engineered</td>
+              <td>Still deferred; pay article explicitly excludes reserve as a non-duty example</td>
+              <td>High-risk gap remains</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="cs-report__footnote">
+        This table highlights structural changes and operational impact signals, not bargaining intent.
+      </p>
+    </section>
+
+    <section class="cs-report__section" id="pay-and-credit">
+      <h2 class="cs-report__section-title">Pay, Credit, and Economic Architecture</h2>
+
+      <h3 class="cs-report__subsection-title">Hourly pay scale</h3>
+      <p>
+        The 2025–2028 agreement increases the pay scale across steps and continues annual increases through 2027.
+        The monthly guarantee remains 60 block hours, and the agreement adds pay protection for flying lost through no action of the CCM.
+      </p>
+
+      <h3 class="cs-report__subsection-title">Per diem (rate and duty-window coverage)</h3>
+      <p>
+        The per diem change is one of the most consequential improvements because it both increases the rate and expands
+        the paid window to include pre-departure and post-arrival duty time (check-in through check-out).
+      </p>
+
+      <h3 class="cs-report__subsection-title">Non-flying events</h3>
+      <p>
+        The new agreement moves toward a more unified “non-flying events” architecture. The baseline credit is higher,
+        and long standby/trainings/meetings receive additional credit. The agreement also explicitly closes certain stacking paths
+        by excluding pay/credit when a non-flying event shares a duty period with flying.
+      </p>
+
+      <h3 class="cs-report__subsection-title">Allowances</h3>
+      <p>
+        The 2025–2028 agreement adds recurring allowances (uniform maintenance and communication) and updates alternate
+        transportation support via a company match in the reimbursement program.
+      </p>
+    </section>
+
+    <section class="cs-report__section" id="legalities-and-scheduling">
+      <h2 class="cs-report__section-title">Legalities, Scheduling, and Operational Reliability</h2>
+
+      <h3 class="cs-report__subsection-title">Roster transparency</h3>
+      <p>
+        A notable clarity improvement is the requirement that all hours of duty be accurately reflected on the roster,
+        including pick-up time, deadhead time, check-in, and check-out time. This increases auditability and reduces “hidden time.”
+      </p>
+
+      <h3 class="cs-report__subsection-title">Security-search check-in and security pay</h3>
+      <p>
+        The agreement introduces a longer check-in for flights requiring security searches, and adds a security-pay provision.
+        Structurally, this is a tradeoff: additional time obligations become explicit, but compensation is also engineered into the pay system.
+      </p>
+
+      <h3 class="cs-report__subsection-title">Inflight rest facilities</h3>
+      <p>
+        The agreement adds concrete expectations about rest facility equipment and cleaning cadence, which supports fatigue management
+        in long-haul rotation operations.
+      </p>
+    </section>
+
+    <section class="cs-report__section" id="quality-of-life-and-reserve">
+      <h2 class="cs-report__section-title">Quality of Life and Reserve Protections</h2>
+
+      <h3 class="cs-report__subsection-title">Sick bank improvements (with documentation triggers)</h3>
+      <p>
+        The sick bank expands to ten days and introduces donation and conversion mechanics.
+        However, the agreement also introduces earlier documentation/notice requirements for extended illness.
+      </p>
+
+      <h3 class="cs-report__subsection-title">Hotels</h3>
+      <p>
+        The hotel article is significantly more enforceable because it moves from general “clean/safe/quiet” expectations
+        into explicit room standards (Wi‑Fi, quiet placement, non-smoking, and more).
+      </p>
+
+      <h3 class="cs-report__subsection-title">Reserve: the biggest remaining gap</h3>
+      <p>
+        The agreement still does not fully engineer reserve as a complete subsystem. It continues to defer bidding and reserve language
+        to future “meet and negotiate” work, and it explicitly treats reserve as an example of non-duty that receives no pay/credit.
+        This is the clearest remaining high-risk zone in quality-of-life architecture, especially for a carrier where availability constructs
+        can become the operational pressure valve during disruption.
+      </p>
+    </section>
+
+    <section class="cs-report__section" id="what-changed-what-did-not">
+      <h2 class="cs-report__section-title">What Stayed the Same vs. What Shifted</h2>
+
+      <h3 class="cs-report__subsection-title">Stayed the same</h3>
+      <ul class="cs-report__list">
+        <li class="cs-report__list-item">Regulatory anchoring: duty/rest/legality definitions remain EASA/Authority-based.</li>
+        <li class="cs-report__list-item">Minimum days off and published schedule day-off protection framework.</li>
+        <li class="cs-report__list-item">RLA enforcement stack: grievance + System Board architecture.</li>
+      </ul>
+
+      <h3 class="cs-report__subsection-title">Shifted materially</h3>
+      <ul class="cs-report__list">
+        <li class="cs-report__list-item">Per diem: higher rate and expanded paid window (check-in → check-out).</li>
+        <li class="cs-report__list-item">Non-flying credit: higher baseline value and more modular structure.</li>
+        <li class="cs-report__list-item">Hotel/rest/basing stability: more enforceable QoL provisions, including base closure language.</li>
+      </ul>
+
+      <h3 class="cs-report__subsection-title">Potential ambiguity / drafting watch items</h3>
+      <ul class="cs-report__list">
+        <li class="cs-report__list-item">
+          <strong>Guarantee deduction wording:</strong> compare the unpaid-status guarantee reduction language across agreements to ensure the intended meaning is preserved.
+        </li>
+        <li class="cs-report__list-item">
+          <strong>Seniority tie-break logic:</strong> the agreement introduces a random draw for new hires while the definitions section retains an “older is more senior” tie-break concept.
+        </li>
+        <li class="cs-report__list-item">
+          <strong>Reserve subsystem completeness:</strong> still not fully built into the contract’s scheduling and pay architecture.
+        </li>
+      </ul>
+    </section>
+
+    <section class="cs-report__section" id="updated-scorecard">
+      <h2 class="cs-report__section-title">Updated Standardized Contract Scorecard</h2>
+
+      <div class="cs-table cs-table--compact">
+        <table>
+          <thead>
+            <tr>
+              <th>Domain</th>
+              <th>Score</th>
+              <th>Rationale</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Scheduling Protections</td>
+              <td>3.6</td>
+              <td>Core day-off and notification framework remains strong; improved roster-time transparency; reserve remains incomplete</td>
+            </tr>
+            <tr>
+              <td>Pay &amp; Credit Quality</td>
+              <td>3.9</td>
+              <td>Higher rates, materially improved per diem, stronger non-flying credit architecture, and added allowances</td>
+            </tr>
+            <tr>
+              <td>Work Rules &amp; Quality-of-Life</td>
+              <td>3.5</td>
+              <td>Hotel standards and rest facility expectations are more enforceable; basing stability provisions strengthen the QoL spine</td>
+            </tr>
+            <tr>
+              <td>Company Discretion Constraint</td>
+              <td>3.0</td>
+              <td>More specific constraints in hotels/rest/base closure; still substantial flexibility via regulation-anchored model and incomplete reserve rules</td>
+            </tr>
+            <tr>
+              <td>Enforcement Power</td>
+              <td>2.9</td>
+              <td>RLA grievance/System Board pathway remains complete but mostly retrospective; no major structural change</td>
+            </tr>
+            <tr>
+              <td>Clarity &amp; Modularity</td>
+              <td>3.7</td>
+              <td>More modular pay/credit rules and clearer QoL standards; a few drafting inconsistencies create avoidable interpretive risk</td>
+            </tr>
+            <tr>
+              <td><strong>Total</strong></td>
+              <td><strong>20.6</strong></td>
+              <td><strong>out of 30</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="cs-report__footnote">
+        Score reflects contract architecture design choices and enforceability signals — not negotiating intent.
+      </p>
+    </section>
+
+    <section class="cs-report__section" id="source-documents">
+      <h2 class="cs-report__section-title">Source Documents</h2>
+
+      <ul class="cs-report__list">
+        <li class="cs-report__list-item">
+          <strong>2025–2028 Agreement (PDF):</strong>
+          <a href="/reports/contract-architecture/CWA-AFA/norse-atlantic/contract/norse-atlantic-airways-2025-2028.pdf">
+            norse-atlantic-airways-2025-2028.pdf
+          </a>
+        </li>
+        <li class="cs-report__list-item">
+          <strong>2022–2024 Agreement (PDF):</strong>
+          <a href="/reports/contract-architecture/CWA-AFA/norse-atlantic/contract/norse-atlantic-airways-2022-2024.pdf">
+            norse-atlantic-airways-2022-2024.pdf
+          </a>
+        </li>
+      </ul>
+
+      <p class="cs-report__footnote">
+        If the 2022–2024 PDF in your repo uses a different filename, update the link above to match the actual file on disk.
+      </p>
+    </section>
+
+  </main>
+
+  <footer class="cs-report__footer">
+    <p class="cs-report__fineprint">© CrewSignal · Informational resource for aviation professionals</p>
+  </footer>
+</body>
+</html>
