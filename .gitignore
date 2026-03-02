@@ -17,3 +17,8 @@ ehthumbs.db
 
 audit/
 
+
+# Local backup artifacts
+*.bak
+*.bak.*
+
