@@ -459,3 +459,12 @@ a:hover {
 .cs-table th:last-child {
   padding-right: 1.5rem;
 }
+
+/* CrewSignal: Integration dashboard spacing (weekly M&I reports) */
+#integration-dashboard > .cs-report__list > .cs-report__list-item {
+  margin-bottom: 1.25rem;
+}
+
+#integration-dashboard > .cs-report__list > .cs-report__list-item:last-child {
+  margin-bottom: 0;
+}
