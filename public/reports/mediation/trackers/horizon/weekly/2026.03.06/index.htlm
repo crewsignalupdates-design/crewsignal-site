@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Crew Signal | Horizon / CWA-AFA &ndash; Weekly 2026.03.06</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="Crew Signal weekly Horizon / CWA-AFA bargaining and mediation snapshot for 2026.03.06."
+  />
+  <link rel="stylesheet" href="/assets/css/main.css" />
+  <style>
+    .cs-report__meta {
+      margin: 0.4rem 0 0;
+      font-size: 1rem;
+      line-height: 1.35;
+      font-weight: 600;
+      color: #fff;
+    }
+  </style>
+</head>
+
+<body class="cs-report">
+  <header class="cs-report__header">
+    <a href="https://crewsignal.org/reports/mediation/trackers/horizon/" class="cs-report__back">
+      &larr; Horizon / CWA-AFA Mediation
+    </a>
+
+    <p class="cs-report__eyebrow">Mediation &amp; Negotiation &middot; Weekly Report</p>
+
+    <h1 class="cs-report__title">Horizon / CWA-AFA</h1>
+    <p class="cs-report__meta">
+      NMB Docket: A-14102 &middot; Mediator: Michael Kelliher
+    </p>
+
+    <p class="cs-report__subtitle">Week Ending 2026.03.06</p>
+  </header>
+
+  <section class="cs-report__section">
+    <h2 class="cs-report__section-title">Status Summary</h2>
+
+    <p class="cs-report__body">
+      Week ending 2026.03.06 did not produce a new public bargaining-table recap,
+      company filing, or regulator notice. The clearest negotiations-related public
+      development was a March 3 CWA-AFA Horizon mobilization post inviting members
+      to a March 9 contract event at PDX.
+    </p>
+
+    <p class="cs-report__body">
+      For lineholders, that means public visibility rose through mobilization rather
+      than through bargaining detail. There was still no same-week public tentative
+      agreement signal, ratification calendar, or release-from-mediation posture.
+      The visible change was pressure, not closure.
+    </p>
+
+    <div class="cs-report__callout">
+      <ul class="cs-report__list">
+        <li><strong>Mobilization signal:</strong> The March 9 PDX event shows contract pressure activity remains active.</li>
+        <li><strong>Public-record gap:</strong> No same-week bargaining summary surfaced to explain where talks stand article by article.</li>
+        <li><strong>What matters next:</strong> The next meaningful public shift still needs to come from a table update, company filing, or formal process change.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="cs-report__section">
+    <h2 class="cs-report__section-title">CrewSignal Watch Points</h2>
+
+    <p class="cs-report__body">
+      This week is a good example of why CrewSignal separates mobilization from
+      bargaining closure. Contract visibility events can show continued member
+      engagement and bargaining pressure, but they do not by themselves establish
+      that a deal is close or that mediation posture has changed.
+    </p>
+
+    <p class="cs-report__body">
+      Horizon&rsquo;s public record therefore remained thin but not dormant. The campaign
+      stayed visible, yet the public did not receive a same-week bargaining narrative
+      strong enough to say whether the parties were narrowing issues or simply holding pressure.
+    </p>
+
+    <div class="cs-report__callout cs-report__callout--neutral">
+      <ul class="cs-report__list">
+        <li><strong>Mediation track:</strong> No new same-week public process change identified.</li>
+        <li><strong>Contract track:</strong> Public pressure increased, but bargaining detail did not.</li>
+        <li><strong>System-wide:</strong> The March 9 event is a meaningful mobilization marker, but not yet a closing marker.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="notable-public-references" class="cs-report__section">
+    <h2 class="cs-report__section-title">Notable Public References</h2>
+
+    <ul class="cs-report__list">
+      <li class="cs-report__list-item">
+        <a href="https://afahorizon.org/news/afa-horizon-mobilization-event-pdx-airport-march-9th">
+          CWA-AFA Horizon MEC &mdash; Contract Mobilization Event @ PDX Airport on March 9th
+        </a>
+      </li>
+    </ul>
+  </section>
+
+  <footer class="cs-report__footer">
+    <p class="cs-report__fineprint">
+      &copy; CrewSignal &middot; Informational resource for aviation professionals
+    </p>
+  </footer>
+</body>
+</html>
