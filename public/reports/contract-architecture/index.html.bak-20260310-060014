@@ -46,7 +46,7 @@
 
               <ul class="cs-report__list">
                 <li class="cs-report__list-item">
-                  <a class="cs-contract__cba-link" href="/reports/contract-architecture/apfa/american/">
+                  <a class="cs-contract__cba-link" href="/reports/contract-architecture/APFA/American/">
                     Contract Analysis
                   </a>
                 </li>
@@ -69,7 +69,7 @@
               <span class="cs-contract__airline-name">Air Transport International</span>
               <ul class="cs-report__list">
                 <li class="cs-report__list-item">
-                  <a class="cs-contract__cba-link" href="/reports/contract-architecture/cwa-afa/air-transport-international/">
+                  <a class="cs-contract__cba-link" href="/reports/contract-architecture/CWA-AFA/air-transport-international/">
                     Contract Analysis
                   </a>
                 </li>
@@ -85,7 +85,7 @@
               <span class="cs-contract__airline-name">Air Wisconsin</span>
               <ul class="cs-report__list">
                 <li class="cs-report__list-item">
-                  <a class="cs-contract__cba-link" href="/reports/contract-architecture/cwa-afa/air-wisconsin/">
+                  <a class="cs-contract__cba-link" href="/reports/contract-architecture/CWA-AFA/air-wisconsin/">
                     Contract Analysis
                   </a>
                 </li>
@@ -102,7 +102,7 @@
               <span class="cs-contract__airline-name">Alaska</span>
               <ul class="cs-report__list">
                 <li class="cs-report__list-item">
-                  <a class="cs-contract__cba-link" href="/reports/contract-architecture/cwa-afa/alaska/">
+                  <a class="cs-contract__cba-link" href="/reports/contract-architecture/CWA-AFA/Alaska/">
                     Contract Analysis
                   </a>
                 </li>
@@ -118,7 +118,7 @@
                   <span class="cs-contract__airline-name">Hawaiian Airlines</span>
                   <ul class="cs-report__list">
                     <li class="cs-report__list-item">
-                      <a class="cs-contract__cba-link" href="/reports/contract-architecture/cwa-afa/hawaiian/">
+                      <a class="cs-contract__cba-link" href="/reports/contract-architecture/CWA-AFA/Hawaiian/">
                         Contract Analysis
                       </a>
                     </li>
@@ -146,7 +146,7 @@
               <span class="cs-contract__airline-name">Avelo Airlines</span>
               <ul class="cs-report__list">
                 <li class="cs-report__list-item">
-                  <a class="cs-contract__cba-link" href="/reports/contract-architecture/cwa-afa/avelo/">
+                  <a class="cs-contract__cba-link" href="/reports/contract-architecture/CWA-AFA/avelo/">
                     Contract Analysis
                   </a>
                 </li>
@@ -158,7 +158,7 @@
               <span class="cs-contract__airline-name">Breeze Airways</span>
               <ul class="cs-report__list">
                 <li class="cs-report__list-item">
-                  <a class="cs-contract__cba-link" href="/reports/contract-architecture/cwa-afa/breeze/">
+                  <a class="cs-contract__cba-link" href="/reports/contract-architecture/CWA-AFA/Breeze/">
                     Contract Analysis
                   </a>
                 </li>
@@ -170,7 +170,7 @@
               <span class="cs-contract__airline-name">Eastern Airlines</span>
               <ul class="cs-report__list">
                 <li class="cs-report__list-item">
-                  <a class="cs-contract__cba-link" href="/reports/contract-architecture/cwa-afa/eastern/">
+                  <a class="cs-contract__cba-link" href="/reports/contract-architecture/CWA-AFA/Eastern/">
                     Contract Analysis
                   </a>
                 </li>
@@ -186,7 +186,7 @@
               <span class="cs-contract__airline-name">Endeavor Air</span>
               <ul class="cs-report__list">
                 <li class="cs-report__list-item">
-                  <a class="cs-contract__cba-link" href="/reports/contract-architecture/cwa-afa/endeavor/">
+                  <a class="cs-contract__cba-link" href="/reports/contract-architecture/CWA-AFA/endeavor/">
                     Contract Analysis
                   </a>
                 </li>
@@ -202,7 +202,7 @@
               <span class="cs-contract__airline-name">Envoy Air</span>
               <ul class="cs-report__list">
                 <li class="cs-report__list-item">
-                  <a class="cs-contract__cba-link" href="/reports/contract-architecture/cwa-afa/envoy/">
+                  <a class="cs-contract__cba-link" href="/reports/contract-architecture/CWA-AFA/envoy/">
                     Contract Analysis
                   </a>
                 </li>
@@ -218,7 +218,7 @@
               <span class="cs-contract__airline-name">Frontier Airlines</span>
               <ul class="cs-report__list">
                 <li class="cs-report__list-item">
-                  <a class="cs-contract__cba-link" href="/reports/contract-architecture/cwa-afa/frontier/">
+                  <a class="cs-contract__cba-link" href="/reports/contract-architecture/CWA-AFA/Frontier/">
                     Contract Analysis
                   </a>
                 </li>
@@ -234,7 +234,7 @@
               <span class="cs-contract__airline-name">GoJet Airlines</span>
               <ul class="cs-report__list">
                 <li class="cs-report__list-item">
-                  <a class="cs-contract__cba-link" href="/reports/contract-architecture/cwa-afa/gojet/">
+                  <a class="cs-contract__cba-link" href="/reports/contract-architecture/CWA-AFA/GoJet/">
                     Contract Analysis
                   </a>
                 </li>
@@ -250,7 +250,7 @@
               <span class="cs-contract__airline-name">Horizon Air</span>
               <ul class="cs-report__list">
                 <li class="cs-report__list-item">
-                  <a class="cs-contract__cba-link" href="/reports/contract-architecture/cwa-afa/horizon-air/">
+                  <a class="cs-contract__cba-link" href="/reports/contract-architecture/CWA-AFA/horizon-air/">
                     Contract Analysis
                   </a>
                 </li>
@@ -266,7 +266,7 @@
               <span class="cs-contract__airline-name">Norse Atlantic Airways</span>
               <ul class="cs-report__list">
                 <li class="cs-report__list-item">
-                  <a class="cs-contract__cba-link" href="/reports/contract-architecture/cwa-afa/norse-atlantic/">
+                  <a class="cs-contract__cba-link" href="/reports/contract-architecture/CWA-AFA/norse-atlantic/">
                     Contract Analysis
                   </a>
                 </li>
@@ -287,7 +287,7 @@
               <span class="cs-contract__airline-name">Omni Air International</span>
               <ul class="cs-report__list">
                 <li class="cs-report__list-item">
-                  <a class="cs-contract__cba-link" href="/reports/contract-architecture/cwa-afa/omni-air-international/">
+                  <a class="cs-contract__cba-link" href="/reports/contract-architecture/CWA-AFA/omni-air-international/">
                     Contract Analysis
                   </a>
                 </li>
@@ -303,7 +303,7 @@
               <span class="cs-contract__airline-name">Piedmont Airlines</span>
               <ul class="cs-report__list">
                 <li class="cs-report__list-item">
-                  <a class="cs-contract__cba-link" href="/reports/contract-architecture/cwa-afa/piedmont/">
+                  <a class="cs-contract__cba-link" href="/reports/contract-architecture/CWA-AFA/piedmont/">
                     Contract Analysis
                   </a>
                 </li>
@@ -319,7 +319,7 @@
               <span class="cs-contract__airline-name">PSA Airlines</span>
               <ul class="cs-report__list">
                 <li class="cs-report__list-item">
-                  <a class="cs-contract__cba-link" href="/reports/contract-architecture/cwa-afa/psa/">
+                  <a class="cs-contract__cba-link" href="/reports/contract-architecture/CWA-AFA/psa/">
                     Contract Analysis
                   </a>
                 </li>
@@ -335,7 +335,7 @@
               <span class="cs-contract__airline-name">Spirit</span>
               <ul class="cs-report__list">
                 <li class="cs-report__list-item">
-                  <a class="cs-contract__cba-link" href="/reports/contract-architecture/cwa-afa/spirit/">
+                  <a class="cs-contract__cba-link" href="/reports/contract-architecture/CWA-AFA/Spirit/">
                     Contract Analysis
                   </a>
                 </li>
@@ -351,7 +351,7 @@
               <span class="cs-contract__airline-name">United Airlines</span>
               <ul class="cs-report__list">
                 <li class="cs-report__list-item">
-                  <a class="cs-contract__cba-link" href="/reports/contract-architecture/cwa-afa/united/">
+                  <a class="cs-contract__cba-link" href="/reports/contract-architecture/CWA-AFA/United/">
                     Contract Analysis
                   </a>
                 </li>
@@ -384,7 +384,7 @@
               <span class="cs-contract__airline-name">National Airlines</span>
               <ul class="cs-report__list">
                 <li class="cs-report__list-item">
-                  <a class="cs-contract__cba-link" href="/reports/contract-architecture/iam/national/">
+                  <a class="cs-contract__cba-link" href="/reports/contract-architecture/IAM/national/">
                     Contract Analysis
                   </a>
                 </li>
@@ -407,7 +407,7 @@
               <span class="cs-contract__airline-name">NetJets</span>
               <ul class="cs-report__list">
                 <li class="cs-report__list-item">
-                  <a class="cs-contract__cba-link" href="/reports/contract-architecture/ibt/netjets/">
+                  <a class="cs-contract__cba-link" href="/reports/contract-architecture/IBT/NetJets/">
                     Contract Analysis
                   </a>
                 </li>
@@ -423,7 +423,7 @@
               <span class="cs-contract__airline-name">Republic Airways</span>
               <ul class="cs-report__list">
                 <li class="cs-report__list-item">
-                  <a class="cs-contract__cba-link" href="/reports/contract-architecture/ibt/republic/">
+                  <a class="cs-contract__cba-link" href="/reports/contract-architecture/IBT/republic/">
                     Contract Analysis
                   </a>
                 </li>
@@ -445,7 +445,7 @@
                     </li>
 
                     <li class="cs-report__list-item">
-                      <a class="cs-contract__cba-link" href="/reports/contract-architecture/cwa-afa/mesa/">
+                      <a class="cs-contract__cba-link" href="/reports/contract-architecture/CWA-AFA/mesa/">
                         Contract Analysis
                       </a>
                     </li>
@@ -498,7 +498,7 @@
               <span class="cs-contract__airline-name">Allegiant Air</span>
               <ul class="cs-report__list">
                 <li class="cs-report__list-item">
-                  <a class="cs-contract__cba-link" href="/reports/contract-architecture/twu/allegiant/">
+                  <a class="cs-contract__cba-link" href="/reports/contract-architecture/TWU/allegiant/">
                     Contract Analysis
                   </a>
                 </li>
@@ -514,7 +514,7 @@
               <span class="cs-contract__airline-name">Flight Services International</span>
               <ul class="cs-report__list">
                 <li class="cs-report__list-item">
-                  <a class="cs-contract__cba-link" href="/reports/contract-architecture/twu/flight-services-international/">
+                  <a class="cs-contract__cba-link" href="/reports/contract-architecture/TWU/flight-services-international/">
                     Contract Analysis
                   </a>
                 </li>
@@ -530,7 +530,7 @@
               <span class="cs-contract__airline-name">JetBlue Airways</span>
               <ul class="cs-report__list">
                 <li class="cs-report__list-item">
-                  <a class="cs-contract__cba-link" href="/reports/contract-architecture/twu/jetblue/">
+                  <a class="cs-contract__cba-link" href="/reports/contract-architecture/TWU/JetBlue/">
                     Contract Analysis
                   </a>
                 </li>
@@ -546,7 +546,7 @@
               <span class="cs-contract__airline-name">Southwest Airlines</span>
               <ul class="cs-report__list">
                 <li class="cs-report__list-item">
-                  <a class="cs-contract__cba-link" href="/reports/contract-architecture/twu/southwest/">
+                  <a class="cs-contract__cba-link" href="/reports/contract-architecture/TWU/Southwest/">
                     Contract Analysis
                   </a>
                 </li>
@@ -578,4 +578,3 @@
   </footer>
 </body>
 </html>
-
