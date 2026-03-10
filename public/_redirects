@@ -1,4 +1,76 @@
-﻿# Force https and non-www
+﻿# BEGIN crewsignal contract-architecture case routing
+# Generated from actual index.html files under public/reports/contract-architecture
+# Exact-case legacy URL -> lowercase public URL
+# Lowercase public URL -> exact-case index.html rewrite
+/reports/contract-architecture/APFA/American/ /reports/contract-architecture/apfa/american/ 301!
+/reports/contract-architecture/apfa/american/ /reports/contract-architecture/APFA/American/index.html 200
+/reports/contract-architecture/CWA-AFA/air-transport-international/ /reports/contract-architecture/cwa-afa/air-transport-international/ 301!
+/reports/contract-architecture/cwa-afa/air-transport-international/ /reports/contract-architecture/CWA-AFA/air-transport-international/index.html 200
+/reports/contract-architecture/CWA-AFA/air-wisconsin/ /reports/contract-architecture/cwa-afa/air-wisconsin/ 301!
+/reports/contract-architecture/cwa-afa/air-wisconsin/ /reports/contract-architecture/CWA-AFA/air-wisconsin/index.html 200
+/reports/contract-architecture/CWA-AFA/Alaska/ /reports/contract-architecture/cwa-afa/alaska/ 301!
+/reports/contract-architecture/cwa-afa/alaska/ /reports/contract-architecture/CWA-AFA/Alaska/index.html 200
+/reports/contract-architecture/CWA-AFA/avelo/ /reports/contract-architecture/cwa-afa/avelo/ 301!
+/reports/contract-architecture/cwa-afa/avelo/ /reports/contract-architecture/CWA-AFA/avelo/index.html 200
+/reports/contract-architecture/CWA-AFA/Breeze/ /reports/contract-architecture/cwa-afa/breeze/ 301!
+/reports/contract-architecture/cwa-afa/breeze/ /reports/contract-architecture/CWA-AFA/Breeze/index.html 200
+/reports/contract-architecture/CWA-AFA/Eastern/ /reports/contract-architecture/cwa-afa/eastern/ 301!
+/reports/contract-architecture/cwa-afa/eastern/ /reports/contract-architecture/CWA-AFA/Eastern/index.html 200
+/reports/contract-architecture/CWA-AFA/endeavor/ /reports/contract-architecture/cwa-afa/endeavor/ 301!
+/reports/contract-architecture/cwa-afa/endeavor/ /reports/contract-architecture/CWA-AFA/endeavor/index.html 200
+/reports/contract-architecture/CWA-AFA/envoy/ /reports/contract-architecture/cwa-afa/envoy/ 301!
+/reports/contract-architecture/cwa-afa/envoy/ /reports/contract-architecture/CWA-AFA/envoy/index.html 200
+/reports/contract-architecture/CWA-AFA/Frontier/ /reports/contract-architecture/cwa-afa/frontier/ 301!
+/reports/contract-architecture/cwa-afa/frontier/ /reports/contract-architecture/CWA-AFA/Frontier/index.html 200
+/reports/contract-architecture/CWA-AFA/GoJet/ /reports/contract-architecture/cwa-afa/gojet/ 301!
+/reports/contract-architecture/cwa-afa/gojet/ /reports/contract-architecture/CWA-AFA/GoJet/index.html 200
+/reports/contract-architecture/CWA-AFA/Hawaiian/ /reports/contract-architecture/cwa-afa/hawaiian/ 301!
+/reports/contract-architecture/cwa-afa/hawaiian/ /reports/contract-architecture/CWA-AFA/Hawaiian/index.html 200
+/reports/contract-architecture/CWA-AFA/Hawaiian/extension-2025/ /reports/contract-architecture/cwa-afa/hawaiian/extension-2025/ 301!
+/reports/contract-architecture/cwa-afa/hawaiian/extension-2025/ /reports/contract-architecture/CWA-AFA/Hawaiian/extension-2025/index.html 200
+/reports/contract-architecture/CWA-AFA/horizon-air/ /reports/contract-architecture/cwa-afa/horizon-air/ 301!
+/reports/contract-architecture/cwa-afa/horizon-air/ /reports/contract-architecture/CWA-AFA/horizon-air/index.html 200
+/reports/contract-architecture/CWA-AFA/mesa/ /reports/contract-architecture/cwa-afa/mesa/ 301!
+/reports/contract-architecture/cwa-afa/mesa/ /reports/contract-architecture/CWA-AFA/mesa/index.html 200
+/reports/contract-architecture/CWA-AFA/norse-atlantic/ /reports/contract-architecture/cwa-afa/norse-atlantic/ 301!
+/reports/contract-architecture/cwa-afa/norse-atlantic/ /reports/contract-architecture/CWA-AFA/norse-atlantic/index.html 200
+/reports/contract-architecture/CWA-AFA/norse-atlantic/analysis/ /reports/contract-architecture/cwa-afa/norse-atlantic/analysis/ 301!
+/reports/contract-architecture/cwa-afa/norse-atlantic/analysis/ /reports/contract-architecture/CWA-AFA/norse-atlantic/analysis/index.html 200
+/reports/contract-architecture/CWA-AFA/omni-air-international/ /reports/contract-architecture/cwa-afa/omni-air-international/ 301!
+/reports/contract-architecture/cwa-afa/omni-air-international/ /reports/contract-architecture/CWA-AFA/omni-air-international/index.html 200
+/reports/contract-architecture/CWA-AFA/piedmont/ /reports/contract-architecture/cwa-afa/piedmont/ 301!
+/reports/contract-architecture/cwa-afa/piedmont/ /reports/contract-architecture/CWA-AFA/piedmont/index.html 200
+/reports/contract-architecture/CWA-AFA/psa/ /reports/contract-architecture/cwa-afa/psa/ 301!
+/reports/contract-architecture/cwa-afa/psa/ /reports/contract-architecture/CWA-AFA/psa/index.html 200
+/reports/contract-architecture/CWA-AFA/Spirit/ /reports/contract-architecture/cwa-afa/spirit/ 301!
+/reports/contract-architecture/cwa-afa/spirit/ /reports/contract-architecture/CWA-AFA/Spirit/index.html 200
+/reports/contract-architecture/CWA-AFA/United/ /reports/contract-architecture/cwa-afa/united/ 301!
+/reports/contract-architecture/cwa-afa/united/ /reports/contract-architecture/CWA-AFA/United/index.html 200
+/reports/contract-architecture/CWA-AFA/united-ta-2025-2030/ /reports/contract-architecture/cwa-afa/united-ta-2025-2030/ 301!
+/reports/contract-architecture/cwa-afa/united-ta-2025-2030/ /reports/contract-architecture/CWA-AFA/united-ta-2025-2030/index.html 200
+/reports/contract-architecture/IAM/national/ /reports/contract-architecture/iam/national/ 301!
+/reports/contract-architecture/iam/national/ /reports/contract-architecture/IAM/national/index.html 200
+/reports/contract-architecture/IBT/NetJets/ /reports/contract-architecture/ibt/netjets/ 301!
+/reports/contract-architecture/ibt/netjets/ /reports/contract-architecture/IBT/NetJets/index.html 200
+/reports/contract-architecture/IBT/republic/ /reports/contract-architecture/ibt/republic/ 301!
+/reports/contract-architecture/ibt/republic/ /reports/contract-architecture/IBT/republic/index.html 200
+/reports/contract-architecture/IBT/republic/mesa/extension/ /reports/contract-architecture/ibt/republic/mesa/extension/ 301!
+/reports/contract-architecture/ibt/republic/mesa/extension/ /reports/contract-architecture/IBT/republic/mesa/extension/index.html 200
+/reports/contract-architecture/IBT/republic/mesa/joint-representation/ /reports/contract-architecture/ibt/republic/mesa/joint-representation/ 301!
+/reports/contract-architecture/ibt/republic/mesa/joint-representation/ /reports/contract-architecture/IBT/republic/mesa/joint-representation/index.html 200
+/reports/contract-architecture/TWU/allegiant/ /reports/contract-architecture/twu/allegiant/ 301!
+/reports/contract-architecture/twu/allegiant/ /reports/contract-architecture/TWU/allegiant/index.html 200
+/reports/contract-architecture/TWU/flight-services-international/ /reports/contract-architecture/twu/flight-services-international/ 301!
+/reports/contract-architecture/twu/flight-services-international/ /reports/contract-architecture/TWU/flight-services-international/index.html 200
+/reports/contract-architecture/TWU/JetBlue/ /reports/contract-architecture/twu/jetblue/ 301!
+/reports/contract-architecture/twu/jetblue/ /reports/contract-architecture/TWU/JetBlue/index.html 200
+/reports/contract-architecture/TWU/Southwest/ /reports/contract-architecture/twu/southwest/ 301!
+/reports/contract-architecture/twu/southwest/ /reports/contract-architecture/TWU/Southwest/index.html 200
+/reports/contract-architecture/TWU/Southwest/modification-2024-2028/ /reports/contract-architecture/twu/southwest/modification-2024-2028/ 301!
+/reports/contract-architecture/twu/southwest/modification-2024-2028/ /reports/contract-architecture/TWU/Southwest/modification-2024-2028/index.html 200
+# END crewsignal contract-architecture case routing
+
+# Force https and non-www
 http://crewsignal.org/* https://crewsignal.org/:splat 301!
 http://www.crewsignal.org/* https://crewsignal.org/:splat 301!
 https://www.crewsignal.org/* https://crewsignal.org/:splat 301!
@@ -100,4 +172,5 @@ https://www.crewsignal.org/* https://crewsignal.org/:splat 301!
  /contracts/*                  /reports/contract-architecture/contracts/:splat      301!
 /reports/union-governance/cwa-afa/*  /reports/union-governance/cwa/cwa-afa/:splat  301!
 /reports/union-governance/cwa-afa  /reports/union-governance/cwa/cwa-afa/  301!
+
 
