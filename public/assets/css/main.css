@@ -459,3 +459,20 @@ a:hover {
 .cs-table th:last-child {
   padding-right: 1.5rem;
 }
+
+.cs-toc__meta {
+  margin: 0.35rem 0 0.85rem;
+  font-size: 0.95rem;
+}
+
+.cs-toc__meta--sub {
+  margin-top: 0.35rem;
+}
+
+.cs-toc__meta strong {
+  font-weight: 600;
+}
+
+#governing-documents [id] {
+  scroll-margin-top: 6rem;
+}
