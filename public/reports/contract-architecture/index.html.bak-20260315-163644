@@ -306,11 +306,6 @@
                     CBA 2017&ndash;2022
                   </a>
                 </li>
-                <li class="cs-report__list-item">
-                  <a class="cs-contract__cba-link" href="/reports/contract-architecture/CWA-AFA/omni-air-international/contract/omni-air-international-tentative-agreement.pdf">
-                    Tentative Agreement PDF
-                  </a>
-                </li>
               </ul>
             </li>
 
@@ -341,11 +336,6 @@
                 <li class="cs-report__list-item">
                   <a class="cs-contract__cba-link" href="/reports/contract-architecture/CWA-AFA/psa/contract/psa-airlines-2019-2023.pdf">
                     CBA 2019&ndash;2023
-                  </a>
-                </li>
-                <li class="cs-report__list-item">
-                  <a class="cs-contract__cba-link" href="/reports/contract-architecture/CWA-AFA/psa/contract/psa-airlines-tentative-agreement.pdf">
-                    Tentative Agreement PDF
                   </a>
                 </li>
               </ul>
@@ -598,5 +588,4 @@
   </footer>
 </body>
 </html>
-
 
