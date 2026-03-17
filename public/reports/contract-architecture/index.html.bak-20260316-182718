@@ -334,7 +334,7 @@
                   </a>
                 </li>
                 <li class="cs-report__list-item">
-                  <a class="cs-contract__cba-link" href="/reports/contract-architecture/cwa-afa/psa/tentative-agreement-comparison/">
+                  <a class="cs-contract__cba-link" href="/reports/contract-architecture/CWA-AFA/psa/tentative-agreement-comparison/">
                     Tentative Agreement Comparison (Rejected)
                   </a>
                 </li>
@@ -598,7 +598,6 @@
   </footer>
 </body>
 </html>
-
 
 
 
