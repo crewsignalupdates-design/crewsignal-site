@@ -476,3 +476,11 @@ a:hover {
 #governing-documents [id] {
   scroll-margin-top: 6rem;
 }
+
+.cs-report__note .cs-report__list {
+  margin-top: 0.5rem;
+}
+
+.cs-report__note .cs-report__list li + li {
+  margin-top: 0.4rem;
+}
