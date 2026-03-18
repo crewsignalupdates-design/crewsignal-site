@@ -71,9 +71,6 @@
 
 /reports/contract-architecture/CWA-AFA/psa/tentative-agreement-comparison/ /reports/contract-architecture/cwa-afa/psa/tentative-agreement-comparison/ 301!
 /reports/contract-architecture/cwa-afa/psa/tentative-agreement-comparison/ /reports/contract-architecture/CWA-AFA/psa/tentative-agreement-comparison/index.html 200
-
-/reports/contract-architecture/CWA-AFA/norse-atlantic/successive-cba-comparison/ /reports/contract-architecture/cwa-afa/norse-atlantic/successive-cba-comparison/ 301!
-/reports/contract-architecture/cwa-afa/norse-atlantic/successive-cba-comparison/ /reports/contract-architecture/CWA-AFA/norse-atlantic/successive-cba-comparison/index.html 200
 # END crewsignal contract-architecture case routing
 
 # Force https and non-www
@@ -178,7 +175,6 @@ https://www.crewsignal.org/* https://crewsignal.org/:splat 301!
  /contracts/*                  /reports/contract-architecture/contracts/:splat      301!
 /reports/union-governance/cwa-afa/*  /reports/union-governance/cwa/cwa-afa/:splat  301!
 /reports/union-governance/cwa-afa  /reports/union-governance/cwa/cwa-afa/  301!
-
 
 
 
