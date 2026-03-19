@@ -1,50 +1,268 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Sun Country Flight Attendants Contract Analysis | CrewSignal</title>
+  <meta charset="UTF-8" />
+  <title>IBT · Sun Country Airlines · Contract Architecture Analysis · CrewSignal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/assets/css/main.css" />
 </head>
-<body class="cs-report">
-  <header class="cs-report__header">
-    <p class="cs-report__eyebrow">Contract Architecture</p>
-    <h1>Sun Country Flight Attendants Contract Analysis</h1>
-    <p>IBT-represented flight attendants.</p>
-  </header>
+<body>
+  <article class="cs-report" id="ibt-sun-country-contract-architecture">
+    <header class="cs-report__header">
+      <div class="cs-report__nav">
+        <a class="cs-report__back" href="/reports/contract-architecture/">← Back to Contract Architecture</a>
+      </div>
 
-  <main class="cs-report__main">
-    <p class="cs-editor-note">Editor&rsquo;s Note: This is a working contract analysis page for the March 2025 Sun Country flight attendants&rsquo; collective bargaining agreement. Section-by-section analysis will be added and refined as review continues.</p>
+      <h1 class="cs-report__title">IBT · Sun Country Airlines</h1>
+      <div class="cs-report__subtitle">Contract Analysis</div>
 
-    <section>
-      <h2>Source Document</h2>
-      <ul class="cs-report__list">
-        <li class="cs-report__list-item">
-          <strong>Sun Country Flight Attendants CBA (March 2025):</strong>
-          <a href="../Sun_Country_FA_CBA_March_2025.pdf" target="_blank" rel="noopener">View PDF</a>
-        </li>
-        <li class="cs-report__list-item">
-          <strong>Comparison report with Allegiant:</strong>
-          <a href="../comparison/">View &rarr;</a>
-        </li>
-      </ul>
+      <p class="cs-report__dek">
+        <span class="cs-report__dates">
+          Agreement Version: March 2025 CBA Text<br />
+          <em>Article 31 effective and duration dates remain TBD in the uploaded agreement</em>
+        </span>
+      </p>
+    </header>
+
+    <section class="cs-report__section" id="agreement-metadata">
+      <h2>Agreement Metadata</h2>
+
+      <p class="cs-report__para">
+        This analysis examines the March 2025 collective bargaining agreement text between
+        <strong>Sun Country Airlines</strong> and the International Brotherhood of Teamsters.
+        Because Article 31 still contains placeholder effective and duration dates, this report treats the
+        uploaded document as the operative March 2025 agreement text rather than a fully dated execution copy.
+        The agreement covers a carrier whose operation spans scheduled domestic flying, international flying,
+        military charter, ad hoc flying, and other special operations.
+      </p>
+
+      <p class="cs-report__para">
+        Structurally, Sun Country's agreement is comparatively consolidated.
+        The core work rules, pay architecture, reserve rules, international provisions, benefits,
+        and grievance machinery are integrated into a single article sequence rather than scattered across
+        a heavy legacy side-letter stack. As presented, it is easier to navigate than many legacy-network agreements.
+      </p>
+
+      <p class="cs-report__para">
+        The agreement is nevertheless built for variability.
+        Articles 11 and 12 combine monthly bidding, reserve contact availability periods, open time,
+        newly contracted trips, critical coverage, junior assignment, and time-available procedures into a system
+        designed to absorb charter and disruption-driven volatility without abandoning seniority and pay protections.
+      </p>
+
+      <p class="cs-report__para">
+        This contract functions as a strong hybrid scheduled-charter reference within the CrewSignal Contract Architecture series.
+        Its central design question is not whether the Company may move work at all,
+        but under what procedural and economic conditions it may do so.
+      </p>
     </section>
 
-    <section>
-      <h2>Analysis Framework</h2>
-      <ul class="cs-report__list">
-        <li class="cs-report__list-item">Compensation and pay structure.</li>
-        <li class="cs-report__list-item">Scheduling, bidding, and reserve provisions.</li>
-        <li class="cs-report__list-item">Duty, rest, and legal compliance provisions.</li>
-        <li class="cs-report__list-item">Hotels, per diem, and expense provisions.</li>
-        <li class="cs-report__list-item">Benefits, leaves, and job protections.</li>
-        <li class="cs-report__list-item">Scope, merger, and successorship language.</li>
-        <li class="cs-report__list-item">Grievance, discipline, and due-process provisions.</li>
-      </ul>
-    </section>
-  </main>
+    <section class="cs-report__section" id="contract-architecture-overview">
+      <h2>Contract Architecture Overview</h2>
 
-  <footer class="cs-report__footer">
-    <p><a href="../../../index.html">Back to Contract Architecture Hub</a></p>
-  </footer>
+      <p class="cs-report__para">
+        Sun Country's Flight Attendant Agreement reflects a modern, operationally aware architecture.
+        It is designed around electronic bidding, visible trip construction, reserve engineering,
+        and explicit premium pay rather than inherited legacy patchwork.
+      </p>
+
+      <p class="cs-report__para">
+        Article 12 is the operational hub, but it works in tandem with Article 11 (Hours of Service)
+        and Article 7 (Compensation). Scheduling protections are not isolated in a single veto provision;
+        they emerge from the interaction of trip construction rules, footprint limits, reserve assignment order,
+        minimum rest, monthly ceilings, and pay protection.
+      </p>
+
+      <p class="cs-report__para">
+        The agreement also reveals a distinctly charter-aware posture.
+        It accommodates newly contracted trips, extraordinary flying, military and international duty extensions,
+        and customer-driven report requirements, while still maintaining system seniority, scope protections,
+        and structured premium pay when flexibility is used.
+      </p>
+
+      <p class="cs-report__para">
+        <strong>Implication Summary:</strong>
+        Sun Country offers a comparatively clear and integrated framework with meaningful self-executing work rules.
+        Its vulnerability is not legacy sprawl, but an architecture that still gives the Company real assignment flexibility
+        through reserves, TAFA, and disruption management.
+      </p>
+    </section>
+
+    <section class="cs-report__section" id="scheduling-assignment-framework">
+      <h2>Scheduling &amp; Assignment Framework</h2>
+
+      <p class="cs-report__para">
+        For lineholders, the agreement starts from real schedule ownership.
+        Regular lines are built from trips and days off only, with a 72.5-99 hour range and a minimum of 13 days off at base.
+        Known flying and deadheading must be built into trips for the monthly award, and newly contracted trips are separately identified
+        and often bid by seniority rather than simply handed out.
+      </p>
+
+      <p class="cs-report__para">
+        That ownership is bounded, not absolute.
+        When flying cancels or becomes illegal, the agreement routes the Flight Attendant into a structured TAFA/LWOP election system.
+        Rescheduling is generally contained within a defined footprint, and when it occurs the Flight Attendant is protected by greater-of pay logic
+        rather than an outright prohibition on reassignment.
+      </p>
+
+      <p class="cs-report__para">
+        The reserve system is highly engineered.
+        Reserve lines contain at least 11 days off, four GDOs, built CAPs, and a limit on how much 24-hour reserve can exist systemwide.
+        Assignments are sequenced by CAP, on/off day, accumulated credit, and seniority, which makes reserve use more rule-bound than purely discretionary.
+      </p>
+
+      <p class="cs-report__para">
+        <strong>Analytical Lens:</strong>
+        The agreement still preserves aggressive back-end staffing tools.
+        Critical Coverage creates incentivized volunteer flying; after reserves are exhausted, the Company may junior assign in reverse seniority.
+        Sun Country constrains assignment through transparent sequencing, day-off rules, and pay protection,
+        but it does not attempt to eliminate management flexibility during short-notice coverage failures.
+      </p>
+    </section>
+
+    <section class="cs-report__section" id="economic-structure">
+      <h2>Economic Structure</h2>
+
+      <p class="cs-report__para">
+        Sun Country's economic architecture is one of the contract's strongest features.
+        Trip pay is built on a robust greater-of framework that compares block or actual time, duty rig,
+        minimum trip credit, minimum average duty period credit, and trip hours credit based on time away from base.
+      </p>
+
+      <p class="cs-report__para">
+        That structure is supported by a 72.5-hour monthly guarantee, a 75-hour first-year reserve guarantee,
+        full deadhead and ferry pay, over-85 incentive pay, holiday pay, long-day pay, critical coverage premiums,
+        junior assignment premiums, and loss-of-off-day pay.
+        The agreement repeatedly converts operational variability into defined compensation rather than leaving it uncompensated.
+      </p>
+
+      <p class="cs-report__para">
+        This matters because the contract openly contemplates irregular and non-routine flying.
+        Instead of pretending disruption can be drafted away, it prices flexibility.
+        That is especially visible in the premium treatment for drafting, operational-delay overages on the return-to-base segment,
+        and vacation intrusion or rescheduling outcomes.
+      </p>
+
+      <p class="cs-report__para">
+        <strong>Key Insight:</strong>
+        Sun Country manages flexibility economically and algorithmically.
+        The Company retains tools to cover flying, but the cost of using those tools is usually explicit,
+        auditable, and tied to the underlying event.
+      </p>
+    </section>
+
+    <section class="cs-report__section" id="enforcement-dispute-resolution">
+      <h2>Enforcement &amp; Dispute Resolution Architecture</h2>
+
+      <p class="cs-report__para">
+        Enforcement follows a traditional Railway Labor Act grievance-and-board model,
+        but with several unusually practical supports.
+        The agreement requires a progressive discipline system, notice of allegations before questioning,
+        and Union representation rights during disciplinary investigations.
+      </p>
+
+      <p class="cs-report__para">
+        Non-disciplinary grievances are supported by defined filing windows, monthly hearings,
+        access to payroll, benefit, personnel, and scheduling records, and written Company decisions after the hearing.
+        Scope grievances are even stronger: Article 1 sends them directly to expedited System Board arbitration.
+      </p>
+
+      <p class="cs-report__para">
+        Operational disputes benefit from an evidentiary layer that many contracts only imply.
+        Scheduling calls must occur on recorded lines, and the Union can obtain relevant recordings and scheduling data for dispute resolution.
+        That gives the agreement real documentary support in areas where notice timing and assignment sequencing matter.
+      </p>
+
+      <p class="cs-report__para">
+        <strong>Corrective, not punitive remedies:</strong>
+        Even with solid access rights and expedited paths, the enforcement model is still mostly make-whole:
+        reinstatement, pay correction, credit restoration, or arbitral interpretation.
+        The contract does not create standalone punitive penalties for routine violations.
+      </p>
+    </section>
+
+    <section class="cs-report__section" id="strengths-weaknesses">
+      <h2>Structural Strengths, Weaknesses &amp; Comparative Flags</h2>
+
+      <p class="cs-report__para">
+        <strong>Strengths:</strong>
+        A comparatively integrated single-document structure, strong scope and successorship language,
+        a highly developed pay-and-credit architecture, engineered reserve rules,
+        and unusually useful evidentiary support for scheduling disputes.
+      </p>
+
+      <p class="cs-report__para">
+        <strong>Weaknesses:</strong>
+        Meaningful Company flexibility persists through TAFA, reserve assignment, operational-delay exceptions,
+        critical coverage, and drafting; some protections depend on timely elections or positive contact;
+        and the March 2025 text still carries transitional features such as PBS implementation bargaining and TBD Article 31 dates.
+      </p>
+
+      <p class="cs-report__para">
+        <strong>Comparative Flags:</strong>
+        This is not a legacy-network, LOA-dependent architecture.
+        It is cleaner, more modular, and more operationally explicit.
+        At the same time, it is unmistakably a charter-aware agreement that accepts volatility and prices it,
+        rather than trying to eliminate it at the front end.
+      </p>
+    </section>
+
+    <section class="cs-report__section" id="scorecard">
+      <h2>Standardized Contract Scorecard</h2>
+
+      <div class="cs-table cs-table--compact">
+        <table>
+          <thead>
+            <tr>
+              <th>Domain</th>
+              <th>Score</th>
+              <th>Rationale</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Scheduling Protections</td>
+              <td>3.7</td>
+              <td>Clear line construction, footprint, TAFA, and reserve sequencing protections, though rescheduling, reserve, and drafting remain meaningful Company tools</td>
+            </tr>
+            <tr>
+              <td>Pay &amp; Credit Quality</td>
+              <td>4.2</td>
+              <td>Robust greater-of trip pay, guarantees, deadhead pay, and layered premiums convert disruption into compensation</td>
+            </tr>
+            <tr>
+              <td>Work Rules &amp; Quality-of-Life</td>
+              <td>3.9</td>
+              <td>Strong rest, days off, hotel, per diem, safety, and benefit floors for a mixed scheduled-charter operation</td>
+            </tr>
+            <tr>
+              <td>Company Discretion Constraint</td>
+              <td>3.5</td>
+              <td>Scope and successorship are strong, but day-to-day discretion remains substantial through engineered assignment pathways</td>
+            </tr>
+            <tr>
+              <td>Enforcement Power</td>
+              <td>3.7</td>
+              <td>Recorded scheduling lines, expedited scope arbitration, record access, and System Board procedures create solid corrective leverage</td>
+            </tr>
+            <tr>
+              <td>Clarity &amp; Modularity</td>
+              <td>4.0</td>
+              <td>Comparatively integrated and readable, with some transitional complexity around PBS implementation and charter exceptions</td>
+            </tr>
+            <tr>
+              <td><strong>Total</strong></td>
+              <td><strong>23.0</strong></td>
+              <td><strong>out of 30</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <footer class="cs-report__footer">
+      <div class="cs-report__footer-text">CrewSignal · Contract Architecture &amp; Comparative Analysis</div>
+    </footer>
+  </article>
 </body>
 </html>
