@@ -1,0 +1,16 @@
+﻿TEMP / STAGING / BACKUP CANDIDATES OUTSIDE public\reports
+
+[DIRECTORIES]
+.backup
+.local-backups
+_audit\repo-audit-20260321-131001
+_audit\repo-audit-20260321-131049
+_backup
+_backup\merger-integration-fix-20260321-121653
+_backup\merger-integration-fix-20260321-121653\public
+_backup\merger-integration-fix-20260321-121653\public\reports
+_incoming
+templates
+
+[FILES]
+crewsignal-site-with-redirects.zip
