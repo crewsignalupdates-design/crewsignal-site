@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>IAMAW · CommuteAir · Contract Architecture Analysis · CrewSignal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/assets/css/main.css" />
+</head>
+<body>
+  <article class="cs-report" id="iamaw-commuteair-contract-architecture">
+    <header class="cs-report__header">
+      <div class="cs-report__nav">
+        <a class="cs-report__back" href="/reports/contract-architecture/">← Back to Contract Architecture</a>
+      </div>
+
+      <h1 class="cs-report__title">IAMAW · CommuteAir</h1>
+      <div class="cs-report__subtitle">Contract Analysis</div>
+
+      <p class="cs-report__dek">
+        <span class="cs-report__dates">
+          Agreement Version: 2024 signed CBA text<br />
+          <em>Section 23 still uses placeholder ratification language for effectiveness and duration in the uploaded agreement</em>
+        </span>
+      </p>
+    </header>
+
+    <section class="cs-report__section" id="agreement-metadata">
+      <h2>Agreement Metadata</h2>
+
+      <p class="cs-report__para">
+        This analysis examines the 2024 collective bargaining agreement text between
+        <strong>CommuteAir LLC</strong> and the International Association of Machinists and Aerospace Workers,
+        Air Transport District 142. Because Section 23 still uses placeholder ratification language for the
+        effective date and duration, this report treats the uploaded document as the operative 2024 contract text
+        rather than a fully conformed execution copy. The agreement covers all present and future revenue flying
+        by the Company, including wet leases out, subcontracting performed for others, revenue flights, and charter flights.
+      </p>
+
+      <p class="cs-report__para">
+        Structurally, CommuteAir’s agreement is unusual for a regional carrier because Section 1 is overbuilt.
+        Scope, successorship, merger protection, alter-ego language, and expedited direct arbitration of Section 1 disputes
+        appear at the front of the contract and create a stronger structural shell than many smaller-airline agreements.
+      </p>
+
+      <p class="cs-report__para">
+        The remainder of the agreement is comparatively compact.
+        Compensation, PBS bidding, reserves, commuting, training, expenses, benefits, discipline,
+        grievances, and board procedures are all contained within a single 23-section document rather than spread across a large side-letter stack.
+      </p>
+
+      <p class="cs-report__para">
+        This contract functions as a modern regional reference within the CrewSignal Contract Architecture series.
+        It is neither bare-bones nor legacy-sprawling; instead, it pairs unusually strong long-cycle protections
+        with a day-to-day operating model that still relies on buffers, reserve coverage, and management-driven schedule repair.
+      </p>
+    </section>
+
+    <section class="cs-report__section" id="contract-architecture-overview">
+      <h2>Contract Architecture Overview</h2>
+
+      <p class="cs-report__para">
+        CommuteAir’s agreement has a two-track architecture.
+        At the strategic level, Section 1 seeks to preserve the bargaining unit against corporate restructuring or scope erosion.
+        At the operational level, Sections 4, 5, 7, 11, 12, and 13 manage the monthly reality of PBS, reserve coverage,
+        commuting failures, temporary vacancies, and leaves.
+      </p>
+
+      <p class="cs-report__para">
+        That second track is designed for administrability more than categorical restraint.
+        The Company retains broad management rights, may use buffers in trip construction and PBS,
+        and may exercise discretion over hardship determinations and some trade or pickup approvals.
+      </p>
+
+      <p class="cs-report__para">
+        At the same time, the agreement imposes real structure.
+        It caps legs per duty period, limits the share of five-day trips, regulates CDO usage,
+        sets defined bid and line-improvement timelines, establishes minimum days off by line type,
+        and gives the Union an active role in pairing and line-construction review.
+      </p>
+
+      <p class="cs-report__para">
+        <strong>Implication Summary:</strong>
+        CommuteAir offers a clean and readable operating system wrapped inside a surprisingly robust structural perimeter.
+        Its main vulnerability is that many protections function through process, sequencing, and pay protection
+        rather than through hard no-touch limits on Company scheduling authority.
+      </p>
+    </section>
+
+    <section class="cs-report__section" id="scheduling-assignment-framework">
+      <h2>Scheduling &amp; Assignment Framework</h2>
+
+      <p class="cs-report__para">
+        CommuteAir’s scheduling system is PBS-based and highly procedural.
+        Bid packets open and close on a defined calendar, lines may be regular, reserve, or composite,
+        the bid range is centered inside a 75-100 hour movable window, and the line improvement period
+        allows drops, open-time pickups, and trades before final schedules are published.
+      </p>
+
+      <p class="cs-report__para">
+        For lineholders, schedule ownership is real but limited.
+        A lineholder cannot be reassigned to an earlier first-day report without consent,
+        and last-day operational extensions are confined to departures within three hours of the original completion
+        and paid at 150% above guarantee. But a lineholder removed from flying may still be released,
+        reassigned, or placed on reserve within the days of the originally scheduled trip.
+      </p>
+
+      <p class="cs-report__para">
+        The reserve system is engineered into Short Call, Airport, and Long Call categories with defined contact rules,
+        report windows, and maximum callout periods. Reserve preferences are posted and awarded by seniority based on
+        operational needs and FARs, and reserve visibility is expressly available to the grievance chair or designee.
+        Even so, reserves remain subject to reassignment within the reserve block and may be used past the scheduled end of a callout period.
+      </p>
+
+      <p class="cs-report__para">
+        <strong>Analytical Lens:</strong>
+        This is a staffing-coverage contract more than a schedule-inviolability contract.
+        It creates transparency, sequencing, commuter relief, and limited restoration of lost days off,
+        but it still assumes that reserve usage, Company buffers, and management judgment will carry much of the daily reliability burden.
+      </p>
+    </section>
+
+    <section class="cs-report__section" id="economic-structure">
+      <h2>Economic Structure</h2>
+
+      <p class="cs-report__para">
+        CommuteAir’s pay architecture is built around floor protections more than eye-catching premium multiples.
+        The agreement provides a 75-hour minimum monthly guarantee, a 3.75-hour minimum duty period guarantee,
+        a 4.0-hour reserve-day value, full deadhead pay, cancellation pay protection, and pay for the greater of scheduled or actual block time
+        in the core flight-time calculation.
+      </p>
+
+      <p class="cs-report__para">
+        Premium mechanisms are present and usable.
+        Day-off flying pays above minimum monthly guarantee, open-time CDOs pay at double value,
+        certain holidays pay at 150%, last-day lineholder operational extensions pay 150%,
+        duty beyond 16 hours pays 200% for the time beyond 16 hours, and instructors receive a $15-per-hour override while training is being conducted.
+      </p>
+
+      <p class="cs-report__para">
+        Benefits strengthen the economics more than the hourly table alone might suggest.
+        Insurance contributions are pegged not to exceed those required of other employees for the same coverage
+        and generally not more than 30% of plan cost, while the 401(k) match ramps from 1% to as much as 8% based on active service
+        and ratchets upward if another represented work group later receives better matching or vesting terms.
+      </p>
+
+      <p class="cs-report__para">
+        <strong>Key Insight:</strong>
+        CommuteAir spends bargaining capital on guarantees, pay protection, benefits parity, and retirement ratchets
+        rather than on front-loaded wage aggression. That produces a sturdier economic floor than many regional contracts,
+        even if the early-career rates and modest per diem remain plainly regional.
+      </p>
+    </section>
+
+    <section class="cs-report__section" id="enforcement-dispute-resolution">
+      <h2>Enforcement &amp; Dispute Resolution Architecture</h2>
+
+      <p class="cs-report__para">
+        Enforcement follows a conventional Railway Labor Act grievance-and-board model,
+        but the due-process mechanics are stronger than average for a compact regional agreement.
+        A Flight Attendant facing investigation is entitled to Union representation if available,
+        advance notice of the meeting, an opportunity to present information,
+        and access through the Association to documents, reports, statements, and even scheduling audio tapes
+        used as a basis for discipline.
+      </p>
+
+      <p class="cs-report__para">
+        Discipline is also time-bounded.
+        Notices must issue within seven business days after the investigation concludes,
+        and non-probationary discipline generally may not be imposed more than 30 days after Human Resources first has reasonable knowledge of the incident,
+        subject to specified extensions when the Flight Attendant is unavailable.
+      </p>
+
+      <p class="cs-report__para">
+        Section 1 disputes are treated as especially important.
+        Alleged scope violations go directly to an expedited System Board process before a neutral,
+        which materially strengthens the practical value of the successorship, merger, and alter-ego language.
+      </p>
+
+      <p class="cs-report__para">
+        <strong>Corrective, not punitive remedies:</strong>
+        The contract provides hearings, deadlines, mediation, a neutral panel, and binding arbitration,
+        but its ordinary output is reinstatement, pay correction, or interpretive relief rather than standalone penalties for routine violations.
+      </p>
+    </section>
+
+    <section class="cs-report__section" id="strengths-weaknesses">
+      <h2>Structural Strengths, Weaknesses &amp; Comparative Flags</h2>
+
+      <p class="cs-report__para">
+        <strong>Strengths:</strong>
+        Unusually strong scope, successorship, merger, and alter-ego protections for a regional carrier;
+        readable single-document architecture; real Union involvement in pairing and PBS review;
+        defined reserve categories and commuter relief; solid due-process and evidentiary rights;
+        and benefits and retirement provisions that outperform many peers.
+      </p>
+
+      <p class="cs-report__para">
+        <strong>Weaknesses:</strong>
+        Broad management-rights language and substantial operational discretion;
+        many rules filtered through Company-defined buffers, hardship determinations, or staffing needs;
+        modest early-career wages and per diem; and some drafting roughness, including placeholder duration language in Section 23.
+      </p>
+
+      <p class="cs-report__para">
+        <strong>Comparative Flags:</strong>
+        This is not a minimal regional contract, but it is still a management-shaped operating agreement.
+        It bargains hard on scope, successor exposure, retirement, and process integrity,
+        while allowing day-to-day flexibility to survive through reserve design, rescheduling rules, and compensation floors.
+      </p>
+    </section>
+
+    <section class="cs-report__section" id="scorecard">
+      <h2>Standardized Contract Scorecard</h2>
+
+      <div class="cs-table cs-table--compact">
+        <table>
+          <thead>
+            <tr>
+              <th>Domain</th>
+              <th>Score</th>
+              <th>Rationale</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Scheduling Protections</td>
+              <td>3.4</td>
+              <td>PBS timelines, trip limits, reserve classifications, and lost-day restoration create structure, but buffers, reserve reuse, and operational discretion remain significant</td>
+            </tr>
+            <tr>
+              <td>Pay &amp; Credit Quality</td>
+              <td>3.6</td>
+              <td>75-hour guarantee, duty and reserve minimums, deadhead and cancellation pay, and useful premiums provide real floors even if wages and per diem remain regional</td>
+            </tr>
+            <tr>
+              <td>Work Rules &amp; Quality-of-Life</td>
+              <td>3.6</td>
+              <td>Days-off floors, single-room hotels, commuter protections, moving benefits, and training rules improve livability despite long-duty tolerance and reserve burden</td>
+            </tr>
+            <tr>
+              <td>Company Discretion Constraint</td>
+              <td>3.3</td>
+              <td>Section 1 is unusually strong, but day-to-day management rights, buffer use, hardship determinations, and replacement authority preserve broad flexibility</td>
+            </tr>
+            <tr>
+              <td>Enforcement Power</td>
+              <td>3.7</td>
+              <td>Expedited scope arbitration, scheduling-audio access, discipline clocks, and a structured System Board process create meaningful corrective leverage</td>
+            </tr>
+            <tr>
+              <td>Clarity &amp; Modularity</td>
+              <td>3.9</td>
+              <td>Compact and more navigable than many airline CBAs, though some drafting inconsistencies and placeholder duration language reduce polish</td>
+            </tr>
+            <tr>
+              <td><strong>Total</strong></td>
+              <td><strong>21.5</strong></td>
+              <td><strong>out of 30</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <footer class="cs-report__footer">
+      <div class="cs-report__footer-text">CrewSignal · Contract Architecture &amp; Comparative Analysis</div>
+    </footer>
+  </article>
+</body>
+</html>
