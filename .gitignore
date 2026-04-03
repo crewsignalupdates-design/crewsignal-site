@@ -22,3 +22,11 @@ audit/
 *.bak
 *.bak.*
 
+
+# local audit / backup artifacts
+/CrewSignal_Audit/
+/_audit/
+/_backup/
+/.local-backups/
+/public/**/*.bak*
+/public/**/*~
