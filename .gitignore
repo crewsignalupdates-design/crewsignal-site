@@ -30,3 +30,10 @@ audit/
 /.local-backups/
 /public/**/*.bak*
 /public/**/*~
+
+# local backup / audit artifacts
+/_incoming/
+/.backup/
+/.report-backups/
+/audit/
+/public/**/*.old*
