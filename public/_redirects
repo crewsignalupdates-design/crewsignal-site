@@ -97,7 +97,6 @@ https://www.crewsignal.org/* https://crewsignal.org/:splat 301!
 
 /reports/contract-architecture/apfa/*     /reports/contract-architecture/APFA/:splat     301!
 /reports/contract-architecture/cwa-afa/*  /reports/contract-architecture/CWA-AFA/:splat  301!
-/reports/contract-architecture/iam/*      /reports/contract-architecture/IAM/:splat      301!
 /reports/contract-architecture/ibt/*      /reports/contract-architecture/IBT/:splat      301!
 /reports/contract-architecture/twu/*      /reports/contract-architecture/TWU/:splat      301!
 
