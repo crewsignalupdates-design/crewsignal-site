@@ -37,3 +37,7 @@ audit/
 /.report-backups/
 /audit/
 /public/**/*.old*
+
+# accidental root-level artifacts
+/cls
+/crewsignal-site
