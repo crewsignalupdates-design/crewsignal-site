@@ -1,11 +1,10 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>US Airways / American | Historical Comparator Reports</title>
-  <link rel="stylesheet" href="../_comparator.css">
-  <style>
+  <style id="force-comparator-style">
 :root {
   --page-bg: #f6f7fb;
   --card-bg: #ffffff;
@@ -14,10 +13,9 @@
   --rule: #dfe3ea;
   --accent: #17365d;
   --accent-soft: #eef4fb;
-  --note-bg: #f8fafc;
   --shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
   --radius: 16px;
-  --max: 920px;
+  --max: 960px;
 }
 
 * { box-sizing: border-box; }
@@ -28,11 +26,12 @@ html, body {
   background: var(--page-bg);
   color: var(--text);
   font-family: Georgia, "Times New Roman", serif;
-  line-height: 1.68;
+  line-height: 1.72;
 }
 
 body.comparator-page {
   min-height: 100vh;
+  padding: 2rem 1rem 4rem;
 }
 
 a {
@@ -48,14 +47,13 @@ a:hover {
 .comparator-shell {
   max-width: var(--max);
   margin: 0 auto;
-  padding: 2rem 1.25rem 4rem;
 }
 
 .comparator-breadcrumbs {
+  margin: 0 0 1rem;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 0.95rem;
   color: var(--muted);
-  margin: 0 0 1rem;
 }
 
 .comparator-breadcrumbs a {
@@ -67,7 +65,7 @@ a:hover {
   text-decoration: underline;
 }
 
-.comparator-content {
+.comparator-card {
   background: var(--card-bg);
   border: 1px solid var(--rule);
   border-radius: var(--radius);
@@ -75,27 +73,16 @@ a:hover {
   padding: 2rem;
 }
 
-.comparator-content > :first-child {
-  margin-top: 0;
-}
-
-.comparator-content header {
-  border-bottom: 1px solid var(--rule);
-  margin-bottom: 1.75rem;
-  padding-bottom: 1rem;
-}
-
 .eyebrow {
+  margin: 0 0 0.35rem;
   color: var(--muted);
   font-family: Arial, Helvetica, sans-serif;
   font-size: 0.92rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  margin: 0 0 0.35rem;
 }
 
-.meta,
-.small {
+.meta {
   color: var(--muted);
   font-family: Arial, Helvetica, sans-serif;
   font-size: 0.96rem;
@@ -107,23 +94,23 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-  font-size: 2.15rem;
-  margin: 0 0 0.55rem;
+  font-size: 2.2rem;
+  margin: 0 0 0.65rem;
 }
 
 h2 {
   font-size: 1.45rem;
-  margin: 2rem 0 0.7rem;
+  margin: 2rem 0 0.75rem;
 }
 
 h3 {
   font-size: 1.15rem;
-  margin: 1.5rem 0 0.5rem;
+  margin: 1.4rem 0 0.45rem;
 }
 
 h4 {
   font-size: 1rem;
-  margin: 1.2rem 0 0.4rem;
+  margin: 1.15rem 0 0.35rem;
 }
 
 p {
@@ -141,23 +128,9 @@ li {
 
 blockquote {
   margin: 1rem 0;
-  padding: 0.75rem 1rem;
+  padding: 0.85rem 1rem;
   border-left: 4px solid var(--accent);
   background: var(--accent-soft);
-}
-
-.note {
-  background: var(--note-bg);
-  border: 1px solid var(--rule);
-  border-radius: 12px;
-  padding: 0.95rem 1rem;
-  margin: 1rem 0 1.4rem;
-}
-
-.sources {
-  margin-top: 2.25rem;
-  padding-top: 1rem;
-  border-top: 1px solid var(--rule);
 }
 
 table {
@@ -185,35 +158,33 @@ img {
   height: auto;
 }
 
-code, pre {
-  font-family: Consolas, Menlo, Monaco, monospace;
-}
-
 pre {
   white-space: pre-wrap;
+  overflow-x: auto;
   background: #f8fafc;
   border: 1px solid var(--rule);
   border-radius: 12px;
   padding: 1rem;
-  overflow-x: auto;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid var(--rule);
+  margin: 2rem 0;
 }
 
 @media (max-width: 720px) {
-  .comparator-shell {
+  body.comparator-page {
     padding: 1rem 0.85rem 3rem;
   }
 
-  .comparator-content {
+  .comparator-card {
     padding: 1.25rem;
     border-radius: 12px;
   }
 
   h1 {
     font-size: 1.75rem;
-  }
-
-  h2 {
-    font-size: 1.3rem;
   }
 }
 
@@ -224,8 +195,7 @@ pre {
     font-size: 11pt;
   }
 
-  .comparator-shell {
-    max-width: none;
+  body.comparator-page {
     padding: 0;
   }
 
@@ -233,7 +203,7 @@ pre {
     display: none;
   }
 
-  .comparator-content {
+  .comparator-card {
     box-shadow: none;
     border: none;
     padding: 0;
@@ -244,7 +214,7 @@ pre {
     text-decoration: none;
   }
 }
-  </style>
+</style>
 </head>
 <body class="comparator-page">
   <main class="comparator-shell">
@@ -253,13 +223,13 @@ pre {
       <span aria-hidden="true"> / </span>
       <a href="/reports/merger-integration/#historical-comparator-reports">Historical Comparator Reports</a>
     </nav>
-    <div class="comparator-content">
+    <article class="comparator-card">
 <div class="comparator-content">
 <p class="eyebrow">Historical Comparator Reports</p>
 <h1>US Airways / American</h1>
 <p class="meta"><strong>Status:</strong> Report in progress</p>
 <p>Historical comparator on the East-West combined CWA-AFA agreement, APFA transition, and the road into the American-era JCBA.</p>
-    </div>
+    </article>
   </main>
 </body>
 </html>
