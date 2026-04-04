@@ -1,10 +1,11 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>America West / US Airways | Historical Comparator Reports</title>
-  <style id="force-comparator-style">
+  <link rel="stylesheet" href="../_comparator.css">
+  <style>
 :root {
   --page-bg: #f6f7fb;
   --card-bg: #ffffff;
@@ -13,9 +14,10 @@
   --rule: #dfe3ea;
   --accent: #17365d;
   --accent-soft: #eef4fb;
+  --note-bg: #f8fafc;
   --shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
   --radius: 16px;
-  --max: 960px;
+  --max: 920px;
 }
 
 * { box-sizing: border-box; }
@@ -26,12 +28,11 @@ html, body {
   background: var(--page-bg);
   color: var(--text);
   font-family: Georgia, "Times New Roman", serif;
-  line-height: 1.72;
+  line-height: 1.68;
 }
 
 body.comparator-page {
   min-height: 100vh;
-  padding: 2rem 1rem 4rem;
 }
 
 a {
@@ -47,13 +48,14 @@ a:hover {
 .comparator-shell {
   max-width: var(--max);
   margin: 0 auto;
+  padding: 2rem 1.25rem 4rem;
 }
 
 .comparator-breadcrumbs {
-  margin: 0 0 1rem;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 0.95rem;
   color: var(--muted);
+  margin: 0 0 1rem;
 }
 
 .comparator-breadcrumbs a {
@@ -65,7 +67,7 @@ a:hover {
   text-decoration: underline;
 }
 
-.comparator-card {
+.comparator-content {
   background: var(--card-bg);
   border: 1px solid var(--rule);
   border-radius: var(--radius);
@@ -73,16 +75,27 @@ a:hover {
   padding: 2rem;
 }
 
+.comparator-content > :first-child {
+  margin-top: 0;
+}
+
+.comparator-content header {
+  border-bottom: 1px solid var(--rule);
+  margin-bottom: 1.75rem;
+  padding-bottom: 1rem;
+}
+
 .eyebrow {
-  margin: 0 0 0.35rem;
   color: var(--muted);
   font-family: Arial, Helvetica, sans-serif;
   font-size: 0.92rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
+  margin: 0 0 0.35rem;
 }
 
-.meta {
+.meta,
+.small {
   color: var(--muted);
   font-family: Arial, Helvetica, sans-serif;
   font-size: 0.96rem;
@@ -94,23 +107,23 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-  font-size: 2.2rem;
-  margin: 0 0 0.65rem;
+  font-size: 2.15rem;
+  margin: 0 0 0.55rem;
 }
 
 h2 {
   font-size: 1.45rem;
-  margin: 2rem 0 0.75rem;
+  margin: 2rem 0 0.7rem;
 }
 
 h3 {
   font-size: 1.15rem;
-  margin: 1.4rem 0 0.45rem;
+  margin: 1.5rem 0 0.5rem;
 }
 
 h4 {
   font-size: 1rem;
-  margin: 1.15rem 0 0.35rem;
+  margin: 1.2rem 0 0.4rem;
 }
 
 p {
@@ -128,9 +141,23 @@ li {
 
 blockquote {
   margin: 1rem 0;
-  padding: 0.85rem 1rem;
+  padding: 0.75rem 1rem;
   border-left: 4px solid var(--accent);
   background: var(--accent-soft);
+}
+
+.note {
+  background: var(--note-bg);
+  border: 1px solid var(--rule);
+  border-radius: 12px;
+  padding: 0.95rem 1rem;
+  margin: 1rem 0 1.4rem;
+}
+
+.sources {
+  margin-top: 2.25rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--rule);
 }
 
 table {
@@ -158,33 +185,35 @@ img {
   height: auto;
 }
 
+code, pre {
+  font-family: Consolas, Menlo, Monaco, monospace;
+}
+
 pre {
   white-space: pre-wrap;
-  overflow-x: auto;
   background: #f8fafc;
   border: 1px solid var(--rule);
   border-radius: 12px;
   padding: 1rem;
-}
-
-hr {
-  border: 0;
-  border-top: 1px solid var(--rule);
-  margin: 2rem 0;
+  overflow-x: auto;
 }
 
 @media (max-width: 720px) {
-  body.comparator-page {
+  .comparator-shell {
     padding: 1rem 0.85rem 3rem;
   }
 
-  .comparator-card {
+  .comparator-content {
     padding: 1.25rem;
     border-radius: 12px;
   }
 
   h1 {
     font-size: 1.75rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
   }
 }
 
@@ -195,7 +224,8 @@ hr {
     font-size: 11pt;
   }
 
-  body.comparator-page {
+  .comparator-shell {
+    max-width: none;
     padding: 0;
   }
 
@@ -203,7 +233,7 @@ hr {
     display: none;
   }
 
-  .comparator-card {
+  .comparator-content {
     box-shadow: none;
     border: none;
     padding: 0;
@@ -214,7 +244,7 @@ hr {
     text-decoration: none;
   }
 }
-</style>
+  </style>
 </head>
 <body class="comparator-page">
   <main class="comparator-shell">
@@ -223,12 +253,12 @@ hr {
       <span aria-hidden="true"> / </span>
       <a href="/reports/merger-integration/#historical-comparator-reports">Historical Comparator Reports</a>
     </nav>
-    <article class="comparator-card">
+    <div class="comparator-content">
 <div class="comparator-content">
 <header>
 <p class="eyebrow">Merger Comparator and Contract History</p>
 <h1>America West and US Airways Did Not Bring the Same Kind of Contract Into Their Merger</h1>
-<p class="meta">Interim V4 â€¢ HTML section draft for file tree placement â€¢ print-friendly</p>
+<p class="meta">Interim V4 HTML section draft for file tree placement  print-friendly</p>
 </header>
 <section aria-label="status note" class="note">
 <strong>Status note.</strong> This is an interim section draft based on recovered America West legacy contract pages and US Airways East restructuring / ratification / implementation materials. The cleanest standalone amended East contract book is still being sought.
@@ -241,10 +271,10 @@ hr {
     </p>
 <h2>America West: a legacy agreement that already anticipated merger fights</h2>
 <p>
-      What survives cleanly for America West is not a single PDF book but a section-by-section archived agreement. The recovered table of contents shows a full contract structure running through Sections 1 to 36, plus multiple side letters, including one specifically titled â€œContinental Merger Protection.â€ That alone is a clue that America Westâ€™s contract architecture was already merger-aware before the US Airways transaction became the central story.
+      What survives cleanly for America West is not a single PDF book but a section-by-section archived agreement. The recovered table of contents shows a full contract structure running through Sections 1 to 36, plus multiple side letters, including one specifically titled â€œContinental Merger Protection.â€ That alone is a clue that America West's contract architecture was already merger-aware before the US Airways transaction became the central story.
     </p>
 <p>
-      Section 1 is where that architecture becomes unmistakable. America West recognized AFA under National Mediation Board certification R-6294, dated September 20, 1994, and applied the agreement to all revenue flying and all known recurring miscellaneous flying performed by the companyâ€™s flight attendants. But the real significance of Section 1 is that it did not stop at ordinary recognition language. It bound the agreement to any successor or assign, required merger handling rules if operations were combined, and directed same-union mergers to what is now the CWA-AFA merger policy, specifically the official <a href="https://cdn.afacwa.org/docs/afa/afa-cb-2016.pdf#page=130">AFA-CWA Constitution &amp; Bylaws, Section X (â€œMerger Policy and Related Employee Protective Provisionsâ€)</a>, while non-AFA mergers would proceed under the <a href="/terms/allegheny-mohawk-lpps/">Allegheny-Mohawk labor protective provisions</a>. It also required the parties to meet and negotiate a possible <a href="/terms/fence-agreement/">fence agreement</a> while separate operations continued.
+      Section 1 is where that architecture becomes unmistakable. America West recognized AFA under National Mediation Board certification R-6294, dated September 20, 1994, and applied the agreement to all revenue flying and all known recurring miscellaneous flying performed by the company's flight attendants. But the real significance of Section 1 is that it did not stop at ordinary recognition language. It bound the agreement to any successor or assign, required merger handling rules if operations were combined, and directed same-union mergers to what is now the CWA-AFA merger policy, specifically the official <a href="https://cdn.afacwa.org/docs/afa/afa-cb-2016.pdf#page=130">AFA-CWA Constitution &amp; Bylaws, Section X (Merger Policy and Related Employee Protective Provisions)</a>, while non-AFA mergers would proceed under the <a href="/terms/allegheny-mohawk-lpps/">Allegheny-Mohawk labor protective provisions</a>. It also required the parties to meet and negotiate a possible <a href="/terms/fence-agreement/">fence agreement</a> while separate operations continued.
     </p>
 <p>
       That is unusually important language for a pre-merger comparison. It means America West was not approaching merger issues from scratch. The legacy book already anticipated three separate integration problems: who would represent the merged group, how seniority would be integrated, and how work would be divided before the operation was fully combined. In other words, the contract already assumed that a merger could create a prolonged interim period rather than a clean overnight transition.
@@ -253,40 +283,40 @@ hr {
       Section 36 reinforces the point. The agreement became effective on the date of signing, remained in effect for five years, renewed absent notice under Section 6 of the <a href="/terms/railway-labor-act/">Railway Labor Act</a>, and required the parties to jointly petition the <a href="/terms/national-mediation-board/">National Mediation Board</a> for mediation if they were still apart six months after the amendable date. That is not just boilerplate duration language; it shows the America West book was built around the normal bargaining machinery of the RLA, including a formal <a href="/terms/section-6-notice/">Section 6 notice</a> path and NMB mediation.
     </p>
 <p>
-      Then there is Side Letter #10. That side letter, expressly tied to the 1997 AFA-America West flight attendant agreement, addressed a possible America West/Continental merger and required a â€œfair and equitableâ€ integration of the pre-merger seniority lists. If the two groups could not agree within ninety days, the dispute would go to binding arbitration before a neutral. Even though the named partner there was Continental rather than US Airways, the larger takeaway is the same: America Westâ€™s labor documents were already built to confront merger-created seniority conflict.
+      Then there is Side Letter #10. That side letter, expressly tied to the 1997 AFA-America West flight attendant agreement, addressed a possible America West/Continental merger and required a fair and equitable integration of the pre-merger seniority lists. If the two groups could not agree within ninety days, the dispute would go to binding arbitration before a neutral. Even though the named partner there was Continental rather than US Airways, the larger takeaway is the same: America West's labor documents were already built to confront merger-created seniority conflict.
     </p>
 <h2>US Airways East: a restructuring-era agreement family, not a clean static book</h2>
 <p>
-      The East-side record looks very different. What has been recovered most clearly is not a neat standalone book but the documents that explain how the old book was being modified. A 2002 restructuring Q&amp;A already treated the US Airways flight attendant agreement as the governing benchmark for certain inflight-management pay reductions, which tells us the legacy contract remained the controlling reference point during the airlineâ€™s earlier restructuring cycle.
+      The East-side record looks very different. What has been recovered most clearly is not a neat standalone book but the documents that explain how the old book was being modified. A 2002 restructuring Q&amp;A already treated the US Airways flight attendant agreement as the governing benchmark for certain inflight-management pay reductions, which tells us the legacy contract remained the controlling reference point during the airline's earlier restructuring cycle.
     </p>
 <p>
-      By late 2004, that process had become even more explicit. The recovered Transformation Plan Term Sheet stated that the terms and conditions of the May 1, 2000 flight attendant agreement, as amended, would remain in effect except where the transformation agreement changed them. It also set an amendable date of December 31, 2009, and â€” most importantly â€” said the parties would complete definitive documentation, including final contract language, of the amended May 1, 2000 agreement before sending the deal to the MEC and then, if approved, to the membership for ratification. After ratification, that definitive documentation would go to Bankruptcy Court for approval.
+      By late 2004, that process had become even more explicit. The recovered Transformation Plan Term Sheet stated that the terms and conditions of the May 1, 2000 flight attendant agreement, as amended, would remain in effect except where the transformation agreement changed them. It also set an amendable date of December 31, 2009, and, most importantly, said the parties would complete definitive documentation, including final contract language, of the amended May 1, 2000 agreement before sending the deal to the MEC and then, if approved, to the membership for ratification. After ratification, that definitive documentation would go to Bankruptcy Court for approval.
     </p>
 <p>
-      That is a radically different starting point from the America West side. America West appears in the archival record as a recognizable legacy contract with embedded merger rules. US Airways East appears as a contract family in motion: the old book remained operative, but only â€œas amended,â€ and the amendments themselves were still being turned into definitive language under the pressure of ratification and bankruptcy procedure.
+      That is a radically different starting point from the America West side. America West appears in the archival record as a recognizable legacy contract with embedded merger rules. US Airways East appears as a contract family in motion: the old book remained operative, but only as amended, and the amendments themselves were still being turned into definitive language under the pressure of ratification and bankruptcy procedure.
     </p>
 <p>
       The companion East-side implementation and forbearance material makes the story even more revealing. It ties effectiveness to ratification plus Bankruptcy Court approval, creates a joint implementation committee, provides for expedited arbitration over unresolved implementation issues, and says the company would comply with Section 26.A of the May 1, 2000 agreement by providing each flight attendant a copy of the amended agreement within sixty days. It also shows how deeply the East book was entangled with Chapter 11 leverage, including forbearance from further Section 1113 motions and the possibility of later rejection if the carrier again faced grave operational danger.
     </p>
 <p>
-      Then the February 2005 <em>Guide To Implementation of Provisions of the 2004 Flight Attendant Agreement</em> confirms that a recently ratified 2004 CWA-AFA/US Airways agreement was already being rolled out, with revised pay rates effective January 10, 2005 and additional contractual and procedural changes explained for implementation. That means East entered the merger period not with a simple â€œold book,â€ but with a newly amended, restructuring-era agreement whose own supporting documents were still speaking in terms of ratification, implementation, and definitive documentation.
+      Then the February 2005 <em>Guide To Implementation of Provisions of the 2004 Flight Attendant Agreement</em> confirms that a recently ratified 2004 CWA-AFA/US Airways agreement was already being rolled out, with revised pay rates effective January 10, 2005 and additional contractual and procedural changes explained for implementation. That means East entered the merger period not with a simple old book, but with a newly amended, restructuring-era agreement whose own supporting documents were still speaking in terms of ratification, implementation, and definitive documentation.
     </p>
 <h2>Why the asymmetry matters</h2>
 <p>
       This is the first real clue to why merger timelines can stretch even after the representation picture becomes clearer. The America West side already had contract language for <a href="/terms/scope-clause/">scope</a>, <a href="/terms/successorship/">successorship</a>, seniority integration, and a possible <a href="/terms/fence-agreement/">fence agreement</a>. The East side was still formalizing what the amended contract actually was. One side therefore entered the merger with merger architecture already on the page; the other entered with a restructuring-conditioned agreement that still required documentation, ratification, and court approval.
     </p>
 <p>
-      That does not prove every later delay was inevitable. It does show, however, that the merger did not begin from symmetrical bargaining terrain. And that is the point worth keeping in front of readers from the outset: this was not merely a fight over who represented the combined group. It was also a fight over how to reconcile two very different inherited contract structures before anyone could realistically reach durable pay and rule parity.
+      That does not prove every later delay was inevitable. It does show, however, that the merger did not begin from symmetrical bargaining terrain. And that is the point worth noting from the outset: this was not merely a fight over who represented the combined group. It was also a fight over how to reconcile two very different inherited contract structures before anyone could realistically reach durable pay and rule parity.
     </p>
 <h2>Pay, work rules, and the problem of choosing a baseline</h2>
 <p>
       The contract gap was not only philosophical. It was structural. The America West book reads like a conventional, fully sectioned legacy agreement. Its recovered table of contents has stand-alone sections for <a href="/terms/hours-of-service/">hours of service</a>, scheduling, <a href="/terms/reserve/">reserve</a>, seniority, furlough and recall, grievances, and the system board, alongside compensation and duration. Section 3 itself uses a standard pay-table format with hourly rates keyed to longevity and shown both at the date of signing and at a later 42-month step-up. That is what a stable legacy book looks like: a recognizable rate structure inside a larger rules architecture that was meant to be administered as a book, not as an emergency bridge.
     </p>
 <p>
-      The America West rules were also more nuanced than a simple â€œprotect everythingâ€ story. Section 1 allowed limited subcontracted revenue flying when the company lacked sufficient aircraft or appropriately trained flight attendants, barred furloughs that were the direct result of that subcontracting, but then carved out code-share, marketing, interline, pro-rate, block-space, and other alliance flying from contractual restriction. In other words, the West book combined genuine protective language with explicit operational flexibility. That matters because it shows that even the more stable side of the merger was not a pure hold-the-line contract; it was a negotiated balance between protection and management discretion.
+      The America West rules were also more nuanced than a simple "protect everything" story. Section 1 allowed limited subcontracted revenue flying when the company lacked sufficient aircraft or appropriately trained flight attendants, barred furloughs that were the direct result of that subcontracting, but then carved out code-share, marketing, interline, pro-rate, block-space, and other alliance flying from contractual restriction. In other words, the West book combined genuine protective language with explicit operational flexibility. That matters because it shows that even the more stable side of the merger was not a pure hold-the-line contract; it was a negotiated balance between protection and management discretion.
     </p>
 <p>
-      The East-side CWA-AFA/US Airways materials point in the opposite direction. The November 2004 transformation term sheet did not simply tweak a few rates. It proposed that the May 1, 2000 agreement remain in force â€œas amended,â€ but then rewrote major economic and work-rule terms inside that amended framework: base pay would be frozen at January 1, 2004 levels through December 31, 2009 and then reduced by fifteen percent in lieu of the deeper emergency reduction sought under Section 1113(e); pay raises would not resume until 2010 and 2011; night pay, reserve override, and longevity pay would be suspended until 2010; deadhead would be paid at fifty percent in most circumstances until 2010; and training pay would be converted to flat-rate payments in place of the older structure.
+      The East-side CWA-AFA/US Airways materials point in the opposite direction. The November 2004 transformation term sheet did not simply tweak a few rates. It proposed that the May 1, 2000 agreement remain in force as amended, but then rewrote major economic and work-rule terms inside that amended framework: base pay would be frozen at January 1, 2004 levels through December 31, 2009 and then reduced by fifteen percent in lieu of the deeper emergency reduction sought under Section 1113(e); pay raises would not resume until 2010 and 2011; night pay, reserve override, and longevity pay would be suspended until 2010; deadhead would be paid at fifty percent in most circumstances until 2010; and training pay would be converted to flat-rate payments in place of the older structure.
     </p>
 <p>
       The same East-side term sheet also reworked the scheduling baseline. It set a 71-hour lineholder minimum guarantee, contemplated elimination of high-time and low-time options after implementation of an electronic trade board or comparable trade-desk mechanism, allowed management to set monthly pay caps at 85, 90, or 95 hours by domicile, and rewrote reserve and make-up-time mechanics around that new system. That is not merely a wage concession document. It is a rules-reset document.
@@ -298,20 +328,20 @@ hr {
       By February 2005, the implementation guide confirms that these East-side changes were no longer theoretical. The guide exists because the recently ratified 2004 agreement needed to be operationalized, explained, and rolled out. That is a very different posture from the West side, where the recovered materials read as a standing legacy agreement with a coherent section structure and an already embedded merger framework.
     </p>
 <p>
-      This is why later harmonization should not be reduced to a simple East-versus-West pay comparison. The real problem was selecting a baseline. Was Eastâ€™s operative baseline the older May 1, 2000 book, the 2002 and 2003 restructuring concessions, the 2004 transformation amendments, or the still-being-implemented 2005 operating reality? On the West side, by contrast, the baseline was easier to identify even if it still contained its own management-flexibility and merger-protection compromises. Any later joint bargaining effort therefore had to do more than choose between two contracts. It had to decide which East concessions were temporary, which were durable, which West rules could travel forward intact, and how a merged book could reconcile very different assumptions about <a href="/terms/deadheading/">deadhead</a>, <a href="/terms/reserve/">reserve</a>, premium pay, scheduling flexibility, and seniority protection.
+      This is why later harmonization should not be reduced to a simple East-versus-West pay comparison. The real problem was selecting a baseline. Was East's operative baseline the older May 1, 2000 book, the 2002 and 2003 restructuring concessions, the 2004 transformation amendments, or the still-being-implemented 2005 operating reality? On the West side, by contrast, the baseline was easier to identify even if it still contained its own management-flexibility and merger-protection compromises. Any later joint bargaining effort therefore had to do more than choose between two contracts. It had to decide which East concessions were temporary, which were durable, which West rules could travel forward intact, and how a merged book could reconcile very different assumptions about <a href="/terms/deadheading/">deadhead</a>, <a href="/terms/reserve/">reserve</a>, premium pay, scheduling flexibility, and seniority protection.
     </p>
 <p>
-      For readers trying to understand why â€œrepresentation resolvedâ€ did not automatically produce rapid parity, this is the key. A merger does not begin with an abstract labor unit. It begins with inherited contract machinery. America West brought a stable book that already contemplated merger and <a href="/terms/fence-agreement/">fence</a> issues. US Airways East brought a CWA-AFA-era restructuring package that was still defining its own post-bankruptcy operating rules. The later integration fight was always going to be shaped by that asymmetry.
+      For readers trying to understand why representation resolved did not automatically produce rapid parity, this is the key. A merger does not begin with an abstract labor unit. It begins with inherited contract machinery. America West brought a stable book that already contemplated merger and <a href="/terms/fence-agreement/">fence</a> issues. US Airways East brought a CWA-AFA-era restructuring package that was still defining its own post-bankruptcy operating rules. The later integration fight was always going to be shaped by that asymmetry.
     </p>
 <h2>Seniority, furlough protection, and the unstable floor beneath integration</h2>
 <p>
   If the previous section showed that the two sides did not inherit the same pay-and-scheduling architecture, the seniority record sharpens the point even further. On the America West side, seniority was not a loose custom. Section 19 made it a formal system: the Flight Attendant System Seniority List was to include all Flight Attendants by name and number, seniority was based on length of service as a Flight Attendant with the company, seniority began on the first day of Flight Attendant training, longevity continued to accrue on active status and certain leaves, and seniority governed bidding rights, furloughs, recalls, vacation preferences, and preferred domicile assignments.
 </p>
 <p>
-  That matters because it shows how much of the West sideâ€™s order of rights was already fixed inside a coherent legacy book. The same section limited the circumstances in which a Flight Attendant could lose a seniority date, required the company to update and post the seniority list twice each year, gave Flight Attendants a formal protest period for omissions or inaccurate placement, and allowed limited continued accrual when a Flight Attendant transferred into non-flying or supervisory duty and then returned within a year. Readers should understand what that means in practical terms: America West entered the merger period with a seniority regime that was not merely important, but administratively routinized.
+  That matters because it shows how much of the West side's order of rights was already fixed inside a coherent legacy book. The same section limited the circumstances in which a Flight Attendant could lose a seniority date, required the company to update and post the seniority list twice each year, gave Flight Attendants a formal protest period for omissions or inaccurate placement, and allowed limited continued accrual when a Flight Attendant transferred into non-flying or supervisory duty and then returned within a year. Readers should understand what that means in practical terms: America West entered the merger period with a seniority regime that was not merely important, but administratively routinized.
 </p>
 <p>
-  The merger implications of that West structure were already visible elsewhere in the same agreement family. Section 1 routed same-union integration through <a href="/terms/afa-merger-policy/">AFA merger policy</a>, routed non-AFA integration through the <a href="/terms/allegheny-mohawk-lpps/">Allegheny-Mohawk labor protective provisions</a>, and contemplated negotiation of a <a href="/terms/fence-agreement/">fence agreement</a> while separate operations continued. Side Letter #10 then took the next step by requiring a â€œfair and equitableâ€ seniority integration in a hypothetical America West/Continental merger and binding arbitration if the groups could not agree within ninety days. In short, America Westâ€™s seniority regime was both stable and merger-aware.
+  The merger implications of that West structure were already visible elsewhere in the same agreement family. Section 1 routed same-union integration through <a href="/terms/afa-merger-policy/">AFA merger policy</a>, routed non-AFA integration through the <a href="/terms/allegheny-mohawk-lpps/">Allegheny-Mohawk labor protective provisions</a>, and contemplated negotiation of a <a href="/terms/fence-agreement/">fence agreement</a> while separate operations continued. Side Letter #10 then took the next step by requiring a fair and equitable seniority integration in a hypothetical America West/Continental merger and binding arbitration if the groups could not agree within ninety days. In short, America West's seniority regime was both stable and merger-aware.
 </p>
 <h3>America West: a settled seniority order with merger procedures already attached</h3>
 <p>
@@ -332,7 +362,7 @@ hr {
 </p>
 <h3>Why this section matters to the merger thesis</h3>
 <p>
-  This is where the comparison begins to move beyond broad narrative and into mechanism. America Westâ€™s legacy agreement suggests a craft that already knew what its seniority order was and already had contract language telling the parties how to manage merger conflict. US Airways East, by contrast, was still bargaining over furlough exits, fragmentation limits, minimum-aircraft protections, implementation machinery, and the practical meaning of fence removal. One side brought a seniority framework with merger procedures attached. The other brought a seniority and job-security framework that was still being rewritten under bankruptcy pressure.
+  This is where the comparison begins to move beyond broad narrative and into mechanism. America West's legacy agreement suggests a craft that already knew what its seniority order was and already had contract language telling the parties how to manage merger conflict. US Airways East, by contrast, was still bargaining over furlough exits, fragmentation limits, minimum-aircraft protections, implementation machinery, and the practical meaning of fence removal. One side brought a seniority framework with merger procedures attached. The other brought a seniority and job-security framework that was still being rewritten under bankruptcy pressure.
 </p>
 <p>
   That helps explain why later parity could not be reduced to a simple question of who represented the combined group. Before any truly durable post-merger agreement could emerge, the parties had to reconcile not only different pay systems and different scheduling systems, but also different levels of contractual stability. On the West side, seniority and merger procedure were already institutionalized. On the East side, parts of the protective floor were transitional, conditional, or still awaiting implementation. The resulting problem was not merely to merge two lists. It was to merge a stable legacy order with a still-moving one.
@@ -341,7 +371,7 @@ hr {
   That is the deeper significance of the pre-merger record. Readers often think of a merger as producing one seniority fight. The documents here suggest something more complicated. The seniority fight sat on top of another dispute: whether the inherited contract protections on each side were equally durable in the first place. If they were not, then even a formally resolved representation question would still leave the carrier and the union facing a far harder integration task than headline summaries usually acknowledge.
 </p>
 <section id="bridge-to-2013"><h2>Bridge to the 2013 Combined US Airways / CWA-AFA Agreement</h2><div class="meta">Bridge section: legacy East/West books to the 2013 combined US Airways/CWA-AFA agreement
-    </article>
+    </div>
   </main>
 </body>
 </html>
