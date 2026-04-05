@@ -1,9 +1,10 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>America West / US Airways | Historical Comparator Reports</title>
+  <link rel="stylesheet" href="../_comparator.css">
   <style>
 :root {
   --page-bg: #f6f7fb;
@@ -13,11 +14,14 @@
   --rule: #dfe3ea;
   --accent: #17365d;
   --accent-soft: #eef4fb;
+  --note-bg: #f8fafc;
   --shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
   --radius: 16px;
   --max: 920px;
 }
+
 * { box-sizing: border-box; }
+
 html, body {
   margin: 0;
   padding: 0;
@@ -26,30 +30,43 @@ html, body {
   font-family: Georgia, "Times New Roman", serif;
   line-height: 1.68;
 }
-body.comparator-page { min-height: 100vh; }
+
+body.comparator-page {
+  min-height: 100vh;
+}
+
 a {
   color: var(--accent);
   text-decoration: underline;
   text-underline-offset: 0.12em;
 }
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
 .comparator-shell {
   max-width: var(--max);
   margin: 0 auto;
   padding: 2rem 1.25rem 4rem;
 }
+
 .comparator-breadcrumbs {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 0.95rem;
   color: var(--muted);
   margin: 0 0 1rem;
 }
+
 .comparator-breadcrumbs a {
   color: var(--muted);
   text-decoration: none;
 }
+
 .comparator-breadcrumbs a:hover {
   text-decoration: underline;
 }
+
 .comparator-content {
   background: var(--card-bg);
   border: 1px solid var(--rule);
@@ -57,12 +74,17 @@ a {
   box-shadow: var(--shadow);
   padding: 2rem;
 }
-.comparator-content > :first-child { margin-top: 0; }
+
+.comparator-content > :first-child {
+  margin-top: 0;
+}
+
 .comparator-content header {
   border-bottom: 1px solid var(--rule);
   margin-bottom: 1.75rem;
   padding-bottom: 1rem;
 }
+
 .eyebrow {
   color: var(--muted);
   font-family: Arial, Helvetica, sans-serif;
@@ -71,40 +93,73 @@ a {
   text-transform: uppercase;
   margin: 0 0 0.35rem;
 }
-.meta, .small {
+
+.meta,
+.small {
   color: var(--muted);
   font-family: Arial, Helvetica, sans-serif;
   font-size: 0.96rem;
 }
+
 h1, h2, h3, h4 {
   color: var(--accent);
   line-height: 1.2;
 }
-h1 { font-size: 2.15rem; margin: 0 0 0.55rem; }
-h2 { font-size: 1.45rem; margin: 2rem 0 0.7rem; }
-h3 { font-size: 1.15rem; margin: 1.5rem 0 0.5rem; }
-h4 { font-size: 1rem; margin: 1.2rem 0 0.4rem; }
-p { margin: 0 0 1rem; }
-ul, ol { margin: 0 0 1rem; padding-left: 1.35rem; }
-li { margin-bottom: 0.45rem; }
+
+h1 {
+  font-size: 2.15rem;
+  margin: 0 0 0.55rem;
+}
+
+h2 {
+  font-size: 1.45rem;
+  margin: 2rem 0 0.7rem;
+}
+
+h3 {
+  font-size: 1.15rem;
+  margin: 1.5rem 0 0.5rem;
+}
+
+h4 {
+  font-size: 1rem;
+  margin: 1.2rem 0 0.4rem;
+}
+
+p {
+  margin: 0 0 1rem;
+}
+
+ul, ol {
+  margin: 0 0 1rem;
+  padding-left: 1.35rem;
+}
+
+li {
+  margin-bottom: 0.45rem;
+}
+
 blockquote {
   margin: 1rem 0;
   padding: 0.75rem 1rem;
   border-left: 4px solid var(--accent);
   background: var(--accent-soft);
 }
+
 .note {
-  background: #f8fafc;
+  background: var(--note-bg);
   border: 1px solid var(--rule);
   border-radius: 12px;
   padding: 0.95rem 1rem;
   margin: 1rem 0 1.4rem;
 }
+
 .sources {
   margin-top: 2.25rem;
   padding-top: 1rem;
   border-top: 1px solid var(--rule);
 }
+
 table {
   width: 100%;
   border-collapse: collapse;
@@ -112,17 +167,28 @@ table {
   display: block;
   overflow-x: auto;
 }
+
 th, td {
   border: 1px solid var(--rule);
   padding: 0.65rem 0.75rem;
   text-align: left;
   vertical-align: top;
 }
+
 th {
   background: #f3f6fb;
   color: var(--accent);
 }
-img { max-width: 100%; height: auto; }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+code, pre {
+  font-family: Consolas, Menlo, Monaco, monospace;
+}
+
 pre {
   white-space: pre-wrap;
   background: #f8fafc;
@@ -131,13 +197,54 @@ pre {
   padding: 1rem;
   overflow-x: auto;
 }
+
 @media (max-width: 720px) {
-  .comparator-shell { padding: 1rem 0.85rem 3rem; }
-  .comparator-content { padding: 1.25rem; border-radius: 12px; }
-  h1 { font-size: 1.75rem; }
-  h2 { font-size: 1.3rem; }
+  .comparator-shell {
+    padding: 1rem 0.85rem 3rem;
+  }
+
+  .comparator-content {
+    padding: 1.25rem;
+    border-radius: 12px;
+  }
+
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
 }
-</style>
+
+@media print {
+  html, body {
+    background: #ffffff;
+    color: #000000;
+    font-size: 11pt;
+  }
+
+  .comparator-shell {
+    max-width: none;
+    padding: 0;
+  }
+
+  .comparator-breadcrumbs {
+    display: none;
+  }
+
+  .comparator-content {
+    box-shadow: none;
+    border: none;
+    padding: 0;
+  }
+
+  a {
+    color: #000000;
+    text-decoration: none;
+  }
+}
+  </style>
 </head>
 <body class="comparator-page">
   <main class="comparator-shell">
@@ -147,6 +254,7 @@ pre {
       <a href="/reports/merger-integration/#historical-comparator-reports">Historical Comparator Reports</a>
     </nav>
     <div class="comparator-content">
+<div class="comparator-content">
 <header>
 <p class="eyebrow">Merger Comparator and Contract History</p>
 <h1>America West and US Airways Did Not Bring the Same Kind of Contract Into Their Merger</h1>
@@ -156,14 +264,14 @@ pre {
 <strong>Status note.</strong> This is an interim section draft based on recovered America West legacy contract pages and US Airways East restructuring / ratification / implementation materials. The cleanest standalone amended East contract book is still being sought.
     </section>
 <p>
-      The easiest way to misunderstand the America West/US Airways story is to assume it began with two ordinary legacy contracts moving on a normal merger timeline. The record recovered so far points the other way. America West entered the period with a recognizable AFA legacy agreement that already contained a real <a href="/terms/scope-clause/">scope clause</a>, <a href="/terms/successorship/">successorship</a> language, merger procedures, and even a possible <a href="/terms/fence-agreement/">fence agreement</a>. US Airways East, by contrast, entered the same period through a restructuring-era agreement family built on the May 1, 2000 book &ldquo;as amended,&rdquo; with later documents still talking about ratification, definitive documentation, and court approval.
+      The easiest way to misunderstand the America West/US Airways story is to assume it began with two ordinary legacy contracts moving on a normal merger timeline. The record recovered so far points the other way. America West entered the period with a recognizable AFA legacy agreement that already contained a real <a href="/terms/scope-clause/">scope clause</a>, <a href="/terms/successorship/">successorship</a> language, merger procedures, and even a possible <a href="/terms/fence-agreement/">fence agreement</a>. US Airways East, by contrast, entered the same period through a restructuring-era agreement family built on the May 1, 2000 book â€œas amended,â€ with later documents still talking about ratification, definitive documentation, and court approval.
     </p>
 <p>
       That difference matters because it goes straight to the larger merger thesis: resolving representation is only one part of integration. The harder question is what kind of legal and bargaining architecture each side brings into the merger. In this case, one side had a legacy agreement that already anticipated merger problems; the other side was still converting bankruptcy-era concessions into a definitive amended contract.
     </p>
 <h2>America West: a legacy agreement that already anticipated merger fights</h2>
 <p>
-      What survives cleanly for America West is not a single PDF book but a section-by-section archived agreement. The recovered table of contents shows a full contract structure running through Sections 1 to 36, plus multiple side letters, including one specifically titled &ldquo;Continental Merger Protection.&rdquo; That alone is a clue that America West's contract architecture was already merger-aware before the US Airways transaction became the central story.
+      What survives cleanly for America West is not a single PDF book but a section-by-section archived agreement. The recovered table of contents shows a full contract structure running through Sections 1 to 36, plus multiple side letters, including one specifically titled â€œContinental Merger Protection.â€ That alone is a clue that America West's contract architecture was already merger-aware before the US Airways transaction became the central story.
     </p>
 <p>
       Section 1 is where that architecture becomes unmistakable. America West recognized AFA under National Mediation Board certification R-6294, dated September 20, 1994, and applied the agreement to all revenue flying and all known recurring miscellaneous flying performed by the company's flight attendants. But the real significance of Section 1 is that it did not stop at ordinary recognition language. It bound the agreement to any successor or assign, required merger handling rules if operations were combined, and directed same-union mergers to what is now the CWA-AFA merger policy, specifically the official <a href="https://cdn.afacwa.org/docs/afa/afa-cb-2016.pdf#page=130">AFA-CWA Constitution &amp; Bylaws, Section X (Merger Policy and Related Employee Protective Provisions)</a>, while non-AFA mergers would proceed under the <a href="/terms/allegheny-mohawk-lpps/">Allegheny-Mohawk labor protective provisions</a>. It also required the parties to meet and negotiate a possible <a href="/terms/fence-agreement/">fence agreement</a> while separate operations continued.
@@ -263,9 +371,6 @@ pre {
   That is the deeper significance of the pre-merger record. Readers often think of a merger as producing one seniority fight. The documents here suggest something more complicated. The seniority fight sat on top of another dispute: whether the inherited contract protections on each side were equally durable in the first place. If they were not, then even a formally resolved representation question would still leave the carrier and the union facing a far harder integration task than headline summaries usually acknowledge.
 </p>
 <section id="bridge-to-2013"><h2>Bridge to the 2013 Combined US Airways / CWA-AFA Agreement</h2><div class="meta">Bridge section: legacy East/West books to the 2013 combined US Airways/CWA-AFA agreement
-    </div>
-  
-</section>
     </div>
   </main>
 </body>
