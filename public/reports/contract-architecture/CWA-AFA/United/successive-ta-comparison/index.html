@@ -13,63 +13,103 @@
     --soft-2: rgba(0,0,0,.02);
     --accent: #0f4c81;
   }
-  .cs-page { max-width: 1120px; margin: 0 auto; padding: 2rem 1rem 4rem; }
-  .cs-back { display:inline-block; margin-bottom:1rem; }
-  .cs-header { margin: 0 0 2rem; padding: 0 0 1.25rem; border-bottom: 1px solid var(--border); }
-  .cs-series { margin:0 0 .2rem; font-size:.95rem; font-weight:600; opacity:.85; }
-  .cs-header h1 { margin:0 0 .35rem; font-size:clamp(2rem, 4vw, 2.75rem); line-height:1.1; }
-  .cs-type { margin:0 0 .35rem; font-size:1.05rem; font-weight:600; }
-  .cs-meta, .cs-note { margin:.25rem 0 0; max-width:72ch; }
-  .cs-note { margin-top:.75rem; }
-  .callout, .key-box { border:1px solid var(--border); border-radius:12px; padding:1rem 1.1rem; background:var(--soft-2); margin:1rem 0 1.25rem; }
-  .key-box { border-left:4px solid var(--accent); background:var(--soft); }
+  .united-ta-report {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 2rem 1rem 4rem;
+  }
+  .united-ta-report .cs-report__section + .cs-report__section {
+    border-top: 1px solid var(--border);
+    padding-top: 1.2rem;
+    margin-top: 1.2rem;
+  }
+  .united-ta-report .cs-report__section-title {
+    margin: 0 0 .35rem;
+    font-size: 1.35rem;
+  }
+  .callout, .key-box {
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1rem 1.1rem;
+    background: var(--soft-2);
+    margin: 1rem 0 1.25rem;
+  }
+  .key-box {
+    border-left: 4px solid var(--accent);
+    background: var(--soft);
+  }
   .report-structure { margin: 1rem 0 1.5rem; }
   .report-structure ol { padding-left: 1.2rem; }
-  .toc-grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap:1rem; margin:1.5rem 0 2rem; }
-  .toc-card { border:1px solid var(--border); border-radius:12px; padding:1rem; background:#fff; color:#111827; box-shadow:0 1px 2px rgba(0,0,0,.04); }
-  .toc-card h3 { color:#111827; margin-top:0; }
-  .toc-card ul { margin:.5rem 0 0; padding-left: 1.1rem; }
-  .toc-card li { color:#111827; }
-  .toc-card a { color:var(--accent); text-decoration:underline; }
-  .toc-card a:visited { color:#0b3d66; }
-  .toc-card a:hover, .toc-card a:focus { color:#092f50; }
-  .pdf-pill { display:inline-block; border:1px solid var(--border); border-radius:999px; padding:.35rem .65rem; margin:.15rem .35rem .15rem 0; text-decoration:none; white-space:nowrap; }
-  .source-pills { margin:.55rem 0 1rem; }
-  .report-section { padding-top:1.2rem; margin-top:1.2rem; border-top:1px solid var(--border); }
-  .report-section h2 { margin:0 0 .35rem; font-size:1.35rem; }
-  .report-section p { margin:.6rem 0; }
-  .adjunct h2 { color: var(--accent); }
-  .section-head { margin-bottom:.25rem; }
-  .table-wrap { overflow-x:auto; margin: 1rem 0 1.25rem; }
-  .compare-table { width:100%; border-collapse:collapse; min-width:720px; }
-  .compare-table th, .compare-table td { border:1px solid var(--border); padding:.72rem .82rem; text-align:left; vertical-align:top; }
-  .compare-table th { background:var(--soft); }
-  .footnote { font-size:.94rem; opacity:.85; }
-  .final-framework { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:1rem; }
-  .bucket { border:1px solid var(--border); border-radius:12px; padding:1rem; background:#fff; color:#111827; box-shadow:0 1px 2px rgba(0,0,0,.04); }
-  .bucket h3 { margin-top:0; color:#111827; }
-  .bucket a { color:var(--accent); }
-  .appendix-intro { margin-top:.5rem; }
+  .toc-grid, .final-framework {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1rem;
+    margin: 1.5rem 0 2rem;
+  }
+  .toc-card, .bucket {
+    border: 1px solid #d7d7d7;
+    border-radius: 10px;
+    padding: 1rem;
+    background: transparent;
+    box-shadow: none;
+  }
+  .toc-card h3, .bucket h3 {
+    margin-top: 0;
+  }
+  .toc-card ul, .bucket ul {
+    margin: .5rem 0 0;
+    padding-left: 1.1rem;
+  }
+  .toc-card p:last-child, .bucket p:last-child,
+  .toc-card ul:last-child, .bucket ul:last-child {
+    margin-bottom: 0;
+  }
+  .toc-card a, .bucket a { color: inherit; text-decoration: underline; }
+  .pdf-pill {
+    display: inline-block;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: .35rem .65rem;
+    margin: .15rem .35rem .15rem 0;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+  .source-pills { margin: .55rem 0 1rem; }
+  .section-head { margin-bottom: .25rem; }
+  .table-wrap { overflow-x: auto; margin: 1rem 0 1.25rem; }
+  .compare-table { width: 100%; border-collapse: collapse; min-width: 720px; }
+  .compare-table th, .compare-table td {
+    border: 1px solid var(--border);
+    padding: .72rem .82rem;
+    text-align: left;
+    vertical-align: top;
+  }
+  .compare-table th { background: var(--soft); }
+  .footnote { font-size: .94rem; opacity: .85; }
+  .appendix-intro { margin-top: .5rem; }
   @media (max-width: 780px) {
-    .cs-page { padding: 1.25rem .85rem 3rem; }
+    .united-ta-report { padding: 1.25rem .85rem 3rem; }
     .compare-table { min-width: 640px; }
   }
 </style>
 </head>
-<body>
-<main class="cs-page">
-  <header class="cs-header">
-    <a class="cs-back" href="/reports/contract-architecture/cwa-afa/united/">&larr; Back to Contract Architecture</a>
-    <p class="cs-series">Contract Architecture</p>
-    <h1>CWA-AFA · United Airlines</h1>
-    <p class="cs-type">Current CBA vs. TA1 vs. TA2 Comparative Analysis</p>
-    <p class="cs-meta">Current agreement effective August 28, 2016 · Amendable since August 28, 2021</p>
-    <p class="cs-meta">Comparison frame: current 2016–2021 amendable agreement vs. rejected 2025–2030 TA vs. proposed 2026–2031 TA</p>
-    <p class="cs-note"><strong>Editor’s Note:</strong> This page is written as a contract-architecture comparison, not as a campaign piece. It uses a dual frame throughout: <strong>TA2 versus TA1</strong> and <strong>TA2 versus the current 2016–2021 operating baseline</strong>. That dual frame matters because TA2’s implementation language makes clear that, until a provision is implemented, Flight Attendants continue operating under the current amendable agreement.</p>
+<body class="cs-report">
+<header class="cs-report__header">
+    <a class="cs-back-link cs-report__back" href="/reports/contract-architecture/cwa-afa/united/">&larr; Back to Contract Architecture</a>
+    <p class="cs-report__eyebrow">Contract Architecture</p>
+    <h1 class="cs-report__title">CWA-AFA · United Airlines</h1>
+    <p class="cs-report__subtitle">Current CBA vs. TA1 vs. TA2 Comparative Analysis</p>
   </header>
 
-  <section id="final-structure" class="report-section">
-    <h2>Full final structure</h2>
+  <main class="cs-report__main united-ta-report">
+  <section class="cs-report__section" id="report-intro">
+    <p><strong>Current agreement effective August 28, 2016 · Amendable since August 28, 2021</strong></p>
+    <p>Comparison frame: current 2016–2021 amendable agreement vs. rejected 2025–2030 TA vs. proposed 2026–2031 TA</p>
+    <p class="cs-editor-note"><strong>Editor’s Note:</strong> This page is written as a contract-architecture comparison, not as a campaign piece. It uses a dual frame throughout: <strong>TA2 versus TA1</strong> and <strong>TA2 versus the current 2016–2021 operating baseline</strong>. That dual frame matters because TA2’s implementation language makes clear that, until a provision is implemented, Flight Attendants continue operating under the current amendable agreement.</p>
+  </section>
+
+<section id="final-structure" class="cs-report__section">
+    <h2 class="cs-report__section-title">Full final structure</h2>
     <div class="report-structure">
       <ol>
         <li>Executive summary</li>
@@ -85,8 +125,8 @@
     </div>
   </section>
 
-  <section id="executive-summary" class="report-section">
-    <h2>Executive summary</h2>
+  <section id="executive-summary" class="cs-report__section">
+    <h2 class="cs-report__section-title">Executive summary</h2>
     <p>The proposed 2026–2031 TA is best understood as a targeted revision rather than a fundamental reset. Some areas are materially better. Some largely carry forward prior tentative-agreement structure. Some remain structurally underwhelming. And several of the most important reader questions — senior-scale economics, premium structure, scope, reserve quality, retiree-medical permanence, and Section 7.Q reassignment clarity — remain only partly resolved.</p>
     <div class="table-wrap">
       <table class="compare-table">
@@ -106,16 +146,16 @@
     </div>
   </section>
 
-  <section id="methodology" class="report-section">
-    <h2>Methodology / how to use the report</h2>
+  <section id="methodology" class="cs-report__section">
+    <h2 class="cs-report__section-title">Methodology / how to use the report</h2>
     <p>This report asks four separate questions that are often blurred together in summary materials: what changed in the text, what changed in actual day-to-day value, what is immediate versus delayed, and what remains weaker even after some improvement. The most important methodological rule is simple: the Letters of Agreement are part of the contract architecture, not optional appendices.</p>
     <p>The second methodological rule is equally important: this report does not assign bargaining motive where the documents do not support it. On questions like scope or TFP, it states the contractual effect and the management or operational advantage that flows directly from the text. That is different from guessing at subjective motive.</p>
     <div class="source-pills"><a class="pdf-pill" href="../contract/United_CWA-AFA_TA_2026-2031.pdf#page=371">TA2 LOA 9 p.371</a><a class="pdf-pill" href="../contract/United_CWA-AFA_TA_2026-2031.pdf#page=374">TA2 current-baseline rule p.374</a></div>
     <p class="footnote">All major United section headers below include direct page-specific PDF links using the current CBA, TA1, and TA2. Key adjunct explainers also link directly to the relevant United LOA or subsection pages.</p>
   </section>
 
-  <section id="report-toc" class="report-section">
-    <h2>Report contents</h2>
+  <section id="report-toc" class="cs-report__section">
+    <h2 class="cs-report__section-title">Report contents</h2>
     <div class="toc-grid">
       <div class="toc-card">
         <h3>Main body — Sections 1–16</h3>
@@ -149,9 +189,9 @@
   </section>
 
   
-<section class="report-section" id="section-1">
+<section class="cs-report__section" id="section-1">
   <div class="section-head">
-    <h2>Section 1 — Recognition, Successorship and Mergers</h2>
+    <h2 class="cs-report__section-title">Section 1 — Recognition, Successorship and Mergers</h2>
     <div class="source-pills"><a class="pdf-pill" href="../contract/United_CWA-AFA_CBA_2016-2021.pdf#page=4">Current CBA p.4</a><a class="pdf-pill" href="../contract/United_CWA-AFA_TA_2025-2030.pdf#page=4">TA1 p.4</a><a class="pdf-pill" href="../contract/United_CWA-AFA_TA_2026-2031.pdf#page=4">TA2 p.4</a></div>
   </div>
   <p><strong>Status:</strong> No material change in the body text.</p>
@@ -160,9 +200,9 @@
   <p><strong>Assessment:</strong> No material change in the body text; the consequential issue is in LOA 16, not Section 1 itself.</p>
 </section>
 
-<section class="report-section adjunct" id="scope-alert">
+<section class="cs-report__section adjunct" id="scope-alert">
   <div class="section-head">
-    <h2>Adjunct — Scope Alert / LOA 16</h2>
+    <h2 class="cs-report__section-title">Adjunct — Scope Alert / LOA 16</h2>
     <div class="source-pills"><a class="pdf-pill" href="../contract/United_CWA-AFA_CBA_2016-2021.pdf#page=404">Current CBA Scope LOA 25 p.404</a><a class="pdf-pill" href="../contract/United_CWA-AFA_TA_2025-2030.pdf#page=436">TA1 Scope LOA 16 p.436</a><a class="pdf-pill" href="../contract/United_CWA-AFA_TA_2026-2031.pdf#page=407">TA2 Scope LOA 16 p.407</a></div>
   </div>
   <p>TA2 adds the most consequential new scope language in the entire package. The current 2016–2021 CBA and TA1 both use an older model: United will not establish or purchase an alter-ego airline, and if it establishes or purchases a commuter airline (primary 135 carrier), AFA must be recognized and the parties must negotiate an area-standard agreement for that carrier’s flight attendants. TA2 keeps that structure and then adds something materially new: a United Express regional-carrier carve-out.</p>
@@ -186,9 +226,9 @@
 </section>
 
 
-<section class="report-section" id="section-2">
+<section class="cs-report__section" id="section-2">
   <div class="section-head">
-    <h2>Section 2 — Definitions</h2>
+    <h2 class="cs-report__section-title">Section 2 — Definitions</h2>
     <div class="source-pills"><a class="pdf-pill" href="../contract/United_CWA-AFA_CBA_2016-2021.pdf#page=7">Current CBA p.7</a><a class="pdf-pill" href="../contract/United_CWA-AFA_TA_2025-2030.pdf#page=7">TA1 p.7</a><a class="pdf-pill" href="../contract/United_CWA-AFA_TA_2026-2031.pdf#page=7">TA2 p.7</a></div>
   </div>
   <p><strong>Status:</strong> Selective improvement, but largely carry-forward from TA1.</p>
@@ -198,9 +238,9 @@
 </section>
 
 
-<section class="report-section" id="section-3">
+<section class="cs-report__section" id="section-3">
   <div class="section-head">
-    <h2>Section 3 — General</h2>
+    <h2 class="cs-report__section-title">Section 3 — General</h2>
     <div class="source-pills"><a class="pdf-pill" href="../contract/United_CWA-AFA_CBA_2016-2021.pdf#page=13">Current CBA p.13</a><a class="pdf-pill" href="../contract/United_CWA-AFA_TA_2025-2030.pdf#page=14">TA1 p.14</a><a class="pdf-pill" href="../contract/United_CWA-AFA_TA_2026-2031.pdf#page=13">TA2 p.13</a></div>
   </div>
   <p><strong>Status:</strong> Mostly unchanged, with one visible regression.</p>
@@ -210,9 +250,9 @@
 </section>
 
 
-<section class="report-section" id="section-4">
+<section class="cs-report__section" id="section-4">
   <div class="section-head">
-    <h2>Section 4 — Compensation</h2>
+    <h2 class="cs-report__section-title">Section 4 — Compensation</h2>
     <div class="source-pills"><a class="pdf-pill" href="../contract/United_CWA-AFA_CBA_2016-2021.pdf#page=31">Current CBA p.31</a><a class="pdf-pill" href="../contract/United_CWA-AFA_TA_2025-2030.pdf#page=38">TA1 p.38</a><a class="pdf-pill" href="../contract/United_CWA-AFA_TA_2026-2031.pdf#page=35">TA2 p.35</a></div>
   </div>
   <p><strong>Status:</strong> Mixed and structurally important.</p>
@@ -221,9 +261,9 @@
   <p><strong>Assessment:</strong> Real front-end gains, real new sit pay, but still a mixed compensation section because value remains uneven and back-loaded.</p>
 </section>
 
-<section class="report-section adjunct" id="compensation-adjunct">
+<section class="cs-report__section adjunct" id="compensation-adjunct">
   <div class="section-head">
-    <h2>Adjunct — Compensation Architecture</h2>
+    <h2 class="cs-report__section-title">Adjunct — Compensation Architecture</h2>
     <div class="source-pills"><a class="pdf-pill" href="../contract/United_CWA-AFA_CBA_2016-2021.pdf#page=31">Current CBA Section 4 p.31</a><a class="pdf-pill" href="../contract/United_CWA-AFA_TA_2025-2030.pdf#page=38">TA1 Section 4 p.38</a><a class="pdf-pill" href="../contract/United_CWA-AFA_TA_2026-2031.pdf#page=35">TA2 Section 4 p.35</a><a class="pdf-pill" href="../contract/United_CWA-AFA_TA_2026-2031.pdf#page=46">TA2 Sit Pay p.46</a></div>
   </div>
   <div class="table-wrap">
@@ -246,9 +286,9 @@
 </section>
 
 
-<section class="report-section" id="section-5">
+<section class="cs-report__section" id="section-5">
   <div class="section-head">
-    <h2>Section 5 — Expenses, Transportation and Lodging</h2>
+    <h2 class="cs-report__section-title">Section 5 — Expenses, Transportation and Lodging</h2>
     <div class="source-pills"><a class="pdf-pill" href="../contract/United_CWA-AFA_CBA_2016-2021.pdf#page=39">Current CBA p.39</a><a class="pdf-pill" href="../contract/United_CWA-AFA_TA_2025-2030.pdf#page=50">TA1 p.50</a><a class="pdf-pill" href="../contract/United_CWA-AFA_TA_2026-2031.pdf#page=47">TA2 p.47</a></div>
   </div>
   <p><strong>Status:</strong> Improvement relative to the current baseline; mixed only in one hotel refinement.</p>
@@ -258,9 +298,9 @@
 </section>
 
 
-<section class="report-section" id="section-6">
+<section class="cs-report__section" id="section-6">
   <div class="section-head">
-    <h2>Section 6 — Minimum Pay and Credit, Hours of Service, and Contractual Legalities</h2>
+    <h2 class="cs-report__section-title">Section 6 — Minimum Pay and Credit, Hours of Service, and Contractual Legalities</h2>
     <div class="source-pills"><a class="pdf-pill" href="../contract/United_CWA-AFA_CBA_2016-2021.pdf#page=45">Current CBA p.45</a><a class="pdf-pill" href="../contract/United_CWA-AFA_TA_2025-2030.pdf#page=60">TA1 p.60</a><a class="pdf-pill" href="../contract/United_CWA-AFA_TA_2026-2031.pdf#page=55">TA2 p.55</a></div>
   </div>
   <p><strong>Status:</strong> Important improvement area, but implementation-heavy.</p>
@@ -270,9 +310,9 @@
 </section>
 
 
-<section class="report-section" id="section-7">
+<section class="cs-report__section" id="section-7">
   <div class="section-head">
-    <h2>Section 7 — Scheduling</h2>
+    <h2 class="cs-report__section-title">Section 7 — Scheduling</h2>
     <div class="source-pills"><a class="pdf-pill" href="../contract/United_CWA-AFA_CBA_2016-2021.pdf#page=59">Current CBA p.59</a><a class="pdf-pill" href="../contract/United_CWA-AFA_TA_2025-2030.pdf#page=77">TA1 p.77</a><a class="pdf-pill" href="../contract/United_CWA-AFA_TA_2026-2031.pdf#page=72">TA2 p.72</a></div>
   </div>
   <p><strong>Status:</strong> Still one of the decisive sections; improved in places, but not fundamentally reset.</p>
@@ -281,9 +321,9 @@
   <p><strong>Assessment:</strong> Mixed. TA2 keeps major scheduling architecture in place and does not fully resolve the reassignment clarity problem.</p>
 </section>
 
-<section class="report-section adjunct" id="section-7q-explainer">
+<section class="cs-report__section adjunct" id="section-7q-explainer">
   <div class="section-head">
-    <h2>Adjunct — Section 7.Q Reassignment Explainer</h2>
+    <h2 class="cs-report__section-title">Adjunct — Section 7.Q Reassignment Explainer</h2>
     <div class="source-pills"><a class="pdf-pill" href="../contract/United_CWA-AFA_CBA_2016-2021.pdf#page=59">Current CBA Section 7 p.59</a><a class="pdf-pill" href="../contract/United_CWA-AFA_TA_2025-2030.pdf#page=104">TA1 Section 7.Q p.104</a><a class="pdf-pill" href="../contract/United_CWA-AFA_TA_2026-2031.pdf#page=96">TA2 Section 7.Q p.96</a></div>
   </div>
   <p>Section 7.Q is still one of the most operationally consequential and reader-sensitive parts of the TA. TA2 carries forward a dense loss-of-flight-time and reassignment structure that determines what happens when pairings cancel, misconnect, duplicate, or otherwise become unavailable. TA2 appears to absorb the old standalone 7.Q.5 settlement-letter architecture into the body text rather than leaving it as a separate LOA, but the result is still legally dense.</p>
@@ -304,9 +344,9 @@
 </section>
 
 
-<section class="report-section" id="section-8">
+<section class="cs-report__section" id="section-8">
   <div class="section-head">
-    <h2>Section 8 — Reserve Scheduling Procedures</h2>
+    <h2 class="cs-report__section-title">Section 8 — Reserve Scheduling Procedures</h2>
     <div class="source-pills"><a class="pdf-pill" href="../contract/United_CWA-AFA_CBA_2016-2021.pdf#page=91">Current CBA p.91</a><a class="pdf-pill" href="../contract/United_CWA-AFA_TA_2025-2030.pdf#page=123">TA1 p.123</a><a class="pdf-pill" href="../contract/United_CWA-AFA_TA_2026-2031.pdf#page=114">TA2 p.114</a></div>
   </div>
   <p><strong>Status:</strong> Real improvement over the current baseline, but still below the best-in-class reserve model.</p>
@@ -315,9 +355,9 @@
   <p><strong>Assessment:</strong> Meaningful improvement, but still well short of the Southwest standard and still heavily tied to JIT / later implementation.</p>
 </section>
 
-<section class="report-section adjunct" id="reserve-vs-southwest">
+<section class="cs-report__section adjunct" id="reserve-vs-southwest">
   <div class="section-head">
-    <h2>Adjunct — Reserve versus Southwest, plus national reserve snapshots</h2>
+    <h2 class="cs-report__section-title">Adjunct — Reserve versus Southwest, plus national reserve snapshots</h2>
     <div class="source-pills"><a class="pdf-pill" href="../contract/United_CWA-AFA_CBA_2016-2021.pdf#page=91">Current CBA Section 8 p.91</a><a class="pdf-pill" href="../contract/United_CWA-AFA_TA_2025-2030.pdf#page=123">TA1 Section 8 p.123</a><a class="pdf-pill" href="../contract/United_CWA-AFA_TA_2026-2031.pdf#page=114">TA2 Section 8 p.114</a><a class="pdf-pill" href="../contract/United_CWA-AFA_TA_2026-2031.pdf#page=385">TA2 reserve implementation p.385</a></div>
   </div>
   <p>United’s RAP structure is real and materially better than a pure all-day uncertainty model. Even so, the better comparison remains Southwest, because Southwest’s reserve architecture is cleaner on liability, contact windows, and monetization. United still allows longer liability windows, optional 24-hour availability by preference, and narrower premium consequences for overreach.</p>
@@ -340,9 +380,9 @@
 </section>
 
 
-<section class="report-section" id="section-9">
+<section class="cs-report__section" id="section-9">
   <div class="section-head">
-    <h2>Section 9 — Special Qualification Flight Attendants</h2>
+    <h2 class="cs-report__section-title">Section 9 — Special Qualification Flight Attendants</h2>
     <div class="source-pills"><a class="pdf-pill" href="../contract/United_CWA-AFA_CBA_2016-2021.pdf#page=110">Current CBA p.110</a><a class="pdf-pill" href="../contract/United_CWA-AFA_TA_2025-2030.pdf#page=157">TA1 p.157</a><a class="pdf-pill" href="../contract/United_CWA-AFA_TA_2026-2031.pdf#page=146">TA2 p.146</a></div>
   </div>
   <p><strong>Status:</strong> Modified programmatically, not monetarily transformed.</p>
@@ -352,9 +392,9 @@
 </section>
 
 
-<section class="report-section" id="section-10">
+<section class="cs-report__section" id="section-10">
   <div class="section-head">
-    <h2>Section 10 — AMC Operation</h2>
+    <h2 class="cs-report__section-title">Section 10 — AMC Operation</h2>
     <div class="source-pills"><a class="pdf-pill" href="../contract/United_CWA-AFA_CBA_2016-2021.pdf#page=119">Current CBA p.119</a><a class="pdf-pill" href="../contract/United_CWA-AFA_TA_2025-2030.pdf#page=169">TA1 p.169</a><a class="pdf-pill" href="../contract/United_CWA-AFA_TA_2026-2031.pdf#page=157">TA2 p.157</a></div>
   </div>
   <p><strong>Status:</strong> Core structure largely preserved, with implementation movement.</p>
@@ -364,9 +404,9 @@
 </section>
 
 
-<section class="report-section" id="section-11">
+<section class="cs-report__section" id="section-11">
   <div class="section-head">
-    <h2>Section 11 — Training &amp; General Meetings</h2>
+    <h2 class="cs-report__section-title">Section 11 — Training &amp; General Meetings</h2>
     <div class="source-pills"><a class="pdf-pill" href="../contract/United_CWA-AFA_CBA_2016-2021.pdf#page=123">Current CBA p.123</a><a class="pdf-pill" href="../contract/United_CWA-AFA_TA_2025-2030.pdf#page=179">TA1 p.179</a><a class="pdf-pill" href="../contract/United_CWA-AFA_TA_2026-2031.pdf#page=166">TA2 p.166</a></div>
   </div>
   <p><strong>Status:</strong> Improvement area, but several gains are delayed.</p>
@@ -376,9 +416,9 @@
 </section>
 
 
-<section class="report-section" id="section-12">
+<section class="cs-report__section" id="section-12">
   <div class="section-head">
-    <h2>Section 12 — Vacations</h2>
+    <h2 class="cs-report__section-title">Section 12 — Vacations</h2>
     <div class="source-pills"><a class="pdf-pill" href="../contract/United_CWA-AFA_CBA_2016-2021.pdf#page=128">Current CBA p.128</a><a class="pdf-pill" href="../contract/United_CWA-AFA_TA_2025-2030.pdf#page=186">TA1 p.186</a><a class="pdf-pill" href="../contract/United_CWA-AFA_TA_2026-2031.pdf#page=173">TA2 p.173</a></div>
   </div>
   <p><strong>Status:</strong> Structurally respectable, economically burdened by delayed value.</p>
@@ -388,9 +428,9 @@
 </section>
 
 
-<section class="report-section" id="section-13">
+<section class="cs-report__section" id="section-13">
   <div class="section-head">
-    <h2>Section 13 — Sick Leave</h2>
+    <h2 class="cs-report__section-title">Section 13 — Sick Leave</h2>
     <div class="source-pills"><a class="pdf-pill" href="../contract/United_CWA-AFA_CBA_2016-2021.pdf#page=139">Current CBA p.139</a><a class="pdf-pill" href="../contract/United_CWA-AFA_TA_2025-2030.pdf#page=201">TA1 p.201</a><a class="pdf-pill" href="../contract/United_CWA-AFA_TA_2026-2031.pdf#page=186">TA2 p.186</a></div>
   </div>
   <p><strong>Status:</strong> One of the clearer improvement sections.</p>
@@ -400,9 +440,9 @@
 </section>
 
 
-<section class="report-section" id="section-14">
+<section class="cs-report__section" id="section-14">
   <div class="section-head">
-    <h2>Section 14 — Seniority</h2>
+    <h2 class="cs-report__section-title">Section 14 — Seniority</h2>
     <div class="source-pills"><a class="pdf-pill" href="../contract/United_CWA-AFA_CBA_2016-2021.pdf#page=146">Current CBA p.146</a><a class="pdf-pill" href="../contract/United_CWA-AFA_TA_2025-2030.pdf#page=210">TA1 p.210</a><a class="pdf-pill" href="../contract/United_CWA-AFA_TA_2026-2031.pdf#page=194">TA2 p.194</a></div>
   </div>
   <p><strong>Status:</strong> No major visible change.</p>
@@ -412,9 +452,9 @@
 </section>
 
 
-<section class="report-section" id="section-15">
+<section class="cs-report__section" id="section-15">
   <div class="section-head">
-    <h2>Section 15 — Leaves of Absence</h2>
+    <h2 class="cs-report__section-title">Section 15 — Leaves of Absence</h2>
     <div class="source-pills"><a class="pdf-pill" href="../contract/United_CWA-AFA_CBA_2016-2021.pdf#page=149">Current CBA p.149</a><a class="pdf-pill" href="../contract/United_CWA-AFA_TA_2025-2030.pdf#page=214">TA1 p.214</a><a class="pdf-pill" href="../contract/United_CWA-AFA_TA_2026-2031.pdf#page=198">TA2 p.198</a></div>
   </div>
   <p><strong>Status:</strong> Meaningful improvement area.</p>
@@ -424,9 +464,9 @@
 </section>
 
 
-<section class="report-section" id="section-16">
+<section class="cs-report__section" id="section-16">
   <div class="section-head">
-    <h2>Section 16 — Job Share and Partnership Flying Programs</h2>
+    <h2 class="cs-report__section-title">Section 16 — Job Share and Partnership Flying Programs</h2>
     <div class="source-pills"><a class="pdf-pill" href="../contract/United_CWA-AFA_CBA_2016-2021.pdf#page=161">Current CBA p.161</a><a class="pdf-pill" href="../contract/United_CWA-AFA_TA_2025-2030.pdf#page=235">TA1 p.235</a><a class="pdf-pill" href="../contract/United_CWA-AFA_TA_2026-2031.pdf#page=214">TA2 p.214</a></div>
   </div>
   <p><strong>Status:</strong> Mostly continuity with a targeted refinement.</p>
@@ -436,9 +476,9 @@
 </section>
 
 
-<section class="report-section" id="section-17">
+<section class="cs-report__section" id="section-17">
   <div class="section-head">
-    <h2>Section 17 — Filling of Vacancies</h2>
+    <h2 class="cs-report__section-title">Section 17 — Filling of Vacancies</h2>
     <div class="source-pills"><a class="pdf-pill" href="../contract/United_CWA-AFA_CBA_2016-2021.pdf#page=167">Current CBA p.167</a><a class="pdf-pill" href="../contract/United_CWA-AFA_TA_2025-2030.pdf#page=241">TA1 p.241</a><a class="pdf-pill" href="../contract/United_CWA-AFA_TA_2026-2031.pdf#page=220">TA2 p.220</a></div>
   </div>
   <p><strong>Status:</strong> Targeted improvement, not a structural rewrite.</p>
@@ -448,9 +488,9 @@
 </section>
 
 
-<section class="report-section" id="section-18">
+<section class="cs-report__section" id="section-18">
   <div class="section-head">
-    <h2>Section 18 — Reduction in Personnel</h2>
+    <h2 class="cs-report__section-title">Section 18 — Reduction in Personnel</h2>
     <div class="source-pills"><a class="pdf-pill" href="../contract/United_CWA-AFA_CBA_2016-2021.pdf#page=174">Current CBA p.174</a><a class="pdf-pill" href="../contract/United_CWA-AFA_TA_2025-2030.pdf#page=252">TA1 p.252</a><a class="pdf-pill" href="../contract/United_CWA-AFA_TA_2026-2031.pdf#page=229">TA2 p.229</a></div>
   </div>
   <p><strong>Status:</strong> Largely unchanged in its basic structure.</p>
@@ -460,9 +500,9 @@
 </section>
 
 
-<section class="report-section" id="section-19">
+<section class="cs-report__section" id="section-19">
   <div class="section-head">
-    <h2>Section 19 — Safety, Health and Security</h2>
+    <h2 class="cs-report__section-title">Section 19 — Safety, Health and Security</h2>
     <div class="source-pills"><a class="pdf-pill" href="../contract/United_CWA-AFA_CBA_2016-2021.pdf#page=179">Current CBA p.179</a><a class="pdf-pill" href="../contract/United_CWA-AFA_TA_2025-2030.pdf#page=261">TA1 p.261</a><a class="pdf-pill" href="../contract/United_CWA-AFA_TA_2026-2031.pdf#page=237">TA2 p.237</a></div>
   </div>
   <p><strong>Status:</strong> Strong non-economic improvement area.</p>
@@ -471,9 +511,9 @@
   <p><strong>Assessment:</strong> Improvement. One of the better non-economic arguments in favor of the package.</p>
 </section>
 
-<section class="report-section adjunct" id="cybersecurity-adjunct">
+<section class="cs-report__section adjunct" id="cybersecurity-adjunct">
   <div class="section-head">
-    <h2>Adjunct — Cybersecurity policy and discipline risk</h2>
+    <h2 class="cs-report__section-title">Adjunct — Cybersecurity policy and discipline risk</h2>
   </div>
   <p>This report treats cybersecurity as a management-policy layer, not as a separate negotiated discipline article. The internal policy materials reviewed for this report describe a high-control compliance environment built around monitoring, device control, record retention, and anti-ephemeral-messaging expectations. Because those materials are non-public, this report generalizes the company-policy side and focuses specifically on the contractual impact.</p>
   <p>The contractual point is narrower and more important: broader cyber policy may expand the range of company rules, system logs, device-related evidence, and records-retention expectations that appear in an investigation, but it does not create a separate discipline system outside the agreement. Any resulting discipline still runs through the same personnel-file, investigation, grievance, and arbitration machinery discussed in Sections 22, 23, and 24.</p>
@@ -483,9 +523,9 @@
 </section>
 
 
-<section class="report-section" id="section-20">
+<section class="cs-report__section" id="section-20">
   <div class="section-head">
-    <h2>Section 20 — Medical Examinations</h2>
+    <h2 class="cs-report__section-title">Section 20 — Medical Examinations</h2>
     <div class="source-pills"><a class="pdf-pill" href="../contract/United_CWA-AFA_CBA_2016-2021.pdf#page=183">Current CBA p.183</a><a class="pdf-pill" href="../contract/United_CWA-AFA_TA_2025-2030.pdf#page=268">TA1 p.268</a><a class="pdf-pill" href="../contract/United_CWA-AFA_TA_2026-2031.pdf#page=243">TA2 p.243</a></div>
   </div>
   <p><strong>Status:</strong> Modest procedural improvement relative to the current CBA; essentially unchanged versus TA1.</p>
@@ -495,9 +535,9 @@
 </section>
 
 
-<section class="report-section" id="section-21">
+<section class="cs-report__section" id="section-21">
   <div class="section-head">
-    <h2>Section 21 — Alcohol and Drug Testing</h2>
+    <h2 class="cs-report__section-title">Section 21 — Alcohol and Drug Testing</h2>
     <div class="source-pills"><a class="pdf-pill" href="../contract/United_CWA-AFA_CBA_2016-2021.pdf#page=186">Current CBA p.186</a><a class="pdf-pill" href="../contract/United_CWA-AFA_TA_2025-2030.pdf#page=272">TA1 p.272</a><a class="pdf-pill" href="../contract/United_CWA-AFA_TA_2026-2031.pdf#page=246">TA2 p.246</a></div>
   </div>
   <p><strong>Status:</strong> Largely unchanged.</p>
@@ -507,9 +547,9 @@
 </section>
 
 
-<section class="report-section" id="section-22">
+<section class="cs-report__section" id="section-22">
   <div class="section-head">
-    <h2>Section 22 — Personnel Files</h2>
+    <h2 class="cs-report__section-title">Section 22 — Personnel Files</h2>
     <div class="source-pills"><a class="pdf-pill" href="../contract/United_CWA-AFA_CBA_2016-2021.pdf#page=193">Current CBA p.193</a><a class="pdf-pill" href="../contract/United_CWA-AFA_TA_2025-2030.pdf#page=280">TA1 p.280</a><a class="pdf-pill" href="../contract/United_CWA-AFA_TA_2026-2031.pdf#page=253">TA2 p.253</a></div>
   </div>
   <p><strong>Status:</strong> Meaningful improvement area, though still somewhat messy in draft architecture.</p>
@@ -519,9 +559,9 @@
 </section>
 
 
-<section class="report-section" id="section-23">
+<section class="cs-report__section" id="section-23">
   <div class="section-head">
-    <h2>Section 23 — Investigations &amp; Grievances</h2>
+    <h2 class="cs-report__section-title">Section 23 — Investigations &amp; Grievances</h2>
     <div class="source-pills"><a class="pdf-pill" href="../contract/United_CWA-AFA_CBA_2016-2021.pdf#page=196">Current CBA p.196</a><a class="pdf-pill" href="../contract/United_CWA-AFA_TA_2025-2030.pdf#page=288">TA1 p.288</a><a class="pdf-pill" href="../contract/United_CWA-AFA_TA_2026-2031.pdf#page=260">TA2 p.260</a></div>
   </div>
   <p><strong>Status:</strong> One of the stronger institutional improvements relative to the current baseline.</p>
@@ -531,9 +571,9 @@
 </section>
 
 
-<section class="report-section" id="section-24">
+<section class="cs-report__section" id="section-24">
   <div class="section-head">
-    <h2>Section 24 — System Board of Adjustment</h2>
+    <h2 class="cs-report__section-title">Section 24 — System Board of Adjustment</h2>
     <div class="source-pills"><a class="pdf-pill" href="../contract/United_CWA-AFA_CBA_2016-2021.pdf#page=209">Current CBA p.209</a><a class="pdf-pill" href="../contract/United_CWA-AFA_TA_2025-2030.pdf#page=305">TA1 p.305</a><a class="pdf-pill" href="../contract/United_CWA-AFA_TA_2026-2031.pdf#page=276">TA2 p.276</a></div>
   </div>
   <p><strong>Status:</strong> Clear process improvement.</p>
@@ -543,9 +583,9 @@
 </section>
 
 
-<section class="report-section" id="section-25">
+<section class="cs-report__section" id="section-25">
   <div class="section-head">
-    <h2>Section 25 — Uniforms</h2>
+    <h2 class="cs-report__section-title">Section 25 — Uniforms</h2>
     <div class="source-pills"><a class="pdf-pill" href="../contract/United_CWA-AFA_CBA_2016-2021.pdf#page=214">Current CBA p.214</a><a class="pdf-pill" href="../contract/United_CWA-AFA_TA_2025-2030.pdf#page=313">TA1 p.313</a><a class="pdf-pill" href="../contract/United_CWA-AFA_TA_2026-2031.pdf#page=283">TA2 p.283</a></div>
   </div>
   <p><strong>Status:</strong> Member-facing positive, though more preservation than redesign.</p>
@@ -555,9 +595,9 @@
 </section>
 
 
-<section class="report-section" id="section-26">
+<section class="cs-report__section" id="section-26">
   <div class="section-head">
-    <h2>Section 26 — Moving Expenses</h2>
+    <h2 class="cs-report__section-title">Section 26 — Moving Expenses</h2>
     <div class="source-pills"><a class="pdf-pill" href="../contract/United_CWA-AFA_CBA_2016-2021.pdf#page=218">Current CBA p.218</a><a class="pdf-pill" href="../contract/United_CWA-AFA_TA_2025-2030.pdf#page=321">TA1 p.321</a><a class="pdf-pill" href="../contract/United_CWA-AFA_TA_2026-2031.pdf#page=290">TA2 p.290</a></div>
   </div>
   <p><strong>Status:</strong> Practical economic improvement preserved in TA2.</p>
@@ -567,9 +607,9 @@
 </section>
 
 
-<section class="report-section" id="section-27">
+<section class="cs-report__section" id="section-27">
   <div class="section-head">
-    <h2>Section 27 — Missing, Interned, Hostage or Prisoner of War</h2>
+    <h2 class="cs-report__section-title">Section 27 — Missing, Interned, Hostage or Prisoner of War</h2>
     <div class="source-pills"><a class="pdf-pill" href="../contract/United_CWA-AFA_CBA_2016-2021.pdf#page=220">Current CBA p.220</a><a class="pdf-pill" href="../contract/United_CWA-AFA_TA_2025-2030.pdf#page=323">TA1 p.323</a><a class="pdf-pill" href="../contract/United_CWA-AFA_TA_2026-2031.pdf#page=292">TA2 p.292</a></div>
   </div>
   <p><strong>Status:</strong> No major visible change.</p>
@@ -579,9 +619,9 @@
 </section>
 
 
-<section class="report-section" id="section-28">
+<section class="cs-report__section" id="section-28">
   <div class="section-head">
-    <h2>Section 28 — Commuter Program</h2>
+    <h2 class="cs-report__section-title">Section 28 — Commuter Program</h2>
     <div class="source-pills"><a class="pdf-pill" href="../contract/United_CWA-AFA_CBA_2016-2021.pdf#page=222">Current CBA p.222</a><a class="pdf-pill" href="../contract/United_CWA-AFA_TA_2025-2030.pdf#page=325">TA1 p.325</a><a class="pdf-pill" href="../contract/United_CWA-AFA_TA_2026-2031.pdf#page=294">TA2 p.294</a></div>
   </div>
   <p><strong>Status:</strong> Mixed.</p>
@@ -591,9 +631,9 @@
 </section>
 
 
-<section class="report-section" id="section-29">
+<section class="cs-report__section" id="section-29">
   <div class="section-head">
-    <h2>Section 29 — Benefits</h2>
+    <h2 class="cs-report__section-title">Section 29 — Benefits</h2>
     <div class="source-pills"><a class="pdf-pill" href="../contract/United_CWA-AFA_CBA_2016-2021.pdf#page=226">Current CBA p.226</a><a class="pdf-pill" href="../contract/United_CWA-AFA_TA_2025-2030.pdf#page=330">TA1 p.330</a><a class="pdf-pill" href="../contract/United_CWA-AFA_TA_2026-2031.pdf#page=299">TA2 p.299</a></div>
   </div>
   <p><strong>Status:</strong> One of the stronger long-run economic sections, with a critical caveat.</p>
@@ -602,9 +642,9 @@
   <p><strong>Assessment:</strong> Meaningful improvement area overall, but with the critical caveat that the sunset survives and TA2 mostly preserves, rather than newly expands, the one-year extension already present in TA1.</p>
 </section>
 
-<section class="report-section adjunct" id="retiree-medical-explainer">
+<section class="cs-report__section adjunct" id="retiree-medical-explainer">
   <div class="section-head">
-    <h2>Adjunct — Retiree-medical sunset, bridge medical, and sick-bank mechanics</h2>
+    <h2 class="cs-report__section-title">Adjunct — Retiree-medical sunset, bridge medical, and sick-bank mechanics</h2>
     <div class="source-pills"><a class="pdf-pill" href="../contract/United_CWA-AFA_CBA_2016-2021.pdf#page=236">Current retiree medical p.236</a><a class="pdf-pill" href="../contract/United_CWA-AFA_TA_2025-2030.pdf#page=343">TA1 retiree medical p.343</a><a class="pdf-pill" href="../contract/United_CWA-AFA_TA_2026-2031.pdf#page=310">TA2 retiree medical p.310</a><a class="pdf-pill" href="../contract/United_CWA-AFA_TA_2026-2031.pdf#page=314">TA2 bridge medical / sick bank p.314</a></div>
   </div>
   <p>The retiree-medical correction is essential. The current 2016–2021 CBA already contains the sunset. TA1 changes the protected window from fifteen years to sixteen years from August 28, 2016. TA2 keeps that same sixteen-year window. So TA2 does not newly extend the sunset relative to TA1; it preserves the one-year extension already won relative to the current baseline.</p>
@@ -616,9 +656,9 @@
 </section>
 
 
-<section class="report-section" id="section-30">
+<section class="cs-report__section" id="section-30">
   <div class="section-head">
-    <h2>Section 30 — Union Activities</h2>
+    <h2 class="cs-report__section-title">Section 30 — Union Activities</h2>
     <div class="source-pills"><a class="pdf-pill" href="../contract/United_CWA-AFA_CBA_2016-2021.pdf#page=268">Current CBA p.268</a><a class="pdf-pill" href="../contract/United_CWA-AFA_TA_2025-2030.pdf#page=376">TA1 p.376</a><a class="pdf-pill" href="../contract/United_CWA-AFA_TA_2026-2031.pdf#page=340">TA2 p.340</a></div>
   </div>
   <p><strong>Status:</strong> Improvement in practical representation capacity.</p>
@@ -628,9 +668,9 @@
 </section>
 
 
-<section class="report-section" id="section-31">
+<section class="cs-report__section" id="section-31">
   <div class="section-head">
-    <h2>Section 31 — Union Security and Check-Off</h2>
+    <h2 class="cs-report__section-title">Section 31 — Union Security and Check-Off</h2>
     <div class="source-pills"><a class="pdf-pill" href="../contract/United_CWA-AFA_CBA_2016-2021.pdf#page=276">Current CBA p.276</a><a class="pdf-pill" href="../contract/United_CWA-AFA_TA_2025-2030.pdf#page=385">TA1 p.385</a><a class="pdf-pill" href="../contract/United_CWA-AFA_TA_2026-2031.pdf#page=349">TA2 p.349</a></div>
   </div>
   <p><strong>Status:</strong> Largely static.</p>
@@ -640,9 +680,9 @@
 </section>
 
 
-<section class="report-section" id="section-32">
+<section class="cs-report__section" id="section-32">
   <div class="section-head">
-    <h2>Section 32 — Duration</h2>
+    <h2 class="cs-report__section-title">Section 32 — Duration</h2>
     <div class="source-pills"><a class="pdf-pill" href="../contract/United_CWA-AFA_CBA_2016-2021.pdf#page=281">Current CBA p.281</a><a class="pdf-pill" href="../contract/United_CWA-AFA_TA_2025-2030.pdf#page=390">TA1 p.390</a><a class="pdf-pill" href="../contract/United_CWA-AFA_TA_2026-2031.pdf#page=354">TA2 p.354</a></div>
   </div>
   <p><strong>Status:</strong> Structurally straightforward, economically important because of timing.</p>
@@ -652,9 +692,9 @@
 </section>
 
 
-  <section class="report-section" id="loa-appendix">
+  <section class="cs-report__section" id="loa-appendix">
     <div class="section-head">
-      <h2>Appendix A — LOA architecture</h2>
+      <h2 class="cs-report__section-title">Appendix A — LOA architecture</h2>
       <div class="source-pills">
         <a class="pdf-pill" href="../contract/United_CWA-AFA_TA_2025-2030.pdf#page=3">TA1 LOA TOC p.3</a>
         <a class="pdf-pill" href="../contract/United_CWA-AFA_TA_2026-2031.pdf#page=3">TA2 LOA TOC p.3</a>
@@ -678,9 +718,9 @@
     </div>
   </section>
 
-  <section class="report-section" id="sunset-appendix">
+  <section class="cs-report__section" id="sunset-appendix">
     <div class="section-head">
-      <h2>Appendix B — Sunset-medical / retiree-health matrix</h2>
+      <h2 class="cs-report__section-title">Appendix B — Sunset-medical / retiree-health matrix</h2>
       <div class="source-pills"><a class="pdf-pill" href="../contract/United_CWA-AFA_CBA_2016-2021.pdf#page=236">Current retiree medical p.236</a><a class="pdf-pill" href="../contract/United_CWA-AFA_TA_2025-2030.pdf#page=343">TA1 retiree medical p.343</a><a class="pdf-pill" href="../contract/United_CWA-AFA_TA_2026-2031.pdf#page=310">TA2 retiree medical p.310</a><a class="pdf-pill" href="../contract/United_CWA-AFA_TA_2026-2031.pdf#page=314">TA2 bridge medical / sick bank p.314</a></div>
     </div>
     <p>This appendix uses the stronger national overview now available from the uploaded contracts. The key point is not that every carrier gives the same benefit, but that the structures differ sharply. United remains the only reviewed contract that clearly contains a true contractual shutdown of legacy retiree-medical eligibility after a defined window.</p>
@@ -697,8 +737,8 @@
     </div>
   </section>
 
-  <section class="report-section" id="final-framework">
-    <h2>Reader decision framework</h2>
+  <section class="cs-report__section" id="final-framework">
+    <h2 class="cs-report__section-title">Reader decision framework</h2>
     <div class="final-framework">
       <div class="bucket">
         <h3>Reasons readers may view TA2 favorably</h3>
@@ -722,5 +762,9 @@
     </div>
   </section>
 </main>
+
+  <footer class="cs-report__footer">
+    <p class="cs-report__fineprint">CrewSignal · Contract Architecture & Comparative Analysis</p>
+  </footer>
 </body>
 </html>
