@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>CrewSignal | CWA-AFA · United Airlines · Section 7.Q Deep Dive</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Standalone CrewSignal explainer on United TA2 Section 7.Q reassignment and loss-of-flight-time language." />
+<link rel="stylesheet" href="/assets/css/main.css" />
+<style>
+
+  :root {
+    --border: rgba(0,0,0,.12);
+    --soft: rgba(255,255,255,.04);
+    --soft-2: rgba(255,255,255,.02);
+    --accent: #0f4c81;
+    --link: #bfdbfe;
+    --link-hover: #facc15;
+  }
+  .united-ta-report {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 2rem 1rem 4rem;
+  }
+  .united-ta-report .cs-report__section + .cs-report__section {
+    border-top: 1px solid var(--border);
+    padding-top: 1.2rem;
+    margin-top: 1.2rem;
+  }
+  .united-ta-report .cs-report__section-title {
+    margin: 0 0 .35rem;
+    font-size: 1.35rem;
+  }
+  .united-ta-report a,
+  .cs-report__header a {
+    color: var(--link);
+    text-decoration: none;
+  }
+  .united-ta-report a:hover,
+  .united-ta-report a:focus,
+  .cs-report__header a:hover,
+  .cs-report__header a:focus {
+    color: var(--link-hover);
+    text-decoration: underline;
+  }
+  .callout, .key-box {
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1rem 1.1rem;
+    background: var(--soft-2);
+    margin: 1rem 0 1.25rem;
+  }
+  .key-box {
+    border-left: 4px solid var(--accent);
+    background: var(--soft);
+  }
+  .report-structure { margin: 1rem 0 1.5rem; }
+  .report-structure ol { padding-left: 1.2rem; }
+  .toc-grid, .final-framework, .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1rem;
+    margin: 1.5rem 0 2rem;
+  }
+  .toc-card, .bucket, .hub-card {
+    border: 1px solid #d7d7d7;
+    border-radius: 10px;
+    padding: 1rem;
+    background: transparent;
+    box-shadow: none;
+  }
+  .toc-card h3, .bucket h3, .hub-card h3 {
+    margin-top: 0;
+  }
+  .toc-card ul, .bucket ul, .hub-card ul {
+    margin: .5rem 0 0;
+    padding-left: 1.1rem;
+  }
+  .toc-card p:last-child, .bucket p:last-child, .hub-card p:last-child,
+  .toc-card ul:last-child, .bucket ul:last-child, .hub-card ul:last-child {
+    margin-bottom: 0;
+  }
+  .pdf-pill {
+    display: inline-block;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: .35rem .65rem;
+    margin: .15rem .35rem .15rem 0;
+    white-space: nowrap;
+  }
+  .source-pills { margin: .55rem 0 1rem; }
+  .section-head { margin-bottom: .25rem; }
+  .table-wrap { overflow-x: auto; margin: 1rem 0 1.25rem; }
+  .compare-table { width: 100%; border-collapse: collapse; min-width: 720px; }
+  .compare-table th, .compare-table td {
+    border: 1px solid var(--border);
+    padding: .72rem .82rem;
+    text-align: left;
+    vertical-align: top;
+  }
+  .compare-table th { background: var(--soft); }
+  .footnote { font-size: .94rem; opacity: .85; }
+  .appendix-intro { margin-top: .5rem; }
+  .kicker { opacity: .85; margin: 0 0 .45rem; }
+  .hub-card h3 a { text-decoration: none; }
+  .hub-card h3 a:hover, .hub-card h3 a:focus { text-decoration: underline; }
+  @media (max-width: 780px) {
+    .united-ta-report { padding: 1.25rem .85rem 3rem; }
+    .compare-table { min-width: 640px; }
+  }
+
+</style>
+</head>
+<body class="cs-report">
+<header class="cs-report__header">
+  <a class="cs-back-link cs-report__back" href="/reports/contract-architecture/cwa-afa/united/successive-ta-comparison/">← Back to United TA comparison hub</a>
+  <p class="cs-report__eyebrow">Contract Architecture</p>
+  <h1 class="cs-report__title">CWA-AFA · United Airlines</h1>
+  <p class="cs-report__subtitle">Section 7.Q Reassignment Deep Dive</p>
+</header>
+<main class="cs-report__main united-ta-report">
+
+<section class="cs-report__section">
+  <p><strong>Compare frame:</strong> TA2 vs. TA1 and TA2 vs. the current 2016–2021 operating baseline.</p>
+  <p class="cs-editor-note"><strong>Editor’s Note:</strong> This page isolates Section 7.Q because it remains one of the hardest parts of the TA to read cleanly and one of the easiest places for otherwise favorable provisions to narrow in real operations.</p>
+  <div class="source-pills">
+    <a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_CBA_2016-2021.pdf#page=1">Current CBA</a>
+    <a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2025-2030.pdf#page=1">TA1</a>
+    <a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2026-2031.pdf#page=1">TA2</a>
+  </div>
+</section>
+
+<section class="cs-report__section" id="section-7">
+<div class="section-head">
+<h2 class="cs-report__section-title">Section 7 — Scheduling</h2>
+<div class="source-pills"><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_CBA_2016-2021.pdf#page=59">Current CBA p.59</a><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2025-2030.pdf#page=77">TA1 p.77</a><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2026-2031.pdf#page=72">TA2 p.72</a></div>
+</div>
+<p><strong>Status:</strong> Still one of the decisive sections; improved in places, but not fundamentally reset.</p>
+<p>Section 7 remains central because it governs how lineholders actually experience loss of flight time, reassignment, trip protection, and open-flying control. TA2 appears to preserve much of the broader TA1 scheduling architecture, with some targeted refinements, but it does not amount to a wholesale rebuild. The section still leaves dense language around reassignment and practical ambiguity that skeptical readers were already focused on.</p>
+<p><strong>Why it matters:</strong> Scheduling language determines whether contractual value is usable. Even when pay improves, broad company flexibility or dense loss-of-flight-time rules can materially change how that value is actually experienced. That is why Section 7.Q remains a report centerpiece rather than a side note.</p>
+<p><strong>Assessment:</strong> Mixed. TA2 keeps major scheduling architecture in place and does not fully resolve the reassignment clarity problem.</p>
+</section><section class="cs-report__section adjunct" id="section-7q-explainer">
+<div class="section-head">
+<h2 class="cs-report__section-title">Adjunct — Section 7.Q Reassignment Explainer</h2>
+<div class="source-pills"><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_CBA_2016-2021.pdf#page=59">Current CBA Section 7 p.59</a><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2025-2030.pdf#page=104">TA1 Section 7.Q p.104</a><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2026-2031.pdf#page=96">TA2 Section 7.Q p.96</a></div>
+</div>
+<p>Section 7.Q is still one of the most operationally consequential and reader-sensitive parts of the TA. TA2 carries forward a dense loss-of-flight-time and reassignment structure that determines what happens when pairings cancel, misconnect, duplicate, or otherwise become unavailable. TA2 appears to absorb the old standalone 7.Q.5 settlement-letter architecture into the body text rather than leaving it as a separate LOA, but the result is still legally dense.</p>
+<div class="table-wrap">
+<table class="compare-table">
+<thead><tr><th>Question</th><th>Report answer</th></tr></thead>
+<tbody>
+<tr><td>Did TA2 make 7.Q simple?</td><td>No. It remains one of the hardest sections to read quickly and cleanly.</td></tr>
+<tr><td>Did TA2 solve the rest / contact ambiguity?</td><td>Not clearly. The text still leaves room for dispute over when contact obligations truly end.</td></tr>
+<tr><td>Can loss of pay happen without attendance points?</td><td>Yes. That remains the clearest reader-facing problem in the architecture.</td></tr>
+<tr><td>Is this purely a TA2 problem?</td><td>No. Much of the framework predates TA2, but TA2 does not fully remove the ambiguity.</td></tr>
+</tbody>
+</table>
+</div>
+<div class="callout">
+<strong>Practical takeaway:</strong> Section 7.Q still needs careful reader attention because it is where otherwise favorable pay-protection or reassignment language can narrow sharply in real operations.
+  </div>
+</section>
+</main>
+<footer class="cs-report__footer">
+  <p class="cs-report__fineprint">CrewSignal · Contract Architecture &amp; Comparative Analysis</p>
+</footer>
+</body>
+</html>

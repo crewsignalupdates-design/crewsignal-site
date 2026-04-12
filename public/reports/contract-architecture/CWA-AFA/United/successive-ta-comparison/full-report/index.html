@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>CrewSignal | CWA-AFA · United Airlines · Full Section-by-Section Report</title>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Full section-by-section comparison of the current 2016–2021 United / CWA-AFA amendable agreement, the rejected 2025–2030 TA, and the proposed 2026–2031 TA, with integrated scope, compensation, reserve, 7.Q, cybersecurity, and retiree-medical deep dives." name="description"/>
+<link href="/assets/css/main.css" rel="stylesheet"/>
+<style>
+  :root {
+    --border: rgba(0,0,0,.12);
+    --soft: rgba(255,255,255,.04);
+    --soft-2: rgba(255,255,255,.02);
+    --accent: #0f4c81;
+    --link: #bfdbfe;
+    --link-hover: #facc15;
+  }
+  .united-ta-report {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 2rem 1rem 4rem;
+  }
+  .united-ta-report .cs-report__section + .cs-report__section {
+    border-top: 1px solid var(--border);
+    padding-top: 1.2rem;
+    margin-top: 1.2rem;
+  }
+  .united-ta-report .cs-report__section-title {
+    margin: 0 0 .35rem;
+    font-size: 1.35rem;
+  }
+  .united-ta-report a,
+  .cs-report__header a {
+    color: var(--link);
+    text-decoration: none;
+  }
+  .united-ta-report a:hover,
+  .united-ta-report a:focus,
+  .cs-report__header a:hover,
+  .cs-report__header a:focus {
+    color: var(--link-hover);
+    text-decoration: underline;
+  }
+  .callout, .key-box {
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1rem 1.1rem;
+    background: var(--soft-2);
+    margin: 1rem 0 1.25rem;
+  }
+  .key-box {
+    border-left: 4px solid var(--accent);
+    background: var(--soft);
+  }
+  .report-structure { margin: 1rem 0 1.5rem; }
+  .report-structure ol { padding-left: 1.2rem; }
+  .toc-grid, .final-framework, .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1rem;
+    margin: 1.5rem 0 2rem;
+  }
+  .toc-card, .bucket, .hub-card {
+    border: 1px solid #d7d7d7;
+    border-radius: 10px;
+    padding: 1rem;
+    background: transparent;
+    box-shadow: none;
+  }
+  .toc-card h3, .bucket h3, .hub-card h3 {
+    margin-top: 0;
+  }
+  .toc-card ul, .bucket ul, .hub-card ul {
+    margin: .5rem 0 0;
+    padding-left: 1.1rem;
+  }
+  .toc-card p:last-child, .bucket p:last-child, .hub-card p:last-child,
+  .toc-card ul:last-child, .bucket ul:last-child, .hub-card ul:last-child {
+    margin-bottom: 0;
+  }
+  .pdf-pill {
+    display: inline-block;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: .35rem .65rem;
+    margin: .15rem .35rem .15rem 0;
+    white-space: nowrap;
+  }
+  .source-pills { margin: .55rem 0 1rem; }
+  .section-head { margin-bottom: .25rem; }
+  .table-wrap { overflow-x: auto; margin: 1rem 0 1.25rem; }
+  .compare-table { width: 100%; border-collapse: collapse; min-width: 720px; }
+  .compare-table th, .compare-table td {
+    border: 1px solid var(--border);
+    padding: .72rem .82rem;
+    text-align: left;
+    vertical-align: top;
+  }
+  .compare-table th { background: var(--soft); }
+  .footnote { font-size: .94rem; opacity: .85; }
+  .appendix-intro { margin-top: .5rem; }
+  .kicker { opacity: .85; margin: 0 0 .45rem; }
+  .hub-card h3 a { text-decoration: none; }
+  .hub-card h3 a:hover, .hub-card h3 a:focus { text-decoration: underline; }
+  @media (max-width: 780px) {
+    .united-ta-report { padding: 1.25rem .85rem 3rem; }
+    .compare-table { min-width: 640px; }
+  }
+</style>
+</head>
+<body class="cs-report">
+<header class="cs-report__header">
+<a class="cs-back-link cs-report__back" href="/reports/contract-architecture/cwa-afa/united/successive-ta-comparison/">← Back to United TA comparison hub</a>
+<p class="cs-report__eyebrow">Contract Architecture</p>
+<h1 class="cs-report__title">CWA-AFA · United Airlines</h1>
+<p class="cs-report__subtitle">Full section-by-section report</p>
+</header>
+<main class="cs-report__main united-ta-report">
+<section class="cs-report__section" id="report-intro">
+<p><strong>Current agreement effective August 28, 2016 · Amendable since August 28, 2021</strong></p>
+<p>Comparison frame: current 2016–2021 amendable agreement vs. rejected 2025–2030 TA vs. proposed 2026–2031 TA</p>
+<p class="cs-editor-note"><strong>Editor’s Note:</strong> This page is written as a contract-architecture comparison, not as a campaign piece. It uses a dual frame throughout: <strong>TA2 versus TA1</strong> and <strong>TA2 versus the current 2016–2021 operating baseline</strong>. That dual frame matters because TA2’s implementation language makes clear that, until a provision is implemented, Flight Attendants continue operating under the current amendable agreement.</p>
+</section>
+<section class="cs-report__section" id="hub-quick-links">
+<div class="key-box">
+<strong>This is the longform core report.</strong> The shorter hub and standalone deep dives now live at the current main URL. Use the links below for the fastest route to the highest-demand subjects.
+  </div>
+<div class="card-grid">
+<article class="hub-card"><h3><a href="/reports/contract-architecture/CWA-AFA/United/successive-ta-comparison/scope-loa-16/">Scope / LOA 16 deep dive</a></h3><p>Expanded technical build-out of TA2’s new United Express carve-out and its tie to pilot scope.</p></article>
+<article class="hub-card"><h3><a href="/reports/contract-architecture/CWA-AFA/United/successive-ta-comparison/compensation-methodology/">Compensation / hourly vs. TFP</a></h3><p>Standalone build-out of pay architecture, Alaska conversion methodology, and Southwest’s TFP model.</p></article>
+<article class="hub-card"><h3><a href="/reports/contract-architecture/CWA-AFA/United/successive-ta-comparison/reserve-analysis/">Reserve analysis</a></h3><p>United reserve in context, with Southwest and regional comparators.</p></article>
+<article class="hub-card"><h3><a href="/reports/contract-architecture/CWA-AFA/United/successive-ta-comparison/retiree-medical/">Retiree-medical deep dive</a></h3><p>Sunset, bridge medical, sick-bank mechanics, and the national matrix.</p></article>
+<article class="hub-card"><h3><a href="/reports/contract-architecture/CWA-AFA/United/successive-ta-comparison/section-7q/">Section 7.Q explainer</a></h3><p>Dense reassignment and loss-of-flight-time language in standalone form.</p></article>
+<article class="hub-card"><h3><a href="/reports/contract-architecture/CWA-AFA/United/successive-ta-comparison/cybersecurity-discipline/">Cybersecurity / discipline</a></h3><p>Generalized management-policy analysis tied back to the CBA’s due-process architecture.</p></article>
+</div>
+</section>
+
+<section class="cs-report__section" id="final-structure">
+<h2 class="cs-report__section-title">Full final structure</h2>
+<div class="report-structure">
+<ol>
+<li>Executive summary</li>
+<li>Methodology / how to use the report</li>
+<li>Core section-by-section breakdown of Sections 1–32</li>
+<li>Adjunct explainers inserted where they belong: Scope / LOA 16, compensation method, Section 7.Q, reserve, cybersecurity, retiree medical</li>
+<li>LOA appendix</li>
+<li>Sunset-medical appendix / national matrix</li>
+</ol>
+</div>
+<div class="key-box">
+<strong>Bottom line:</strong> TA2 is better than the current amendable contract in many meaningful ways and preserves or slightly improves many gains first introduced in TA1. It is not a wholesale rebuild. The package remains mixed: real gains, real weaknesses, and significant value that depends on delayed implementation rather than immediate delivery.
+    </div>
+</section>
+<section class="cs-report__section" id="executive-summary">
+<h2 class="cs-report__section-title">Executive summary</h2>
+<p>The proposed 2026–2031 TA is best understood as a targeted revision rather than a fundamental reset. Some areas are materially better. Some largely carry forward prior tentative-agreement structure. Some remain structurally underwhelming. And several of the most important reader questions — senior-scale economics, premium structure, scope, reserve quality, retiree-medical permanence, and Section 7.Q reassignment clarity — remain only partly resolved.</p>
+<div class="table-wrap">
+<table class="compare-table">
+<thead>
+<tr><th>Issue</th><th>TA2 vs. TA1</th><th>TA2 vs. current operating baseline</th><th>Read</th></tr>
+</thead>
+<tbody>
+<tr><td>Section 1 body text</td><td>No major visible change.</td><td>No major visible change.</td><td>Scope story is not in Section 1 body text.</td></tr>
+<tr><td>Scope LOA 16</td><td>New carve-out in TA2.</td><td>Material new opening not found in the current CBA.</td><td>Major issue.</td></tr>
+<tr><td>Compensation</td><td>Some front-end improvements, no premium-pay breakthrough, vacation timing worsens.</td><td>Large improvement once implemented.</td><td>Mixed.</td></tr>
+<tr><td>Sit pay</td><td>Real new item in TA2.</td><td>Real new item versus the current baseline.</td><td>Treat as genuine new compensation.</td></tr>
+<tr><td>Reserve</td><td>Narrow improvement.</td><td>Meaningful modernization over the current baseline.</td><td>Still below Southwest’s strongest model.</td></tr>
+<tr><td>Retiree-medical sunset</td><td>No further extension beyond TA1.</td><td>One-year extension versus the current CBA.</td><td>Sunset preserved, not abolished.</td></tr>
+<tr><td>Sections 22–24 enforcement architecture</td><td>Mostly preserved from TA1.</td><td>Clear improvement over the current baseline.</td><td>One of the strongest institutional positives.</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+<section class="cs-report__section" id="methodology">
+<h2 class="cs-report__section-title">Methodology / how to use the report</h2>
+<p>This report asks four separate questions that are often blurred together in summary materials: what changed in the text, what changed in actual day-to-day value, what is immediate versus delayed, and what remains weaker even after some improvement. The most important methodological rule is simple: the Letters of Agreement are part of the contract architecture, not optional appendices.</p>
+<p>The second methodological rule is equally important: this report does not assign bargaining motive where the documents do not support it. On questions like scope or TFP, it states the contractual effect and the management or operational advantage that flows directly from the text. That is different from guessing at subjective motive.</p>
+<div class="source-pills"><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2026-2031.pdf#page=371">TA2 LOA 9 p.371</a><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2026-2031.pdf#page=374">TA2 current-baseline rule p.374</a></div>
+<p class="footnote">All major United section headers below include direct page-specific PDF links using the current CBA, TA1, and TA2. Key adjunct explainers also link directly to the relevant United LOA or subsection pages.</p>
+</section>
+<section class="cs-report__section" id="report-toc">
+<h2 class="cs-report__section-title">Report contents</h2>
+<div class="toc-grid">
+<div class="toc-card">
+<h3>Main body — Sections 1–16</h3>
+<ul><li><a href="#section-1">Section 1</a></li><li><a href="#section-2">Section 2</a></li><li><a href="#section-3">Section 3</a></li><li><a href="#section-4">Section 4</a></li><li><a href="#section-5">Section 5</a></li><li><a href="#section-6">Section 6</a></li><li><a href="#section-7">Section 7</a></li><li><a href="#section-8">Section 8</a></li><li><a href="#section-9">Section 9</a></li><li><a href="#section-10">Section 10</a></li><li><a href="#section-11">Section 11</a></li><li><a href="#section-12">Section 12</a></li><li><a href="#section-13">Section 13</a></li><li><a href="#section-14">Section 14</a></li><li><a href="#section-15">Section 15</a></li><li><a href="#section-16">Section 16</a></li></ul>
+</div>
+<div class="toc-card">
+<h3>Main body — Sections 17–32</h3>
+<ul><li><a href="#section-17">Section 17</a></li><li><a href="#section-18">Section 18</a></li><li><a href="#section-19">Section 19</a></li><li><a href="#section-20">Section 20</a></li><li><a href="#section-21">Section 21</a></li><li><a href="#section-22">Section 22</a></li><li><a href="#section-23">Section 23</a></li><li><a href="#section-24">Section 24</a></li><li><a href="#section-25">Section 25</a></li><li><a href="#section-26">Section 26</a></li><li><a href="#section-27">Section 27</a></li><li><a href="#section-28">Section 28</a></li><li><a href="#section-29">Section 29</a></li><li><a href="#section-30">Section 30</a></li><li><a href="#section-31">Section 31</a></li><li><a href="#section-32">Section 32</a></li></ul>
+</div>
+<div class="toc-card">
+<h3>Integrated adjuncts</h3>
+<ul>
+<li><a href="#scope-alert">Scope alert / LOA 16</a></li>
+<li><a href="#compensation-adjunct">Compensation architecture</a></li>
+<li><a href="#tfp-methodology">Hourly vs. TFP methodology</a></li>
+<li><a href="#section-7q-explainer">Section 7.Q explainer</a></li>
+<li><a href="#reserve-vs-southwest">Reserve vs. Southwest</a></li>
+<li><a href="#cybersecurity-adjunct">Cybersecurity and discipline</a></li>
+<li><a href="#retiree-medical-explainer">Retiree-medical / bridge-medical explainer</a></li>
+</ul>
+</div>
+<div class="toc-card">
+<h3>Appendices</h3>
+<ul>
+<li><a href="#loa-appendix">LOA appendix</a></li>
+<li><a href="#sunset-appendix">Sunset-medical appendix / matrix</a></li>
+<li><a href="#final-framework">Reader decision framework</a></li>
+</ul>
+</div>
+</div>
+</section>
+<section class="cs-report__section" id="section-1">
+<div class="section-head">
+<h2 class="cs-report__section-title">Section 1 — Recognition, Successorship and Mergers</h2>
+<div class="source-pills"><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_CBA_2016-2021.pdf#page=4">Current CBA p.4</a><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2025-2030.pdf#page=4">TA1 p.4</a><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2026-2031.pdf#page=4">TA2 p.4</a></div>
+</div>
+<p><strong>Status:</strong> No material change in the body text.</p>
+<p>Across the current 2016–2021 amendable agreement, the rejected 2025–2030 TA, and the proposed 2026–2031 TA, the core Section 1 architecture remains substantively stable. Recognition language, successorship protections, McCaskill-Bond seniority integration, separate operations before integrated lists and post-merger rates/rules/working conditions, no-furlough-before-integration, and expedited arbitration all remain in place. TA2 does not use the body of Section 1 as the place for a large new merger-protection response to the rejection of TA1.</p>
+<p><strong>Why it matters:</strong> That matters because readers should not confuse a stable Section 1 with a stable scope regime overall. The real scope development sits outside the body text, in TA2’s Scope LOA 16.</p>
+<p><strong>Assessment:</strong> No material change in the body text; the consequential issue is in LOA 16, not Section 1 itself.</p>
+</section>
+
+<section class="cs-report__section adjunct" id="scope-alert">
+<div class="section-head">
+<h2 class="cs-report__section-title">Adjunct — Scope / LOA 16 / United Express deep dive</h2>
+<div class="source-pills">
+<a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_CBA_2016-2021.pdf#page=404">Current CBA Scope LOA 25 p.404</a>
+<a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2025-2030.pdf#page=436">TA1 Scope LOA 16 p.436</a>
+<a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2026-2031.pdf#page=407">TA2 Scope LOA 16 p.407</a>
+<a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_ALPA_Agreement_2023-09-29.pdf#page=10">Pilot Agreement Section 1 p.10</a>
+<a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_ALPA_Agreement_2023-09-29.pdf#page=11">Pilot Agreement United Express caps p.11</a>
+<a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_ALPA_Agreement_2023-09-29.pdf#page=12">Pilot Agreement growth formula p.12</a>
+<a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_ALPA_Agreement_2023-09-29.pdf#page=13">Pilot Agreement furlough effect p.13</a>
+</div>
+</div>
+<div class="key-box">
+<strong>Bottom line:</strong> TA2’s LOA 16 is a partial shield, not a full shield. It protects United Flight Attendants strongly when the flying stays on United pilots, but it also creates a new contractual path for controlled United Express regional flying to be staffed by non-mainline Flight Attendants.
+  </div>
+<p>The current amendable CBA and the rejected TA1 both use the older three-part scope model: controlled entities may not conduct commercial flight operations historically performed by United Flight Attendants unless they use United-system Flight Attendants; United may not establish or purchase an alter-ego airline; and if United establishes or purchases a commuter airline (primary 135 carrier), AFA is recognized and the parties bargain a competitive agreement no less favorable than area-standard contracts for similar flying.</p>
+<p>TA2 keeps those paragraphs and then adds two new pieces. Paragraph 4 says all flights operated by pilots covered by the United pilot agreement and requiring Flight Attendants must be staffed by United Flight Attendants. Paragraph 5 then says United may create or acquire a controlling interest in and control of a regional carrier conducting United Express Flying, and that carrier’s flights may be staffed by that carrier’s own Flight Attendants unless the flights are operated by United pilots, in which case they must be staffed by United Flight Attendants.</p>
+<div class="table-wrap">
+<table class="compare-table">
+<thead>
+<tr><th>Question</th><th>Current CBA</th><th>TA1</th><th>TA2</th></tr>
+</thead>
+<tbody>
+<tr><td>Controlled entity doing historically mainline-type flying</td><td>Must use United-system Flight Attendants.</td><td>Same basic rule.</td><td>Same rule remains in paragraphs 1–3.</td></tr>
+<tr><td>Alter-ego prohibition</td><td>Yes.</td><td>Yes.</td><td>Yes.</td></tr>
+<tr><td>Commuter-airline fallback / representation clause</td><td>Yes — AFA recognition plus area-standard bargaining floor.</td><td>Same.</td><td>Same.</td></tr>
+<tr><td>Flights operated by United pilots</td><td>No parallel pilot-tie rule.</td><td>No parallel pilot-tie rule.</td><td>Must be staffed by United Flight Attendants.</td></tr>
+<tr><td>Controlled United Express regional-carrier carve-out</td><td>No.</td><td>No.</td><td>Yes — that carrier may use its own Flight Attendants unless the flights are operated by United pilots.</td></tr>
+</tbody>
+</table>
+</div>
+<p>The United pilot agreement is why the new language matters so much. Pilot scope gives United pilots the exclusive right to perform Company Flying, but it separately defines and permits United Express Flying. Under Section 1-C-1, United Express flying is regional-aircraft flying on another operating certificate using the United code and United Express or similar branding, or under a revenue-share arrangement. The pilot agreement also says United or a company affiliate may create, acquire, control, manage, take an equity interest in, or transfer aircraft to United Express carriers that comply with Section 1-C-1, and that those operations are not considered Company Flying or Company Aircraft.</p>
+<p>That means LOA 16 does not import pilot scope as a full mainline exclusivity clause for Flight Attendants. Instead, it imports the pilot agreement’s regional-flying framework — including its permissions and its fences.</p>
+<div class="table-wrap">
+<table class="compare-table">
+<thead>
+<tr><th>Pilot-side United Express fence</th><th>What it does</th><th>Why it matters for Flight Attendants</th></tr>
+</thead>
+<tbody>
+<tr><td>Aircraft-type / size caps</td><td>Permits 37-seat turboprops, capped 50-seaters, and a baseline of up to 255 combined 70/76-seat aircraft, of which up to 153 may be 76-seat aircraft.</td><td>These are real limits, but they still allow a substantial regional footprint.</td></tr>
+<tr><td>Stage-length rule</td><td>At least 80% of United Express flights each month must be under 900 miles.</td><td>Protects some network shape, but does not eliminate regional flying.</td></tr>
+<tr><td>Hub-to-hub cap</td><td>Hub-to-hub United Express block hours are capped at 5% of total United Express block hours.</td><td>This restrains, but does not bar, high-visibility network substitution.</td></tr>
+<tr><td>Growth formula</td><td>If United adds new small narrowbody aircraft, the pilot agreement allows growth above the baseline caps up to 223 76-seat aircraft and 325 combined 76/70-seat aircraft, with corresponding 50-seat reductions.</td><td>The box can expand, which matters because TA2 ties AFA scope to that pilot-defined box.</td></tr>
+<tr><td>Furlough effect</td><td>If a protected United pilot is furloughed, all 76-seat aircraft must be converted to 70-seat operation until the protection no longer applies.</td><td>A real pilot-side backstop, but still not a mainline-flight-attendant exclusivity rule.</td></tr>
+</tbody>
+</table>
+</div>
+<div class="callout">
+<h3>What LOA 16 protects</h3>
+<ul>
+<li>If a flight is operated by pilots covered by the United pilot agreement and requires Flight Attendants, it must be staffed by United Flight Attendants.</li>
+<li>TA2 imports the pilot agreement’s aircraft, ratio, network, and furlough-related United Express limits rather than leaving the new carve-out completely open-ended.</li>
+<li>The older alter-ego and commuter-airline recognition language remains in place.</li>
+</ul>
+</div>
+<div class="callout">
+<h3>What LOA 16 exposes</h3>
+<ul>
+<li>United may now create or acquire a controlled United Express regional carrier and staff that carrier’s flights with that carrier’s own Flight Attendants unless the flights are operated by United pilots.</li>
+<li>Protection becomes derivative: where pilot scope places the flying matters to Flight Attendant staffing.</li>
+<li>Because TA2 imports the pilot agreement’s United Express provisions “as it may be amended,” the outer boundary of the carve-out can move with later pilot-scope amendments.</li>
+</ul>
+</div>
+<div class="table-wrap">
+<table class="compare-table">
+<thead>
+<tr><th>Comparator agreement</th><th>Scope style</th><th>United TA2 contrast</th></tr>
+</thead>
+<tbody>
+<tr><td>Alaska</td><td>Part 121 exclusivity: the carrier will not engage in Part 121 operations unless all flying is performed exclusively by Flight Attendants on the Alaska seniority list.</td><td>More direct all-flying protection than LOA 16’s pilot-linked model.</td></tr>
+<tr><td>Horizon</td><td>All Part 121 flying plus transfer / parallel-operations and foreign-domicile bargaining protections.</td><td>Again, more directly written around Flight Attendant flying itself.</td></tr>
+<tr><td>Spirit</td><td>All flying on company aircraft or under company operational control, including wet leases, on the Spirit seniority list, subject to narrow temporary exceptions.</td><td>Broader direct cabin-scope language than TA2.</td></tr>
+<tr><td>Republic</td><td>Parent / subsidiary / future-certificate coverage, no alter-ego, no evasive transfer of aircraft, routes, or authority.</td><td>Stronger anti-fragmentation language than TA2’s derivative model.</td></tr>
+</tbody>
+</table>
+</div>
+<div class="callout">
+<h3>No-speculation guardrail</h3>
+<p>The documents support the contractual opening and the pilot-side limits. They do not prove why United wanted the change, whether management plans to use it aggressively, or what outside corporate strategy may follow. The report stays at the contractual level.</p>
+</div>
+<p><strong>Assessment:</strong> TA2’s LOA 16 is mixed but leans concessionary from a pure scope perspective. It adds a real staffing protection for flights that remain on United pilots, but it also adds a material new United Express carve-out not found in the current CBA or TA1.</p>
+</section>
+
+<section class="cs-report__section" id="section-2">
+<div class="section-head">
+<h2 class="cs-report__section-title">Section 2 — Definitions</h2>
+<div class="source-pills"><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_CBA_2016-2021.pdf#page=7">Current CBA p.7</a><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2025-2030.pdf#page=7">TA1 p.7</a><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2026-2031.pdf#page=7">TA2 p.7</a></div>
+</div>
+<p><strong>Status:</strong> Selective improvement, but largely carry-forward from TA1.</p>
+<p>The clearest definitional improvement is the holiday language. The current amendable contract caps paid holidays at five. TA1 raises that structure to six and restores or broadens holiday language for international domiciles, and TA2 preserves that broader structure. Most of the other core scheduling and pay-related definitions appear substantially carried forward.</p>
+<p><strong>Why it matters:</strong> Definitions are never cosmetic if they govern later sections. Here, the real gain is not that TA2 newly solved the issue relative to TA1; it is that TA2 preserves a real improvement over the current operating baseline.</p>
+<p><strong>Assessment:</strong> Improvement relative to the current CBA; largely preservation of a TA1 gain, not a new TA2 breakthrough.</p>
+</section>
+<section class="cs-report__section" id="section-3">
+<div class="section-head">
+<h2 class="cs-report__section-title">Section 3 — General</h2>
+<div class="source-pills"><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_CBA_2016-2021.pdf#page=13">Current CBA p.13</a><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2025-2030.pdf#page=14">TA1 p.14</a><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2026-2031.pdf#page=13">TA2 p.13</a></div>
+</div>
+<p><strong>Status:</strong> Mostly unchanged, with one visible regression.</p>
+<p>Most of Section 3 appears substantially carried forward. Jumpseat rules, reciprocal cabin seat structure, pass-travel framework, deadhead and general operational provisions do not show a major rewrite. The visible negative change is the disappearance of the individual physical mailbox language that existed in the current contract and remained in TA1.</p>
+<p><strong>Why it matters:</strong> This is not a marquee economic issue, but it is a concrete example of the second TA not simply layering in gains everywhere. It is also a useful reminder that small workplace protections can disappear even in a package marketed around improvements.</p>
+<p><strong>Assessment:</strong> Mixed to slightly negative; mostly continuity, with the mailbox language gone from TA2.</p>
+</section>
+<section class="cs-report__section" id="section-4">
+<div class="section-head">
+<h2 class="cs-report__section-title">Section 4 — Compensation</h2>
+<div class="source-pills">
+<a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_CBA_2016-2021.pdf#page=31">Current CBA p.31</a>
+<a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2025-2030.pdf#page=38">TA1 p.38</a>
+<a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2026-2031.pdf#page=35">TA2 p.35</a>
+<a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2026-2031.pdf#page=45">TA2 Boarding Pay p.45</a>
+<a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2026-2031.pdf#page=46">TA2 Sit Pay p.46</a>
+</div>
+</div>
+<p><strong>Status:</strong> Mixed and structurally important.</p>
+<p>Section 4 is where TA2 most clearly tries to answer the rejection of TA1, but the answer remains incomplete. TA2 sweetens selected junior and some mid-scale hourly checkpoints, adds a later terminal year, and adds a genuine new pay item in sit pay. At the same time, many senior-scale readers will still see weaker later equivalent checkpoints than they expected, premium position economics remain largely unchanged, and the 3:30 vacation-pay value is still delayed until the January 2031 bid period.</p>
+<p><strong>Why it matters:</strong> Compensation cannot be reduced to a single headline rate table. TA2 still sits inside a fundamentally hourly pay structure, and that matters for how boarding, sit time, reserve, rigs, and trip shape are monetized. The section is stronger than the current baseline and in places stronger than TA1, but it is still not a clean all-scale compensation win.</p>
+<p><strong>Assessment:</strong> Real front-end gains, real new sit pay, but still a mixed compensation section because value remains uneven, premium structure is mostly preserved, and some important economics remain delayed.</p>
+</section>
+<section class="cs-report__section adjunct" id="compensation-adjunct">
+<div class="section-head">
+<h2 class="cs-report__section-title">Adjunct — Compensation Architecture and the hourly-to-TFP problem</h2>
+<div class="source-pills">
+<a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_CBA_2016-2021.pdf#page=31">Current CBA Section 4 p.31</a>
+<a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2025-2030.pdf#page=38">TA1 Section 4 p.38</a>
+<a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2026-2031.pdf#page=35">TA2 Section 4 p.35</a>
+<a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2026-2031.pdf#page=45">TA2 Boarding Pay p.45</a>
+<a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2026-2031.pdf#page=46">TA2 Sit Pay p.46</a>
+<a class="pdf-pill" href="https://afaalaska.org/wp-content/uploads/2026/03/2025-2028-AFA-Alaska-CBA-Final-03.11.2026.pdf#page=116" rel="noopener" target="_blank">Alaska Section 21 p.116</a>
+<a class="pdf-pill" href="https://afaalaska.org/wp-content/uploads/2026/03/2025-2028-AFA-Alaska-CBA-Final-03.11.2026.pdf#page=211" rel="noopener" target="_blank">Alaska LOA 16 p.211</a>
+<a class="pdf-pill" href="https://media.twu556.org/2024/03/29174633/TA2024-Annotated-Combined.3-29-24.pdf#page=14" rel="noopener" target="_blank">Southwest TFP definition p.14</a>
+<a class="pdf-pill" href="https://media.twu556.org/2024/03/29174633/TA2024-Annotated-Combined.3-29-24.pdf#page=100" rel="noopener" target="_blank">Southwest reserve pay p.100</a>
+<a class="pdf-pill" href="https://media.twu556.org/2024/03/29174633/TA2024-Annotated-Combined.3-29-24.pdf#page=177" rel="noopener" target="_blank">Southwest RIGs p.177</a>
+</div>
+</div>
+<div class="table-wrap">
+<table class="compare-table">
+<thead><tr><th>Issue</th><th>Current CBA</th><th>TA1</th><th>TA2</th><th>Read</th></tr></thead>
+<tbody>
+<tr><td>Base hourly rates</td><td>Current 2016–2021 scale remains the operating baseline until implemented changes arrive.</td><td>Major forward move over the current baseline.</td><td>Selected junior and some mid-scale improvements over TA1, but not a clean senior-scale win at equivalent checkpoints.</td><td>Mixed by step; stronger early, less decisive later.</td></tr>
+<tr><td>Premium / override structure</td><td>Legacy premium structure.</td><td>No major premium breakthrough.</td><td>Still no major premium-structure breakthrough.</td><td>Continuity more than invention.</td></tr>
+<tr><td>Boarding pay</td><td>No boarding-pay architecture.</td><td>Introduced as a major new pay concept.</td><td>Preserved at fifty percent of the Section 4.A rate and paid for pay only, not credit.</td><td>Real added money, but still layered on an hourly structure.</td></tr>
+<tr><td>Sit pay</td><td>No comparable sit-pay item surfaced.</td><td>Not the defining compensation story.</td><td>New pay item: one minute paid for every two minutes of scheduled ground time over 2:30, pay only and not credit.</td><td>True new compensation item in TA2.</td></tr>
+<tr><td>Vacation-pay value</td><td>Current baseline remains lower.</td><td>3:30 value would have arrived earlier.</td><td>3:30 vacation pay delayed to the January 2031 bid period.</td><td>Important giveback in timing.</td></tr>
+<tr><td>Implementation timing</td><td>Current contract governs until implemented changes arrive.</td><td>Already contained large future-value assumptions.</td><td>Still heavily dependent on phased implementation.</td><td>Readers must price timing, not just text.</td></tr>
+</tbody>
+</table>
+</div>
+<div class="callout" id="tfp-methodology">
+<h3>Methodology note — hourly versus TFP is not apples-to-apples</h3>
+<p>United still pays from an hourly framework. TA2 adds boarding pay and sit pay, but both are layered on top of hourly rates rather than replacing the pay unit. Boarding pay is fifty percent of the Section 4.A rate, and sit pay is one minute paid for every two minutes of scheduled ground time over two hours and thirty minutes; both are pay only and not credit. That means TA2 adds real money, but it does not turn United into a TFP contract.</p>
+<p>Alaska is the clearest formal conversion comparator because Alaska’s own CBA publishes “Block Hour Equivalents of Base TFP Step Rates” for industry comparison purposes only while expressly stating that Alaska Flight Attendants are not paid in block hours. Alaska’s LOA 16 then shows how Alaska itself normalizes hourly carriers against TFP carriers: it converts hourly scales using a twelve-month trailing ratio of scheduled “hard” TFP to scheduled block hours, caps annual movement in that ratio, uses a 2025 baseline conversion ratio of 1.11, and reduces carriers without boarding pay by 9.6% before averaging. Alaska’s own contract therefore confirms that cross-carrier pay comparisons require explicit assumptions and cannot be reduced to a single headline table.</p>
+<p>Southwest is the clearest architecture comparator. Southwest defines TFP as Trips for Pay and then prices compensation through TFP-based minimums and reserve values rather than through raw block hours alone. Its current structure uses an Average Daily Guarantee of 6.5 TFP, a Duty Period Minimum of 4.0 TFP, a Duty Hour Ratio of .74 TFP for each duty hour, and a Trip Hour Ratio of 1.0 TFP for each 3:00 away from domicile. Southwest reserve pay is also expressed directly in TFP, with a monthly reserve guarantee ranging from 78 to 110.5 TFP at 6.5 TFP per reserve day.</p>
+<p><strong>What advantage does a carrier get from TFP?</strong> Without subjective speculation, the structural advantage is clear: a TFP system prices the pairing as a production unit rather than compensating only raw block. That allows management to embed duty-day minimums, time-away-from-base ratios, reserve-day values, boarding economics, holiday premiums, and other trip-shape assumptions inside one pay architecture. Whether that is better for workers depends on the surrounding rigs, reserve monetization, overrides, retirement design, and schedule protections — not on the existence of TFP by itself.</p>
+</div>
+<div class="table-wrap" id="comp-architecture-benchmark">
+<table class="compare-table">
+<thead><tr><th>Architecture question</th><th>United TA2</th><th>Alaska</th><th>Southwest</th><th>Why it matters</th></tr></thead>
+<tbody>
+<tr><td>Core pay unit</td><td>Hourly rate plus layered add-pay items.</td><td>TFP, with block-hour equivalents published for comparison only.</td><td>TFP, explicitly defined as Trips for Pay.</td><td>The pay unit shapes what counts as “work” in the compensation model.</td></tr>
+<tr><td>How boarding is monetized</td><td>Paid at 50% of hourly rate; pay only, not credit.</td><td>Paid at 0.50 TFP per boarding, with Alaska showing a wide compensation range depending on trip shape and number of boardings.</td><td>Boarding is not broken out the same way; the system instead leans more heavily on TFP-based rigs and pairing valuation.</td><td>Two systems can produce similar annual earnings while monetizing different parts of the operation.</td></tr>
+<tr><td>How reserve is monetized</td><td>Reserve is improved operationally, but still sits inside a mainly hourly framework plus separate add-pay concepts.</td><td>TFP carrier, but Alaska’s comparator value comes more from the formal conversion methodology than from a Southwest-style reserve benchmark.</td><td>Reserve is monetized directly in TFP, including a 6.5-TFP daily value and a 78–110.5 TFP monthly guarantee.</td><td>Reserve quality is part of compensation, not just a scheduling issue.</td></tr>
+<tr><td>Cross-carrier comparison method</td><td>Hourly table alone is incomplete.</td><td>Alaska contractually normalizes hourly and TFP systems before comparing them.</td><td>Southwest shows what a mature TFP architecture looks like once the entire contract is built around it.</td><td>The correct comparison is methodological, not rhetorical.</td></tr>
+</tbody>
+</table>
+</div>
+<div class="callout">
+<strong>Plain-English takeaway:</strong> TA2’s pay story is not “hourly versus TFP, and TFP automatically wins.” The stronger statement is narrower and more defensible: United remains an hourly contract with meaningful new add-pay items, while Alaska and Southwest show two different ways TFP systems can embed more of the workday into the pay architecture.
+  </div>
+</section>
+<section class="cs-report__section" id="section-5">
+<div class="section-head">
+<h2 class="cs-report__section-title">Section 5 — Expenses, Transportation and Lodging</h2>
+<div class="source-pills"><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_CBA_2016-2021.pdf#page=39">Current CBA p.39</a><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2025-2030.pdf#page=50">TA1 p.50</a><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2026-2031.pdf#page=47">TA2 p.47</a></div>
+</div>
+<p><strong>Status:</strong> Improvement relative to the current baseline; mixed only in one hotel refinement.</p>
+<p>TA2 preserves the larger per diem economics and the stronger hotel-gainshare structure that already appeared in TA1. Relative to the current contract, the move from a 19-hour to a 17-hour downtown / downtown-like hotel threshold remains a real gain. The one mixed comparison point is the hotel room-not-ready trigger: TA1 used the originally scheduled arrival, while TA2 returns to an arrival-based trigger with an early-arrival offset.</p>
+<p><strong>Why it matters:</strong> This section affects daily quality of life and out-of-pocket exposure. It is stronger than a quick read suggests, but the fairest read is still that TA2 mostly preserves gains already won in TA1 rather than materially expanding them.</p>
+<p><strong>Assessment:</strong> Improvement over the current CBA; mostly TA1-to-TA2 preservation, with a mixed hotel-timing refinement.</p>
+</section>
+<section class="cs-report__section" id="section-6">
+<div class="section-head">
+<h2 class="cs-report__section-title">Section 6 — Minimum Pay and Credit, Hours of Service, and Contractual Legalities</h2>
+<div class="source-pills"><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_CBA_2016-2021.pdf#page=45">Current CBA p.45</a><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2025-2030.pdf#page=60">TA1 p.60</a><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2026-2031.pdf#page=55">TA2 p.55</a></div>
+</div>
+<p><strong>Status:</strong> Important improvement area, but implementation-heavy.</p>
+<p>Section 6 remains one of the most important quality-of-life sections in the entire report. The TA architecture shows real duty, rest, and legality changes, but many of the most meaningful items are tied to implementation timing rather than immediate ratification effect. That means TA2 cannot be evaluated on text alone; it must be read with LOA 9.</p>
+<p><strong>Why it matters:</strong> For readers actually working the current contract, the practical question is not whether Section 6 eventually improves, but how soon. Because implementation is staggered, this section strengthens the pro-ratification case in principle while remaining more back-loaded than the headline story suggests.</p>
+<p><strong>Assessment:</strong> Improvement relative to the current baseline, but with major timing caveats and less fresh TA2 innovation than summary language may imply.</p>
+</section>
+<section class="cs-report__section" id="section-7">
+<div class="section-head">
+<h2 class="cs-report__section-title">Section 7 — Scheduling</h2>
+<div class="source-pills"><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_CBA_2016-2021.pdf#page=59">Current CBA p.59</a><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2025-2030.pdf#page=77">TA1 p.77</a><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2026-2031.pdf#page=72">TA2 p.72</a></div>
+</div>
+<p><strong>Status:</strong> Still one of the decisive sections; improved in places, but not fundamentally reset.</p>
+<p>Section 7 remains central because it governs how lineholders actually experience loss of flight time, reassignment, trip protection, and open-flying control. TA2 appears to preserve much of the broader TA1 scheduling architecture, with some targeted refinements, but it does not amount to a wholesale rebuild. The section still leaves dense language around reassignment and practical ambiguity that skeptical readers were already focused on.</p>
+<p><strong>Why it matters:</strong> Scheduling language determines whether contractual value is usable. Even when pay improves, broad company flexibility or dense loss-of-flight-time rules can materially change how that value is actually experienced. That is why Section 7.Q remains a report centerpiece rather than a side note.</p>
+<p><strong>Assessment:</strong> Mixed. TA2 keeps major scheduling architecture in place and does not fully resolve the reassignment clarity problem.</p>
+</section>
+<section class="cs-report__section adjunct" id="section-7q-explainer">
+<div class="section-head">
+<h2 class="cs-report__section-title">Adjunct — Section 7.Q Reassignment Explainer</h2>
+<div class="source-pills"><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_CBA_2016-2021.pdf#page=59">Current CBA Section 7 p.59</a><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2025-2030.pdf#page=104">TA1 Section 7.Q p.104</a><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2026-2031.pdf#page=96">TA2 Section 7.Q p.96</a></div>
+</div>
+<p>Section 7.Q is still one of the most operationally consequential and reader-sensitive parts of the TA. TA2 carries forward a dense loss-of-flight-time and reassignment structure that determines what happens when pairings cancel, misconnect, duplicate, or otherwise become unavailable. TA2 appears to absorb the old standalone 7.Q.5 settlement-letter architecture into the body text rather than leaving it as a separate LOA, but the result is still legally dense.</p>
+<div class="table-wrap">
+<table class="compare-table">
+<thead><tr><th>Question</th><th>Report answer</th></tr></thead>
+<tbody>
+<tr><td>Did TA2 make 7.Q simple?</td><td>No. It remains one of the hardest sections to read quickly and cleanly.</td></tr>
+<tr><td>Did TA2 solve the rest / contact ambiguity?</td><td>Not clearly. The text still leaves room for dispute over when contact obligations truly end.</td></tr>
+<tr><td>Can loss of pay happen without attendance points?</td><td>Yes. That remains the clearest reader-facing problem in the architecture.</td></tr>
+<tr><td>Is this purely a TA2 problem?</td><td>No. Much of the framework predates TA2, but TA2 does not fully remove the ambiguity.</td></tr>
+</tbody>
+</table>
+</div>
+<div class="callout">
+<strong>Practical takeaway:</strong> Section 7.Q still needs careful reader attention because it is where otherwise favorable pay-protection or reassignment language can narrow sharply in real operations.
+  </div>
+</section>
+<section class="cs-report__section" id="section-8">
+<div class="section-head">
+<h2 class="cs-report__section-title">Section 8 — Reserve Scheduling Procedures</h2>
+<div class="source-pills"><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_CBA_2016-2021.pdf#page=91">Current CBA p.91</a><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2025-2030.pdf#page=123">TA1 p.123</a><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2026-2031.pdf#page=114">TA2 p.114</a></div>
+</div>
+<p><strong>Status:</strong> Real improvement over the current baseline, but still below the best-in-class reserve model.</p>
+<p>TA2’s RAP-based reserve structure is a real improvement over the older all-day-liability model, and the second TA appears to make narrow but meaningful improvements over TA1 as well. Even so, reserve remains heavily dependent on later implementation and still does not approach the cleaner liability rules and stronger monetization that make Southwest a benchmark in member discussions.</p>
+<p><strong>Why it matters:</strong> Reserve is a ratification-driving issue because it affects daily control, contact windows, assignment reach, and the pay consequences of overreach. TA2 is better than the current baseline, but it still leaves United with long liability windows, 24-hour availability by preference, and narrower remedies than the strongest comparator models.</p>
+<p><strong>Assessment:</strong> Meaningful improvement, but still well short of the Southwest standard and still heavily tied to JIT / later implementation.</p>
+</section>
+<section class="cs-report__section adjunct" id="reserve-vs-southwest">
+<div class="section-head">
+<h2 class="cs-report__section-title">Adjunct — Reserve versus Southwest, plus national reserve snapshots</h2>
+<div class="source-pills">
+<a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_CBA_2016-2021.pdf#page=91">Current CBA Section 8 p.91</a>
+<a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2025-2030.pdf#page=123">TA1 Section 8 p.123</a>
+<a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2026-2031.pdf#page=114">TA2 Section 8 p.114</a>
+<a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2026-2031.pdf#page=385">TA2 reserve implementation p.385</a>
+<a class="pdf-pill" href="https://media.twu556.org/2024/03/29174633/TA2024-Annotated-Combined.3-29-24.pdf#page=100" rel="noopener" target="_blank">Southwest reserve guarantee p.100</a>
+<a class="pdf-pill" href="https://media.twu556.org/2024/03/29174633/TA2024-Annotated-Combined.3-29-24.pdf#page=177" rel="noopener" target="_blank">Southwest RIGs p.177</a>
+</div>
+</div>
+<p>United’s RAP structure is real and materially better than a pure all-day uncertainty model. Even so, Southwest remains the more useful reserve benchmark because Southwest’s reserve system is not only cleaner on contact windows and assignment boundaries, but is also monetized directly in TFP. Southwest guarantees reserve pay at 6.5 TFP per reserve day, with a monthly reserve guarantee ranging from 78 to 110.5 TFP, and then layers pairing RIGs on top when reserve actually flies. United’s reserve improvements matter, but they still sit inside an hourly pay architecture plus separate add-pay items rather than the more integrated reserve-pay model Southwest uses.</p>
+<div class="callout">
+<h3>Best formulation</h3>
+<p>United TA2 modernizes reserve relative to the current operating baseline, but it still does not approach Southwest’s best-in-class reserve model. The difference is not just scheduling cleanliness; it is compensation architecture too.</p>
+</div>
+<div class="table-wrap">
+<table class="compare-table">
+<thead><tr><th>Comparator</th><th>Reserve snapshot</th><th>Why it matters</th></tr></thead>
+<tbody>
+<tr><td>Southwest</td><td>6.5 TFP per reserve day, 78–110.5 TFP monthly guarantee, and pairing RIGs when reserve actually flies.</td><td>Best benchmark for integrated reserve monetization and cleaner liability boundaries.</td></tr>
+<tr><td>Frontier</td><td>Developed reserve shifts, aggressive reserve assignment logic, and transparent reserve processes.</td><td>Shows how reserve can be systematized more clearly.</td></tr>
+<tr><td>Air Wisconsin</td><td>14-hour on-call periods, no contact obligation outside the reserve window, ready-reserve caps, and detailed drafting order.</td><td>Useful regional benchmark on predictability.</td></tr>
+<tr><td>GoJet</td><td>2-hour call-out with day-before assignment posting and clearer reserve ordering.</td><td>Illustrates how regional contracts often tighten reserve call-out language.</td></tr>
+<tr><td>Endeavor</td><td>RAP / home-reserve style architecture and domicile-specific call-out structure.</td><td>Useful for comparing operational reserve management rather than just pay.</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+<section class="cs-report__section" id="section-9">
+<div class="section-head">
+<h2 class="cs-report__section-title">Section 9 — Special Qualification Flight Attendants</h2>
+<div class="source-pills"><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_CBA_2016-2021.pdf#page=110">Current CBA p.110</a><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2025-2030.pdf#page=157">TA1 p.157</a><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2026-2031.pdf#page=146">TA2 p.146</a></div>
+</div>
+<p><strong>Status:</strong> Modified programmatically, not monetarily transformed.</p>
+<p>Section 9 does not appear to deliver a meaningful premium-pay breakthrough. The Flight Service Leader, Purser, Language Qualified, and language incentive structures remain broadly familiar. The real movement is administrative and programmatic: TA2’s implementation materials show International Purser qualification timing and later performance-review changes rather than richer override economics.</p>
+<p><strong>Why it matters:</strong> This matters because the section can sound busier than it is. The pay architecture remains largely the same; the practical changes are more about access, timing, and administration.</p>
+<p><strong>Assessment:</strong> Mixed but limited. Program changes exist, but the premium structure itself is essentially unchanged.</p>
+</section>
+<section class="cs-report__section" id="section-10">
+<div class="section-head">
+<h2 class="cs-report__section-title">Section 10 — AMC Operation</h2>
+<div class="source-pills"><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_CBA_2016-2021.pdf#page=119">Current CBA p.119</a><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2025-2030.pdf#page=169">TA1 p.169</a><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2026-2031.pdf#page=157">TA2 p.157</a></div>
+</div>
+<p><strong>Status:</strong> Core structure largely preserved, with implementation movement.</p>
+<p>The AMC / CRAF framework appears substantially carried forward. The most visible changes are in implementation timing for the subgroup affected by this section, not in a major rewrite of the underlying operation. Core CRAF-related economics and operational exceptions remain recognizable.</p>
+<p><strong>Why it matters:</strong> That is a useful distinction for a United-heavy readership: TA2 does not reinvent AMC, but it does carry forward and operationalize a set of items that matter to the Flight Attendants who work inside that structure.</p>
+<p><strong>Assessment:</strong> Largely unchanged in structure; meaningful mainly through implementation timing.</p>
+</section>
+<section class="cs-report__section" id="section-11">
+<div class="section-head">
+<h2 class="cs-report__section-title">Section 11 — Training &amp; General Meetings</h2>
+<div class="source-pills"><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_CBA_2016-2021.pdf#page=123">Current CBA p.123</a><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2025-2030.pdf#page=179">TA1 p.179</a><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2026-2031.pdf#page=166">TA2 p.166</a></div>
+</div>
+<p><strong>Status:</strong> Improvement area, but several gains are delayed.</p>
+<p>Section 11 contains real improvements, including date-of-signing items around per diem for training, priority rescheduling after cancellations or IRROPS, and the grace-month structure. The larger point is that TA2 does not erase all training concerns; it improves the section, but not every meaningful item is immediate.</p>
+<p><strong>Why it matters:</strong> Training is a recurring flashpoint because it affects both quality of life and uncompensated time pressure. The section is better than the current baseline, but the improvement is uneven in timing.</p>
+<p><strong>Assessment:</strong> Improvement, but not cleanly immediate across the board.</p>
+</section>
+<section class="cs-report__section" id="section-12">
+<div class="section-head">
+<h2 class="cs-report__section-title">Section 12 — Vacations</h2>
+<div class="source-pills"><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_CBA_2016-2021.pdf#page=128">Current CBA p.128</a><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2025-2030.pdf#page=186">TA1 p.186</a><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2026-2031.pdf#page=173">TA2 p.173</a></div>
+</div>
+<p><strong>Status:</strong> Structurally respectable, economically burdened by delayed value.</p>
+<p>TA2 carries forward multiple vacation structures that are better organized and, in places, more usable than the current baseline. But the major negative economic difference remains: the 3:30 vacation-pay value is delayed until the January 2031 bid period rather than delivered on the earlier timing some members expected.</p>
+<p><strong>Why it matters:</strong> Vacation is not just time off. It is pay, retirement contribution value, scheduling flexibility, and perceived respect for the workgroup. A vacation section can look strong on process while still feeling weak on economics if the pay value is pushed to the end of the agreement.</p>
+<p><strong>Assessment:</strong> Mixed. The structure is serviceable, but the delayed 3:30 vacation-pay value remains a major negative.</p>
+</section>
+<section class="cs-report__section" id="section-13">
+<div class="section-head">
+<h2 class="cs-report__section-title">Section 13 — Sick Leave</h2>
+<div class="source-pills"><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_CBA_2016-2021.pdf#page=139">Current CBA p.139</a><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2025-2030.pdf#page=201">TA1 p.201</a><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2026-2031.pdf#page=186">TA2 p.186</a></div>
+</div>
+<p><strong>Status:</strong> One of the clearer improvement sections.</p>
+<p>TA2 increases the sick-leave bank maximum from 1250 to 1500 hours and the occupational-injury bank maximum from 400 to 500 hours, while also carrying forward familiar accrual mechanics and spouse/minor-child usage rules. The implementation timing matters: the larger bank is real, but it is not immediate.</p>
+<p><strong>Why it matters:</strong> For long-service Flight Attendants especially, larger banks have real value against long illness, injury, and end-of-career medical risk. This section is a more tangible improvement than many of the administrative edits elsewhere in the TA.</p>
+<p><strong>Assessment:</strong> Meaningful improvement, even though part of the value is delayed.</p>
+</section>
+<section class="cs-report__section" id="section-14">
+<div class="section-head">
+<h2 class="cs-report__section-title">Section 14 — Seniority</h2>
+<div class="source-pills"><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_CBA_2016-2021.pdf#page=146">Current CBA p.146</a><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2025-2030.pdf#page=210">TA1 p.210</a><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2026-2031.pdf#page=194">TA2 p.194</a></div>
+</div>
+<p><strong>Status:</strong> No major visible change.</p>
+<p>The reviewed materials do not show Section 14 as a major bargaining flashpoint. The implementation schedule does not flag seniority as a major implementation area, and nothing surfaced suggesting either hidden erosion or a significant fresh gain.</p>
+<p><strong>Why it matters:</strong> That is mostly a neutral result: no evident seniority reset, but also no major new protection or preference structure to point to.</p>
+<p><strong>Assessment:</strong> No material change visible.</p>
+</section>
+<section class="cs-report__section" id="section-15">
+<div class="section-head">
+<h2 class="cs-report__section-title">Section 15 — Leaves of Absence</h2>
+<div class="source-pills"><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_CBA_2016-2021.pdf#page=149">Current CBA p.149</a><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2025-2030.pdf#page=214">TA1 p.214</a><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2026-2031.pdf#page=198">TA2 p.198</a></div>
+</div>
+<p><strong>Status:</strong> Meaningful improvement area.</p>
+<p>Section 15 is one of the clearer positives in the whole package. The implementation agreement identifies return-to-work line protection, occupational injury handling, paid maternity leave, paid parental leave, paid parental leave not tied to birth, and paid adoption leave as date-of-signing items.</p>
+<p><strong>Why it matters:</strong> Paid leave is one of the places where TA2 produces immediate, understandable value. This is not merely a process cleanup; it is one of the most member-facing gains in the second TA.</p>
+<p><strong>Assessment:</strong> Improvement, and one of the stronger immediate-delivery sections in the agreement.</p>
+</section>
+<section class="cs-report__section" id="section-16">
+<div class="section-head">
+<h2 class="cs-report__section-title">Section 16 — Job Share and Partnership Flying Programs</h2>
+<div class="source-pills"><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_CBA_2016-2021.pdf#page=161">Current CBA p.161</a><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2025-2030.pdf#page=235">TA1 p.235</a><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2026-2031.pdf#page=214">TA2 p.214</a></div>
+</div>
+<p><strong>Status:</strong> Mostly continuity with a targeted refinement.</p>
+<p>The job-share and partnership structure largely carries forward. The visible implementation-side change is line division going live at date of signing. That makes the section more of a refinement than a rebuild.</p>
+<p><strong>Why it matters:</strong> For readers who rely on flexible programs, continuity is not trivial, but the section is not a core swing area in the ratification debate.</p>
+<p><strong>Assessment:</strong> Mostly unchanged, with a useful implementation-side refinement.</p>
+</section>
+<section class="cs-report__section" id="section-17">
+<div class="section-head">
+<h2 class="cs-report__section-title">Section 17 — Filling of Vacancies</h2>
+<div class="source-pills"><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_CBA_2016-2021.pdf#page=167">Current CBA p.167</a><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2025-2030.pdf#page=241">TA1 p.241</a><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2026-2031.pdf#page=220">TA2 p.220</a></div>
+</div>
+<p><strong>Status:</strong> Targeted improvement, not a structural rewrite.</p>
+<p>Section 17 looks evolutionary rather than transformational. The implementation materials show targeted vacancy and recall-related items moving early, but nothing suggests a full re-architecture of how base movement and filling procedures work.</p>
+<p><strong>Why it matters:</strong> That is a reasonable but limited positive. Readers should understand it as operational refinement, not as one of the agreement’s defining gains.</p>
+<p><strong>Assessment:</strong> Modest targeted improvement.</p>
+</section>
+<section class="cs-report__section" id="section-18">
+<div class="section-head">
+<h2 class="cs-report__section-title">Section 18 — Reduction in Personnel</h2>
+<div class="source-pills"><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_CBA_2016-2021.pdf#page=174">Current CBA p.174</a><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2025-2030.pdf#page=252">TA1 p.252</a><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2026-2031.pdf#page=229">TA2 p.229</a></div>
+</div>
+<p><strong>Status:</strong> Largely unchanged in its basic structure.</p>
+<p>The familiar reduction-in-force framework remains: prior notice and conference, projected involuntary-furlough posting, voluntary mitigation before involuntary furlough, and existing partnership / mitigation architecture. Section 18 does not appear to have been materially rebuilt in TA2.</p>
+<p><strong>Why it matters:</strong> For most readers, that is a neutral result. There is no obvious deterioration, but also no major new protection to cite as a second-TA response.</p>
+<p><strong>Assessment:</strong> Largely no material change.</p>
+</section>
+<section class="cs-report__section" id="section-19">
+<div class="section-head">
+<h2 class="cs-report__section-title">Section 19 — Safety, Health and Security</h2>
+<div class="source-pills"><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_CBA_2016-2021.pdf#page=179">Current CBA p.179</a><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2025-2030.pdf#page=261">TA1 p.261</a><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2026-2031.pdf#page=237">TA2 p.237</a></div>
+</div>
+<p><strong>Status:</strong> Strong non-economic improvement area.</p>
+<p>Section 19 is one of the clearer practical positives. TA2’s implementation materials identify multiple date-of-signing gains around safety access and crisis response, including MEC Safety Chair access to irregular-operations reports, provision of the Inflight Services emergency manual, positive-space travel and additional union-representative access for foreign-country accidents, and continued monthly health/safety/security meetings.</p>
+<p><strong>Why it matters:</strong> This section improves how quickly and effectively representatives can act during serious operational events. For a safety-sensitive workgroup, that is more than symbolic.</p>
+<p><strong>Assessment:</strong> Improvement. One of the better non-economic arguments in favor of the package.</p>
+</section>
+<section class="cs-report__section adjunct" id="cybersecurity-adjunct">
+<div class="section-head">
+<h2 class="cs-report__section-title">Adjunct — Cybersecurity policy and discipline risk</h2>
+</div>
+<p>This report treats cybersecurity as a management-policy layer, not as a separate negotiated discipline article. The internal policy materials reviewed for this report describe a high-control compliance environment built around monitoring, device control, record retention, and anti-ephemeral-messaging expectations. Because those materials are non-public, this report generalizes the company-policy side and focuses specifically on the contractual impact.</p>
+<p>The contractual point is narrower and more important: broader cyber policy may expand the range of company rules, system logs, device-related evidence, and records-retention expectations that appear in an investigation, but it does not create a separate discipline system outside the agreement. Any resulting discipline still runs through the same personnel-file, investigation, grievance, and arbitration machinery discussed in Sections 22, 23, and 24.</p>
+<div class="callout">
+<strong>Reader takeaway:</strong> Cyber policy can widen the evidence base and the kinds of conduct that trigger investigation, but the due-process question remains contractual. That is why this issue belongs next to the safety/security section and then points directly forward into the discipline-and-enforcement sections.
+  </div>
+</section>
+<section class="cs-report__section" id="section-20">
+<div class="section-head">
+<h2 class="cs-report__section-title">Section 20 — Medical Examinations</h2>
+<div class="source-pills"><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_CBA_2016-2021.pdf#page=183">Current CBA p.183</a><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2025-2030.pdf#page=268">TA1 p.268</a><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2026-2031.pdf#page=243">TA2 p.243</a></div>
+</div>
+<p><strong>Status:</strong> Modest procedural improvement relative to the current CBA; essentially unchanged versus TA1.</p>
+<p>TA1 and TA2 preserve the familiar medical-examination structure, including confidentiality, a Flight Attendant-selected doctor, and neutral-doctor resolution where doctors disagree. The visible current-to-TA change is a tighter neutral-doctor selection period, but TA2 does not appear to go materially beyond what TA1 already established.</p>
+<p><strong>Why it matters:</strong> This is not a headline ratification issue, but it is more favorable than a pure continuity reading would suggest.</p>
+<p><strong>Assessment:</strong> Modest procedural improvement versus the current baseline; not a distinct TA2 breakthrough.</p>
+</section>
+<section class="cs-report__section" id="section-21">
+<div class="section-head">
+<h2 class="cs-report__section-title">Section 21 — Alcohol and Drug Testing</h2>
+<div class="source-pills"><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_CBA_2016-2021.pdf#page=186">Current CBA p.186</a><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2025-2030.pdf#page=272">TA1 p.272</a><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2026-2031.pdf#page=246">TA2 p.246</a></div>
+</div>
+<p><strong>Status:</strong> Largely unchanged.</p>
+<p>The broad alcohol-and-drug-testing framework appears materially stable. Random-testing pay remains $25, and the reviewed materials do not show a meaningful TA2-specific improvement relative to TA1 or a major visible leap over the current baseline.</p>
+<p><strong>Why it matters:</strong> Readers who hoped for a material testing-pay increase or a new process breakthrough will not find it here.</p>
+<p><strong>Assessment:</strong> Largely unchanged.</p>
+</section>
+<section class="cs-report__section" id="section-22">
+<div class="section-head">
+<h2 class="cs-report__section-title">Section 22 — Personnel Files</h2>
+<div class="source-pills"><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_CBA_2016-2021.pdf#page=193">Current CBA p.193</a><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2025-2030.pdf#page=280">TA1 p.280</a><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2026-2031.pdf#page=253">TA2 p.253</a></div>
+</div>
+<p><strong>Status:</strong> Meaningful improvement area, though still somewhat messy in draft architecture.</p>
+<p>Section 22 becomes more favorable than the current baseline in several visible ways. Occupational injury or illness occurrences do not generate attendance points, non-disciplinary dependability or job-performance notations clear after one year instead of two, and the newer Performance Track reduces Performance Warning 2 to 12 months. The catch is that legacy and newer disciplinary language overlap, which can make the section look internally inconsistent if read too casually.</p>
+<p><strong>Why it matters:</strong> A contract does not just need rights; it needs workable personnel-file and progressive-discipline architecture. This section is better than the current contract, but it should be read carefully because the draft still contains overlapping old and new language.</p>
+<p><strong>Assessment:</strong> Meaningful improvement relative to the current CBA, but largely preserved from TA1 and still textually messy in places.</p>
+</section>
+<section class="cs-report__section" id="section-23">
+<div class="section-head">
+<h2 class="cs-report__section-title">Section 23 — Investigations &amp; Grievances</h2>
+<div class="source-pills"><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_CBA_2016-2021.pdf#page=196">Current CBA p.196</a><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2025-2030.pdf#page=288">TA1 p.288</a><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2026-2031.pdf#page=260">TA2 p.260</a></div>
+</div>
+<p><strong>Status:</strong> One of the stronger institutional improvements relative to the current baseline.</p>
+<p>Section 23 shows a more developed investigation and dispute-resolution architecture than the current contract, including 48-hour notice before most discharge-track investigatory meetings, evidence disclosure, written notice, structured timelines, locally based dispute resolution, and quarterly settlement-conference cadence. TA2 appears mostly to preserve and operationalize that architecture rather than newly create it beyond TA1.</p>
+<p><strong>Why it matters:</strong> A contract’s value depends on whether Flight Attendants can realistically enforce it. More notice and stronger process improve the practical balance of power even when headline economics stay mixed.</p>
+<p><strong>Assessment:</strong> Improvement versus the current baseline; more carry-forward than fresh TA2 invention, but still one of the better sections in the package.</p>
+</section>
+<section class="cs-report__section" id="section-24">
+<div class="section-head">
+<h2 class="cs-report__section-title">Section 24 — System Board of Adjustment</h2>
+<div class="source-pills"><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_CBA_2016-2021.pdf#page=209">Current CBA p.209</a><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2025-2030.pdf#page=305">TA1 p.305</a><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2026-2031.pdf#page=276">TA2 p.276</a></div>
+</div>
+<p><strong>Status:</strong> Clear process improvement.</p>
+<p>The arbitrator panel expands from eleven to thirteen, and scheduled-hearing capacity improves. Relative to TA1, TA2 appears largely to preserve that gain rather than newly create it. Relative to the current contract, however, it is a concrete institutional upgrade.</p>
+<p><strong>Why it matters:</strong> System Board capacity affects throughput, scheduling flexibility, and the speed of final dispute resolution. For a large workgroup, that matters materially.</p>
+<p><strong>Assessment:</strong> Clear improvement relative to the current CBA; essentially carried forward from TA1 into TA2.</p>
+</section>
+<section class="cs-report__section" id="section-25">
+<div class="section-head">
+<h2 class="cs-report__section-title">Section 25 — Uniforms</h2>
+<div class="source-pills"><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_CBA_2016-2021.pdf#page=214">Current CBA p.214</a><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2025-2030.pdf#page=313">TA1 p.313</a><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2026-2031.pdf#page=283">TA2 p.283</a></div>
+</div>
+<p><strong>Status:</strong> Member-facing positive, though more preservation than redesign.</p>
+<p>The current contract appears to place more of the initial uniform burden on newly employed Flight Attendants. TA1 and TA2 move in a more favorable direction, and TA2’s implementation schedule shows access to uniform points once cleared, along with company replacement of one of each purser component each calendar year.</p>
+<p><strong>Why it matters:</strong> Uniforms are not the center of the TA debate, but this section is one of the clearer everyday improvements that readers will immediately understand.</p>
+<p><strong>Assessment:</strong> Improvement in practical member-facing value; mostly carried forward and implemented in TA2.</p>
+</section>
+<section class="cs-report__section" id="section-26">
+<div class="section-head">
+<h2 class="cs-report__section-title">Section 26 — Moving Expenses</h2>
+<div class="source-pills"><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_CBA_2016-2021.pdf#page=218">Current CBA p.218</a><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2025-2030.pdf#page=321">TA1 p.321</a><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2026-2031.pdf#page=290">TA2 p.290</a></div>
+</div>
+<p><strong>Status:</strong> Practical economic improvement preserved in TA2.</p>
+<p>The moving-expense cap increases to $20,500 in the tentative-agreement architecture, and TA2 preserves that cap. This is not a redesign of the section’s structure, but it is a real increase in practical value for displaced or transferred Flight Attendants.</p>
+<p><strong>Why it matters:</strong> Moving-expense provisions tend to matter enormously to the smaller number of Flight Attendants who need them. When they matter, the cap matters.</p>
+<p><strong>Assessment:</strong> Improvement in real economic value, preserved rather than newly invented in TA2.</p>
+</section>
+<section class="cs-report__section" id="section-27">
+<div class="section-head">
+<h2 class="cs-report__section-title">Section 27 — Missing, Interned, Hostage or Prisoner of War</h2>
+<div class="source-pills"><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_CBA_2016-2021.pdf#page=220">Current CBA p.220</a><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2025-2030.pdf#page=323">TA1 p.323</a><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2026-2031.pdf#page=292">TA2 p.292</a></div>
+</div>
+<p><strong>Status:</strong> No major visible change.</p>
+<p>Nothing surfaced in the reviewed materials indicating that this section was a major bargaining battleground or that TA2 materially changed the underlying structure.</p>
+<p><strong>Why it matters:</strong> This is one of the least dynamic sections in the package.</p>
+<p><strong>Assessment:</strong> No material change visible.</p>
+</section>
+<section class="cs-report__section" id="section-28">
+<div class="section-head">
+<h2 class="cs-report__section-title">Section 28 — Commuter Program</h2>
+<div class="source-pills"><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_CBA_2016-2021.pdf#page=222">Current CBA p.222</a><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2025-2030.pdf#page=325">TA1 p.325</a><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2026-2031.pdf#page=294">TA2 p.294</a></div>
+</div>
+<p><strong>Status:</strong> Mixed.</p>
+<p>TA2 adds a real commuter gain by allowing offline flights to qualify when the required available-capacity showing is met, but it also preserves the tougher assignment tradeoff in which a commuting Flight Attendant who rejects a substitute pairing that returns the next day is not entitled to a hotel room. That means the section remains structurally unforgiving in some respects even while it becomes more realistic in others.</p>
+<p><strong>Why it matters:</strong> For commuters, quality-of-life value lives in the details. A single new qualification path does not erase a harsh substitute-assignment structure.</p>
+<p><strong>Assessment:</strong> Mixed. Real offline-flight gain, but important commuter tradeoffs remain.</p>
+</section>
+<section class="cs-report__section" id="section-29">
+<div class="section-head">
+<h2 class="cs-report__section-title">Section 29 — Benefits</h2>
+<div class="source-pills"><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_CBA_2016-2021.pdf#page=226">Current CBA p.226</a><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2025-2030.pdf#page=330">TA1 p.330</a><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2026-2031.pdf#page=299">TA2 p.299</a></div>
+</div>
+<p><strong>Status:</strong> One of the stronger long-run economic sections, with a critical caveat.</p>
+<p>TA2’s benefits architecture remains stronger than the current baseline in multiple ways, including retiree-medical extension relative to the current contract, benefits matching, increased match calculation, and later subsidy-threshold work. But the retiree-medical sunset remains. TA2 keeps the sixteen-year window already established in TA1 rather than newly extending it again.</p>
+<p><strong>Why it matters:</strong> This section matters because summary materials can make a preserved sunset sound like a solved sunset. The better reading is that Section 29 remains one of the stronger economic sections in the package, but it does not permanently cure retiree-medical risk.</p>
+<p><strong>Assessment:</strong> Meaningful improvement area overall, but with the critical caveat that the sunset survives and TA2 mostly preserves, rather than newly expands, the one-year extension already present in TA1.</p>
+</section>
+<section class="cs-report__section adjunct" id="retiree-medical-explainer">
+<div class="section-head">
+<h2 class="cs-report__section-title">Adjunct — Retiree-medical sunset, bridge medical, and sick-bank mechanics</h2>
+<div class="source-pills"><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_CBA_2016-2021.pdf#page=236">Current retiree medical p.236</a><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2025-2030.pdf#page=343">TA1 retiree medical p.343</a><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2026-2031.pdf#page=310">TA2 retiree medical p.310</a><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2026-2031.pdf#page=314">TA2 bridge medical / sick bank p.314</a></div>
+</div>
+<p>The retiree-medical correction is essential. The current 2016–2021 CBA already contains the sunset. TA1 changes the protected window from fifteen years to sixteen years from August 28, 2016. TA2 keeps that same sixteen-year window. So TA2 does not newly extend the sunset relative to TA1; it preserves the one-year extension already won relative to the current baseline.</p>
+<p>The bridge-medical mechanics matter just as much. For the Continental / CMI / new-hire side of the retiree structure, the contract ties bridge participation to the retiree’s sick-leave bank at retirement and funds participation at fourteen hours of sick leave per month. If the retiree does not have enough sick leave, the retiree can continue only at the unsubsidized Regular Retiree Medical rate. That makes unused sick leave a de facto retiree-health asset for the affected group.</p>
+<div class="callout">
+<h3>Why this matters in plain English</h3>
+<p>The sunset is not just a date change. It determines whether otherwise-eligible retirees stay in a protected retiree-medical track or fall into the narrower, full-cost fallback structure. That can create a real economic incentive for older Flight Attendants nearing retirement to retire before the protected window closes.</p>
+</div>
+</section>
+<section class="cs-report__section" id="section-30">
+<div class="section-head">
+<h2 class="cs-report__section-title">Section 30 — Union Activities</h2>
+<div class="source-pills"><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_CBA_2016-2021.pdf#page=268">Current CBA p.268</a><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2025-2030.pdf#page=376">TA1 p.376</a><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2026-2031.pdf#page=340">TA2 p.340</a></div>
+</div>
+<p><strong>Status:</strong> Improvement in practical representation capacity.</p>
+<p>Section 30 affects how effectively the union can enforce the agreement. TA1 and TA2 both show stronger information-access architecture than the current baseline, and TA2’s LOA 9 identifies enhanced CCS access for MEC and LEC levels as date-of-signing items.</p>
+<p><strong>Why it matters:</strong> This is one of those sections that may look secondary to casual readers but matters greatly in practice. Better access to the systems and information used to administer the contract means better enforcement capacity.</p>
+<p><strong>Assessment:</strong> Improvement, though much of the architecture is carried forward from TA1.</p>
+</section>
+<section class="cs-report__section" id="section-31">
+<div class="section-head">
+<h2 class="cs-report__section-title">Section 31 — Union Security and Check-Off</h2>
+<div class="source-pills"><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_CBA_2016-2021.pdf#page=276">Current CBA p.276</a><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2025-2030.pdf#page=385">TA1 p.385</a><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2026-2031.pdf#page=349">TA2 p.349</a></div>
+</div>
+<p><strong>Status:</strong> Largely static.</p>
+<p>Nothing in the reviewed materials shows Section 31 as an implementation focus or a major substantive change area. The core union-security and dues-checkoff framework appears stable.</p>
+<p><strong>Why it matters:</strong> Readers should not expect this section to drive the ratification debate.</p>
+<p><strong>Assessment:</strong> No major visible change.</p>
+</section>
+<section class="cs-report__section" id="section-32">
+<div class="section-head">
+<h2 class="cs-report__section-title">Section 32 — Duration</h2>
+<div class="source-pills"><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_CBA_2016-2021.pdf#page=281">Current CBA p.281</a><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2025-2030.pdf#page=390">TA1 p.390</a><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2026-2031.pdf#page=354">TA2 p.354</a></div>
+</div>
+<p><strong>Status:</strong> Structurally straightforward, economically important because of timing.</p>
+<p>TA1 would have run 2025–2030. TA2 runs 2026–2031. But the real significance of Section 32 is not just the date on the cover. The interaction between duration and LOA 9 pushes significant value into 2026, 2027, 2028, and even 2031. That makes duration an economic timing issue, not merely a calendar issue.</p>
+<p><strong>Why it matters:</strong> A longer tentative agreement with phased implementation can make headline gains look larger than their near-term value actually is. Vacation pay is the clearest example, but it is not the only one.</p>
+<p><strong>Assessment:</strong> Mixed in practical effect. Not surprising structurally, but crucial to understanding the real value of the package.</p>
+</section>
+<section class="cs-report__section" id="loa-appendix">
+<div class="section-head">
+<h2 class="cs-report__section-title">Appendix A — LOA architecture</h2>
+<div class="source-pills">
+<a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2025-2030.pdf#page=3">TA1 LOA TOC p.3</a>
+<a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2026-2031.pdf#page=3">TA2 LOA TOC p.3</a>
+<a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2025-2030.pdf#page=411">TA1 LOA 9 p.411</a>
+<a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2026-2031.pdf#page=371">TA2 LOA 9 p.371</a>
+<a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2025-2030.pdf#page=444">TA1 LOA 19 p.444</a>
+<a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2026-2031.pdf#page=414">TA2 LOA 19 p.414</a>
+</div>
+</div>
+<p class="appendix-intro">This appendix keeps the LOAs in the report as a second contract layer, not as background reading. The most important practical point is structural: TA1 had 24 LOAs, TA2 has 23, and the disappearance of the standalone 7.Q.5 letter is itself meaningful because it shows how important operational rules can migrate between letters and body text.</p>
+<div class="table-wrap">
+<table class="compare-table">
+<thead><tr><th>LOA</th><th>TA1 title</th><th>TA2 title</th><th>Practical effect / report read</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>AFA PAC Letter</td><td>AFA PAC Letter</td><td>Carried forward; no major surfaced change in the reviewed materials.</td></tr><tr><td>2</td><td>AFA Staff Travel</td><td>AFA Staff Travel</td><td>Carried forward; no major surfaced change in the reviewed materials.</td></tr><tr><td>3</td><td>CARP</td><td>CARP</td><td>Carried forward.</td></tr><tr><td>4</td><td>DB Plan Discussion</td><td>DB Plan Discussion</td><td>Carried forward.</td></tr><tr><td>5</td><td>First Right of Hire</td><td>First Right of Hire</td><td>Carried forward.</td></tr><tr><td>6</td><td>Foreign Currency</td><td>Foreign Currency</td><td>Carried forward.</td></tr><tr><td>7</td><td>Foreign National</td><td>Foreign National</td><td>Carried forward.</td></tr><tr><td>8</td><td>Hotel Selection Process and Guidelines</td><td>Hotel Selection Process and Guidelines</td><td>Carried forward.</td></tr><tr><td>9</td><td>Implementation Agreement</td><td>Implementation Agreement</td><td>Most important LOA in the package. Governs timing, JIT process, and the rule that the current agreement continues until an item is implemented.</td></tr><tr><td>10</td><td>Implementation of New Technology</td><td>Implementation of New Technology</td><td>Carried forward; important for future tech-driven duty changes.</td></tr><tr><td>11</td><td>Jetway Trade Expansion</td><td>Jetway Trade Expansion</td><td>Carried forward.</td></tr><tr><td>12</td><td>Medical Rate Setting</td><td>Medical Rate Setting</td><td>Carried forward; interacts with benefits administration.</td></tr><tr><td>13</td><td>Recognition of International Issues</td><td>Recognition of International Issues</td><td>Carried forward.</td></tr><tr><td>14</td><td>Reserve Rotation</td><td>Reserve Rotation</td><td>Carried forward; relevant to reserve implementation architecture.</td></tr><tr><td>15</td><td>Satellite Bases</td><td>Satellite Bases</td><td>Carried forward.</td></tr><tr><td>16</td><td>Scope</td><td>Scope</td><td>Most consequential substantive LOA. TA2 adds the United Express regional-carrier carve-out.</td></tr><tr><td>17</td><td>Uniform Points</td><td>Uniform Points</td><td>Carried forward; implemented value remains meaningful for members.</td></tr><tr><td>18</td><td>No Furlough</td><td>No Furlough</td><td>Carried forward; important job-security letter.</td></tr><tr><td>19</td><td>Section 7.Q.5</td><td>Electronic Communications</td><td>Major structural change. The standalone 7.Q.5 settlement letter disappears and the numbering shifts; Electronic Communications moves up in TA2.</td></tr><tr><td>20</td><td>Electronic Communications</td><td>Grievance Training</td><td>Renumbered because TA1 LOA 19 disappears.</td></tr><tr><td>21</td><td>Grievance Training</td><td>Safety Investigations</td><td>Renumbered carry-forward.</td></tr><tr><td>22</td><td>Safety Investigations</td><td>Incident Notification</td><td>Renumbered carry-forward.</td></tr><tr><td>23</td><td>Incident Notification</td><td>One-Time Payment</td><td>Renumbered carry-forward; one-time payment becomes LOA 23 in TA2.</td></tr><tr><td>24</td><td>One-Time Payment</td><td>—</td><td>TA1 had 24 LOAs. TA2 has 23 because the standalone 7.Q.5 letter disappears and the list compresses.</td></tr>
+</tbody>
+</table>
+</div>
+<div class="callout">
+<strong>Priority LOAs to read in full:</strong> LOA 9 (Implementation Agreement), LOA 16 (Scope), LOA 18 (No Furlough), the TA1 standalone Section 7.Q.5 letter, and the TA2 Electronic Communications letter. Those are the letters most likely to affect how readers understand timing, scope, reassignment architecture, and enforcement.
+    </div>
+</section>
+<section class="cs-report__section" id="sunset-appendix">
+<div class="section-head">
+<h2 class="cs-report__section-title">Appendix B — Sunset-medical / retiree-health matrix</h2>
+<div class="source-pills"><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_CBA_2016-2021.pdf#page=236">Current retiree medical p.236</a><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2025-2030.pdf#page=343">TA1 retiree medical p.343</a><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2026-2031.pdf#page=310">TA2 retiree medical p.310</a><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2026-2031.pdf#page=314">TA2 bridge medical / sick bank p.314</a></div>
+</div>
+<p>This appendix uses the stronger national overview now available from the uploaded contracts. The key point is not that every carrier gives the same benefit, but that the structures differ sharply. United remains the only reviewed contract that clearly contains a true contractual shutdown of legacy retiree-medical eligibility after a defined window.</p>
+<div class="table-wrap">
+<table class="compare-table">
+<thead><tr><th>Carrier</th><th>Structure type</th><th>Contractual structure</th><th>Report read</th></tr></thead>
+<tbody>
+<tr><td>United</td><td>True contractual sunset</td><td>Protected legacy retiree-medical tracks close after the 15/16-year window from August 28, 2016; later retirees fall into the narrower fallback structure.</td><td>United remains the clearest reviewed example of a hard contractual retiree-medical sunset.</td></tr><tr><td>Hawaiian</td><td>Sunset-like RHRA cliff</td><td>Legacy retiree-health structure remains, but the RHRA deadline operates like a narrower date-based cut-off.</td><td>Nearest analog, but not a United-style sunset.</td></tr><tr><td>Alaska</td><td>Temporary transition bridge</td><td>LOA 18 creates a one-time retiree-health bridge rather than a permanent United-style legacy shutdown.</td><td>Not a hard closure of a legacy class; structurally different.</td></tr><tr><td>Southwest</td><td>Pre-65 bridge, not a sunset</td><td>Restrictive sick-leave-funded retiree-health bridge to age 65, but not a fixed-date shutdown of a legacy retiree class.</td><td>Important comparator because it preserves access without a United-style hard closure.</td></tr><tr><td>American</td><td>Full-cost access model</td><td>Retiree medical access exists, but on a full-cost, company-amendable basis rather than a protected legacy track.</td><td>Not a sunset, but not a strong legacy-retiree structure either.</td></tr><tr><td>Piedmont</td><td>Group-rate continuation / Medicare supplement</td><td>Retiree-health access exists through a different continuation-and-supplement model.</td><td>Again, not a United-style sunset.</td></tr><tr><td>Residual reviewed carriers</td><td>Cautious bucket</td><td>Most of the remaining reviewed agreements appear to bargain active medical coverage rather than a durable contractual retiree-medical entitlement.</td><td>This report keeps cautious wording and does not overclaim where the reviewed text is thinner.</td></tr>
+</tbody>
+</table>
+</div>
+<div class="callout">
+<strong>Clean comparative conclusion:</strong> United is the only reviewed agreement with a true contractual legacy-retiree-medical sunset. Hawaiian is the nearest analog only as to its RHRA deadline. Alaska, Southwest, American, and Piedmont preserve some form of retiree-health access without a United-style hard shutdown, but through very different structures.
+    </div>
+</section>
+<section class="cs-report__section" id="final-framework">
+<h2 class="cs-report__section-title">Reader decision framework</h2>
+<div class="final-framework">
+<div class="bucket">
+<h3>Reasons readers may view TA2 favorably</h3>
+<ul>
+<li>Real gains in paid leave, sick-bank capacity, benefits matching, safety access, and enforcement structure.</li>
+<li>Meaningful improvement over the current operating baseline in reserve modernization, benefits, and multiple quality-of-life areas.</li>
+<li>A real new sit-pay concept and several date-of-signing items that members can actually feel earlier than the most delayed economics.</li>
+</ul>
+</div>
+<div class="bucket">
+<h3>Reasons readers may still reject TA2</h3>
+<ul>
+<li>No major premium-pay breakthrough and weaker timing on vacation value than many readers expected.</li>
+<li>The new Scope LOA 16 carve-out is materially consequential and negative for readers focused on scope protection.</li>
+<li>Reserve remains below Southwest’s benchmark, the retiree-medical sunset survives, and Section 7.Q remains dense and contentious.</li>
+</ul>
+</div>
+</div>
+<div class="key-box">
+      For CrewSignal readers, the most accurate final formulation remains this: TA2 is a mixed agreement with real gains, real weaknesses, and a large amount of value that depends on delayed implementation rather than immediate delivery.
+    </div>
+</section>
+</main>
+<footer class="cs-report__footer">
+<p class="cs-report__fineprint">CrewSignal · Contract Architecture &amp; Comparative Analysis</p>
+</footer>
+</body>
+</html>

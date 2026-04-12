@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>CrewSignal | CWA-AFA · United Airlines · Scope / LOA 16 Deep Dive</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Standalone CrewSignal deep dive on United TA2 Scope LOA 16, the new United Express regional-carrier carve-out, and the interaction with the United pilot agreement." />
+<link rel="stylesheet" href="/assets/css/main.css" />
+<style>
+
+  :root {
+    --border: rgba(0,0,0,.12);
+    --soft: rgba(255,255,255,.04);
+    --soft-2: rgba(255,255,255,.02);
+    --accent: #0f4c81;
+    --link: #bfdbfe;
+    --link-hover: #facc15;
+  }
+  .united-ta-report {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 2rem 1rem 4rem;
+  }
+  .united-ta-report .cs-report__section + .cs-report__section {
+    border-top: 1px solid var(--border);
+    padding-top: 1.2rem;
+    margin-top: 1.2rem;
+  }
+  .united-ta-report .cs-report__section-title {
+    margin: 0 0 .35rem;
+    font-size: 1.35rem;
+  }
+  .united-ta-report a,
+  .cs-report__header a {
+    color: var(--link);
+    text-decoration: none;
+  }
+  .united-ta-report a:hover,
+  .united-ta-report a:focus,
+  .cs-report__header a:hover,
+  .cs-report__header a:focus {
+    color: var(--link-hover);
+    text-decoration: underline;
+  }
+  .callout, .key-box {
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1rem 1.1rem;
+    background: var(--soft-2);
+    margin: 1rem 0 1.25rem;
+  }
+  .key-box {
+    border-left: 4px solid var(--accent);
+    background: var(--soft);
+  }
+  .report-structure { margin: 1rem 0 1.5rem; }
+  .report-structure ol { padding-left: 1.2rem; }
+  .toc-grid, .final-framework, .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1rem;
+    margin: 1.5rem 0 2rem;
+  }
+  .toc-card, .bucket, .hub-card {
+    border: 1px solid #d7d7d7;
+    border-radius: 10px;
+    padding: 1rem;
+    background: transparent;
+    box-shadow: none;
+  }
+  .toc-card h3, .bucket h3, .hub-card h3 {
+    margin-top: 0;
+  }
+  .toc-card ul, .bucket ul, .hub-card ul {
+    margin: .5rem 0 0;
+    padding-left: 1.1rem;
+  }
+  .toc-card p:last-child, .bucket p:last-child, .hub-card p:last-child,
+  .toc-card ul:last-child, .bucket ul:last-child, .hub-card ul:last-child {
+    margin-bottom: 0;
+  }
+  .pdf-pill {
+    display: inline-block;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: .35rem .65rem;
+    margin: .15rem .35rem .15rem 0;
+    white-space: nowrap;
+  }
+  .source-pills { margin: .55rem 0 1rem; }
+  .section-head { margin-bottom: .25rem; }
+  .table-wrap { overflow-x: auto; margin: 1rem 0 1.25rem; }
+  .compare-table { width: 100%; border-collapse: collapse; min-width: 720px; }
+  .compare-table th, .compare-table td {
+    border: 1px solid var(--border);
+    padding: .72rem .82rem;
+    text-align: left;
+    vertical-align: top;
+  }
+  .compare-table th { background: var(--soft); }
+  .footnote { font-size: .94rem; opacity: .85; }
+  .appendix-intro { margin-top: .5rem; }
+  .kicker { opacity: .85; margin: 0 0 .45rem; }
+  .hub-card h3 a { text-decoration: none; }
+  .hub-card h3 a:hover, .hub-card h3 a:focus { text-decoration: underline; }
+  @media (max-width: 780px) {
+    .united-ta-report { padding: 1.25rem .85rem 3rem; }
+    .compare-table { min-width: 640px; }
+  }
+
+</style>
+</head>
+<body class="cs-report">
+<header class="cs-report__header">
+  <a class="cs-back-link cs-report__back" href="/reports/contract-architecture/cwa-afa/united/successive-ta-comparison/">← Back to United TA comparison hub</a>
+  <p class="cs-report__eyebrow">Contract Architecture</p>
+  <h1 class="cs-report__title">CWA-AFA · United Airlines</h1>
+  <p class="cs-report__subtitle">Scope / LOA 16 Deep Dive</p>
+</header>
+<main class="cs-report__main united-ta-report">
+
+<section class="cs-report__section">
+  <p><strong>Compare frame:</strong> TA2 vs. TA1 and TA2 vs. the current 2016–2021 operating baseline.</p>
+  <p class="cs-editor-note"><strong>Editor’s Note:</strong> This page expands the scope analysis from the full report. It states the contractual effect of TA2’s LOA 16, including the United-pilot staffing rule, the new United Express carve-out, the pilot-side fences imported by reference, and the difference between derivative protection and full mainline exclusivity.</p>
+  <div class="source-pills">
+    <a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_CBA_2016-2021.pdf#page=1">Current CBA</a>
+    <a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2025-2030.pdf#page=1">TA1</a>
+    <a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2026-2031.pdf#page=1">TA2</a>
+  </div>
+</section>
+
+
+<section class="cs-report__section adjunct" id="scope-alert">
+  <div class="section-head">
+    <h2 class="cs-report__section-title">Adjunct — Scope / LOA 16 / United Express deep dive</h2>
+    <div class="source-pills">
+      <a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_CBA_2016-2021.pdf#page=404">Current CBA Scope LOA 25 p.404</a>
+      <a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2025-2030.pdf#page=436">TA1 Scope LOA 16 p.436</a>
+      <a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2026-2031.pdf#page=407">TA2 Scope LOA 16 p.407</a>
+      <a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_ALPA_Agreement_2023-09-29.pdf#page=10">Pilot Agreement Section 1 p.10</a>
+      <a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_ALPA_Agreement_2023-09-29.pdf#page=11">Pilot Agreement United Express caps p.11</a>
+      <a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_ALPA_Agreement_2023-09-29.pdf#page=12">Pilot Agreement growth formula p.12</a>
+      <a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_ALPA_Agreement_2023-09-29.pdf#page=13">Pilot Agreement furlough effect p.13</a>
+    </div>
+  </div>
+  <div class="key-box">
+    <strong>Bottom line:</strong> TA2’s LOA 16 is a partial shield, not a full shield. It protects United Flight Attendants strongly when the flying stays on United pilots, but it also creates a new contractual path for controlled United Express regional flying to be staffed by non-mainline Flight Attendants.
+  </div>
+  <p>The current amendable CBA and the rejected TA1 both use the older three-part scope model: controlled entities may not conduct commercial flight operations historically performed by United Flight Attendants unless they use United-system Flight Attendants; United may not establish or purchase an alter-ego airline; and if United establishes or purchases a commuter airline (primary 135 carrier), AFA is recognized and the parties bargain a competitive agreement no less favorable than area-standard contracts for similar flying.</p>
+  <p>TA2 keeps those paragraphs and then adds two new pieces. Paragraph 4 says all flights operated by pilots covered by the United pilot agreement and requiring Flight Attendants must be staffed by United Flight Attendants. Paragraph 5 then says United may create or acquire a controlling interest in and control of a regional carrier conducting United Express Flying, and that carrier’s flights may be staffed by that carrier’s own Flight Attendants unless the flights are operated by United pilots, in which case they must be staffed by United Flight Attendants.</p>
+  <div class="table-wrap">
+    <table class="compare-table">
+      <thead>
+        <tr><th>Question</th><th>Current CBA</th><th>TA1</th><th>TA2</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Controlled entity doing historically mainline-type flying</td><td>Must use United-system Flight Attendants.</td><td>Same basic rule.</td><td>Same rule remains in paragraphs 1–3.</td></tr>
+        <tr><td>Alter-ego prohibition</td><td>Yes.</td><td>Yes.</td><td>Yes.</td></tr>
+        <tr><td>Commuter-airline fallback / representation clause</td><td>Yes — AFA recognition plus area-standard bargaining floor.</td><td>Same.</td><td>Same.</td></tr>
+        <tr><td>Flights operated by United pilots</td><td>No parallel pilot-tie rule.</td><td>No parallel pilot-tie rule.</td><td>Must be staffed by United Flight Attendants.</td></tr>
+        <tr><td>Controlled United Express regional-carrier carve-out</td><td>No.</td><td>No.</td><td>Yes — that carrier may use its own Flight Attendants unless the flights are operated by United pilots.</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>The United pilot agreement is why the new language matters so much. Pilot scope gives United pilots the exclusive right to perform Company Flying, but it separately defines and permits United Express Flying. Under Section 1-C-1, United Express flying is regional-aircraft flying on another operating certificate using the United code and United Express or similar branding, or under a revenue-share arrangement. The pilot agreement also says United or a company affiliate may create, acquire, control, manage, take an equity interest in, or transfer aircraft to United Express carriers that comply with Section 1-C-1, and that those operations are not considered Company Flying or Company Aircraft.</p>
+  <p>That means LOA 16 does not import pilot scope as a full mainline exclusivity clause for Flight Attendants. Instead, it imports the pilot agreement’s regional-flying framework — including its permissions and its fences.</p>
+  <div class="table-wrap">
+    <table class="compare-table">
+      <thead>
+        <tr><th>Pilot-side United Express fence</th><th>What it does</th><th>Why it matters for Flight Attendants</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Aircraft-type / size caps</td><td>Permits 37-seat turboprops, capped 50-seaters, and a baseline of up to 255 combined 70/76-seat aircraft, of which up to 153 may be 76-seat aircraft.</td><td>These are real limits, but they still allow a substantial regional footprint.</td></tr>
+        <tr><td>Stage-length rule</td><td>At least 80% of United Express flights each month must be under 900 miles.</td><td>Protects some network shape, but does not eliminate regional flying.</td></tr>
+        <tr><td>Hub-to-hub cap</td><td>Hub-to-hub United Express block hours are capped at 5% of total United Express block hours.</td><td>This restrains, but does not bar, high-visibility network substitution.</td></tr>
+        <tr><td>Growth formula</td><td>If United adds new small narrowbody aircraft, the pilot agreement allows growth above the baseline caps up to 223 76-seat aircraft and 325 combined 76/70-seat aircraft, with corresponding 50-seat reductions.</td><td>The box can expand, which matters because TA2 ties AFA scope to that pilot-defined box.</td></tr>
+        <tr><td>Furlough effect</td><td>If a protected United pilot is furloughed, all 76-seat aircraft must be converted to 70-seat operation until the protection no longer applies.</td><td>A real pilot-side backstop, but still not a mainline-flight-attendant exclusivity rule.</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="callout">
+    <h3>What LOA 16 protects</h3>
+    <ul>
+      <li>If a flight is operated by pilots covered by the United pilot agreement and requires Flight Attendants, it must be staffed by United Flight Attendants.</li>
+      <li>TA2 imports the pilot agreement’s aircraft, ratio, network, and furlough-related United Express limits rather than leaving the new carve-out completely open-ended.</li>
+      <li>The older alter-ego and commuter-airline recognition language remains in place.</li>
+    </ul>
+  </div>
+  <div class="callout">
+    <h3>What LOA 16 exposes</h3>
+    <ul>
+      <li>United may now create or acquire a controlled United Express regional carrier and staff that carrier’s flights with that carrier’s own Flight Attendants unless the flights are operated by United pilots.</li>
+      <li>Protection becomes derivative: where pilot scope places the flying matters to Flight Attendant staffing.</li>
+      <li>Because TA2 imports the pilot agreement’s United Express provisions “as it may be amended,” the outer boundary of the carve-out can move with later pilot-scope amendments.</li>
+    </ul>
+  </div>
+  <div class="table-wrap">
+    <table class="compare-table">
+      <thead>
+        <tr><th>Comparator agreement</th><th>Scope style</th><th>United TA2 contrast</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Alaska</td><td>Part 121 exclusivity: the carrier will not engage in Part 121 operations unless all flying is performed exclusively by Flight Attendants on the Alaska seniority list.</td><td>More direct all-flying protection than LOA 16’s pilot-linked model.</td></tr>
+        <tr><td>Horizon</td><td>All Part 121 flying plus transfer / parallel-operations and foreign-domicile bargaining protections.</td><td>Again, more directly written around Flight Attendant flying itself.</td></tr>
+        <tr><td>Spirit</td><td>All flying on company aircraft or under company operational control, including wet leases, on the Spirit seniority list, subject to narrow temporary exceptions.</td><td>Broader direct cabin-scope language than TA2.</td></tr>
+        <tr><td>Republic</td><td>Parent / subsidiary / future-certificate coverage, no alter-ego, no evasive transfer of aircraft, routes, or authority.</td><td>Stronger anti-fragmentation language than TA2’s derivative model.</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="callout">
+    <h3>No-speculation guardrail</h3>
+    <p>The documents support the contractual opening and the pilot-side limits. They do not prove why United wanted the change, whether management plans to use it aggressively, or what outside corporate strategy may follow. The report stays at the contractual level.</p>
+  </div>
+  <p><strong>Assessment:</strong> TA2’s LOA 16 is mixed but leans concessionary from a pure scope perspective. It adds a real staffing protection for flights that remain on United pilots, but it also adds a material new United Express carve-out not found in the current CBA or TA1.</p>
+</section>
+
+</main>
+<footer class="cs-report__footer">
+  <p class="cs-report__fineprint">CrewSignal · Contract Architecture &amp; Comparative Analysis</p>
+</footer>
+</body>
+</html>

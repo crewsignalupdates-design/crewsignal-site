@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>CrewSignal | CWA-AFA · United Airlines · Reserve Deep Dive</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Standalone CrewSignal deep dive on United TA2 reserve, including United vs. Southwest and selected national comparators." />
+<link rel="stylesheet" href="/assets/css/main.css" />
+<style>
+
+  :root {
+    --border: rgba(0,0,0,.12);
+    --soft: rgba(255,255,255,.04);
+    --soft-2: rgba(255,255,255,.02);
+    --accent: #0f4c81;
+    --link: #bfdbfe;
+    --link-hover: #facc15;
+  }
+  .united-ta-report {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 2rem 1rem 4rem;
+  }
+  .united-ta-report .cs-report__section + .cs-report__section {
+    border-top: 1px solid var(--border);
+    padding-top: 1.2rem;
+    margin-top: 1.2rem;
+  }
+  .united-ta-report .cs-report__section-title {
+    margin: 0 0 .35rem;
+    font-size: 1.35rem;
+  }
+  .united-ta-report a,
+  .cs-report__header a {
+    color: var(--link);
+    text-decoration: none;
+  }
+  .united-ta-report a:hover,
+  .united-ta-report a:focus,
+  .cs-report__header a:hover,
+  .cs-report__header a:focus {
+    color: var(--link-hover);
+    text-decoration: underline;
+  }
+  .callout, .key-box {
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1rem 1.1rem;
+    background: var(--soft-2);
+    margin: 1rem 0 1.25rem;
+  }
+  .key-box {
+    border-left: 4px solid var(--accent);
+    background: var(--soft);
+  }
+  .report-structure { margin: 1rem 0 1.5rem; }
+  .report-structure ol { padding-left: 1.2rem; }
+  .toc-grid, .final-framework, .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1rem;
+    margin: 1.5rem 0 2rem;
+  }
+  .toc-card, .bucket, .hub-card {
+    border: 1px solid #d7d7d7;
+    border-radius: 10px;
+    padding: 1rem;
+    background: transparent;
+    box-shadow: none;
+  }
+  .toc-card h3, .bucket h3, .hub-card h3 {
+    margin-top: 0;
+  }
+  .toc-card ul, .bucket ul, .hub-card ul {
+    margin: .5rem 0 0;
+    padding-left: 1.1rem;
+  }
+  .toc-card p:last-child, .bucket p:last-child, .hub-card p:last-child,
+  .toc-card ul:last-child, .bucket ul:last-child, .hub-card ul:last-child {
+    margin-bottom: 0;
+  }
+  .pdf-pill {
+    display: inline-block;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: .35rem .65rem;
+    margin: .15rem .35rem .15rem 0;
+    white-space: nowrap;
+  }
+  .source-pills { margin: .55rem 0 1rem; }
+  .section-head { margin-bottom: .25rem; }
+  .table-wrap { overflow-x: auto; margin: 1rem 0 1.25rem; }
+  .compare-table { width: 100%; border-collapse: collapse; min-width: 720px; }
+  .compare-table th, .compare-table td {
+    border: 1px solid var(--border);
+    padding: .72rem .82rem;
+    text-align: left;
+    vertical-align: top;
+  }
+  .compare-table th { background: var(--soft); }
+  .footnote { font-size: .94rem; opacity: .85; }
+  .appendix-intro { margin-top: .5rem; }
+  .kicker { opacity: .85; margin: 0 0 .45rem; }
+  .hub-card h3 a { text-decoration: none; }
+  .hub-card h3 a:hover, .hub-card h3 a:focus { text-decoration: underline; }
+  @media (max-width: 780px) {
+    .united-ta-report { padding: 1.25rem .85rem 3rem; }
+    .compare-table { min-width: 640px; }
+  }
+
+</style>
+</head>
+<body class="cs-report">
+<header class="cs-report__header">
+  <a class="cs-back-link cs-report__back" href="/reports/contract-architecture/cwa-afa/united/successive-ta-comparison/">← Back to United TA comparison hub</a>
+  <p class="cs-report__eyebrow">Contract Architecture</p>
+  <h1 class="cs-report__title">CWA-AFA · United Airlines</h1>
+  <p class="cs-report__subtitle">Reserve Deep Dive</p>
+</header>
+<main class="cs-report__main united-ta-report">
+
+<section class="cs-report__section">
+  <p><strong>Compare frame:</strong> TA2 vs. TA1 and TA2 vs. the current 2016–2021 operating baseline.</p>
+  <p class="cs-editor-note"><strong>Editor’s Note:</strong> This page isolates reserve as its own report because reserve quality is often decisive in ratification. The analysis keeps separate what TA2 improves over the current baseline, what it barely improves over TA1, and why Southwest remains the cleaner benchmark.</p>
+  <div class="source-pills">
+    <a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_CBA_2016-2021.pdf#page=1">Current CBA</a>
+    <a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2025-2030.pdf#page=1">TA1</a>
+    <a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2026-2031.pdf#page=1">TA2</a>
+  </div>
+</section>
+
+<section class="cs-report__section" id="section-8">
+<div class="section-head">
+<h2 class="cs-report__section-title">Section 8 — Reserve Scheduling Procedures</h2>
+<div class="source-pills"><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_CBA_2016-2021.pdf#page=91">Current CBA p.91</a><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2025-2030.pdf#page=123">TA1 p.123</a><a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2026-2031.pdf#page=114">TA2 p.114</a></div>
+</div>
+<p><strong>Status:</strong> Real improvement over the current baseline, but still below the best-in-class reserve model.</p>
+<p>TA2’s RAP-based reserve structure is a real improvement over the older all-day-liability model, and the second TA appears to make narrow but meaningful improvements over TA1 as well. Even so, reserve remains heavily dependent on later implementation and still does not approach the cleaner liability rules and stronger monetization that make Southwest a benchmark in member discussions.</p>
+<p><strong>Why it matters:</strong> Reserve is a ratification-driving issue because it affects daily control, contact windows, assignment reach, and the pay consequences of overreach. TA2 is better than the current baseline, but it still leaves United with long liability windows, 24-hour availability by preference, and narrower remedies than the strongest comparator models.</p>
+<p><strong>Assessment:</strong> Meaningful improvement, but still well short of the Southwest standard and still heavily tied to JIT / later implementation.</p>
+</section><section class="cs-report__section adjunct" id="reserve-vs-southwest">
+<div class="section-head">
+<h2 class="cs-report__section-title">Adjunct — Reserve versus Southwest, plus national reserve snapshots</h2>
+<div class="source-pills">
+<a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_CBA_2016-2021.pdf#page=91">Current CBA Section 8 p.91</a>
+<a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2025-2030.pdf#page=123">TA1 Section 8 p.123</a>
+<a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2026-2031.pdf#page=114">TA2 Section 8 p.114</a>
+<a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2026-2031.pdf#page=385">TA2 reserve implementation p.385</a>
+<a class="pdf-pill" href="https://media.twu556.org/2024/03/29174633/TA2024-Annotated-Combined.3-29-24.pdf#page=100" rel="noopener" target="_blank">Southwest reserve guarantee p.100</a>
+<a class="pdf-pill" href="https://media.twu556.org/2024/03/29174633/TA2024-Annotated-Combined.3-29-24.pdf#page=177" rel="noopener" target="_blank">Southwest RIGs p.177</a>
+</div>
+</div>
+<p>United’s RAP structure is real and materially better than a pure all-day uncertainty model. Even so, Southwest remains the more useful reserve benchmark because Southwest’s reserve system is not only cleaner on contact windows and assignment boundaries, but is also monetized directly in TFP. Southwest guarantees reserve pay at 6.5 TFP per reserve day, with a monthly reserve guarantee ranging from 78 to 110.5 TFP, and then layers pairing RIGs on top when reserve actually flies. United’s reserve improvements matter, but they still sit inside an hourly pay architecture plus separate add-pay items rather than the more integrated reserve-pay model Southwest uses.</p>
+<div class="callout">
+<h3>Best formulation</h3>
+<p>United TA2 modernizes reserve relative to the current operating baseline, but it still does not approach Southwest’s best-in-class reserve model. The difference is not just scheduling cleanliness; it is compensation architecture too.</p>
+</div>
+<div class="table-wrap">
+<table class="compare-table">
+<thead><tr><th>Comparator</th><th>Reserve snapshot</th><th>Why it matters</th></tr></thead>
+<tbody>
+<tr><td>Southwest</td><td>6.5 TFP per reserve day, 78–110.5 TFP monthly guarantee, and pairing RIGs when reserve actually flies.</td><td>Best benchmark for integrated reserve monetization and cleaner liability boundaries.</td></tr>
+<tr><td>Frontier</td><td>Developed reserve shifts, aggressive reserve assignment logic, and transparent reserve processes.</td><td>Shows how reserve can be systematized more clearly.</td></tr>
+<tr><td>Air Wisconsin</td><td>14-hour on-call periods, no contact obligation outside the reserve window, ready-reserve caps, and detailed drafting order.</td><td>Useful regional benchmark on predictability.</td></tr>
+<tr><td>GoJet</td><td>2-hour call-out with day-before assignment posting and clearer reserve ordering.</td><td>Illustrates how regional contracts often tighten reserve call-out language.</td></tr>
+<tr><td>Endeavor</td><td>RAP / home-reserve style architecture and domicile-specific call-out structure.</td><td>Useful for comparing operational reserve management rather than just pay.</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+</main>
+<footer class="cs-report__footer">
+  <p class="cs-report__fineprint">CrewSignal · Contract Architecture &amp; Comparative Analysis</p>
+</footer>
+</body>
+</html>
