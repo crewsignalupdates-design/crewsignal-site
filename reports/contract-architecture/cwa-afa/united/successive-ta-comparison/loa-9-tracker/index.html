@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>CrewSignal | CWA-AFA · United Airlines · LOA 9 Implementation Tracker</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Standalone CrewSignal implementation tracker for United CWA-AFA TA2 LOA 9, with TA2 vs. TA1 and TA2 vs. the current 2016–2021 operating baseline kept visible throughout." />
+<link rel="stylesheet" href="/assets/css/main.css" />
+<style>
+  :root {
+    --border: rgba(0,0,0,.12);
+    --soft: rgba(255,255,255,.04);
+    --soft-2: rgba(255,255,255,.02);
+    --accent: #0f4c81;
+    --link: #bfdbfe;
+    --link-hover: #facc15;
+  }
+  .united-ta-report {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 2rem 1rem 4rem;
+  }
+  .united-ta-report .cs-report__section + .cs-report__section {
+    border-top: 1px solid var(--border);
+    padding-top: 1.2rem;
+    margin-top: 1.2rem;
+  }
+  .united-ta-report .cs-report__section-title {
+    margin: 0 0 .35rem;
+    font-size: 1.35rem;
+  }
+  .united-ta-report a,
+  .cs-report__header a {
+    color: var(--link);
+    text-decoration: none;
+  }
+  .united-ta-report a:hover,
+  .united-ta-report a:focus,
+  .cs-report__header a:hover,
+  .cs-report__header a:focus {
+    color: var(--link-hover);
+    text-decoration: underline;
+  }
+  .callout, .key-box {
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1rem 1.1rem;
+    background: var(--soft-2);
+    margin: 1rem 0 1.25rem;
+  }
+  .key-box {
+    border-left: 4px solid var(--accent);
+    background: var(--soft);
+  }
+  .toc-grid, .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1rem;
+    margin: 1.25rem 0 1.75rem;
+  }
+  .hub-card {
+    border: 1px solid #d7d7d7;
+    border-radius: 10px;
+    padding: 1rem;
+    background: transparent;
+    box-shadow: none;
+  }
+  .hub-card h3 { margin-top: 0; }
+  .pdf-pill {
+    display: inline-block;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: .35rem .65rem;
+    margin: .15rem .35rem .15rem 0;
+    white-space: nowrap;
+  }
+  .source-pills { margin: .55rem 0 1rem; }
+  .section-head { margin-bottom: .25rem; }
+  .table-wrap { overflow-x: auto; margin: 1rem 0 1.25rem; }
+  .compare-table { width: 100%; border-collapse: collapse; min-width: 900px; }
+  .compare-table th, .compare-table td {
+    border: 1px solid var(--border);
+    padding: .72rem .82rem;
+    text-align: left;
+    vertical-align: top;
+  }
+  .compare-table th { background: var(--soft); }
+  .footnote { font-size: .94rem; opacity: .85; }
+  .kicker { opacity: .85; margin: 0 0 .45rem; }
+  .status-real { font-weight: 600; }
+  @media (max-width: 780px) {
+    .united-ta-report { padding: 1.25rem .85rem 3rem; }
+    .compare-table { min-width: 720px; }
+  }
+</style>
+</head>
+<body class="cs-report">
+<header class="cs-report__header">
+  <a class="cs-back-link cs-report__back" href="/reports/contract-architecture/cwa-afa/united/successive-ta-comparison/">← Back to United TA comparison hub</a>
+  <p class="cs-report__eyebrow">Contract Architecture</p>
+  <h1 class="cs-report__title">CWA-AFA · United Airlines</h1>
+  <p class="cs-report__subtitle">LOA 9 Implementation Tracker</p>
+</header>
+<main class="cs-report__main united-ta-report">
+
+<section class="cs-report__section">
+  <p><strong>Compare frame:</strong> TA2 vs. TA1 and TA2 vs. the current 2016–2021 operating baseline.</p>
+  <p class="cs-editor-note"><strong>Editor’s Note:</strong> This page is a timing and implementation tracker, not a sales sheet. It distinguishes between text that exists in TA2, text that is effective on Date of Signing, text with a fixed later implementation date, and text whose implementation timeline remains with the Joint Implementation Team. Until a provision is implemented, Flight Attendants continue operating under the current 2016–2021 agreement, or as otherwise agreed by the Company and the Union.</p>
+  <div class="source-pills">
+    <a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_CBA_2016-2021.pdf#page=337">Current CBA LOA 18</a>
+    <a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2025-2030.pdf#page=48">TA1 Section 4</a>
+    <a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2026-2031.pdf#page=371">TA2 LOA 9</a>
+    <a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2026-2031.pdf#page=377">TA2 LOA 9 Appendix A</a>
+    <a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2026-2031.pdf#page=382">TA2 LOA 9 Appendix B</a>
+    <a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2026-2031.pdf#page=45">TA2 Section 4. S–V</a>
+  </div>
+</section>
+
+<section class="cs-report__section" id="loa-9-overview">
+  <div class="section-head">
+    <h2 class="cs-report__section-title">What LOA 9 does</h2>
+  </div>
+  <p><strong>Status:</strong> Foundational and load-bearing.</p>
+  <p>LOA 9 is the timing document for TA2. It does not merely restate that implementation takes time. It decides which items are effective on Date of Signing, which items have a stated later implementation date, and which items remain subject to later Joint Implementation Team work. That timing matters because the contract itself provides that, until a provision is implemented, Flight Attendants continue operating under the current 2016–2021 agreement unless the parties agree otherwise.</p>
+  <p><strong>Why it matters:</strong> Much of the public debate around TA2 turns on text that exists in the agreement but is not immediately usable. This page keeps that distinction visible. A real gain can still be deferred. A strong summary claim can still overstate contractual effect if it ignores timing. And a DOS item is not the same thing as a JIT-governed item that still lacks a published implementation date.</p>
+  <div class="key-box">
+    <strong>Plain-English read:</strong> LOA 9 should be treated as part of the contract’s substance, not as back-office administration. On high-interest issues such as sit pay, vacation pay, Section 7.Q mechanics, reserve ordering, training deadhead, and hotel rules, implementation timing is part of the actual bargain.
+  </div>
+</section>
+
+<section class="cs-report__section" id="how-to-read">
+  <div class="section-head">
+    <h2 class="cs-report__section-title">How to read this tracker</h2>
+  </div>
+  <div class="card-grid">
+    <div class="hub-card">
+      <h3>DOS</h3>
+      <p>The item is listed in Appendix A as effective on Date of Signing or on the first applicable DOS bid-period timing specified by LOA 9.</p>
+    </div>
+    <div class="hub-card">
+      <h3>Fixed later date</h3>
+      <p>The item is in Appendix B with a stated later bid period or month, such as January 2027 or January 2031.</p>
+    </div>
+    <div class="hub-card">
+      <h3>JIT / TBD</h3>
+      <p>The item is real contractual text, but its implementation schedule remains with the Joint Implementation Team rather than a fixed published date.</p>
+    </div>
+    <div class="hub-card">
+      <h3>Editorial tags</h3>
+      <p><strong>Real</strong>, <strong>preserved</strong>, <strong>deferred</strong>, <strong>conditional</strong>, and <strong>derivative</strong> describe contractual effect, not messaging.</p>
+    </div>
+  </div>
+  <div class="callout">
+    <strong>Current-baseline anchor:</strong> this timing architecture is not wholly new. The current 2016–2021 operating baseline already contains an implementation letter, a Joint Implementation Team, and large sets of DOS+, CMS, and ongoing items. What is different in TA2 is not the existence of implementation staging, but the specific placement of economically important items into DOS, fixed-later, and JIT buckets.
+  </div>
+</section>
+
+<section class="cs-report__section" id="highest-impact-tracker">
+  <div class="section-head">
+    <h2 class="cs-report__section-title">Highest-impact implementation tracker</h2>
+  </div>
+  <div class="table-wrap">
+    <table class="compare-table">
+      <thead>
+        <tr>
+          <th>Topic</th>
+          <th>Current 2016–2021 operating baseline</th>
+          <th>TA1</th>
+          <th>TA2 / LOA 9 timing</th>
+          <th>Read</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Wage rates / incentive / white-flag base tables</td>
+          <td>Current wage structure remains operative until implemented changes arrive.</td>
+          <td>Higher tables than the current baseline.</td>
+          <td>Appendix A makes wage rates and related WF/PF/incentive movement DOS.</td>
+          <td><strong>Real and immediate.</strong> This is true new value against the current baseline and does not depend on later JIT work.</td>
+        </tr>
+        <tr>
+          <td>Boarding pay</td>
+          <td>No boarding-pay architecture in the current operating agreement.</td>
+          <td>TA1 already created boarding pay at 50% of the Section 4.A rate, paid as ADD pay and for pay only rather than credit.</td>
+          <td>TA2 preserves boarding pay and Appendix A lists it as DOS.</td>
+          <td><strong>Real against the current baseline, preserved from TA1.</strong> Public summaries that present boarding pay as a new TA2 win over TA1 overstate the contract.</td>
+        </tr>
+        <tr>
+          <td>Sit pay</td>
+          <td>No comparable sit-pay item surfaced.</td>
+          <td>Not present as a distinct Section 4 pay item in the TA1 text.</td>
+          <td>TA2 creates sit pay, but Appendix B places implementation at January 2027. Sit pay is pay only and not credit.</td>
+          <td><strong>Real and new, but deferred.</strong> This is TA2’s clearest new compensation item, yet it is not a DOS benefit.</td>
+        </tr>
+        <tr>
+          <td>Vacation pay value</td>
+          <td>Vacation remains paid at 3:15 per day.</td>
+          <td>TA1 text states 3:30 per vacation day.</td>
+          <td>TA2 text keeps 3:15, then moves to 3:30 effective with the January 2031 bid month. Appendix B gives January 2031 as the implementation point.</td>
+          <td><strong>Real but heavily deferred.</strong> Against the current baseline it is an eventual increase; against TA1 it is a timing setback.</td>
+        </tr>
+        <tr>
+          <td>LIP pay for ground holding time</td>
+          <td>Holding time pay exists, but no TA2-style expansion here.</td>
+          <td>TA1 text includes LIP ground-holding treatment.</td>
+          <td>Appendix B places implementation in the December 2027 bid period.</td>
+          <td><strong>Real but delayed.</strong> This is not immediately operational value at DOS.</td>
+        </tr>
+        <tr>
+          <td>Pairings date/time notation</td>
+          <td>No TA2-style pairing timestamp requirement.</td>
+          <td>Text change exists, but timing is separate from visibility in the text.</td>
+          <td>Appendix B places implementation in the June 2027 bid period.</td>
+          <td><strong>Real and delayed.</strong> Useful transparency, but not front-end economic value.</td>
+        </tr>
+        <tr>
+          <td>Section 7.Q reassignment pay — international</td>
+          <td>Current baseline remains in force until implemented changes arrive.</td>
+          <td>TA1 contains a stronger 7.Q architecture than the current baseline.</td>
+          <td>Appendix A places the reassignment-parameter pay increase from $15 to $20 at DOS, but Appendix B places parts of 7.Q international reassignment pay mechanics in the December 2026 bid period, with broader 7.Q items still JIT-driven.</td>
+          <td><strong>Mixed implementation.</strong> Some money moves early; larger operational mechanics do not.</td>
+        </tr>
+        <tr>
+          <td>Schedule-change acknowledgment tools</td>
+          <td>No TA2-style acknowledgment feature.</td>
+          <td>Text may exist in later bargaining drafts, but timing matters more than presence in a summary.</td>
+          <td>Appendix B places 7.Q.5.j.(1) and 7.Q.5.j.(2) in December 2027.</td>
+          <td><strong>Real but late.</strong> This is a workflow change, not front-end delivered value.</td>
+        </tr>
+        <tr>
+          <td>Reserve ordering / day classifications / availability periods</td>
+          <td>The current operating baseline already has a history of implementation staging for reserve changes under LOA 18.</td>
+          <td>TA1 text is not the same thing as implemented reserve functionality.</td>
+          <td>Multiple reserve items in Appendix B remain JIT-determined, including reserve ordering, International Purser and Language Qualified reserve ordering, day classifications, reserve availability periods, and reserve-time display features.</td>
+          <td><strong>Conditional and unfinished.</strong> Reserve remains one of the strongest reasons a separate implementation tracker is necessary.</td>
+        </tr>
+        <tr>
+          <td>Training deadhead after lifting the 5-hour cap</td>
+          <td>The current baseline implementation letter tied training/travel changes to CMS-based implementation.</td>
+          <td>TA1 text already addressed training deadhead and related protections.</td>
+          <td>Appendix B places payment for all training deadhead after lifting the 5-hour cap in the December 2026 bid period.</td>
+          <td><strong>Real but not DOS.</strong> Timing should remain visible in any training-page summary.</td>
+        </tr>
+        <tr>
+          <td>Hotel 17-hour rule</td>
+          <td>Current hotel implementation under LOA 18 included major DOS+ and JIT staging.</td>
+          <td>TA1 text moves the layover threshold, but implementation still matters.</td>
+          <td>Appendix B places the 17-hour hotel item in the January 2027 bid period.</td>
+          <td><strong>Real but deferred.</strong> This is not yet a present-tense operating rule at DOS.</td>
+        </tr>
+        <tr>
+          <td>Retiree medical extension</td>
+          <td>Current agreement already contains retiree-medical provisions.</td>
+          <td>TA1 addressed retiree-medical continuation.</td>
+          <td>Appendix A places retiree-medical extension at DOS.</td>
+          <td><strong>Real and immediate, but mostly preservation rather than a newly invented TA2 structure.</strong></td>
+        </tr>
+        <tr>
+          <td>Benefits match / increased match calculation</td>
+          <td>Current baseline match is lower.</td>
+          <td>TA1 moved the match structure upward.</td>
+          <td>Appendix A places benefits matching and increased match calculation at DOS.</td>
+          <td><strong>Real and immediate.</strong> This is one of the cleaner DOS items in TA2.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="footnote">This first version is intentionally a high-importance tracker rather than a line-for-line reproduction of all Appendix A and Appendix B entries. It prioritizes the items most likely to affect how readers evaluate compensation, reserve, scheduling, vacations, and benefits.</p>
+</section>
+
+<section class="cs-report__section" id="architecture-comparison">
+  <div class="section-head">
+    <h2 class="cs-report__section-title">Implementation architecture: TA2 versus the current baseline</h2>
+  </div>
+  <p>TA2’s implementation letter is not an anomaly. The current 2016–2021 operating baseline already used an implementation agreement with a Joint Implementation Team, DOS+, CMS-tied timing, and long lists of provisions that were not immediately self-executing. In that sense, LOA 9 is partly a continuation of the current operating model rather than a wholly new bargaining structure.</p>
+  <p>What changed is the placement of especially visible items. TA2 places wage rates, drafting pay, drug-test compensation, galley pay, International Purser pay increases, Language Qualified pay increases, short-crew pay increases, boarding pay, several per diem increases, selected Section 7 trip-trade items, and a large number of benefits and safety provisions into Appendix A as DOS items. At the same time, it pushes sit pay to January 2027, the vacation-pay increase to January 2031, numerous Section 7.Q tools to December 2026 through December 2027 or JIT, and major reserve mechanics into JIT-governed timing rather than fixed immediate dates.</p>
+  <div class="callout">
+    <strong>Editorial conclusion:</strong> the existence of LOA 9 should not be described as a hidden defect unique to TA2. The more accurate criticism is narrower: TA2 places some of its most marketable gains outside the DOS bucket, which means readers must distinguish text, effective text, and later effective text.
+  </div>
+</section>
+
+<section class="cs-report__section" id="overstatement-guardrails">
+  <div class="section-head">
+    <h2 class="cs-report__section-title">Where summary materials can overstate contractual effect</h2>
+  </div>
+  <p>The first overstatement risk is treating every TA2 improvement as if it were already live on DOS. That is wrong for sit pay, the 17-hour hotel item, several training changes, many Section 7.Q tools, many reserve mechanics, and the 3:30 vacation-pay value.</p>
+  <p>The second overstatement risk is treating preserved TA1 items as if they were newly won in TA2. Boarding pay is the clearest example. Against the current baseline, boarding pay remains a real gain. Against TA1, it is continuity, not a new TA2 achievement.</p>
+  <p>The third overstatement risk is flattening JIT items into certainty. A JIT-governed item is not imaginary, but its implementation timing is not yet the same thing as a DOS item or a fixed-date Appendix B item. The tracker should therefore keep JIT-governed items in a separate status category rather than blending them into immediate value.</p>
+</section>
+
+<section class="cs-report__section" id="next-build">
+  <div class="section-head">
+    <h2 class="cs-report__section-title">Next expansion pass</h2>
+  </div>
+  <p>The next pass should convert this high-impact tracker into a full appendix mirror with filters by section, effective date, and change type. The most useful second-stage splits are likely: Section 4 implementation, Section 7/7.Q implementation, Reserve implementation, Vacations implementation, and Benefits implementation.</p>
+  <p>Until then, this page should serve as the source-of-truth timing page for the United successive TA comparison. Other deep dives should link here rather than restating implementation dates ad hoc.</p>
+</section>
+
+</main>
+<footer class="cs-report__footer">
+  <p class="cs-report__fineprint">CrewSignal · Contract Architecture &amp; Comparative Analysis</p>
+</footer>
+</body>
+</html>
