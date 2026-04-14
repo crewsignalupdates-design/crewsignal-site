@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>CrewSignal | Breeze / CWA-AFA &mdash; Negotiations Overview</title>
+  <title>CrewSignal | Breeze / CWA-AFA â€” Negotiations Overview</title>
   <meta
     name="description"
     content="CrewSignal historical negotiations overview for Breeze Flight Attendants represented by CWA-AFA, covering the period from certification on 2024.05.08 through 2026.03.20."
@@ -15,22 +15,22 @@
     class="cs-report cs-report--negotiations cs-report--ytd"
     id="breeze-cwa-afa-negotiations-overview"
   >
-        <header class="cs-report__header">
-      <a href="/reports/mediation/" class="cs-report__back">
-        &larr; Back to Negotiations &amp; Mediation Hub
+    <header class="cs-report__header">
+      <a href="https://crewsignal.org/reports/mediation/" class="cs-report__back">
+        â† Back to Negotiations &amp; Mediation Hub
       </a>
-      <p class="cs-report__eyebrow">Negotiations &amp; Mediation</p>
-      <h1 class="cs-report__title">Breeze / CWA-AFA Negotiations</h1>
-      <p class="cs-report__meta">
-        NMB Docket: None public &middot; Mediator: None public &middot; Amendable: First contract
-      </p>
-    </header>
+  <h1 class="cs-report__title">Breeze / CWA-AFA</h1>
+  <p class="cs-report__meta">
+    <span class="cs-report__meta-item">NMB Representation Case: R-7624 Â· Status: First-contract negotiations</span>
+  </p>
+  <p class="cs-report__subtitle">Week Ending 2026.03.20</p>
+</header>
 
     <main class="cs-report__main">
 <section class="cs-editor-note cs-report__section">
         <p>
-          <strong>Editor&rsquo;s Note:</strong>
-          This overview relies on publicly observable information and is prepared for informational purposes. No notable public bargaining-specific reporting was identified for much of Breeze&rsquo;s post-certification period. Where CrewSignal uses union-side sources below, it does so only for limited procedural detail that was not otherwise documented in stronger public sources.
+          <strong>Editorâ€™s Note:</strong>
+          This overview relies on publicly observable information and is prepared for informational purposes. No notable public bargaining-specific reporting was identified for much of Breezeâ€™s post-certification period. Where CrewSignal uses union-side sources below, it does so only for limited procedural detail that was not otherwise documented in stronger public sources.
         </p>
       </section>
 
@@ -61,7 +61,7 @@
       <section id="background-context" class="cs-report__section">
         <h2 class="cs-report__section-title">Background &amp; Context</h2>
         <p>
-          Breeze&rsquo;s Flight Attendant case begins with certification rather than amendability. The National Mediation Board certified CWA-AFA on 2024.05.08, giving Breeze Flight Attendants a formal bargaining representative under the Railway Labor Act.
+          Breezeâ€™s Flight Attendant case begins with certification rather than amendability. The National Mediation Board certified CWA-AFA on 2024.05.08, giving Breeze Flight Attendants a formal bargaining representative under the Railway Labor Act.
         </p>
         <p>
           That starting point matters. At a carrier with an existing collective bargaining agreement, the defining date is often when the contract becomes amendable. At Breeze, the defining date is certification because the parties were building a first Flight Attendant contract from scratch rather than reopening an existing one.
@@ -71,10 +71,10 @@
       <section id="campaign-to-certification" class="cs-report__section">
         <h2 class="cs-report__section-title">From Election Filing to Certification</h2>
         <p>
-          The public procedural record is clear through certification. The National Mediation Board&rsquo;s weekly activity reports show Breeze&rsquo;s representation case, R-7624, after the January 2024 filing and later show the election underway with a 2024.05.07 count date. The Board then certified CWA-AFA on 2024.05.08.
+          The public procedural record is clear through certification. The National Mediation Boardâ€™s weekly activity reports show Breezeâ€™s representation case, R-7624, after the January 2024 filing and later show the election underway with a 2024.05.07 count date. The Board then certified CWA-AFA on 2024.05.08.
         </p>
         <p>
-          Third-party reporting at the time described the result as a strong mandate. The Salt Lake Tribune reported that Breeze Flight Attendants voted &ldquo;overwhelmingly&rdquo; to unionize, which is consistent with the NMB certification record showing a clear majority for representation.
+          Third-party reporting at the time described the result as a strong mandate. The Salt Lake Tribune reported that Breeze Flight Attendants voted â€œoverwhelminglyâ€ to unionize, which is consistent with the NMB certification record showing a clear majority for representation.
         </p>
         <p>
           Certification did not itself create a contract. It created the legal right and obligation to bargain one.
@@ -97,7 +97,7 @@
       <section id="why-negotiations-not-mediation" class="cs-report__section">
         <h2 class="cs-report__section-title">Why CrewSignal Treats This as Negotiations, Not Mediation</h2>
         <p>
-          the &ldquo;Airline Mediation Cases Docketed&rdquo; section names several airline labor disputes that were formally placed into mediation, including Frontier and Horizon Flight Attendants, but it does not identify Breeze Flight Attendants.
+          The strongest formal public marker CrewSignal found is actually what is missing. In the National Mediation Boardâ€™s FY2025 annual report, the â€œAirline Mediation Cases Docketedâ€ section names several airline labor disputes that were formally placed into mediation, including Frontier and Horizon Flight Attendants, but it does not identify Breeze Flight Attendants.
         </p>
         <p>
           That absence does not prove that no informal assistance, facilitation, or off-public-calendar labor-relations activity ever occurred. But it does mean CrewSignal did not identify a publicly docketed Breeze Flight Attendant mediation case through the materials reviewed for this overview. For that reason, the most conservative and supportable classification remains first-contract negotiations.
@@ -128,7 +128,7 @@
       <section id="broader-labor-context" class="cs-report__section">
         <h2 class="cs-report__section-title">Broader Breeze Labor Context</h2>
         <p>
-          It is important not to collapse Breeze&rsquo;s different workgroups into one bargaining narrative. Broader labor context matters. In January 2026, FlightGlobal reported that ALPA sued Breeze over allegedly stalled pilot first-contract negotiations.
+          It is important not to collapse Breezeâ€™s different workgroups into one bargaining narrative. Broader labor context matters. In January 2026, FlightGlobal reported that ALPA sued Breeze over allegedly stalled pilot first-contract negotiations.
         </p>
         <p>
           That pilot dispute does not establish the status of Flight Attendant bargaining. But it is relevant as context because it suggests first-contract labor relations at Breeze were not friction-free in early 2026.
@@ -182,7 +182,7 @@
           </li>
           <li class="cs-report__list-item">
             <a href="https://nmb.gov/NMB_Application/index.php/weekly-activity-report-2/weekly-activity-report-april-1-5-2024/">
-              Weekly Activity Report April 1 &ndash; 5, 2024
+              Weekly Activity Report April 1 â€“ 5, 2024
             </a>
           </li>
           <li class="cs-report__list-item">
@@ -192,7 +192,7 @@
           </li>
           <li class="cs-report__list-item">
             <a href="https://www.sltrib.com/news/business/2024/05/07/flight-attendants-this-utah/">
-              Flight attendants at this Utah airline just voted &ldquo;overwhelmingly&rdquo; to unionize
+              Flight attendants at this Utah airline just voted â€˜overwhelminglyâ€™ to unionize
             </a>
           </li>
           <li class="cs-report__list-item">
@@ -229,7 +229,7 @@
     </main>
 
     <footer class="cs-report__footer">
-      <p class="cs-report__fineprint">&copy; CrewSignal &middot; Informational resource for aviation professionals</p>
+      <p class="cs-report__fineprint">Â© CrewSignal Â· Informational resource for aviation professionals</p>
     </footer>
   </article>
 </body>
