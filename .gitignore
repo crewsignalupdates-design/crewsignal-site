@@ -22,3 +22,8 @@ audit/
 *.bak
 *.bak.*
 
+wayback/ual-downloads/
+wayback/ual-downloads-raw/
+wayback/ual-review/
+wayback/ual-text/
+wayback/*.csv
