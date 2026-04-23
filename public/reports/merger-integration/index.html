@@ -154,46 +154,104 @@
 
       <!--HISTORICAL_COMPARATOR_BLOCK_START-->
 <section id="historical-comparator-reports" style="margin: 2.5rem 0;">
+  <style>
+    #historical-comparator-reports .cs-historical-grid-4 {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 1rem;
+    }
+    #historical-comparator-reports .cs-historical-card {
+      border: 1px solid #d7d7d7;
+      border-radius: 10px;
+      padding: 1rem;
+    }
+    #historical-comparator-reports .cs-historical-card h3 {
+      margin-top: 0;
+    }
+    #historical-comparator-reports .cs-historical-card p {
+      margin-bottom: 0;
+    }
+    #historical-comparator-reports .cs-historical-spacer {
+      min-height: 1px;
+    }
+    @media (max-width: 1120px) {
+      #historical-comparator-reports .cs-historical-grid-4 {
+        grid-template-columns: repeat(2, minmax(240px, 1fr));
+      }
+      #historical-comparator-reports .cs-historical-spacer {
+        display: none;
+      }
+    }
+    @media (max-width: 640px) {
+      #historical-comparator-reports .cs-historical-grid-4 {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+
   <h2 style="margin-bottom: 0.5rem;">Historical Comparators</h2>
   <p style="margin: 0 0 1rem 0;">
-    Historical Legacy contracts, bargaining architecture,
-    representation transitions, and the road to combined agreements and JCBAs.
+    Historical legacy contracts, bargaining architecture,
+    representation transitions, and the road to combined agreements and Joint Collective Bargaining Agreements (JCBAs).
   </p>
 
-  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem;">
-    <article style="border: 1px solid #d7d7d7; border-radius: 10px; padding: 1rem;">
-      <h3 style="margin-top: 0;">
+  <div class="cs-historical-grid-4" style="margin-bottom: 1rem;">
+    <article class="cs-historical-card">
+      <h3>
         <a href="/reports/merger-integration/comparators/america-west-us-airways/">America West / US Airways</a>
       </h3>
-      <p style="margin-bottom: 0;">
+      <p>
         Legacy contract structure, merger architecture, and the path toward the 2013 combined CWA-AFA agreement.
       </p>
     </article>
 
-    <article style="border: 1px solid #d7d7d7; border-radius: 10px; padding: 1rem;">
-      <h3 style="margin-top: 0;">
+    <article class="cs-historical-card">
+      <h3>
         <a href="/reports/merger-integration/comparators/us-airways-american/">US Airways / American</a>
       </h3>
-      <p style="margin-bottom: 0;">
-        East-West combined CWA-AFA agreement, APFA transition, bargaining and representation transfer, and the road into the American-era JCBA.
+      <p>
+        East-West combined CWA-AFA agreement, APFA transition, bargaining and representation transfer, and the road into the American-era Joint Collective Bargaining Agreement (JCBA).
       </p>
     </article>
 
-    <article style="border: 1px solid #d7d7d7; border-radius: 10px; padding: 1rem;">
-      <h3 style="margin-top: 0;">
+    <article class="cs-historical-card">
+      <h3>
         <a href="/reports/merger-integration/comparators/continental-united/">Continental / United</a>
       </h3>
-      <p style="margin-bottom: 0;">
-        Separate books, interim fence architecture, and the road to the 2016 JCBA.
+      <p>
+        Separate books, interim fence architecture, and the road to the 2016 Joint Collective Bargaining Agreement (JCBA).
       </p>
     </article>
 
-    <article style="border: 1px solid #d7d7d7; border-radius: 10px; padding: 1rem;">
-      <h3 style="margin-top: 0;">
+    <article class="cs-historical-card">
+      <h3>
+        <a href="/reports/merger-integration/comparators/airtran-southwest/">AirTran / Southwest</a>
+      </h3>
+      <p>
+        Flight Attendant integration under Transportation Workers Union (TWU) handling, representation continuity, and the path from AirTran into Southwest.
+      </p>
+    </article>
+  </div>
+
+  <div class="cs-historical-grid-4">
+    <div class="cs-historical-spacer" aria-hidden="true"></div>
+    <div class="cs-historical-spacer" aria-hidden="true"></div>
+
+    <article class="cs-historical-card">
+      <h3>
         <a href="/reports/merger-integration/comparators/united-jetblue-hypothetical/">Hypothetical United / JetBlue</a>
       </h3>
-      <p style="margin-bottom: 0;">
-        Scenario comparator applying the merger framework to representation, contract distance, and integration risk.
+      <p>
+        Scenario comparator applying the merger framework to Flight Attendant representation, contract distance, and integration risk.
+      </p>
+    </article>
+
+    <article class="cs-historical-card">
+      <h3>
+        <a href="/reports/merger-integration/comparators/american-united-hypothetical/">Hypothetical American / United</a>
+      </h3>
+      <p>
+        Scenario comparator applying the merger framework to Flight Attendant representation, successorship, and joint-contract bargaining risk.
       </p>
     </article>
   </div>
