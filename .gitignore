@@ -22,3 +22,16 @@ audit/
 *.bak
 *.bak.*
 
+
+.local-backups/
+_backup/
+_audit/
+_tree-audit/
+*.old
+*.old.*
+*.orig
+*.orig.*
+*.rej
+*.rej.*
+*.tmp
+*.tmp.*
