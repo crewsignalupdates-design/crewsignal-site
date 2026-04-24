@@ -28,7 +28,7 @@ $reportsRootLocal = Find-AncestorDir $scanDirPath "reports"
 
 if (-not $reportsRootLocal) {
   # Fallback if your scan dir isn't under a folder literally named "reports"
-  $fallback = Join-Path $repoRoot "reports"
+  $fallback = Join-Path $repoRoot "public\reports"
   if (Test-Path $fallback) { $reportsRootLocal = (Resolve-Path $fallback).Path }
 }
 
@@ -167,3 +167,4 @@ if ($OutFile) {
 }
 
 if ($broken.Count -gt 0) { exit 1 } else { exit 0 }
+

@@ -23,7 +23,7 @@ if (-not (Test-Path $templatePath)) {
   throw "Template not found: $templatePath"
 }
 
-$outDir = Join-Path $repoRoot "reports\merger-integration\trackers\$TrackerSlug\$WeekEnding"
+$outDir = Join-Path $repoRoot "public\reports\merger-integration\trackers\$TrackerSlug\$WeekEnding"
 $outFile = Join-Path $outDir "index.html"
 
 if (Test-Path $outFile) {
@@ -45,3 +45,4 @@ New-Item -ItemType Directory -Force $outDir | Out-Null
 Set-Content -Path $outFile -Value $content -Encoding UTF8
 
 Write-Host "Created: $outFile"
+
