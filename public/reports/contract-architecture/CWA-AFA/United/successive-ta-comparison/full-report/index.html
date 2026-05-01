@@ -109,6 +109,42 @@
     .united-ta-report { padding: 1.25rem .85rem 3rem; }
     .compare-table { min-width: 640px; }
   }
+  /* UNITED SECTION 32 DURATION-LINES CLEANUP */
+  .duration-lines {
+    display: grid;
+    grid-template-columns: minmax(7.25rem, .85fr) minmax(6.75rem, .7fr) minmax(14rem, 1.35fr);
+    gap: .25rem .8rem;
+    align-items: baseline;
+    margin: .25rem 0;
+    font-size: .95rem;
+  }
+  .duration-lines span {
+    white-space: nowrap;
+  }
+  .duration-lines .duration-head {
+    font-weight: 700;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: .2rem;
+    margin-bottom: .1rem;
+  }
+  .duration-lines .duration-note {
+    grid-column: 1 / -1;
+    white-space: normal;
+    font-size: .92rem;
+    opacity: .88;
+    margin-top: .35rem;
+  }
+  @media (max-width: 780px) {
+    .duration-lines {
+      grid-template-columns: 1fr;
+    }
+    .duration-lines .duration-head {
+      display: none;
+    }
+    .duration-lines span {
+      white-space: normal;
+    }
+  }
 </style>
 <!-- UNITED INTRO SPACING FIX START -->
 <style id="united-intro-spacing-fix">
@@ -1441,49 +1477,61 @@
 </tr>
 <tr>
 <td>CWA-AFA</td>
-<td>ATI           2025&ndash;2029
-    Air Wisconsin 2020&ndash;
-    Alaska        2025&ndash;2028
-    Hawaiian      2020&ndash;
-    Avelo         2022&ndash;
-    Breeze        2024&ndash;
-    Eastern       2025&ndash;2030
-    Endeavor      2020&ndash;
-    Envoy         2021&ndash;2026
-    Frontier      2019&ndash;
-    GoJet         2025&ndash;2029
-    Horizon       2020&ndash;
-    Horizon       2020&ndash;
-    Norse Atlantic2025&ndash;
-    Omni          2017&ndash;
-    Piedmont      2022&ndash;2026
-    PSA           2019&ndash;
-    Spirit        2023&ndash;
-    United        2016&ndash;
+<td>
+<div class="duration-lines">
+<span class="duration-head">Carrier</span><span class="duration-head">Agreement</span><span class="duration-head">Actual duration used</span>
+<span>ATI</span><span>2025&ndash;2029</span><span>4 yrs</span>
+<span>Air Wisconsin</span><span>2020&ndash;</span><span>6 yrs; amendable / ongoing</span>
+<span>Alaska</span><span>2025&ndash;2028</span><span>3 yrs</span>
+<span>Hawaiian</span><span>2020&ndash;</span><span>6 yrs; amendable / ongoing</span>
+<span>Avelo</span><span>2022&ndash;</span><span>4 yrs; amendable / ongoing</span>
+<span>Breeze</span><span>2024&ndash;</span><span>2 yrs; amendable / ongoing</span>
+<span>Eastern</span><span>2025&ndash;2030</span><span>5 yrs</span>
+<span>Endeavor</span><span>2020&ndash;</span><span>6 yrs; amendable / ongoing</span>
+<span>Envoy</span><span>2021&ndash;2026</span><span>5 yrs</span>
+<span>Frontier</span><span>2019&ndash;</span><span>7 yrs; amendable / ongoing</span>
+<span>GoJet</span><span>2025&ndash;2029</span><span>4 yrs</span>
+<span>Horizon</span><span>2020&ndash;</span><span>6 yrs; amendable / ongoing</span>
+<span>Norse Atlantic</span><span>2025&ndash;</span><span>1 yrs; amendable / ongoing</span>
+<span>Omni</span><span>2017&ndash;</span><span>9 yrs; amendable / ongoing</span>
+<span>Piedmont</span><span>2022&ndash;2026</span><span>4 yrs</span>
+<span>PSA</span><span>2019&ndash;</span><span>7 yrs; amendable / ongoing</span>
+<span>Spirit</span><span>2023&ndash;</span><span>3 yrs; amendable / ongoing</span>
+<span>United</span><span>2016&ndash;</span><span>10 yrs; amendable / ongoing</span>
+<span class="duration-note">Average actual duration: 92 &divide; 18 = about 5.1 years. Fixed-range agreements use the listed start and end years; open-ended rows are amendable/ongoing and are calculated from ratification/start year through 2026. Horizon duplicate removed.</span>
+</div>
 </td>
-<td>About 6.2 years</td>
-<td>Current agreements; those carriers listed without end dates are in negotiations or mediation </td>
+<td>About 5.1 years and still counting</td>
+<td>Current CWA-AFA agreements. Open-ended entries are amendable / in negotiations or mediation and are calculated from ratification/start year through 2026. This demonstrates that a nominal five-year CBA can function as a six-, seven-, nine-, or ten-year governing agreement under Railway Labor Act status quo.</td>
 </tr>
 <tr>
 <td>IAMAW</td>
 <td>National Airlines 2024&ndash;2029</td>
 <td>5.0 years</td>
-<td>CommuteAir (2024) excluded; no specified end date.</td>
+<td>CommuteAir is not recalculated here because this update is confined to the CWA-AFA amendable-carrier duration row.</td>
 </tr>
 <tr>
 <td>IBT</td>
-<td>NetJets 2023&ndash;2026
-    Republic 2022&ndash;2027
-    Mesa 2025&ndash;2027
+<td>
+<div class="duration-lines">
+<span>NetJets</span><span>2023&ndash;2026</span><span>3 yrs</span>
+<span>Republic</span><span>2022&ndash;2027</span><span>5 yrs</span>
+<span>Mesa</span><span>2025&ndash;2027</span><span>2 yrs</span>
+</div>
+</td>
 <td>About 3.3 years</td>
-<td>Mesa is jointly represented by IBT and CWA-AFA. Sun Country (March 2025) is excluded due to a missing end date.</td>
+<td>Mesa is jointly represented by IBT and CWA-AFA. Sun Country is not recalculated here because this update is confined to the CWA-AFA amendable-carrier duration row.</td>
 </tr>
 <tr>
 <td>TWU</td>
-<td>Allegiant 2024&ndash;2029
-    Flight Services International 2021&ndash;2026
-    JetBlue 2021&ndash;2026
-    Southwest 2018&ndash;2028</td>
+<td>
+<div class="duration-lines">
+<span>Allegiant</span><span>2024&ndash;2029</span><span>5 yrs</span>
+<span>FSI</span><span>2021&ndash;2026</span><span>5 yrs</span>
+<span>JetBlue</span><span>2021&ndash;2026</span><span>5 yrs</span>
+<span>Southwest</span><span>2018&ndash;2028</span><span>10 yrs</span>
+</div>
+</td>
 <td>About 6.25 years</td>
 <td>Southwest reflects a 2018&ndash;2028 CBA and a 2024&ndash;2028 modification. Using only the modification window would reduce the TWU sample average to 4.75 years.</td>
 </tr>
