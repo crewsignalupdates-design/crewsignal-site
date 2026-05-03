@@ -187,6 +187,20 @@
       white-space: normal;
     }
   }
+
+  /* UNITED CONTRACT DURATION TABLE ROW TIGHTENING */
+  .contract-duration-table tbody tr.duration-carrier-row td {
+    padding-top: 0.26rem;
+    padding-bottom: 0.26rem;
+    line-height: 1.16;
+  }
+  .contract-duration-table tbody tr.duration-group-start td {
+    padding-top: 0.72rem;
+    padding-bottom: 0.72rem;
+  }
+  .contract-duration-table tbody tr.duration-group-start + tr.duration-carrier-row td {
+    padding-top: 0.22rem;
+  }
 </style>
 <!-- UNITED INTRO SPACING FIX START -->
 <style id="united-intro-spacing-fix">
@@ -1511,65 +1525,60 @@
 </tr>
 </thead>
 <tbody>
-<tr>
-<td class="duration-union" rowspan="1">APFA</td>
+<tr class="duration-group-start"><td class="duration-union" rowspan="1">APFA</td>
 <td class="duration-carrier">American Airlines</td>
 <td class="duration-range">2024&ndash;2029</td>
 <td class="duration-average" rowspan="1">5.0 years</td>
 </tr>
 
-<tr>
-<td class="duration-union" rowspan="18">CWA-AFA</td>
+<tr class="duration-group-start"><td class="duration-union" rowspan="18">CWA-AFA</td>
 <td class="duration-carrier">ATI</td>
 <td class="duration-range">2025&ndash;2029</td>
 <td class="duration-average" rowspan="18">About 5.2 years</td>
 </tr>
-<tr><td class="duration-carrier">Air Wisconsin</td><td class="duration-range">2020&ndash;</td></tr>
-<tr><td class="duration-carrier">Alaska</td><td class="duration-range">2025&ndash;2028</td></tr>
-<tr><td class="duration-carrier">Hawaiian</td><td class="duration-range">2020&ndash;</td></tr>
-<tr><td class="duration-carrier">Avelo</td><td class="duration-range">2022&ndash;</td></tr>
-<tr><td class="duration-carrier">Breeze</td><td class="duration-range">2024&ndash;</td></tr>
-<tr><td class="duration-carrier">Eastern</td><td class="duration-range">2025&ndash;2030</td></tr>
-<tr><td class="duration-carrier">Endeavor</td><td class="duration-range">2020&ndash;</td></tr>
-<tr><td class="duration-carrier">Envoy</td><td class="duration-range">2021&ndash;2026</td></tr>
-<tr><td class="duration-carrier">Frontier</td><td class="duration-range">2019&ndash;</td></tr>
-<tr><td class="duration-carrier">GoJet</td><td class="duration-range">2025&ndash;2029</td></tr>
-<tr><td class="duration-carrier">Horizon</td><td class="duration-range">2020&ndash;</td></tr>
-<tr><td class="duration-carrier">Norse Atlantic</td><td class="duration-range">2025&ndash;2028</td></tr>
-<tr><td class="duration-carrier">Omni</td><td class="duration-range">2017&ndash;</td></tr>
-<tr><td class="duration-carrier">Piedmont</td><td class="duration-range">2022&ndash;2026</td></tr>
-<tr><td class="duration-carrier">PSA</td><td class="duration-range">2019&ndash;</td></tr>
-<tr><td class="duration-carrier">Spirit</td><td class="duration-range">2023&ndash;</td></tr>
-<tr><td class="duration-carrier">United</td><td class="duration-range">2016&ndash;</td></tr>
+<tr class="duration-carrier-row"><td class="duration-carrier">Air Wisconsin</td><td class="duration-range">2020&ndash;</td></tr>
+<tr class="duration-carrier-row"><td class="duration-carrier">Alaska</td><td class="duration-range">2025&ndash;2028</td></tr>
+<tr class="duration-carrier-row"><td class="duration-carrier">Hawaiian</td><td class="duration-range">2020&ndash;</td></tr>
+<tr class="duration-carrier-row"><td class="duration-carrier">Avelo</td><td class="duration-range">2022&ndash;</td></tr>
+<tr class="duration-carrier-row"><td class="duration-carrier">Breeze</td><td class="duration-range">2024&ndash;</td></tr>
+<tr class="duration-carrier-row"><td class="duration-carrier">Eastern</td><td class="duration-range">2025&ndash;2030</td></tr>
+<tr class="duration-carrier-row"><td class="duration-carrier">Endeavor</td><td class="duration-range">2020&ndash;</td></tr>
+<tr class="duration-carrier-row"><td class="duration-carrier">Envoy</td><td class="duration-range">2021&ndash;2026</td></tr>
+<tr class="duration-carrier-row"><td class="duration-carrier">Frontier</td><td class="duration-range">2019&ndash;</td></tr>
+<tr class="duration-carrier-row"><td class="duration-carrier">GoJet</td><td class="duration-range">2025&ndash;2029</td></tr>
+<tr class="duration-carrier-row"><td class="duration-carrier">Horizon</td><td class="duration-range">2020&ndash;</td></tr>
+<tr class="duration-carrier-row"><td class="duration-carrier">Norse Atlantic</td><td class="duration-range">2025&ndash;2028</td></tr>
+<tr class="duration-carrier-row"><td class="duration-carrier">Omni</td><td class="duration-range">2017&ndash;</td></tr>
+<tr class="duration-carrier-row"><td class="duration-carrier">Piedmont</td><td class="duration-range">2022&ndash;2026</td></tr>
+<tr class="duration-carrier-row"><td class="duration-carrier">PSA</td><td class="duration-range">2019&ndash;</td></tr>
+<tr class="duration-carrier-row"><td class="duration-carrier">Spirit</td><td class="duration-range">2023&ndash;</td></tr>
+<tr class="duration-carrier-row"><td class="duration-carrier">United</td><td class="duration-range">2016&ndash;</td></tr>
 
-<tr>
-<td class="duration-union" rowspan="2">IAMAW</td>
+<tr class="duration-group-start"><td class="duration-union" rowspan="2">IAMAW</td>
 <td class="duration-carrier">National Airlines</td>
 <td class="duration-range">2024&ndash;2029</td>
 <td class="duration-average" rowspan="2">4.5 years</td>
 </tr>
-<tr><td class="duration-carrier">Commute Air</td><td class="duration-range">2024&ndash;2028</td></tr>
+<tr class="duration-carrier-row"><td class="duration-carrier">Commute Air</td><td class="duration-range">2024&ndash;2028</td></tr>
 
-<tr>
-<td class="duration-union" rowspan="4">IBT</td>
+<tr class="duration-group-start"><td class="duration-union" rowspan="4">IBT</td>
 <td class="duration-carrier">NetJets</td>
 <td class="duration-range">2023&ndash;2026</td>
 <td class="duration-average" rowspan="4">3.75 years</td>
 </tr>
-<tr><td class="duration-carrier">Republic</td><td class="duration-range">2022&ndash;2027</td></tr>
-<tr><td class="duration-carrier">Mesa</td><td class="duration-range">2025&ndash;2027</td></tr>
-<tr><td class="duration-carrier">Sun Country</td><td class="duration-range">2025&ndash;2030</td></tr>
+<tr class="duration-carrier-row"><td class="duration-carrier">Republic</td><td class="duration-range">2022&ndash;2027</td></tr>
+<tr class="duration-carrier-row"><td class="duration-carrier">Mesa</td><td class="duration-range">2025&ndash;2027</td></tr>
+<tr class="duration-carrier-row"><td class="duration-carrier">Sun Country</td><td class="duration-range">2025&ndash;2030</td></tr>
 
-<tr>
-<td class="duration-union" rowspan="5">TWU</td>
+<tr class="duration-group-start"><td class="duration-union" rowspan="5">TWU</td>
 <td class="duration-carrier">Allegiant</td>
 <td class="duration-range">2024&ndash;2029</td>
 <td class="duration-average" rowspan="5">4.75 years</td>
 </tr>
-<tr><td class="duration-carrier">FSI</td><td class="duration-range">2021&ndash;2026</td></tr>
-<tr><td class="duration-carrier">JetBlue</td><td class="duration-range">2021&ndash;2026</td></tr>
-<tr><td class="duration-carrier">Southwest</td><td class="duration-range">2018&ndash;2028</td></tr>
-<tr><td class="duration-carrier duration-subrow">Modification</td><td class="duration-range">2024&ndash;2028</td></tr>
+<tr class="duration-carrier-row"><td class="duration-carrier">FSI</td><td class="duration-range">2021&ndash;2026</td></tr>
+<tr class="duration-carrier-row"><td class="duration-carrier">JetBlue</td><td class="duration-range">2021&ndash;2026</td></tr>
+<tr class="duration-carrier-row"><td class="duration-carrier">Southwest</td><td class="duration-range">2018&ndash;2028</td></tr>
+<tr class="duration-carrier-row"><td class="duration-carrier duration-subrow">Modification</td><td class="duration-range">2024&ndash;2028</td></tr>
 </tbody>
 </table>
 </div>
