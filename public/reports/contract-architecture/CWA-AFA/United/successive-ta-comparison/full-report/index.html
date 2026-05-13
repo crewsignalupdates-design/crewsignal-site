@@ -199,6 +199,45 @@
   .contract-duration-table tbody tr.duration-group-start + tr.duration-carrier-row td {
     padding-top: 0.22rem;
   }
+  /* UNITED COMPENSATION TABLE CLEANUP */
+  .comp-table {
+    min-width: 860px;
+  }
+  .comp-table th,
+  .comp-table td {
+    line-height: 1.32;
+  }
+  .comp-summary-table {
+    min-width: 940px;
+  }
+  .comp-summary-table th:first-child,
+  .comp-summary-table td:first-child,
+  .comp-architecture-table th:first-child,
+  .comp-architecture-table td:first-child {
+    width: 10rem;
+    font-weight: 700;
+  }
+  .comp-architecture-table {
+    min-width: 900px;
+  }
+  .published-pay-scale-table {
+    min-width: 760px;
+  }
+  .published-pay-scale-table th,
+  .published-pay-scale-table td {
+    white-space: normal;
+  }
+  .published-pay-scale-table td:not(:first-child) {
+    white-space: nowrap;
+  }
+  @media (max-width: 780px) {
+    .comp-table {
+      min-width: 820px;
+    }
+    .published-pay-scale-table {
+      min-width: 700px;
+    }
+  }
 </style>
 <!-- UNITED INTRO SPACING FIX START -->
 <style id="united-intro-spacing-fix">
@@ -229,6 +268,45 @@
   margin-top: 0.75rem !important;
   padding-top: 0.75rem !important;
 }
+  /* UNITED COMPENSATION TABLE CLEANUP */
+  .comp-table {
+    min-width: 860px;
+  }
+  .comp-table th,
+  .comp-table td {
+    line-height: 1.32;
+  }
+  .comp-summary-table {
+    min-width: 940px;
+  }
+  .comp-summary-table th:first-child,
+  .comp-summary-table td:first-child,
+  .comp-architecture-table th:first-child,
+  .comp-architecture-table td:first-child {
+    width: 10rem;
+    font-weight: 700;
+  }
+  .comp-architecture-table {
+    min-width: 900px;
+  }
+  .published-pay-scale-table {
+    min-width: 760px;
+  }
+  .published-pay-scale-table th,
+  .published-pay-scale-table td {
+    white-space: normal;
+  }
+  .published-pay-scale-table td:not(:first-child) {
+    white-space: nowrap;
+  }
+  @media (max-width: 780px) {
+    .comp-table {
+      min-width: 820px;
+    }
+    .published-pay-scale-table {
+      min-width: 700px;
+    }
+  }
 </style>
 <!-- UNITED INTRO SPACING FIX END -->
 </head>
@@ -306,11 +384,10 @@
 <p>Boarding pay and sit pay must be described precisely. In TA2, boarding pay remains paid at fifty percent of the Section 4.A rate for pay purposes only and not credit. Sit pay is the clearest genuine new TA2 compensation item: one minute of pay for every two minutes of scheduled continuous ground time over 2:30 between segments in the same duty period, also for pay purposes only and not credit. Those are real added-money items, but they do not change United's underlying pay unit.</p>
 <p><strong>Significance:</strong> The practical question is not only what appears in the rate tables, but when and how the value is delivered. LOA 9 Appendix A places wage rates, drafting pay, drug-test compensation, galley pay, International Purser pay, Language Qualified pay, short-crew pay, and boarding pay on date of signing (DOS). Appendix B places sit pay in the January 2027 bid period and the move to 3:30 vacation pay in the January 2031 bid period, while several other premium items remain subject to Joint Implementation Team (JIT) timing. TA2 is therefore stronger than the current baseline, but not a clean immediate reset and not a full compensation victory over TA1.</p>
 <p><strong>Assessment:</strong> Real improvement over the current CBA, genuine new value in sit pay, preserved TA1 gains in boarding pay and premium structure, but important deferred value in vacation pay and no change to the hourly pay unit itself.</p>
-</section>
 
-<section class="cs-report__section adjunct" id="compensation-adjunct">
+<div class="callout" id="compensation-adjunct">
 <div class="section-head">
-<h2 class="cs-report__section-title">Compensation architecture, hourly pay, and Trips for Pay (TFP) comparison</h2>
+<h3>Compensation architecture, hourly pay, and Trips for Pay (TFP) comparison</h3>
 <div class="source-pills">
 <a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_CBA_2016-2021.pdf#page=31">Current CBA Section 4 p.31</a>
 <a class="pdf-pill" href="/reports/contract-architecture/CWA-AFA/United/contract/United_CWA-AFA_TA_2025-2030.pdf#page=38">TA1 Section 4 p.38</a>
@@ -330,7 +407,7 @@
 </div>
 
 <div class="table-wrap">
-<table class="compare-table">
+<table class="compare-table comp-table comp-summary-table">
 <thead><tr><th>Issue</th><th>Current CBA</th><th>TA1</th><th>TA2</th><th>Significance</th></tr></thead>
 <tbody>
 <tr><td>Base hourly wage tables</td><td>Legacy hourly tables remain the operating baseline until implemented changes arrive.</td><td>Major move over the current baseline.</td><td>Further improvement over the current baseline, but not a clean step-for-step win over TA1 at every later equivalent checkpoint.</td><td>Readers should compare against both the current baseline and TA1, not just against a headline top rate.</td></tr>
@@ -351,7 +428,7 @@
 </div>
 
 <div class="table-wrap" id="comp-architecture-benchmark">
-<table class="compare-table">
+<table class="compare-table comp-table comp-architecture-table">
 <thead><tr><th>Architecture question</th><th>United TA2</th><th>Alaska</th><th>Southwest</th><th>Significance</th></tr></thead>
 <tbody>
 <tr><td>Core pay unit</td><td>Hourly flight pay plus add-pay items.</td><td>Trips for Pay (TFP), with block-hour equivalents published only for comparison.</td><td>Trips for Pay (TFP) as the base pay unit.</td><td>The pay unit shapes what counts as "work" inside the compensation model.</td></tr>
@@ -370,7 +447,7 @@
 </div>
 
 <div class="table-wrap" id="published-pay-scale-comparison">
-<table class="compare-table">
+<table class="compare-table comp-table published-pay-scale-table">
 <thead><tr><th>Selected published figure</th><th>United TA2 hourly rate (7/30/2026)</th><th>Alaska block-hour equivalent excluding boarding pay (3/2/2026)</th><th>Southwest standard-trip rate (5/1/2026)</th></tr></thead>
 <tbody>
 <tr><td>Year / Step 1</td><td>$38.21</td><td>$36.59</td><td>$36.21</td></tr>
@@ -387,8 +464,8 @@
 <div class="callout">
 <strong>Key conclusion:</strong> TA2's pay story is not "hourly versus TFP, and TFP automatically wins." The narrower and more defensible point is that United remains an hourly contract with meaningful monetized add-ons, while Alaska and Southwest show two different TFP architectures that embed more of the duty day, boarding value, reserve liability, and trip shape into the pay system itself.
 </div>
+</div>
 </section>
-
 <section class="cs-report__section" id="section-5">
 <div class="section-head">
 <h2 class="cs-report__section-title">Section 5 — Expenses, Transportation and Lodging</h2>
