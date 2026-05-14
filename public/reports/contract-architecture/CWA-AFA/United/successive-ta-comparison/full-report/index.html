@@ -314,6 +314,25 @@
       white-space: normal;
     }
   }
+  /* UNITED SECTION 32 IAMAW ALIGNMENT FIX */
+  #section-32 .contract-duration-table tbody tr.duration-carrier-row th,
+  #section-32 .contract-duration-table tbody tr.duration-carrier-row td,
+  #section-32 .contract-duration-table tbody tr.duration-group-start th,
+  #section-32 .contract-duration-table tbody tr.duration-group-start td {
+    line-height: 1.24;
+  }
+  #section-32 .contract-duration-table .duration-union,
+  #section-32 .contract-duration-table .duration-carrier,
+  #section-32 .contract-duration-table .duration-range,
+  #section-32 .contract-duration-table .duration-average {
+    vertical-align: top !important;
+  }
+  #section-32 .contract-duration-table .duration-carrier {
+    font-weight: 400;
+  }
+  #section-32 .contract-duration-table .duration-repeat {
+    opacity: 0.72;
+  }
 </style>
 <!-- UNITED INTRO SPACING FIX START -->
 <style id="united-intro-spacing-fix">
@@ -1718,12 +1737,18 @@
 <tr class="duration-carrier-row"><th class="duration-carrier" scope="row">PSA</th><td class="duration-range">2019&ndash;</td></tr>
 <tr class="duration-carrier-row"><th class="duration-carrier" scope="row">United</th><td class="duration-range">2016&ndash;2026</td></tr>
 
-<tr class="duration-group-start"><th class="duration-union" scope="rowgroup" rowspan="2">IAMAW</th>
+<tr class="duration-group-start">
+<td class="duration-union">IAMAW</td>
 <th class="duration-carrier" scope="row">National Airlines</th>
 <td class="duration-range">2024&ndash;2029</td>
-<td class="duration-average" rowspan="2">4.5 years</td>
+<td class="duration-average">4.5 years</td>
 </tr>
-<tr class="duration-carrier-row"><th class="duration-carrier" scope="row">Commute Air</th><td class="duration-range">2024&ndash;2028</td></tr>
+<tr class="duration-carrier-row">
+<td class="duration-union duration-repeat">IAMAW</td>
+<th class="duration-carrier" scope="row">Commute Air</th>
+<td class="duration-range">2024&ndash;2028</td>
+<td class="duration-average duration-repeat">4.5 years</td>
+</tr>
 
 <tr class="duration-group-start"><th class="duration-union" scope="rowgroup" rowspan="4">IBT</th>
 <th class="duration-carrier" scope="row">NetJets</th>
