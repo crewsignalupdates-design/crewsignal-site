@@ -1,0 +1,89 @@
+/* APFA report additions, scoped to the APFA series. */
+.apfa-report { min-width: 0; }
+.apfa-report .apfa-reviewed {
+  color: var(--cs-text-muted);
+  font-size: 0.85rem;
+  margin: 1rem 0 0;
+}
+.apfa-report .apfa-source {
+  color: #b1bccb;
+  font-size: 0.84rem;
+  line-height: 1.65;
+  margin-top: 1rem;
+}
+.apfa-report .apfa-source a,
+.apfa-report td a { overflow-wrap: anywhere; }
+.apfa-report .apfa-note {
+  background: var(--cs-accent-soft);
+  border-left: 3px solid var(--cs-accent);
+  border-radius: 0 0.55rem 0.55rem 0;
+  padding: 0.85rem 1rem;
+  margin: 1rem 0;
+}
+.apfa-report .apfa-table-wrap {
+  max-width: 100%;
+  overflow-x: auto;
+  border: 1px solid var(--cs-border-subtle);
+  border-radius: 0.7rem;
+  margin: 1rem 0;
+  scrollbar-color: #64748b #111827;
+}
+.apfa-report .apfa-table-wrap .cs-report-table {
+  min-width: 36rem;
+  margin: 0;
+  font-size: 0.9rem;
+}
+.apfa-report .cs-report-table caption {
+  text-align: left;
+  color: var(--cs-heading);
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 0.8rem 0.9rem;
+  background: var(--cs-surface-soft);
+}
+.apfa-report .cs-report-table th[scope="row"] {
+  text-align: left;
+  font-weight: 600;
+}
+.apfa-report .cs-report-table .apfa-number {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+.apfa-report .cs-report-table td,
+.apfa-report .cs-report-table th { border-bottom: 1px solid var(--cs-border-subtle); }
+.apfa-report .cs-report-table tr:last-child > td,
+.apfa-report .cs-report-table tr:last-child > th { border-bottom: 0; }
+.apfa-report .apfa-report-list { padding-left: 1.4rem; }
+.apfa-report .apfa-report-list li { padding-left: 0.25rem; margin: 1.1rem 0; }
+.apfa-report .apfa-report-list li > a { font-weight: 600; }
+.apfa-report .apfa-report-list li p { margin-top: 0.25rem; }
+.apfa-report .apfa-section-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.75rem 1.5rem;
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+}
+.apfa-report .apfa-section-nav.cs-report__section { display: block; }
+.apfa-report :is(a, [tabindex]):focus-visible {
+  outline: 2px solid #facc15;
+  outline-offset: 4px;
+}
+.apfa-report :target { scroll-margin-top: 1.5rem; }
+@media (max-width: 600px) {
+  .apfa-report .cs-report__section { padding: 1.3rem 1rem; }
+  .apfa-report .apfa-table-wrap .cs-report-table { font-size: 0.85rem; }
+  .apfa-report .cs-report-table td,
+  .apfa-report .cs-report-table th { padding: 0.65rem 0.75rem; }
+  .apfa-report .apfa-note { padding: 0.75rem 0.85rem; }
+}
+@media print {
+  .apfa-report .apfa-table-wrap { overflow: visible; border-color: #777; }
+  .apfa-report .apfa-table-wrap .cs-report-table { min-width: 0; font-size: 8.5pt; }
+  .apfa-report .apfa-source,
+  .apfa-report .apfa-reviewed { color: #333; }
+  .apfa-report .apfa-note { background: transparent; border-color: #333; }
+  .apfa-report .apfa-section-nav { display: none; }
+}
