@@ -1,469 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>CrewSignal | United / JetBlue | Contract Comparison</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="CrewSignal contract comparison analysis of the CWA-AFA United and TWU JetBlue flight attendant agreements."
-    />
-    <link rel="stylesheet" href="/assets/css/main.css" />
-  </head>
 
-  <body class="cs-report">
-    <header class="cs-report__header">
-      <a href="/reports/merger-integration/trackers/united-jetblue/" class="cs-back-link cs-report__back">&larr; Back to United / JetBlue Tracker</a>
+<html lang="en"><head><meta charset="utf-8"/>
+<title>United / JetBlue | Contract Comparison Guide | CrewSignal</title>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
 
-      <p class="cs-report__eyebrow">Merger &amp; Integration</p>
-      <h1 class="cs-report__title">United / JetBlue</h1>
-      <p class="cs-report__subtitle">Contract Comparison</p>
-    </header>
+<meta content="Dated guide to the United and JetBlue Flight Attendant contract comparison, amendments, implementation conditions and combined-contract analysis." name="description"/>
+<link href="/assets/css/main.css" rel="stylesheet"/><style>
+    /* Page-specific refinements for long comparator reports. Core CrewSignal styling comes from /assets/css/main.css. */
+    .cs-report__summary-list { margin-top: 0.65rem; }
+    .cs-report__toc { margin-top: 2rem; }
+    .cs-report__toc ol, .cs-report__toc ul { margin: 0.4rem 0 0 1.2rem; padding: 0; }
+    .cs-report__toc li { margin: 0.35rem 0; }
+    .cs-report__subhead { margin: 1.35rem 0 0.45rem; font-size: 1rem; letter-spacing: 0.02em; color: var(--cs-heading); }
+    .cs-table-wrap { overflow-x: auto; margin: 1rem 0 1.35rem; border: 1px solid rgba(148, 163, 184, 0.22); border-radius: 0.85rem; background: rgba(15, 23, 42, 0.38); }
+    .cs-table-wrap .cs-report-table { min-width: 760px; }
+    .cs-report-table th { border-bottom: 1px solid rgba(255, 255, 255, 0.16); text-align: left; font-size: 0.82rem; letter-spacing: 0.04em; text-transform: uppercase; color: var(--cs-heading); background: rgba(56, 189, 248, 0.07); }
+    .cs-report-table td { border-top: 1px solid rgba(255, 255, 255, 0.08); color: var(--cs-text-main); }
+    .cs-report-table td, .cs-report-table th { min-width: 9rem; vertical-align: top; }
+    .cs-report__section blockquote { margin: 1rem 0; padding: 0.85rem 1rem; border-left: 3px solid var(--cs-accent); background: rgba(56, 189, 248, 0.07); border-radius: 0.55rem; }
+    .cs-report__source-note { font-size: 0.9rem; color: var(--cs-text-muted); }
+    .cs-report__section > :first-child { margin-top: 0; }
+    .cs-kpi-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0.85rem; margin: 1rem 0 1.35rem; }
+    .cs-kpi { border: 1px solid rgba(148, 163, 184, 0.22); border-radius: 0.85rem; padding: 1rem; background: rgba(15, 23, 42, 0.30); }
+    .cs-kpi__label { margin: 0; font-size: 0.78rem; letter-spacing: 0.04em; text-transform: uppercase; color: var(--cs-text-muted); font-family: Arial, Helvetica, sans-serif; }
+    .cs-kpi__value { margin: 0.25rem 0 0; font-size: 1.35rem; line-height: 1.2; color: var(--cs-heading); font-weight: 700; }
+    .cs-kpi__note { margin: 0.35rem 0 0; font-size: 0.86rem; color: var(--cs-text-muted); }
+    .cs-callout { margin: 1rem 0 1.35rem; padding: 1rem 1.05rem; border-radius: 0.85rem; border: 1px solid rgba(56, 189, 248, 0.22); background: rgba(56, 189, 248, 0.07); }
+    .cs-callout p:last-child { margin-bottom: 0; }
+    @media (max-width: 900px) { .cs-kpi-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+    @media (max-width: 640px) {
+      .cs-table-wrap .cs-report-table { min-width: 680px; }
+      .cs-kpi-grid { grid-template-columns: 1fr; }
+    }
+  </style><style>
+/* Long-report layout refinements; site styling uses /assets/css/main.css. */
+.cs-report-table caption{text-align:left;padding:.8rem 1rem;font-weight:600;color:var(--cs-heading)}
+.cs-report-table th,.cs-report-table td{padding:.8rem;vertical-align:top}.cs-table-wrap{max-width:100%}.cs-report-table{width:100%;border-collapse:collapse}
+.cs-details{border:1px solid rgba(148,163,184,.3);padding:1rem;border-radius:.8rem;margin-top:1.5rem}.cs-details summary{font-weight:700;cursor:pointer}
+.cs-report__meta-item{display:inline-block;margin-right:1rem}.cs-report__toc a{overflow-wrap:anywhere}
+@media print{.cs-table-wrap{overflow:visible}.cs-report-table{min-width:0!important;font-size:9pt}.cs-report-table td,.cs-report-table th{min-width:0!important}.cs-details>*{display:block}.cs-report__toc{display:none}}
+</style></head>
+<body class="cs-report">
+<header class="cs-report__header">
+<a class="cs-report__back cs-back-link" href="/reports/merger-integration/trackers/united-jetblue/">← Back to United / JetBlue Tracker</a>
+<p class="cs-report__eyebrow">Contract Comparison</p><h1 class="cs-report__title">United / JetBlue</h1>
+<p class="cs-report__subtitle">A guide to compensation, implementation and Flight Attendant contract protections.</p>
+<p class="cs-report__meta">Comparison date: October 22, 2026 · Flight Attendant-only labor analysis</p>
+</header><main class="cs-report__main">
 
-    <main class="cs-report__main">
-      <section class="cs-report__section">
-        <p class="cs-editor-note">
-          This analysis is informational and comparative in nature. It does not replace the governing contract text,
-          letters of agreement, side letters, past practice, or official union or company interpretations.
-          The objective is to identify the structural differences most likely to shape a combined United/JetBlue flight attendant operation.
-          This comparison relies on the uploaded United <strong>CWA-AFA</strong> JCBA text and the uploaded JetBlue <strong>TWU</strong> agreement package,
-          including JetBlue&rsquo;s merger-related letter of agreement, and is therefore best read as a comparison of contract architecture rather than as a claim about every present-day implementation detail.
-        </p>
-      </section>
-
-      <section class="cs-report__section" id="agreement-metadata">
-        <h2 class="cs-report__section-title">Overview</h2>
-
-        <p class="cs-report__para">
-          This comparison examines two very different bargaining products:
-          the <strong>CWA-AFA</strong> agreement at <strong>United</strong> and the <strong>Transport Workers Union</strong>
-          agreement at <strong>JetBlue</strong>.
-        </p>
-
-        <p class="cs-report__para">
-          The United agreement reads like a <strong>legacy global-network contract</strong>.
-          It is rule-dense, premium-rich, benefit-detailed, and unusually attentive to the problem of preserving contract continuity during a merger.
-          It assumes widebody international flying, complex staffing, and a carrier large enough that scheduling, benefits, and merger protections all need their own full architecture.
-        </p>
-
-        <p class="cs-report__para">
-          The JetBlue agreement reads like a <strong>modern systems-and-transition contract</strong>.
-          It is built around PBS, FLICA, CrewTrac visibility, dual pay-scale choices, and a more explicit playbook for how the parties move from transaction closing toward a single agreement.
-          It is lighter on locked-in benefit formulas, but stronger on digital administration, schedule transparency, and the mechanics of a managed transition.
-        </p>
-
-        <p class="cs-report__para">
-          Both contracts are serious.
-          They simply reveal different bargaining instincts.
-          United spends more contractual energy on floors, formulas, and legacy-carrier durability.
-          JetBlue spends more on systems, flexibility, and spelled-out transition mechanics.
-        </p>
-      </section>
-
-      <section class="cs-report__section" id="transition-architecture">
-        <h2 class="cs-report__section-title">Transition Architecture &amp; Representation Posture</h2>
-
-        <p class="cs-report__para">
-          The first important point is that this would not be a same-union integration.
-          That matters because both books leave representation questions to the Railway Labor Act and the National Mediation Board,
-          but they do so in different ways.
-          United&rsquo;s Section 1 is built to hold the pre-merger book in place until seniority integration is completed and a post-merger agreement is reached.
-          JetBlue&rsquo;s Article 3 is built to move the parties onto a defined post-transaction track: single-carrier filing, negotiations, mediation, and then arbitration if necessary.
-        </p>
-
-        <p class="cs-report__para">
-          JetBlue also arrives with something United does not have in this source package: a recent acquisition-specific labor letter.
-          Although that LOA was negotiated in the Spirit context and is not automatically transferable term-for-term to another combination,
-          it is still highly informative because it shows the TWU transition theory in concrete form.
-          That theory is straightforward: preserve the existing bargaining representative until the representation question is formally resolved,
-          freeze the workforce against involuntary loss where possible, open JCBA bargaining early, and use targeted benchmarking to protect economics during transition.
-        </p>
-
-        <p class="cs-report__para">
-          That makes the United/JetBlue comparison more interesting than a simple &ldquo;which book is better?&rdquo; exercise.
-          United supplies the stronger <strong>legacy merger-defense framework</strong>.
-          JetBlue supplies the clearer <strong>recent transaction playbook</strong>.
-          In a combined operation, both would matter.
-        </p>
-      </section>
-
-      <section class="cs-report__section" id="comparative-thesis">
-        <h2 class="cs-report__section-title">Comparative Contrast</h2>
-
-        <p class="cs-report__para">
-          The United&ndash;CWA-AFA contract is a <strong>structural major-carrier agreement</strong>.
-          The JetBlue&ndash;TWU contract is a <strong>digitally administered transition agreement</strong>.
-          That distinction explains most of the differences in scope language, merger sequencing, scheduling design, reserve mechanics,
-          economic presentation, and enforcement architecture.
-        </p>
-
-        <p class="cs-report__para">
-          United more often wins the <strong>long-horizon contract architecture</strong> contest:
-          stronger merger continuity language, deeper benefit lock-ins, broader premium layering, and a rulebook that assumes operational scale and complexity.
-          JetBlue more often wins the <strong>administrative modernity</strong> contest:
-          more explicit technology access, more transparent scheduling controls, more direct reserve logistics, and a clearer roadmap from deal close to JCBA.
-        </p>
-
-        <p class="cs-report__para">
-          Put differently, United brings the stronger <strong>base agreement</strong>.
-          JetBlue brings some of the better <strong>upgrade modules</strong>.
-          The ideal combined book would likely begin with United and then selectively import JetBlue features that improve visibility, usability, and transition management.
-        </p>
-      </section>
-
-      <section class="cs-report__section" id="scope-successorship-job-security">
-        <h2 class="cs-report__section-title">Scope, Successorship &amp; Job Security</h2>
-
-        <p class="cs-report__para">
-          United is stronger here on pure legacy contract architecture.
-          Its successorship and merger language requires any successor transaction to assume the agreement,
-          continue employing the flight attendants on the seniority list under the agreement,
-          provide fair and equitable seniority integration under McCaskill-Bond,
-          and keep the pre-merger operations separate until the seniority lists are integrated and a post-merger agreement on rates of pay,
-          rules, and working conditions has been reached.
-          The United book also bars merger-related furloughs before those processes are completed and sends disputes under Section 1 to expedited arbitration.
-        </p>
-
-        <p class="cs-report__para">
-          JetBlue is not weak on merger language.
-          Article 3 is unusually explicit about what happens if JetBlue buys another airline and what happens if JetBlue is itself bought.
-          When JetBlue is the acquiring carrier, the contract requires the parties to move toward a merged agreement,
-          file a single-carrier application within ninety days of closing,
-          bargain on a timed schedule,
-          mediate if necessary,
-          and then arbitrate unresolved contract issues if a merged agreement still does not exist.
-          It also bars the merger of seniority lists from triggering a system-wide rebid or involuntary bumping out of base.
-          When JetBlue is the carrier being acquired, the successor must recognize the union and assume the agreement,
-          and the groups remain separate until seniority integration occurs.
-        </p>
-
-        <p class="cs-report__para">
-          The JetBlue merger LOA reinforces that transition-minded bargaining style.
-          It shows a willingness to negotiate no-furlough and no-base-displacement protections,
-          preserve the existing agreement until a JCBA is ratified,
-          and open bargaining early around a benchmarked economic floor.
-          That is powerful,
-          but it still reads more like an active transition instrument than the kind of all-purpose successorship wall built into the United book itself.
-        </p>
-
-        <p class="cs-report__para">
-          <strong>Comparative read:</strong>
-          on pure <strong>scope, successorship, and merger-defense language</strong>, <strong>United / CWA-AFA</strong> has the edge.
-          On <strong>spelled-out post-closing transition mechanics</strong>, <strong>JetBlue / TWU</strong> is unusually well prepared.
-        </p>
-      </section>
-
-      <section class="cs-report__section" id="scheduling-reserve-assignment">
-        <h2 class="cs-report__section-title">Scheduling, Reserve &amp; Assignment</h2>
-
-        <p class="cs-report__para">
-          United&rsquo;s scheduling system is more rule-heavy and globally mature.
-          It layers a 1:2 duty rig, a 1:3.5 trip rig, five-hour minimum-day protections,
-          a seventy-one-hour line floor,
-          separate domestic and international duty/rest frameworks,
-          five-segment duty caps,
-          and stronger baseline days-off rules for both lineholders and reserves.
-          It also pays reserves from a higher guaranteed floor and adds a separate reserve override.
-          The book assumes that a large network carrier must protect members not only from irregular operations,
-          but from the accumulated friction of international complexity.
-        </p>
-
-        <p class="cs-report__para">
-          JetBlue&rsquo;s scheduling system is more digitally managed and operationally nimble.
-          FLICA, PBS, TradeBoard, Next Day Reserve Assignment,
-          Reserve Period preference bids,
-          FIFO/FOFO assignment sequencing,
-          move-up and hybrid lines,
-          and read-only administrative access for the union create a more visible and modern scheduling environment.
-          JetBlue also places hard limits on pairing length and segment count,
-          restricts redeye use more directly,
-          and makes the reserve machine easier to follow in real time.
-        </p>
-
-        <p class="cs-report__para">
-          The reserve philosophies are different.
-          United offers the more traditional legacy-carrier reserve structure with stronger base floor protections,
-          more days off,
-          and heavier compensation layering.
-          JetBlue offers a more transparent and technologically managed reserve system,
-          with clearer preference tools,
-          twelve-hour RAPs,
-          and a reserve model that is easier to administer and audit.
-        </p>
-
-        <p class="cs-report__para">
-          <strong>Comparative read:</strong>
-          <strong>United / CWA-AFA</strong> is stronger on rigid scheduling floors and long-cycle predictability,
-          especially where international complexity is concerned.
-          <strong>JetBlue / TWU</strong> is stronger on day-to-day manageability,
-          reserve visibility,
-          and technology-enabled scheduling control.
-        </p>
-      </section>
-
-      <section class="cs-report__section" id="economic-structure-benefits">
-        <h2 class="cs-report__section-title">Economic Structure &amp; Benefits</h2>
-
-        <p class="cs-report__para">
-          United has the stronger raw economic floor.
-          Its hourly rates sit on a higher legacy-carrier platform,
-          then add incentive pay,
-          white-flag and purple-flag premiums,
-          drafting pay,
-          galley pay,
-          FSL and purser pay,
-          holiday double-time,
-          international and language overrides,
-          night pay,
-          reserve premiums,
-          automatic short-crew pay,
-          and profit sharing.
-          Even where a specific category is not the highest in isolation,
-          the United contract wins on total economic layering.
-        </p>
-
-        <p class="cs-report__para">
-          JetBlue&rsquo;s economic structure is more modern in form.
-          It allows IFCs to choose between a straight pay scale and a premium pay scale,
-          with premium economics kicking in above seventy hours.
-          It also provides one-hundred-percent deadhead pay,
-          TAFB, duty, and average-duty rigs,
-          ground-holding compensation,
-          international pay,
-          redeye pay,
-          junior-assignment differentials,
-          and qualified-role premiums associated with the Mint/lead operation.
-          On a pure design basis, it is a more modular pay system than United&rsquo;s.
-        </p>
-
-        <p class="cs-report__para">
-          Benefits are where United pulls away.
-          The United book locks in specific medical plan architecture,
-          contribution formulas,
-          retiree medical,
-          domestic-partner treatment,
-          LTD terms,
-          and a far more detailed 401(k) structure,
-          including direct company contributions,
-          matching contributions,
-          and ongoing information-sharing rights with the union.
-          JetBlue&rsquo;s benefits article is noticeably thinner.
-          It provides parity with other company crewmembers on health and insurance plans,
-          401(k) eligibility,
-          and profit sharing if offered,
-          but does not codify nearly the same level of plan-design detail.
-        </p>
-
-        <p class="cs-report__para">
-          JetBlue does, however, win some expense-side quality-of-life categories.
-          Its hotel article is modern and convenience-conscious,
-          its long-stay layover standards are stronger than many legacy books,
-          parking is free or replaced by a stipend/transportation alternative,
-          onboard internet is free,
-          and passports, visas, and Global Entry are reimbursable.
-          United remains strong on hotel standards and deadhead accommodations,
-          but JetBlue&rsquo;s expense article reads like a newer operation that expects technology and convenience to be part of the compensation picture.
-        </p>
-
-        <p class="cs-report__para">
-          <strong>Comparative read:</strong>
-          on <strong>total locked economic value and benefits specificity</strong>, <strong>United / CWA-AFA</strong> is stronger.
-          On <strong>modern pay optionality and convenience-based expense value</strong>, <strong>JetBlue / TWU</strong> offers several advantages worth importing.
-        </p>
-      </section>
-
-      <section class="cs-report__section" id="enforcement-information-rights">
-        <h2 class="cs-report__section-title">Enforcement, Information Rights &amp; Administrative Power</h2>
-
-        <p class="cs-report__para">
-          JetBlue has the more modern everyday enforcement architecture.
-          Its Inflight Scheduling Committee receives read-only CrewTrac access,
-          read-only administrative PBS access including the line simulator,
-          and access to core scheduling reports.
-          The Company must consult with the committee before publication of a bid award,
-          and a technological failure that invalidates an entire bid award triggers a rerun rather than forcing the parties into a long grievance detour.
-          That is powerful day-to-day administrative leverage.
-        </p>
-
-        <p class="cs-report__para">
-          United is stronger in a more traditional legacy-carrier sense.
-          The contract requires crew-scheduling recordings,
-          grants access to those recordings when disputes arise,
-          and maintains a broad system-board structure that is especially important when the dispute goes to the heart of contract meaning.
-          Most important,
-          United creates expedited arbitration specifically for successorship and merger disputes.
-          That is not as sleek as JetBlue&rsquo;s system-access model,
-          but it is formidable where the issue is existential rather than administrative.
-        </p>
-
-        <p class="cs-report__para">
-          <strong>Comparative read:</strong>
-          <strong>JetBlue / TWU</strong> is stronger on routine scheduling transparency and operational audit power.
-          <strong>United / CWA-AFA</strong> is stronger when the conflict becomes a true scope or merger fight.
-        </p>
-      </section>
-
-      <section class="cs-report__section" id="negotiation-style-inference">
-        <h2 class="cs-report__section-title">Negotiation Style Inference</h2>
-
-        <p class="cs-report__para">
-          <strong>CWA-AFA at United:</strong>
-          the agreement suggests a legacy-network bargaining style that prefers durable structure,
-          dense premium layering,
-          benefit lock-in,
-          and formal merger-defense language.
-          It reads like a contract negotiated for a carrier with a large international footprint,
-          multiple historical seniority streams,
-          and a long institutional memory of integration disputes.
-        </p>
-
-        <p class="cs-report__para">
-          <strong>TWU at JetBlue:</strong>
-          the agreement suggests a more operational and systems-oriented bargaining style.
-          The union appears comfortable using technology access,
-          detailed scheduling administration,
-          and timed bargaining procedures as leverage.
-          The merger LOA strengthens that impression:
-          it looks less like a philosophical document and more like a practical transition term sheet designed to freeze the workforce,
-          open bargaining quickly,
-          and manage the economics of consolidation in real time.
-        </p>
-
-        <p class="cs-report__para">
-          Neither style is inherently superior in every setting.
-          The CWA-AFA style produces a stronger legacy book.
-          The TWU style produces a more modern operating toolkit.
-          The real question in a combined carrier is not which style wins outright,
-          but which one should control the permanent baseline and which one should supply the upgrades.
-        </p>
-      </section>
-
-      <section class="cs-report__section" id="comparative-value-lens">
-        <h2 class="cs-report__section-title">Comparative Value</h2>
-
-        <p class="cs-report__para">
-          On a <strong>base-contract foundation</strong> lens&mdash;successorship,
-          merger durability,
-          rule density,
-          benefits specificity,
-          and total economic layering&mdash;<strong>United / CWA-AFA</strong> has the edge.
-        </p>
-
-        <p class="cs-report__para">
-          On a <strong>transition administration</strong> lens&mdash;digital scheduling control,
-          reserve transparency,
-          explicit JCBA sequencing,
-          no-base-bump concepts,
-          and operational modernization&mdash;<strong>JetBlue / TWU</strong> has the edge.
-        </p>
-
-        <p class="cs-report__para">
-          The most balanced conclusion is that a combined agreement should likely <strong>start with the United book as the base document</strong>,
-          then absorb selected JetBlue improvements.
-          That is not because JetBlue is weak.
-          It is because United supplies the stronger permanent floor,
-          while JetBlue contributes some of the sharper modern tools.
-        </p>
-      </section>
-
-      <section class="cs-report__section" id="best-of-both-worlds">
-        <h2 class="cs-report__section-title">Composite Contract Framework</h2>
-
-        <p class="cs-report__para">
-          The strongest composite contract would begin with <strong>United&rsquo;s Section 1 architecture</strong>:
-          hard successorship assumption,
-          separate-operations protections,
-          no merger-driven furloughs before integration,
-          and expedited arbitration for existential disputes.
-          It would keep United&rsquo;s rig structure,
-          stronger reserve guarantee,
-          deeper benefit detail,
-          and more comprehensive premium stack.
-        </p>
-
-        <p class="cs-report__para">
-          It would then graft on <strong>JetBlue&rsquo;s best modern features</strong>:
-          read-only union access to CrewTrac and administrative PBS,
-          TradeBoard/FLICA visibility,
-          a defined bargaining clock from transaction close to JCBA,
-          stronger anti-displacement transition concepts,
-          one-hundred-percent deadhead pay,
-          ground-holding compensation,
-          parking flexibility,
-          long-stay layover standards,
-          and the ability for members to choose between straight and premium-oriented pay structures.
-        </p>
-
-        <p class="cs-report__para">
-          In practical terms,
-          the best version of United and JetBlue is a contract that first protects the group against structural loss,
-          then modernizes how the operation is administered.
-          United supplies more of the protection.
-          JetBlue supplies more of the modernization.
-        </p>
-      </section>
-
-      <section class="cs-report__section" id="value-summary-table">
-        <h2 class="cs-report__section-title">Comparative Value Summary</h2>
-
-        <div class="cs-table cs-table--compact">
-          <table>
-            <thead>
-              <tr>
-                <th>Topic</th>
-                <th>Advantage</th>
-                <th>Reason</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Legacy Merger-Defense Architecture</td>
-                <td>United / CWA-AFA</td>
-                <td>Stronger successorship assumption, separate-operations logic, no merger furlough before integration, and expedited arbitration</td>
-              </tr>
-              <tr>
-                <td>Explicit Transition Playbook</td>
-                <td>JetBlue / TWU</td>
-                <td>Single-carrier timeline, bargaining clock, mediation/arbitration sequence, and recent merger-LOA experience</td>
-              </tr>
-              <tr>
-                <td>Raw Economic Floor</td>
-                <td>United / CWA-AFA</td>
-                <td>Higher legacy pay platform, broader premium stack, short-crew pay, profit sharing, and richer benefit lock-ins</td>
-              </tr>
-              <tr>
-                <td>Scheduling Technology &amp; Transparency</td>
-                <td>JetBlue / TWU</td>
-                <td>Read-only CrewTrac/PBS access, FLICA/TradeBoard tools, and more visible reserve administration</td>
-              </tr>
-              <tr>
-                <td>Reserve Structure</td>
-                <td>Split</td>
-                <td>United offers stronger floors and predictability; JetBlue offers cleaner digital management and assignment visibility</td>
-              </tr>
-              <tr>
-                <td>Deadhead &amp; Convenience Value</td>
-                <td>JetBlue / TWU</td>
-                <td>Parking alternatives, onboard internet, and modern expense-side conveniences</td>
-              </tr>
-              <tr>
-                <td>Benefits Specificity</td>
-                <td>United / CWA-AFA</td>
-                <td>Far more detailed medical, retirement, LTD, and information-sharing architecture</td>
-              </tr>
-              <tr>
-                <td><strong>Overall Read</strong></td>
-                <td><strong>United base / JetBlue upgrades</strong></td>
-                <td><strong>United is the stronger permanent foundation; JetBlue offers several modern features the combined book should absorb</strong></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
-    </main>
-
-    <footer class="cs-report__footer">
-      <p class="cs-report__fineprint">CrewSignal &middot; Contract Architecture &amp; Comparative Analysis</p>
-    </footer>
-  </body>
-</html>
+<nav aria-label="Report sections" class="cs-report__toc"><p><strong>Report sections</strong></p><ol><li><a href="#agreement-metadata">Agreements and comparison date</a></li><li><a href="#comparative-thesis">Compare the benefit, the condition and the date</a></li><li><a href="#value-summary-table">Find the detailed comparison</a></li><li><a href="#transition-architecture">Representation, seniority and contract integration</a></li><li><a href="#scope-successorship-job-security">Scope and protection during a transaction</a></li><li><a href="#economic-structure-benefits">Economics: whole schedules, not isolated rates</a></li><li><a href="#scheduling-reserve-assignment">Scheduling, reserve and practical use</a></li><li><a href="#enforcement-information-rights">Enforcement and access to information</a></li><li><a href="#negotiation-style-inference">Governance and employee choice</a></li><li><a href="#best-of-both-worlds">A combined contract is a negotiated package</a></li><li><a href="#sources">Primary sources</a></li></ol></nav>
+<section aria-labelledby="agreement-metadata" class="cs-report__section"><h2 class="cs-report__section-title" id="agreement-metadata">Agreements and comparison date</h2>
+<p><strong>October 22, 2026.</strong> This guide connects the United/CWA-AFA 2026–2031 CBA and the JetBlue/TWU agreement, as amended, to the detailed United/JetBlue comparison. The linked analysis separates existing contractual terms, implementation-dependent changes and proposed provisions for a hypothetical combined agreement. <a href="https://www.unitedafa.org/resources/contract" rel="noopener noreferrer" target="_blank">[S49]</a> <a href="https://www.twu.org/wp-content/uploads/2025/11/TWU-Local-579-IFC-Contract.pdf" rel="noopener noreferrer" target="_blank">[S20]</a> <a href="https://sites.google.com/unitedafa.org/jit-updates-cba2026/home" rel="noopener noreferrer" target="_blank">[S37]</a></p>
+<p>United and JetBlue remain separate employers for this comparison. A commercial partnership does not itself replace their contracts, resolve representation or create an integrated seniority list. The <a href="/reports/merger-integration/trackers/united-jetblue/blue-sky-single-carrier-watch/">Blue Sky Single-Carrier Watch</a> addresses the evidence relevant to an NMB inquiry. <a href="https://nmb.gov/NMB_Application/wp-content/uploads/2025/03/Rep-Manual-2024-July-1-4-1.pdf" rel="noopener noreferrer" target="_blank">[S13]</a></p>
+</section><section aria-labelledby="comparative-thesis" class="cs-report__section"><span aria-hidden="true" id="comparative-value-lens"></span><h2 class="cs-report__section-title" id="comparative-thesis">Compare the benefit, the condition and the date</h2>
+<p>A higher hourly rate is not necessarily a higher payment for every assignment. A more detailed clause is not automatically a stronger protection in every transaction. A future improvement is not yet a current operating rule.</p>
+<p>The comparison therefore pairs each material benefit with its unit, eligibility, effective date and exceptions. Proposed combined-contract terms are evaluated as negotiated design choices, not rights that would arise automatically from an acquisition or representation result.</p>
+</section><section aria-labelledby="value-summary-table" class="cs-report__section"><h2 class="cs-report__section-title" id="value-summary-table">Find the detailed comparison</h2><div class="cs-table-wrap"><table class="cs-report-table"><thead><tr><th scope="col">Topic</th><th scope="col">Detailed analysis</th><th scope="col">What the comparison explains</th></tr></thead><tbody><tr><td>Pay scales, monthly earnings and reserve guarantees</td><td><a href="/reports/merger-integration/comparators/united-jetblue-hypothetical/#pay-comparison">Read the comparison →</a></td><td>Matched longevity, both JetBlue elections, complete monthly formulas and the retirement-to-wage conversion.</td></tr><tr><td>Current versus future benefits</td><td><a href="/reports/merger-integration/comparators/united-jetblue-hypothetical/#implementation-status">Read the comparison →</a></td><td>Implementation dates, not ratification alone, determine which provisions can be treated as currently usable.</td></tr><tr><td>Qualified roles and premiums</td><td><a href="/reports/merger-integration/comparators/united-jetblue-hypothetical/#qualified-role-comparison">Read the comparison →</a></td><td>Defined duties, credited-versus-block-hour units and the conditions attached to later role amendments.</td></tr><tr><td>Commuter protections</td><td><a href="/reports/merger-integration/comparators/united-jetblue-hypothetical/#commuter-comparison">Read the comparison →</a></td><td>Notice, travel options, arrival buffers, documentation and reassignment conditions.</td></tr><tr><td>Training compensation</td><td><a href="/reports/merger-integration/comparators/united-jetblue-hypothetical/#training-comparison">Read the comparison →</a></td><td>Course-level and per-day payments, with a matched-duration illustration.</td></tr><tr><td>Vacation, PTO and sick leave</td><td><a href="/reports/merger-integration/comparators/united-jetblue-hypothetical/#leave-comparison">Read the comparison →</a></td><td>Accrual, permitted use, bank limits and credited value rather than unlike headline totals.</td></tr><tr><td>Successorship, furlough and base protections</td><td><a href="/reports/merger-integration/comparators/united-jetblue-hypothetical/#transaction-protections">Read the comparison →</a></td><td>Acquiring-carrier versus acquired-carrier provisions, protected cohorts and transaction-specific sunsets.</td></tr><tr><td>Representation and seniority</td><td><a href="/reports/merger-integration/comparators/united-jetblue-hypothetical/#labor-integration">Read the comparison →</a></td><td>The representation process; a separate seniority section explains service-date, base and bidding consequences.</td></tr><tr><td>Subject-by-subject contract matrix</td><td><a href="/reports/merger-integration/comparators/united-jetblue-hypothetical/#cba-comparison">Read the comparison →</a></td><td>A combined-contract design comparison with conditions, exceptions and links to the governing texts.</td></tr></tbody></table></div></section><section aria-labelledby="transition-architecture" class="cs-report__section"><h2 class="cs-report__section-title" id="transition-architecture">Representation, seniority and contract integration</h2>
+<p>The NMB representation process, seniority integration and joint-contract bargaining answer different questions. Selection of a representative does not itself select a wage scale, assign a final seniority position or eliminate an existing contract. The hypothetical report explains these processes separately and uses labeled examples rather than presumed outcomes. <a href="https://nmb.gov/NMB_Application/wp-content/uploads/2025/03/Rep-Manual-2024-July-1-4-1.pdf" rel="noopener noreferrer" target="_blank">[S13]</a></p>
+<p><a href="/reports/merger-integration/comparators/united-jetblue-hypothetical/#labor-integration">Representation process</a> · <a href="/reports/merger-integration/comparators/united-jetblue-hypothetical/#seniority-integration">Seniority and bidding consequences</a></p>
+</section><section aria-labelledby="scope-successorship-job-security" class="cs-report__section"><h2 class="cs-report__section-title" id="scope-successorship-job-security">Scope and protection during a transaction</h2>
+<p>JetBlue Article 3 distinguishes acquiring another company from being acquired. The provisions must follow the assumed transaction, rather than treating the acquiring-carrier timetable as a universal rule. United’s Section 1 and its separate no-furlough LOA likewise require attention to the protection’s trigger and covered employees. <a href="https://www.twu.org/wp-content/uploads/2025/11/TWU-Local-579-IFC-Contract.pdf" rel="noopener noreferrer" target="_blank">[S20]</a> <a href="https://www.unitedafa.org/hubfs/Updated%20CBA%202026%20Bookmarked%20Single%20Page%20View.pdf?hsLang=en#page=5" rel="noopener noreferrer" target="_blank">[S18]</a> <a href="https://www.unitedafa.org/hubfs/Updated%20CBA%202026%20Bookmarked%20Single%20Page%20View.pdf?hsLang=en" rel="noopener noreferrer" target="_blank">[S26]</a></p>
+<p>The detailed comparison separates successor assumption, separate-operations requirements, regional scope, seniority procedures and possible additional transition protections. <a href="/reports/merger-integration/comparators/united-jetblue-hypothetical/#transaction-protections">Read the transaction-specific protection analysis →</a></p>
+</section><section aria-labelledby="economic-structure-benefits" class="cs-report__section"><h2 class="cs-report__section-title" id="economic-structure-benefits">Economics: whole schedules, not isolated rates</h2>
+<p>The linked wage analysis uses the amended JetBlue tables and the ratified United agreement. It shows how both JetBlue pay elections work across a month, alongside reserve examples, boarding-versus-duty-pay units and the treatment of the former Retirement Plus contribution.</p>
+<p>Expense reimbursements, wages and employer retirement contributions perform different functions. Their value is compared separately before constructing a complete package; the same negotiated conversion is not counted twice.</p>
+<p><a href="/reports/merger-integration/comparators/united-jetblue-hypothetical/#pay-comparison">Rates and monthly examples</a> · <a href="/reports/merger-integration/comparators/united-jetblue-hypothetical/#leave-comparison">Leave, accrual and credited value</a></p>
+</section><section aria-labelledby="scheduling-reserve-assignment" class="cs-report__section"><h2 class="cs-report__section-title" id="scheduling-reserve-assignment">Scheduling, reserve and practical use</h2>
+<p>A combined scheduling system needs clear limits, predictable assignments and usable remedies when an award or payroll calculation is wrong. The substantive comparison separates duty limits, employee consent, reserve compensation and implementation timing rather than ranking one carrier’s entire scheduling system as uniformly superior.</p>
+<p><a href="/reports/merger-integration/comparators/united-jetblue-hypothetical/#cba-comparison">Scheduling and duty/rest comparison</a> · <a href="/reports/merger-integration/comparators/united-jetblue-hypothetical/#implementation-status">Implementation dates</a> · <a href="/reports/merger-integration/comparators/united-jetblue-hypothetical/#commuter-comparison">Commuting</a> · <a href="/reports/merger-integration/comparators/united-jetblue-hypothetical/#training-comparison">Training</a></p>
+</section><section aria-labelledby="enforcement-information-rights" class="cs-report__section"><h2 class="cs-report__section-title" id="enforcement-information-rights">Enforcement and access to information</h2>
+<p>Access to assignment records, scheduling systems and payroll evidence can help identify a breach. Grievance deadlines, available remedies and arbitration procedures determine what happens next. Neither transparency alone nor a formal procedure alone establishes that a particular dispute will be resolved quickly.</p>
+<p>The combined-contract comparison considers both practical evidence access and enforceable relief, including the distinct procedures attached to scope and successorship disputes. <a href="/reports/merger-integration/comparators/united-jetblue-hypothetical/#cba-comparison">Read the enforcement and information-rights comparison →</a></p>
+</section><section aria-labelledby="negotiation-style-inference" class="cs-report__section"><h2 class="cs-report__section-title" id="negotiation-style-inference">Governance and employee choice</h2>
+<p>Union structure and a contract’s observed provisions are different subjects. A carrier-specific Local, local councils and a master executive council allocate authority in different ways; those structures alone do not prove bargaining effectiveness, resource dilution or a future representation result.</p>
+<p><a href="/reports/merger-integration/comparators/united-jetblue-hypothetical/#governance">Local representation and governance</a> · <a href="/reports/union-governance/twu/7-governing-documents-and-merger-policy/">TWU governing documents</a> · <a href="/reports/union-governance/cwa/cwa-afa/">CWA-AFA governance</a></p>
+</section><section aria-labelledby="best-of-both-worlds" class="cs-report__section"><h2 class="cs-report__section-title" id="best-of-both-worlds">A combined contract is a negotiated package</h2>
+<p>The proposed model preserves strong pay floors and meaningful work protections while identifying valuable provisions from each agreement. It does not assume automatic absorption of the smaller group, promise every favorable feature without offsets, or treat incompatible formulas as cumulative.</p>
+<p>Coverage, payment units, benefit eligibility, implementation obligations and enforcement would need to work together. The linked matrices explain the tradeoffs and identify where a proposed protection would go beyond the existing agreements.</p>
+<p><a href="/reports/merger-integration/comparators/united-jetblue-hypothetical/#cba-comparison">Read the combined-contract matrix →</a></p>
+</section><section aria-labelledby="sources" class="cs-report__section"><h2 class="cs-report__section-title" id="sources">Primary sources</h2><div class="cs-table-wrap"><table class="cs-report-table"><thead><tr><th scope="col">Source</th><th scope="col">Document</th></tr></thead><tbody><tr><td>S49</td><td><a href="https://www.unitedafa.org/resources/contract" rel="noopener noreferrer" target="_blank">United MEC contract resources: final 2026–2031 CBA and implementation resources</a></td></tr><tr><td>S20</td><td><a href="https://www.twu.org/wp-content/uploads/2025/11/TWU-Local-579-IFC-Contract.pdf" rel="noopener noreferrer" target="_blank">TWU-hosted JetBlue contract compilation: Article 3, Articles 23–24 and subsequent amendments</a></td></tr><tr><td>S37</td><td><a href="https://sites.google.com/unitedafa.org/jit-updates-cba2026/home" rel="noopener noreferrer" target="_blank">United Joint Implementation Team updates and LOA 9 implementation framework</a></td></tr><tr><td>S13</td><td><a href="https://nmb.gov/NMB_Application/wp-content/uploads/2025/03/Rep-Manual-2024-July-1-4-1.pdf" rel="noopener noreferrer" target="_blank">NMB Representation Manual</a></td></tr><tr><td>S18</td><td><a href="https://www.unitedafa.org/hubfs/Updated%20CBA%202026%20Bookmarked%20Single%20Page%20View.pdf?hsLang=en#page=5" rel="noopener noreferrer" target="_blank">United 2026–2031 CBA, Section 1: recognition, successorship and merger protections</a></td></tr><tr><td>S26</td><td><a href="https://www.unitedafa.org/hubfs/Updated%20CBA%202026%20Bookmarked%20Single%20Page%20View.pdf?hsLang=en" rel="noopener noreferrer" target="_blank">United 2026–2031 final contract linked by the United MEC; wage table PDF p. 32; LOA 18 PDF p. 350</a></td></tr></tbody></table></div><p>The detailed report includes the clause-specific sources and implementation notices alongside each comparison. <a href="/reports/merger-integration/comparators/united-jetblue-hypothetical/#sources">Full source appendix →</a></p></section>
+</main><footer class="cs-report__footer"><p><a href="/reports/merger-integration/comparators/united-jetblue-hypothetical/">Hypothetical United / JetBlue</a> · <a href="/reports/merger-integration/">Merger &amp; Integration</a> · Informational analysis, not individual legal or payroll advice.</p></footer>
+</body></html>
