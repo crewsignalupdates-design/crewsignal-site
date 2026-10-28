@@ -8,80 +8,68 @@
 <link rel="canonical" href="https://crewsignal.org/reports/contract-architecture/terms/successorship/">
 <link rel="stylesheet" href="/assets/css/main.css">
 <style>
-
-    body.ca-term { margin:0; background:#fff; color:#17202a; font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; line-height:1.65; }
-    .ca-term *, .ca-term *::before, .ca-term *::after { box-sizing:border-box; }
-    .ca-term .ca-term__wrap { width:100%; max-width:80ch; margin:0 auto; padding:1.5rem 1rem 3rem; overflow-wrap:anywhere; }
-    .ca-term header { border-bottom:2px solid #d8dee6; padding-bottom:1.25rem; margin-bottom:1.5rem; }
-    .ca-term h1 { font-size:clamp(2rem,6vw,3rem); line-height:1.15; color:#223f73; margin:.5rem 0; }
-    .ca-term h2 { font-size:1.4rem; line-height:1.3; margin:1.8rem 0 .65rem; color:#223f73; }
-    .ca-term h3 { font-size:1.05rem; line-height:1.4; margin:1.2rem 0 .4rem; }
-    .ca-term p { margin:.7rem 0; }
-    .ca-term a { color:#223f73; text-decoration:underline; text-underline-offset:.15em; }
-    .ca-term a:focus-visible { outline:3px solid #223f73; outline-offset:3px; border-radius:2px; }
-    .ca-term .ca-term__eyebrow { font-weight:700; letter-spacing:.04em; text-transform:uppercase; font-size:.85rem; }
-    .ca-term .ca-term__meta,.ca-term .ca-term__source,.ca-term footer { color:#52606d; font-size:.9rem; }
-    .ca-term .ca-term__source { display:block; margin-top:.3rem; }
-    .ca-term .ca-term__definition,.ca-term .ca-term__note { padding:1rem 1.15rem; border:1px solid #d8dee6; border-left:4px solid #223f73; background:#f7f9fb; border-radius:.25rem; margin:1rem 0; }
+    .ca-term { overflow-wrap:anywhere; }
+    .ca-term a:focus-visible { outline:3px solid var(--cs-accent); outline-offset:3px; border-radius:2px; }
+    .ca-term .ca-term__meta { color:var(--cs-text-muted); font-size:.9rem; }
+    .ca-term .ca-term__source { display:block; margin-top:.3rem; color:var(--cs-text-muted); font-size:.9rem; }
+    .ca-term .ca-term__source a { text-decoration:underline; text-underline-offset:.15em; }
+    .ca-term .ca-term__definition,.ca-term .ca-term__note { padding:1rem 1.15rem; border:1px solid var(--cs-border-subtle); border-left:4px solid var(--cs-accent); background:var(--cs-surface-soft); border-radius:.6rem; margin:1rem 0; }
     .ca-term dl { margin:1rem 0; }
     .ca-term dt { font-weight:700; margin-top:.8rem; }
     .ca-term dd { margin:.2rem 0 0; }
     .ca-term ol { padding-left:1.4rem; }
-    .ca-term li { margin:.5rem 0; }
-    .ca-term nav { display:flex; flex-wrap:wrap; gap:.5rem 1.2rem; }
-    .ca-term .ca-term__skip { position:absolute; left:1rem; top:-10rem; padding:.6rem; background:#fff; z-index:10; }
+    .ca-term nav { display:flex; flex-wrap:wrap; align-items:baseline; gap:.5rem 1.2rem; }
+    .ca-term footer nav { margin-top:.75rem; }
+    .ca-term .ca-term__skip { position:absolute; left:1rem; top:-10rem; padding:.6rem; background:var(--cs-surface); color:var(--cs-text-main); z-index:10; }
     .ca-term .ca-term__skip:focus { top:.5rem; }
-    .ca-term footer { border-top:1px solid #d8dee6; margin-top:2rem; padding-top:1rem; }
 </style>
 </head>
-<body class="ca-term">
+<body class="cs-report ca-term">
 <a class="ca-term__skip" href="#main-content">Skip to article</a>
-<div class="ca-term__wrap">
-<header>
-<nav aria-label="Related reports"><a href="/reports/contract-architecture/">Contract Architecture</a> <a href="/reports/contract-architecture/cwa-afa/united/successive-ta-comparison/full-report/#section-1">United Section 1</a> <a href="/reports/contract-architecture/terms/recognition/">Recognition</a></nav>
-<p class="ca-term__eyebrow">CrewSignal · Contract Architecture Glossary</p>
-<h1>Successorship</h1>
-<p>Which contractual obligations survive a defined transaction—and how to test their limits.</p>
+<header class="cs-report__header">
+<nav aria-label="Related reports"><a class="cs-report__back" href="/reports/contract-architecture/">Contract Architecture</a> <a href="/reports/contract-architecture/cwa-afa/united/successive-ta-comparison/full-report/#section-1">United Section 1</a> <a href="/reports/contract-architecture/terms/recognition/">Recognition</a></nav>
+<p class="cs-report__eyebrow">CrewSignal · Contract Architecture Glossary</p>
+<h1 class="cs-report__title">Successorship</h1>
+<p class="cs-report__subtitle">Which contractual obligations survive a defined transaction—and how to test their limits.</p>
 <p class="ca-term__meta">Source review: <time datetime="2026-10-28">October 28, 2026</time> · U.S. airline / Railway Labor Act (RLA) context · United example, not a universal clause</p>
 </header>
-<main id="main-content" tabindex="-1">
-<section id="definition">
-<h2>What successorship means</h2>
+<main class="cs-report__main" id="main-content" tabindex="-1">
+<section class="cs-report__section" id="definition">
+<h2 class="cs-report__section-title">What successorship means</h2>
 <div class="ca-term__definition"><p><strong>A successorship clause sets contractual obligations when a defined transfer of ownership, control, assets or operations occurs.</strong> The key questions are which transaction triggers the clause, what must be assumed, who is protected, and how the requirement can be enforced. The heading alone is not a guarantee of identical protection across agreements.</p></div><p>United’s §1.B.1 binds a defined successor or assign to the agreement until it is changed through the RLA framework. Its definition covers an entity acquiring all or substantially all of the Company’s assets or equity in a single transaction or related steps. Do not silently convert that language into a universal numerical threshold, or assume that any isolated asset sale triggers every subsection.<span class="ca-term__source"> Sources: <a href="https://www.unitedafa.org/hubfs/Updated%20CBA%202026%20Bookmarked%20Single%20Page%20View.pdf?hsLang=en#page=5">United §1.B.1, PDF p.5</a>.</span></p>
 </section>
-<section id="assumption">
-<h2>Assumption, employment and notice are separate commitments</h2>
+<section class="cs-report__section" id="assumption">
+<h2 class="cs-report__section-title">Assumption, employment and notice are separate commitments</h2>
 <p>For transactions within §1.B.2, the Company may not enter the specified binding commitment unless assumption of the contractual pay, rules and working conditions—and employment of people on the then-current Flight Attendant Seniority List under the agreement—is made a material, irrevocable condition. The paragraph also requires written notice of the agreement to the specified recipient, with a copy to the Union when a definitive transaction agreement is executed.<span class="ca-term__source"> Sources: <a href="https://www.unitedafa.org/hubfs/Updated%20CBA%202026%20Bookmarked%20Single%20Page%20View.pdf?hsLang=en#page=5">United §1.B.2, PDF p.5</a>.</span></p><p><strong>Significance:</strong> Requiring assumption as a transaction condition is different from merely requiring notice. The notice, assumption and employee-coverage language should each be tested against the facts; they should not be collapsed into a promise that every future employment or benefit issue is already resolved.</p>
 </section>
-<section id="transition">
-<h2>What United adds for a merger and transition</h2>
+<section class="cs-report__section" id="transition">
+<h2 class="cs-report__section-title">What United adds for a merger and transition</h2>
 <p>Section 1.B.3 requires fair and equitable integration of the pre-merger Flight Attendant lists under the referenced McCaskill-Bond framework. Section 1.B.4 makes the agreement amendable in an operational merger and prevents group integration until the seniority-list process and agreement on post-merger pay, rules and working conditions are completed. Existing terms continue for the listed employees before that agreement. Section 1.B.5.c separately requires acceptance of the integrated list in advance of operational integration.<span class="ca-term__source"> Sources: <a href="https://www.unitedafa.org/hubfs/Updated%20CBA%202026%20Bookmarked%20Single%20Page%20View.pdf?hsLang=en#page=5">United §1.B.3, PDF pp.5–6</a>; <a href="https://www.unitedafa.org/hubfs/Updated%20CBA%202026%20Bookmarked%20Single%20Page%20View.pdf?hsLang=en#page=6">United §1.B.4 and .5.c, PDF p.6</a>.</span></p><p>Sections 1.B.5.d–e keep inflight operations separate until the specified processes are complete, prohibit employee interchange during that separation without written Union consent, and prohibit a merger-caused furlough of a covered employee during that interval. <strong>These conditions are not an unlimited, permanent no-furlough guarantee.</strong> The cause of a furlough and the stage of the contractual process matter.<span class="ca-term__source"> Sources: <a href="https://www.unitedafa.org/hubfs/Updated%20CBA%202026%20Bookmarked%20Single%20Page%20View.pdf?hsLang=en#page=6">United §1.B.5.d–e, PDF p.6</a>.</span></p><p>Other provisions require timely Union review of material transaction details subject to securities-law and confidentiality conditions, and prompt negotiation upon request over implementation of the paragraph. The different duties and triggers should be recorded separately.<span class="ca-term__source"> Sources: <a href="https://www.unitedafa.org/hubfs/Updated%20CBA%202026%20Bookmarked%20Single%20Page%20View.pdf?hsLang=en#page=6">United §1.B.5.b, PDF p.6</a>; <a href="https://www.unitedafa.org/hubfs/Updated%20CBA%202026%20Bookmarked%20Single%20Page%20View.pdf?hsLang=en#page=7">United §1.B.5.f, PDF p.7</a>.</span></p>
 </section>
-<section id="representation-seniority">
-<h2>What it does not decide</h2>
+<section class="cs-report__section" id="representation-seniority">
+<h2 class="cs-report__section-title">What it does not decide</h2>
 <p><strong>Representation.</strong> A successor’s contractual obligations do not themselves choose the post-merger representative. United §1.B.5.a expressly preserves the governing role of the RLA and National Mediation Board (NMB) rulings. Read the companion <a href="/reports/contract-architecture/terms/recognition/">Recognition article</a> before treating contract assumption as a representation award.<span class="ca-term__source"> Sources: <a href="https://www.unitedafa.org/hubfs/Updated%20CBA%202026%20Bookmarked%20Single%20Page%20View.pdf?hsLang=en#page=6">United §1.B.5.a, PDF p.6</a>; <a href="https://uscode.house.gov/us/usc/119-124/t45/s152/">45 U.S.C. §152, Ninth</a>.</span></p><p><strong>Seniority.</strong> The federal labor-integration provision commonly called McCaskill-Bond applies to defined covered transactions and employees. It incorporates specified Allegheny–Mohawk protections, with separate treatment for the same bargaining agent’s internal integration policies and qualifying contractual integration provisions. It should not be summarized as a universal date-of-hire rule or an automatic common contract.<span class="ca-term__source"> Sources: <a href="https://uscode.house.gov/us/usc/119-124/t49/s42112/">49 U.S.C. §42112 note, Pub. L.110-161, div.K, §117</a>.</span></p><aside class="ca-term__note" aria-labelledby="citation-note"><h3 id="citation-note">Source citation discrepancy</h3><p>The preserved United CBA prints “42 U.S.C. Section 42112” in §§1.B.3 and 1.B.5.c. The federal labor-integration provision is published as a statutory note to <strong>49 U.S.C. §42112</strong>. This article identifies the federal source separately and does not alter the contract or infer that the citation discrepancy invalidates its protection.<span class="ca-term__source"> Sources: <a href="https://www.unitedafa.org/hubfs/Updated%20CBA%202026%20Bookmarked%20Single%20Page%20View.pdf?hsLang=en#page=6">United PDF p.6</a>; <a href="https://uscode.house.gov/us/usc/119-124/t49/s42112/">U.S. Code labor-integration note</a>.</span></p></aside>
 </section>
-<section id="enforcement">
-<h2>The enforcement route is part of the protection</h2>
+<section class="cs-report__section" id="enforcement">
+<h2 class="cs-report__section-title">The enforcement route is part of the protection</h2>
 <p>United §1.B.6 provides expedited arbitration before the System Board of Adjustment with a neutral for Union grievances alleging a Section 1 violation. If the parties do not agree on the arbitrator within three days of filing, the Section 24 selection process applies. The clause sets a hearing deadline of thirty days from submission to the System Board, subject to arbitrator availability, and a decision deadline of thirty days from submission unless the parties agree otherwise in writing.<span class="ca-term__source"> Sources: <a href="https://www.unitedafa.org/hubfs/Updated%20CBA%202026%20Bookmarked%20Single%20Page%20View.pdf?hsLang=en#page=7">United §1.B.6, PDF p.7</a>.</span></p><p><strong>Reading caution:</strong> The decision language also uses “following submission”; this glossary does not adjudicate how that reference is applied in a particular proceeding. The time references and qualifications should not be rewritten into a guaranteed sixty-day remedy. An expedited route is meaningful contractual design, but actual enforcement speed and relief require case evidence.</p>
 </section>
-<section id="examples">
-<h2>Two transaction examples</h2>
+<section class="cs-report__section" id="examples">
+<h2 class="cs-report__section-title">Two transaction examples</h2>
 <p><strong>Example A — acquisition within the definition.</strong> Assume an entity acquires substantially all Company assets and the transaction falls within §§1.B.1–2. The analysis begins with successor assumption, covered employment and the required notice. A separate operational-merger question then determines which seniority, common-terms and separation provisions apply. Assumption alone does not establish that the workforces have already been integrated.<span class="ca-term__source"> Sources: <a href="https://www.unitedafa.org/hubfs/Updated%20CBA%202026%20Bookmarked%20Single%20Page%20View.pdf?hsLang=en#page=5">United §1.B.1–4, PDF pp.5–6</a>.</span></p><p><strong>Example B — a limited purchase or alliance.</strong> Assume a transaction involves only selected assets or commercial cooperation. The word “purchase” does not prove that the substantially-all test or every operational-merger condition is met. Conversely, failure to satisfy §1.B.1’s definition does not automatically dispose of §1.B.5, whose opening trigger separately refers to a merger, purchase or acquisition involving the Company. Examine each applicable paragraph and the evidence. The NMB’s single-system analysis is a separate inquiry, not something established by the transaction’s branding.<span class="ca-term__source"> Sources: <a href="https://www.unitedafa.org/hubfs/Updated%20CBA%202026%20Bookmarked%20Single%20Page%20View.pdf?hsLang=en#page=5">United §1.B.1–2, PDF p.5</a>; <a href="https://www.unitedafa.org/hubfs/Updated%20CBA%202026%20Bookmarked%20Single%20Page%20View.pdf?hsLang=en#page=6">United §1.B.5, PDF p.6</a>; <a href="https://nmb.gov/NMB_Application/wp-content/uploads/2025/03/Rep-Manual-2024-July-1-4-1.pdf#page=31">NMB Manual §§19.1–19.5</a>.</span></p>
 </section>
-<section id="comparison">
-<h2>Significance for comparing agreements</h2>
+<section class="cs-report__section" id="comparison">
+<h2 class="cs-report__section-title">Significance for comparing agreements</h2>
 <p><strong>CrewSignal’s analytical questions:</strong> Does the clause reach the transaction? Does it require binding assumption rather than notice alone? Which employees and terms are protected? What conditions must precede workforce integration? Are exceptions, information rights and an enforceable remedy clear?</p><p>Apply those questions to each agreement’s actual language, later modifications and documented outcomes. Preserving an existing successor protection has value, but is not the same as negotiating a new one. This article defines the comparison questions; it does not rank unions or award a new score.</p>
 </section>
-<section id="sources">
-<h2>Sources and limits</h2>
+<section class="cs-report__section" id="sources">
+<h2 class="cs-report__section-title">Sources and limits</h2>
 <ol><li><a href="https://www.unitedafa.org/hubfs/Updated%20CBA%202026%20Bookmarked%20Single%20Page%20View.pdf?hsLang=en#page=5">United 2026–2031 CBA, §1.B, physical PDF pp.5–7</a> — agreement-specific triggers, conditions and remedy.</li><li><a href="https://uscode.house.gov/us/usc/119-124/t49/s42112/">49 U.S.C. §42112, Labor Integration statutory note</a> — Pub. L.110-161, div.K, §117; not a statement that every transaction is covered.</li><li><a href="https://uscode.house.gov/us/usc/119-124/t45/s152/">45 U.S.C. §152, Ninth</a> and <a href="https://nmb.gov/NMB_Application/wp-content/uploads/2025/03/Rep-Manual-2024-July-1-4-1.pdf#page=31">NMB Representation Manual §19</a> — representation is separate from contractual assumption.</li></ol><p>The United example uses the preserved 383-page final-CBA copy, not the historical proposal pagination. Fresh publisher-byte identity was not re-established in this pass. Transaction-specific advice, a complete later-amendment audit, and the outcome of any current merger are outside this glossary. The NMB Manual is procedural guidance, not an exclusive or obligatory rule for Board members.</p>
 </section>
 </main>
-<footer>
-<p>CrewSignal · Evidence-based contract comparison. Educational analysis, not advice about an individual grievance or transaction.</p>
+<footer class="cs-report__footer">
+<p class="cs-report__fineprint">CrewSignal · Evidence-based contract comparison. Educational analysis, not advice about an individual grievance or transaction.</p>
 <nav aria-label="Continue reading"><a href="/reports/contract-architecture/">Contract Architecture</a> <a href="/reports/contract-architecture/cwa-afa/united/successive-ta-comparison/full-report/#section-1">United Section 1</a> <a href="/reports/contract-architecture/terms/recognition/">Recognition</a></nav>
 </footer>
-</div>
 </body>
 </html>
