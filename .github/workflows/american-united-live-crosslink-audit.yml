@@ -1,0 +1,77 @@
+name: American-United live cross-link audit
+
+on:
+  push:
+    branches:
+      - audit/american-united-live-crosslinks-20261028
+
+permissions:
+  contents: write
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: audit/american-united-live-crosslinks-20261028
+          fetch-depth: 0
+
+      - name: Verify live pages and cross-links
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          principal='https://crewsignal.org/reports/merger-integration/comparators/american-united-hypothetical/'
+          companion='https://crewsignal.org/reports/merger-integration/comparators/american-united-hypothetical/transaction-remedy-labor-scenarios/'
+          hub='https://crewsignal.org/reports/merger-integration/'
+
+          passed=0
+          for attempt in $(seq 1 24); do
+            token="${GITHUB_RUN_ID}-${attempt}"
+            echo "Live verification attempt ${attempt}/24"
+
+            p_code=$(curl -L -sS -o principal.html -w '%{http_code}' -H 'Cache-Control: no-cache' "${principal}?audit=${token}")
+            c_code=$(curl -L -sS -o companion.html -w '%{http_code}' -H 'Cache-Control: no-cache' "${companion}?audit=${token}")
+            h_code=$(curl -L -sS -o hub.html -w '%{http_code}' -H 'Cache-Control: no-cache' "${hub}?audit=${token}")
+
+            if [ "$p_code" = 200 ] && [ "$c_code" = 200 ] && [ "$h_code" = 200 ] \
+              && grep -Fq 'Related CrewSignal coverage' principal.html \
+              && grep -Fq 'transaction-remedy-labor-scenarios/' principal.html \
+              && grep -Fq '/reports/merger-integration/baseline/#section-single-carrier' principal.html \
+              && grep -Fq 'Transaction, Remedy, and Flight Attendant Transition Scenarios' companion.html \
+              && grep -Fq 'Related CrewSignal coverage' companion.html \
+              && grep -Fq '/reports/merger-integration/reference/mccaskill-bond/' companion.html \
+              && grep -Fq 'transaction-remedy-labor-scenarios/' hub.html; then
+              passed=1
+              echo "LIVE AUDIT PASS"
+              echo "principal HTTP ${p_code}"
+              echo "companion HTTP ${c_code}"
+              echo "hub HTTP ${h_code}"
+              break
+            fi
+
+            echo "Not fully deployed yet: principal=${p_code}, companion=${c_code}, hub=${h_code}"
+            sleep 10
+          done
+
+          if [ "$passed" -ne 1 ]; then
+            echo 'LIVE AUDIT FAIL: expected deployed content was not visible after bounded retries.' >&2
+            echo 'Principal markers:' >&2
+            grep -F 'Related CrewSignal coverage' principal.html || true
+            grep -F 'transaction-remedy-labor-scenarios/' principal.html || true
+            echo 'Companion markers:' >&2
+            grep -F 'Related CrewSignal coverage' companion.html || true
+            echo 'Hub markers:' >&2
+            grep -F 'transaction-remedy-labor-scenarios/' hub.html || true
+            exit 1
+          fi
+
+      - name: Remove temporary audit workflow
+        shell: bash
+        run: |
+          git config user.name 'CrewSignal Audit'
+          git config user.email 'actions@users.noreply.github.com'
+          git rm .github/workflows/american-united-live-crosslink-audit.yml
+          git commit -m 'Remove temporary American-United live audit workflow'
+          git push origin HEAD:audit/american-united-live-crosslinks-20261028
