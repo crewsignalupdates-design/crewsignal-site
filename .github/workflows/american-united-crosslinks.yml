@@ -16,5 +16,193 @@ jobs:
         with:
           ref: maintenance/american-united-crosslinks-20261028
           fetch-depth: 0
-      - name: Confirm workflow runner
-        run: echo "runner ready"
+
+      - name: Add internal coverage links and validate
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import re
+
+          root = Path.cwd()
+          principal_path = root / "public/reports/merger-integration/comparators/american-united-hypothetical/index.html"
+          companion_path = root / "public/reports/merger-integration/comparators/american-united-hypothetical/transaction-remedy-labor-scenarios/index.html"
+          baseline_path = root / "public/reports/merger-integration/baseline/index.html"
+
+          def replace_once(text: str, old: str, new: str, label: str) -> str:
+              count = text.count(old)
+              if count != 1:
+                  raise SystemExit(f"{label}: expected one match, found {count}")
+              return text.replace(old, new, 1)
+
+          principal = principal_path.read_text(encoding="utf-8")
+          companion = companion_path.read_text(encoding="utf-8")
+
+          if 'id="related-coverage"' in principal or 'id="related-coverage"' in companion:
+              raise SystemExit("Related-coverage section already exists")
+
+          principal = replace_once(
+              principal,
+              '<li><a href="#methodology">Methodology and fact / assumption boundary</a></li>',
+              '<li><a href="#methodology">Methodology and fact / assumption boundary</a></li>\n<li><a href="#related-coverage">Related CrewSignal coverage</a></li>',
+              "principal TOC",
+          )
+
+          principal_marker = '''</nav>
+<section class="cs-report__section">
+<h2 class="cs-report__section-title" id="executive-thesis">Overview</h2>'''
+          principal_insert = '''</nav>
+<section class="cs-report__section" id="related-coverage">
+<div class="cs-callout">
+<p><strong>Related CrewSignal coverage</strong></p>
+<ul class="cs-report__summary-list">
+<li><a href="/reports/merger-integration/comparators/american-united-hypothetical/transaction-remedy-labor-scenarios/">Transaction, remedy, and Flight Attendant transition scenarios</a> — how divestitures, carve-outs, and operating-unit sales translate into base, employment, representation, and seniority consequences.</li>
+<li><a href="/reports/merger-integration/baseline/#section-single-carrier">NMB single-transportation-system framework</a>, <a href="/reports/merger-integration/baseline/#section-showing-of-interest">showing-of-interest rules</a>, and <a href="/reports/merger-integration/baseline/#section-jcba">the path to a JCBA</a>.</li>
+<li><a href="/reports/merger-integration/reference/mccaskill-bond/">McCaskill-Bond</a> and <a href="/reports/merger-integration/reference/allegheny-mohawk/">Allegheny-Mohawk</a> — seniority-integration and labor-protective reference reports.</li>
+<li><a href="/reports/union-governance/apfa/">APFA governance</a> and <a href="/reports/union-governance/cwa/cwa-afa/">CWA-AFA governance</a> — representation structure, elections, contract administration, and financial governance.</li>
+<li><a href="/reports/contract-architecture/APFA/American/">American/APFA Contract Architecture</a> and <a href="/reports/contract-architecture/CWA-AFA/United/">United/CWA-AFA Contract Architecture</a>.</li>
+<li><a href="/reports/merger-integration/comparators/us-airways-american/">US Airways / American</a> and <a href="/reports/merger-integration/comparators/continental-united/">Continental / United</a> — historical representation, seniority, and joint-contract comparators.</li>
+</ul>
+</div>
+</section>
+<section class="cs-report__section">
+<h2 class="cs-report__section-title" id="executive-thesis">Overview</h2>'''
+          principal = replace_once(principal, principal_marker, principal_insert, "principal related coverage insertion")
+
+          principal = replace_once(
+              principal,
+              'after a single-transportation-system finding',
+              'after a <a href="/reports/merger-integration/baseline/#section-single-carrier">single-transportation-system finding</a>',
+              "principal NMB inline link",
+          )
+
+          companion = replace_once(
+              companion,
+              '<ol class="cs-report__toc-list">',
+              '<ol class="cs-report__toc-list">\n    <li><a href="#related-coverage">Related CrewSignal coverage</a></li>',
+              "companion TOC",
+          )
+
+          companion_marker = '''</nav>
+
+<section class="cs-report__section">
+  <h2 class="cs-report__section-title" id="why-structure-matters">Why transaction structure matters</h2>'''
+          companion_insert = '''</nav>
+
+<section class="cs-report__section" id="related-coverage">
+  <div class="cs-callout">
+    <p><strong>Related CrewSignal coverage</strong></p>
+    <ul class="cs-report__summary-list">
+      <li><a href="/reports/merger-integration/comparators/american-united-hypothetical/">Principal hypothetical American / United report</a> — business profile, DOJ remedy architecture, financial-stress alternatives, NMB process, seniority, CBA comparison, and governance.</li>
+      <li><a href="/reports/merger-integration/baseline/#section-structures">Transaction structures</a>, <a href="/reports/merger-integration/baseline/#section-single-carrier">NMB single-system analysis</a>, <a href="/reports/merger-integration/baseline/#section-showing-of-interest">showing of interest</a>, and <a href="/reports/merger-integration/baseline/#section-fences">fence protections</a>.</li>
+      <li><a href="/reports/merger-integration/reference/mccaskill-bond/">McCaskill-Bond</a> and <a href="/reports/merger-integration/reference/allegheny-mohawk/">Allegheny-Mohawk</a>.</li>
+      <li><a href="/reports/union-governance/apfa/">APFA governance</a> and <a href="/reports/union-governance/cwa/cwa-afa/">CWA-AFA governance</a>.</li>
+      <li><a href="/reports/contract-architecture/APFA/American/">American/APFA Contract Architecture</a> and <a href="/reports/contract-architecture/CWA-AFA/United/">United/CWA-AFA Contract Architecture</a>.</li>
+      <li><a href="/reports/merger-integration/comparators/us-airways-american/">US Airways / American historical comparator</a> and <a href="/reports/merger-integration/comparators/continental-united/">Continental / United historical comparator</a>.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="cs-report__section">
+  <h2 class="cs-report__section-title" id="why-structure-matters">Why transaction structure matters</h2>'''
+          companion = replace_once(companion, companion_marker, companion_insert, "companion related coverage insertion")
+
+          companion = replace_once(
+              companion,
+              'the Railway Labor Act, McCaskill-Bond where a covered transaction combines crafts or classes, and later NMB findings.',
+              'the Railway Labor Act, <a href="/reports/merger-integration/reference/mccaskill-bond/">McCaskill-Bond</a> where a covered transaction combines crafts or classes, and later <a href="/reports/merger-integration/baseline/#section-single-carrier">NMB single-system findings</a>.',
+              "companion legal-framework inline links",
+          )
+
+          companion = replace_once(
+              companion,
+              'any APFA/CWA-AFA representation protocol.',
+              'any APFA/CWA-AFA representation protocol, with the <a href="/reports/merger-integration/comparators/us-airways-american/">US Airways / American transition</a> as the principal historical comparator.',
+              "companion representation-protocol link",
+          )
+
+          principal_path.write_text(principal, encoding="utf-8", newline="\n")
+          companion_path.write_text(companion, encoding="utf-8", newline="\n")
+
+          internal_pages = [
+              "public/reports/merger-integration/comparators/american-united-hypothetical/index.html",
+              "public/reports/merger-integration/comparators/american-united-hypothetical/transaction-remedy-labor-scenarios/index.html",
+              "public/reports/merger-integration/baseline/index.html",
+              "public/reports/merger-integration/reference/mccaskill-bond/index.html",
+              "public/reports/merger-integration/reference/allegheny-mohawk/index.html",
+              "public/reports/union-governance/apfa/index.html",
+              "public/reports/union-governance/cwa/cwa-afa/index.html",
+              "public/reports/contract-architecture/APFA/American/index.html",
+              "public/reports/contract-architecture/CWA-AFA/United/index.html",
+              "public/reports/merger-integration/comparators/us-airways-american/index.html",
+              "public/reports/merger-integration/comparators/continental-united/index.html",
+          ]
+          missing_pages = [item for item in internal_pages if not (root / item).is_file()]
+          if missing_pages:
+              raise SystemExit(f"Missing linked CrewSignal pages: {missing_pages}")
+
+          baseline = baseline_path.read_text(encoding="utf-8")
+          for anchor in (
+              'id="section-structures"',
+              'id="section-single-carrier"',
+              'id="section-showing-of-interest"',
+              'id="section-jcba"',
+              'id="section-fences"',
+          ):
+              if anchor not in baseline:
+                  raise SystemExit(f"Missing baseline anchor: {anchor}")
+
+          for path in (principal_path, companion_path):
+              text = path.read_text(encoding="utf-8")
+              ids = re.findall(r'\bid="([^"]+)"', text)
+              dupes = sorted({item for item in ids if ids.count(item) > 1})
+              if dupes:
+                  raise SystemExit(f"Duplicate IDs in {path}: {dupes}")
+              for tag in ("section", "table", "tbody"):
+                  opens = len(re.findall(fr'<{tag}\b', text, flags=re.I))
+                  closes = len(re.findall(fr'</{tag}>', text, flags=re.I))
+                  if opens != closes:
+                      raise SystemExit(f"Unbalanced {tag} in {path}: {opens}/{closes}")
+
+          required = {
+              principal_path: [
+                  'id="related-coverage"',
+                  'transaction-remedy-labor-scenarios/',
+                  '/reports/merger-integration/baseline/#section-single-carrier',
+                  '/reports/merger-integration/reference/mccaskill-bond/',
+                  '/reports/union-governance/apfa/',
+                  '/reports/contract-architecture/CWA-AFA/United/',
+              ],
+              companion_path: [
+                  'id="related-coverage"',
+                  '/reports/merger-integration/baseline/#section-showing-of-interest',
+                  '/reports/merger-integration/reference/allegheny-mohawk/',
+                  '/reports/union-governance/cwa/cwa-afa/',
+                  '/reports/merger-integration/comparators/us-airways-american/',
+              ],
+          }
+          for path, needles in required.items():
+              text = path.read_text(encoding="utf-8")
+              for needle in needles:
+                  if needle not in text:
+                      raise SystemExit(f"Required marker missing from {path}: {needle}")
+
+          print("Cross-link maintenance validation PASS")
+          print(f"Principal bytes: {principal_path.stat().st_size}")
+          print(f"Companion bytes: {companion_path.stat().st_size}")
+          PY
+
+          git diff --check
+          git status --short
+
+      - name: Commit maintenance result
+        shell: bash
+        run: |
+          git config user.name "CrewSignal Maintenance"
+          git config user.email "actions@users.noreply.github.com"
+          git rm .github/workflows/american-united-crosslinks.yml
+          git add \
+            public/reports/merger-integration/comparators/american-united-hypothetical/index.html \
+            public/reports/merger-integration/comparators/american-united-hypothetical/transaction-remedy-labor-scenarios/index.html
+          git commit -m "Add American-United internal coverage links"
+          git push origin HEAD:maintenance/american-united-crosslinks-20261028
