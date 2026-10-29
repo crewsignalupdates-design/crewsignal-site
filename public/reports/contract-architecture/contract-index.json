@@ -309,24 +309,6 @@
                       },
                       {
                           "union":  "CWA-AFA",
-                          "carrier":  "Spirit",
-                          "carrierPage":  "/reports/contract-architecture/CWA-AFA/Spirit/",
-                          "status":  "active",
-                          "pdfCount":  1,
-                          "pdfs":  [
-                                       {
-                                           "fileName":  "Spirit_CWA-AFA_CBA_2023-2026.pdf",
-                                           "href":  "/reports/contract-architecture/CWA-AFA/Spirit/contract/Spirit_CWA-AFA_CBA_2023-2026.pdf",
-                                           "docType":  "CBA",
-                                           "years":  {
-                                                         "start":  2023,
-                                                         "end":  2026
-                                                     }
-                                       }
-                                   ]
-                      },
-                      {
-                          "union":  "CWA-AFA",
                           "carrier":  "United",
                           "carrierPage":  "/reports/contract-architecture/CWA-AFA/United/",
                           "status":  "active",
