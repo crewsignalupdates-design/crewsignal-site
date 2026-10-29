@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Same flights, different contractual pay | CrewSignal</title>
+<meta name="description" content="A reproducible synthetic short-haul lineholder comparison for United, Alaska, Southwest and American, using dated native pay rules and explicit qualifications.">
+<link rel="canonical" href="https://crewsignal.org/reports/contract-architecture/worked-examples/short-haul-lineholder/">
+<link rel="stylesheet" href="/assets/css/main.css">
+<style>
+    .cs-sh01 { overflow-wrap:anywhere; }
+    .cs-sh01 a { color:var(--cs-accent); text-underline-offset:.15em; }
+    .cs-sh01 a:focus-visible, .cs-sh01 .sh01-table-region:focus-visible { outline:3px solid var(--cs-accent); outline-offset:3px; }
+    .cs-sh01 .sh01-nav { display:flex; flex-wrap:wrap; gap:.5rem 1rem; margin-top:1rem; }
+    .cs-sh01 .sh01-table-region { max-width:100%; overflow-x:auto; margin:1rem 0; border:1px solid var(--cs-border-subtle); border-radius:.5rem; }
+    .cs-sh01 .sh01-table { border-collapse:collapse; width:100%; min-width:680px; font-size:.92rem; }
+    .cs-sh01 .sh01-table caption { text-align:left; padding:.7rem .8rem; font-weight:700; color:var(--cs-heading); }
+    .cs-sh01 .sh01-table th, .cs-sh01 .sh01-table td { border:1px solid var(--cs-border-subtle); padding:.7rem .8rem; vertical-align:top; text-align:left; }
+    .cs-sh01 .sh01-table thead { background:var(--cs-surface-soft); }
+    .cs-sh01 .sh01-table th[scope="row"] { font-weight:600; }
+    .cs-sh01 .sh01-cite { white-space:nowrap; }
+    .cs-sh01 .sh01-formula { padding:.8rem; background:var(--cs-surface-soft); border-left:3px solid var(--cs-accent); border-radius:.35rem; }
+    .cs-sh01 .sh01-formula code { white-space:normal; overflow-wrap:anywhere; font-size:.9rem; }
+    .cs-sh01 .sh01-source { border-top:1px solid var(--cs-border-subtle); padding-top:.8rem; }
+    .cs-sh01 [id] { scroll-margin-top:1rem; }
+    .cs-sh01 .sh01-skip { position:absolute; top:-10rem; left:1rem; padding:.6rem; background:var(--cs-surface); color:var(--cs-text-main); z-index:10; }
+    .cs-sh01 .sh01-skip:focus { top:.5rem; }
+</style>
+</head>
+<body class="cs-report cs-sh01">
+<a class="sh01-skip" href="#main-content">Skip to worked example</a>
+<header class="cs-report__header">
+<a class="cs-report__back" href="/reports/contract-architecture/">← Back to Contract Architecture</a>
+<p class="cs-report__eyebrow">Contract Architecture · Worked Example</p>
+<h1 class="cs-report__title">Same flights, different contractual pay</h1>
+<p class="cs-report__subtitle">A four-carrier short-haul lineholder example</p>
+<nav class="sh01-nav" aria-label="Worked example navigation"><a href="#common-work">Work assumptions</a><a href="#minimum-pay">Calculations</a><a href="#qualifications">Qualifications</a><a href="#sources">Sources</a></nav>
+</header>
+<main class="cs-report__main" id="main-content" tabindex="-1"><section aria-labelledby="overview-title" class="cs-report__section" id="overview"><h2 class="cs-report__section-title" id="overview-title">The result at 5.5 years</h2>
+
+<p><strong>Work dates: October 20–21, 2026 · Evidence reviewed through October 28, 2026 Pacific · Scenario SH-01</strong></p>
+<p><strong>Worked example, not a scorecard.</strong> This tests a proposed comparison method; it does not adopt a numerical scoring system or change existing CrewSignal scores.</p>
+<p>For the synthetic two-day pairing defined below, a Flight Attendant with <strong>5.5 completed pay-service years</strong> has modeled pairing wage values of approximately <strong>$725.29 at United</strong>, <strong>$692.16 at Alaska</strong>, <strong>$673.40 at Southwest under the conditional reporting model</strong>, and approximately <strong>$719.47 at American</strong>. The differences come from dated wage rates, the minimum-pay provision that wins under each agreement, and separately payable boarding compensation—not from matching similarly numbered pay-table rows or imposing a universal conversion between hourly pay and Trips for Pay (TFP). <sup class="sh01-cite"><a aria-label="Source 1" href="#source-1">1</a>, <a aria-label="Source 2" href="#source-2">2</a>, <a aria-label="Source 3" href="#source-3">3</a>, <a aria-label="Source 4" href="#source-4">4</a></sup></p>
+<p>These are <strong>pairing-attributable contractual formula values</strong>, not observed paychecks or necessarily additional monthly paycheck cash. United and American amounts are approximate displays because boarding-specific monetary rounding remains unverified. Southwest's outstation-report assumption is conditional, and the reproduced clean agreement retains its source-authentication qualification. Those limitations are part of the result, not footnotes to discard when reusing the table.</p>
+<div aria-labelledby="sh01-table-1-caption" class="sh01-table-region" role="region" tabindex="0"><table class="sh01-table"><caption id="sh01-table-1-caption">Pairing wage values at 5.5 completed pay-service years</caption>
+<thead>
+<tr>
+<th scope="col">Carrier / representative</th>
+<th scope="col" style="text-align:right">Core wage value at 5.5 years</th>
+<th scope="col" style="text-align:right">Separate boarding value</th>
+<th scope="col" style="text-align:right">Total pairing wage value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th scope="row">United / CWA-AFA</th>
+<td style="text-align:right">$572.60</td>
+<td style="text-align:right">≈ $152.69</td>
+<td style="text-align:right"><strong>≈ $725.29</strong></td>
+</tr>
+<tr>
+<th scope="row">Alaska / CWA-AFA, Alaska bargaining unit</th>
+<td style="text-align:right">$494.40</td>
+<td style="text-align:right">$197.76</td>
+<td style="text-align:right"><strong>$692.16</strong></td>
+</tr>
+<tr>
+<th scope="row">Southwest / TWU Local 556 — conditional reporting model</th>
+<td style="text-align:right">$673.40</td>
+<td style="text-align:right">No separate ordinary boarding addition in the reviewed case</td>
+<td style="text-align:right"><strong>$673.40, conditional model</strong></td>
+</tr>
+<tr>
+<th scope="row">American / APFA</th>
+<td style="text-align:right">$568.00</td>
+<td style="text-align:right">≈ $151.47</td>
+<td style="text-align:right"><strong>≈ $719.47</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>The approximation symbol (≈) identifies a rounded analytical display where boarding-specific payroll rounding remains unresolved. Alaska and Southwest's displayed dollar totals are exact products of the selected units and rates; that does not certify actual paychecks. Figures follow the established carrier order, not a whole-contract ranking. <sup class="sh01-cite"><a aria-label="Source 1" href="#source-1">1</a>, <a aria-label="Source 2" href="#source-2">2</a>, <a aria-label="Source 3" href="#source-3">3</a>, <a aria-label="Source 4" href="#source-4">4</a></sup></p>
+</section><section aria-labelledby="common-work-title" class="cs-report__section" id="common-work"><h2 class="cs-report__section-title" id="common-work-title">What work is being compared?</h2>
+<p>This is a <strong>synthetic mainline Boeing 737-800 benchmark</strong>, not an actual awarded pairing or a claim that all four carriers sell these flights. It uses a Los Angeles (LAX) domicile, a Palm Springs (PSP) overnight, 150 passengers on every sector, full prescribed staffing, and an ordinary nonlead/nonpremium cabin position. For this test, the selected seat-configuration inputs are United 166, Alaska 161, Southwest 175 and American 172; these are not a fleet-wide inventory. Installed seats and the 150 passengers carried are different inputs. In particular, 150 passengers must not be substituted for American's installed-seat count when applying its boarding rules. The reviewed positions are United non-Purser/nonlanguage without a qualifying incentive or domestic galley premium, Alaska B-position, Southwest non-A, and American nonlead/nonpremium. These are the preserved common-work assumptions, not findings about typical assignments. <sup class="sh01-cite"><a aria-label="Source 5" href="#source-5">5</a></sup></p>
+<p>All times are Pacific Daylight Time, UTC−07:00. SAN denotes San Diego. Scheduled and actual flight times are identical.</p>
+<div aria-labelledby="sh01-table-2-caption" class="sh01-table-region" role="region" tabindex="0"><table class="sh01-table"><caption id="sh01-table-2-caption">Synthetic flight schedule; Pacific Daylight Time on both dates</caption>
+<thead>
+<tr>
+<th scope="col">Leg</th>
+<th scope="col">October 20 route</th>
+<th scope="col">October 21 route</th>
+<th scope="col">Departure–arrival on each date</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th scope="row">1</th>
+<td>LAX–SAN</td>
+<td>PSP–SAN</td>
+<td>09:00–09:55</td>
+</tr>
+<tr>
+<th scope="row">2</th>
+<td>SAN–LAX</td>
+<td>SAN–LAX</td>
+<td>10:55–11:50</td>
+</tr>
+<tr>
+<th scope="row">3</th>
+<td>LAX–SAN</td>
+<td>LAX–SAN</td>
+<td>12:50–13:45</td>
+</tr>
+<tr>
+<th scope="row">4</th>
+<td>SAN–PSP</td>
+<td>SAN–LAX</td>
+<td>14:45–15:40</td>
+</tr>
+</tbody>
+</table></div>
+<p>The common work therefore contains <strong>eight 55-minute sectors, 7 hours 20 minutes of block time, and three 60-minute turns per duty</strong>. The reviewed U.S. Department of Transportation / Bureau of Transportation Statistics (DOT/BTS) distance evidence gives 109 miles for LAX–SAN and 85 miles for SAN–PSP in both directions. Under the reviewed Alaska and Southwest short-sector provisions, each modeled leg produces one native TFP. Southwest's historical mileage-book terminology retains the narrow provenance qualification recorded in the research. <sup class="sh01-cite"><a aria-label="Source 1" href="#source-1">1</a>, <a aria-label="Source 2" href="#source-2">2</a>, <a aria-label="Source 3" href="#source-3">3</a>, <a aria-label="Source 4" href="#source-4">4</a>, <a aria-label="Source 5" href="#source-5">5</a></sup></p>
+<p>Actual passenger boarding is stipulated from 30 to 10 minutes before departure. The United and American payment calculation nevertheless uses their reviewed <strong>40-minute standard/scheduled boarding unit</strong>; it does not substitute the 20 minutes during which passengers physically enter the aircraft. Alaska uses its <strong>0.5-TFP payment per eligible boarding event</strong>. All eight boardings satisfy the stated eligibility assumptions; no deadhead, reboarding, cancellation, position premium or other premium event is included. <sup class="sh01-cite"><a aria-label="Source 1" href="#source-1">1</a>, <a aria-label="Source 2" href="#source-2">2</a>, <a aria-label="Source 3" href="#source-3">3</a>, <a aria-label="Source 4" href="#source-4">4</a>, <a aria-label="Source 6" href="#source-6">6</a>, <a aria-label="Source 7" href="#source-7">7</a></sup></p>
+<p>The surrounding synthetic history contains no other duty, Reserve, standby, training or deadhead from September 22 through October 19 or October 22 through December 31, and no other relevant October/fourth-quarter credits. Lawfully adjusted lineholder status is stipulated. <strong>A monthly line consisting of these two duty periods is not asserted to be typical or ordinarily awardable.</strong> The overnight hotel room is stipulated available from 16:30 to 07:30, with 15-minute transfers each way. The modeled release-to-report interval is at least 16 hours 5 minutes. These rest and preparation assumptions support a controlled research example, not dispatch approval, a complete line-building assessment, or approval of an individual employee's schedule. Boeing's airport-planning material is used only as physical-plausibility context, not as a carrier-specific task minimum. <sup class="sh01-cite"><a aria-label="Source 5" href="#source-5">5</a></sup></p>
+</section><section aria-labelledby="service-and-rates-title" class="cs-report__section" id="service-and-rates"><h2 class="cs-report__section-title" id="service-and-rates-title">Start with equal completed service, not equal row labels</h2>
+<p>The table shows all three tested service cohorts so the junior and senior results can be reproduced as well as the middle-service result. The rates are native contractual inputs, not comparable hourly earnings.</p>
+<div aria-labelledby="sh01-table-3-caption" class="sh01-table-region" role="region" tabindex="0"><table class="sh01-table"><caption id="sh01-table-3-caption">Completed-service mapping and dated native pay rates</caption>
+<thead>
+<tr>
+<th scope="col">Carrier / representative</th>
+<th scope="col">Rate unit and effective date</th>
+<th scope="col">0.25 completed years</th>
+<th scope="col">5.5 completed years</th>
+<th scope="col">13.5 completed years</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th scope="row">United / CWA-AFA</th>
+<td>Per credited hour; July 30, 2026</td>
+<td>Year 1: $38.21</td>
+<td>Year 6: $57.26</td>
+<td>Year 13 or more: $87.47</td>
+</tr>
+<tr>
+<th scope="row">Alaska / CWA-AFA, Alaska bargaining unit</th>
+<td>Per TFP; March 2, 2026</td>
+<td>Year 1: $32.96</td>
+<td>Year 6: $49.44</td>
+<td>Year 14: $76.48</td>
+</tr>
+<tr>
+<th scope="row">Southwest / TWU Local 556</th>
+<td>Per TFP; May 1, 2026</td>
+<td>First six months: $32.62</td>
+<td>Step 5: $51.80</td>
+<td>Step 13: $82.14</td>
+</tr>
+<tr>
+<th scope="row">American / APFA</th>
+<td>Per hour; October 1, 2026</td>
+<td>Year 1: $37.91</td>
+<td>Year 6: $56.80</td>
+<td>Year 13/top step: $87.04</td>
+</tr>
+</tbody>
+</table></div>
+<p>The synthetic pay-service origins are July 20, 2026 for the junior cohort, April 20, 2021 for the middle cohort, and April 20, 2013 for the senior cohort. Completed service is measured at the start of the pairing; none crosses a relevant service or rate boundary during these two workdays. Southwest uses a different step structure and anniversary-month processing. Matching its “Step 6” to another carrier's “Year 6” would not hold completed service constant. <sup class="sh01-cite"><a aria-label="Source 1" href="#source-1">1</a>, <a aria-label="Source 2" href="#source-2">2</a>, <a aria-label="Source 3" href="#source-3">3</a>, <a aria-label="Source 4" href="#source-4">4</a></sup></p>
+<p>The Alaska rate is the reviewed March 2026 table rate. The bounded later-source review did not establish an additional October increase; a later raise at another carrier was not treated as an automatic Alaska market-rate adjustment. <sup class="sh01-cite"><a aria-label="Source 2" href="#source-2">2</a></sup></p>
+</section><section aria-labelledby="minimum-pay-title" class="cs-report__section" id="minimum-pay"><h2 class="cs-report__section-title" id="minimum-pay-title">Which minimum-pay provision wins?</h2>
+<p>The calculation compares alternatives at their contractual level. It does <strong>not</strong> add every minimum or rig as a separate payment. A <em>rig</em> is a contractual minimum-pay calculation based on duty time, trip duration or related factors. <sup class="sh01-cite"><a aria-label="Source 1" href="#source-1">1</a>, <a aria-label="Source 2" href="#source-2">2</a>, <a aria-label="Source 3" href="#source-3">3</a>, <a aria-label="Source 4" href="#source-4">4</a></sup></p>
+<p><strong>United.</strong> Day one compares 220 flight minutes with 475 ÷ 2 = 237.5 duty-ratio minutes; day two compares 220 with 460 ÷ 2 = 230. Their daily winners total 467.5 credited minutes. The trip-ratio candidate is 1,915 ÷ 3.5 = 547.142857… minutes. The five-hour average minimum across two duties supplies <strong>600 minutes, or ten credited hours</strong>, and wins. Eight 40-minute boardings are then paid separately at half rate without increasing those ten core credited hours. <sup class="sh01-cite"><a aria-label="Source 1" href="#source-1">1</a></sup></p>
+<p class="sh01-formula"><code>10 × $57.26 + 8 × (40 ÷ 60) × ($57.26 ÷ 2) = $725.293333…</code></p>
+<p>The analytical display is <strong>approximately $725.29</strong>. It does not assert a verified event-level or monthly payroll-rounding rule.</p>
+<p><strong>Alaska.</strong> Four native TFP per duty and the four-TFP duty-period minimum yield eight TFP across the two duties. The five-TFP average-duty-period guarantee raises the pairing to <strong>ten core TFP</strong>. Eight eligible boardings add four TFP outside that minimum-pay calculation. This is not a five-TFP floor independently applied to every duty day in every possible pairing. <sup class="sh01-cite"><a aria-label="Source 2" href="#source-2">2</a></sup></p>
+<p class="sh01-formula"><code>(10 core TFP + 8 × 0.5 boarding TFP) × $49.44 = $692.16</code></p>
+<p>Alaska boarding TFP must not be described as universally excluded from every qualifying-credit measure; the applicable benefit or threshold definition remains important. <sup class="sh01-cite"><a aria-label="Source 2" href="#source-2">2</a></sup></p>
+<p><strong>Southwest.</strong> In the conditional 45-minute outstation-report case, each duty compares four earned TFP, a four-TFP daily minimum, and 0.74 TFP per duty hour. The duty-ratio calculations are 0.74 × (490 ÷ 60) = 6.043333… and 0.74 × (475 ÷ 60) = 5.858333…. Rounded to two decimal places under the reviewed rule, the daily winners are <strong>6.04 and 5.86 TFP</strong>, totaling 11.90. The trip-hour-ratio calculation is (1,930 ÷ 60) ÷ 3 = 10.722222…, rounded to <strong>10.72 TFP</strong>. The 6.5-TFP average-daily guarantee across two original domicile days supplies <strong>13 TFP</strong>, and wins. The reviewed version/scenario provides no separate ordinary boarding-event addition for this defined employee. <sup class="sh01-cite"><a aria-label="Source 3" href="#source-3">3</a></sup></p>
+<p class="sh01-formula"><code>13 TFP × $51.80 = $673.40, under the reviewed agreement and conditional reporting model</code></p>
+<p>The official annotated provisions and post-ratification pay chart corroborate the specified calculation. They do not authenticate the complete bytes of the retained clean reproduction. <sup class="sh01-cite"><a aria-label="Source 3" href="#source-3">3</a></sup></p>
+<p><strong>American.</strong> Each duty compares 220 block minutes, 475 ÷ 2 = 237.5 duty-ratio minutes, and the applicable 180-minute daily floor. The daily winners total 475 minutes. The trip-ratio candidate is 547.142857… minutes. The five-hour average minimum across two duties supplies <strong>600 minutes, or ten credited hours</strong>, and wins. Boarding is paid separately without adding core credit. <sup class="sh01-cite"><a aria-label="Source 4" href="#source-4">4</a></sup></p>
+<p class="sh01-formula"><code>10 × $56.80 + 8 × (40 ÷ 60) × ($56.80 ÷ 2) = $719.466666…</code></p>
+<p>The analytical display is <strong>approximately $719.47</strong>, not certified payroll cents.</p>
+</section><section aria-labelledby="duty-and-time-away-title" class="cs-report__section" id="duty-and-time-away"><h2 class="cs-report__section-title" id="duty-and-time-away-title">Identical flights need not mean identical duty burdens</h2>
+<p>Reporting and release rules change the modeled employee's duty burden. <strong>Duty time</strong> is the sum of both report-to-release periods; it excludes the off-duty overnight interval. <strong>Time away from base</strong> runs from the first report to the final release and includes that overnight interval. It is not time continuously on duty.</p>
+<p>Each ratio below divides the unrounded pairing formula value by the named denominator in hours, then rounds the descriptive result to two decimals. It does not convert the contractual payroll rate into a new hourly wage. All displayed ratios use ≈ because they are analytical displays, independently of the separate United/American payroll-rounding question.</p>
+<div aria-labelledby="sh01-table-4-caption" class="sh01-table-region" role="region" tabindex="0"><table class="sh01-table"><caption id="sh01-table-4-caption">Modeled duty and time away; rounded analytical ratios, not payroll hourly rates</caption>
+<thead>
+<tr>
+<th scope="col">Carrier</th>
+<th scope="col" style="text-align:right">Modeled total duty</th>
+<th scope="col" style="text-align:right">Modeled time away from base</th>
+<th scope="col" style="text-align:right">Formula value per duty hour</th>
+<th scope="col" style="text-align:right">Formula value per hour away</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th scope="row">United</th>
+<td style="text-align:right">15h35</td>
+<td style="text-align:right">31h55</td>
+<td style="text-align:right">≈ $46.54</td>
+<td style="text-align:right">≈ $22.72</td>
+</tr>
+<tr>
+<th scope="row">Alaska</th>
+<td style="text-align:right">15h35</td>
+<td style="text-align:right">31h55</td>
+<td style="text-align:right">≈ $44.42</td>
+<td style="text-align:right">≈ $21.69</td>
+</tr>
+<tr>
+<th scope="row">Southwest — <strong>conditional 45-minute report model</strong></th>
+<td style="text-align:right"><strong>16h05, conditional</strong></td>
+<td style="text-align:right">32h10 in this model</td>
+<td style="text-align:right"><strong>≈ $41.87, conditional</strong></td>
+<td style="text-align:right">≈ $20.93 in this model</td>
+</tr>
+<tr>
+<th scope="row">American</th>
+<td style="text-align:right">15h50</td>
+<td style="text-align:right">31h55</td>
+<td style="text-align:right">≈ $45.44</td>
+<td style="text-align:right">≈ $22.54</td>
+</tr>
+</tbody>
+</table></div>
+<p>United and Alaska report at 08:00 on the first day and 08:15 on the second, with 15:55 releases. American reports at 08:00 both days and releases at 15:55. Southwest's conditional model reports at 08:00 and 08:15 and releases at 16:10. Thus American's modeled second-day reporting obligation adds 15 duty minutes relative to United and Alaska without changing this pairing's winning ten-hour minimum. <sup class="sh01-cite"><a aria-label="Source 1" href="#source-1">1</a>, <a aria-label="Source 2" href="#source-2">2</a>, <a aria-label="Source 3" href="#source-3">3</a>, <a aria-label="Source 4" href="#source-4">4</a>, <a aria-label="Source 5" href="#source-5">5</a></sup></p>
+<p><strong>Southwest's definitive required-duty denominator remains unresolved.</strong> The retained evidence does not establish the applicable October 2026 outstation-report requirement. The separate 30-minute-report branch is only an arithmetic sensitivity test: boarding begins at that same time in the specified work record, leaving no preceding preparation interval. Its unchanged 13-TFP result does not validate it as an operational alternative. It is not used as a second accepted scenario in this article. <sup class="sh01-cite"><a aria-label="Source 3" href="#source-3">3</a>, <a aria-label="Source 5" href="#source-5">5</a></sup></p>
+</section><section aria-labelledby="cohort-checks-title" class="cs-report__section" id="cohort-checks"><h2 class="cs-report__section-title" id="cohort-checks-title">Junior and senior checks</h2>
+<p>The same work is also evaluated at 0.25 and 13.5 completed pay-service years. Amounts retain the same rounding and source/reporting qualifications as the middle cohort.</p>
+<div aria-labelledby="sh01-table-5-caption" class="sh01-table-region" role="region" tabindex="0"><table class="sh01-table"><caption id="sh01-table-5-caption">Same work at junior, middle and senior completed-service cohorts</caption>
+<thead>
+<tr>
+<th scope="col">Carrier</th>
+<th scope="col" style="text-align:right">0.25 completed years</th>
+<th scope="col" style="text-align:right">5.5 completed years</th>
+<th scope="col" style="text-align:right">13.5 completed years</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th scope="row">United / CWA-AFA</th>
+<td style="text-align:right">≈ $483.99</td>
+<td style="text-align:right">≈ $725.29</td>
+<td style="text-align:right">≈ $1,107.95</td>
+</tr>
+<tr>
+<th scope="row">Alaska / CWA-AFA</th>
+<td style="text-align:right">$461.44</td>
+<td style="text-align:right">$692.16</td>
+<td style="text-align:right">$1,070.72</td>
+</tr>
+<tr>
+<th scope="row">Southwest / TWU Local 556 — <strong>conditional model</strong></th>
+<td style="text-align:right"><strong>$424.06</strong>*</td>
+<td style="text-align:right"><strong>$673.40</strong></td>
+<td style="text-align:right"><strong>$1,067.82</strong></td>
+</tr>
+<tr>
+<th scope="row">American / APFA</th>
+<td style="text-align:right">≈ $480.19</td>
+<td style="text-align:right">≈ $719.47</td>
+<td style="text-align:right">≈ $1,102.51</td>
+</tr>
+</tbody>
+</table></div>
+<p><em>The junior Southwest lineholder case requires the Article 7.8 exception: sufficient other Flight Attendants satisfy Reserve requirements. It does not demonstrate general probationary lineholder availability. <sup class="sh01-cite"><a aria-label="Source 3" href="#source-3">3</a>, <a aria-label="Source 5" href="#source-5">5</a></sup></em></p>
+<p>To reproduce these checks, keep the same winning quantities and substitute the rates in the service table: United and American use (10 + 8/3) × their hourly rate; Alaska uses 14 × its TFP rate; Southwest uses 13 × its TFP rate in the conditional reporting model. The 8/3 is boarding pay expressed as a base-rate payment equivalent, not additional core credit or a conversion between hourly pay and TFP. <sup class="sh01-cite"><a aria-label="Source 1" href="#source-1">1</a>, <a aria-label="Source 2" href="#source-2">2</a>, <a aria-label="Source 3" href="#source-3">3</a>, <a aria-label="Source 4" href="#source-4">4</a></sup></p>
+</section><section aria-labelledby="significance-title" class="cs-report__section" id="significance"><h2 class="cs-report__section-title" id="significance-title">Significance</h2>
+<p>For this work, United and American select the same ten core hours and the same eight 40-minute boarding quantities. Their approximately <strong>$5.83</strong> difference at 5.5 years is therefore explained by the dated base rates used in the formulas. Alaska's result comes from ten core TFP plus four boarding TFP; Southwest's comes from thirteen core TFP without an ordinary separate boarding addition under the reviewed provisions. These are different contractual mechanisms, not evidence that hourly compensation inherently beats TFP. Nor should Alaska and Southwest's different TFP systems be treated as interchangeable merely because their units share a name. <sup class="sh01-cite"><a aria-label="Source 1" href="#source-1">1</a>, <a aria-label="Source 2" href="#source-2">2</a>, <a aria-label="Source 3" href="#source-3">3</a>, <a aria-label="Source 4" href="#source-4">4</a></sup></p>
+<p>This example demonstrates <strong>contractual value for defined work</strong>. It does not compare every component of contract strength. It does not establish progress from prior agreements or representative performance in practice. It supplies no annual-earnings estimate, whole-contract winner, union ranking or newly adopted score.</p>
+<p>Reimbursements, per diem, employer retirement contributions, employee-dependent matching, pension value, profit sharing and one-time payments are excluded from the wage subtotal rather than treated as having no value. Monthly guarantees and other monthly adjustments may affect whether pairing value becomes additional paycheck cash. <sup class="sh01-cite"><a aria-label="Source 5" href="#source-5">5</a></sup></p>
+</section><section aria-labelledby="qualifications-title" class="cs-report__section" id="qualifications"><h2 class="cs-report__section-title" id="qualifications-title">Remaining qualifications</h2>
+<p><strong>United and American monetary rounding.</strong> The exact formulas can be reproduced, but authoritative boarding-specific monetary-rounding stages have not been established. United's reviewed senior 40-minute chart entry of $29.15 also remains unreconciled with $87.47 ÷ 3 = $29.156666…. That is an unresolved source/processing question, not a finding of underpayment. The reviewed United portal article identifies a communication channel, not a rounding rule. American's public event-tracking guidance and login-gated calculator do not supply the missing processing specification. <sup class="sh01-cite"><a aria-label="Source 5" href="#source-5">5</a>, <a aria-label="Source 6" href="#source-6">6</a>, <a aria-label="Source 8" href="#source-8">8</a></sup></p>
+<p><strong>Southwest reporting and source identity.</strong> The 45-minute reporting model remains conditional pending the applicable October notice/table. The reproduced clean agreement remains qualified at the complete issuer-byte level while the official annotated provisions and post-ratification pay chart supply positive corroboration. The unresolved qualifications are not proof that the relevant notice or clean source does not exist. <sup class="sh01-cite"><a aria-label="Source 3" href="#source-3">3</a>, <a aria-label="Source 5" href="#source-5">5</a></sup></p>
+</section><section aria-labelledby="sources-title" class="cs-report__section" id="sources"><h2 class="cs-report__section-title" id="sources-title">Sources and reproduction</h2>
+<p>The work record, all three cohorts' rates, minimum-pay candidates, boarding quantities and denominators above provide the inputs needed to reproduce the displayed results. Arithmetic was separately recomputed during technical review and remained unchanged after the fixed-scenario calculator's input safeguards were corrected. Those checks validate the calculation for these stated inputs, not arbitrary schedules, actual pay statements, or independent human contract adjudication. New work patterns require a new applicability review.</p>
+<p>Contract text and dated implementation materials supply the rules. CrewSignal supplies the synthetic facts and calculations; they are not an additional independent source for contractual entitlements. The evidence cutoff is October 28, 2026 Pacific, while the work dates remain October 20–21. Later retrieval does not import a later pay rate into the example. The next review triggers are authoritative rounding guidance, the applicable Southwest reporting notice/table, a better-authenticated Southwest final text, or a source change affecting these calculations.</p>
+<p class="sh01-source" id="source-1">[1] <strong>United — governing agreement and service progression.</strong> <a href="https://www.unitedafa.org/hubfs/Updated%20CBA%202026%20Bookmarked%20Single%20Page%20View.pdf?hsLang=en">Final 2026–2031 CBA</a>: §4.A, physical PDF 32 / printed 4-1; §4.S, PDF 39–40 / printed 4-8–9; §6.A–C, PDF 47 / printed 6-1; reporting/release, PDF 52–54. <a href="https://www.unitedafa.org/news/august-bid-month-base-pay-increase-stepping-through-the-pay-scale">August bid-month pay and service-progression explanation</a>. Use the final agreement, not the older tentative-agreement redline, for the operative rules in this example.</p>
+<p class="sh01-source" id="source-2">[2] <strong>Alaska — native units, minimums, boarding and dated rates.</strong> <a href="https://afaalaska.org/wp-content/uploads/2026/03/2025-2028-AFA-Alaska-CBA-Final-03.11.2026.pdf">Final 2025–2028 CBA, version March 11, 2026</a>: §§21.A–B, physical PDF 115–117 / printed 21-1–3; §§21.D–E, PDF 119–120 / printed 21-5–6; reporting, PDF 21 / printed 8-1. <a href="https://afaalaska.org/wp-content/uploads/2025/03/03.02.2025-Minimum-Pay-Rules-Flow-chart.pdf">Minimum-pay flowchart</a> is explanatory guidance. <a href="https://afaalaska.org/mec/mec-town-hall-video-and-qa-recap-june-8-2026">June 2026 town-hall questions and answers</a> provide the reviewed market-rate-adjustment context, not an automatic October raise.</p>
+<p class="sh01-source" id="source-3">[3] <strong>Southwest — positive corroboration with a retained source qualification.</strong> <a href="https://media.twu556.org/2024/10/01173550/Contract-2024-Pay-Chart.pdf">Official pay chart</a>: May 1, 2026 column and anniversary-processing footnote. <a href="https://media.twu556.org/2024/03/29174633/TA2024-Annotated-Combined.3-29-24.pdf">Official annotated 2024 tentative-agreement presentation</a>: Article 21 compensation/native units and Article 21.22 minimum-pay rules, physical PDF 178–179 for the latter. <a href="https://crewsignal.org/reports/contract-architecture/TWU/Southwest/contract/Southwest_TWU_CBA_2018-2028.pdf">Retained clean reproduction, Version 1 dated September 24, 2024</a>: Article 8.2 reporting/release, physical PDF 36–39; Article 21.22, PDF 176–177; Article 7.8 for the junior Reserve exception. Its filename does not establish a distinct 2018 agreement. The reviewed clauses were corroborated against the official annotated text; complete-file identity with an issuer-published final copy and the applicable October reporting requirement remain qualified. Do not transfer PDF page numbers between these versions.</p>
+<p class="sh01-source" id="source-4">[4] <strong>American — compensation and duty rules.</strong> <a href="https://www.apfa.org/wp-content/uploads/2024/12/2024-CBA_120524_Section03.pdf">Official Section 3</a>: §§3.A and 3.D, physical PDF 1–2 / printed 3-1–2. <a href="https://www.apfa.org/wp-content/uploads/2024/12/2024-CBA_120524_Section11.pdf">Official Section 11</a>: §11.D, PDF 1–3, and reporting, PDF 8. <a href="https://www.apfa.org/2026/10/02/10-02-26-october-1-2026-increases-whats-next/">October 2026 rate notice</a>. These are section-specific files, not the physical pagination of a combined agreement.</p>
+<p class="sh01-source" id="source-5">[5] <strong>Common work and calculation assumptions.</strong> The itinerary, service-origin dates, passenger counts, selected configurations, positions, surrounding no-duty history, hotel/transport allowances and equal scheduled/actual times are CrewSignal's explicitly synthetic inputs, not carrier schedules or employee records. <a href="https://transtats.bts.gov/Distance.aspx">DOT/BTS airport-distance tool and data</a> supplied the reviewed 109-mile LAX–SAN and 85-mile SAN–PSP distances in both directions. Southwest's historical mileage-book terminology retains a narrow source-provenance qualification; no contradictory mileage or threshold sensitivity was identified. <a href="https://www.boeing.com/content/dam/boeing/v2/airports/acaps/737NG_REV_C.pdf">Boeing 737 airport-planning document</a>, §5.2.4, printed 5-11 / physical PDF 141, supplies physical-plausibility context only. It does not approve this pairing, prove actual service, or prescribe every carrier's preparation times.</p>
+<p class="sh01-source" id="source-6">[6] <strong>United boarding unit, activation and processing.</strong> <a href="https://www.unitedafa.org/news/boarding-pay-chart">August 13, 2026 boarding chart</a>; <a href="https://sites.google.com/unitedafa.org/jit-updates-cba2026/2026-june-9">June 9 joint implementation notice</a>, identifying ordinary boarding pay from May 31; <a href="https://sites.google.com/unitedafa.org/jit-updates-cba2026/2026-september-9">September 9 processing and catch-up notice</a>. The September notice is not ordinary boarding pay's initial effective date. The senior 40-minute chart discrepancy remains unresolved.</p>
+<p class="sh01-source" id="source-7">[7] <strong>Alaska and American boarding implementation.</strong> <a href="https://contract2022.afaalaska.org/wp-content/uploads/2025/03/2025-CBA-Implementation-Timeline-Spreadsheet.pdf">Alaska implementation timeline</a>, physical PDF 5, dates boarding activation to March 2, 2025. American's <a href="https://www.apfa.org/2025/03/21/3-21-25-contract-implementation-update-18-boarding-pay-begins-april-1-2025/">boarding activation notice</a> identifies April 1, 2025; its <a href="https://www.apfa.org/2025/04/30/4-30-25-contract-implementation-update-23-new-domestic-boarding-times-effective-may-1/">737 boarding-time notice</a> identifies the 40-minute period from May 1, 2025.</p>
+<p class="sh01-source" id="source-8">[8] <strong>Rounding inquiry — limits of the reviewed guidance.</strong> <a href="https://afalax.org/node/897">United Council 12's June 8, 2026 communication-portal article</a> identifies a guidance channel, not a rounding rule. <a href="https://www.apfa.org/resources/pay/pay-info/">APFA Pay Information</a> describes boarding-event tracking; the <a href="https://www.apfa.org/calculators/boardingpay/">APFA boarding-calculator public page</a> requires login for the calculator. No login was attempted. These public materials do not establish the missing boarding-specific monetary-rounding stages.</p>
+</section></main>
+<footer class="cs-report__footer">
+<p class="cs-report__fineprint">CrewSignal · Evidence-based contract comparison. Educational analysis, not individual payroll, scheduling or grievance advice.</p>
+<p><a href="/reports/contract-architecture/">Return to Contract Architecture</a></p>
+</footer>
+</body>
+</html>
