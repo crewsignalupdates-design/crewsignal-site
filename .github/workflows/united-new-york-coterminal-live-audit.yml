@@ -1,0 +1,68 @@
+name: United New York co-terminal live audit
+
+on:
+  push:
+    branches:
+      - audit/united-new-york-coterminal-live-20261029
+    paths:
+      - .github/workflows/united-new-york-coterminal-live-audit.yml
+
+permissions:
+  contents: write
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: audit/united-new-york-coterminal-live-20261029
+          fetch-depth: 0
+
+      - name: Verify corrected live language
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          principal='https://crewsignal.org/reports/merger-integration/comparators/american-united-hypothetical/'
+          companion='https://crewsignal.org/reports/merger-integration/comparators/american-united-hypothetical/transaction-remedy-labor-scenarios/'
+
+          passed=0
+          for attempt in $(seq 1 24); do
+            token="${GITHUB_RUN_ID}-${attempt}"
+            echo "Live verification attempt ${attempt}/24"
+
+            p_code=$(curl -L -sS -o principal.html -w '%{http_code}' -H 'Cache-Control: no-cache' "${principal}?audit=${token}")
+            c_code=$(curl -L -sS -o companion.html -w '%{http_code}' -H 'Cache-Control: no-cache' "${companion}?audit=${token}")
+
+            if [ "$p_code" = 200 ] && [ "$c_code" = 200 ] \
+              && grep -Fq 'any New York three-airport treatment should be expressly negotiated as a new merged-system rule' principal.html \
+              && ! grep -Fq 'include co-terminal treatment for ORD/MDW, JFK/LGA/EWR' principal.html \
+              && grep -Fq 'does <strong>not</strong> define JFK/LGA/EWR as a current co-terminal system' companion.html \
+              && grep -Fq 'United has no current Flight Attendant council at JFK or LGA' companion.html \
+              && grep -Fq 'any merged-system three-airport treatment would have to be affirmatively negotiated' companion.html \
+              && ! grep -Fq 'United recognizes all three airports as co-terminals' companion.html; then
+              passed=1
+              echo 'LIVE CORRECTION AUDIT PASS'
+              echo "principal HTTP ${p_code}"
+              echo "companion HTTP ${c_code}"
+              break
+            fi
+
+            echo "Not fully deployed yet: principal=${p_code}, companion=${c_code}"
+            sleep 10
+          done
+
+          if [ "$passed" -ne 1 ]; then
+            echo 'LIVE CORRECTION AUDIT FAIL: corrected content was not visible after bounded retries.' >&2
+            exit 1
+          fi
+
+      - name: Remove temporary audit workflow
+        shell: bash
+        run: |
+          git config user.name 'CrewSignal Audit'
+          git config user.email 'actions@users.noreply.github.com'
+          git rm .github/workflows/united-new-york-coterminal-live-audit.yml
+          git commit -m 'Remove temporary United New York live audit workflow'
+          git push origin HEAD:audit/united-new-york-coterminal-live-20261029
