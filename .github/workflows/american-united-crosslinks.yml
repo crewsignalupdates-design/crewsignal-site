@@ -48,25 +48,29 @@ jobs:
               "principal TOC",
           )
 
-          principal_marker = '''</nav>
-<section class="cs-report__section">
-<h2 class="cs-report__section-title" id="executive-thesis">Overview</h2>'''
-          principal_insert = '''</nav>
-<section class="cs-report__section" id="related-coverage">
-<div class="cs-callout">
-<p><strong>Related CrewSignal coverage</strong></p>
-<ul class="cs-report__summary-list">
-<li><a href="/reports/merger-integration/comparators/american-united-hypothetical/transaction-remedy-labor-scenarios/">Transaction, remedy, and Flight Attendant transition scenarios</a> — how divestitures, carve-outs, and operating-unit sales translate into base, employment, representation, and seniority consequences.</li>
-<li><a href="/reports/merger-integration/baseline/#section-single-carrier">NMB single-transportation-system framework</a>, <a href="/reports/merger-integration/baseline/#section-showing-of-interest">showing-of-interest rules</a>, and <a href="/reports/merger-integration/baseline/#section-jcba">the path to a JCBA</a>.</li>
-<li><a href="/reports/merger-integration/reference/mccaskill-bond/">McCaskill-Bond</a> and <a href="/reports/merger-integration/reference/allegheny-mohawk/">Allegheny-Mohawk</a> — seniority-integration and labor-protective reference reports.</li>
-<li><a href="/reports/union-governance/apfa/">APFA governance</a> and <a href="/reports/union-governance/cwa/cwa-afa/">CWA-AFA governance</a> — representation structure, elections, contract administration, and financial governance.</li>
-<li><a href="/reports/contract-architecture/APFA/American/">American/APFA Contract Architecture</a> and <a href="/reports/contract-architecture/CWA-AFA/United/">United/CWA-AFA Contract Architecture</a>.</li>
-<li><a href="/reports/merger-integration/comparators/us-airways-american/">US Airways / American</a> and <a href="/reports/merger-integration/comparators/continental-united/">Continental / United</a> — historical representation, seniority, and joint-contract comparators.</li>
-</ul>
-</div>
-</section>
-<section class="cs-report__section">
-<h2 class="cs-report__section-title" id="executive-thesis">Overview</h2>'''
+          principal_marker = "\n".join([
+              "</nav>",
+              '<section class="cs-report__section">',
+              '<h2 class="cs-report__section-title" id="executive-thesis">Overview</h2>',
+          ])
+          principal_insert = "\n".join([
+              "</nav>",
+              '<section class="cs-report__section" id="related-coverage">',
+              '<div class="cs-callout">',
+              '<p><strong>Related CrewSignal coverage</strong></p>',
+              '<ul class="cs-report__summary-list">',
+              '<li><a href="/reports/merger-integration/comparators/american-united-hypothetical/transaction-remedy-labor-scenarios/">Transaction, remedy, and Flight Attendant transition scenarios</a> — how divestitures, carve-outs, and operating-unit sales translate into base, employment, representation, and seniority consequences.</li>',
+              '<li><a href="/reports/merger-integration/baseline/#section-single-carrier">NMB single-transportation-system framework</a>, <a href="/reports/merger-integration/baseline/#section-showing-of-interest">showing-of-interest rules</a>, and <a href="/reports/merger-integration/baseline/#section-jcba">the path to a JCBA</a>.</li>',
+              '<li><a href="/reports/merger-integration/reference/mccaskill-bond/">McCaskill-Bond</a> and <a href="/reports/merger-integration/reference/allegheny-mohawk/">Allegheny-Mohawk</a> — seniority-integration and labor-protective reference reports.</li>',
+              '<li><a href="/reports/union-governance/apfa/">APFA governance</a> and <a href="/reports/union-governance/cwa/cwa-afa/">CWA-AFA governance</a> — representation structure, elections, contract administration, and financial governance.</li>',
+              '<li><a href="/reports/contract-architecture/APFA/American/">American/APFA Contract Architecture</a> and <a href="/reports/contract-architecture/CWA-AFA/United/">United/CWA-AFA Contract Architecture</a>.</li>',
+              '<li><a href="/reports/merger-integration/comparators/us-airways-american/">US Airways / American</a> and <a href="/reports/merger-integration/comparators/continental-united/">Continental / United</a> — historical representation, seniority, and joint-contract comparators.</li>',
+              "</ul>",
+              "</div>",
+              "</section>",
+              '<section class="cs-report__section">',
+              '<h2 class="cs-report__section-title" id="executive-thesis">Overview</h2>',
+          ])
           principal = replace_once(principal, principal_marker, principal_insert, "principal related coverage insertion")
 
           principal = replace_once(
@@ -83,28 +87,32 @@ jobs:
               "companion TOC",
           )
 
-          companion_marker = '''</nav>
-
-<section class="cs-report__section">
-  <h2 class="cs-report__section-title" id="why-structure-matters">Why transaction structure matters</h2>'''
-          companion_insert = '''</nav>
-
-<section class="cs-report__section" id="related-coverage">
-  <div class="cs-callout">
-    <p><strong>Related CrewSignal coverage</strong></p>
-    <ul class="cs-report__summary-list">
-      <li><a href="/reports/merger-integration/comparators/american-united-hypothetical/">Principal hypothetical American / United report</a> — business profile, DOJ remedy architecture, financial-stress alternatives, NMB process, seniority, CBA comparison, and governance.</li>
-      <li><a href="/reports/merger-integration/baseline/#section-structures">Transaction structures</a>, <a href="/reports/merger-integration/baseline/#section-single-carrier">NMB single-system analysis</a>, <a href="/reports/merger-integration/baseline/#section-showing-of-interest">showing of interest</a>, and <a href="/reports/merger-integration/baseline/#section-fences">fence protections</a>.</li>
-      <li><a href="/reports/merger-integration/reference/mccaskill-bond/">McCaskill-Bond</a> and <a href="/reports/merger-integration/reference/allegheny-mohawk/">Allegheny-Mohawk</a>.</li>
-      <li><a href="/reports/union-governance/apfa/">APFA governance</a> and <a href="/reports/union-governance/cwa/cwa-afa/">CWA-AFA governance</a>.</li>
-      <li><a href="/reports/contract-architecture/APFA/American/">American/APFA Contract Architecture</a> and <a href="/reports/contract-architecture/CWA-AFA/United/">United/CWA-AFA Contract Architecture</a>.</li>
-      <li><a href="/reports/merger-integration/comparators/us-airways-american/">US Airways / American historical comparator</a> and <a href="/reports/merger-integration/comparators/continental-united/">Continental / United historical comparator</a>.</li>
-    </ul>
-  </div>
-</section>
-
-<section class="cs-report__section">
-  <h2 class="cs-report__section-title" id="why-structure-matters">Why transaction structure matters</h2>'''
+          companion_marker = "\n".join([
+              "</nav>",
+              "",
+              '<section class="cs-report__section">',
+              '  <h2 class="cs-report__section-title" id="why-structure-matters">Why transaction structure matters</h2>',
+          ])
+          companion_insert = "\n".join([
+              "</nav>",
+              "",
+              '<section class="cs-report__section" id="related-coverage">',
+              '  <div class="cs-callout">',
+              '    <p><strong>Related CrewSignal coverage</strong></p>',
+              '    <ul class="cs-report__summary-list">',
+              '      <li><a href="/reports/merger-integration/comparators/american-united-hypothetical/">Principal hypothetical American / United report</a> — business profile, DOJ remedy architecture, financial-stress alternatives, NMB process, seniority, CBA comparison, and governance.</li>',
+              '      <li><a href="/reports/merger-integration/baseline/#section-structures">Transaction structures</a>, <a href="/reports/merger-integration/baseline/#section-single-carrier">NMB single-system analysis</a>, <a href="/reports/merger-integration/baseline/#section-showing-of-interest">showing of interest</a>, and <a href="/reports/merger-integration/baseline/#section-fences">fence protections</a>.</li>',
+              '      <li><a href="/reports/merger-integration/reference/mccaskill-bond/">McCaskill-Bond</a> and <a href="/reports/merger-integration/reference/allegheny-mohawk/">Allegheny-Mohawk</a>.</li>',
+              '      <li><a href="/reports/union-governance/apfa/">APFA governance</a> and <a href="/reports/union-governance/cwa/cwa-afa/">CWA-AFA governance</a>.</li>',
+              '      <li><a href="/reports/contract-architecture/APFA/American/">American/APFA Contract Architecture</a> and <a href="/reports/contract-architecture/CWA-AFA/United/">United/CWA-AFA Contract Architecture</a>.</li>',
+              '      <li><a href="/reports/merger-integration/comparators/us-airways-american/">US Airways / American historical comparator</a> and <a href="/reports/merger-integration/comparators/continental-united/">Continental / United historical comparator</a>.</li>',
+              "    </ul>",
+              "  </div>",
+              "</section>",
+              "",
+              '<section class="cs-report__section">',
+              '  <h2 class="cs-report__section-title" id="why-structure-matters">Why transaction structure matters</h2>',
+          ])
           companion = replace_once(companion, companion_marker, companion_insert, "companion related coverage insertion")
 
           companion = replace_once(
