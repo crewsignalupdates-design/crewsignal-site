@@ -1,0 +1,42 @@
+name: Patch American-United Q3 methodology citations
+
+on:
+  push:
+    branches:
+      - editorial/american-united-reader-facing-source-corrections-20261106
+    paths:
+      - .github/workflows/patch-au-q3-methodology-citations.yml
+
+permissions:
+  contents: write
+
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: editorial/american-united-reader-facing-source-corrections-20261106
+          fetch-depth: 0
+      - name: Add Q3 source citations and self-clean
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          from pathlib import Path
+          path = Path('public/reports/merger-integration/comparators/american-united-hypothetical/index.html')
+          text = path.read_text(encoding='utf-8')
+          old = '''<tr><td>Financial model</td><td>American and United FY2025, Q1 2026, and Q3 2026 figures come from public company disclosures. FY2025 is the full-year scale baseline; Q1 2026 is the announcement-period snapshot; Q3 2026 is the current financial-stress comparison. <a href="https://www.sec.gov/Archives/edgar/data/6201/000000620126000008/a8kerexhibit991q4-25.htm" rel="noopener noreferrer" target="_blank">[S6]</a> <a href="https://news.aa.com/news/news-details/2026/American-Airlines-reports-first-quarter-2026-financial-results-CORP-FI-04/default.aspx" rel="noopener noreferrer" target="_blank">[S7]</a> <a href="https://www.sec.gov/Archives/edgar/data/100517/000010051726000023/ual-20251231.htm" rel="noopener noreferrer" target="_blank">[S8]</a> <a href="https://ir.united.com/static-files/ae05c4dc-5732-41bb-82d8-c0bc7bc4797f" rel="noopener noreferrer" target="_blank">[S9]</a></td><td>Pro forma totals are simple additive figures and do not include merger accounting, integration costs, debt refinancing, new equity, asset sales, tax effects, labor harmonization, or regulatory remedies.</td></tr>'''
+          new = '''<tr><td>Financial model</td><td>American and United FY2025, Q1 2026, and Q3 2026 figures come from public company disclosures. FY2025 is the full-year scale baseline; Q1 2026 is the announcement-period snapshot; Q3 2026 is the current financial-stress comparison. <a href="https://www.sec.gov/Archives/edgar/data/6201/000000620126000008/a8kerexhibit991q4-25.htm" rel="noopener noreferrer" target="_blank">[S6]</a> <a href="https://news.aa.com/news/news-details/2026/American-Airlines-reports-first-quarter-2026-financial-results-CORP-FI-04/default.aspx" rel="noopener noreferrer" target="_blank">[S7]</a> <a href="https://www.sec.gov/Archives/edgar/data/100517/000010051726000023/ual-20251231.htm" rel="noopener noreferrer" target="_blank">[S8]</a> <a href="https://ir.united.com/static-files/ae05c4dc-5732-41bb-82d8-c0bc7bc4797f" rel="noopener noreferrer" target="_blank">[S9]</a> <a href="https://americanairlines.gcs-web.com/static-files/aa086f59-e60c-42ad-b03c-b44f83c36dc7" rel="noopener noreferrer" target="_blank">[S48]</a> <a href="https://americanairlines.gcs-web.com/static-files/7eaadf80-094a-4a2c-9673-a3c8264aa525" rel="noopener noreferrer" target="_blank">[S49]</a> <a href="https://ir.united.com/static-files/535bcb38-b87a-4935-b7eb-e7e38050810e" rel="noopener noreferrer" target="_blank">[S50]</a> <a href="https://ir.united.com/static-files/fbd48c5b-43fa-4d6a-9d5d-d7c1658d3162" rel="noopener noreferrer" target="_blank">[S51]</a></td><td>Pro forma totals are simple additive figures and do not include merger accounting, integration costs, debt refinancing, new equity, asset sales, tax effects, labor harmonization, or regulatory remedies.</td></tr>'''
+          if text.count(old) != 1:
+              raise SystemExit(f'STOP: financial methodology row expected once, found {text.count(old)}')
+          path.write_text(text.replace(old, new, 1), encoding='utf-8')
+          PY
+          git diff --check
+          grep -F '[S48]</a> <a href="https://americanairlines.gcs-web.com/static-files/7eaadf80-094a-4a2c-9673-a3c8264aa525"' public/reports/merger-integration/comparators/american-united-hypothetical/index.html >/dev/null
+          git rm .github/workflows/patch-au-q3-methodology-citations.yml
+          git add public/reports/merger-integration/comparators/american-united-hypothetical/index.html
+          git config user.name "crewsignalupdates-design"
+          git config user.email "crewsignalupdates@gmail.com"
+          git commit -m "Add Q3 financial methodology citations"
+          git push origin HEAD:editorial/american-united-reader-facing-source-corrections-20261106
