@@ -84,4 +84,6 @@ jobs:
           path.write_text(text.replace(old, new, 1), encoding='utf-8')
           PY
           echo 'DC555DE3F66C9FDDD1DD9C1EC876993BF442B58F5FEDE220E1F43A84C7A9C578  /tmp/apply.py' | sha256sum -c -
+          git config user.name "crewsignalupdates-design"
+          git config user.email "crewsignalupdates@gmail.com"
           python /tmp/apply.py
