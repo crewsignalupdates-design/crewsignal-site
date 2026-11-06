@@ -1,0 +1,31 @@
+name: Publish American-United seniority precedents
+
+on:
+  push:
+    branches:
+      - publication/american-united-seniority-precedents-20261106
+    paths:
+      - .github/workflows/publish-au-seniority-precedents.yml
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out publication branch
+        uses: actions/checkout@v4
+        with:
+          ref: publication/american-united-seniority-precedents-20261106
+          fetch-depth: 0
+
+      - name: Assemble and run reviewed publication script
+        shell: bash
+        run: |
+          set -euo pipefail
+          cat .github/tmp/au-seniority-precedents/script-*.b64 > /tmp/apply.b64
+          echo '4DAAB618C7B0E39D079136441B0D6481E107FA831E7A489A4A1165690C1216B7  /tmp/apply.b64' | sha256sum -c -
+          base64 -d /tmp/apply.b64 | gzip -d > /tmp/apply.py
+          echo '5D966AB115E079FCBB810C35C6A83BE53667C9D1E906A260DAC45FD34FC48177  /tmp/apply.py' | sha256sum -c -
+          python /tmp/apply.py
