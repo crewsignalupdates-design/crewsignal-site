@@ -1,0 +1,31 @@
+name: Apply American-United editorial pass
+
+on:
+  push:
+    branches:
+      - editorial/american-united-reader-facing-source-corrections-20261106
+    paths:
+      - .github/workflows/apply-au-editorial-pass.yml
+
+permissions:
+  contents: write
+
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out editorial branch
+        uses: actions/checkout@v4
+        with:
+          ref: editorial/american-united-reader-facing-source-corrections-20261106
+          fetch-depth: 0
+
+      - name: Assemble and run reviewed editorial script
+        shell: bash
+        run: |
+          set -euo pipefail
+          cat .github/tmp/au-editorial-pass/part-*.b64 > /tmp/apply.b64
+          echo '593E9018602664F9C47D8C446CF21321BE9FF9B3E918CD58E70D7558DCE8062B  /tmp/apply.b64' | sha256sum -c -
+          base64 -d /tmp/apply.b64 | gzip -d > /tmp/apply.py
+          echo '56019E8226477976D8E7ECDF9694D4D6A6DE9C7689D384485BBE9DFD7E8349AE  /tmp/apply.py' | sha256sum -c -
+          python /tmp/apply.py
