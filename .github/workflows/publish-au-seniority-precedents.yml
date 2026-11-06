@@ -28,4 +28,5 @@ jobs:
           echo '4DAAB618C7B0E39D079136441B0D6481E107FA831E7A489A4A1165690C1216B7  /tmp/apply.b64' | sha256sum -c -
           base64 -d /tmp/apply.b64 | gzip -d > /tmp/apply.py
           echo '5D966AB115E079FCBB810C35C6A83BE53667C9D1E906A260DAC45FD34FC48177  /tmp/apply.py' | sha256sum -c -
+          sed -i 's/"2026 Constitution and Bylaws"/"Constitution and Bylaws, amended March 9, 2026"/' /tmp/apply.py
           python /tmp/apply.py
