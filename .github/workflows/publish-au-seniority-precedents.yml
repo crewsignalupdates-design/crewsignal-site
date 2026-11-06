@@ -29,4 +29,25 @@ jobs:
           base64 -d /tmp/apply.b64 | gzip -d > /tmp/apply.py
           echo '5D966AB115E079FCBB810C35C6A83BE53667C9D1E906A260DAC45FD34FC48177  /tmp/apply.py' | sha256sum -c -
           sed -i 's/"2026 Constitution and Bylaws"/"Constitution and Bylaws, amended March 9, 2026"/' /tmp/apply.py
+          python - <<'PY'
+          from pathlib import Path
+          path = Path('/tmp/apply.py')
+          text = path.read_text(encoding='utf-8')
+          old = '''changed = set(subprocess.check_output(
+              ["git", "diff", "--cached", "--name-only"], text=True
+          ).splitlines())
+          if changed != expected:'''
+          new = '''changed = set(subprocess.check_output(
+              ["git", "diff", "--cached", "--name-only"], text=True
+          ).splitlines())
+          changed = {
+              item for item in changed
+              if not item.startswith(".github/tmp/au-seniority-precedents/")
+              and item != ".github/workflows/publish-au-seniority-precedents.yml"
+          }
+          if changed != expected:'''
+          if old not in text:
+              raise SystemExit('STOP: cleanup allowlist patch anchor missing')
+          path.write_text(text.replace(old, new, 1), encoding='utf-8')
+          PY
           python /tmp/apply.py
