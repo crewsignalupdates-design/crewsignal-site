@@ -49,4 +49,39 @@ jobs:
           path.write_text(text.replace(old, new, 1), encoding='utf-8')
           PY
           echo '438819FA323138D557BDD1F88416D7A5FE0D5DC16294A88897357071DE36A3F4  /tmp/apply.py' | sha256sum -c -
+          python - <<'PY'
+          from pathlib import Path
+          path = Path('/tmp/apply.py')
+          text = path.read_text(encoding='utf-8')
+          old = '''def add_source_rows(text: str, rows: str, label: str) -> str:
+              start = text.find('<h2 class="cs-report__section-title" id="sources">')
+              if start < 0:
+                  stop(f"{label}: source section not found")
+              end = text.find("</tbody>", start)
+              if end < 0:
+                  stop(f"{label}: source tbody close not found")
+              if rows.strip() in text:
+                  stop(f"{label}: rows already present")
+              return text[:end] + rows + "\\n" + text[end:]
+          '''
+          new = '''def add_source_rows(text: str, rows: str, label: str) -> str:
+              start = text.find('<h2 class="cs-report__section-title" id="sources">')
+              if start < 0:
+                  stop(f"{label}: source section not found")
+              end = text.find("</tbody>", start)
+              if end < 0:
+                  stop(f"{label}: source tbody close not found")
+              if rows.strip() in text:
+                  stop(f"{label}: rows already present")
+              line_start = text.rfind("\\n", start, end) + 1
+              indent = text[line_start:end]
+              if indent.strip():
+                  stop(f"{label}: unexpected source-close prefix: {indent!r}")
+              return text[:line_start] + rows.strip("\\n") + "\\n" + indent + text[end:]
+          '''
+          if text.count(old) != 1:
+              raise SystemExit(f'STOP: source-row helper patch expected once, found {text.count(old)}')
+          path.write_text(text.replace(old, new, 1), encoding='utf-8')
+          PY
+          echo 'DC555DE3F66C9FDDD1DD9C1EC876993BF442B58F5FEDE220E1F43A84C7A9C578  /tmp/apply.py' | sha256sum -c -
           python /tmp/apply.py
