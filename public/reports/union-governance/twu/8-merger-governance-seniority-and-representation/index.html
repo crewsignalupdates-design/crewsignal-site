@@ -1,15 +1,43 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <title>TWU · Merger Governance, Seniority Integration & Representation | CrewSignal</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="How TWU internal policy, carrier contracts, federal seniority law, and NMB representation procedures allocate different rights and protections during airline consolidation." />
-  <link rel="stylesheet" href="/assets/css/main.css" />
-</head>
-<body class="cs-report">
+  <meta charset="utf-8">
+  <title>TWU · Merger Governance, Seniority Integration &amp; Representation | CrewSignal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="How TWU internal policy, carrier contracts, federal seniority law, and NMB representation procedures allocate different rights and protections during airline consolidation.">
+  <link rel="stylesheet" href="/assets/css/main.css">
+<style id="cs-twu-review-style">
+/* Scoped to the TWU review pages. */
+.cs-twu-review { max-width:1160px; margin:0 auto; padding:28px 28px 52px; }
+.cs-twu-review .cs-report__header, .cs-twu-review .cs-report__main, .cs-twu-review .cs-editor-note, .cs-twu-review .cs-report__footer { max-width:1080px; margin-left:auto; margin-right:auto; }
+.cs-twu-review p, .cs-twu-review li { line-height:1.7; }
+.cs-twu-review .cs-review-nav { margin:20px 0 30px; padding:14px 0; border-top:1px solid var(--cs-border-subtle); border-bottom:1px solid var(--cs-border-subtle); }
+.cs-twu-review .cs-review-nav ul { display:flex; flex-wrap:wrap; gap:9px 18px; padding:0; margin:0; list-style:none; }
+.cs-twu-review .cs-review-nav a { display:inline-block; padding:4px 0; font-size:14px; }
+.cs-twu-review .cs-review-nav a[aria-current="page"] { color:var(--cs-heading); font-weight:700; text-decoration:underline; text-underline-offset:5px; }
+.cs-twu-review .cs-twu-table-scroll { max-width:100%; overflow-x:auto; margin:18px 0 22px; overscroll-behavior-x:contain; }
+.cs-twu-review table { border-collapse:collapse; width:100%; margin:0; font-size:15px; line-height:1.55; }
+.cs-twu-review table[data-columns="4"], .cs-twu-review table[data-columns="5"], .cs-twu-review table[data-columns="6"] { min-width:690px; }
+.cs-twu-review th, .cs-twu-review td { border:1px solid var(--cs-border-subtle); padding:12px 14px; vertical-align:top; text-align:left; overflow-wrap:break-word; }
+.cs-twu-review th { color:var(--cs-heading); background:var(--cs-surface-soft); font-weight:650; }
+.cs-twu-review tbody tr:nth-child(even) { background:rgba(148,163,184,.04); }
+.cs-twu-review td.cs-number { text-align:right; white-space:nowrap; font-variant-numeric:tabular-nums; }
+.cs-twu-review caption { text-align:left; padding:0 0 12px; font-weight:600; }
+.cs-twu-review a { overflow-wrap:anywhere; }
+@media(max-width:600px) { .cs-twu-review {padding:18px 16px 36px;} .cs-twu-review .cs-report__title {font-size:30px;line-height:1.2;} .cs-twu-review th,.cs-twu-review td {padding:10px;} .cs-twu-review .cs-review-nav ul {gap:7px 14px;} }
+
+/* Table navigation is scoped to this review. */
+.cs-twu-review .cs-twu-table-label { position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
+.cs-twu-review p.cs-twu-table-hint { display:none; }
+.cs-twu-review .cs-twu-table-scroll:focus { outline:2px solid var(--cs-accent, #38bdf8); outline-offset:3px; }
+@media(max-width:800px) {
+  .cs-twu-review p.cs-twu-table-hint { display:block; margin:16px 0 6px; color:var(--cs-text-muted); font-size:.85rem; line-height:1.5; }
+  .cs-twu-review .cs-twu-table-hint + .cs-twu-table-scroll { margin-top:6px; }
+}
+</style></head>
+<body class="cs-report cs-twu-review">
   <header class="cs-report__header">
-    <a href="/reports/union-governance/twu/" class="cs-report__back">&larr; Back to TWU Governance</a>
+    <a href="/reports/union-governance/twu/" class="cs-report__back">← Back to TWU Governance</a>
     <p class="cs-report__eyebrow">Transport Workers Union of America</p>
     <h1 class="cs-report__title">Merger Governance, Seniority Integration &amp; Representation</h1>
     <p class="cs-report__meta">How TWU internal policy, carrier contracts, federal seniority law, and NMB representation procedures allocate different rights and protections during airline consolidation.</p>
@@ -20,14 +48,18 @@
   </p>
 
   <main class="cs-report__main">
-    <section class="cs-report__section">
+    <nav class="cs-review-nav" aria-label="TWU review sections"><ul><li><a href="/reports/union-governance/twu/1-overview/">1 Overview</a></li><li><a href="/reports/union-governance/twu/2-structural-axes/">2 Decision authority</a></li><li><a href="/reports/union-governance/twu/3-representation-model/">3 Member services</a></li><li><a href="/reports/union-governance/twu/4-elections/">4 Member control</a></li><li><a href="/reports/union-governance/twu/5-committees-and-contract-admin/">5 Contract administration</a></li><li><a href="/reports/union-governance/twu/6-funding-and-dues/">6 Financial transparency</a></li></ul></nav><section class="cs-report__section">
       <h2 class="cs-report__section-title">Four Separate Systems</h2>
       <p>An airline consolidation can create simultaneous questions about contract continuity, seniority integration, bargaining, operational integration, and union representation. Those questions do not necessarily share the same decision-maker or legal source.</p>
       <ol class="cs-report__list">
-        <li class="cs-report__list-item"><strong>TWU internal merger policy:</strong> governs matters assigned to the union's internal integration rules where applicable. Its current standalone text remains unresolved.</li>
-        <li class="cs-report__list-item"><strong>Carrier-specific CBAs:</strong> may create independent successorship, seniority, bargaining, fence, timetable, furlough, or arbitration protections.</li>
-        <li class="cs-report__list-item"><strong>McCaskill-Bond / Allegheny-Mohawk:</strong> supplies the federal seniority-integration framework for covered transactions, subject to statutory exceptions including qualifying same-representative internal policy and CBA provisions.</li>
-        <li class="cs-report__list-item"><strong>National Mediation Board representation:</strong> separately determines Railway Labor Act representation disputes involving the combined craft or class.</li>
+        <li class="cs-report__list-item">
+<strong>TWU internal merger policy:</strong> governs matters assigned to the union's internal integration rules where applicable. Its current standalone text remains unresolved.</li>
+        <li class="cs-report__list-item">
+<strong>Carrier-specific CBAs:</strong> may create independent successorship, seniority, bargaining, fence, timetable, furlough, or arbitration protections.</li>
+        <li class="cs-report__list-item">
+<strong>McCaskill-Bond / Allegheny-Mohawk:</strong> supplies the federal seniority-integration framework for covered transactions, subject to statutory exceptions including qualifying same-representative internal policy and CBA provisions.</li>
+        <li class="cs-report__list-item">
+<strong>National Mediation Board representation:</strong> separately determines Railway Labor Act representation disputes involving the combined craft or class.</li>
       </ol>
     </section>
 
@@ -48,25 +80,87 @@
 
     <section class="cs-report__section">
       <h2 class="cs-report__section-title">Current TWU Flight Attendant Merger-Protection Comparison</h2>
-      <table>
+      <span class="cs-twu-table-label" id="cs-twu-table-8-merger-governance-seniority-and-representation-1-label">Merger protections and procedures by carrier</span>
+<p class="cs-twu-table-hint" id="cs-twu-table-8-merger-governance-seniority-and-representation-1-help">Scroll horizontally to view any hidden columns.</p>
+<div class="cs-twu-table-scroll" role="region" tabindex="0" aria-labelledby="cs-twu-table-8-merger-governance-seniority-and-representation-1-label" aria-describedby="cs-twu-table-8-merger-governance-seniority-and-representation-1-help"><table data-columns="5">
         <thead>
-          <tr><th>Protection / process</th><th>JetBlue · Local 579</th><th>Southwest · Local 556</th><th>Allegiant · Local 577</th><th>FSI · Local 578</th></tr>
+          <tr>
+<th scope="col">Protection / process</th>
+<th scope="col">JetBlue · Local 579</th>
+<th scope="col">Southwest · Local 556</th>
+<th scope="col">Allegiant · Local 577</th>
+<th scope="col">FSI · Local 578</th>
+</tr>
         </thead>
         <tbody>
-          <tr><td>Advance information / discussion</td><td>Earliest-practicable information and meeting requirement</td><td>Earliest-practicable information and meeting requirement</td><td>Reasonably advance information and meeting requirement</td><td>Earliest-practicable information and discussion</td></tr>
-          <tr><td>If carrier acquires another operation</td><td>Express merged-CBA process if operationally merged</td><td>Seniority-integration dispute mechanism</td><td>McCaskill-Bond / Allegheny-Mohawk seniority process</td><td>Applies where operations and FA lists integrate</td></tr>
-          <tr><td>NMB single-system trigger</td><td>TWU agrees to file within 90 days after closing if JetBlue decides to operationally merge</td><td>No comparable express 90-day filing clause identified in Article 3</td><td>No comparable express filing timetable identified</td><td>Representation expressly assigned to NMB procedures</td></tr>
-          <tr><td>Merged-CBA timetable</td><td>12 months bargaining after stated trigger; then 6 months mediation; then binding arbitration of remaining contract issues</td><td>No comparable Article 3 JCBA timetable identified</td><td>No comparable merger-JCBA timetable identified</td><td>No comparable timetable identified in Section 3</td></tr>
-          <tr><td>Seniority integration</td><td>McCaskill-Bond + Allegheny-Mohawk; required arbitration start deadline in Article 3</td><td>Acquisition disputes unresolved at six months proceed to final arbitration; acquired-by-other language invokes A-M principles</td><td>McCaskill-Bond + A-M; required arbitration start deadline in contract</td><td>Same-TWU: CBA + TWU Airline Merger Policy; other/no union: A-M framework</td></tr>
-          <tr><td>Workgroup separation / fences</td><td>Acquired-by-other groups remain separate until list integration</td><td>Acquired-by-other groups remain separate until list integration</td><td>Acquired-by-other groups remain separate until list integration</td><td>Separate until list integration in different-union/unrepresented scenario; no system flush</td></tr>
-          <tr><td>Specific displacement protection</td><td>Specified protections against displacement effects from list integration</td><td>No parallel language identified in cited Article 3 provisions</td><td>No involuntary Allegiant FA furlough as direct result of Allegiant acquisition</td><td>No system flush</td></tr>
-          <tr><td>Successorship recognition / CBA assumption</td><td>Written recognition for JetBlue-list employees, consistent with RLA, plus CBA assumption</td><td>Written recognition for Southwest-list employees, consistent with RLA, plus CBA assumption</td><td>General successor-binding language; no parallel detailed Article 3 condition identified in reviewed clause</td><td>Written recognition for FSI-list employees plus CBA assumption</td></tr>
-          <tr><td>Representation</td><td>Expressly NMB jurisdiction</td><td>RLA/NMB process remains controlling</td><td>CBA does not replace NMB jurisdiction</td><td>Expressly NMB rules/procedures</td></tr>
+          <tr>
+<td>Advance information / discussion</td>
+<td>Earliest-practicable information and meeting requirement</td>
+<td>Earliest-practicable information and meeting requirement</td>
+<td>Reasonably advance information and meeting requirement</td>
+<td>Earliest-practicable information and discussion</td>
+</tr>
+          <tr>
+<td>If carrier acquires another operation</td>
+<td>Express merged-CBA process if operationally merged</td>
+<td>Seniority-integration dispute mechanism</td>
+<td>McCaskill-Bond / Allegheny-Mohawk seniority process</td>
+<td>Applies where operations and FA lists integrate</td>
+</tr>
+          <tr>
+<td>NMB single-system trigger</td>
+<td>TWU agrees to file within 90 days after closing if JetBlue decides to operationally merge</td>
+<td>No comparable express 90-day filing clause identified in Article 3</td>
+<td>No comparable express filing timetable identified</td>
+<td>Representation expressly assigned to NMB procedures</td>
+</tr>
+          <tr>
+<td>Merged-CBA timetable</td>
+<td>12 months bargaining after stated trigger; then 6 months mediation; then binding arbitration of remaining contract issues</td>
+<td>No comparable Article 3 JCBA timetable identified</td>
+<td>No comparable merger-JCBA timetable identified</td>
+<td>No comparable timetable identified in Section 3</td>
+</tr>
+          <tr>
+<td>Seniority integration</td>
+<td>McCaskill-Bond + Allegheny-Mohawk; required arbitration start deadline in Article 3</td>
+<td>Acquisition disputes unresolved at six months proceed to final arbitration; acquired-by-other language invokes A-M principles</td>
+<td>McCaskill-Bond + A-M; required arbitration start deadline in contract</td>
+<td>Same-TWU: CBA + TWU Airline Merger Policy; other/no union: A-M framework</td>
+</tr>
+          <tr>
+<td>Workgroup separation / fences</td>
+<td>Acquired-by-other groups remain separate until list integration</td>
+<td>Acquired-by-other groups remain separate until list integration</td>
+<td>Acquired-by-other groups remain separate until list integration</td>
+<td>Separate until list integration in different-union/unrepresented scenario; no system flush</td>
+</tr>
+          <tr>
+<td>Specific displacement protection</td>
+<td>Specified protections against displacement effects from list integration</td>
+<td>No parallel language identified in cited Article 3 provisions</td>
+<td>No involuntary Allegiant FA furlough as direct result of Allegiant acquisition</td>
+<td>No system flush</td>
+</tr>
+          <tr>
+<td>Successorship recognition / CBA assumption</td>
+<td>Written recognition for JetBlue-list employees, consistent with RLA, plus CBA assumption</td>
+<td>Written recognition for Southwest-list employees, consistent with RLA, plus CBA assumption</td>
+<td>General successor-binding language in Section 5.D; no parallel detailed successor-assumption condition identified in the reviewed Section 5 clauses</td>
+<td>Written recognition for FSI-list employees plus CBA assumption</td>
+</tr>
+          <tr>
+<td>Representation</td>
+<td>Expressly NMB jurisdiction</td>
+<td>RLA/NMB process remains controlling</td>
+<td>CBA does not replace NMB jurisdiction</td>
+<td>Expressly NMB rules/procedures</td>
+</tr>
         </tbody>
       </table>
 
-      <p><a href="/reports/contract-architecture/TWU/JetBlue/contract/jetblue-ifc-cba-2021-2026.pdf">JetBlue CBA</a> &middot; <a href="/reports/contract-architecture/TWU/Southwest/contract/Southwest_TWU_CBA_2018-2028.pdf">Southwest CBA</a> &middot; <a href="/reports/contract-architecture/TWU/allegiant/contract/allegiant-air-2024-2029-twu-cba.pdf">Allegiant CBA</a> &middot; <a href="https://5y.twu.org/wp-content/uploads/2026/01/FSI-TWU-CBA-2026-2031-_Signed.pdf">FSI 2026&ndash;2031 CBA</a></p>
-    </section>
+      </div><p><a href="https://www.twu.org/wp-content/uploads/2025/11/TWU-Local-579-IFC-Contract.pdf">JetBlue official agreement and LOAs</a> · <a href="/reports/contract-architecture/TWU/Southwest/contract/Southwest_TWU_CBA_2018-2028.pdf">Southwest CBA</a> · <a href="/reports/contract-architecture/TWU/allegiant/contract/allegiant-air-2024-2029-twu-cba.pdf">Allegiant CBA</a> · <a href="https://5y.twu.org/wp-content/uploads/2026/01/FSI-TWU-CBA-2026-2031-_Signed.pdf">FSI 2026–2031 CBA</a></p>
+    <p>Clause locators: JetBlue Article 3.E–F, printed pages 5–7; Southwest Article 3.5–6, printed pages 3-1–3-3; Allegiant Section 5.H–J, pages 12–13; FSI Section 3.C, printed pages 5–7. The reviewed JetBlue source is the official TWU 246-page agreement/LOA bundle; it is not represented here as a complete consolidation of all amendments through November 2026.</p></section>
 
     <section class="cs-report__section">
       <h2 class="cs-report__section-title">JetBlue: Contractual Process Architecture</h2>
@@ -82,31 +176,60 @@
 
     <section class="cs-report__section">
       <h2 class="cs-report__section-title">FSI / Local 578: Current Contractual Incorporation of TWU Policy</h2>
-      <p>The signed FSI 2026&ndash;2031 agreement provides present-tense confirmation of the TWU Airline Merger Policy's contractual relevance. If the other Flight Attendant group is also TWU-represented, Section 3 applies both the CBA and the TWU Airline Merger Policy, prohibits a system flush, and provides that the CBA controls in a conflict.</p>
+      <p>The signed FSI 2026–2031 agreement provides present-tense confirmation of the TWU Airline Merger Policy's contractual relevance. If the other Flight Attendant group is also TWU-represented, Section 3 applies both the CBA and the TWU Airline Merger Policy, prohibits a system flush, and provides that the CBA controls in a conflict.</p>
       <p>If the other group has another union or no union, the agreement instead applies an Allegheny-Mohawk framework, maintains group separation until seniority integration, and prohibits a system flush. Representation of the integrated Flight Attendant group is expressly left to NMB rules and procedures.</p>
       <p>This creates a documented hierarchy of authorities without supplying the missing text of the internal policy itself.</p>
-    </section>
+    <p>The Section 3.C trigger requires the specified transaction to result in both operational and flight-attendant list integration. Section 3.C.5 does not require integration merely because an acquisition occurs. The predecessor contained the same principal merger provisions, so their continuation should not be presented as a new 2026 gain. <a href="https://5y.twu.org/wp-content/uploads/2026/01/FSI-TWU-CBA-2026-2031-_Signed.pdf#page=8">Current Section 3.C, printed pages 5–7</a> · <a href="https://crewsignal.org/reports/contract-architecture/TWU/flight-services-international/contract/flight-services-international-2021-2026-twu-cba.pdf#page=8">Predecessor Section 3.C, printed pages 6–7</a>.</p></section>
 
     <section class="cs-report__section">
       <h2 class="cs-report__section-title">Merger Member-Protection Architecture</h2>
-      <table>
-        <thead><tr><th>Protection dimension</th><th>Question CrewSignal asks</th></tr></thead>
+      <span class="cs-twu-table-label" id="cs-twu-table-8-merger-governance-seniority-and-representation-2-label">Questions used to evaluate merger protections</span>
+<p class="cs-twu-table-hint" id="cs-twu-table-8-merger-governance-seniority-and-representation-2-help">Scroll horizontally to view any hidden columns.</p>
+<div class="cs-twu-table-scroll" role="region" tabindex="0" aria-labelledby="cs-twu-table-8-merger-governance-seniority-and-representation-2-label" aria-describedby="cs-twu-table-8-merger-governance-seniority-and-representation-2-help"><table data-columns="2">
+        <thead><tr>
+<th scope="col">Protection dimension</th>
+<th scope="col">Question CrewSignal asks</th>
+</tr></thead>
         <tbody>
-          <tr><td>Information rights</td><td>How early must the carrier notify or provide information to the union?</td></tr>
-          <tr><td>Contract continuity</td><td>What prevents existing rates, rules, or conditions from being displaced before a replacement agreement?</td></tr>
-          <tr><td>Seniority process</td><td>What law, policy, or contractual procedure governs list integration?</td></tr>
-          <tr><td>Fence / separation protections</td><td>Must groups remain separate? Are flushes, rebids, bumps, furloughs, or displacement constrained?</td></tr>
-          <tr><td>Joint-contract process</td><td>Is there a bargaining timetable, mediation requirement, arbitration backstop, or ratification condition?</td></tr>
-          <tr><td>Successorship</td><td>Must a successor assume the agreement and recognize the incumbent representative for the existing group, consistent with the RLA?</td></tr>
-          <tr><td>Representation process</td><td>Does the language preserve NMB authority over the combined craft or class?</td></tr>
-          <tr><td>Enforcement</td><td>What arbitration, expedited hearing, damages, injunction, or other mechanism enforces the merger provisions?</td></tr>
+          <tr>
+<td>Information rights</td>
+<td>How early must the carrier notify or provide information to the union?</td>
+</tr>
+          <tr>
+<td>Contract continuity</td>
+<td>What prevents existing rates, rules, or conditions from being displaced before a replacement agreement?</td>
+</tr>
+          <tr>
+<td>Seniority process</td>
+<td>What law, policy, or contractual procedure governs list integration?</td>
+</tr>
+          <tr>
+<td>Fence / separation protections</td>
+<td>Must groups remain separate? Are flushes, rebids, bumps, furloughs, or displacement constrained?</td>
+</tr>
+          <tr>
+<td>Joint-contract process</td>
+<td>Is there a bargaining timetable, mediation requirement, arbitration backstop, or ratification condition?</td>
+</tr>
+          <tr>
+<td>Successorship</td>
+<td>Must a successor assume the agreement and recognize the incumbent representative for the existing group, consistent with the RLA?</td>
+</tr>
+          <tr>
+<td>Representation process</td>
+<td>Does the language preserve NMB authority over the combined craft or class?</td>
+</tr>
+          <tr>
+<td>Enforcement</td>
+<td>What arbitration, expedited hearing, damages, injunction, or other mechanism enforces the merger provisions?</td>
+</tr>
         </tbody>
       </table>
-    </section>
+    </div></section>
 
     <section class="cs-report__section">
       <h2 class="cs-report__section-title">Member Ratification of Seniority Integration Cannot Be Assumed</h2>
-      <p>Historical TWU integrations show that membership voting can be part of a transaction-specific seniority process. CrewSignal does not convert that historical practice into a universal current TWU rule. Where a seniority-integration agreement is submitted to members, the reporting identifies the source of the voting right&mdash;union policy, CBA, process agreement, Local rule, or transaction-specific decision.</p>
+      <p>Historical TWU integrations show that membership voting can be part of a transaction-specific seniority process. CrewSignal does not convert that historical practice into a universal current TWU rule. Where a seniority-integration agreement is submitted to members, the reporting identifies the source of the voting right—union policy, CBA, process agreement, Local rule, or transaction-specific decision.</p>
     </section>
 
     <section class="cs-report__section">
@@ -114,16 +237,20 @@
       <p>The current standalone policy remains the principal unresolved governance document. CrewSignal continues to seek evidence answering: who adopted the current policy and under what constitutional authority; its effective date and scope; how integration representatives are selected; whether members possess any approval or ratification right; the current seniority standard and allowable equities; the arbitration mechanism; how two different TWU Locals are handled; how conflicts with a CBA are resolved; and which International, Division, Local, or committee actor may interpret or modify the policy.</p>
       <p>Historical evidence that a prior TWU policy called for dovetailing is retained as historical evidence, not promoted into a current 2026 rule.</p>
       <p><a href="https://www.twu.org/wp-content/uploads/2022/12/Alaska-Virgin-1902-Seniority-Integration-Dispatchers11.pdf">Historical dispatcher seniority award</a></p>
-    </section>
+    <p>A more recent official reference appears in the NMB’s November 24, 2025 Alaska/Hawaiian dispatcher decision. It describes a transition agreement that provides for seniority-list integration consistent with TWU Merger Policy. This confirms a policy reference in another TWU-represented craft. The decision does not reproduce the policy or establish a current universal seniority method, member vote, local merger or flight-attendant rule. <a href="https://nmb.gov/NMB_Application/wp-content/uploads/2025/11/53-NMB-No.-2.pdf#page=7">53 NMB No. 2, printed page 9 / PDF page 7</a>.</p></section>
 
-    <section class="cs-report__section">
+    <section class="cs-report__section"><h2 class="cs-report__section-title">Funding Legal, Advisory and Integration Work</h2>
+<p>Procedural protection and representation funding are separate questions. JetBlue Article 3.E.4 assigns the company the cost of arbitration over unresolved merged-contract issues; Article 3.E.5 splits specified seniority-arbitration costs. Article 34.N.1.l requires the parties to address union legal and business expenses in specified transactions, without fixing an automatic reimbursement amount. <a href="https://www.twu.org/wp-content/uploads/2025/11/TWU-Local-579-IFC-Contract.pdf#page=7">JetBlue Article 3.E.4–5, printed page 6</a> · <a href="https://www.twu.org/wp-content/uploads/2025/11/TWU-Local-579-IFC-Contract.pdf#page=163">Article 34.N.1.l, printed page 162</a>.</p>
+<p>Southwest Article 3.5.B likewise divides the specified seniority-arbitration costs equally. Its acquired-by clause and JetBlue's acquired-by clause provide a 36-month seniority-integration period, distinct from a joint-contract bargaining deadline. <a href="/reports/contract-architecture/TWU/Southwest/contract/Southwest_TWU_CBA_2018-2028.pdf#page=18">Southwest Article 3.5.B and 3.6.A, printed page 3-2</a> · <a href="https://www.twu.org/wp-content/uploads/2025/11/TWU-Local-579-IFC-Contract.pdf#page=8">JetBlue Article 3.F.1, printed page 7</a>.</p>
+<p>For an actual transaction, the review should identify who retained advisers, what work they performed, which entity paid, whether an employer reimbursed the expense, and how released representative time was funded. Current standalone TWU policy and transaction records are still needed to establish any additional internal integration costs or voting rights.</p>
+</section><section class="cs-report__section">
       <h2 class="cs-report__section-title">Significance</h2>
       <p>TWU merger governance is best understood as overlapping but distinct layers: internal union policy, carrier-specific contract protections, federal seniority law, and NMB representation jurisdiction. CrewSignal keeps those layers separate so that a successorship clause is not mistaken for a representation guarantee, a historical policy is not mistaken for current text, and common union affiliation is not mistaken for identical carrier-level protection.</p>
     </section>
   </main>
 
   <footer class="cs-report__footer">
-    <p><a href="/reports/union-governance/twu/">TWU Governance &amp; Representation</a> &middot; <a href="/reports/union-governance/">Union Governance</a> &middot; <a href="/">CrewSignal</a></p>
+    <p><a href="/reports/union-governance/twu/">TWU Governance &amp; Representation</a> · <a href="/reports/union-governance/">Union Governance</a> · <a href="/">CrewSignal</a></p>
   </footer>
 </body>
 </html>

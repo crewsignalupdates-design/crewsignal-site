@@ -1,10 +1,23 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>TWU · Flight Services International · Contract Architecture Analysis · CrewSignal</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="/assets/css/main.css" />
+  <meta charset="UTF-8">
+  <title>TWU · Flight Services International · Historical Contract Analysis | CrewSignal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/assets/css/main.css">
+<style id="cs-fsi-table-accessibility-style">
+/* Scoped to the historical FSI scorecard. */
+#twu-flight-services-international-contract-architecture .cs-fsi-table-scroll { max-width:100%; overflow-x:auto; margin:18px 0 22px; overscroll-behavior-x:contain; }
+#twu-flight-services-international-contract-architecture .cs-fsi-table-scroll table { width:100%; min-width:640px; border-collapse:collapse; }
+#twu-flight-services-international-contract-architecture .cs-fsi-table-scroll th { color:var(--cs-heading); background:var(--cs-surface-soft); font-weight:650; text-align:left; border-bottom:1px solid var(--cs-border-subtle); }
+#twu-flight-services-international-contract-architecture .cs-fsi-table-label { position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
+#twu-flight-services-international-contract-architecture p.cs-fsi-table-hint { display:none; }
+#twu-flight-services-international-contract-architecture .cs-fsi-table-scroll:focus { outline:2px solid var(--cs-accent, #38bdf8); outline-offset:3px; }
+@media(max-width:800px) {
+  #twu-flight-services-international-contract-architecture p.cs-fsi-table-hint { display:block; margin:16px 0 6px; color:var(--cs-text-muted); font-size:.85rem; line-height:1.5; }
+  #twu-flight-services-international-contract-architecture .cs-fsi-table-hint + .cs-fsi-table-scroll { margin-top:6px; }
+}
+</style>
 </head>
 <body>
   <article class="cs-report" id="twu-flight-services-international-contract-architecture">
@@ -18,20 +31,24 @@
 
       <p class="cs-report__dek">
         <span class="cs-report__dates">
-          Effective Period: March 1, 2021 – February 28, 2026<br />
-          <em>Amendable since February 28, 2026</em>
+          Historical agreement — original stated term: April 14, 2021 – April 14, 2026<br>
+          <em>Superseded by the agreement effective January 1, 2026</em>
         </span>
       </p>
     </header>
 
-    <section class="cs-report__section" id="agreement-metadata">
+    <section class="cs-report__section"><h2 class="cs-report__section-title">Historical Analysis — Current Agreement Available</h2>
+<p>This page preserves CrewSignal's analysis of the FSI 2021–2026 predecessor agreement. Its signed Section 28 states an April 14, 2021 effective date and an April 14, 2026 amendable date. A successor became effective January 1, 2026 and states a term through January 1, 2031. The analysis and <strong>15.8/30 score below have not been reassessed against the successor</strong> and are not a rating of the current contract.</p>
+<p><a href="https://5y.twu.org/wp-content/uploads/2026/01/FSI-TWU-CBA-2026-2031-_Signed.pdf#page=99">Current signed FSI 2026–2031 agreement — Section 28, printed page 96</a> · <a href="https://crewsignal.org/reports/contract-architecture/TWU/flight-services-international/contract/flight-services-international-2021-2026-twu-cba.pdf#page=87">Historical agreement — Section 28, printed page 85</a>.</p>
+<p>The current agreement and its Atlas LOA, appendices and implementation provisions require a separate full architecture review. This correction preserves the predecessor analysis while resolving the version and date inconsistency.</p>
+</section><section class="cs-report__section" id="agreement-metadata">
       <h2>Agreement Metadata</h2>
 
       <p class="cs-report__para">
-        This analysis examines the collective bargaining agreement between Flight Services International, LLC (FSI)
+        This historical analysis examines the predecessor collective bargaining agreement between Flight Services International, LLC (FSI)
         and the Transport Workers Union of America, AFL-CIO (TWU) covering Flight Attendants in the craft or class
-        certified by the National Mediation Board in Case No. R-7445 (January 12, 2016). The agreement is effective
-        from March 1, 2021 through February 28, 2026 under the Railway Labor Act.
+        certified by the National Mediation Board in Case No. R-7445 (January 12, 2016). The predecessor's original stated term was
+        from April 14, 2021 through April 14, 2026 under the Railway Labor Act.
       </p>
 
       <p class="cs-report__para">
@@ -167,15 +184,17 @@
     </section>
 
     <section class="cs-report__section" id="scorecard">
-      <h2>Standardized Contract Scorecard</h2>
+      <h2>Historical Contract Scorecard — 2021–2026 Predecessor</h2>
 
-      <div class="cs-table cs-table--compact">
+      <span class="cs-fsi-table-label" id="cs-fsi-table-historical-scorecard-1-label">Historical FSI contract scorecard for the 2021 to 2026 predecessor agreement</span>
+<p class="cs-fsi-table-hint" id="cs-fsi-table-historical-scorecard-1-help">Scroll horizontally to view any hidden columns.</p>
+<div class="cs-table cs-table--compact cs-fsi-table-scroll" role="region" tabindex="0" aria-labelledby="cs-fsi-table-historical-scorecard-1-label" aria-describedby="cs-fsi-table-historical-scorecard-1-help">
         <table>
           <thead>
             <tr>
-              <th>Domain</th>
-              <th>Score</th>
-              <th>Rationale</th>
+              <th scope="col">Domain</th>
+              <th scope="col">Score</th>
+              <th scope="col">Rationale</th>
             </tr>
           </thead>
           <tbody>

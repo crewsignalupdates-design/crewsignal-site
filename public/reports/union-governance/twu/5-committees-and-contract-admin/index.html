@@ -1,18 +1,46 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <title>TWU · Bargaining, Ratification, Grievances & Contract Administration | CrewSignal</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Who negotiates, who votes, who must approve, and how contract disputes move through TWU representation." />
-  <link rel="stylesheet" href="/assets/css/main.css" />
-</head>
-<body class="cs-report">
+  <meta charset="utf-8">
+  <title>TWU · Contract Administration, Enforcement &amp; Committees | CrewSignal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Who negotiates, votes and approves; how disputes are handled; and how representative time and enforcement costs are funded.">
+  <link rel="stylesheet" href="/assets/css/main.css">
+<style id="cs-twu-review-style">
+/* Scoped to the TWU review pages. */
+.cs-twu-review { max-width:1160px; margin:0 auto; padding:28px 28px 52px; }
+.cs-twu-review .cs-report__header, .cs-twu-review .cs-report__main, .cs-twu-review .cs-editor-note, .cs-twu-review .cs-report__footer { max-width:1080px; margin-left:auto; margin-right:auto; }
+.cs-twu-review p, .cs-twu-review li { line-height:1.7; }
+.cs-twu-review .cs-review-nav { margin:20px 0 30px; padding:14px 0; border-top:1px solid var(--cs-border-subtle); border-bottom:1px solid var(--cs-border-subtle); }
+.cs-twu-review .cs-review-nav ul { display:flex; flex-wrap:wrap; gap:9px 18px; padding:0; margin:0; list-style:none; }
+.cs-twu-review .cs-review-nav a { display:inline-block; padding:4px 0; font-size:14px; }
+.cs-twu-review .cs-review-nav a[aria-current="page"] { color:var(--cs-heading); font-weight:700; text-decoration:underline; text-underline-offset:5px; }
+.cs-twu-review .cs-twu-table-scroll { max-width:100%; overflow-x:auto; margin:18px 0 22px; overscroll-behavior-x:contain; }
+.cs-twu-review table { border-collapse:collapse; width:100%; margin:0; font-size:15px; line-height:1.55; }
+.cs-twu-review table[data-columns="4"], .cs-twu-review table[data-columns="5"], .cs-twu-review table[data-columns="6"] { min-width:690px; }
+.cs-twu-review th, .cs-twu-review td { border:1px solid var(--cs-border-subtle); padding:12px 14px; vertical-align:top; text-align:left; overflow-wrap:break-word; }
+.cs-twu-review th { color:var(--cs-heading); background:var(--cs-surface-soft); font-weight:650; }
+.cs-twu-review tbody tr:nth-child(even) { background:rgba(148,163,184,.04); }
+.cs-twu-review td.cs-number { text-align:right; white-space:nowrap; font-variant-numeric:tabular-nums; }
+.cs-twu-review caption { text-align:left; padding:0 0 12px; font-weight:600; }
+.cs-twu-review a { overflow-wrap:anywhere; }
+@media(max-width:600px) { .cs-twu-review {padding:18px 16px 36px;} .cs-twu-review .cs-report__title {font-size:30px;line-height:1.2;} .cs-twu-review th,.cs-twu-review td {padding:10px;} .cs-twu-review .cs-review-nav ul {gap:7px 14px;} }
+
+/* Table navigation is scoped to this review. */
+.cs-twu-review .cs-twu-table-label { position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
+.cs-twu-review p.cs-twu-table-hint { display:none; }
+.cs-twu-review .cs-twu-table-scroll:focus { outline:2px solid var(--cs-accent, #38bdf8); outline-offset:3px; }
+@media(max-width:800px) {
+  .cs-twu-review p.cs-twu-table-hint { display:block; margin:16px 0 6px; color:var(--cs-text-muted); font-size:.85rem; line-height:1.5; }
+  .cs-twu-review .cs-twu-table-hint + .cs-twu-table-scroll { margin-top:6px; }
+}
+</style></head>
+<body class="cs-report cs-twu-review">
   <header class="cs-report__header">
-    <a href="/reports/union-governance/twu/" class="cs-report__back">&larr; Back to TWU Governance</a>
+    <a href="/reports/union-governance/twu/" class="cs-report__back">← Back to TWU Governance</a>
     <p class="cs-report__eyebrow">Transport Workers Union of America</p>
-    <h1 class="cs-report__title">Bargaining, Ratification, Grievances &amp; Contract Administration</h1>
-    <p class="cs-report__meta">Who negotiates, who votes, who must approve, and how contract disputes move through TWU representation.</p>
+    <h1 class="cs-report__title">Contract Administration, Enforcement &amp; Committees</h1>
+    <p class="cs-report__meta">Who negotiates, votes and approves; how disputes are handled; and how representative time and enforcement costs are funded.</p>
   </header>
 
   <p class="cs-editor-note">
@@ -20,7 +48,7 @@
   </p>
 
   <main class="cs-report__main">
-    <section class="cs-report__section">
+    <nav class="cs-review-nav" aria-label="TWU review sections"><ul><li><a href="/reports/union-governance/twu/1-overview/">1 Overview</a></li><li><a href="/reports/union-governance/twu/2-structural-axes/">2 Decision authority</a></li><li><a href="/reports/union-governance/twu/3-representation-model/">3 Member services</a></li><li><a href="/reports/union-governance/twu/4-elections/">4 Member control</a></li><li><a href="/reports/union-governance/twu/5-committees-and-contract-admin/" aria-current="page">5 Contract administration</a></li><li><a href="/reports/union-governance/twu/6-funding-and-dues/">6 Financial transparency</a></li></ul></nav><section class="cs-report__section">
       <h2 class="cs-report__section-title">Bargaining Authority Has Multiple Control Points</h2>
       <p>Article XXV establishes several distinct elements of bargaining authority. Collective bargaining for a membership group is to be guided by the bargaining program and policy of the preceding International Convention. Any proposed agreement is subject to ratification by the members covered by it. The International President must be notified of negotiations and receive proposed demands in advance. The President or a designated representative may participate in bargaining with a voice, but without a vote in Local negotiating decisions. Every CBA also requires written approval from the International President or an authorized designee before becoming binding.</p>
       <p>These provisions establish multiple control points. They do not support describing TWU bargaining as simply Local-controlled or simply International-controlled, and the Constitution does not prescribe a universal order between member ratification and International written approval.</p>
@@ -40,7 +68,7 @@
       <p>Local 579 publicly announced a September 21, 2026 communication titled <em>Our Contract. Our Voice. Our Negotiating Team.</em> The member-facing article is restricted by the Local's login. The public record therefore establishes that Local 579 has communicated internally about its negotiating team, but does not by itself establish who selected each team member, whether positions were elected or appointed, or what voting authority any International or Air Division participant holds beyond the Constitution.</p>
       <p>CrewSignal does not fill those gaps by importing Local 556's structure into Local 579.</p>
       <p><a href="https://twu579.org/categories/general/">Local 579 public communications index</a></p>
-    </section>
+    <p>The public index also lists a negotiating-team update dated October 22, 2026. Its restricted body was not reviewed, so the later notice does not resolve the selection or authority questions. <a href="https://twu579.org/categories/general/">Local 579 general-news index</a>.</p></section>
 
     <section class="cs-report__section">
       <h2 class="cs-report__section-title">Grievances Begin Within the Local Structure</h2>
@@ -65,14 +93,57 @@
       <p>TWU's Air Division maintains International staff with bargaining and representation experience. Where International personnel participate in negotiations, arbitrations, legal work, or major disputes, CrewSignal documents that involvement. International assistance is not characterized as International decisional control unless the governing document or transaction record establishes the relevant approval, voting, or directive authority.</p>
     </section>
 
-    <section class="cs-report__section">
+    <section class="cs-report__section"><h2 class="cs-report__section-title">Dated Services and Negotiated Arrangements</h2>
+<p>Local 578's July 2024 president's update reports International board and financial training, a medical-leave grievance settlement, reversal of a luggage replacement fee and representation in employee meetings. These are specific, dated union accounts. The update does not supply the underlying settlement, beneficiaries, recovery amounts or activity costs. <a href="https://5y.twu.org/wp-content/uploads/2024/07/Presidents-Update-3.pdf">Local 578 president's update, pages 1–2</a>.</p>
+<p>TWU reported that FSI members ratified a successor agreement in December 2025, with an 80-hour bid-month guarantee replacing 70 hours and an additional vacation week for senior flight attendants. The signed agreement supplies the controlling terms and implementation provisions. <a href="https://www.twu.org/twu-flight-attendants-at-fsi-overwhelmingly-ratify-a-new-five-year-contract/">TWU ratification announcement, December 16, 2025</a> · <a href="https://5y.twu.org/wp-content/uploads/2026/01/FSI-TWU-CBA-2026-2031-_Signed.pdf#page=100">Atlas LOA 1, paragraphs 2.A and 5.B, printed pages 97 and 102</a>.</p>
+<p>Allegiant's January 31, 2025 CISM Compensation MOA changes peer-on-call rotations in a trauma-support pilot to company-paid compensation of four hours per day. It requires quarterly review and permits reversion to the original arrangement with at least 30 days' notice under the stated conditions; training and education compensation is unchanged. The agreement documents negotiated support, while usage, outcomes and continued funding require further records. <a href="https://twu577.org/wp-content/uploads/2025/02/CISM_Compensation_MOA_2025.1.31-FE.pdf">CISM Compensation MOA, paragraphs 1–3 and signature page</a>.</p>
+<p>Local 556's dated knowledge index provides contract and payroll guidance, and Local 579 supplies a grievance intake route. These are visible service outputs, not measures of response time or case success. Member-restricted records should be identified as restricted without implying that internal reporting is absent. <a href="https://twu556.org/knowledge/">Local 556 knowledge index</a> · <a href="https://twu579.org/contract-violation/">Local 579 contract-violation form</a>.</p>
+</section><section class="cs-report__section"><h2 class="cs-report__section-title">Who Pays for Representation Time and Enforcement?</h2>
+<p>Carrier agreements distinguish union reimbursements, employer-funded capacity and shared dispute expenses. These contractual responsibilities are not actual spending totals, and the term “Union” does not identify which International or local account paid every invoice.</p>
+<span class="cs-twu-table-label" id="cs-twu-table-5-committees-and-contract-admin-1-label">Release pay and enforcement costs by workgroup</span>
+<p class="cs-twu-table-hint" id="cs-twu-table-5-committees-and-contract-admin-1-help">Scroll horizontally to view any hidden columns.</p>
+<div class="cs-table-wrap cs-twu-table-scroll" role="region" tabindex="0" aria-labelledby="cs-twu-table-5-committees-and-contract-admin-1-label" aria-describedby="cs-twu-table-5-committees-and-contract-admin-1-help"><table class="cs-table" data-columns="3">
+<thead><tr>
+<th scope="col">Workgroup</th>
+<th scope="col">Release-time financing</th>
+<th scope="col">Enforcement costs</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Southwest / Local 556</td>
+<td>Company-paid union-business relief followed by union reimbursement; at least five flight attendants under Article 27.4.</td>
+<td>Each party bears its preparation and presentation costs; arbitrator and conference room split equally under Article 20.17.</td>
+</tr>
+<tr>
+<td>Allegiant / Local 577</td>
+<td>Section 31.C.2 generally requires flight-pay-loss reimbursement plus 23%, with employer-paid exceptions for named committee attendance.</td>
+<td>Neutral and transcript costs split equally; each party pays its selected Board members and witnesses under Section 26.G.</td>
+</tr>
+<tr>
+<td>FSI / Local 578</td>
+<td>Section 23.C separates short-term direct costs and flight-pay loss plus 22% from long-term compensation and benefit reimbursement.</td>
+<td>Section 19.F shares neutral costs and assigns each side its own Board-member and witness expenses.</td>
+</tr>
+<tr>
+<td>JetBlue / Local 579</td>
+<td>Article 34.N requires paid-leave reimbursement plus 28%, while also providing an employer-funded annual bank of 1,400 hours including fringe benefits at the Local's discretion.</td>
+<td>Article 22.J generally shares neutral/transcription costs; each side pays its selected Board members and witnesses.</td>
+</tr>
+</tbody>
+</table></div>
+<p>Contract locators: <a href="/reports/contract-architecture/TWU/Southwest/contract/Southwest_TWU_CBA_2018-2028.pdf#page=205">Southwest Article 27.4, printed 27-1</a> and <a href="/reports/contract-architecture/TWU/Southwest/contract/Southwest_TWU_CBA_2018-2028.pdf#page=167">Article 20.17, printed 20-5</a>; <a href="/reports/contract-architecture/TWU/allegiant/contract/allegiant-air-2024-2029-twu-cba.pdf#page=119">Allegiant Section 31.C.2, page 119</a> and <a href="/reports/contract-architecture/TWU/allegiant/contract/allegiant-air-2024-2029-twu-cba.pdf#page=105">Section 26.G, page 105</a>; <a href="https://5y.twu.org/wp-content/uploads/2026/01/FSI-TWU-CBA-2026-2031-_Signed.pdf#page=89">FSI Section 23.C.3–5, printed 86–88</a> and <a href="https://5y.twu.org/wp-content/uploads/2026/01/FSI-TWU-CBA-2026-2031-_Signed.pdf#page=75">Section 19.F, printed 72</a>; <a href="https://www.twu.org/wp-content/uploads/2025/11/TWU-Local-579-IFC-Contract.pdf#page=162">JetBlue Article 34.N.1.i–k, printed 161–162</a> and <a href="https://www.twu.org/wp-content/uploads/2025/11/TWU-Local-579-IFC-Contract.pdf#page=99">Article 22.J, printed 98</a>.</p>
+<p>CrewSignal asks which invoices, released hours and professional services supported which cases or bargaining work, and which reporting entity ultimately paid. Employer-paid capacity should be reported separately from union cash spending. The reimbursement percentages describe different contractual formulas; they are not comparative service-quality scores.</p>
+</section><section class="cs-report__section" id="local556-release-time-controls"><h2 class="cs-report__section-title">Local 556 Release-Time Approval and Reporting</h2>
+<p>Article X(f) of the retrieved January 22, 2024 approved Local 556 bylaws requires two Executive Board Officers to approve union-work trip pulls before submission to Southwest. Full-month pulls require approval by the President and Treasurer; the First Vice President casts a third vote if they disagree. The Treasurer must present a report of all full-time pulls issued during the month to the Executive Board.</p>
+<p>These provisions identify an approval mechanism and a monthly record that could help trace representation costs. The provision does not itself require public posting or specify the hours, reimbursement rates, case identifiers or results to appear in that report. A useful evaluation would connect the approved pulls with employer invoices, the service performed and its result.</p>
+<p><a href="https://media.twu556.org/2024/02/05091643/TWU-Local-556-Final-Copy-of-By-Laws-APPROVED-22JAN24.pdf#page=15">Local 556 bylaws, Article X(f), PDF page 15</a>.</p></section><section class="cs-report__section">
       <h2 class="cs-report__section-title">Significance</h2>
       <p>TWU's contract-administration architecture is not accurately summarized as Local initiation followed by routine Division review and then International oversight. The verified structure is more functional: Local grievance agency and carrier administration; carrier-specific committees and officers; International resources where used; direct member contract ratification; and defined International approval and constitutional control points.</p>
     </section>
   </main>
 
   <footer class="cs-report__footer">
-    <p><a href="/reports/union-governance/twu/">TWU Governance &amp; Representation</a> &middot; <a href="/reports/union-governance/">Union Governance</a> &middot; <a href="/">CrewSignal</a></p>
+    <p><a href="/reports/union-governance/twu/">TWU Governance &amp; Representation</a> · <a href="/reports/union-governance/">Union Governance</a> · <a href="/">CrewSignal</a></p>
   </footer>
 </body>
 </html>
