@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>TWU responsive preview review</title>
+<style>
+:root{color-scheme:dark;font-family:system-ui,sans-serif;background:#07101e;color:#edf4ff}
+*{box-sizing:border-box}body{margin:0;padding:18px}h1{font-size:20px;margin:0 0 10px}p{margin:8px 0;color:#b7c6dd;font-size:14px}
+.controls{display:flex;flex-wrap:wrap;align-items:end;gap:12px;margin:14px 0}label{display:grid;gap:4px;font-size:13px;font-weight:600}
+select,button{font:inherit;color:#f2f6ff;background:#13243d;border:1px solid #516986;border-radius:5px;padding:8px;max-width:400px}
+button:focus-visible,select:focus-visible{outline:3px solid #67e8f9;outline-offset:2px}
+#frame-area{max-width:100%;overflow-x:auto;padding:3px}iframe{box-sizing:content-box;display:block;border:1px solid #6b86a8;background:#050a16;height:820px}
+#status{font-variant-numeric:tabular-nums}
+</style>
+</head>
+<body>
+<h1>TWU responsive preview review</h1>
+<p>This temporary review page displays the deployed pages at selected viewport widths. It is excluded from the production update.</p>
+<div class="controls">
+<label>Review page<select id="page" aria-label="Review page">
+<option value="/reports/union-governance/twu/">TWU hub</option>
+<option value="/reports/union-governance/twu/1-overview/">1 — Overview</option>
+<option value="/reports/union-governance/twu/2-structural-axes/">2 — Decision authority</option>
+<option value="/reports/union-governance/twu/3-representation-model/">3 — Member services</option>
+<option value="/reports/union-governance/twu/4-elections/">4 — Member control</option>
+<option value="/reports/union-governance/twu/5-committees-and-contract-admin/">5 — Contract administration</option>
+<option value="/reports/union-governance/twu/6-funding-and-dues/">6 — Financial transparency</option>
+<option value="/reports/union-governance/twu/7-governing-documents-and-merger-policy/">7 — Governing documents</option>
+<option value="/reports/union-governance/twu/8-merger-governance-seniority-and-representation/">8 — Merger governance</option>
+<option value="/reports/union-governance/twu/lm-2/">Financial source register</option>
+<option value="/reports/contract-architecture/TWU/flight-services-international/">FSI historical contract</option>
+</select></label>
+<label>Viewport width<select id="width" aria-label="Viewport width">
+<option value="375">375 px — phone</option>
+<option value="390">390 px — phone</option>
+<option value="768">768 px — tablet</option>
+<option value="1280" selected>1280 px — desktop</option>
+</select></label>
+<label>Jump to<select id="jump" aria-label="Jump to"><option value="top">Page top</option></select></label>
+<button id="measure" type="button">Measure layout</button>
+</div>
+<p id="status" role="status">Loading preview…</p>
+<div id="frame-area"><iframe id="review-frame" title="Selected TWU page" width="1280" src="/reports/union-governance/twu/"></iframe></div>
+<script>
+const frame=document.getElementById('review-frame');
+const page=document.getElementById('page');
+const width=document.getElementById('width');
+const jump=document.getElementById('jump');
+const status=document.getElementById('status');
+let targets=[];
+function measure(){
+ const d=frame.contentDocument;if(!d||!d.body)return;
+ const viewport=frame.contentWindow.innerWidth;
+ const contentWidth=d.documentElement.clientWidth;
+ const documentWidth=d.documentElement.scrollWidth;
+ status.textContent=`Viewport ${viewport}px · content ${contentWidth}px · document ${documentWidth}px · ${documentWidth>contentWidth+1?'PAGE OVERFLOW':'no page overflow'} · ${d.querySelectorAll('table').length} tables`;
+}
+function loaded(){
+ const d=frame.contentDocument;if(!d||!d.body)return;
+ targets=Array.from(d.querySelectorAll('h2,table'));
+ jump.replaceChildren(new Option('Page top','top'));
+ let table=0;
+ targets.forEach((el,i)=>{
+  const label=el.tagName==='TABLE'?`Table ${++table}: ${el.closest('section')?.querySelector('h2')?.textContent.trim()||'scorecard'}`:el.textContent.trim();
+  jump.add(new Option(label,String(i)));
+ });
+ measure();
+}
+page.addEventListener('change',()=>{status.textContent='Loading preview…';frame.src=page.value;});
+width.addEventListener('change',()=>{frame.width=width.value;requestAnimationFrame(measure);});
+jump.addEventListener('change',()=>{if(jump.value==='top')frame.contentWindow.scrollTo(0,0);else targets[Number(jump.value)]?.scrollIntoView({block:'start'});measure();});
+document.getElementById('measure').addEventListener('click',measure);
+frame.addEventListener('load',loaded);
+</script>
+</body>
+</html>

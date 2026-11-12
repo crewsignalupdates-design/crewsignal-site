@@ -25,6 +25,15 @@
 .cs-twu-review caption { text-align:left; padding:0 0 12px; font-weight:600; }
 .cs-twu-review a { overflow-wrap:anywhere; }
 @media(max-width:600px) { .cs-twu-review {padding:18px 16px 36px;} .cs-twu-review .cs-report__title {font-size:30px;line-height:1.2;} .cs-twu-review th,.cs-twu-review td {padding:10px;} .cs-twu-review .cs-review-nav ul {gap:7px 14px;} }
+
+/* Table navigation is scoped to this review. */
+.cs-twu-review .cs-twu-table-label { position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
+.cs-twu-review p.cs-twu-table-hint { display:none; }
+.cs-twu-review .cs-twu-table-scroll:focus { outline:2px solid var(--cs-accent, #38bdf8); outline-offset:3px; }
+@media(max-width:800px) {
+  .cs-twu-review p.cs-twu-table-hint { display:block; margin:16px 0 6px; color:var(--cs-text-muted); font-size:.85rem; line-height:1.5; }
+  .cs-twu-review .cs-twu-table-hint + .cs-twu-table-scroll { margin-top:6px; }
+}
 </style></head>
 <body class="cs-report cs-twu-review">
   <header class="cs-report__header">
@@ -71,7 +80,9 @@
 
     <section class="cs-report__section">
       <h2 class="cs-report__section-title">Current TWU Flight Attendant Merger-Protection Comparison</h2>
-      <div class="cs-twu-table-scroll"><table data-columns="5">
+      <span class="cs-twu-table-label" id="cs-twu-table-8-merger-governance-seniority-and-representation-1-label">Merger protections and procedures by carrier</span>
+<p class="cs-twu-table-hint" id="cs-twu-table-8-merger-governance-seniority-and-representation-1-help">Scroll horizontally to view any hidden columns.</p>
+<div class="cs-twu-table-scroll" role="region" tabindex="0" aria-labelledby="cs-twu-table-8-merger-governance-seniority-and-representation-1-label" aria-describedby="cs-twu-table-8-merger-governance-seniority-and-representation-1-help"><table data-columns="5">
         <thead>
           <tr>
 <th scope="col">Protection / process</th>
@@ -172,7 +183,9 @@
 
     <section class="cs-report__section">
       <h2 class="cs-report__section-title">Merger Member-Protection Architecture</h2>
-      <div class="cs-twu-table-scroll"><table data-columns="2">
+      <span class="cs-twu-table-label" id="cs-twu-table-8-merger-governance-seniority-and-representation-2-label">Questions used to evaluate merger protections</span>
+<p class="cs-twu-table-hint" id="cs-twu-table-8-merger-governance-seniority-and-representation-2-help">Scroll horizontally to view any hidden columns.</p>
+<div class="cs-twu-table-scroll" role="region" tabindex="0" aria-labelledby="cs-twu-table-8-merger-governance-seniority-and-representation-2-label" aria-describedby="cs-twu-table-8-merger-governance-seniority-and-representation-2-help"><table data-columns="2">
         <thead><tr>
 <th scope="col">Protection dimension</th>
 <th scope="col">Question CrewSignal asks</th>
