@@ -4,208 +4,325 @@
   <meta charset="utf-8" />
   <title>IBT &middot; Financial Transparency &amp; LM Reporting</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta
-    name="description"
-    content="IBT governance report: official International filings, what the national per-capita structure shows, and carrier-focused financial visibility for NetJets, Republic, and Sun Country."
-  />
+  <meta name="description" content="IBT finances from 2023 onward: consolidated audits, amended LM-2 controls, separate parent and local tax summaries, merger reimbursements and evidence connecting dues to member services." />
   <link rel="stylesheet" href="/assets/css/main.css" />
+  <style>
+    #ibt-financial-review a { overflow-wrap: anywhere; }
+    #ibt-financial-review a:focus-visible,
+    #ibt-financial-review summary:focus-visible,
+    #ibt-financial-review .cs-finance-scroll:focus-visible { outline: 3px solid var(--cs-accent); outline-offset: 4px; border-radius: 0.2rem; }
+    #ibt-financial-review .cs-finance-scroll { max-width: 100%; overflow-x: auto; overscroll-behavior-x: contain; }
+    #ibt-financial-review .cs-report-table caption { text-align: left; padding: 0.6rem 0; font-weight: 600; color: var(--cs-heading); }
+    #ibt-financial-review .cs-report-table tbody th { text-align: left; font-weight: 600; }
+    #ibt-financial-review .cs-finance-number { white-space: nowrap; font-variant-numeric: tabular-nums; }
+    #ibt-financial-review details { margin-top: 1rem; }
+    #ibt-financial-review summary { cursor: pointer; color: var(--cs-heading); font-weight: 600; }
+    #ibt-financial-review [id] { scroll-margin-top: 2rem; }
+  </style>
 </head>
-
 <body>
-  <main class="cs-report">
-
-    <a href="/reports/union-governance/ibt/" class="cs-report__back">
-      &larr; Back to IBT Governance Hub
-    </a>
-
+  <main class="cs-report" id="ibt-financial-review">
+    <a href="/reports/union-governance/ibt/" class="cs-report__back">&larr; Back to IBT Governance Hub</a>
     <header class="cs-report__header">
       <p class="cs-report__eyebrow">International Brotherhood of Teamsters</p>
       <h1 class="cs-report__title">Financial Transparency &amp; LM Reporting</h1>
-      <p class="cs-report__subtitle">
-        Official International filings, what the national per-capita structure shows, and carrier-focused financial visibility for NetJets, Republic, and Sun Country.
-      </p>
+      <p class="cs-report__subtitle">What the International and local accounts show about resources, service costs and financial accountability for NetJets, Republic/Mesa and Sun Country flight attendants.</p>
+      <p class="cs-report__meta"><span class="cs-report__meta-item">Reviewed November 11, 2026 (Pacific)</span><span class="cs-report__meta-item">FY2023 onward; source coverage stated</span></p>
     </header>
 
     <section class="cs-report__section" id="financial-disclosures">
       <h2>Financial Disclosures</h2>
-      <p class="cs-report__text">
-        IBT finances should be read in layers. The International books the top-level per-capita system and national disbursement categories, while the airline-facing representation for the carriers reviewed here sits at the local level rather than in a CWA-AFA-style sector structure.
-      </p>
-      <p class="cs-report__text">
-        That structure creates a distinct transparency limit. The strongest national financial story is visible at the International, but the carrier-facing local story can be much harder to isolate because local annual reports often mix airline and non-airline activity.
-      </p>
-    </section>
-
-    <section class="cs-report__section" id="money-flow-framework">
-      <h2>How the Money Flow Works</h2>
-      <p>
-        The IBT International LM-2 shows that the union&rsquo;s main recurring labor-organization income at the national level is per-capita tax rather than direct dues and agency fees. Carrier-facing representation then sits in affiliated local bodies rather than in a national flight-attendant sector treasury.
-      </p>
-      <ul class="cs-report__list">
-        <li><strong>International layer:</strong> per-capita tax receipts, national disbursement categories, and top-level administration.</li>
-        <li><strong>Carrier-facing layer:</strong> local bodies that may or may not be airline-only organizations.</li>
-        <li><strong>Key limitation:</strong> a local annual report may still be a multi-industry treasury rather than a flight-attendant-only budget.</li>
-      </ul>
-      <p class="cs-report__note">
-        The IBT public record is therefore not a simple carrier-by-carrier dues ledger. It is a national per-capita system on top of local treasuries, which means airline-specific money trails can be visible only indirectly.
-      </p>
+      <p>CrewSignal examines what members finance, where spending authority sits, and what records connect that spending to work delivered. For IBT, this requires reading the International, its funds and the relevant local unions as distinct reporting bodies. Treasury size and expense totals provide context; service records establish what a flight-attendant group received.</p>
+      <p>The parent is <strong>EIN 53-0215427; OLMS file 000-093</strong>. The audited statements consolidate the General Fund, Strike and Defense Fund, Scholarship Fund, Disaster Relief Fund and Supplemental Benefits Trust. They do not consolidate every local treasury. The parent Form 990 summaries and LM-2 have their own reporting boundaries and classifications.</p>
+      <p class="cs-report__note">Financial years below end December 31; amounts are U.S. dollars. Sources include <a href="https://teamster.org/wp-content/uploads/2024/11/11824MagTeamsterFALL2024.pdf" target="_blank" rel="noopener noreferrer">FY2023 audited statements</a>, <a href="https://teamster.org/wp-content/uploads/2025/10/101025MagTeamsterFALL2025.pdf" target="_blank" rel="noopener noreferrer">FY2024 audited statements</a>, <a href="https://projects.propublica.org/nonprofits/organizations/530215427" target="_blank" rel="noopener noreferrer">IRS-derived Form 990 summaries</a> and the <a href="/reports/union-governance/ibt/lm-2/">LM-2 source record</a>. No reviewed source supplies a complete allocation of parent or local costs to the three carrier groups.</p>
+      <nav aria-label="Financial review topics">
+        <ul class="cs-report__list">
+          <li><a href="#official-filings">Coverage and source completeness</a></li>
+          <li><a href="#ibt-national-headquarters">Parent financial statements and spending</a></li>
+          <li><a href="#carrier-groups-and-local-visibility">Local financial comparisons</a></li>
+          <li><a href="#republic-mesa">Republic/Mesa reimbursement trail</a></li>
+          <li><a href="#important-limit">Questions about service value</a></li>
+        </ul>
+      </nav>
     </section>
 
     <section class="cs-report__section" id="official-filings">
-  <h2>Official Filings</h2>
-  <p class="cs-report__text">
-    The International&rsquo;s LM-2 is the right place to show the top-level scale of the union. It is not the place to measure what NetJets, Republic, or Sun Country flight attendants receive directly, but it does show the size of the national per-capita system and the scale of top-level representational spending.
-  </p>
-  <ul class="cs-report__list">
-    <li>
-      <strong>FY ending 12/31/2025:</strong>
-      <a href="https://olmsapps.dol.gov/query/orgReport.do?rptForm=LM2Form&rptId=936051" target="_blank" rel="noopener noreferrer">
-        Official filing
-      </a>
-      <span class="cs-report__note">The official filing is available in OLMS. This page does not yet rely on it for detailed numeric analysis.</span>
-    </li>
-    <li>
-      <strong>FY ending 12/31/2024:</strong>
-      <a href="https://olmsapps.dol.gov/query/orgReport.do?rptForm=LM2Form&rptId=911199" target="_blank" rel="noopener noreferrer">
-        Official filing
-      </a>
-      <span class="cs-report__note">The official filing is available in OLMS, but page availability was inconsistent in this review.</span>
-    </li>
-    <li>
-      <strong>FY ending 12/31/2023:</strong>
-      <a href="https://olmsapps.dol.gov/query/orgReport.do?rptForm=LM2Form&rptId=893198" target="_blank" rel="noopener noreferrer">
-        Official filing
-      </a>
-    </li>
-    <li>
-      <strong>FY ending 12/31/2022:</strong>
-      <a href="https://olmsapps.dol.gov/query/orgReport.do?rptForm=LM2Form&rptId=867623" target="_blank" rel="noopener noreferrer">
-        Official filing
-      </a>
-    </li>
-    <li>
-      <strong>FY ending 12/31/2021:</strong>
-      <a href="https://olmsapps.dol.gov/query/orgReport.do?rptForm=LM2Form&rptId=805730" target="_blank" rel="noopener noreferrer">
-        Official filing
-      </a>
-    </li>
-  </ul>
-</section>
+      <h2>Coverage and Source Completeness</h2>
+      <div class="cs-finance-scroll" role="region" aria-label="Financial coverage through November 11, 2026" tabindex="0">
+<table class="cs-report-table" style="min-width: 52rem;">
+<caption>Financial coverage through November 11, 2026</caption>
+<thead><tr><th scope="col">Entity and record</th><th scope="col">FY2023</th><th scope="col">FY2024</th><th scope="col">FY2025</th></tr></thead>
+<tbody>
+<tr><th scope="row">IBT LM-2</th><td>Amended report 893198; <a href="/reports/union-governance/ibt/lm-2/LM2_IBT_2023.pdf">partial preserved PDF</a>. Core statements present.</td><td><a href="https://olmsapps.dol.gov/query/orgReport.do?rptForm=LM2Form&amp;rptId=911199" target="_blank" rel="noopener noreferrer">Report 911199</a>; body not recovered.</td><td><a href="https://olmsapps.dol.gov/query/orgReport.do?rptForm=LM2Form&amp;rptId=936051" target="_blank" rel="noopener noreferrer">Report 936051</a>; body not recovered.</td></tr>
+<tr><th scope="row">IBT consolidated audit</th><td><a href="https://teamster.org/wp-content/uploads/2024/11/11824MagTeamsterFALL2024.pdf" target="_blank" rel="noopener noreferrer">Statements and notes</a> in Fall 2024 Teamster.</td><td><a href="https://teamster.org/wp-content/uploads/2025/10/101025MagTeamsterFALL2025.pdf" target="_blank" rel="noopener noreferrer">Statements and notes</a> in Fall 2025 Teamster.</td><td><a href="https://projects.propublica.org/nonprofits/display_audit/2025-12-GSAFAC-0000428217" target="_blank" rel="noopener noreferrer">Audit listing</a> located; contents not recovered.</td></tr>
+<tr><th scope="row">IBT Form 990</th><td><a href="https://projects.propublica.org/nonprofits/organizations/530215427" target="_blank" rel="noopener noreferrer">IRS-derived summary</a>; full return not read.</td><td>IRS-derived summary; full return not read.</td><td>No return shown in the retrieved listing.</td></tr>
+<tr><th scope="row">Local 120 Form 990</th><td><a href="https://projects.propublica.org/nonprofits/organizations/410274050" target="_blank" rel="noopener noreferrer">IRS-derived summary</a></td><td>IRS-derived summary</td><td>IRS-derived summary</td></tr>
+<tr><th scope="row">Local 135 Form 990</th><td><a href="https://projects.propublica.org/nonprofits/organizations/350717060" target="_blank" rel="noopener noreferrer">IRS-derived summary</a></td><td>IRS-derived summary</td><td>IRS-derived summary</td></tr>
+<tr><th scope="row">Local 284 finances</th><td>Primary return not recovered</td><td>Primary return not recovered</td><td>Primary return not recovered</td></tr>
+</tbody>
+</table>
+</div>
+      <p>The FY2023 preserved LM-2 is an <strong>amended, partial copy</strong>. Its core financial statements are present, but it ends during Schedule 14. The FY2024 and FY2025 official report bodies were not recovered, and the latest amendment history remains unverified. The FY2025 audit listing establishes a source to pursue; its financial statements have not been read.</p>
+      <p class="cs-report__note">The <a href="https://teamster.org/wp-content/uploads/2026/08/81826FallMAGAZINE.pdf" target="_blank" rel="noopener noreferrer">Fall 2026 Teamster magazine</a> was also inspected; its 19 PDF pages contain no audited financial statements. This does not establish that FY2025 statements are unavailable elsewhere. A retrieval gap is not evidence of nonfiling, and an unavailable amount is not zero. Calendar FY2026 is not yet complete.</p>
+      <details>
+        <summary>Earlier parent filing links retained for historical reference</summary>
+        <p><a href="https://olmsapps.dol.gov/query/orgReport.do?rptForm=LM2Form&amp;rptId=867623" target="_blank" rel="noopener noreferrer">FY2022 LM-2, report 867623</a> and <a href="https://olmsapps.dol.gov/query/orgReport.do?rptForm=LM2Form&amp;rptId=805730" target="_blank" rel="noopener noreferrer">FY2021 LM-2, report 805730</a> remain reference links. Their complete bodies and amendment histories were not freshly reviewed for this update. The principal comparison begins in FY2023.</p>
+      </details>
+    </section>
+
+    <section class="cs-report__section" id="money-flow-framework">
+      <h2>How Resources Reach Representation</h2>
+      <ul class="cs-report__list">
+        <li><strong>International:</strong> per-capita receipts, central staff and specialist services, designated funds, administration and payments to affiliates.</li>
+        <li><strong>Local unions:</strong> member access, bargaining and enforcement work, local collections and expenses. A local can cover several employers and occupations.</li>
+        <li><strong>Employers and other contributors:</strong> contractually paid release time, shared dispute expenses and reimbursements can support representation alongside union funds.</li>
+      </ul>
+      <p>The <a href="https://teamster.org/about/teamster-departments/" target="_blank" rel="noopener noreferrer">International department descriptions</a> and <a href="https://teamster.org/services/" target="_blank" rel="noopener noreferrer">Airline Division service description</a> identify legal, financial, research and bargaining capacity. They do not establish the cost or result of an assignment to a particular carrier. A combined comparison must identify the final payer and workgroup, and eliminate transfers between bodies already included in the total.</p>
+      <h3>Fund Rules and the Current Governing-Document Limit</h3>
+      <p>The FY2024 audit&rsquo;s Note 2 describes organizing designations of 10% of per-capita tax, excluding Canada, and Strike and Defense Fund transfers of 15%, excluding Canada and public-sector members without a legal right to strike, with rail-merger exceptions. These are <strong>policies described in the FY2024 statements</strong>, not a newly verified statement of every rate or exception governing in November 2026. The strike fund is board-designated; that designation should not be described as a donor restriction. (<a href="https://teamster.org/wp-content/uploads/2025/10/101025MagTeamsterFALL2025.pdf" target="_blank" rel="noopener noreferrer">FY2024 audit, Note 2, printed pp. 32–33</a>)</p>
+      <p>The official site still links the <a href="https://teamster.org/wp-content/uploads/2022/03/2021IBTCONSTITUTIONBooklet.pdf" target="_blank" rel="noopener noreferrer">Constitution adopted in June 2021</a>; a consolidated text incorporating all June 2026 amendments was not located. The <a href="https://docs.justia.com/cases/federal/district-courts/new-york/nysdce/1:1988cv04486/67220/4658" target="_blank" rel="noopener noreferrer">September 3, 2026 court order</a> separately addresses oversight funding and financial controls (&para;&para;45 and 47). Current authority and expenditure obligations must be read with those later instruments and the applicable local rules. See <a href="/reports/union-governance/ibt/1-overview/">Overview &amp; Governing Documents</a> and <a href="/reports/union-governance/ibt/2-structural-axes/">Governance Structure &amp; Decision Authority</a>.</p>
+    </section>
 
     <section class="cs-report__section" id="ibt-national-headquarters">
-      <h2>IBT National Headquarters</h2>
-      <ul class="cs-report__list">
-        <li><strong>FY2023:</strong> 1,267,407 members; per-capita tax $204,186,672; total receipts $242,027,844; representational activities $57,935,613; general overhead $27,241,297; union administration $19,846,021; benefits $42,941,225.</li>
-        <li><strong>FY2022:</strong> 1,253,634 members; total receipts $225,328,310; representational activities $47,517,778; general overhead $25,172,648; union administration $17,561,722; benefits $47,158,996.</li>
-        <li><strong>FY2021:</strong> 1,015,775 members; total receipts $210,845,147; representational activities $46,856,917; general overhead $21,882,634; union administration $33,680,668; benefits $47,185,239.</li>
-      </ul>
-      <p class="cs-report__note">
-        At the International level, the dominant national money story is per-capita tax rather than direct dues. That is why the carrier-level financial picture has to be sought in the local layer rather than inferred directly from the International totals.
-      </p>
+      <h2>IBT National Headquarters: Audited Financial Position</h2>
+      <div class="cs-finance-scroll" role="region" aria-label="IBT consolidated audited statements — calendar years, U.S. dollars" tabindex="0">
+<table class="cs-report-table" style="min-width: 38rem;">
+<caption>IBT consolidated audited statements — calendar years, U.S. dollars</caption>
+<thead><tr><th scope="col">Measure</th><th scope="col">FY2023</th><th scope="col">FY2024</th></tr></thead>
+<tbody>
+<tr><th scope="row">Revenue and other support</th><td><span class="cs-finance-number">$261,899,746</span></td><td><span class="cs-finance-number">$282,951,437</span></td></tr>
+<tr><th scope="row">Expenses</th><td><span class="cs-finance-number">$178,963,812</span></td><td><span class="cs-finance-number">$201,957,158</span></td></tr>
+<tr><th scope="row">Revenue less expenses</th><td><span class="cs-finance-number">$82,935,934</span></td><td><span class="cs-finance-number">$80,994,279</span></td></tr>
+<tr><th scope="row">Separate pension/postretirement adjustment</th><td><span class="cs-finance-number">-$14,991,572</span></td><td><span class="cs-finance-number">$4,795,758</span></td></tr>
+<tr><th scope="row">Ending assets</th><td><span class="cs-finance-number">$565,949,558</span></td><td><span class="cs-finance-number">$647,878,023</span></td></tr>
+<tr><th scope="row">Ending liabilities</th><td><span class="cs-finance-number">$36,720,548</span></td><td><span class="cs-finance-number">$32,858,976</span></td></tr>
+<tr><th scope="row">Ending net assets</th><td><span class="cs-finance-number">$529,229,010</span></td><td><span class="cs-finance-number">$615,019,047</span></td></tr>
+<tr><th scope="row">Ending cash and cash equivalents</th><td><span class="cs-finance-number">$90,963,587</span></td><td><span class="cs-finance-number">$75,862,323</span></td></tr>
+<tr><th scope="row">Ending investments</th><td><span class="cs-finance-number">$410,018,991</span></td><td><span class="cs-finance-number">$504,766,987</span></td></tr>
+<tr><th scope="row">Per-capita and initiation-fee revenue</th><td><span class="cs-finance-number">$210,706,547</span></td><td><span class="cs-finance-number">$222,229,509</span></td></tr>
+<tr><th scope="row">Net investment income</th><td><span class="cs-finance-number">$40,342,403</span></td><td><span class="cs-finance-number">$50,289,118</span></td></tr>
+<tr><th scope="row">Operating cash receipts</th><td><span class="cs-finance-number">$233,698,777</span></td><td><span class="cs-finance-number">$252,941,268</span></td></tr>
+<tr><th scope="row">Operating cash disbursements</th><td><span class="cs-finance-number">$180,607,142</span></td><td><span class="cs-finance-number">$205,920,877</span></td></tr>
+<tr><th scope="row">Net operating cash flow</th><td><span class="cs-finance-number">$53,091,635</span></td><td><span class="cs-finance-number">$47,020,391</span></td></tr>
+</tbody>
+</table>
+</div>
+      <p class="cs-report__note">Sources: <a href="https://teamster.org/wp-content/uploads/2024/11/11824MagTeamsterFALL2024.pdf" target="_blank" rel="noopener noreferrer">FY2023 audited statements</a> and <a href="https://teamster.org/wp-content/uploads/2025/10/101025MagTeamsterFALL2025.pdf" target="_blank" rel="noopener noreferrer">FY2024 audited statements</a>, printed pp. 29–31; the <a href="https://projects.propublica.org/nonprofits/display_audit/2024-12-GSAFAC-0000379526" target="_blank" rel="noopener noreferrer">FY2024 FAC-origin audit listing</a> provides another source for that audit. These are consolidated accrual statements, not LM-2 cash-flow totals. The FY2024 report contains an unmodified financial-statement opinion by Novak Francella LLC dated June 13, 2025; it does not certify member-service quality.</p>
+      <p>Ending net assets increased by <strong><span class="cs-finance-number">$85,790,037</span></strong> during 2024. The roll-forward combines <span class="cs-finance-number">$80,994,279</span> from activities with <span class="cs-finance-number">$4,795,758</span> of separate pension/postretirement adjustments. The corresponding 2023 adjustment was negative. Revenue less expenses therefore does not by itself equal either year&rsquo;s total change in net assets.</p>
+      <p>Cash fell by <span class="cs-finance-number">$15,101,264</span> in 2024 even as investments and net assets grew. Net operating cash inflow of <span class="cs-finance-number">$47,020,391</span> and net investing cash outflow of <span class="cs-finance-number">$62,121,655</span> reconcile that cash movement. Investment income, investment purchases, operating resources and the liquidity available for a specific service are different measures.</p>
+    </section>
+
+    <section class="cs-report__section" id="parent-form-990">
+      <h2>Parent Form 990: Reconcile the Reporting Scope</h2>
+      <div class="cs-finance-scroll" role="region" aria-label="Parent Form 990 summaries — a separate reporting scope" tabindex="0">
+<table class="cs-report-table" style="min-width: 38rem;">
+<caption>Parent Form 990 summaries — a separate reporting scope</caption>
+<thead><tr><th scope="col">Summary measure</th><th scope="col">FY2023</th><th scope="col">FY2024</th></tr></thead>
+<tbody>
+<tr><th scope="row">Revenue</th><td><span class="cs-finance-number">$228,191,016</span></td><td><span class="cs-finance-number">$223,777,901</span></td></tr>
+<tr><th scope="row">Expenses</th><td><span class="cs-finance-number">$173,772,786</span></td><td><span class="cs-finance-number">$198,584,884</span></td></tr>
+<tr><th scope="row">Revenue less expenses</th><td><span class="cs-finance-number">$54,418,230</span></td><td><span class="cs-finance-number">$25,193,017</span></td></tr>
+<tr><th scope="row">Ending assets</th><td><span class="cs-finance-number">$535,100,383</span></td><td><span class="cs-finance-number">$609,348,755</span></td></tr>
+<tr><th scope="row">Ending liabilities</th><td><span class="cs-finance-number">$36,507,901</span></td><td><span class="cs-finance-number">$30,646,531</span></td></tr>
+<tr><th scope="row">Ending net assets</th><td><span class="cs-finance-number">$498,592,482</span></td><td><span class="cs-finance-number">$578,702,224</span></td></tr>
+</tbody>
+</table>
+</div>
+      <p class="cs-report__note">Source: <a href="https://projects.propublica.org/nonprofits/organizations/530215427" target="_blank" rel="noopener noreferrer">IRS-derived parent summaries distributed by ProPublica</a>. The <a href="https://projects.propublica.org/nonprofits/organizations/530215427/202413039349301946/full" target="_blank" rel="noopener noreferrer">FY2023 return listing</a> records an October 29, 2024 filing; the <a href="https://projects.propublica.org/nonprofits/organizations/530215427/202503009349301765/full" target="_blank" rel="noopener noreferrer">FY2024 listing</a> records an October 27, 2025 filing. Full return bodies, the accounting-method selection and Schedule D reconciliations were not read. These are summary controls, not a completed review of those schedules.</p>
+      <div class="cs-finance-scroll" role="region" aria-label="FY2024 net assets: audited fund columns and the parent tax summary" tabindex="0">
+<table class="cs-report-table" style="min-width: 38rem;">
+<caption>FY2024 net assets: audited fund columns and the parent tax summary</caption>
+<thead><tr><th scope="col">Reporting scope</th><th scope="col">Ending net assets</th></tr></thead>
+<tbody>
+<tr><th scope="row">General Fund</th><td><span class="cs-finance-number">$215,492,812</span></td></tr>
+<tr><th scope="row">Strike and Defense Fund</th><td><span class="cs-finance-number">$363,209,412</span></td></tr>
+<tr><th scope="row">General plus Strike and Defense funds</th><td><span class="cs-finance-number">$578,702,224</span></td></tr>
+<tr><th scope="row">Additional scholarship, disaster-relief and supplemental-benefit funds</th><td><span class="cs-finance-number">$36,316,823</span></td></tr>
+<tr><th scope="row">Consolidated audited total</th><td><span class="cs-finance-number">$615,019,047</span></td></tr>
+</tbody>
+</table>
+</div>
+      <p>For both years, the audited General Fund plus Strike and Defense Fund <strong>assets, liabilities and net assets</strong> exactly match the parent tax-summary balances. The broader consolidated net-asset difference is <span class="cs-finance-number">$30,636,528</span> in 2023 and <span class="cs-finance-number">$36,316,823</span> in 2024, equal in each year to the combined scholarship, disaster-relief and supplemental-benefit fund balances. This is an arithmetic scope bridge. (<a href="https://teamster.org/wp-content/uploads/2024/11/11824MagTeamsterFALL2024.pdf" target="_blank" rel="noopener noreferrer">FY2023 financial position, printed p. 29</a>; <a href="https://teamster.org/wp-content/uploads/2025/10/101025MagTeamsterFALL2025.pdf" target="_blank" rel="noopener noreferrer">FY2024 financial position, printed p. 29</a>)</p>
+      <p>Revenue and expenses still require the full-return reconciliation. General plus Strike Fund revenue exceeds the Form 990 summary by <span class="cs-finance-number">$24,929,067</span> in 2023 and <span class="cs-finance-number">$49,820,836</span> in 2024; their audited expenses are lower by <span class="cs-finance-number">$167,974</span> and <span class="cs-finance-number">$300,131</span>, respectively. These differences do not establish missing money. They also prevent treating the tax-summary figures as interchangeable with consolidated audit totals or adding them to LM-2 cash flows.</p>
+    </section>
+
+    <section class="cs-report__section" id="amended-lm2-2023">
+      <h2>FY2023 LM-2: Amended Core Statements, Partial Copy</h2>
+      <div class="cs-finance-scroll" role="region" aria-label="Amended FY2023 LM-2 — parent-wide core controls" tabindex="0">
+<table class="cs-report-table" style="min-width: 34rem;">
+<caption>Amended FY2023 LM-2 — parent-wide core controls</caption>
+<thead><tr><th scope="col">Reported measure</th><th scope="col">FY2023</th></tr></thead>
+<tbody>
+<tr><th scope="row">Members</th><td>1,267,407</td></tr>
+<tr><th scope="row">Per-capita receipts</th><td><span class="cs-finance-number">$204,186,672</span></td></tr>
+<tr><th scope="row">Total receipts</th><td><span class="cs-finance-number">$242,027,844</span></td></tr>
+<tr><th scope="row">Total disbursements</th><td><span class="cs-finance-number">$228,557,170</span></td></tr>
+<tr><th scope="row">Ending cash</th><td><span class="cs-finance-number">$90,991,234</span></td></tr>
+<tr><th scope="row">Ending assets</th><td><span class="cs-finance-number">$566,211,111</span></td></tr>
+<tr><th scope="row">Ending liabilities</th><td><span class="cs-finance-number">$36,982,102</span></td></tr>
+<tr><th scope="row">Ending net assets</th><td><span class="cs-finance-number">$529,229,009</span></td></tr>
+<tr><th scope="row">Representational activities</th><td><span class="cs-finance-number">$57,935,613</span></td></tr>
+<tr><th scope="row">Political and lobbying activities</th><td><span class="cs-finance-number">$8,448,891</span></td></tr>
+<tr><th scope="row">Contributions, gifts and grants</th><td><span class="cs-finance-number">$6,086,931</span></td></tr>
+<tr><th scope="row">General overhead</th><td><span class="cs-finance-number">$27,241,297</span></td></tr>
+<tr><th scope="row">Union administration</th><td><span class="cs-finance-number">$19,846,021</span></td></tr>
+<tr><th scope="row">Benefits — LM-2 category</th><td><span class="cs-finance-number">$42,941,225</span></td></tr>
+<tr><th scope="row">Strike benefits</th><td><span class="cs-finance-number">$8,232,916</span></td></tr>
+<tr><th scope="row">Funds to affiliates</th><td><span class="cs-finance-number">$9,944,532</span></td></tr>
+</tbody>
+</table>
+</div>
+      <p class="cs-report__note">Source: <a href="/reports/union-governance/ibt/lm-2/LM2_IBT_2023.pdf#page=3">preserved amended FY2023 LM-2</a>, PDF pp. 1–4; <a href="https://olmsapps.dol.gov/query/orgReport.do?rptForm=LM2Form&amp;rptId=893198" target="_blank" rel="noopener noreferrer">official report 893198</a>, signed June 6, 2024. The 108-page preserved copy ends during Schedule 14 and lacks full later itemized Schedules 15–20 and Item 69. Latest-amendment status beyond this copy is unverified.</p>
+      <p>The <a href="https://ee78.perlibrary.com/wp-content/uploads/sites/130/2024/05/Teamsters-2023-LM2.pdf" target="_blank" rel="noopener noreferrer">original report 887471</a>, signed March 28, 2024, had liabilities of <span class="cs-finance-number">$35,928,231</span> and net assets of <span class="cs-finance-number">$530,282,880</span>. The amendment increased accounts payable and liabilities, and reduced net assets, by <strong><span class="cs-finance-number">$1,053,871</span></strong>. Two provisions in the FY2023 audit&rsquo;s Note 16 total the same amount. That correspondence supports a reconciliation question; without Item 69 it is not a verified explanation of the amendment.</p>
+      <p>The amended LM-2 net-assets total is $1 below the audit, while asset and liability balances differ by larger amounts. Keep the stated reporting basis and source intact. Receipts less disbursements of <span class="cs-finance-number">$13,470,674</span> reconcile to the LM-2 cash increase. Selected spending categories are not the complete disbursement statement, and the benefits category does not establish benefits delivered to flight attendants.</p>
+    </section>
+
+    <section class="cs-report__section" id="professional-services">
+      <h2>Spending and the Professional-Service Trail</h2>
+      <div class="cs-finance-scroll" role="region" aria-label="Selected consolidated expense functions — not a complete expense statement" tabindex="0">
+<table class="cs-report-table" style="min-width: 38rem;">
+<caption>Selected consolidated expense functions — not a complete expense statement</caption>
+<thead><tr><th scope="col">Audited function</th><th scope="col">FY2023</th><th scope="col">FY2024</th></tr></thead>
+<tbody>
+<tr><th scope="row">Industry trade divisions and relations</th><td><span class="cs-finance-number">$33,239,966</span></td><td><span class="cs-finance-number">$34,709,731</span></td></tr>
+<tr><th scope="row">Organizing</th><td><span class="cs-finance-number">$26,227,551</span></td><td><span class="cs-finance-number">$26,503,808</span></td></tr>
+<tr><th scope="row">Research, education and training</th><td><span class="cs-finance-number">$10,531,148</span></td><td><span class="cs-finance-number">$8,859,622</span></td></tr>
+<tr><th scope="row">Legal and litigation</th><td><span class="cs-finance-number">$7,784,209</span></td><td><span class="cs-finance-number">$9,085,695</span></td></tr>
+<tr><th scope="row">Civil RICO</th><td><span class="cs-finance-number">$7,454,185</span></td><td><span class="cs-finance-number">$6,981,619</span></td></tr>
+<tr><th scope="row">Strike and defense</th><td><span class="cs-finance-number">$19,063,147</span></td><td><span class="cs-finance-number">$34,016,743</span></td></tr>
+<tr><th scope="row">Administration and governance</th><td><span class="cs-finance-number">$8,336,463</span></td><td><span class="cs-finance-number">$10,478,942</span></td></tr>
+<tr><th scope="row">Communications, magazine and public relations</th><td><span class="cs-finance-number">$18,984,761</span></td><td><span class="cs-finance-number">$25,382,477</span></td></tr>
+<tr><th scope="row">Government affairs</th><td><span class="cs-finance-number">$11,047,641</span></td><td><span class="cs-finance-number">$12,890,871</span></td></tr>
+<tr><th scope="row">Affiliation fees</th><td><span class="cs-finance-number">$10,205,621</span></td><td><span class="cs-finance-number">$9,871,489</span></td></tr>
+<tr><th scope="row">Affiliates Pension Fund program</th><td><span class="cs-finance-number">$10,000,000</span></td><td><span class="cs-finance-number">$10,000,000</span></td></tr>
+</tbody>
+</table>
+</div>
+      <p class="cs-report__note">Sources: <a href="https://teamster.org/wp-content/uploads/2024/11/11824MagTeamsterFALL2024.pdf" target="_blank" rel="noopener noreferrer">FY2023 audit</a> and <a href="https://teamster.org/wp-content/uploads/2025/10/101025MagTeamsterFALL2025.pdf" target="_blank" rel="noopener noreferrer">FY2024 audit</a>, statement of activities, printed p. 30. These organization-wide functions establish how expenses were classified; they do not allocate costs or outcomes to NetJets, Republic/Mesa or Sun Country.</p>
+      <h3>Two Views of the Same Costs</h3>
+      <p>The natural-expense classification for <strong>professional fees</strong> is <span class="cs-finance-number">$20,541,791</span> in 2023 and <span class="cs-finance-number">$23,691,111</span> in 2024. It overlaps the functional categories above. <strong>Do not add professional fees to legal/litigation or Civil RICO as extra spending.</strong> The salary, employee-benefit and tax category is likewise another view of costs, totaling <span class="cs-finance-number">$70,903,712</span> and <span class="cs-finance-number">$75,082,793</span>. (Both audits, Note 23, printed p. 48.)</p>
+      <p>The broader strike-and-defense function also differs from direct strike-benefit assistance. The audited cash-flow statements report assistance payments of <span class="cs-finance-number">$8,234,121</span> in 2023 and <span class="cs-finance-number">$23,479,051</span> in 2024. None of these totals establishes a flight-attendant share.</p>
+      <h3>What Would Establish a Service?</h3>
+      <p>For a legal, financial or advisory engagement, identify the matter, the requested work, staff or vendor, approving body, invoice or payroll cost, paying treasury, reimbursements and beneficiary group. Then connect the cost to work delivered and a documented result. Complete LM-2 itemizations may identify payees; an engagement record and case ledger are still needed to distinguish bargaining assistance from institutional administration or another purpose.</p>
+      <h3>Related Entities and Commercial Services</h3>
+      <p>The FY2024 audit describes cost sharing with related entities and specified exceptions. It records administrative costs absorbed by the International of <span class="cs-finance-number">$148,164</span> for disaster relief and <span class="cs-finance-number">$190,428</span> for the scholarship fund. Related-entity amounts due at year-end are balances, not annual payments or carrier benefits. (<a href="https://teamster.org/wp-content/uploads/2025/10/101025MagTeamsterFALL2025.pdf" target="_blank" rel="noopener noreferrer">Note 13, printed p. 43</a>)</p>
+      <p>Affinity-program royalty revenue was <span class="cs-finance-number">$2,939,824</span> in 2023 and <span class="cs-finance-number">$3,746,497</span> in 2024. Those commercial arrangements invite questions about member prices, selection, service quality and the financial terms. A royalty from an optional legal-plan product is revenue, not the International&rsquo;s bargaining-related legal expense. (<a href="https://teamster.org/wp-content/uploads/2024/11/11824MagTeamsterFALL2024.pdf" target="_blank" rel="noopener noreferrer">FY2023 Note 17, printed pp. 43–45</a>; <a href="https://teamster.org/wp-content/uploads/2025/10/101025MagTeamsterFALL2025.pdf" target="_blank" rel="noopener noreferrer">FY2024 Note 17, printed pp. 44–45</a>)</p>
+    </section>
+
+    <section class="cs-report__section" id="parent-local-transfers">
+      <h2>Parent and Local Financial Flows</h2>
+      <div class="cs-finance-scroll" role="region" aria-label="Audited aggregate cash flows involving affiliates" tabindex="0">
+<table class="cs-report-table" style="min-width: 38rem;">
+<caption>Audited aggregate cash flows involving affiliates</caption>
+<thead><tr><th scope="col">Cash-flow line</th><th scope="col">FY2023</th><th scope="col">FY2024</th></tr></thead>
+<tbody>
+<tr><th scope="row">Received from affiliates</th><td><span class="cs-finance-number">$207,509,790</span></td><td><span class="cs-finance-number">$224,513,228</span></td></tr>
+<tr><th scope="row">Paid to conferences, joint councils and local unions</th><td><span class="cs-finance-number">$9,479,422</span></td><td><span class="cs-finance-number">$9,517,230</span></td></tr>
+</tbody>
+</table>
+</div>
+      <p class="cs-report__note">Sources: both audited cash-flow statements, printed p. 31. These aggregate lines do not identify an airline allocation. Their ratio is not a refund or service-value measure: the parent also pays staff and vendors directly and maintains shared funds.</p>
+      <div class="cs-finance-scroll" role="region" aria-label="Specific receipts shown in the parent’s FY2023 LM-2" tabindex="0">
+<table class="cs-report-table" style="min-width: 45rem;">
+<caption>Specific receipts shown in the parent’s FY2023 LM-2</caption>
+<thead><tr><th scope="col">Payer and purpose</th><th scope="col">Itemized receipt</th><th scope="col">Date</th><th scope="col">Source locator</th></tr></thead>
+<tbody>
+<tr><th scope="row">Local 120 — scholarship contribution</th><td><span class="cs-finance-number">$75,000</span></td><td>January 6, 2023</td><td>Schedule 14, PDF p. 103</td></tr>
+<tr><th scope="row">Local 135 — scholarship contribution</th><td><span class="cs-finance-number">$10,000</span></td><td>January 27, 2023</td><td>Schedule 14, PDF p. 104</td></tr>
+</tbody>
+</table>
+</div>
+      <p>The Local 120 payer block totals <strong><span class="cs-finance-number">$76,603</span></strong>, including <span class="cs-finance-number">$1,603</span> of nonitemized receipts. The Local 135 block totals <span class="cs-finance-number">$10,000</span>. These are <strong>receipts from locals reported by the parent</strong>, with scholarship purposes; they are not parent-to-local grants or proof of legal services supplied to those carrier groups. Matching local disbursements have not been read. (<a href="/reports/union-governance/ibt/lm-2/LM2_IBT_2023.pdf#page=103">Local 120 receipt, PDF p. 103</a>; <a href="/reports/union-governance/ibt/lm-2/LM2_IBT_2023.pdf#page=104">Local 135 receipt, PDF p. 104</a>)</p>
     </section>
 
     <section class="cs-report__section" id="carrier-groups-and-local-visibility">
-      <h2>Carrier Groups and Local Visibility</h2>
-      <p class="cs-report__text">
-        The three airline groups reviewed here are NetJets, Republic, and Sun Country. Of those three, Sun Country currently has the clearest independently verified official local annual filing in the public record reviewed here.
-      </p>
-      <p class="cs-report__note">
-        For NetJets and Republic, this page stays conservative. The absence of a current official local annual filing in this review does not prove the local layer does not exist; it only means the local financial trail has not yet been independently surfaced here from official non-union sources.
-      </p>
+      <h2>Carrier Groups and Local Financial Visibility</h2>
+      <p>The documented carrier interfaces are Local 284 for NetJets flight attendants, Local 135 for Republic and the Republic/Mesa transition, and Local 120 for Sun Country. Each local covers a broader constituency. Their financial statements are whole-local accounts, and no allocation should be inferred from carrier headcounts or a presumed share of union expenses. The <a href="/reports/union-governance/ibt/3-representation-model/">representation review</a> documents the carrier relationships and current certification.</p>
+      <div class="cs-finance-scroll" role="region" aria-label="Whole-local Form 990 summaries — calendar years, U.S. dollars" tabindex="0">
+<table class="cs-report-table" style="min-width: 62rem;">
+<caption>Whole-local Form 990 summaries — calendar years, U.S. dollars</caption>
+<thead><tr><th scope="col">Local and year</th><th scope="col">Revenue</th><th scope="col">Expenses</th><th scope="col">Ending assets</th><th scope="col">Ending liabilities</th><th scope="col">Ending net assets</th></tr></thead>
+<tbody>
+<tr><th scope="row">Local 120 — 2023</th><td><span class="cs-finance-number">$11,500,193</span></td><td><span class="cs-finance-number">$10,881,952</span></td><td><span class="cs-finance-number">$11,109,548</span></td><td><span class="cs-finance-number">$20,933</span></td><td><span class="cs-finance-number">$11,088,615</span></td></tr>
+<tr><th scope="row">Local 120 — 2024</th><td><span class="cs-finance-number">$15,091,463</span></td><td><span class="cs-finance-number">$13,095,332</span></td><td><span class="cs-finance-number">$13,412,385</span></td><td><span class="cs-finance-number">$20,954</span></td><td><span class="cs-finance-number">$13,391,431</span></td></tr>
+<tr><th scope="row">Local 120 — 2025</th><td><span class="cs-finance-number">$14,596,522</span></td><td><span class="cs-finance-number">$14,099,474</span></td><td><span class="cs-finance-number">$13,790,617</span></td><td><span class="cs-finance-number">$44,672</span></td><td><span class="cs-finance-number">$13,745,945</span></td></tr>
+<tr><th scope="row">Local 135 — 2023</th><td><span class="cs-finance-number">$11,101,382</span></td><td><span class="cs-finance-number">$11,261,495</span></td><td><span class="cs-finance-number">$15,711,060</span></td><td><span class="cs-finance-number">$2,239,977</span></td><td><span class="cs-finance-number">$13,471,083</span></td></tr>
+<tr><th scope="row">Local 135 — 2024</th><td><span class="cs-finance-number">$11,052,279</span></td><td><span class="cs-finance-number">$11,033,591</span></td><td><span class="cs-finance-number">$15,004,696</span></td><td><span class="cs-finance-number">$1,514,925</span></td><td><span class="cs-finance-number">$13,489,771</span></td></tr>
+<tr><th scope="row">Local 135 — 2025</th><td><span class="cs-finance-number">$11,457,409</span></td><td><span class="cs-finance-number">$12,036,831</span></td><td><span class="cs-finance-number">$14,300,624</span></td><td><span class="cs-finance-number">$1,390,275</span></td><td><span class="cs-finance-number">$12,910,349</span></td></tr>
+</tbody>
+</table>
+</div>
+      <p class="cs-report__note">Sources: <a href="https://projects.propublica.org/nonprofits/organizations/410274050" target="_blank" rel="noopener noreferrer">Local 120, EIN 41-0274050</a> and <a href="https://projects.propublica.org/nonprofits/organizations/350717060" target="_blank" rel="noopener noreferrer">Local 135, EIN 35-0717060</a>, IRS-derived Form 990 summary blocks for fiscal years ending December 2023, 2024 and 2025. Full return schedules and carrier allocation ledgers were not recovered. These values are neither a Sun Country-only account nor a Republic/Mesa-only account.</p>
+      <p>Local 135 reports revenue below expenses by <span class="cs-finance-number">$160,113</span> in 2023, revenue above expenses by <span class="cs-finance-number">$18,688</span> in 2024, and revenue below expenses by <span class="cs-finance-number">$579,422</span> in 2025. Those are whole-local results; the figures alone do not establish insolvency, waste or a change in service quality. Local 120&rsquo;s net-asset changes do not equal its annual revenue less expenses in 2024–2025, making the full Schedule D and related-entity reconciliation a further requirement.</p>
+      <p class="cs-report__note" id="ibt-local-structure-note"><strong>From local accounts to base services:</strong> the reviewed local summaries are not separately reported airline or base budgets. Internal budgets, staff assignments, member-month dues records, employer reimbursements and case ledgers are needed to show what each workgroup contributed and received.</p>
     </section>
 
     <section class="cs-report__section" id="netjets">
-      <h2>NetJets</h2>
-      <p>
-        NetJets is one of the carrier groups represented through the Teamsters structure, but a current official local annual filing tied specifically to NetJets flight attendants was not independently surfaced from official non-union public sources.
-      </p>
-      <p class="cs-report__note">
-        Current limit: the public financial trail is not yet strong enough here to turn NetJets into a clean return-per-dues-dollar case study the way Sun Country can be approached through Local 120.
-      </p>
+      <h2>NetJets and Local 284</h2>
+      <p>The <a href="https://netjetsflightattendants.com/wp-content/uploads/2024/05/2023-Flight-Attendant-Amended-Agreement-All-In.pdf" target="_blank" rel="noopener noreferrer">union-hosted flight-attendant agreement</a> identifies Local 284 as an authorized representative in &sect;&sect;1.1–1.2. Targeted primary contract text establishes that relationship; full-file comparison and current option notices remain incomplete in this review. A primary Local 284 financial return was not recovered, so no newly verified local dollar table is presented.</p>
+      <p>Local 284&rsquo;s EIN 31-0917877 remains a <a href="https://www.causeiq.com/organizations/teamsters-local-union-no-284,310917877/" target="_blank" rel="noopener noreferrer">secondary identification lead</a> pending primary filing confirmation. Even after that return is obtained, the local&rsquo;s other workgroups must be separated before attributing costs to NetJets flight attendants. Contract &sect;22.5(G) also allocates certain board, travel and witness costs between the union and company; those obligations are not actual payment totals.</p>
     </section>
 
     <section class="cs-report__section" id="republic">
-      <h2>Republic Airways</h2>
-      <p>
-        Republic is one of the Teamster-represented airline properties under review, but a current official local annual filing tied specifically to Republic flight attendants was not independently surfaced from official public sources.
-      </p>
-      <p class="cs-report__note">
-        Current limit: the public financial trail is stronger on the corporate-merger side than on the carrier-specific local-finance side.
-      </p>
+      <h2>Republic/Mesa and Local 135</h2>
+      <p>The <a href="https://www.local135.com/republic-airways/" target="_blank" rel="noopener noreferrer">Local 135 Republic directory</a> identifies flight-attendant representatives, stewards and committees. The <a href="https://nmb.gov/NMB_Application/wp-content/uploads/2026/10/FUI-Certification-Determination-R-7690.pdf" target="_blank" rel="noopener noreferrer">October 13, 2026 NMB determination, R-7690</a> extends IBT Airline Division certification to the combined Republic/Mesa flight-attendant craft and terminates the former Mesa certification. That representation decision is distinct from the corporate merger, joint-contract ratification and operational integration.</p>
+      <p>The Local 135 summaries above cover the whole local, including years before the combined certification. They cannot be relabeled as a combined-carrier service budget. The merger agreement below identifies a more specific financial pathway, but paid claims and the allocation among the International, Local 135 and CWA-AFA remain to be established.</p>
     </section>
 
     <section class="cs-report__section" id="sun-country">
-      <h2>Sun Country Airlines</h2>
-      <p>
-        Sun Country is the clearest current local-level example in this review because an official local annual filing is available for Teamsters Local 120.
-      </p>
-      <ul class="cs-report__list">
-        <li>
-          <strong>FY ending 12/31/2022 official local filing:</strong>
-          <a href="https://olmsapps.dol.gov/query/orgReport.do?rptForm=LM2Form&rptId=861559" target="_blank" rel="noopener noreferrer">
-            Teamsters Local 120 LM-2
-          </a>
-        </li>
-      </ul>
-      <h3>Current Local 120 Signals</h3>
-      <ul class="cs-report__list">
-        <li><strong>Members:</strong> 10,551</li>
-        <li><strong>Regular dues / fees rate:</strong> $15 to $157 per month</li>
-        <li><strong>Dues and agency fees:</strong> $9,501,732</li>
-        <li><strong>Total receipts:</strong> $11,748,934</li>
-        <li><strong>Representational activities:</strong> $3,597,944</li>
-        <li><strong>Per-capita tax disbursements:</strong> $2,218,045</li>
-      </ul>
-      <p class="cs-report__note">
-        Local 120 is useful precisely because it shows the limit of the public record: it is clearly a substantial local treasury, but it is not a Sun Country-only balance sheet, so it cannot be read as a pure flight-attendant service-return scorecard.
-      </p>
-    
-  <p class="cs-report__note" id="ibt-local-structure-note">
-    <strong>How local funds appear to reach bases:</strong> the official Local 120 filing is still one local-union treasury rather than a set of separately reported airline base treasuries. That means any base-level service is being publicly reported through one local filing, even if the internal assignment of work is less visible.
-  </p>
-</section>
+      <h2>Sun Country and Local 120</h2>
+      <p>The <a href="https://www.prnewswire.com/news-releases/sun-country-teamsters-ratify-five-year-contract-302390657.html" target="_blank" rel="noopener noreferrer">March 2025 IBT-issued ratification release</a> identifies Local 120&rsquo;s flight-attendant group; the <a href="https://www.sec.gov/Archives/edgar/data/1743907/000174390726000032/sncy-20251231.htm" target="_blank" rel="noopener noreferrer">employer&rsquo;s FY2025 Form 10-K</a> confirms the March 2025 agreement ratification. Local 120&rsquo;s FY2023–2025 tax summaries are current to the reviewed financial series, but the local also represents other employers and workgroups.</p>
+      <p>The <a href="https://crewsignal.org/reports/contract-architecture/IBT/sun-country/Sun_Country_FA_CBA_March_2025.pdf" target="_blank" rel="noopener noreferrer">published contract text</a> provides union-release and dispute-cost terms, including Article 17.J.4&rsquo;s applicable paid hours and rate plus a 23% fringe-benefit charge. The copy contains incomplete dates and requires a completed counterpart for final version verification. Contractual obligations establish records to seek, not the amounts actually incurred or reimbursed.</p>
+      <details>
+        <summary>Historical FY2022 Local 120 LM-2 observations</summary>
+        <p>The earlier CrewSignal figures came from <a href="https://olmsapps.dol.gov/query/orgReport.do?rptForm=LM2Form&amp;rptId=861559" target="_blank" rel="noopener noreferrer">FY2022 LM-2 report 861559</a>, OLMS file 001-526, for the year ending December 31, 2022. They are retained as dated prior observations; the full body and latest amendment history were not freshly reviewed here.</p>
+        <ul class="cs-report__list">
+          <li>Members: 10,551; reported regular dues/fees range: $15–$157 per month.</li>
+          <li>Dues and agency fees: $9,501,732; total receipts: $11,748,934.</li>
+          <li>Representational activities: $3,597,944; per-capita disbursements: $2,218,045.</li>
+        </ul>
+        <p>These are FY2022 whole-local observations, not current rates or a Sun Country service budget. A year-end member count multiplied by a monthly rate does not establish actual dues receipts; payer-months, rates, exemptions and remittance records are needed.</p>
+      </details>
+    </section>
 
     <section class="cs-report__section" id="republic-mesa">
-      <h2>Republic / Mesa Joint Representation Arrangement</h2>
-      <p>
-        The most visible public development here is the Republic / Mesa corporate merger itself. Republic Airways announced the merger agreement on April 7, 2025 and announced completion of the merger on November 25, 2025.
-      </p>
-      <p>
-        What the public company materials do not disclose is any union cost-sharing formula, reimbursement agreement, or direct inter-union transfer arrangement connected to Republic / Mesa bargaining. That means the joint-representation question may be publicly discussed elsewhere, but the financial allocation method is not visible in the official materials reviewed here.
-      </p>
+      <h2>Republic/Mesa: A Financial Trail for the Merger Work</h2>
+      <p>The published <a href="https://mesaafa.org/system/files/2026-01/complete_with_docusign_executable_airline_pa_0.pdf" target="_blank" rel="noopener noreferrer">Merger Transition Agreement (MTA)</a> contains a concrete employer reimbursement mechanism. Section F, printed pp. 9–10, covers specified seniority-integration, MTA, JCBA negotiation and ratification costs, professional fees and expenses, and flight-pay loss. Section E.4 puts specified travel within the same cap.</p>
+      <p><strong>The ceiling is $1,000,000 in total across both union parties combined, including flight-pay loss.</strong> It is not $1 million for each union and does not establish that the ceiling was exhausted. The union parties are IBT Airline Division, as represented by Local 135, and CWA-AFA; the public record does not establish the share paid to each treasury or service provider.</p>
+      <p>Section F covers costs incurred through December 31, 2025. Continued reimbursement depends on the stated condition that a JCBA was submitted for a ratification vote by that date and remains subject to the aggregate cap. A later ratification date does not, by itself, establish the submission date.</p>
+      <p class="cs-report__note">The accessible MTA counterpart&rsquo;s DocuSign certificate is incomplete: it shows status Sent and three signatures (PDF pp. 15–16). The <a href="https://nmb.gov/NMB_Application/wp-content/uploads/2026/09/Findings-Upon-Investigation-R-7690.pdf" target="_blank" rel="noopener noreferrer">September 1, 2026 NMB decision</a> independently records entry into an MTA on October 19, 2025 (printed p. 128). A completed counterpart is still needed for version control. No actual reimbursement total or inter-union allocation has been verified.</p>
+      <h3>Records Needed to Follow the Money</h3>
       <ul class="cs-report__list">
-        <li>
-          <strong>Merger announcement:</strong>
-          <a href="https://www.prnewswire.com/news-releases/republic-airways-and-mesa-air-group-to-combine-creating-americas-regional-airline-of-choice-302421902.html" target="_blank" rel="noopener noreferrer">
-            April 7, 2025 public announcement
-          </a>
-        </li>
-        <li>
-          <strong>Merger completion:</strong>
-          <a href="https://rjet.com/blog/republic-airways-and-mesa-air-group-complete-merger/" target="_blank" rel="noopener noreferrer">
-            November 25, 2025 completion announcement
-          </a>
-        </li>
+        <li>The final executed agreement, amendments and date of submission for ratification.</li>
+        <li>Professional engagements, invoices, representative release-time calculations and reimbursement claims.</li>
+        <li>Employer payment records, the receiving union treasury and matching ledger entries.</li>
+        <li>The allocation to IBT, Local 135, CWA-AFA and each service, including any unreimbursed cost financed by members.</li>
       </ul>
+      <p>These records distinguish an employer-paid service, a union outlay later reimbursed and centrally absorbed staff work. Count the final economic cost once and connect it to the work delivered. The <a href="/reports/union-governance/ibt/5-committees-and-contract-admin/">contract-administration review</a> explains the related release-time and shared dispute-cost provisions.</p>
     </section>
 
     <section class="cs-report__section" id="important-limit">
-      <h2>Important Limit</h2>
-      <p>
-        Unlike CWA-AFA&rsquo;s sector-wide structure, the Teamster airline groups reviewed here do not present themselves in the public record as one national flight-attendant treasury. The International filing is clear, but the local layer is unevenly visible and often broader than the airline group under review.
-      </p>
-      <p>
-        The cleanest current IBT financial story is: International per-capita structure at the top, then local-level carrier representation where an official annual filing can be independently verified, with the reminder that the local treasury may still combine airline and non-airline activity.
-      </p>
+      <h2>What the Financial Record Can Establish</h2>
+      <p>The review establishes parent financial scale, separate reporting scopes, selected costs, specific affiliate receipts, whole-local tax summaries and a merger reimbursement pathway. It does not establish the complete cost of representing any one flight-attendant group or a return-on-dues score. Reserves, professional-fee totals and the number of management layers require service evidence before they can support a judgment about value.</p>
+      <h3>Questions for the Parent and Relevant Locals</h3>
+      <ul class="cs-report__list">
+        <li>Which complete original or amended LM-2 reports and attachments finish the FY2023–2025 series, and what does the missing Item 69 explain?</li>
+        <li>How do the full Forms 990 and Schedule D reconcile the audit, tax-summary and local net-asset differences?</li>
+        <li>What legal, financial, research or advisory work did the International provide to each carrier group, who requested it, and what did it cost?</li>
+        <li>How much was retained or spent at each level after inter-union remittances and employer reimbursements?</li>
+        <li>Which cases, bargaining assignments and implementation tasks were completed, how quickly did members receive help, and what remedies or other results were delivered?</li>
+        <li>What current governing rules, approvals and corrective-action records make those services and costs accountable to members?</li>
+      </ul>
+      <p>The next step is a matched record of dues, assignments, invoices or payroll, reimbursements and service outcomes for the same entity, workgroup and period. Missing data remain an unresolved question rather than zero expenditure, nonfiling or proof of misconduct.</p>
     </section>
 
-    <section class="cs-report__section">
+    <section class="cs-report__section" aria-label="Report navigation">
       <ul class="cs-report__list">
+        <li><a href="/reports/union-governance/ibt/lm-2/">Financial Source Record &amp; LM-2 Disclosures</a></li>
         <li><a href="/reports/union-governance/ibt/">Back to IBT Governance Hub</a></li>
         <li><a href="/reports/union-governance/">Back to Union Governance &amp; Representation</a></li>
       </ul>
     </section>
-
   </main>
 </body>
 </html>

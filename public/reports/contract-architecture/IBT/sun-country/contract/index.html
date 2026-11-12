@@ -5,9 +5,16 @@
   <title>IBT · Sun Country Airlines · Contract Architecture Analysis · CrewSignal</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="/assets/css/main.css" />
+  <style>
+    .cs-adjacent-scroll { max-width: 100%; overflow-x: auto; overscroll-behavior-x: contain; }
+    .cs-adjacent-scroll table { width: 100%; min-width: 36rem; }
+    .cs-adjacent-scroll caption { text-align: left; font-weight: 600; padding: 0.6rem 0; }
+    .cs-adjacent-scroll:focus-visible, .cs-report a:focus-visible { outline: 3px solid var(--cs-accent); outline-offset: 4px; }
+    .cs-report a { overflow-wrap: anywhere; }
+  </style>
 </head>
 <body>
-  <article class="cs-report" id="ibt-sun-country-contract-architecture">
+  <main class="cs-report" id="ibt-sun-country-contract-architecture">
     <header class="cs-report__header">
       <div class="cs-report__nav">
         <a class="cs-report__back" href="/reports/contract-architecture/">← Back to Contract Architecture</a>
@@ -24,6 +31,14 @@
       </p>
     </header>
 
+    <section class="cs-report__section" id="current-source-status">
+      <h2>Current Source and Representation Status</h2>
+      <p class="cs-report__note">Source-status update: November 11, 2026 (Pacific time).</p>
+      <p>Sun Country’s <a href="https://www.sec.gov/Archives/edgar/data/1743907/000174390726000032/sncy-20251231.htm" target="_blank" rel="noopener noreferrer">FY2025 Form 10-K, Human Capital</a> confirms flight-attendant contract ratification in March 2025 and a February 28, 2030 amendable date. The <a href="/reports/contract-architecture/IBT/sun-country/Sun_Country_FA_CBA_March_2025.pdf#page=132">posted text’s Article 31, PDF p. 132</a>, still contains date placeholders, so the employer’s disclosure and the source-copy limitation are stated separately.</p>
+      <p>The <a href="https://teamster.org/2025/03/sun-country-teamsters-ratify-five-year-contract/" target="_blank" rel="noopener noreferrer">ratification announcement</a> identifies Local 120. Allegiant’s <a href="https://www.sec.gov/Archives/edgar/data/1362468/000136246826000065/algt-20260930.htm" target="_blank" rel="noopener noreferrer">Q3 2026 Form 10-Q, Acquisition of Sun Country Airlines</a> records the completed May acquisition, continuing separate airline operations and an expected single operating certificate in 2028. Ownership, joint-contract negotiations and representation are separate developments.</p>
+      <p>Continue to the <a href="/reports/union-governance/ibt/3-representation-model/">IBT representation and service map</a> and <a href="/reports/union-governance/ibt/6-funding-and-dues/#sun-country">Sun Country / Local 120 financial coverage</a>.</p>
+    </section>
+
     <section class="cs-report__section" id="agreement-metadata">
       <h2>Agreement Metadata</h2>
 
@@ -31,7 +46,7 @@
         This analysis examines the March 2025 collective bargaining agreement text between
         <strong>Sun Country Airlines</strong> and the International Brotherhood of Teamsters.
         Because Article 31 still contains placeholder effective and duration dates, this report treats the
-        uploaded document as the operative March 2025 agreement text rather than a fully dated execution copy.
+        posted document as published March 2025 agreement text, with final executed-copy verification still open.
         The agreement covers a carrier whose operation spans scheduled domestic flying, international flying,
         military charter, ad hoc flying, and other special operations.
       </p>
@@ -211,12 +226,14 @@
       <h2>Standardized Contract Scorecard</h2>
 
       <div class="cs-table cs-table--compact">
-        <table>
+        <div class="cs-adjacent-scroll" role="region" aria-label="Sun Country contract architecture scorecard" tabindex="0">
+<table>
+<caption>Sun Country contract architecture scorecard</caption>
           <thead>
             <tr>
-              <th>Domain</th>
-              <th>Score</th>
-              <th>Rationale</th>
+              <th scope="col">Domain</th>
+              <th scope="col">Score</th>
+              <th scope="col">Rationale</th>
             </tr>
           </thead>
           <tbody>
@@ -257,12 +274,13 @@
             </tr>
           </tbody>
         </table>
+</div>
       </div>
     </section>
 
     <footer class="cs-report__footer">
       <div class="cs-report__footer-text">CrewSignal · Contract Architecture &amp; Comparative Analysis</div>
     </footer>
-  </article>
+  </main>
 </body>
 </html>

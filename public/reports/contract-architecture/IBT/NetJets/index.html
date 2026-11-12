@@ -5,9 +5,16 @@
   <title>IBT · NetJets Aviation · Contract Architecture Analysis · CrewSignal</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="/assets/css/main.css" />
+  <style>
+    .cs-adjacent-scroll { max-width: 100%; overflow-x: auto; overscroll-behavior-x: contain; }
+    .cs-adjacent-scroll table { width: 100%; min-width: 36rem; }
+    .cs-adjacent-scroll caption { text-align: left; font-weight: 600; padding: 0.6rem 0; }
+    .cs-adjacent-scroll:focus-visible, .cs-report a:focus-visible { outline: 3px solid var(--cs-accent); outline-offset: 4px; }
+    .cs-report a { overflow-wrap: anywhere; }
+  </style>
 </head>
 <body>
-  <article class="cs-report" id="ibt-netjets-contract-architecture">
+  <main class="cs-report" id="ibt-netjets-contract-architecture">
     <header class="cs-report__header">
       <div class="cs-report__nav">
         <a class="cs-report__back" href="/reports/contract-architecture/">← Back to Contract Architecture</a>
@@ -18,10 +25,19 @@
 
       <p class="cs-report__dek">
         <span class="cs-report__dates">
-          Effective Period: December 20, 2023 – December 21, 2026<br />
+          2023 amended agreement text · base term through December 21, 2026<br />
+          <em>Exact ratification date and exercise of the extension option remain unverified.</em>
         </span>
       </p>
     </header>
+
+    <section class="cs-report__section" id="current-source-status">
+      <h2>Current Source and Representation Status</h2>
+      <p class="cs-report__note">Source-status update: November 11, 2026 (Pacific time).</p>
+      <p>The <a href="https://netjetsflightattendants.com/wp-content/uploads/2024/05/2023-Flight-Attendant-Amended-Agreement-All-In.pdf" target="_blank" rel="noopener noreferrer">union-hosted amended agreement</a>, §§1.1–1.2, recognizes IBT and includes Local 284’s president or business agent among the agreement’s authorized representatives. The <a href="https://netjetsflightattendants.com/" target="_blank" rel="noopener noreferrer">Local 284 flight-attendant site</a> identifies the local service relationship.</p>
+      <p>Sections 30.1–30.2 state a December 21, 2026 base term and a company option through December 21, 2029, with notice due January 31, 2026. No option notice was recovered in this review. Targeted indexed contract clauses were available, but full-file validation and the exact ratification date remain incomplete. The option’s existence does not establish its exercise.</p>
+      <p>See <a href="/reports/union-governance/ibt/5-committees-and-contract-admin/">IBT contract administration</a> for the service-cost provisions and <a href="/reports/union-governance/ibt/6-funding-and-dues/#netjets">financial coverage for NetJets / Local 284</a>.</p>
+    </section>
 
     <section class="cs-report__section" id="agreement-metadata">
       <h2>Agreement Metadata</h2>
@@ -145,12 +161,14 @@
       <h2>Standardized Contract Scorecard</h2>
 
       <div class="cs-table cs-table--compact">
-        <table>
+        <div class="cs-adjacent-scroll" role="region" aria-label="NetJets contract architecture scorecard" tabindex="0">
+<table>
+<caption>NetJets contract architecture scorecard</caption>
           <thead>
             <tr>
-              <th>Domain</th>
-              <th>Score</th>
-              <th>Rationale</th>
+              <th scope="col">Domain</th>
+              <th scope="col">Score</th>
+              <th scope="col">Rationale</th>
             </tr>
           </thead>
           <tbody>
@@ -191,6 +209,7 @@
             </tr>
           </tbody>
         </table>
+</div>
       </div>
     </section>
 
@@ -199,7 +218,7 @@
 
       <p class="cs-report__para">
         The agreement’s Duration section sets effectiveness on the Ratification Date and a base term through December 21, 2026, with a unilateral Company option
-        to extend the amendable date through December 21, 2029 if exercised by the specified notice deadline. This page uses the base term in the header and treats
+        to extend the amendable date through December 21, 2029 if exercised by the January 31, 2026 notice deadline. Exercise was not verified in the November 11 review. This page uses the base term in the header and treats
         the option period as a contingent extension rather than a guaranteed term. 
       </p>
     </section>
@@ -207,6 +226,6 @@
     <footer class="cs-report__footer">
       <div class="cs-report__footer-text">CrewSignal · Contract Architecture &amp; Comparative Analysis</div>
     </footer>
-  </article>
+  </main>
 </body>
 </html>
