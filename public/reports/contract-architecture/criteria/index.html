@@ -230,5 +230,23 @@
     CrewSignal · Contract Architecture &amp; Comparative Analysis
   </p>
 </footer>
+<script>
+(() => {
+  let printState = null;
+  addEventListener('beforeprint', () => {
+    if (printState !== null) return;
+    printState = Array.from(
+      document.querySelectorAll('#reserve-protection-pilot details'),
+      detail => ({ detail, open: detail.open })
+    );
+    printState.forEach(({ detail }) => { detail.open = true; });
+  });
+  addEventListener('afterprint', () => {
+    if (printState === null) return;
+    printState.forEach(({ detail, open }) => { detail.open = open; });
+    printState = null;
+  });
+})();
+</script>
 </body>
 </html>
