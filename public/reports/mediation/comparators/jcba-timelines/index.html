@@ -9,6 +9,67 @@
     content="CrewSignal comparison of Flight Attendant merger JCBA timelines at Alaska and Hawaiian, Continental and United, and Republic and Mesa."
   />
   <link rel="stylesheet" href="/assets/css/main.css" />
+  <style id="jcba-comparison-layout">
+    #comparison-summary .table-wrap {
+      max-width: 100%;
+      overflow-x: auto;
+      overscroll-behavior-x: contain;
+    }
+    #comparison-summary .table-wrap:focus-visible {
+      outline: 2px solid var(--cs-accent);
+      outline-offset: 4px;
+    }
+    #comparison-summary .cs-jcba-comparison {
+      width: 100%;
+      min-width: 64rem;
+      table-layout: fixed;
+    }
+    #comparison-summary .cs-jcba-col--integration { width: 22%; }
+    #comparison-summary .cs-jcba-col--interval { width: 38%; }
+    #comparison-summary .cs-jcba-col--elapsed { width: 14%; }
+    #comparison-summary .cs-jcba-col--result { width: 26%; }
+    #comparison-summary .cs-jcba-comparison th,
+    #comparison-summary .cs-jcba-comparison td {
+      padding: 0.9rem 1.2rem;
+      text-align: left;
+      vertical-align: top;
+      line-height: 1.55;
+      overflow-wrap: normal;
+      word-break: normal;
+    }
+    #comparison-summary .cs-jcba-comparison th:nth-child(3),
+    #comparison-summary .cs-jcba-comparison td:nth-child(3) {
+      white-space: nowrap;
+      font-variant-numeric: tabular-nums;
+    }
+    #comparison-summary .cs-jcba-comparison tbody tr + tr td {
+      border-top: 1px solid var(--cs-border-subtle);
+    }
+    #comparison-summary .cs-jcba-comparison tbody tr:nth-child(3n + 4) td {
+      border-top: 2px solid var(--cs-border-subtle);
+    }
+    @media (min-width: 70rem) {
+      #comparison-summary {
+        position: relative;
+        left: 50%;
+        width: min(75rem, calc(100vw - 4rem));
+        transform: translateX(-50%);
+      }
+    }
+    @media print {
+      #comparison-summary {
+        position: static;
+        width: auto;
+        transform: none;
+      }
+      #comparison-summary .table-wrap { overflow: visible; }
+      #comparison-summary .cs-jcba-comparison { min-width: 0; }
+      #comparison-summary .cs-jcba-comparison th,
+      #comparison-summary .cs-jcba-comparison td { padding: 0.5rem; }
+      #comparison-summary .cs-jcba-comparison th:nth-child(3),
+      #comparison-summary .cs-jcba-comparison td:nth-child(3) { white-space: normal; }
+    }
+  </style>
 </head>
 
 <body class="cs-report cs-report--mediation">
@@ -21,11 +82,17 @@
 
   <main class="cs-report__main">
     <section class="cs-report__section" id="comparison-summary">
-      <h2 class="cs-report__section-title">Comparison Summary</h2>
+      <h2 class="cs-report__section-title" id="comparison-summary-title">Comparison Summary</h2>
       <p>There is no single merger clock. A complete comparison separates transaction close, the NMB single-transportation-system determination, the start of joint bargaining, agreement, ratification and implementation. It also distinguishes a full JCBA from a limited bridge agreement.</p>
 
-      <div class="table-wrap">
-        <table>
+      <div class="table-wrap" role="region" aria-labelledby="comparison-summary-title" tabindex="0">
+        <table class="cs-report-table cs-jcba-comparison">
+          <colgroup>
+            <col class="cs-jcba-col--integration" />
+            <col class="cs-jcba-col--interval" />
+            <col class="cs-jcba-col--elapsed" />
+            <col class="cs-jcba-col--result" />
+          </colgroup>
           <thead>
             <tr>
               <th scope="col">Integration</th>
