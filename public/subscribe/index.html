@@ -1,87 +1,100 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Crew Signal | Subscribe</title>
-  <meta name="description" content="Subscribe to Crew Signal updates." />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="/assets/css/main.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Subscribe to CrewSignal | Flight Attendant Research Updates</title>
+  <meta name="description" content="Subscribe to CrewSignal research updates on airline mergers, negotiations, contracts, and union governance.">
+  <link rel="canonical" href="https://crewsignal.org/subscribe/">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <style>
+    .signup-shell { max-width: 760px; margin: 0 auto; padding: 2rem 1.5rem 3rem; }
+    .signup-header { background:radial-gradient(circle at top left,#1d4ed8,#020617 65%); padding:2rem; border-radius:1.4rem; border:1px solid rgba(148,163,184,.35); }
+    .signup-header h1 { margin:.3rem 0 1rem; font-size:clamp(2rem,5vw,2.8rem);line-height:1.15;color:#f9fafb; }
+    .signup-header p { margin:0;color:#e0e8f6;max-width:60ch; }
+    .signup-back { display:inline-block; margin-bottom:1rem; color:#bae6fd;text-underline-offset:.25em; }
+    .eyebrow { color:#c7d2fe;font-size:.79rem;text-transform:uppercase;letter-spacing:.1em;font-weight:700; }
+    .signup-card { margin-top:1.3rem; background:#0b1020; border:1px solid rgba(148,163,184,.3); border-radius:1.3rem; padding:1.5rem; }
+    .signup-card h2 { margin:0 0 .35rem; color:#f9fafb;font-size:1.25rem; }
+    .signup-card p { color:#cbd5e1; }
+    .field { margin:1.1rem 0; }
+    .field label { display:block;font-weight:650;margin-bottom:.35rem; }
+    .field input { display:block;width:100%;max-width:100%;padding:.72rem .8rem;border-radius:.55rem;border:1px solid #94a3b8;color:#0f172a;background:#fff;font:inherit; }
+    .field input:focus-visible,.consent input:focus-visible,.signup-button:focus-visible,a:focus-visible {outline:3px solid #facc15;outline-offset:3px;}
+    .field small,.subtle {display:block;color:#bac7d8;font-size:.86rem;line-height:1.55;}
+    .required {color:#7dd3fc;}
+    fieldset {border:1px solid rgba(148,163,184,.4);border-radius:.75rem;padding:1rem 1.15rem;margin:1.4rem 0 1rem;}
+    legend {padding:0 .4rem;font-weight:700;color:#f9fafb;}
+    .consent {display:flex;align-items:flex-start;gap:.75rem;margin:.65rem 0 1rem;}
+    .consent input {flex:none;width:1.15rem;height:1.15rem;margin-top:.22rem;accent-color:#0284c7;}
+    .consent span {display:block;color:#e2e8f0;}
+    .signup-button {cursor:pointer;border:0;border-radius:.6rem;padding:.8rem 1.5rem;background:#38bdf8;color:#05111f;font:inherit;font-weight:750;}
+    .signup-button:hover {background:#7dd3fc;}
+    .fineprint {font-size:.85rem;line-height:1.6;}
+    .fineprint a,.signup-card a {color:#7dd3fc;}
+    .hidden-trap {position:absolute!important;left:-10000px!important;width:1px;height:1px;overflow:hidden;}
+    .signup-footer {margin-top:1.8rem;text-align:center;color:#bac7d8;font-size:.88rem;}
+    @media (max-width:580px){.signup-shell{padding:1rem 1rem 2rem}.signup-header,.signup-card{padding:1.25rem}}
+  </style>
 </head>
-
-<body class="cs-report">
-  <header class="cs-report__header">
-    <a href="/" class="cs-report__back">← Back to Crew Signal</a>
-    <p class="cs-report__eyebrow">Subscribe</p>
-    <h1 class="cs-report__title">Get Crew Signal Updates</h1>
-  </header>
-
-  <main class="cs-report__content">
-    <section class="cs-card">
-      <h2>Subscription intake (temporarily via web form)</h2>
-      <p>
-        Subscriptions are temporarily paused while we finalize our mailing address.
-        Leave your email here and we’ll notify you as soon as subscriptions reopen.
-      </p>
-
-      <form
-        name="crew-signal-signup"
-        method="POST"
-        action="/thanks/"
-        data-netlify="true"
-        netlify-honeypot="bot-field"
-      >
-        <input type="hidden" name="form-name" value="crew-signal-signup" />
-
-        <p class="sr-only">
-          <label>Don’t fill this out if you’re human:
-            <input name="bot-field" />
+<body>
+  <main class="signup-shell">
+    <header class="signup-header">
+      <a class="signup-back" href="/">← Back to CrewSignal</a>
+      <div class="eyebrow">CrewSignal updates</div>
+      <h1>Your dues. Your representation. Your return.</h1>
+      <p>Get research releases and updates on flight attendant contracts, bargaining, mergers, and union accountability.</p>
+    </header>
+    <section class="signup-card" aria-labelledby="signup-title">
+      <h2 id="signup-title">Subscribe to email updates</h2>
+      <p>Subscriptions are open. This form submits directly to CrewSignal's Mailchimp audience, not our older Netlify intake form. Please review the separate permissions below.</p>
+      <form method="post" action="https://crewsignal.us19.list-manage.com/subscribe/post?u=b1ba2124e69ba9e678f487d1e&amp;id=4751393351&amp;v_id=4931&amp;f_id=00d2bde7f0" name="mc-embedded-subscribe-form" id="mc-embedded-subscribe-form">
+        <div class="field">
+          <label for="mce-EMAIL">Email address <span class="required">(required)</span></label>
+          <input id="mce-EMAIL" name="EMAIL" type="email" maxlength="254" autocomplete="email" required>
+        </div>
+        <div class="field">
+          <label for="mce-FNAME">First name <span class="required">(required)</span></label>
+          <input id="mce-FNAME" name="FNAME" type="text" maxlength="100" autocomplete="given-name" required>
+        </div>
+        <div class="field">
+          <label for="mce-LNAME">Last name <span class="required">(required)</span></label>
+          <input id="mce-LNAME" name="LNAME" type="text" maxlength="100" autocomplete="family-name" required>
+        </div>
+        <div class="field">
+          <label for="mce-MMERGE5">Airline <span class="required">(required)</span></label>
+          <input id="mce-MMERGE5" name="MMERGE5" type="text" maxlength="120" required>
+          <small>You may enter "Prefer not to say".</small>
+        </div>
+        <div class="field">
+          <label for="mce-MMERGE7">Base <span class="required">(required)</span></label>
+          <input id="mce-MMERGE7" name="MMERGE7" type="text" maxlength="120" required>
+          <small>You may enter "Prefer not to say". The existing Mailchimp audience marks these fields as required; we will revisit that setting.</small>
+        </div>
+        <fieldset>
+          <legend>Email permissions</legend>
+          <label class="consent" for="gdpr_124101">
+            <input id="gdpr_124101" type="checkbox" name="gdpr[124101]" value="Y" required>
+            <span><strong>Regular email updates, reports, and bulletins (required).</strong> I agree to receive CrewSignal research updates by email. I can unsubscribe at any time.</span>
           </label>
-        </p>
-
-        <input type="hidden" name="Source" value="Interim signup (Netlify)" />
-
-        <div class="field">
-          <label for="name">Name</label>
-          <input id="name" name="Name" type="text" autocomplete="name" />
+          <label class="consent" for="gdpr_124102">
+            <input id="gdpr_124102" type="checkbox" name="gdpr[124102]" value="Y">
+            <span><strong>Separate direct updates or special notices (optional).</strong> I also agree to occasional messages about important industry or governance developments.</span>
+          </label>
+        </fieldset>
+        <div class="hidden-trap" aria-hidden="true">
+          <label for="mc-honeypot">Leave this field empty</label>
+          <input id="mc-honeypot" type="text" name="b_b1ba2124e69ba9e678f487d1e_4751393351" tabindex="-1" autocomplete="off">
         </div>
-
-        <div class="field">
-          <label for="email">Email <span aria-hidden="true">*</span></label>
-          <input id="email" name="Email" type="email" required autocomplete="email" />
-        </div>
-
-        <div class="field">
-          <label for="airline">Airline / Base (optional)</label>
-          <input id="airline" name="AirlineBase" type="text" />
-        </div>
-
-        <div class="field">
-          <label for="notes">Notes (optional)</label>
-          <textarea id="notes" name="Notes" rows="4"></textarea>
-        </div>
-
-        <div data-netlify-recaptcha="true"></div>
-
-        <button type="submit" class="cs-button">Sign up</button>
+        <p class="fineprint">CrewSignal LLC uses <a href="https://mailchimp.com/legal/terms/">Mailchimp</a> to manage subscriptions. Your form information is submitted to Mailchimp, which may require an email confirmation before activating your subscription. Read our <a href="/privacy/">privacy policy</a>.</p>
+        <button class="signup-button" type="submit" name="subscribe">Subscribe to CrewSignal</button>
+        <p class="fineprint"><strong>Confirmation required:</strong> After submitting, look for Mailchimp’s confirmation email in your Inbox, Promotions, or Spam/Junk folder. If it lands in Spam, mark it “Not spam” before opening the confirmation link. Your subscription is not complete until you confirm.</p>
       </form>
     </section>
+    <footer class="signup-footer">
+      <p>CrewSignal LLC · PO Box 136, San Pedro, CA 90733-0136</p>
+      <p><a href="/contact/">Contact</a> · <a href="/privacy/">Privacy</a> · <a href="/">Home</a></p>
+    </footer>
   </main>
-
-  <footer class="cs-report__footer">
-    <p class="cs-report__fineprint">© Crew Signal · Informational resource for aviation professionals</p>
-  </footer>
-
-  <style>
-    .sr-only {
-      position:absolute !important;
-      width:1px; height:1px;
-      padding:0; margin:-1px;
-      overflow:hidden; clip:rect(0,0,0,0);
-      border:0;
-    }
-    .field { margin: 0 0 1rem 0; }
-    label { display:block; margin-bottom: .35rem; font-weight: 600; }
-    input, textarea { width:100%; max-width:32rem; padding:.6rem; }
-  </style>
 </body>
 </html>
