@@ -1,58 +1,40 @@
-<form
-  name="crew-signal-signup"
-  method="POST"
-  action="/thanks/"
-  data-netlify="true"
-  netlify-honeypot="bot-field"
->
-  <!-- Required for Netlify Forms -->
-  <input type="hidden" name="form-name" value="crew-signal-signup" />
-
-  <!-- Honeypot (hidden from humans) -->
-  <p class="sr-only">
-    <label>Don’t fill this out if you’re human:
-      <input name="bot-field" />
-    </label>
-  </p>
-
-  <!-- Actual fields -->
-  <div class="field">
-    <label for="name">Name</label>
-    <input id="name" name="Name" type="text" autocomplete="name" />
-  </div>
-
-  <div class="field">
-    <label for="email">Email <span aria-hidden="true">*</span></label>
-    <input id="email" name="Email" type="email" required autocomplete="email" />
-  </div>
-
-  <div class="field">
-    <label for="airline">Airline / Base (optional)</label>
-    <input id="airline" name="AirlineBase" type="text" />
-  </div>
-
-  <div class="field">
-    <label for="notes">Notes (optional)</label>
-    <textarea id="notes" name="Notes" rows="4"></textarea>
-  </div>
-
-  <!-- Netlify reCAPTCHA v2 widget -->
-  <div data-netlify-recaptcha="true"></div>
-
-  <button type="submit">Sign up</button>
-</form>
-
-<!-- Minimal accessibility helpers (optional) -->
-<style>
-  .sr-only {
-    position:absolute !important;
-    width:1px; height:1px;
-    padding:0; margin:-1px;
-    overflow:hidden; clip:rect(0,0,0,0);
-    border:0;
-  }
-  .field { margin: 0 0 1rem 0; }
-  label { display:block; margin-bottom: .35rem; font-weight: 600; }
-  input, textarea { width:100%; max-width:32rem; padding:.6rem; }
-  button { padding:.6rem 1rem; font-weight:600; cursor:pointer; }
-</style>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact CrewSignal</title>
+  <meta name="description" content="Contact CrewSignal LLC for editorial correspondence, privacy questions, or subscriber assistance.">
+  <link rel="canonical" href="https://crewsignal.org/contact/">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <style>
+    .contact-shell{max-width:760px;margin:0 auto;padding:2rem 1.5rem;color:#e5e7eb}
+    .contact-shell header{padding:2rem;border:1px solid rgba(148,163,184,.35);border-radius:1.2rem;background:radial-gradient(circle at top left,#1d4ed8,#020617 65%)}
+    .contact-shell article{padding:1.5rem;margin:1.3rem 0;background:#0b1020;border:1px solid rgba(148,163,184,.25);border-radius:1rem}
+    .contact-shell a{color:#7dd3fc;text-underline-offset:.25em}
+    .contact-shell h1{font-size:clamp(2rem,5vw,2.7rem);margin:.35rem 0}
+    .contact-shell h2{margin:.3rem 0 1rem}
+    .contact-shell footer{color:#bac7d8;font-size:.9rem}
+  </style>
+</head>
+<body>
+ <main class="contact-shell">
+  <header>
+   <a href="/">← Back to CrewSignal</a>
+   <h1>Contact CrewSignal</h1>
+   <p>Editorial questions, website issues, and subscriber assistance.</p>
+  </header>
+  <article>
+   <h2>Email and postal correspondence</h2>
+   <p>Email: <a href="mailto:crewsignalupdates@gmail.com">crewsignalupdates@gmail.com</a></p>
+   <p>Mail: CrewSignal LLC, PO Box 136, San Pedro, CA 90733-0136</p>
+   <p>Please avoid sending sensitive personal, employment, or financial records through a public form.</p>
+  </article>
+  <article>
+   <h2>Subscribe to updates</h2>
+   <p>For newsletters and research bulletins, use the <a href="/subscribe/">CrewSignal subscription form</a> to select your email permissions. Sending a direct email does not automatically subscribe you.</p>
+  </article>
+  <footer><a href="/privacy/">Privacy policy</a> · <a href="/">Home</a></footer>
+ </main>
+</body>
+</html>
