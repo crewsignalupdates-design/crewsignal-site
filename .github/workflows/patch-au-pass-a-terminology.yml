@@ -1,0 +1,50 @@
+name: Patch American-United Pass A terminology
+
+on:
+  push:
+    branches:
+      - editorial/american-united-pass-a-accuracy-hotfix-20261120
+    paths:
+      - .github/workflows/patch-au-pass-a-terminology.yml
+
+permissions:
+  contents: write
+
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out hotfix branch
+        uses: actions/checkout@v4
+        with:
+          ref: editorial/american-united-pass-a-accuracy-hotfix-20261120
+          fetch-depth: 0
+
+      - name: Replace stale majority-absorption shorthand
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          from pathlib import Path
+          path = Path('public/reports/merger-integration/comparators/american-united-hypothetical/index.html')
+          text = path.read_text(encoding='utf-8')
+          old = 'The labor issue would also be fundamentally different from a majority-absorption case.'
+          new = 'The labor issue would also be fundamentally different from a simple uncontested certification-extension case.'
+          if text.count(old) != 1:
+              raise SystemExit(f'STOP: expected one stale phrase, found {text.count(old)}')
+          path.write_text(text.replace(old, new, 1), encoding='utf-8', newline='\n')
+          PY
+          git diff --check
+          git config user.name "crewsignalupdates-design"
+          git config user.email "crewsignalupdates@gmail.com"
+          git add public/reports/merger-integration/comparators/american-united-hypothetical/index.html
+          git commit -m "Align American-United certification terminology"
+          git push origin HEAD:editorial/american-united-pass-a-accuracy-hotfix-20261120
+
+      - name: Remove temporary terminology workflow
+        shell: bash
+        run: |
+          set -euo pipefail
+          git rm .github/workflows/patch-au-pass-a-terminology.yml
+          git commit -m "Remove temporary Pass A terminology workflow"
+          git push origin HEAD:editorial/american-united-pass-a-accuracy-hotfix-20261120
