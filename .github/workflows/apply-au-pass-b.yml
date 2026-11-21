@@ -22,16 +22,34 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          head -c 4000 .github/tmp/au-pass-b/apply.py.gz.b64 | tr -d '\r\n' > /tmp/apply.b64
           cat \
+            .github/tmp/au-pass-b/apply.py.gz.b64 \
             .github/tmp/au-pass-b/part-001.b64 \
             .github/tmp/au-pass-b/part-002.b64 \
             .github/tmp/au-pass-b/part-003.b64 \
             .github/tmp/au-pass-b/part-004.b64 \
-            | tr -d '\r\n' >> /tmp/apply.b64
+            | tr -d '\r\n' > /tmp/apply.b64
           test "$(wc -c < /tmp/apply.b64)" -eq 16232
           base64 -d /tmp/apply.b64 | gzip -d > /tmp/apply.py
           echo '3453D54A64B1E5A1AEBAFFD79AEAAEC0DCF1834ABC5770D8CDC64A5501B2A3E4  /tmp/apply.py' | sha256sum -c -
+          python - <<'PY'
+          from pathlib import Path
+          path = Path('/tmp/apply.py')
+          text = path.read_text(encoding='utf-8')
+          old = '''    for marker in re.findall(r"\\[(?:S|R)\\d+\\]", rows):
+        if marker in text:
+            stop(f"{label}: duplicate marker {marker}")
+'''
+          new = '''    source_block = text[start:end]
+    for marker in re.findall(r"\\[(?:S|R)\\d+\\]", rows):
+        if f">{marker}<" in source_block:
+            stop(f"{label}: duplicate source row {marker}")
+'''
+          if text.count(old) != 1:
+              raise SystemExit(f'STOP: source-row validator patch expected once, found {text.count(old)}')
+          path.write_text(text.replace(old, new, 1), encoding='utf-8')
+          PY
+          echo '7BF30DDB790597588769D13F0D43BE809E7B77BA3350002D6ABF60FE65F387B9  /tmp/apply.py' | sha256sum -c -
           python /tmp/apply.py
 
       - name: Remove temporary Pass B files
