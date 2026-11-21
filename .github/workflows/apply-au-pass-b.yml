@@ -22,7 +22,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          cp .github/tmp/au-pass-b/apply.py.gz.b64 /tmp/apply.b64
+          tr -d '\r\n' < .github/tmp/au-pass-b/apply.py.gz.b64 > /tmp/apply.b64
           echo '1471DC1F6D2ADC52DCE99F82B9705ABAAB4300A27BB1EAA68B941357C93CDCC6  /tmp/apply.b64' | sha256sum -c -
           base64 -d /tmp/apply.b64 | gzip -d > /tmp/apply.py
           echo '3453D54A64B1E5A1AEBAFFD79AEAAEC0DCF1834ABC5770D8CDC64A5501B2A3E4  /tmp/apply.py' | sha256sum -c -
