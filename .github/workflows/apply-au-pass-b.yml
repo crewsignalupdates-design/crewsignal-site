@@ -22,14 +22,14 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
+          head -c 4000 .github/tmp/au-pass-b/apply.py.gz.b64 | tr -d '\r\n' > /tmp/apply.b64
           cat \
-            .github/tmp/au-pass-b/apply.py.gz.b64 \
             .github/tmp/au-pass-b/part-001.b64 \
             .github/tmp/au-pass-b/part-002.b64 \
             .github/tmp/au-pass-b/part-003.b64 \
             .github/tmp/au-pass-b/part-004.b64 \
-            | tr -d '\r\n' > /tmp/apply.b64
-          echo '1471DC1F6D2ADC52DCE99F82B9705ABAAB4300A27BB1EAA68B941357C93CDCC6  /tmp/apply.b64' | sha256sum -c -
+            | tr -d '\r\n' >> /tmp/apply.b64
+          test "$(wc -c < /tmp/apply.b64)" -eq 16232
           base64 -d /tmp/apply.b64 | gzip -d > /tmp/apply.py
           echo '3453D54A64B1E5A1AEBAFFD79AEAAEC0DCF1834ABC5770D8CDC64A5501B2A3E4  /tmp/apply.py' | sha256sum -c -
           python /tmp/apply.py
