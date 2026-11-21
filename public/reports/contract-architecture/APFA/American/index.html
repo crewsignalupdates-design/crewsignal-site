@@ -5,6 +5,11 @@
   <title>APFA · American Airlines · Contract Architecture Analysis · CrewSignal</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="/assets/css/main.css" />
+  <style>
+    .cs-scorecard__sources { display:block; margin-top:.4rem; font-size:.92rem; line-height:1.55 }
+    .cs-scorecard__sources a { text-underline-offset:.15em }
+    .cs-scorecard__sources a:focus-visible { outline:2px solid currentColor; outline-offset:2px }
+  </style>
 </head>
 
 <body>
@@ -26,6 +31,7 @@
     <section class="cs-report__section" id="current-agreement-sources">
       <div class="key-box">
         <strong>Current agreement sources:</strong>
+        <span class="cs-note">For the latest applicable text, amendments and implementation notices, consult APFA's official electronic contract library.</span>
         <a href="https://www.apfa.org/wp-content/uploads/2024/07/2024-CBA_121724.pdf" rel="noopener noreferrer" target="_blank">American/APFA 2024–2029 CBA (official APFA PDF)</a>
         &nbsp;·&nbsp;
         <a href="/reports/contract-architecture/APFA/American/contract/American_APFA_CBA_2024-2029.pdf">CrewSignal preserved CBA copy</a>
@@ -37,6 +43,7 @@
     <!-- 1. Agreement Metadata -->
     <section class="cs-report__section" id="agreement-metadata">
       <h2>Agreement Metadata</h2>
+      <p class="cs-note" id="american-quick-read"><strong>At a glance:</strong> American's 2024 agreement pairs substantial pay and scheduling provisions with a complex grievance and implementation structure. Lineholders have a 71-hour guarantee and Reserves 75 hours, subject to contract adjustments; qualifying after-report scheduling violations have an express extra-pay rule. <a href="#standardized-scorecard">See the six-domain scorecard</a> or <a href="/reports/contract-architecture/comparisons/enforcement-power/#american-evidence">examine the employer-accountability provisions</a>.</p>
 
       <p>
         This agreement reflects a mature, legacy-carrier bargaining environment with extensive operational scale
@@ -85,8 +92,9 @@
       </p>
 
       <p class="cs-note">
-        <strong>Analytical lens:</strong> Protections exist, but they often rely on post-violation correction rather
-        than pre-violation constraint.
+        <strong>Practical distinction:</strong> Involuntary assignment and rescheduling procedures impose
+        defined limits; Section 10.T.3 adds a payment consequence for certain qualifying violations.
+        Whether an employee qualifies depends on the specific facts and exclusions.
       </p>
     </section>
 
@@ -116,19 +124,23 @@
       <h2>Enforcement &amp; Dispute Resolution Architecture</h2>
 
       <p>
-        The enforcement system is formal and detailed, with defined grievance steps and access to arbitration.
-        However, deterrence is structurally limited. Timelines exist, but consequences for delay are modest, and
-        meaningful relief frequently arrives only after extended processing.
+        The agreement provides an informal dispute and grievance process, with specified filing and conference
+        deadlines, as well as final and binding System Board decisions. Its provisions do not create a
+        universal payment for every contract violation. They do, however, include a specific additional-pay
+        remedy in Section 10.T.3 for qualifying violations after report.
       </p>
 
       <p>
-        Interim remedies are rare, and the burden of initiation, persistence, and proof often rests on the
-        individual flight attendant. In practice, delay and ambiguity can advantage management.
+        A Notice of Dispute or Contract Dispute generally must be filed within twenty days, excluding
+        Saturdays and Sundays, after the employee becomes aware of the matter. The grievance process
+        and the contractual payment rule should be assessed separately: a stated premium does not establish
+        that a disputed violation was adjudicated or that affected employees received payment.
       </p>
 
       <p class="cs-note">
-        <strong>Structural asymmetry:</strong> Enforcement inertia disproportionately affects employees, while
-        management benefits from procedural delay.
+        <strong>Remedy distinction:</strong> Section 10.T.3 provides an express additional-pay remedy for
+        qualifying after-report violations. Other disputes may require proceedings under Sections 30 and 31;
+        the actual recovery and compliance record must be established separately.
       </p>
     </section>
 
@@ -162,35 +174,65 @@
             </tr>
           </thead>
           <tbody>
-            <tr>
+            <tr id="american-scheduling-score">
               <td>Scheduling Protections</td>
               <td class="cs-table__score"><strong>4.0</strong></td>
-              <td>Robust framework, softened by operational exceptions</td>
+              <td>PBS construction, assignment priorities and rescheduling procedures constrain changes. Exceptions, correction procedures and the separate after-report violation-pay clause affect the actual protection.
+                <span class="cs-scorecard__sources">Source clauses:
+                  <a href="https://www.apfa.org/wp-content/uploads/2024/12/2024-CBA_120524_Section10.pdf#page=1">CBA §10.A, scheduling committee</a> &middot; <a href="https://www.apfa.org/wp-content/uploads/2024/12/2024-CBA_120524_Section10.pdf#page=26">CBA §§10.I–J, involuntary assignment and rescheduling</a> &middot; <a href="https://www.apfa.org/wp-content/uploads/2024/12/2024-CBA_120524_Section10.pdf#page=42">CBA §10.T.3, after-report remedy</a> &middot; <a href="https://www.apfa.org/wp-content/uploads/2024/12/2024-CBA_120524_Section12.pdf#page=20">CBA §12.O, assignment order</a>.
+                  <a href="/reports/contract-architecture/comparisons/scheduling-protections/#american-evidence">Compare this domain and inspect the provisions</a>.
+                </span>
+              </td>
             </tr>
-            <tr>
+            <tr id="american-pay-score">
               <td>Pay &amp; Credit Quality</td>
               <td class="cs-table__score"><strong>4.5</strong></td>
-              <td>Strong rigs and premiums; some protections are conditional</td>
+              <td>Lineholders have a 71-hour minimum monthly guarantee and Reserves a 75-hour guarantee, subject to adjustments. Boarding pay is 50% of the hourly rate for pay only; duty, trip and sit rigs carry separate rules.
+                <span class="cs-scorecard__sources">Source clauses:
+                  <a href="https://www.apfa.org/wp-content/uploads/2024/12/2024-CBA_120524_Section03.pdf#page=1">CBA §§3.B,D, guarantees and boarding</a> &middot; <a href="https://www.apfa.org/wp-content/uploads/2024/12/2024-CBA_120524_Section11.pdf#page=2">CBA §11.D, duty and trip rigs</a> &middot; <a href="https://www.apfa.org/wp-content/uploads/2024/12/2024-CBA_120524_Section11.pdf#page=3">CBA §11.D.6, sit rig</a>.
+                  <a href="/reports/contract-architecture/comparisons/pay-credit-quality/#american-evidence">Compare this domain and inspect the provisions</a>.
+                </span>
+              </td>
             </tr>
-            <tr>
+            <tr id="american-work-rules-score">
               <td>Work Rules &amp; Quality-of-Life</td>
               <td class="cs-table__score"><strong>4.0</strong></td>
-              <td>Broad coverage with uneven enforceability</td>
+              <td>Vacation, sick leave, rest and Reserve days-off rules provide distinct protections. Eligibility conditions and exceptions determine when those protections apply; awarded vacation may not be cancelled by the Company.
+                <span class="cs-scorecard__sources">Source clauses:
+                  <a href="https://www.apfa.org/wp-content/uploads/2024/12/2024-CBA_120524_Section08.pdf#page=6">CBA §8.J.4, awarded vacation</a> &middot; <a href="https://www.apfa.org/wp-content/uploads/2024/12/2024-CBA_120524_Section09.pdf#page=1">CBA §9.C, sick accrual</a> &middot; <a href="https://www.apfa.org/wp-content/uploads/2024/12/2024-CBA_120524_Section11.pdf#page=1">CBA §11.C, time free of duty</a> &middot; <a href="https://www.apfa.org/wp-content/uploads/2024/12/2024-CBA_120524_Section12.pdf#page=1">CBA §12.A, Reserve days off</a>.
+                  <a href="/reports/contract-architecture/comparisons/work-rules-quality-of-life/#american-evidence">Compare this domain and inspect the provisions</a>.
+                </span>
+              </td>
             </tr>
-            <tr>
+            <tr id="american-discretion-score">
               <td>Company Discretion Constraint</td>
               <td class="cs-table__score"><strong>3.0</strong></td>
-              <td>Procedural limits exceed substantive constraints</td>
+              <td>Rescheduling and involuntary-assignment authority is bounded by stated priorities, eligibility and pay protections. Certain errors after report trigger additional pay; other exceptions preserve management flexibility.
+                <span class="cs-scorecard__sources">Source clauses:
+                  <a href="https://www.apfa.org/wp-content/uploads/2024/12/2024-CBA_120524_Section10.pdf#page=26">CBA §§10.I–J, assignment and rescheduling</a> &middot; <a href="https://www.apfa.org/wp-content/uploads/2024/12/2024-CBA_120524_Section10.pdf#page=42">CBA §10.T.3, qualifying violation payment</a> &middot; <a href="https://www.apfa.org/wp-content/uploads/2024/12/2024-CBA_120524_Section12.pdf#page=20">CBA §12.O, assignment priority</a> &middot; <a href="https://www.apfa.org/wp-content/uploads/2024/12/2024-CBA_120524_Section01.pdf#page=3">CBA §1.H, expedited scope remedy</a>.
+                  <a href="/reports/contract-architecture/comparisons/company-discretion-constraint/#american-evidence">Compare this domain and inspect the provisions</a>.
+                </span>
+              </td>
             </tr>
-            <tr>
+            <tr id="american-enforcement-score">
               <td>Enforcement Power</td>
               <td class="cs-table__score"><strong>2.5</strong></td>
-              <td>Formal access exists; remedies are slow and weakly deterrent</td>
+              <td>The agreement provides an employee dispute process, a System Board with binding awards, and an expedited scope route. Section 10.T.3 separately prices certain after-report violations. Financial recovery and compliance still require case-specific evidence.
+                <span class="cs-scorecard__sources">Source clauses:
+                  <a href="https://www.apfa.org/wp-content/uploads/2024/12/2024-CBA_120524_Section30.pdf#page=2">CBA §30.A, dispute and filing steps</a> &middot; <a href="https://www.apfa.org/wp-content/uploads/2024/12/2024-CBA_120524_Section31.pdf#page=2">CBA §31.C, binding decisions</a> &middot; <a href="https://www.apfa.org/wp-content/uploads/2024/12/2024-CBA_120524_Section10.pdf#page=42">CBA §10.T.3, additional pay</a> &middot; <a href="https://www.apfa.org/wp-content/uploads/2024/12/2024-CBA_120524_Section01.pdf#page=3">CBA §1.H, scope arbitration</a>.
+                  <a href="/reports/contract-architecture/comparisons/enforcement-power/#american-evidence">Compare this domain and inspect the provisions</a>.
+                </span>
+              </td>
             </tr>
-            <tr>
+            <tr id="american-clarity-score">
               <td>Clarity &amp; Modularity</td>
               <td class="cs-table__score"><strong>2.5</strong></td>
-              <td>Dense, cross-referenced, exception-heavy architecture</td>
+              <td>The agreement uses detailed definitions and many interdependent scheduling and pay rules. Its separately published amendments and phased implementation terms make the applicable version and effective date important.
+                <span class="cs-scorecard__sources">Source clauses:
+                  <a href="https://www.apfa.org/wp-content/uploads/2024/12/2024-CBA_120524_Section02.pdf#page=1">CBA §2, definitions</a> &middot; <a href="https://www.apfa.org/wp-content/uploads/2024/12/2024-CBA_120524_Section10.pdf#page=1">CBA §10, scheduling</a> &middot; <a href="https://www.apfa.org/wp-content/uploads/2024/12/2024-CBA_120524_Section39.pdf#page=1">CBA §39, amendments</a> &middot; <a href="https://www.apfa.org/contract/">APFA contract and updates</a>.
+                  <a href="/reports/contract-architecture/comparisons/clarity-modularity/#american-evidence">Compare this domain and inspect the provisions</a>.
+                </span>
+              </td>
             </tr>
           </tbody>
           <tfoot>
@@ -209,9 +251,11 @@
       <h2>Context Notes</h2>
 
       <p>
-        This score reflects contract architecture and enforceability characteristics within a large,
-        post-merger legacy carrier environment. It does not measure bargaining intent or effort, but rather
-        the structural strength and reliability of negotiated protections as written.
+        These six values preserve CrewSignal's previously published structural assessment of the
+        2024 agreement, totaling 20.5 out of 30. The linked clauses explain important entitlements and
+        limits but do not constitute a newly calibrated numerical evaluation. Subsequent amendments,
+        effective dates, and actual grievance outcomes should be verified independently before drawing
+        conclusions about representation effectiveness.
       </p>
     </section>
 
