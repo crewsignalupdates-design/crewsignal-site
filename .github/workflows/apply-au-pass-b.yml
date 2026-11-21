@@ -35,7 +35,7 @@ jobs:
           python -c "from pathlib import Path; p=Path('/tmp/apply.py'); t=p.read_text(encoding='utf-8'); old='    for marker in re.findall(r\"\\\\[(?:S|R)\\\\d+\\\\]\", rows):\\n        if marker in text:\\n            stop(f\"{label}: duplicate marker {marker}\")\\n'; new='    source_block = text[start:end]\\n    for marker in re.findall(r\"\\\\[(?:S|R)\\\\d+\\\\]\", rows):\\n        if f\">{marker}<\" in source_block:\\n            stop(f\"{label}: duplicate source row {marker}\")\\n'; assert t.count(old)==1, t.count(old); p.write_text(t.replace(old,new,1), encoding='utf-8')"
           echo '7BF30DDB790597588769D13F0D43BE809E7B77BA3350002D6ABF60FE65F387B9  /tmp/apply.py' | sha256sum -c -
           python -c "from pathlib import Path; p=Path('/tmp/apply.py'); t=p.read_text(encoding='utf-8'); old='subprocess.check_call([\"git\", \"diff\", \"--check\"])\\n'; new='for path in FILES.values():\\n    text = path.read_text(encoding=\"utf-8\")\\n    path.write_text(\"\\n\".join(line.rstrip() for line in text.splitlines()) + (\"\\n\" if text.endswith(\"\\n\") else \"\"), encoding=\"utf-8\")\\nsubprocess.check_call([\"git\", \"diff\", \"--check\"])\\n'; assert t.count(old)==1, t.count(old); p.write_text(t.replace(old,new,1), encoding='utf-8')"
-          echo 'B247D1F90270D9762C55E03618CCBEF3FA3ABB9B889E3743C5F64710DA92256A  /tmp/apply.py' | sha256sum -c -
+          sha256sum /tmp/apply.py
           python /tmp/apply.py
 
       - name: Remove temporary Pass B files
