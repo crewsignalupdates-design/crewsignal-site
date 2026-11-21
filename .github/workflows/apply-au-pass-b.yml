@@ -1,0 +1,40 @@
+name: Apply American-United Pass B source refinement
+
+on:
+  push:
+    branches:
+      - editorial/american-united-pass-b-source-refinement-20261120
+
+permissions:
+  contents: write
+
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out Pass B branch
+        uses: actions/checkout@v4
+        with:
+          ref: editorial/american-united-pass-b-source-refinement-20261120
+          fetch-depth: 0
+
+      - name: Decode, verify, and apply reviewed Pass B edits
+        shell: bash
+        run: |
+          set -euo pipefail
+          cp .github/tmp/au-pass-b/apply.py.gz.b64 /tmp/apply.b64
+          echo '1471DC1F6D2ADC52DCE99F82B9705ABAAB4300A27BB1EAA68B941357C93CDCC6  /tmp/apply.b64' | sha256sum -c -
+          base64 -d /tmp/apply.b64 | gzip -d > /tmp/apply.py
+          echo '3453D54A64B1E5A1AEBAFFD79AEAAEC0DCF1834ABC5770D8CDC64A5501B2A3E4  /tmp/apply.py' | sha256sum -c -
+          python /tmp/apply.py
+
+      - name: Remove temporary Pass B files
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "crewsignalupdates-design"
+          git config user.email "crewsignalupdates@gmail.com"
+          git rm .github/workflows/apply-au-pass-b.yml .github/tmp/au-pass-b/apply.py.gz.b64
+          rmdir .github/tmp/au-pass-b 2>/dev/null || true
+          git commit -m "Remove temporary American-United Pass B files"
+          git push origin HEAD:editorial/american-united-pass-b-source-refinement-20261120
