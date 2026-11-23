@@ -5,10 +5,11 @@
   <title>CWA-AFA · Mesa Airlines · Contract Architecture Analysis · CrewSignal</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="/assets/css/main.css" />
+  <link rel="stylesheet" href="/assets/css/contract-architecture-carrier.css" />
 </head>
 
 <body>
-  <article class="cs-report" id="contract-architecture-cwa-afa-mesa-airlines">
+  <article class="cs-report cs-contract-carrier" id="contract-architecture-cwa-afa-mesa-airlines">
 
     <!-- Header / Nav -->
     <header class="cs-report__header">
@@ -19,13 +20,15 @@
       <h1 class="cs-report__title">CWA-AFA · Mesa Airlines</h1>
       <p class="cs-report__dek">
         Contract Architecture Analysis<br />
-        <span class="cs-report__dates">Effective Period: October 12, 2025 – October 12, 2027</span><br />
+        <span class="cs-report__dates">Historical Mesa-only contract: October 12, 2025 – October 12, 2027; successor JCBA ratified January 2026</span><br />
       </p>
     </header>
+<main class="cs-report__main"><section class="cs-report__section" id="key-documents"><h2 class="cs-report__section-title">Key Documents</h2><ul class="cs-report__list"><li><a href="/reports/contract-architecture/CWA-AFA/mesa/contract/mesa-airlines-2025-2027.pdf">Preserved agreement</a></li><li><a href="https://afacwa.org/mesa-and-republic-flight-attendants-ratify-jcba/">Republic/Mesa JCBA ratification</a></li></ul><p class="cs-note">Historical Mesa-only 2025 agreement: the Republic/Mesa combined JCBA was ratified in January 2026. The 20.2 score does not evaluate the joint successor.</p></section>
+
 
     <!-- 1. Agreement Metadata -->
     <section class="cs-report__section" id="agreement-metadata">
-      <h2>Agreement Metadata</h2>
+      <h2 class="cs-report__section-title">Agreement Metadata</h2><p class="cs-note" id="mesa-quick-read"><strong>At a glance:</strong> Historical Mesa-only 2025 agreement: the Republic/Mesa combined JCBA was ratified in January 2026. The 20.2 score does not evaluate the joint successor. <a href="#standardized-contract-scorecard">See the scorecard</a>.</p>
 
       <p>
         This agreement governs Mesa Airlines Flight Attendants under the Railway Labor Act and is structured as a
@@ -39,7 +42,7 @@
 
     <!-- 2. Contract Architecture Overview -->
     <section class="cs-report__section" id="contract-architecture-overview">
-      <h2>Contract Architecture Overview</h2>
+      <h2 class="cs-report__section-title">Contract Architecture Overview</h2>
 
       <p>
         Mesa’s contract is architected as an operating system: it relies on dense definitions, explicit timelines,
@@ -61,7 +64,7 @@
 
     <!-- 3. Scheduling & Assignment Framework -->
     <section class="cs-report__section" id="scheduling-and-assignment-framework">
-      <h2>Scheduling &amp; Assignment Framework</h2>
+      <h2 class="cs-report__section-title">Scheduling &amp; Assignment Framework</h2>
 
       <p>
         Scheduling is layered: PBS constructs and awards monthly lines, known absences are applied pre-bid, and a
@@ -83,7 +86,7 @@
 
     <!-- 4. Economic Structure -->
     <section class="cs-report__section" id="economic-structure">
-      <h2>Economic Structure</h2>
+      <h2 class="cs-report__section-title">Economic Structure</h2>
 
       <p>
         The economic architecture emphasizes auditability: Flight Attendants are paid the greater of actual or scheduled
@@ -106,7 +109,7 @@
 
     <!-- 5. Enforcement & Dispute Resolution Architecture -->
     <section class="cs-report__section" id="enforcement-and-dispute-resolution-architecture">
-      <h2>Enforcement &amp; Dispute Resolution Architecture</h2>
+      <h2 class="cs-report__section-title">Enforcement &amp; Dispute Resolution Architecture</h2>
 
       <p>
         Enforcement follows a conventional grievance pathway with defined filing windows, monthly hearing cadence, written
@@ -128,7 +131,7 @@
 
     <!-- 6. Structural Strengths, Weaknesses & Comparative Flags -->
     <section class="cs-report__section" id="structural-strengths-weaknesses-and-comparative-flags">
-      <h2>Structural Strengths, Weaknesses &amp; Comparative Flags</h2>
+      <h2 class="cs-report__section-title">Structural Strengths, Weaknesses &amp; Comparative Flags</h2>
 
       <p>
         Mesa’s core strength is procedural completeness: the agreement specifies a full scheduling stack (PBS, SAP, enhancement
@@ -146,7 +149,7 @@
 
     <!-- 7. Standardized Contract Scorecard -->
     <section class="cs-report__section" id="standardized-contract-scorecard">
-      <h2>Standardized Contract Scorecard</h2>
+      <h2 class="cs-report__section-title">Standardized Contract Scorecard</h2>
 
       <table class="cs-table">
         <thead>
@@ -157,48 +160,48 @@
           </tr>
         </thead>
         <tbody>
-          <tr>
+<tr id="carrier-score-scheduling-protections">
             <td>Scheduling Protections</td>
             <td>3.6</td>
-            <td>Systemized rules (PBS/SAP/enhancement/reserve), but outcomes are process-dependent in IROPs</td>
+            <td>Systemized rules (PBS/SAP/enhancement/reserve), but outcomes are process-dependent in IROPs<span class="cs-scorecard__sources"><a href="/reports/contract-architecture/CWA-AFA/mesa/contract/mesa-airlines-2025-2027.pdf">Read Mesa-only scheduling</a>; <a href="/reports/contract-architecture/comparisons/scheduling-protections/#carrier-mesa">compare this domain</a>.</span></td>
           </tr>
-          <tr>
+<tr id="carrier-score-pay-credit-quality">
             <td>Pay &amp; Credit Quality</td>
             <td>3.7</td>
-            <td>Auditable “greater-of” drivers and defined premiums; intersecting guarantees reduce transparency</td>
+            <td>Auditable “greater-of” drivers and defined premiums; intersecting guarantees reduce transparency<span class="cs-scorecard__sources"><a href="/reports/contract-architecture/CWA-AFA/mesa/contract/mesa-airlines-2025-2027.pdf">Read Mesa-only compensation</a>; <a href="/reports/contract-architecture/comparisons/pay-credit-quality/#carrier-mesa">compare this domain</a>.</span></td>
           </tr>
-          <tr>
+<tr id="carrier-score-work-rules-quality-of-life">
             <td>Work Rules &amp; Quality-of-Life</td>
             <td>3.3</td>
-            <td>Strong structure (days off, legality limits, hotel/per diem rules), but exceptions drive edge cases</td>
+            <td>Strong structure (days off, legality limits, hotel/per diem rules), but exceptions drive edge cases<span class="cs-scorecard__sources"><a href="/reports/contract-architecture/CWA-AFA/mesa/contract/mesa-airlines-2025-2027.pdf">Read Mesa-only work rules</a>; <a href="/reports/contract-architecture/comparisons/work-rules-quality-of-life/#carrier-mesa">compare this domain</a>.</span></td>
           </tr>
-          <tr>
+<tr id="carrier-score-company-discretion-constraint">
             <td>Company Discretion Constraint</td>
             <td>3.0</td>
-            <td>Scope/successorship constraints are meaningful; management rights still controls residual discretion</td>
+            <td>Scope/successorship constraints are meaningful; management rights still controls residual discretion<span class="cs-scorecard__sources"><a href="/reports/contract-architecture/CWA-AFA/mesa/contract/mesa-airlines-2025-2027.pdf">Read Mesa-only scope and seniority</a>; <a href="/reports/contract-architecture/comparisons/company-discretion-constraint/#carrier-mesa">compare this domain</a>.</span></td>
           </tr>
-          <tr>
+<tr id="carrier-score-enforcement-power">
             <td>Enforcement Power</td>
             <td>3.2</td>
-            <td>Time-limited grievance/SBA with expedited scope arbitration; remedies are largely retrospective</td>
+            <td>Time-limited grievance/SBA with expedited scope arbitration; remedies are largely retrospective<span class="cs-scorecard__sources"><a href="/reports/contract-architecture/CWA-AFA/mesa/contract/mesa-airlines-2025-2027.pdf">Read Mesa-only grievances</a>; <a href="/reports/contract-architecture/comparisons/enforcement-power/#carrier-mesa">compare this domain</a>.</span></td>
           </tr>
-          <tr>
+<tr id="carrier-score-clarity-modularity">
             <td>Clarity &amp; Modularity</td>
             <td>3.4</td>
-            <td>Highly modular subsystems; density and procedural branching raise cognitive load</td>
+            <td>Highly modular subsystems; density and procedural branching raise cognitive load<span class="cs-scorecard__sources"><a href="/reports/contract-architecture/CWA-AFA/mesa/contract/mesa-airlines-2025-2027.pdf">Read Mesa-only definitions and term</a>; <a href="/reports/contract-architecture/comparisons/clarity-modularity/#carrier-mesa">compare this domain</a>.</span></td>
           </tr>
-          <tr>
+<tr>
             <td><strong>Total</strong></td>
             <td><strong>20.2</strong></td>
             <td><strong>out of 30</strong></td>
           </tr>
-        </tbody>
+</tbody>
       </table>
     </section>
 
     <!-- 8. Context Notes -->
     <section class="cs-report__section" id="context-notes">
-      <h2>Context Notes</h2>
+      <h2 class="cs-report__section-title">Context Notes</h2>
 
       <p>
         This score reflects contract architecture and enforceability characteristics within a regional-carrier operating environment.
@@ -207,7 +210,8 @@
     </section>
 
     <!-- Footer -->
-    <footer class="cs-report__footer">
+    </main>
+<footer class="cs-report__footer">
       <p class="cs-muted">
         CrewSignal · Contract Architecture &amp; Comparative Analysis
       </p>

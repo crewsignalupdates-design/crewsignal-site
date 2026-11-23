@@ -5,9 +5,10 @@
   <title>CWA-AFA · Norse Atlantic Airways · Contract Architecture Analysis · CrewSignal</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="/assets/css/main.css" />
+  <link rel="stylesheet" href="/assets/css/contract-architecture-carrier.css" />
 </head>
 <body>
-  <article class="cs-report" id="cwa-afa-norse-atlantic-contract-architecture">
+  <article class="cs-report cs-contract-carrier" id="cwa-afa-norse-atlantic-contract-architecture">
     <header class="cs-report__header">
       <div class="cs-report__nav">
         <a class="cs-report__back" href="/reports/contract-architecture/">← Back to Contract Architecture</a>
@@ -19,14 +20,16 @@
 
 <p class="cs-report__dek">
   <span class="cs-report__dates">
-    Effective Period: November 22, 2022 – November 22, 2024<br />
-    <em>Amendable since November 22, 2024</em>
+    Former baseline: November 22, 2022 – November 22, 2024<br />Current successor: May 14, 2025 – May 14, 2028<br />
+    <em>Former baseline superseded</em>
   </span>
 </p>
  </header>
+<main class="cs-report__main"><section class="cs-report__section" id="key-documents"><h2 class="cs-report__section-title">Key Documents</h2><ul class="cs-report__list"><li><a href="/reports/contract-architecture/CWA-AFA/norse-atlantic/contract/norse-atlantic-airways-2025-2028.pdf">Preserved agreement</a></li><li><a href="/reports/contract-architecture/CWA-AFA/norse-atlantic/analysis/">2025 successor analysis</a></li></ul><p class="cs-note">The ratified May 2025–2028 Norse contract supersedes the 2022–2024 baseline. CrewSignal's already published 2025 analysis scores the successor 20.6 rather than 19.2.</p></section>
+
 
     <section class="cs-report__section" id="agreement-metadata">
-      <h2>Agreement Metadata</h2>
+      <h2 class="cs-report__section-title">Agreement Metadata</h2><p class="cs-note" id="norse-atlantic-quick-read"><strong>At a glance:</strong> The ratified May 2025–2028 Norse contract supersedes the 2022–2024 baseline. CrewSignal's already published 2025 analysis scores the successor 20.6 rather than 19.2. <a href="#standardized-contract-scorecard">See the scorecard</a>.</p>
 
       <ul>
         <li><strong>Carrier:</strong> Norse Atlantic Airways ASA / Norse Atlantic Airways AS</li>
@@ -43,7 +46,7 @@
     </section>
 
     <section class="cs-report__section" id="contract-architecture-overview">
-      <h2>Contract Architecture Overview</h2>
+      <h2 class="cs-report__section-title">Contract Architecture Overview</h2>
 
       <p class="cs-report__para">
         Norse Atlantic’s agreement reflects a bespoke arrangement that is not merely stylistic—it is the product of jurisdictional and operational constraints present at the time the U.S. operation was established. The contract is anchored in a three-layer governance environment: (1) U.S. labor law (RLA) governing representation, bargaining, and dispute resolution; (2) European aviation regulation (EASA) governing duty, rest, standby, and legality; and (3) company rostering and scheduling systems coordinating long-haul rotations, mixed active/passive duty, and cross-border positioning.
@@ -67,7 +70,7 @@
     </section>
 
     <section class="cs-report__section" id="scheduling-and-assignment-framework">
-      <h2>Scheduling &amp; Assignment Framework</h2>
+      <h2 class="cs-report__section-title">Scheduling &amp; Assignment Framework</h2>
 
       <p class="cs-report__para">
         Scheduling architecture is regulation-anchored: the Company must comply with applicable aviation authority regulations, and the agreement intervenes where it adds stricter terms, allocates responsibility, or supplies compensation. The contract explicitly assigns responsibility for schedule-change notifications to the Company and builds check-in protection logic around notice timing and positive contact standards.
@@ -87,7 +90,7 @@
     </section>
 
     <section class="cs-report__section" id="economic-structure">
-      <h2>Economic Structure</h2>
+      <h2 class="cs-report__section-title">Economic Structure</h2>
 
       <p class="cs-report__para">
         Norse’s economic architecture prioritizes predictability and auditability over premium-driven complexity. The core pay engine is block-hour compensation applied to both active and passive segments. A monthly guarantee supplies baseline income stability, with defined reductions for unpaid status. Add-on compensation is modular and narrowly defined (e.g., standby credit, training/meeting credit, holiday pay, bought day off, day-off encroachment pay, per diem).
@@ -103,7 +106,7 @@
     </section>
 
     <section class="cs-report__section" id="enforcement-and-dispute-resolution">
-      <h2>Enforcement &amp; Dispute Resolution Architecture</h2>
+      <h2 class="cs-report__section-title">Enforcement &amp; Dispute Resolution Architecture</h2>
 
       <p class="cs-report__para">
         Enforcement is built on a conventional RLA stack: a defined grievance procedure with timelines, representation standards, investigation rules, and escalation to a System Board of Adjustment. This provides formal completeness and procedural legibility, but remedies are generally retrospective and time-delayed, as is typical in grievance/arbitration systems.
@@ -119,7 +122,7 @@
     </section>
 
     <section class="cs-report__section" id="structural-strengths-weaknesses-flags">
-      <h2>Structural Strengths, Weaknesses &amp; Comparative Flags</h2>
+      <h2 class="cs-report__section-title">Structural Strengths, Weaknesses &amp; Comparative Flags</h2>
 
       <p class="cs-report__para">
         <strong>Structural strengths:</strong> Jurisdictional coherence across labor law and operational regulation; a direct-employment and scope posture uncommon among new entrants; day-off protection framed as a protected baseline; modular pay/credit design with a guarantee spine; and a formally complete RLA dispute-resolution stack.
@@ -135,7 +138,7 @@
     </section>
 
     <section class="cs-report__section" id="standardized-contract-scorecard">
-      <h2>Standardized Contract Scorecard</h2>
+      <h2 class="cs-report__section-title">Standardized Contract Scorecard</h2>
 
       <div class="cs-table cs-table--compact">
         <table>
@@ -147,59 +150,60 @@
             </tr>
           </thead>
           <tbody>
-            <tr>
+<tr id="carrier-score-scheduling-protections">
               <td>Scheduling Protections</td>
-              <td>3.4</td>
-              <td>Clear lineholder/reserve subsystems, but protections are procedure-driven and exception-sensitive</td>
+              <td>3.6</td>
+              <td>2025 roster transparency improved, but Reserve terms are still incomplete.<span class="cs-scorecard__sources"><a href="/reports/contract-architecture/CWA-AFA/norse-atlantic/contract/norse-atlantic-airways-2025-2028.pdf">Read Article 6 scheduling</a>; <a href="/reports/contract-architecture/comparisons/scheduling-protections/#carrier-norse-atlantic">compare this domain</a>.</span></td>
             </tr>
-            <tr>
+<tr id="carrier-score-pay-credit-quality">
               <td>Pay &amp; Credit Quality</td>
-              <td>3.3</td>
-              <td>Defined credit drivers improve auditability; edge cases rely on “greater-of” logic and non-duplication</td>
+              <td>3.9</td>
+              <td>2025 pay rates, per diem, non-flying credit and allowances improved.<span class="cs-scorecard__sources"><a href="/reports/contract-architecture/CWA-AFA/norse-atlantic/contract/norse-atlantic-airways-2025-2028.pdf">Read Article 3 compensation</a>; <a href="/reports/contract-architecture/comparisons/pay-credit-quality/#carrier-norse-atlantic">compare this domain</a>.</span></td>
             </tr>
-            <tr>
+<tr id="carrier-score-work-rules-quality-of-life">
               <td>Work Rules &amp; Quality-of-Life</td>
-              <td>3.2</td>
-              <td>Conventional long-haul protections with variable strength in irregular operations and reassignment scenarios</td>
+              <td>3.5</td>
+              <td>2025 hotel, rest and base-closure standards improved.<span class="cs-scorecard__sources"><a href="/reports/contract-architecture/CWA-AFA/norse-atlantic/contract/norse-atlantic-airways-2025-2028.pdf">Read Articles 4, 5 and 9 leave, hotel and vacation</a>; <a href="/reports/contract-architecture/comparisons/work-rules-quality-of-life/#carrier-norse-atlantic">compare this domain</a>.</span></td>
             </tr>
-            <tr>
+<tr id="carrier-score-company-discretion-constraint">
               <td>Company Discretion Constraint</td>
-              <td>2.8</td>
-              <td>Constraints tend to be procedural rather than substantive, leaving meaningful operational flexibility</td>
+              <td>3.0</td>
+              <td>Some limits improved; discretion remains substantial.<span class="cs-scorecard__sources"><a href="/reports/contract-architecture/CWA-AFA/norse-atlantic/contract/norse-atlantic-airways-2025-2028.pdf">Read Articles 1 and 14 scope and general rules</a>; <a href="/reports/contract-architecture/comparisons/company-discretion-constraint/#carrier-norse-atlantic">compare this domain</a>.</span></td>
             </tr>
-            <tr>
+<tr id="carrier-score-enforcement-power">
               <td>Enforcement Power</td>
               <td>2.9</td>
-              <td>Standard grievance/System Board pathway; remedies are corrective and time-delayed</td>
+              <td>Grievance/System Board remain mostly retrospective.<span class="cs-scorecard__sources"><a href="/reports/contract-architecture/CWA-AFA/norse-atlantic/contract/norse-atlantic-airways-2025-2028.pdf">Read Articles 16 and 17 grievance and Board</a>; <a href="/reports/contract-architecture/comparisons/enforcement-power/#carrier-norse-atlantic">compare this domain</a>.</span></td>
             </tr>
-            <tr>
+<tr id="carrier-score-clarity-modularity">
               <td>Clarity &amp; Modularity</td>
-              <td>3.6</td>
-              <td>Subsystem modularity reduces cognitive load and improves navigability relative to dense cross-referencing</td>
+              <td>3.7</td>
+              <td>More modular pay terms, with some unresolved ambiguity.<span class="cs-scorecard__sources"><a href="/reports/contract-architecture/CWA-AFA/norse-atlantic/contract/norse-atlantic-airways-2025-2028.pdf">Read Articles 2 and 22 definitions and duration</a>; <a href="/reports/contract-architecture/comparisons/clarity-modularity/#carrier-norse-atlantic">compare this domain</a>.</span></td>
             </tr>
-            <tr>
+<tr>
               <td><strong>Total</strong></td>
-              <td><strong>19.2</strong></td>
+              <td><strong>20.6</strong></td>
               <td><strong>out of 30</strong></td>
             </tr>
-          </tbody>
+</tbody>
         </table>
       </div>
 
       <p class="cs-report__para">
         Built from the Norse Atlantic Airways 2022–2024 agreement text and architecture.
       </p>
-    </section>
+    <p class="cs-note">The 19.2/30 score describes the prior agreement. The 20.6/30 score comes from <a href="/reports/contract-architecture/CWA-AFA/norse-atlantic/analysis/">CrewSignal's published 2025 successor analysis</a>, not a new recalculation.</p></section>
 
     <section class="cs-report__section" id="context-notes">
-      <h2>Context Notes</h2>
+      <h2 class="cs-report__section-title">Context Notes</h2>
 
       <p class="cs-report__para">
         This agreement is a high-signal example of cross-border contract architecture: it uses externally binding aviation regulation as the legality spine, and deploys the contract to allocate responsibilities, compensation, and enforceability under U.S. labor law. In that sense, its “shape” is intentionally different from domestic-only architectures.
       </p>
     </section>
 
-    <footer class="cs-report__footer">
+    </main>
+<footer class="cs-report__footer">
       <div class="cs-report__footer-text">CrewSignal · Contract Architecture &amp; Comparative Analysis</div>
     </footer>
   </article>
