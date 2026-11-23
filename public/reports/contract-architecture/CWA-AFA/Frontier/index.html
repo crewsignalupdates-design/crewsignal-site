@@ -5,15 +5,16 @@
   <title>CWA-AFA · Frontier Airlines · Contract Architecture Analysis · CrewSignal</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="/assets/css/main.css" />
+  <link rel="stylesheet" href="/assets/css/contract-architecture-carrier.css" />
 </head>
 
 <body>
-  <article class="cs-report" id="contract-architecture-cwa-afa-frontier">
+  <article class="cs-report cs-contract-carrier" id="contract-architecture-cwa-afa-frontier">
 
     <!-- Header / Nav -->
     <header class="cs-report__header">
       <div class="cs-report__nav">
-        <a class="cs-link cs-link--back" href="/reports/contract-architecture/">
+        <a class="cs-report__back" href="/reports/contract-architecture/">
           ← Back to Contract Architecture
         </a>
       </div>
@@ -27,10 +28,22 @@
         </span>
       </p>
     </header>
+    <main class="cs-report__main">
+    <section class="cs-report__section" id="key-documents">
+      <h2 class="cs-report__section-title">Key Documents</h2>
+      <ul class="cs-report__list">
+        <li class="cs-report__list-item"><a href="/reports/contract-architecture/CWA-AFA/Frontier/contract/Frontier_CWA-AFA_CBA_2019-2024.pdf">2019–2024 signed agreement</a></li>
+        <li class="cs-report__list-item"><a href="https://afafrontier.org/negotiations">Frontier CWA-AFA bargaining updates</a></li>
+      </ul>
+      <p class="cs-note">2019–2024 agreement remains the documented bargaining baseline. Contract amendable May 2024; mediated successor negotiations were ongoing in November 2026. Negotiating proposals are not ratified rights.</p>
+    </section>
+
 
     <!-- 1. Agreement Metadata -->
     <section class="cs-report__section" id="agreement-metadata">
-      <h2>Agreement Metadata</h2>
+      <h2 class="cs-report__section-title">Agreement Metadata</h2>
+      <p class="cs-note" id="frontier-quick-read"><strong>At a glance:</strong> Detailed PBS and Reserve rules place procedural limits on assignments, alongside Company adjustment pathways and defined grievance/arbitration procedures. The original 23.0/30 score is retained. <a href="#standardized-scorecard">See the six-domain scorecard</a>.</p>
+
 
       <p>
         Frontier’s 2019–2024 agreement is a modern “systems contract” built around defined scheduling logic,
@@ -46,7 +59,7 @@
 
     <!-- 2. Contract Architecture Overview -->
     <section class="cs-report__section" id="contract-architecture-overview">
-      <h2>Contract Architecture Overview</h2>
+      <h2 class="cs-report__section-title">Contract Architecture Overview</h2>
 
       <p>
         Structurally, this agreement is highly modular: it separates Compensation, Hours of Service (crew legality),
@@ -69,7 +82,7 @@
 
     <!-- 3. Scheduling & Assignment Framework -->
     <section class="cs-report__section" id="scheduling-and-assignment">
-      <h2>Scheduling &amp; Assignment Framework</h2>
+      <h2 class="cs-report__section-title">Scheduling &amp; Assignment Framework</h2>
 
       <p>
         Scheduling design is one of Frontier’s strongest features. The agreement formalizes PBS bidding, bid-period
@@ -91,7 +104,7 @@
 
     <!-- 4. Economic Structure -->
     <section class="cs-report__section" id="economic-structure">
-      <h2>Economic Structure</h2>
+      <h2 class="cs-report__section-title">Economic Structure</h2>
 
       <p>
         Frontier’s economic model combines hourly pay with a substantial rig framework and premium-based deterrence.
@@ -113,7 +126,7 @@
 
     <!-- 5. Enforcement & Dispute Resolution -->
     <section class="cs-report__section" id="enforcement-and-dispute-resolution">
-      <h2>Enforcement &amp; Dispute Resolution Architecture</h2>
+      <h2 class="cs-report__section-title">Enforcement &amp; Dispute Resolution Architecture</h2>
 
       <p>
         Enforcement architecture is formally complete: a defined grievance procedure with investigations/discipline standards,
@@ -134,7 +147,7 @@
 
     <!-- 6. Strengths / Weaknesses / Comparative Flags -->
     <section class="cs-report__section" id="strengths-weaknesses-flags">
-      <h2>Structural Strengths, Weaknesses &amp; Comparative Flags</h2>
+      <h2 class="cs-report__section-title">Structural Strengths, Weaknesses &amp; Comparative Flags</h2>
 
       <p>
         Frontier’s agreement is a strong example of “enforceability by visibility”: union access to scheduling systems,
@@ -155,7 +168,7 @@
 
     <!-- 7. Standardized Contract Scorecard -->
     <section class="cs-report__section" id="standardized-scorecard">
-      <h2>Standardized Contract Scorecard</h2>
+      <h2 class="cs-report__section-title">Standardized Contract Scorecard</h2>
 
       <div class="cs-table-wrap">
         <table class="cs-table">
@@ -168,35 +181,35 @@
           </thead>
 
           <tbody>
-            <tr>
+            <tr id="carrier-score-scheduling-protections">
               <td>Scheduling Protections</td>
               <td class="cs-table__score"><strong>4.3</strong></td>
-              <td>PBS + defined reschedule/reroute/AVA rails; strong transparency and recorded-call evidence stack</td>
+              <td>PBS + defined reschedule/reroute/AVA rails; strong transparency and recorded-call evidence stack <span class="cs-scorecard__sources">Read the controlling text: <a href="/reports/contract-architecture/CWA-AFA/Frontier/contract/Frontier_CWA-AFA_CBA_2019-2024.pdf#page=28">Articles 5–6: Scheduling and Reserve</a>. <a href="/reports/contract-architecture/comparisons/scheduling-protections/#carrier-frontier">Compare this domain</a>.</span></td>
             </tr>
-            <tr>
+            <tr id="carrier-score-pay-credit-quality">
               <td>Pay &amp; Credit Quality</td>
               <td class="cs-table__score"><strong>4.1</strong></td>
-              <td>Strong rigs (avg min duty, trip rig) and deterrence premiums (PAF double time, JA 200%)</td>
+              <td>Strong rigs (avg min duty, trip rig) and deterrence premiums (PAF double time, JA 200%) <span class="cs-scorecard__sources">Read the controlling text: <a href="/reports/contract-architecture/CWA-AFA/Frontier/contract/Frontier_CWA-AFA_CBA_2019-2024.pdf">Article 3: Compensation</a>. <a href="/reports/contract-architecture/comparisons/pay-credit-quality/#carrier-frontier">Compare this domain</a>.</span></td>
             </tr>
-            <tr>
+            <tr id="carrier-score-work-rules-quality-of-life">
               <td>Work Rules &amp; Quality-of-Life</td>
               <td class="cs-table__score"><strong>3.9</strong></td>
-              <td>Solid hotel/commuter/rest constructs; fatigue language and process-dependence reduce net strength</td>
+              <td>Solid hotel/commuter/rest constructs; fatigue language and process-dependence reduce net strength <span class="cs-scorecard__sources">Read the controlling text: <a href="/reports/contract-architecture/CWA-AFA/Frontier/contract/Frontier_CWA-AFA_CBA_2019-2024.pdf">Articles 4, 8–9: rest, sick leave and vacation</a>. <a href="/reports/contract-architecture/comparisons/work-rules-quality-of-life/#carrier-frontier">Compare this domain</a>.</span></td>
             </tr>
-            <tr>
+            <tr id="carrier-score-company-discretion-constraint">
               <td>Company Discretion Constraint</td>
               <td class="cs-table__score"><strong>3.6</strong></td>
-              <td>Auditability + defined order-of-assignment constrain drift; DIO relief preserves flexibility in edge states</td>
+              <td>Auditability + defined order-of-assignment constrain drift; DIO relief preserves flexibility in edge states <span class="cs-scorecard__sources">Read the controlling text: <a href="/reports/contract-architecture/CWA-AFA/Frontier/contract/Frontier_CWA-AFA_CBA_2019-2024.pdf#page=123">Article 27: Management Rights</a>. <a href="/reports/contract-architecture/comparisons/company-discretion-constraint/#carrier-frontier">Compare this domain</a>.</span></td>
             </tr>
-            <tr>
+            <tr id="carrier-score-enforcement-power">
               <td>Enforcement Power</td>
               <td class="cs-table__score"><strong>4.0</strong></td>
-              <td>Complete grievance/system board structure plus expedited scope arbitration and strong evidence mechanisms</td>
+              <td>Complete grievance/system board structure plus expedited scope arbitration and strong evidence mechanisms <span class="cs-scorecard__sources">Read the controlling text: <a href="/reports/contract-architecture/CWA-AFA/Frontier/contract/Frontier_CWA-AFA_CBA_2019-2024.pdf#page=99">Articles 18–19: grievance and System Board</a>. <a href="/reports/contract-architecture/comparisons/enforcement-power/#carrier-frontier">Compare this domain</a>.</span></td>
             </tr>
-            <tr>
+            <tr id="carrier-score-clarity-modularity">
               <td>Clarity &amp; Modularity</td>
               <td class="cs-table__score"><strong>3.1</strong></td>
-              <td>Well-structured, but definition load and procedural branching increase cognitive burden</td>
+              <td>Well-structured, but definition load and procedural branching increase cognitive burden <span class="cs-scorecard__sources">Read the controlling text: <a href="/reports/contract-architecture/CWA-AFA/Frontier/contract/Frontier_CWA-AFA_CBA_2019-2024.pdf">Articles 2 and 28: definitions and duration</a>. <a href="/reports/contract-architecture/comparisons/clarity-modularity/#carrier-frontier">Compare this domain</a>.</span></td>
             </tr>
           </tbody>
 
@@ -217,7 +230,7 @@
 
     <!-- 8. Context Notes -->
     <section class="cs-report__section" id="context-notes">
-      <h2>Context Notes</h2>
+      <h2 class="cs-report__section-title">Context Notes</h2>
 
       <p>
         Frontier’s low-cost operational model magnifies the value of enforceable scheduling rails and auditability.
@@ -225,6 +238,8 @@
         paired with deterrence premiums, which together reduce “practice drift” in normal operations.
       </p>
     </section>
+
+    </main>
 
     <footer class="cs-report__footer">
   <p class="cs-muted">

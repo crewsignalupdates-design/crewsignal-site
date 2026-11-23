@@ -5,15 +5,16 @@
   <title>CWA-AFA · Alaska Airlines · Contract Architecture Analysis · CrewSignal</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="/assets/css/main.css" />
+  <link rel="stylesheet" href="/assets/css/contract-architecture-carrier.css" />
 </head>
 
 <body>
-  <article class="cs-report" id="contract-architecture-cwa-afa-alaska">
+  <article class="cs-report cs-contract-carrier" id="contract-architecture-cwa-afa-alaska">
 
     <!-- Header / Nav -->
     <header class="cs-report__header">
       <div class="cs-report__nav">
-        <a class="cs-link cs-link--back" href="/reports/contract-architecture/">← Back to Contract Architecture</a>
+        <a class="cs-report__back" href="/reports/contract-architecture/">← Back to Contract Architecture</a>
       </div>
 
       <h1 class="cs-report__title">CWA-AFA · Alaska Airlines</h1>
@@ -22,10 +23,22 @@
         <span class="cs-report__dates">Effective Period: March 2, 2025 – February 28, 2028</span>
       </p>
     </header>
+    <main class="cs-report__main">
+    <section class="cs-report__section" id="key-documents">
+      <h2 class="cs-report__section-title">Key Documents</h2>
+      <ul class="cs-report__list">
+        <li class="cs-report__list-item"><a href="/reports/contract-architecture/CWA-AFA/Alaska/contract/Alaska_CWA-AFA_CBA_2025-2028.pdf">2025–2028 ratified agreement</a></li>
+        <li class="cs-report__list-item"><a href="https://contract2022.afaalaska.org/committee/tentative-agreement-ratified/">Ratification and implementation chronology</a></li>
+      </ul>
+      <p class="cs-note">2025–2028 ratified CBA, effective March 2, 2025. Most changes took effect then; implementation schedules and the 2026/2027 wage and retirement escalators have their own effective dates.</p>
+    </section>
+
 
     <!-- 1. Agreement Metadata -->
     <section class="cs-report__section" id="agreement-metadata">
-      <h2>Agreement Metadata</h2>
+      <h2 class="cs-report__section-title">Agreement Metadata</h2>
+      <p class="cs-note" id="alaska-quick-read"><strong>At a glance:</strong> The 2025 agreement sets out detailed assignment, reserve, pay and enforcement rules. Its published 23.5/30 assessment describes contractual structure, not actual grievance recovery. <a href="#standardized-scorecard">See the six-domain scorecard</a>.</p>
+
 
       <p>
         This agreement is a modern, procedure-driven architecture designed to operate reliably under irregular operations.
@@ -36,7 +49,7 @@
 
     <!-- 2. Contract Architecture Overview -->
     <section class="cs-report__section" id="contract-architecture-overview">
-      <h2>Contract Architecture Overview</h2>
+      <h2 class="cs-report__section-title">Contract Architecture Overview</h2>
 
       <p>
         The Alaska Airlines agreement is highly structured and modular, with clear segmentation between legality constraints,
@@ -57,7 +70,7 @@
 
     <!-- 3. Scheduling & Assignment Framework -->
     <section class="cs-report__section" id="scheduling-and-assignment">
-      <h2>Scheduling &amp; Assignment Framework</h2>
+      <h2 class="cs-report__section-title">Scheduling &amp; Assignment Framework</h2>
 
       <p>
         Scheduling protections are framed through explicit categories and defined triggers, with bounded discretion and
@@ -78,7 +91,7 @@
 
     <!-- 4. Economic Structure -->
     <section class="cs-report__section" id="economic-structure">
-      <h2>Economic Structure</h2>
+      <h2 class="cs-report__section-title">Economic Structure</h2>
 
       <p>
         The economic architecture is designed to support reliability through defined pay protections and valuation comparisons.
@@ -98,7 +111,7 @@
 
     <!-- 5. Enforcement & Dispute Resolution -->
     <section class="cs-report__section" id="enforcement-and-dispute-resolution">
-      <h2>Enforcement &amp; Dispute Resolution Architecture</h2>
+      <h2 class="cs-report__section-title">Enforcement &amp; Dispute Resolution Architecture</h2>
 
       <p>
         Enforcement pathways are explicit, with defined pay protections, default outcomes, and structured comparisons that
@@ -117,7 +130,7 @@
 
     <!-- 6. Strengths / Weaknesses / Comparative Flags -->
     <section class="cs-report__section" id="strengths-weaknesses-flags">
-      <h2>Structural Strengths, Weaknesses &amp; Comparative Flags</h2>
+      <h2 class="cs-report__section-title">Structural Strengths, Weaknesses &amp; Comparative Flags</h2>
 
       <p>
         This agreement illustrates a “disciplined systems contract” model: explicit defaults, strong definitions, bounded discretion,
@@ -133,7 +146,7 @@
 
     <!-- 7. Standardized Contract Scorecard -->
     <section class="cs-report__section" id="standardized-scorecard">
-      <h2>Standardized Contract Scorecard</h2>
+      <h2 class="cs-report__section-title">Standardized Contract Scorecard</h2>
 
       <div class="cs-table-wrap">
         <table class="cs-table">
@@ -145,35 +158,35 @@
             </tr>
           </thead>
           <tbody>
-            <tr>
+            <tr id="carrier-score-scheduling-protections">
               <td>Scheduling Protections</td>
               <td class="cs-table__score"><strong>4.2</strong></td>
-              <td>Highly structured protections with bounded discretion; process-dependent during disruptions</td>
+              <td>Highly structured protections with bounded discretion; process-dependent during disruptions <span class="cs-scorecard__sources">Read the controlling text: <a href="/reports/contract-architecture/CWA-AFA/Alaska/contract/Alaska_CWA-AFA_CBA_2025-2028.pdf">Sections 10–11: scheduling and reserve</a>. <a href="/reports/contract-architecture/comparisons/scheduling-protections/#carrier-alaska">Compare this domain</a>.</span></td>
             </tr>
-            <tr>
+            <tr id="carrier-score-pay-credit-quality">
               <td>Pay &amp; Credit Quality</td>
               <td class="cs-table__score"><strong>4.0</strong></td>
-              <td>Reliable valuation and pay protections once the correct procedural track is identified</td>
+              <td>Reliable valuation and pay protections once the correct procedural track is identified <span class="cs-scorecard__sources">Read the controlling text: <a href="/reports/contract-architecture/CWA-AFA/Alaska/contract/Alaska_CWA-AFA_CBA_2025-2028.pdf">Section 21: compensation; LOAs</a>. <a href="/reports/contract-architecture/comparisons/pay-credit-quality/#carrier-alaska">Compare this domain</a>.</span></td>
             </tr>
-            <tr>
+            <tr id="carrier-score-work-rules-quality-of-life">
               <td>Work Rules &amp; Quality-of-Life</td>
               <td class="cs-table__score"><strong>3.8</strong></td>
-              <td>Strong operational alignment; flexibility can be limited outside defined pathways</td>
+              <td>Strong operational alignment; flexibility can be limited outside defined pathways <span class="cs-scorecard__sources">Read the controlling text: <a href="/reports/contract-architecture/CWA-AFA/Alaska/contract/Alaska_CWA-AFA_CBA_2025-2028.pdf">Sections 8, 14–16: hours, vacation and leave</a>. <a href="/reports/contract-architecture/comparisons/work-rules-quality-of-life/#carrier-alaska">Compare this domain</a>.</span></td>
             </tr>
-            <tr>
+            <tr id="carrier-score-company-discretion-constraint">
               <td>Company Discretion Constraint</td>
               <td class="cs-table__score"><strong>4.2</strong></td>
-              <td>Outcomes are frequently specified in advance through closed conditional logic</td>
+              <td>Outcomes are frequently specified in advance through closed conditional logic <span class="cs-scorecard__sources">Read the controlling text: <a href="/reports/contract-architecture/CWA-AFA/Alaska/contract/Alaska_CWA-AFA_CBA_2025-2028.pdf">Sections 3 and 9: scope, premium assignments</a>. <a href="/reports/contract-architecture/comparisons/company-discretion-constraint/#carrier-alaska">Compare this domain</a>.</span></td>
             </tr>
-            <tr>
+            <tr id="carrier-score-enforcement-power">
               <td>Enforcement Power</td>
               <td class="cs-table__score"><strong>3.8</strong></td>
-              <td>Explicit remedies and defaults; vulnerability is procedural misclassification/missteps</td>
+              <td>Explicit remedies and defaults; vulnerability is procedural misclassification/missteps <span class="cs-scorecard__sources">Read the controlling text: <a href="/reports/contract-architecture/CWA-AFA/Alaska/contract/Alaska_CWA-AFA_CBA_2025-2028.pdf">Sections 19–20: grievances and System Board</a>. <a href="/reports/contract-architecture/comparisons/enforcement-power/#carrier-alaska">Compare this domain</a>.</span></td>
             </tr>
-            <tr>
+            <tr id="carrier-score-clarity-modularity">
               <td>Clarity &amp; Modularity</td>
               <td class="cs-table__score"><strong>3.5</strong></td>
-              <td>Modular and coherent, but cross-referencing and categorization raise cognitive load</td>
+              <td>Modular and coherent, but cross-referencing and categorization raise cognitive load <span class="cs-scorecard__sources">Read the controlling text: <a href="/reports/contract-architecture/CWA-AFA/Alaska/contract/Alaska_CWA-AFA_CBA_2025-2028.pdf">Sections 5 and 37: definitions and duration</a>. <a href="/reports/contract-architecture/comparisons/clarity-modularity/#carrier-alaska">Compare this domain</a>.</span></td>
             </tr>
           </tbody>
           <tfoot>
@@ -189,13 +202,15 @@
 
     <!-- 8. Context Notes -->
     <section class="cs-report__section" id="context-notes">
-      <h2>Context Notes</h2>
+      <h2 class="cs-report__section-title">Context Notes</h2>
 
       <p>
         This score reflects contract architecture and enforceability characteristics within a procedure-driven agreement model.
         It does not measure bargaining intent or effort, but rather the structural strength and reliability of negotiated protections as written.
       </p>
     </section>
+
+    </main>
 
     <footer class="cs-report__footer">
   <p class="cs-muted">

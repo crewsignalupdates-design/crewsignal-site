@@ -5,15 +5,16 @@
   <title>CWA-AFA · Hawaiian Airlines · Contract Architecture Analysis · CrewSignal</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="/assets/css/main.css" />
+  <link rel="stylesheet" href="/assets/css/contract-architecture-carrier.css" />
 </head>
 
 <body>
-  <article class="cs-report" id="contract-architecture-cwa-afa-hawaiian">
+  <article class="cs-report cs-contract-carrier" id="contract-architecture-cwa-afa-hawaiian">
 
     <!-- Header / Nav -->
     <header class="cs-report__header">
       <div class="cs-report__nav">
-        <a class="cs-link cs-link--back" href="/reports/contract-architecture/">← Back to Contract Architecture</a>
+        <a class="cs-report__back" href="/reports/contract-architecture/">← Back to Contract Architecture</a>
       </div>
 
       <h1 class="cs-report__title">CWA-AFA · Hawaiian Airlines</h1>
@@ -21,14 +22,28 @@
         Contract Architecture Analysis<br />
         <span class="cs-report__dates">
           Effective Period: April 3, 2020 – April 2, 2025<br />
-          <em>Extended by 2025 Contract Extension (see addendum)</em>
+          <em>2025 extension ratified; term extended through February 2028</em>
         </span>
       </p>
     </header>
+    <main class="cs-report__main">
+    <section class="cs-report__section" id="key-documents">
+      <h2 class="cs-report__section-title">Key Documents</h2>
+      <ul class="cs-report__list">
+        <li class="cs-report__list-item"><a href="/reports/contract-architecture/CWA-AFA/Hawaiian/contract/Hawaiian-CWA-AFA_CBA_2020-2025.pdf">2020–2025 base agreement</a></li>
+        <li class="cs-report__list-item"><a href="/reports/contract-architecture/CWA-AFA/Hawaiian/contract/2025_Hawaiian_AFA_Comprehensive_Extension_Agreement.pdf">2025 ratified comprehensive extension</a></li>
+        <li class="cs-report__list-item"><a href="/reports/contract-architecture/CWA-AFA/Hawaiian/extension-2025/">Existing base-versus-extension analysis</a></li>
+        <li class="cs-report__list-item"><a href="https://afacwa.org/hawaiian_ratify_contract_extension/">CWA-AFA April 17, 2025 ratification confirmation</a></li>
+      </ul>
+      <p class="cs-note">The 2020 base CBA was extended by the ratified April 17, 2025 extension through February 2028 while joint Alaska/Hawaiian bargaining proceeds. The baseline score of 22.5/30 and the already-published extension score of 23.3/30 are distinct.</p>
+    </section>
+
 
     <!-- 1. Agreement Metadata -->
     <section class="cs-report__section" id="agreement-metadata">
-      <h2>Agreement Metadata</h2>
+      <h2 class="cs-report__section-title">Agreement Metadata</h2>
+      <p class="cs-note" id="hawaiian-quick-read"><strong>At a glance:</strong> Hawaiian's ratified extension modifies pay, profit sharing and Reserve protections. The six-domain scorecard below uses CrewSignal's previously published 23.3/30 extension assessment, with the original 22.5/30 preserved in its separate comparison. <a href="#standardized-scorecard">See the six-domain scorecard</a>.</p>
+
 
       <p>
         Hawaiian’s 2020 Flight Attendant Agreement is a large, enterprise-scale contract (hundreds of pages) built to
@@ -40,7 +55,7 @@
 
     <!-- 2. Contract Architecture Overview -->
     <section class="cs-report__section" id="contract-architecture-overview">
-      <h2>Contract Architecture Overview</h2>
+      <h2 class="cs-report__section-title">Contract Architecture Overview</h2>
 
       <p>
         Structurally, the contract is highly sectional and definition-driven, with broad coverage across scheduling, reserves,
@@ -62,7 +77,7 @@
 
     <!-- 3. Scheduling & Assignment Framework -->
     <section class="cs-report__section" id="scheduling-and-assignment">
-      <h2>Scheduling &amp; Assignment Framework</h2>
+      <h2 class="cs-report__section-title">Scheduling &amp; Assignment Framework</h2>
 
       <p>
         Scheduling architecture is deeply integrated with PBS, reserve constructs, and a broad set of definitions and procedural
@@ -84,7 +99,7 @@
 
     <!-- 4. Economic Structure -->
     <section class="cs-report__section" id="economic-structure">
-      <h2>Economic Structure</h2>
+      <h2 class="cs-report__section-title">Economic Structure</h2>
 
       <p>
         Hawaiian’s pay and credit architecture is sophisticated and multi-layered, including numerous premium triggers and multiple
@@ -105,7 +120,7 @@
 
     <!-- 5. Enforcement & Dispute Resolution -->
     <section class="cs-report__section" id="enforcement-and-dispute-resolution">
-      <h2>Enforcement &amp; Dispute Resolution Architecture</h2>
+      <h2 class="cs-report__section-title">Enforcement &amp; Dispute Resolution Architecture</h2>
 
       <p>
         The agreement’s enforcement strength is defined by formal procedure and the ability to route disputes into established
@@ -121,7 +136,7 @@
 
     <!-- 6. Strengths / Weaknesses / Comparative Flags -->
     <section class="cs-report__section" id="strengths-weaknesses-flags">
-      <h2>Structural Strengths, Weaknesses &amp; Comparative Flags</h2>
+      <h2 class="cs-report__section-title">Structural Strengths, Weaknesses &amp; Comparative Flags</h2>
 
       <p>
         Hawaiian’s 2020 agreement is a high-coverage systems contract. Its strengths include broad subject-matter coverage,
@@ -137,7 +152,7 @@
 
     <!-- 7. Standardized Contract Scorecard -->
     <section class="cs-report__section" id="standardized-scorecard">
-      <h2>Standardized Contract Scorecard</h2>
+      <h2 class="cs-report__section-title">Standardized Contract Scorecard</h2>
 
       <div class="cs-table-wrap">
         <table class="cs-table">
@@ -149,57 +164,59 @@
             </tr>
           </thead>
           <tbody>
-            <tr>
+            <tr id="carrier-score-scheduling-protections">
               <td>Scheduling Protections</td>
-              <td class="cs-table__score"><strong>4.2</strong></td>
-              <td>Comprehensive scheduling framework; protections frequently depend on procedural track and classification</td>
+              <td class="cs-table__score"><strong>4.4</strong></td>
+              <td>Comprehensive scheduling framework; protections frequently depend on procedural track and classification <span class="cs-scorecard__sources">The extension improves Reserve/GDO and open-flying transparency. Read the controlling text: <a href="/reports/contract-architecture/CWA-AFA/Hawaiian/contract/Hawaiian-CWA-AFA_CBA_2020-2025.pdf#page=149">Sections 8 and 10; extension scheduling changes</a>. <a href="/reports/contract-architecture/comparisons/scheduling-protections/#carrier-hawaiian">Compare this domain</a>.</span></td>
             </tr>
-            <tr>
+            <tr id="carrier-score-pay-credit-quality">
               <td>Pay &amp; Credit Quality</td>
-              <td class="cs-table__score"><strong>4.3</strong></td>
-              <td>Sophisticated pay/credit and premiums; high verification burden due to complexity</td>
+              <td class="cs-table__score"><strong>4.6</strong></td>
+              <td>Sophisticated pay/credit and premiums; high verification burden due to complexity <span class="cs-scorecard__sources">The extension adds 6%/3%/3% pay increases and revised profit sharing. Read the controlling text: <a href="/reports/contract-architecture/CWA-AFA/Hawaiian/contract/Hawaiian-CWA-AFA_CBA_2020-2025.pdf#page=48">Section 3 and extension economics</a>. <a href="/reports/contract-architecture/comparisons/pay-credit-quality/#carrier-hawaiian">Compare this domain</a>.</span></td>
             </tr>
-            <tr>
+            <tr id="carrier-score-work-rules-quality-of-life">
               <td>Work Rules &amp; Quality-of-Life</td>
-              <td class="cs-table__score"><strong>4.1</strong></td>
-              <td>Broad coverage consistent with long-haul operations; some protections rely on process rather than automatic triggers</td>
+              <td class="cs-table__score"><strong>4.3</strong></td>
+              <td>Broad coverage consistent with long-haul operations; some protections rely on process rather than automatic triggers <span class="cs-scorecard__sources">The extension includes targeted paid-time-off and fatigue-related revisions. Read the controlling text: <a href="/reports/contract-architecture/CWA-AFA/Hawaiian/contract/Hawaiian-CWA-AFA_CBA_2020-2025.pdf#page=127">Sections 7, 8 and extension quality-of-life protections</a>. <a href="/reports/contract-architecture/comparisons/work-rules-quality-of-life/#carrier-hawaiian">Compare this domain</a>.</span></td>
             </tr>
-            <tr>
+            <tr id="carrier-score-company-discretion-constraint">
               <td>Company Discretion Constraint</td>
               <td class="cs-table__score"><strong>3.6</strong></td>
-              <td>Meaningful constraints exist, but exceptions and categorization pathways preserve discretion in edge cases</td>
+              <td>Meaningful constraints exist, but exceptions and categorization pathways preserve discretion in edge cases <span class="cs-scorecard__sources">The extension does not fundamentally change the discretion structure. Read the controlling text: <a href="/reports/contract-architecture/CWA-AFA/Hawaiian/contract/Hawaiian-CWA-AFA_CBA_2020-2025.pdf">Section 1 and operation-specific exceptions</a>. <a href="/reports/contract-architecture/comparisons/company-discretion-constraint/#carrier-hawaiian">Compare this domain</a>.</span></td>
             </tr>
-            <tr>
+            <tr id="carrier-score-enforcement-power">
               <td>Enforcement Power</td>
-              <td class="cs-table__score"><strong>3.5</strong></td>
-              <td>Formal dispute mechanisms exist; complexity can increase delay and ambiguity risk</td>
+              <td class="cs-table__score"><strong>3.6</strong></td>
+              <td>Formal dispute mechanisms exist; complexity can increase delay and ambiguity risk <span class="cs-scorecard__sources">The extension modifies specified dispute procedures, not all remedies. Read the controlling text: <a href="/reports/contract-architecture/CWA-AFA/Hawaiian/contract/Hawaiian-CWA-AFA_CBA_2020-2025.pdf">CBA grievance provisions and 2025 extension</a>. <a href="/reports/contract-architecture/comparisons/enforcement-power/#carrier-hawaiian">Compare this domain</a>.</span></td>
             </tr>
-            <tr>
+            <tr id="carrier-score-clarity-modularity">
               <td>Clarity &amp; Modularity</td>
               <td class="cs-table__score"><strong>2.8</strong></td>
-              <td>High definition/cross-reference load; not a “quick audit” contract for line-level users</td>
+              <td>High definition/cross-reference load; not a “quick audit” contract for line-level users <span class="cs-scorecard__sources">The extension adds provisions without simplifying the underlying CBA. Read the controlling text: <a href="/reports/contract-architecture/CWA-AFA/Hawaiian/contract/Hawaiian-CWA-AFA_CBA_2020-2025.pdf">Section 2 and 2025 extension overlay</a>. <a href="/reports/contract-architecture/comparisons/clarity-modularity/#carrier-hawaiian">Compare this domain</a>.</span></td>
             </tr>
           </tbody>
           <tfoot>
             <tr>
               <td><strong>Total</strong></td>
-              <td class="cs-table__score"><strong>22.5</strong></td>
+              <td class="cs-table__score"><strong>23.3</strong></td>
               <td><strong>out of 30</strong></td>
             </tr>
           </tfoot>
         </table>
       </div>
-    </section>
+    <p class="cs-note">This 2025 extension value is taken from CrewSignal's existing separate comparison report; the earlier 22.5/30 remains its historical baseline.</p></section>
 
     <!-- 8. Context Notes -->
     <section class="cs-report__section" id="context-notes">
-      <h2>Context Notes</h2>
+      <h2 class="cs-report__section-title">Context Notes</h2>
 
       <p>
         This analysis is based on Hawaiian’s 2020 Flight Attendant Agreement (April 3, 2020 – April 2, 2025), later modified
         by a 2025 Contract Extension ratified April 17, 2025. 
       </p>
     </section>
+
+    </main>
 
     <footer class="cs-report__footer">
   <p class="cs-muted">
