@@ -5,9 +5,10 @@
   <title>CWA-AFA · Spirit Airlines · Contract Architecture Analysis · CrewSignal</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="/assets/css/main.css" />
+  <link rel="stylesheet" href="/assets/css/contract-architecture-carrier.css" />
 </head>
 <body>
-  <article class="cs-report" id="cwa-afa-spirit-contract-architecture">
+  <article class="cs-report cs-contract-carrier" id="cwa-afa-spirit-contract-architecture">
     <header class="cs-report__header">
       <div class="cs-report__nav">
         <a class="cs-report__back" href="/reports/contract-architecture/">← Back to Contract Architecture</a>
@@ -19,13 +20,27 @@
       <p class="cs-report__dek">
         <span class="cs-report__dates">
           Effective Period: April 14, 2023 – January 1, 2026<br />
-          <em>Amendable since January 1, 2026</em>
+          <em>Historical: flight operations ceased May 2, 2026</em>
         </span>
       </p>
     </header>
+    <main class="cs-report__main">
+    <section class="cs-report__section" id="key-documents">
+      <h2 class="cs-report__section-title">Key Documents</h2>
+      <ul class="cs-report__list">
+        <li class="cs-report__list-item"><a href="/reports/contract-architecture/CWA-AFA/Spirit/contract/Spirit_CWA-AFA_CBA_2023-2026.pdf">2023–2026 base agreement</a></li>
+        <li class="cs-report__list-item"><a href="/reports/contract-architecture/CWA-AFA/Spirit/modification-2026-2028/">2026 bankruptcy modification analysis</a></li>
+        <li class="cs-report__list-item"><a href="https://afacwa.org/resource/spirit/">CWA-AFA Spirit closure and bankruptcy resources</a></li>
+        <li class="cs-report__list-item"><a href="https://afacwa.org/spirit-forever/">Spirit CWA-AFA May 2, 2026 cessation announcement</a></li>
+      </ul>
+      <p class="cs-note">Historical contract analysis only: Spirit permanently ceased flight operations May 2, 2026. The 2023 CBA and bankruptcy modification layer inform historical rights and outstanding claims, not a current operating agreement or prospective flight schedule.</p>
+    </section>
+
 
     <section class="cs-report__section" id="agreement-metadata">
-      <h2>Agreement Metadata</h2>
+      <h2 class="cs-report__section-title">Agreement Metadata</h2>
+      <p class="cs-note" id="spirit-quick-read"><strong>At a glance:</strong> This 21.7/30 score is a historical assessment of the 2023 agreement. Subsequent bankruptcy modifications and the May 2026 cessation of operations prevent treating its work rules as current flight-attendant entitlements. <a href="#scorecard">See the six-domain scorecard</a>.</p>
+
       <ul>
         <li><strong>Carrier:</strong> Spirit Airlines, Inc.</li>
         <li><strong>Union:</strong> Association of Flight Attendants-CWA (CWA-AFA)</li>
@@ -36,7 +51,7 @@
     </section>
 
     <section class="cs-report__section" id="contract-architecture-overview">
-      <h2>Contract Architecture Overview</h2>
+      <h2 class="cs-report__section-title">Contract Architecture Overview</h2><p class="cs-note">The contractual mechanisms below describe the agreement's historical operation. Spirit ceased flights on May 2, 2026. Remaining bankruptcy, WARN Act, grievance and wage claims are not ordinary prospective flight assignment rights. <a href="https://afacwa.org/resource/spirit/">CWA-AFA Spirit resources</a>.</p>
 
       <p class="cs-report__para">
         Spirit’s agreement reflects a <strong>modern, systemized operational contract architecture</strong> built around
@@ -67,7 +82,7 @@
     </section>
 
     <section class="cs-report__section" id="scheduling-and-assignment-framework">
-      <h2>Scheduling &amp; Assignment Framework</h2>
+      <h2 class="cs-report__section-title">Scheduling &amp; Assignment Framework</h2>
 
       <p class="cs-report__para">
         Scheduling is organized into discrete, time-bounded stages with clear sequencing:
@@ -111,7 +126,7 @@
     </section>
 
     <section class="cs-report__section" id="economic-structure">
-      <h2>Economic Structure</h2>
+      <h2 class="cs-report__section-title">Economic Structure</h2>
 
       <p class="cs-report__para">
         Spirit’s pay/credit architecture is built on a <strong>72-hour bid period guarantee</strong> with layered pairing guarantees that reward time away and duty construction:
@@ -135,7 +150,7 @@
     </section>
 
     <section class="cs-report__section" id="enforcement-and-dispute-resolution">
-      <h2>Enforcement &amp; Dispute Resolution Architecture</h2>
+      <h2 class="cs-report__section-title">Enforcement &amp; Dispute Resolution Architecture</h2>
 
       <p class="cs-report__para">
         Enforcement is a standard RLA grievance and System Board model, with an additional front-end non-disciplinary intake step:
@@ -163,7 +178,7 @@
     </section>
 
     <section class="cs-report__section" id="strengths-weaknesses-flags">
-      <h2>Structural Strengths, Weaknesses &amp; Comparative Flags</h2>
+      <h2 class="cs-report__section-title">Structural Strengths, Weaknesses &amp; Comparative Flags</h2>
 
       <p class="cs-report__para">
         <strong>Structural strengths:</strong> Highly modular scheduling ecosystem (Transition/Credit Restoration/SOT/DOT); explicit order-of-assignment controls;
@@ -183,7 +198,7 @@
     </section>
 
     <section class="cs-report__section" id="scorecard">
-      <h2>Standardized Contract Scorecard</h2>
+      <h2 class="cs-report__section-title">Standardized Contract Scorecard</h2>
 
       <div class="cs-table cs-table--compact">
         <table>
@@ -195,35 +210,35 @@
             </tr>
           </thead>
           <tbody>
-            <tr>
+            <tr id="carrier-score-scheduling-protections">
               <td>Scheduling Protections</td>
               <td>3.8</td>
-              <td>Highly structured assignment sequencing, restoration mechanics, and reserve architecture with explicit timing and auditability</td>
+              <td>Highly structured assignment sequencing, restoration mechanics, and reserve architecture with explicit timing and auditability <span class="cs-scorecard__sources">Read the controlling text: <a href="/reports/contract-architecture/CWA-AFA/Spirit/contract/Spirit_CWA-AFA_CBA_2023-2026.pdf">CBA Sections 8–9: scheduling and Reserve</a>. <a href="/reports/contract-architecture/comparisons/scheduling-protections/#carrier-spirit">Compare this domain</a>.</span></td>
             </tr>
-            <tr>
+            <tr id="carrier-score-pay-credit-quality">
               <td>Pay &amp; Credit Quality</td>
               <td>3.7</td>
-              <td>Layered guarantees (duty/TAFB) and defined premiums (150%/200%) improve predictability and compensation clarity</td>
+              <td>Layered guarantees (duty/TAFB) and defined premiums (150%/200%) improve predictability and compensation clarity <span class="cs-scorecard__sources">Read the controlling text: <a href="/reports/contract-architecture/CWA-AFA/Spirit/contract/Spirit_CWA-AFA_CBA_2023-2026.pdf">CBA Section 3: compensation</a>. <a href="/reports/contract-architecture/comparisons/pay-credit-quality/#carrier-spirit">Compare this domain</a>.</span></td>
             </tr>
-            <tr>
+            <tr id="carrier-score-work-rules-quality-of-life">
               <td>Work Rules &amp; Quality-of-Life</td>
               <td>3.6</td>
-              <td>Strong days-off minima, behind-the-door rest mechanisms via hotel standards, and defined disruption/restoration options</td>
+              <td>Strong days-off minima, behind-the-door rest mechanisms via hotel standards, and defined disruption/restoration options <span class="cs-scorecard__sources">Read the controlling text: <a href="/reports/contract-architecture/CWA-AFA/Spirit/contract/Spirit_CWA-AFA_CBA_2023-2026.pdf">CBA Sections 7, 11–13: work rules and leave</a>. <a href="/reports/contract-architecture/comparisons/work-rules-quality-of-life/#carrier-spirit">Compare this domain</a>.</span></td>
             </tr>
-            <tr>
+            <tr id="carrier-score-company-discretion-constraint">
               <td>Company Discretion Constraint</td>
               <td>3.4</td>
-              <td>Management rights are broad but operational discretion is routed through named pathways with caps, ordering, and compensation triggers</td>
+              <td>Management rights are broad but operational discretion is routed through named pathways with caps, ordering, and compensation triggers <span class="cs-scorecard__sources">Read the controlling text: <a href="/reports/contract-architecture/CWA-AFA/Spirit/contract/Spirit_CWA-AFA_CBA_2023-2026.pdf">CBA Sections 1 and 23: scope and general provisions</a>. <a href="/reports/contract-architecture/comparisons/company-discretion-constraint/#carrier-spirit">Compare this domain</a>.</span></td>
             </tr>
-            <tr>
+            <tr id="carrier-score-enforcement-power">
               <td>Enforcement Power</td>
               <td>3.4</td>
-              <td>CRF+grievance+System Board with layered mediation; recorded-line evidentiary leverage improves practical enforcement</td>
+              <td>CRF+grievance+System Board with layered mediation; recorded-line evidentiary leverage improves practical enforcement <span class="cs-scorecard__sources">Read the controlling text: <a href="/reports/contract-architecture/CWA-AFA/Spirit/contract/Spirit_CWA-AFA_CBA_2023-2026.pdf">CBA Section 22: grievance and System Board</a>. <a href="/reports/contract-architecture/comparisons/enforcement-power/#carrier-spirit">Compare this domain</a>.</span></td>
             </tr>
-            <tr>
+            <tr id="carrier-score-clarity-modularity">
               <td>Clarity &amp; Modularity</td>
               <td>3.8</td>
-              <td>Subsystem clarity is high (Transition/Credit Restoration/SOT/DOT; reserve shifts/buckets/GDO); definitions support operational precision</td>
+              <td>Subsystem clarity is high (Transition/Credit Restoration/SOT/DOT; reserve shifts/buckets/GDO); definitions support operational precision <span class="cs-scorecard__sources">Read the controlling text: <a href="/reports/contract-architecture/CWA-AFA/Spirit/contract/Spirit_CWA-AFA_CBA_2023-2026.pdf">CBA Sections 2 and 26: definitions and duration</a>. <a href="/reports/contract-architecture/comparisons/clarity-modularity/#carrier-spirit">Compare this domain</a>.</span></td>
             </tr>
             <tr>
               <td><strong>Total</strong></td>
@@ -236,13 +251,15 @@
     </section>
 
     <section class="cs-report__section" id="context-notes">
-      <h2>Context Notes</h2>
+      <h2 class="cs-report__section-title">Context Notes</h2>
       <p class="cs-report__para">
         This agreement explicitly defines severe irregular operations states (e.g., “ADP3”) and embeds operational exceptions (Critical Days / Holiday Weekends)
         into drop/trade and restoration logic. Readers should interpret these as structural “pressure valves” that preserve system integrity under stress, while compensating or restoring
         through defined pathways when those valves are used.
       </p>
     </section>
+
+    </main>
 
     <footer class="cs-report__footer">
       <div class="cs-report__footer-text">CrewSignal · Contract Architecture &amp; Comparative Analysis</div>

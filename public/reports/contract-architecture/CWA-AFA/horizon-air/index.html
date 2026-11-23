@@ -5,10 +5,11 @@
   <title>CWA-AFA · Horizon Air · Contract Architecture Analysis · CrewSignal</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="/assets/css/main.css" />
+  <link rel="stylesheet" href="/assets/css/contract-architecture-carrier.css" />
 </head>
 
 <body>
-  <article class="cs-report" id="contract-architecture-cwa-afa-horizon-air">
+  <article class="cs-report cs-contract-carrier" id="contract-architecture-cwa-afa-horizon-air">
 
     <!-- Header / Nav -->
     <header class="cs-report__header">
@@ -23,10 +24,12 @@
         <span class="cs-report__dates"><em>Amendable since May 1, 2024</em></span>
       </p>
     </header>
+<main class="cs-report__main"><section class="cs-report__section" id="key-documents"><h2 class="cs-report__section-title">Key Documents</h2><ul class="cs-report__list"><li><a href="/reports/contract-architecture/CWA-AFA/horizon-air/contract/horizon-air-2020-2024.pdf">Preserved agreement</a></li><li><a href="https://afahorizon.org/news/october-negotiations-update">October 2026 mediated bargaining</a></li></ul><p class="cs-note">Horizon’s 2020–2024 contract remains the documented structural baseline during successor bargaining. Proposed wages and conditions are not yet ratified rights.</p></section>
+
 
     <!-- 1. Agreement Metadata -->
     <section class="cs-report__section" id="agreement-metadata">
-      <h2>Agreement Metadata</h2>
+      <h2 class="cs-report__section-title">Agreement Metadata</h2><p class="cs-note" id="horizon-air-quick-read"><strong>At a glance:</strong> Horizon’s 2020–2024 contract remains the documented structural baseline during successor bargaining. Proposed wages and conditions are not yet ratified rights. <a href="#standardized-contract-scorecard">See the scorecard</a>.</p>
       <p>
         This agreement reflects a regional-carrier bargaining environment with a conventional, article-based structure designed for operational use. Core economic mechanics and expenses appear early, followed by hours-of-service limits, lineholder scheduling controls, and a fully articulated reserve subsystem, with benefits, seniority, and enforcement addressed thereafter.
 
@@ -36,7 +39,7 @@ Unlike many regional agreements, the contract includes explicit successorship an
 
     <!-- 2. Contract Architecture Overview -->
     <section class="cs-report__section" id="contract-architecture-overview">
-      <h2>Contract Architecture Overview</h2>
+      <h2 class="cs-report__section-title">Contract Architecture Overview</h2>
       <p>
         The Horizon Air agreement is architected as a modular system rather than an exception-dense hierarchy. Economic rules, legality limits, scheduling mechanisms, and reserve operations function as distinct subsystems, reducing cross-reference density and improving navigability during time-sensitive operational decisions.
 
@@ -49,7 +52,7 @@ Compared to legacy-carrier agreements, the architecture relies less on layered o
 
     <!-- 3. Scheduling & Assignment Framework -->
     <section class="cs-report__section" id="scheduling-and-assignment-framework">
-      <h2>Scheduling &amp; Assignment Framework</h2>
+      <h2 class="cs-report__section-title">Scheduling &amp; Assignment Framework</h2>
       <p>
         Scheduling and assignment are governed by layered control systems, including PBS for line construction, SAP for controlled schedule adjustments, and AV days as a pre-check-in cancellation and coverage mechanism. These systems operate within defined footprint and rescheduling boundaries, creating a structured approach to coverage management.
 
@@ -62,7 +65,7 @@ Reserve is treated as a full operational subsystem rather than a fallback catego
 
     <!-- 4. Economic Structure -->
     <section class="cs-report__section" id="economic-structure">
-      <h2>Economic Structure</h2>
+      <h2 class="cs-report__section-title">Economic Structure</h2>
       <p>
         The economic framework is built around explicit, trip-level “greater-of” credit drivers, including block time, duty-time percentages, and trip-time factors, supplemented by minimum daily guarantees. This structure is highly auditable and supports post-flight verification.
 
@@ -75,7 +78,7 @@ At the same time, intersecting credit concepts and non-pyramiding rules can redu
 
     <!-- 5. Enforcement & Dispute Resolution Architecture -->
     <section class="cs-report__section" id="enforcement-and-dispute-resolution-architecture">
-      <h2>Enforcement &amp; Dispute Resolution Architecture</h2>
+      <h2 class="cs-report__section-title">Enforcement &amp; Dispute Resolution Architecture</h2>
       <p>
         Enforcement follows a conventional grievance and System Board model, with limited self-executing remedies. Most economic and scheduling disputes are resolved retrospectively, and structural incentives tend to favor correction after delay rather than immediate deterrence.
 
@@ -88,7 +91,7 @@ Notably, certain scope-related and hotel-standards disputes are subject to exped
 
     <!-- 6. Structural Strengths, Weaknesses & Comparative Flags -->
     <section class="cs-report__section" id="structural-strengths-weaknesses-and-comparative-flags">
-      <h2>Structural Strengths, Weaknesses &amp; Comparative Flags</h2>
+      <h2 class="cs-report__section-title">Structural Strengths, Weaknesses &amp; Comparative Flags</h2>
       <p>
         Structurally, the agreement’s principal strength lies in its modular design and unusually explicit scope-protection architecture for a regional carrier, including successorship language and controlled subcontracting concepts. These features enhance clarity and limit certain forms of operational circumvention.
 
@@ -98,7 +101,7 @@ The primary weakness mirrors that of many non-legacy agreements: enforcement pow
 
     <!-- 7. Standardized Contract Scorecard -->
     <section class="cs-report__section" id="standardized-contract-scorecard">
-      <h2>Standardized Contract Scorecard</h2>
+      <h2 class="cs-report__section-title">Standardized Contract Scorecard</h2>
 
       <table class="cs-table">
   <thead>
@@ -109,55 +112,56 @@ The primary weakness mirrors that of many non-legacy agreements: enforcement pow
     </tr>
   </thead>
   <tbody>
-    <tr>
+<tr id="carrier-score-scheduling-protections">
       <td>Scheduling Protections</td>
       <td>3.4</td>
-      <td>Clear lineholder/reserve subsystems, but protections are procedure-driven and exception-sensitive</td>
+      <td>Clear lineholder/reserve subsystems, but protections are procedure-driven and exception-sensitive<span class="cs-scorecard__sources"><a href="/reports/contract-architecture/CWA-AFA/horizon-air/contract/horizon-air-2020-2024.pdf">Read Scheduling and Reserve</a>; <a href="/reports/contract-architecture/comparisons/scheduling-protections/#carrier-horizon-air">compare this domain</a>.</span></td>
     </tr>
-    <tr>
+<tr id="carrier-score-pay-credit-quality">
       <td>Pay &amp; Credit Quality</td>
       <td>3.3</td>
-      <td>Defined credit drivers improve auditability; edge cases rely on “greater-of” logic and non-duplication</td>
+      <td>Defined credit drivers improve auditability; edge cases rely on “greater-of” logic and non-duplication<span class="cs-scorecard__sources"><a href="/reports/contract-architecture/CWA-AFA/horizon-air/contract/horizon-air-2020-2024.pdf">Read Compensation</a>; <a href="/reports/contract-architecture/comparisons/pay-credit-quality/#carrier-horizon-air">compare this domain</a>.</span></td>
     </tr>
-    <tr>
+<tr id="carrier-score-work-rules-quality-of-life">
       <td>Work Rules &amp; Quality-of-Life</td>
       <td>3.2</td>
-      <td>Conventional regional protections with variable strength in irregular operations and reassignment scenarios</td>
+      <td>Conventional regional protections with variable strength in irregular operations and reassignment scenarios<span class="cs-scorecard__sources"><a href="/reports/contract-architecture/CWA-AFA/horizon-air/contract/horizon-air-2020-2024.pdf">Read Leave, rest and vacation</a>; <a href="/reports/contract-architecture/comparisons/work-rules-quality-of-life/#carrier-horizon-air">compare this domain</a>.</span></td>
     </tr>
-    <tr>
+<tr id="carrier-score-company-discretion-constraint">
       <td>Company Discretion Constraint</td>
       <td>2.8</td>
-      <td>Constraints tend to be procedural rather than substantive, leaving meaningful operational flexibility</td>
+      <td>Constraints tend to be procedural rather than substantive, leaving meaningful operational flexibility<span class="cs-scorecard__sources"><a href="/reports/contract-architecture/CWA-AFA/horizon-air/contract/horizon-air-2020-2024.pdf">Read Management rights</a>; <a href="/reports/contract-architecture/comparisons/company-discretion-constraint/#carrier-horizon-air">compare this domain</a>.</span></td>
     </tr>
-    <tr>
+<tr id="carrier-score-enforcement-power">
       <td>Enforcement Power</td>
       <td>2.9</td>
-      <td>Standard grievance/System Board pathway; remedies are corrective and time-delayed</td>
+      <td>Standard grievance/System Board pathway; remedies are corrective and time-delayed<span class="cs-scorecard__sources"><a href="/reports/contract-architecture/CWA-AFA/horizon-air/contract/horizon-air-2020-2024.pdf">Read Grievances and System Board</a>; <a href="/reports/contract-architecture/comparisons/enforcement-power/#carrier-horizon-air">compare this domain</a>.</span></td>
     </tr>
-    <tr>
+<tr id="carrier-score-clarity-modularity">
       <td>Clarity &amp; Modularity</td>
       <td>3.6</td>
-      <td>Subsystem modularity reduces cognitive load and improves navigability relative to dense cross-referencing</td>
+      <td>Subsystem modularity reduces cognitive load and improves navigability relative to dense cross-referencing<span class="cs-scorecard__sources"><a href="/reports/contract-architecture/CWA-AFA/horizon-air/contract/horizon-air-2020-2024.pdf">Read Definitions and duration</a>; <a href="/reports/contract-architecture/comparisons/clarity-modularity/#carrier-horizon-air">compare this domain</a>.</span></td>
     </tr>
-    <tr>
+<tr>
       <td><strong>Total</strong></td>
       <td><strong>19.2</strong></td>
       <td><strong>out of 30</strong></td>
     </tr>
-  </tbody>
+</tbody>
 </table>
     </section>
 
     <!-- 8. Context Notes -->
     <section class="cs-report__section" id="context-notes">
-      <h2>Context Notes</h2>
+      <h2 class="cs-report__section-title">Context Notes</h2>
       <p>
         This score reflects contract architecture and enforceability characteristics within a regional-carrier operating environment; it does not measure bargaining intent or effort.
       </p>
     </section>
 
     <!-- Footer -->
-    <footer class="cs-report__footer">
+    </main>
+<footer class="cs-report__footer">
       <p class="cs-muted">
         CrewSignal · Contract Architecture &amp; Comparative Analysis
       </p>
