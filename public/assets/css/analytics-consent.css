@@ -1,0 +1,77 @@
+.cs-analytics-panel,
+.cs-analytics-preferences {
+  box-sizing: border-box;
+  max-width: 62rem;
+  margin: 1rem auto;
+  padding: 0.85rem 1rem;
+  width: calc(100% - 2rem);
+  color: #f1f5f9;
+  background: #101827;
+  border: 1px solid #64748b;
+  border-radius: 0.6rem;
+  font: 1rem/1.5 system-ui, sans-serif;
+}
+
+.cs-analytics-panel[hidden] {
+  display: none;
+}
+
+.cs-analytics-panel h2 {
+  margin: 0;
+  color: inherit;
+  font: 700 1.15rem/1.4 system-ui, sans-serif;
+}
+
+.cs-analytics-panel p,
+.cs-analytics-preferences p {
+  margin: 0.5rem 0;
+}
+
+.cs-analytics-preferences [role="status"]:empty {
+  margin: 0;
+}
+
+.cs-analytics-panel a {
+  color: #a5ddff;
+  text-decoration: underline;
+}
+
+.cs-analytics-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.cs-analytics-actions button,
+.cs-analytics-preferences button {
+  min-height: 44px;
+  max-width: 100%;
+  padding: 0.45rem 0.8rem;
+  background: #17253b;
+  border: 1px solid #9bb1cc;
+  border-radius: 0.35rem;
+  color: #fff;
+  font: 600 1rem/1.3 system-ui, sans-serif;
+  cursor: pointer;
+}
+
+.cs-analytics-actions :focus-visible,
+.cs-analytics-panel a:focus-visible,
+.cs-analytics-panel h2:focus,
+.cs-analytics-preferences button:focus-visible {
+  outline: 3px solid #facc15;
+  outline-offset: 3px;
+}
+
+@media (max-width: 30rem) {
+  .cs-analytics-actions button {
+    width: 100%;
+  }
+}
+
+@media print {
+  .cs-analytics-panel,
+  .cs-analytics-preferences {
+    display: none;
+  }
+}
