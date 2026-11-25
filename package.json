@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "mkdir -p dist && cp -R public/* dist/"
+    "build": "mkdir -p dist && cp -R public/* dist/",
+    "audit:reader-prose": "node scripts/audit-reader-prose.mjs"
   }
 }
