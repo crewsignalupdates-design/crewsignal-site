@@ -20,7 +20,8 @@
   margin: 1rem 0;
 }
 
-.cs-contract-carrier .cs-table {
+.cs-contract-carrier table.cs-table,
+.cs-contract-carrier .cs-table > table {
   width: 100%;
   min-width: 640px;
   border-collapse: collapse;

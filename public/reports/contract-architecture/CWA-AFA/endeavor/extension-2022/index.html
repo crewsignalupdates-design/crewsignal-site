@@ -3,52 +3,60 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CWA-AFA Â· Endeavor Air Â· Contract Extension Impact (2022 LOA 20) Â· CrewSignal</title>
-  <meta name="description" content="Extension overlay for the Endeavor Air 2020â€“2025 Flight Attendant Agreement, analyzing LOA 20 and the extension through March 31, 2027.">
+  <title>CWA-AFA · Endeavor Air · Contract Extension Impact (2022 LOA 20) · CrewSignal</title>
+  <meta name="description" content="Extension overlay for the Endeavor Air 2020–2025 Flight Attendant Agreement, analyzing LOA 20 and the extension through March 31, 2027.">
+  <link rel="stylesheet" href="/assets/css/main.css" />
+  <link rel="stylesheet" href="/assets/css/contract-architecture-carrier.css" />
   <style>
-    body { font-family: Arial, Helvetica, sans-serif; max-width: 980px; margin: 0 auto; padding: 24px; line-height: 1.6; }
-    h1, h2, h3 { line-height: 1.25; }
-    table { border-collapse: collapse; width: 100%; margin: 1rem 0 1.5rem; }
-    th, td { border: 1px solid #cfcfcf; padding: 0.65rem; vertical-align: top; text-align: left; }
-    code { background: #f4f4f4; padding: 0.1rem 0.25rem; }
-    .muted { color: #555; }
+    .cs-contract-overlay .muted { color: var(--cs-text-muted); }
+    .cs-contract-overlay code { background: var(--cs-surface-soft); padding: .1rem .25rem; }
+    .cs-contract-overlay td a { overflow-wrap: anywhere; }
   </style>
 </head>
-<body>
-  <p><a href="../../../index.html">&larr; Back to Contract Architecture</a></p>
+<body class="cs-report cs-contract-carrier cs-contract-overlay">
+  <header class="cs-report__header">
+  <p><a class="cs-report__back" href="../../../index.html">&larr; Back to Contract Architecture</a></p>
 
-  <h1>CWA-AFA Â· Endeavor Air</h1>
+  <h1 class="cs-report__title">CWA-AFA · Endeavor Air</h1>
   <p><strong>Contract Extension Impact (2022 LOA 20)</strong></p>
-  <p class="muted">Base Agreement: March 31, 2020 â€“ March 30, 2025 Â· Extended (new amendable date: March 31, 2027)</p>
+  <p class="muted">Base Agreement: March 31, 2020 – March 30, 2025 · Extended (new amendable date: March 31, 2027)</p>
 
-  <h2>Agreement Metadata</h2>
+  </header>
+
+  <main class="cs-report__main">
+  <section class="cs-report__section">
+  <h2 class="cs-report__section-title">Agreement Metadata</h2>
   <p>
-    This page is an extension overlay for Endeavorâ€™s 2020â€“2025 Flight Attendant Agreement.
+    This page is an extension overlay for Endeavor’s 2020–2025 Flight Attendant Agreement.
     It is designed to be read alongside the baseline Contract Analysis page. The baseline analysis
     remains the authoritative architectural profile of the underlying CBA; this page isolates what
     LOA 20 changes and explains how the extension altered the economic and status reality of the contract.
   </p>
   <p>
-    Sources: Endeavor Air 2020â€“2025 CBA and LOA 20 â€” Contract Modification and Extension (executed October 31, 2022).
+    Sources: Endeavor Air 2020–2025 CBA and LOA 20 — Contract Modification and Extension (executed October 31, 2022).
   </p>
   <ul>
     <li><strong>Baseline analysis:</strong> <a href="../index.html">Contract Analysis</a></li>
-    <li><strong>Base CBA:</strong> <a href="../contract/endeavor-air-2020-2025.pdf">CBA 2020â€“2025</a></li>
-    <li><strong>Extension document:</strong> <a href="../contract/amendments/loa-20-contract-modification-and-extension-2022.pdf">LOA 20 â€” Contract Modification and Extension</a></li>
+    <li><strong>Base CBA:</strong> <a href="../contract/endeavor-air-2020-2025.pdf">CBA 2020–2025</a></li>
+    <li><strong>Extension document:</strong> <a href="../contract/amendments/loa-20-contract-modification-and-extension-2022.pdf">LOA 20 — Contract Modification and Extension</a></li>
   </ul>
+  </section>
 
-  <h2>Contract Architecture Overview</h2>
+  <section class="cs-report__section">
+  <h2 class="cs-report__section-title">Contract Architecture Overview</h2>
   <p>
     LOA 20 is a targeted extension package, not a wholesale rewrite. The underlying Endeavor agreement
-    remains a high-specificity regional â€œsystems contractâ€ built around PBS, reserve architecture,
+    remains a high-specificity regional “systems contract” built around PBS, reserve architecture,
     line construction rules, and a comparatively mature grievance/System Board structure.
     LOA 20 leaves that base architecture in place while layering in economic improvements,
     a new pay-credit floor for certain five-day trips, a discretionary geographic-stipend mechanism,
     a training carve-out for new-aircraft certification flying, and a revised duration clause.
   </p>
+  </section>
 
-  <h2>Extension Overlay</h2>
-  <table>
+  <section class="cs-report__section">
+  <h2 class="cs-report__section-title">Extension Overlay</h2>
+  <div class="cs-table-wrap" role="region" aria-label="Endeavor contract amendment table 1" tabindex="0"><table class="cs-table">
     <thead>
       <tr>
         <th>Topic</th>
@@ -69,7 +77,7 @@
         <td>Per diem increased to $2.15 (09/01/2022), $2.20 (01/01/2024), and $2.25 (01/01/2026).</td>
       </tr>
       <tr>
-        <td>â€œ25-in-5â€ trip credit</td>
+        <td>“25-in-5” trip credit</td>
         <td>For pay purposes only, five-day trips built during line construction receive a minimum of twenty-five (25) hours of pay credit.</td>
       </tr>
       <tr>
@@ -78,19 +86,21 @@
       </tr>
       <tr>
         <td>Training / new aircraft certification</td>
-        <td>Company retains discretion to select and assign Flight Attendants for flying required as part of new-aircraft-type certification, but must provide 30 daysâ€™ notice to the Association before required certification training.</td>
+        <td>Company retains discretion to select and assign Flight Attendants for flying required as part of new-aircraft-type certification, but must provide 30 days’ notice to the Association before required certification training.</td>
       </tr>
       <tr>
         <td>Document integration</td>
         <td>LOA 20 requires an updated version of the CBA to be published within 45 days of ratification/execution, with electronic access and hard-copy availability obligations.</td>
       </tr>
     </tbody>
-  </table>
+  </table></div>
+  </section>
 
-  <h2>Scheduling &amp; Assignment Framework</h2>
+  <section class="cs-report__section">
+  <h2 class="cs-report__section-title">Scheduling &amp; Assignment Framework</h2>
   <p>
-    The extension makes narrow but meaningful changes rather than redesigning Endeavorâ€™s scheduling system.
-    The most important scheduling-adjacent change is the â€œ25-in-5â€ provision: if line construction produces
+    The extension makes narrow but meaningful changes rather than redesigning Endeavor’s scheduling system.
+    The most important scheduling-adjacent change is the “25-in-5” provision: if line construction produces
     a five-day trip, the Flight Attendant receives at least twenty-five hours of pay credit for that trip,
     though not schedule credit. This is a compensation floor grafted onto the existing line-building architecture.
   </p>
@@ -100,20 +110,24 @@
     an exception for certification flying tied to a new aircraft type. That preserves management selection
     discretion in a narrow operational setting while imposing advance notice to the Association.
   </p>
+  </section>
 
-  <h2>Economic Structure</h2>
+  <section class="cs-report__section">
+  <h2 class="cs-report__section-title">Economic Structure</h2>
   <p>
-    The extensionâ€™s largest impact is economic. It replaces the base Section 18 pay appendix with a new rate table
+    The extension’s largest impact is economic. It replaces the base Section 18 pay appendix with a new rate table
     beginning in the November 2022 bid month and continuing with scheduled increases through April 1, 2027.
     It also raises per diem and introduces a geographic-stipend framework of up to $300 per month at designated bases.
   </p>
   <p>
-    Structurally, that means Endeavorâ€™s current economics are materially stronger than the untouched 2020â€“2025 PDF
+    Structurally, that means Endeavor’s current economics are materially stronger than the untouched 2020–2025 PDF
     would suggest. At the same time, the geographic stipend remains discretionary by design: it can improve value at
     targeted bases, but it is not a universal contractual guarantee across the system.
   </p>
+  </section>
 
-  <h2>Enforcement &amp; Dispute Resolution Architecture</h2>
+  <section class="cs-report__section">
+  <h2 class="cs-report__section-title">Enforcement &amp; Dispute Resolution Architecture</h2>
   <p>
     LOA 20 does not rewrite the grievance, System Board, or discipline framework. Its enforcement impact is indirect:
     notice requirements tied to the geographic stipend create bounded implementation rules, and the obligation to publish
@@ -124,8 +138,10 @@
     In other words, the extension strengthens the contract mostly through economics and status clarity, not through
     a new remedial subsystem.
   </p>
+  </section>
 
-  <h2>Structural Strengths, Weaknesses &amp; Comparative Flags</h2>
+  <section class="cs-report__section">
+  <h2 class="cs-report__section-title">Structural Strengths, Weaknesses &amp; Comparative Flags</h2>
   <p>
     Strengths: clear duration change through March 31, 2027; immediate and scheduled wage gains; higher per diem;
     a defined compensation floor for five-day trips built in line construction; and modest notice-based constraints around
@@ -134,16 +150,18 @@
   </p>
   <p>
     Comparative flag: this is best read as a targeted uplift and extension package, not a renegotiated contract architecture.
-    It improves the current economic package and clarifies status, while leaving Endeavorâ€™s high-process, high-auditability
+    It improves the current economic package and clarifies status, while leaving Endeavor’s high-process, high-auditability
     structure largely intact.
   </p>
+  </section>
 
-  <h2>Standardized Contract Scorecard</h2>
+  <section class="cs-report__section">
+  <h2 class="cs-report__section-title">Standardized Contract Scorecard</h2>
   <p>
-    This table overlays extension effects on top of the baseline 2020â€“2025 Endeavor contract. The post-extension totals
+    This table overlays extension effects on top of the baseline 2020–2025 Endeavor contract. The post-extension totals
     are aligned to the current integrated Endeavor Contract Analysis page.
   </p>
-  <table>
+  <div class="cs-table-wrap" role="region" aria-label="Endeavor contract amendment table 2" tabindex="0"><table class="cs-table">
     <thead>
       <tr>
         <th>Domain</th>
@@ -159,7 +177,7 @@
         <td>4.2</td>
         <td>+0.1</td>
         <td>4.3</td>
-        <td>â€œ25-in-5â€ adds a targeted compensation backstop to five-day line-construction trips.</td>
+        <td>“25-in-5” adds a targeted compensation backstop to five-day line-construction trips.</td>
       </tr>
       <tr>
         <td>Pay &amp; Credit Quality</td>
@@ -204,16 +222,23 @@
         <td>Net extension impact on the Endeavor contract architecture score.</td>
       </tr>
     </tbody>
-  </table>
+  </table></div>
+  </section>
 
-  <h2>Context Notes</h2>
+  <section class="cs-report__section">
+  <h2 class="cs-report__section-title">Context Notes</h2>
   <p>
     This extension overlay is intentionally narrow: it scores only what LOA 20 changes.
-    The base contractâ€™s broader scheduling, reserve, grievance, and compensation mechanics remain in force unless amended.
+    The base contract’s broader scheduling, reserve, grievance, and compensation mechanics remain in force unless amended.
     The most important practical effect of LOA 20 is that it prevents Endeavor from being misread as an open 2025 amendable-round contract.
-    The operative agreement is the 2020â€“2025 CBA as modified and extended through March 31, 2027.
+    The operative agreement is the 2020–2025 CBA as modified and extended through March 31, 2027.
   </p>
+  </section>
 
-  <p>CrewSignal Â· Contract Architecture &amp; Comparative Analysis</p>
+</main>
+
+  <footer class="cs-report__footer">
+    <p class="cs-report__fineprint">CrewSignal · Contract Architecture &amp; Comparative Analysis</p>
+  </footer>
 </body>
 </html>

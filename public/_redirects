@@ -1,22 +1,42 @@
+# Exact maintenance routes: keep before broad legacy aliases.
+/reports/contract-architecture/CWA-AFA/Spirit/modification-2026-2028/ /reports/contract-architecture/cwa-afa/spirit/modification-2026-2028/ 301!
+/reports/contract-architecture/cwa-afa/spirit/modification-2026-2028/ /reports/contract-architecture/CWA-AFA/Spirit/modification-2026-2028/index.html 200
+/reports/contract-architecture/cwa-afa/spirit/modification-2026-2028/index.html /reports/contract-architecture/CWA-AFA/Spirit/modification-2026-2028/index.html 200
+/reports/contract-architecture/CWA-AFA/air-wisconsin/rejected-ta-2026/ /reports/contract-architecture/cwa-afa/air-wisconsin/rejected-ta-2026/ 301!
+/reports/contract-architecture/cwa-afa/air-wisconsin/rejected-ta-2026/ /reports/contract-architecture/CWA-AFA/air-wisconsin/rejected-ta-2026/index.html 200
+/reports/contract-architecture/cwa-afa/air-wisconsin/rejected-ta-2026/index.html /reports/contract-architecture/CWA-AFA/air-wisconsin/rejected-ta-2026/index.html 200
+/reports/contract-architecture/CWA-AFA/endeavor/extension-2022/ /reports/contract-architecture/cwa-afa/endeavor/extension-2022/ 301!
+/reports/contract-architecture/cwa-afa/endeavor/extension-2022/ /reports/contract-architecture/CWA-AFA/endeavor/extension-2022/index.html 200
+/reports/contract-architecture/cwa-afa/endeavor/extension-2022/index.html /reports/contract-architecture/CWA-AFA/endeavor/extension-2022/index.html 200
+/reports/contract-architecture/IBT/sun-country/comparison/ /reports/contract-architecture/ibt/sun-country/comparison/ 301!
+/reports/contract-architecture/ibt/sun-country/comparison/ /reports/contract-architecture/IBT/sun-country/comparison/index.html 200
+/reports/contract-architecture/ibt/sun-country/comparison/index.html /reports/contract-architecture/IBT/sun-country/comparison/index.html 200
+/contracts/twu/jetblue/jetblue-ifc-cba-2021-2026.pdf  /reports/contract-architecture/TWU/JetBlue/contract/jetblue-ifc-cba-2021-2026.pdf  301!
+/reports/contract-architecture/cwa-afa/united/successive-ta-comparison/scope-loa-16/ /reports/contract-architecture/cwa-afa/united/successive-ta-comparison/full-report/#loa-16 301!
+/reports/contract-architecture/CWA-AFA/United/successive-ta-comparison/scope-loa-16/ /reports/contract-architecture/cwa-afa/united/successive-ta-comparison/full-report/#loa-16 301!
+/reports/contract-architecture/cwa-afa/united/successive-ta-comparison/compensation-methodology/ /reports/contract-architecture/cwa-afa/united/successive-ta-comparison/full-report/#tfp-methodology 301!
+/reports/contract-architecture/CWA-AFA/United/successive-ta-comparison/compensation-methodology/ /reports/contract-architecture/cwa-afa/united/successive-ta-comparison/full-report/#tfp-methodology 301!
+/reports/contract-architecture/cwa-afa/united/successive-ta-comparison/reserve-analysis/ /reports/contract-architecture/cwa-afa/united/successive-ta-comparison/full-report/#section-8 301!
+/reports/contract-architecture/CWA-AFA/United/successive-ta-comparison/reserve-analysis/ /reports/contract-architecture/cwa-afa/united/successive-ta-comparison/full-report/#section-8 301!
+/reports/contract-architecture/cwa-afa/united/successive-ta-comparison/section-7q/ /reports/contract-architecture/cwa-afa/united/successive-ta-comparison/full-report/#section-7 301!
+/reports/contract-architecture/CWA-AFA/United/successive-ta-comparison/section-7q/ /reports/contract-architecture/cwa-afa/united/successive-ta-comparison/full-report/#section-7 301!
+/reports/contract-architecture/cwa-afa/united/successive-ta-comparison/retiree-medical/ /reports/contract-architecture/cwa-afa/united/successive-ta-comparison/full-report/#section-29-retiree-medical-sunset 301!
+/reports/contract-architecture/CWA-AFA/United/successive-ta-comparison/retiree-medical/ /reports/contract-architecture/cwa-afa/united/successive-ta-comparison/full-report/#section-29-retiree-medical-sunset 301!
+/reports/contract-architecture/cwa-afa/united/successive-ta-comparison/cybersecurity-discipline/ /reports/contract-architecture/cwa-afa/united/successive-ta-comparison/full-report/#section-23 301!
+/reports/contract-architecture/CWA-AFA/United/successive-ta-comparison/cybersecurity-discipline/ /reports/contract-architecture/cwa-afa/united/successive-ta-comparison/full-report/#section-23 301!
+/reports/contract-architecture/cwa-afa/united/successive-ta-comparison/loa-appendix/ /reports/contract-architecture/cwa-afa/united/successive-ta-comparison/full-report/#loa-appendix 301!
+/reports/contract-architecture/CWA-AFA/United/successive-ta-comparison/loa-appendix/ /reports/contract-architecture/cwa-afa/united/successive-ta-comparison/full-report/#loa-appendix 301!
+/reports/merger-integration/comparators/ /reports/merger-integration/#historical-comparator-reports 301!
+/resources/single-carrier-vs-merger.html /reports/merger-integration/baseline/#section-single-carrier 301!
+/reports/union-governance/cwa/cwa-afa/_archive/_legacy-hub-from-reports-cwa.html /reports/union-governance/cwa/cwa-afa/ 301!
+/reports/union-governance/cwa/cwa-afa/_archive/structure-governance/* /reports/union-governance/cwa/cwa-afa/ 301!
+/reports/contract-architecture/CWA-AFA/Spirit/contract/amendments/README.md /reports/contract-architecture/cwa-afa/spirit/modification-2026-2028/ 301!
+
 /reports/contract-architecture/CWA-AFA/United/successive-ta-comparison/full-report/ /reports/contract-architecture/cwa-afa/united/successive-ta-comparison/full-report/ 301!
 /reports/contract-architecture/cwa-afa/united/successive-ta-comparison/full-report/ /reports/contract-architecture/CWA-AFA/United/successive-ta-comparison/full-report/index.html 200
 /reports/contract-architecture/CWA-AFA/United/successive-ta-comparison/far-121-467/ /reports/contract-architecture/CWA-AFA/United/successive-ta-comparison/far-121-467/index.html 200
 /reports/contract-architecture/cwa-afa/united/successive-ta-comparison/far-121-467/ /reports/contract-architecture/CWA-AFA/United/successive-ta-comparison/far-121-467/index.html 200
 /reports/contract-architecture/cwa-afa/united/successive-ta-comparison/far-121-467/index.html /reports/contract-architecture/CWA-AFA/United/successive-ta-comparison/far-121-467/index.html 200
-/reports/contract-architecture/CWA-AFA/United/successive-ta-comparison/scope-loa-16/ /reports/contract-architecture/cwa-afa/united/successive-ta-comparison/scope-loa-16/ 301!
-/reports/contract-architecture/cwa-afa/united/successive-ta-comparison/scope-loa-16/ /reports/contract-architecture/CWA-AFA/United/successive-ta-comparison/scope-loa-16/index.html 200
-/reports/contract-architecture/CWA-AFA/United/successive-ta-comparison/compensation-methodology/ /reports/contract-architecture/cwa-afa/united/successive-ta-comparison/compensation-methodology/ 301!
-/reports/contract-architecture/cwa-afa/united/successive-ta-comparison/compensation-methodology/ /reports/contract-architecture/CWA-AFA/United/successive-ta-comparison/compensation-methodology/index.html 200
-/reports/contract-architecture/CWA-AFA/United/successive-ta-comparison/reserve-analysis/ /reports/contract-architecture/cwa-afa/united/successive-ta-comparison/reserve-analysis/ 301!
-/reports/contract-architecture/cwa-afa/united/successive-ta-comparison/reserve-analysis/ /reports/contract-architecture/CWA-AFA/United/successive-ta-comparison/reserve-analysis/index.html 200
-/reports/contract-architecture/CWA-AFA/United/successive-ta-comparison/section-7q/ /reports/contract-architecture/cwa-afa/united/successive-ta-comparison/section-7q/ 301!
-/reports/contract-architecture/cwa-afa/united/successive-ta-comparison/section-7q/ /reports/contract-architecture/CWA-AFA/United/successive-ta-comparison/section-7q/index.html 200
-/reports/contract-architecture/CWA-AFA/United/successive-ta-comparison/retiree-medical/ /reports/contract-architecture/cwa-afa/united/successive-ta-comparison/retiree-medical/ 301!
-/reports/contract-architecture/cwa-afa/united/successive-ta-comparison/retiree-medical/ /reports/contract-architecture/CWA-AFA/United/successive-ta-comparison/retiree-medical/index.html 200
-/reports/contract-architecture/CWA-AFA/United/successive-ta-comparison/cybersecurity-discipline/ /reports/contract-architecture/cwa-afa/united/successive-ta-comparison/cybersecurity-discipline/ 301!
-/reports/contract-architecture/cwa-afa/united/successive-ta-comparison/cybersecurity-discipline/ /reports/contract-architecture/CWA-AFA/United/successive-ta-comparison/cybersecurity-discipline/index.html 200
-/reports/contract-architecture/CWA-AFA/United/successive-ta-comparison/loa-appendix/ /reports/contract-architecture/cwa-afa/united/successive-ta-comparison/loa-appendix/ 301!
-/reports/contract-architecture/cwa-afa/united/successive-ta-comparison/loa-appendix/ /reports/contract-architecture/CWA-AFA/United/successive-ta-comparison/loa-appendix/index.html 200
 /reports/contract-architecture/CWA-AFA/United/successive-ta-comparison/ /reports/contract-architecture/cwa-afa/united/successive-ta-comparison/ 301!
 /reports/contract-architecture/cwa-afa/united/successive-ta-comparison/ /reports/contract-architecture/CWA-AFA/United/successive-ta-comparison/index.html 200
 # BEGIN crewsignal contract-architecture case routing
@@ -115,7 +135,6 @@ https://www.crewsignal.org/* https://crewsignal.org/:splat 301!
  # Legacy contract PDFs (old /contracts paths)
  /contracts/*   /reports/contract-architecture/contracts/:splat   301!
 
-/contracts/twu/jetblue/jetblue-ifc-cba-2021-2026.pdf  /reports/contract-architecture/TWU/JetBlue/contract/jetblue-ifc-cba-2021-2026.pdf  301!
 
 /reports/contract-architecture/apfa/*     /reports/contract-architecture/APFA/:splat     301!
 /reports/contract-architecture/cwa-afa/*  /reports/contract-architecture/CWA-AFA/:splat  301!

@@ -293,6 +293,7 @@ body {
    ============================ */
 
 .cs-back-link,
+.cs-link--back,
 .cs-report__back {
   display: inline-flex;
   align-items: center;
@@ -305,6 +306,7 @@ body {
 }
 
 .cs-back-link:hover,
+.cs-link--back:hover,
 .cs-report__back:hover {
   text-decoration: underline;
   color: var(--cs-accent); /* prevents global a:hover from turning it gold */
@@ -483,4 +485,18 @@ a:hover {
 
 .cs-report__note .cs-report__list li + li {
   margin-top: 0.4rem;
+}
+
+/* Shared scrolling and keyboard navigation for report content. */
+.cs-table-wrap,
+.cs-report__table-wrap,
+div.cs-table {
+  max-width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.cs-report :is(a, summary, [tabindex]):focus-visible {
+  outline: 2px solid var(--cs-accent);
+  outline-offset: 3px;
 }

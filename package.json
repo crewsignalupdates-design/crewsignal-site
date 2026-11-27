@@ -4,6 +4,8 @@
   "private": true,
   "scripts": {
     "build": "mkdir -p dist && cp -R public/* dist/",
-    "audit:reader-prose": "node scripts/audit-reader-prose.mjs"
+    "audit:reader-prose": "node scripts/audit-reader-prose.mjs",
+    "audit:links": "node scripts/audit-site-links.mjs",
+    "audit:maintenance": "node scripts/audit-reader-prose.mjs --strict && node scripts/audit-site-links.mjs --strict"
   }
 }
