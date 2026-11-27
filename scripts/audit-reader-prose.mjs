@@ -22,6 +22,7 @@ const checks = [
   { severity: "ERROR", id: "workflow-in-page", re: /\b(?:editorial (?:handoff|audit|queue)|research handoff|reviewer instructions?|publication checklist|QA (?:PASS|FAIL)|FIXME|TODO:)\b/gi },
   { severity: "ERROR", id: "production-instruction", re: /\b(?:CrewSignal should|the right editorial move|the (?:correct|proper) (?:(?:reader-facing|weekly|public) )?fram(?:e|ing)|placeholder consistency (?:week|file)|(?:page|file|tracker|report) should stay (?:live|active|narrow)|reader-facing (?:framing|shorthand|explanation)|proposed method|next review triggers|fresh publisher-byte identity|in this pass|release checks|the page should be blunt|the next report should begin|report should end|should be developed there|next CrewSignal marker should)\b/gi },
   { severity: "REVIEW", id: "process-label", re: /\b(?:publication status:|method preview|validation and version history|drafting watch items|pending research|work queue|review cutoff|research cutoff|evidence cutoff|evidence reviewed through|source-status ledger|proposed criteria|forthcoming analysis)\b/gi },
+  { severity: "REVIEW", id: "editorial-direction", re: /\b(?:do not invent|must not be described as|must be acknowledged rather than|should therefore be evaluated)\b/gi },
   { severity: "REVIEW", id: "editorial-voice", re: /\b(?:we should (?:revise|publish|update|check|verify)|for internal review|proposed editorial change|needs editorial approval|(?:being finalized|will be added) (?:line-by-line|after (?:separate )?verification))\b/gi }
 ];
 
